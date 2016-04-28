@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+        	var radioValue = $("input[type='radio']:checked").val();
+
+        	var radioValue2 = $("input[type='radio']:checked").val();
+
+            if(radioValue){
+                alert("Your score " + radioValue + radioValue2);
+            }
+        });
+        
+    });
+</script>
+</head>
+
+<body>
+<body>
+<p>
+	<label><input type="radio" name="one" value="5">A</label> 
+	<label><input type="radio" name="one" value="10">B</label>
+</p>
+<p>
+	<label><input type="radio" name="two" value="5">A</label> 
+	<label><input type="radio" name="two" value="10">B</label>
+</p>
+
+<p><input type="button" value="Get Value"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+</head>
+<body>
+<div class="checkbox">
+	<input type="hidden" id="Total"  value="0">
+	<ul class="qw">
+		<li><input type="radio" name="check" value="10"> A</li>
+		<li><input type="radio" name="check" value="20"> B</li>
+		<li><input type="radio" name="check" value="30"> C</li>
+		<li><input type="radio" name="check" value="40"> D</li>
+		<input type="hidden" id="check"  value="0">
+	</ul>
+	<ul class="qw">
+		<li><input type="radio" name="check1" value="10"> A</li>
+		<li><input type="radio" name="check1" value="20"> B</li>
+		<li><input type="radio" name="check1" value="30"> C</li>
+		<li><input type="radio" name="check1" value="40"> D</li>
+	    <input type="hidden" id="check1" value="0">
+	</ul>
+	<div><label>Total: </label> <span id="lblTotalMarks">0</span></div>
+	<button type="button" id="btn">Submit</button>
+	<ul id="belong">
+		<li>0 - 10</li>
+		<li>11 - 20</li>
+		<li>21 - 30</li>
+		<li>31 - 40</li>
+		<li>41 - 50</li>
+		<li>51 - 60</li>
+		<li>61 - 70</li>
+		<li>71 - 80</li>
+	</ul>
+</div>
+</body>
+</html>
+<script>
+var total=0;
+$(".qw input[type='radio']").change(function(){
+	 total=0;
+	$("#"+this.name).val($(this).val())
+$(".qw").each(function(){
+	total+=parseInt($(this).find("input[type='hidden']").val());
+})
+	$("#lblTotalMarks").text(total);
+});
+
+$("#btn").click(function(){
+	var btntotal = parseInt($("#lblTotalMarks").text());
+btntotal = Math.floor(btntotal / 10)-1;
+switch (btntotal){
+case 1: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 2: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 3: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 5: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 6: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 7: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 8: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+case 4: $("#belong").find("li").eq(btntotal).css("color","red"); break;
+}
+});
+</script>
