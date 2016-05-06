@@ -231,6 +231,7 @@
       }else if($("#lblTotalMarks").text() < 1) {
         $(".lessGreater div").hide();
       }
+      adjust_iframe_height();
    });
 </script>
 <script>
@@ -253,7 +254,7 @@ $(document).ready(function(){
    $(".iCheck-helper").click(function(){
       $(this).parents("label").click();
    });
-   adjust_iframe_height();
+   
 
 });
 </script>
