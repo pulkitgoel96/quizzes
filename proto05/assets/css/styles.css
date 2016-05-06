@@ -38,8 +38,8 @@ a:focus, a:hover, a:active 			{outline: none;}
 
 .buzz-wrap .buzz-left 						{float: left;width: 66.6667%;font-size: 14px;padding-right: 1.7em;}
 .buzz-wrap .buzz-left h2,
-.buzz-wrap .buzz-left h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 600;line-height: 1.25em;margin: 0 0 15px;padding: 0}
-.buzz-wrap .buzz-left h3 					{font-size: 1.3em;font-weight: 600;}
+.buzz-wrap .buzz-left h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 700;line-height: 1.25em;margin: 0 0 15px;padding: 0}
+.buzz-wrap .buzz-left h3 					{font-size: 1.3em;font-weight: 700;}
 
 .buzz-wrap .white-box 						{background-color: #fff;margin-bottom: 1.7em;padding: 1.5em;border: 1px #d8d8d8 solid;}
 .buzz-wrap .white-box p						{margin-bottom: 1em}
@@ -121,22 +121,40 @@ a:focus, a:hover, a:active 			{outline: none;}
 
 
 
-.buzz-wrap .buzz-right 							{float: right;width: 33.3333%;clear: right;font-family: "Merriweather Sans",sans-serif;font-weight: 300;}
-.buzz-wrap .buzz-right .right-box 				{padding: 1em;background-color: #fff;border: 1px #d8d8d8 solid;margin-bottom: 1.7em;}
+.buzz-wrap .buzz-right 							{float: right;width: 33.3333%;clear: right;font-family: "Merriweather Sans",sans-serif;font-weight: 300;margin-top: 40px;}
+
+.buzz-wrap .buzz-right .right-box 				{background-color: #fff;border: 1px #d8d8d8 solid;margin-bottom: 1.7em;padding-bottom: 1.25em}
+.buzz-wrap .buzz-right .right-box:after 		{content: " ";visibility: hidden;display: block;height: 0;clear: both;}
 .buzz-wrap .buzz-right .right-box ol 			{margin: 0 0 0 1.5em ;padding: 0;font-size: 0.75em;line-height: 1.75em;}
 .buzz-wrap .buzz-right .right-box ol li			{list-style: numaric;margin-top: .75em}
 .buzz-wrap .buzz-right .right-box ol li a		{color: #3c3c3c;display: block;}
 .buzz-wrap .buzz-right .right-box ol li a:hover	{color: #c70039}
-.buzz-wrap .buzz-right .right-box h3 			{font-size: 1.25em;color: #333333;line-height: 1.25em;margin: 0;padding: 0 0 .5em;text-align: center;border-bottom: 1px #d8d8d8 solid}
-.buzz-wrap .buzz-right .right-box h3 span 		{color: #f3b72a}
-.right-box a.app-download						{background-color: #6a357f;color: #f6f1f8;padding: .7em; margin: .7em 0 .3em; display: block;text-align: center;border-radius: 3px;}
-.right-box a.app-download:hover					{background-color: #f3b72a;color: #fff}
-.buzz-wrap .buzz-right .right-quiz				{margin-top: 1.25em;font-size: 0.8125em;line-height: 1.35em;}
+/*
+.buzz-wrap .buzz-right .right-box h2 			{font-size: 1.25em;color: #333333;line-height: 1.25em;margin: 0;padding: 0 0 .5em;text-align: center;border-bottom: 1px #d8d8d8 solid;background-color: #3f8dc0}
+.buzz-wrap .buzz-right .right-box h2 span 		{color: #f3b72a}
+*/
+
+.buzz-wrap .buzz-right .right-box h2 			{background-color: #3f8dc0;color: white;font-family: "Merriweather Sans",sans-serif;font-size: 1.125em;font-weight: 700;letter-spacing: 1px;line-height: 1.11111em;margin: 0;padding: 0.875em;text-transform: uppercase;}
+.buzz-wrap .buzz-right .right-box h2.purple 	{background-color: #7d00b3}
+
+.buzz-wrap .buzz-right .right-quiz				{font-size: 0.8125em;line-height: 1.35em;padding: 1.5em 1.5em 0;}
 .buzz-wrap .buzz-right .right-quiz img			{width: 100%}
 
 .buzz-wrap .buzz-right .right-quiz figcaption	{margin-top: .5em;}
-.buzz-wrap .buzz-right .right-quiz a			{color: #c70039;display: block;}
-.buzz-wrap .buzz-right .right-quiz a:hover		{color: #3c3c3c}
+.buzz-wrap .buzz-right .right-quiz a			{color: #555;display: block;}
+.buzz-wrap .buzz-right .right-quiz a:hover		{color: #000}
+
+.right-box a.app-download						{background-color: #6a357f;color: #f6f1f8;padding: .7em; margin: .7em 0 .3em; display: block;text-align: center;border-radius: 3px;}
+.right-box a.app-download:hover					{background-color: #f3b72a;color: #fff}
+
+.right-box .quint-app							{padding: 2.25em 1.25em 0;}
+.right-box .quint-app .ios-app					{margin-bottom: .4em;margin-right: 1.5%;float: left;width: 48.5%;}
+.right-box .quint-app .android-app				{margin-left: 1.5%;float: right;width: 48.5%;}
+
+
+
+
+
 
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
