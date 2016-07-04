@@ -3,10 +3,11 @@
 *****************************************************/
 body {
     font-family: "Merriweather","Georgia",serif;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     text-rendering: auto;
+    color: #3c3c3c;
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -41,7 +42,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .buzz-left h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 700;line-height: 1.25em;margin: 0 0 15px;padding: 0}
 .buzz-wrap .buzz-left h3 					{font-size: 1.3em;font-weight: 700;}
 
-.buzz-wrap .buzz-center 					{font-size: 14px;max-width: 746px; margin: 0 auto;}
+.buzz-wrap .buzz-center 					{font-size: 16px;max-width: 746px; margin: 0 auto;}
 
 .buzz-wrap .buzz-center h2,
 .buzz-wrap .buzz-center h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 700;line-height: 1.25em;margin: 0 0 15px;padding: 0}
