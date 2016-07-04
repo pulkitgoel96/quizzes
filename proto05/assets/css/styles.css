@@ -118,7 +118,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .question-box ul.answer-type li .active		{background-color: #6a357f;color: #fff}
 
 .buzz-wrap .question-box ul.answer-type li label 		{display: block;padding: 0.5em;cursor: pointer;}
-.buzz-wrap .question-box ul.answer-type li:last-child	{margin-bottom: 0}
+.buzz-wrap .question-box ul.answer-type li:nth-child(2)	{margin-bottom: 0}
 
 
 
