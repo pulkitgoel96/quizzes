@@ -37,12 +37,12 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap									{max-width: 1150px;margin: 0 auto;padding: 0 1.5em;}
 .buzz-wrap img								{width: 100%}
 
-.buzz-wrap .buzz-left 						{float: left;width: 66.6667%;font-size: 14px;padding-right: 1.7em;}
+.buzz-wrap .buzz-left 						{float: left;width: 66.6667%;padding-right: 1.7em;}
 .buzz-wrap .buzz-left h2,
 .buzz-wrap .buzz-left h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 700;line-height: 1.25em;margin: 0 0 15px;padding: 0}
 .buzz-wrap .buzz-left h3 					{font-size: 1.3em;font-weight: 700;}
 
-.buzz-wrap .buzz-center 					{font-size: 16px;max-width: 746px; margin: 0 auto;}
+.buzz-wrap .buzz-center 					{max-width: 746px; margin: 0 auto;}
 
 .buzz-wrap .buzz-center h2,
 .buzz-wrap .buzz-center h3 					{font-size: 1.5em;color: #333333;font-family: "Merriweather Sans",sans-serif;font-weight: 700;line-height: 1.25em;margin: 0 0 15px;padding: 0}
@@ -60,12 +60,12 @@ a:focus, a:hover, a:active 			{outline: none;}
 .result-iron .result-img,
 .result-cap .result-img  					{padding-left: 1em;padding-bottom: 1.5em;}
 .result-iron .footer,
-.result-cap .footer 						{border-top: 1px #ccc solid;font-size: 1.5em;padding-top: .65em;font-weight:600;width: 100%;float: left;}
-.buzz-wrap .white-box .box-footer 			{border-top: 1px #ccc solid;font-size: 1.5em;padding-top: .65em;font-weight:600;width: 100%;display: block;}
+.result-cap .footer 						{border-top: 1px #ccc solid;padding-top: .65em;font-weight:600;width: 100%;float: left;}
+.buzz-wrap .white-box .box-footer 			{border-top: 1px #ccc solid;padding-top: .65em;font-weight:600;width: 100%;display: block;}
 
 .fa-facebook-official, .fa-twitter-square,
 .fa-linkedin-square, .fa-google-plus-square,
-.fa-envelope-square 						{font-size: 1.25em;}
+.fa-envelope-square 						{}
 .fa-facebook-official						{color: #3b5a9c}
 .fa-twitter-square							{color: #4598d3}
 .fa-linkedin-square							{color: #007bb6}
@@ -98,7 +98,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .white-box:after,
 .buzz-wrap .box-blank ul.answer-box:after 				{content: " ";visibility: hidden;display: block;height: 0;clear: both;}
 .buzz-wrap .box-blank figcaption						{padding-top: 7px} 
-.buzz-wrap .box-blank figcaption span					{width: 18px;display: inline-block;font-size: 18px;}
+.buzz-wrap .box-blank figcaption span					{width: 18px;display: inline-block;}
 
 .buzz-wrap .box-blank ul.answer-box li.active`
 .buzz-wrap .box-blank ul.answer-box li.active:hover		{background-color: #88f078;}
@@ -134,7 +134,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 
 .buzz-wrap .buzz-right .right-box 				{background-color: #fff;border: 1px #d8d8d8 solid;margin-bottom: 1.7em;padding-bottom: 1.25em}
 .buzz-wrap .buzz-right .right-box:after 		{content: " ";visibility: hidden;display: block;height: 0;clear: both;}
-.buzz-wrap .buzz-right .right-box ol 			{margin: 0 0 0 1.5em ;padding: 0;font-size: 0.75em;line-height: 1.75em;}
+.buzz-wrap .buzz-right .right-box ol 			{margin: 0 0 0 1.5em ;padding: 0;line-height: 1.75em;}
 .buzz-wrap .buzz-right .right-box ol li			{list-style: numaric;margin-top: .75em}
 .buzz-wrap .buzz-right .right-box ol li a		{color: #3c3c3c;display: block;}
 .buzz-wrap .buzz-right .right-box ol li a:hover	{color: #c70039}
@@ -143,10 +143,10 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .buzz-right .right-box h2 span 		{color: #f3b72a}
 */
 
-.buzz-wrap .buzz-right .right-box h2 			{background-color: #3f8dc0;color: white;font-family: "Merriweather Sans",sans-serif;font-size: 1.125em;font-weight: 700;letter-spacing: 1px;line-height: 1.11111em;margin: 0;padding: 0.875em;text-transform: uppercase;}
+.buzz-wrap .buzz-right .right-box h2 			{background-color: #3f8dc0;color: white;font-family: "Merriweather Sans",sans-serif;font-weight: 700;letter-spacing: 1px;line-height: 1.11111em;margin: 0;padding: 0.875em;text-transform: uppercase;}
 .buzz-wrap .buzz-right .right-box h2.purple 	{background-color: #7d00b3}
 
-.buzz-wrap .buzz-right .right-quiz				{font-size: 0.8125em;line-height: 1.35em;padding: 1.5em 1.5em 0;}
+.buzz-wrap .buzz-right .right-quiz				{line-height: 1.35em;padding: 1.5em 1.5em 0;}
 .buzz-wrap .buzz-right .right-quiz img			{width: 100%}
 
 .buzz-wrap .buzz-right .right-quiz figcaption	{margin-top: .5em;}
@@ -188,7 +188,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 	.share-buttons.img-btn 					{bottom:30px}
 
 	.buzz-wrap .box .subscribe-form input		{padding: 8px;}
-	.buzz-wrap .box .subscribe-form button 		{margin-left: .25em;font-size: 1em;padding: 0.45em 1.2em;}
+	.buzz-wrap .box .subscribe-form button 		{margin-left: .25em;padding: 0.45em 1.2em;}
 	.buzz-wrap .question-box .question::after 	{margin-left: -4px;}
 
 }
@@ -207,7 +207,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 	.buzz-wrap .box 						{margin-right: 0}
 
 	.buzz-wrap .box .subscribe-form input	{padding: 8px; width: 250px}
-	.buzz-wrap .box .subscribe-form button 	{margin-left: .25em;font-size: 1em;padding: 0.45em 1em;}
+	.buzz-wrap .box .subscribe-form button 	{margin-left: .25em;padding: 0.45em 1em;}
 
 	.buzz-wrap .result-btn,
 	.buzz-wrap .social-share 				{width: 100%;float: none;margin-right: 0;text-align: center;margin-top: 20px}
@@ -217,12 +217,15 @@ a:focus, a:hover, a:active 			{outline: none;}
 }
 @media only screen and (max-width: 600px) 	{
 	.buzz-wrap .question-box ul.img-box li 	{width: 100%;float: none;margin-right: 0;}
+	.white-box .result-content,
+	.white-box .result-img					{float: none;width: 100%}
+	.white-box .result-img 					{padding: 0;display: block;}
 }
 
 @media only screen and (max-width: 480px) 	{
 	.buzz-wrap .box .subscribe-form				{height: 125px}
 	.buzz-wrap .box .subscribe-email			{width: 100%;text-align: center;}
 	.buzz-wrap .box .subscribe-form input		{padding: 8px; width: 100%}
-	.buzz-wrap .box .subscribe-form button 		{margin: 1em 0;font-size: 1em;padding: 0.45em 1em;display: inline-block;}
+	.buzz-wrap .box .subscribe-form button 		{margin: 1em 0;padding: 0.45em 1em;display: inline-block;}
 	.buzz-wrap .question-box .question::after 	{margin-left: 5px;}
 }
