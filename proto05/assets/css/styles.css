@@ -103,7 +103,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .box-blank ul.answer-box li.active`
 .buzz-wrap .box-blank ul.answer-box li.active:hover		{background-color: #88f078;}
 
-.buzz-wrap .question-box 								{background-color: #fff;margin-bottom: 1.7em;padding: 1.5em;border: 1px #d8d8d8 solid;}
+.buzz-wrap .question-box 								{background-color: #fff;margin-bottom: 1.7em;padding: 1.5em 1.5em 0.75em;border: 1px #d8d8d8 solid;}
 .buzz-wrap .question-box .question 						{background-color: #f3b72a;margin-bottom: .85em;padding: 0.65em 0.75em;color: #fff;position: relative;font-size: 20px;font-family: "Merriweather Sans",sans-serif;font-weight: 500;border-radius: 5px}
 .buzz-wrap .question-box .question:after 				{top: 100%;left: 4%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-color: rgba(106, 53, 127, 0);border-top-color: #f3b72a;border-width: 13px;margin-left: -13px;}
 .buzz-wrap .question-box ul.answer-type 				{margin:0;padding: 0}
@@ -118,7 +118,6 @@ a:focus, a:hover, a:active 			{outline: none;}
 .buzz-wrap .question-box ul.answer-type li .active		{background-color: #6a357f;color: #fff}
 
 .buzz-wrap .question-box ul.answer-type li label 		{display: block;padding: 0.5em;cursor: pointer;}
-.buzz-wrap .question-box ul.answer-type li:nth-child(2)	{margin-bottom: 0}
 
 
 
