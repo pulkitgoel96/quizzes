@@ -54,6 +54,7 @@ ul.item {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  overflow: hidden;
 }
 .item li:hover img {
   -moz-transform: scale(1.1);
@@ -62,11 +63,40 @@ ul.item {
   overflow: hidden;
 }
 
+
+.item2 {
+  position: relative;
+  
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+.item2 img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 </style>
 </head>
 
 <body onload="adjust_iframe_height()">
    <div class="story-new-wrap">
+    <div class="item2">
+      <img src="http://cl.ly/image/0v15321t3W1a/pepsi.jpg" alt="pepsi" width="540" height="548">
+
+      <div class="item-overlay top"></div>
+    </div>
+
+
       <div>
          <ul class="item">
             <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
