@@ -25,64 +25,66 @@
 <![endif]-->
 
 <style>
-.story-new-wrap {
-   max-width: 740px;
-   margin: 0 auto;
-   background-color: #fcfcfc;
-}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-ul.item {
-   margin: 0;
-   padding: 20px 0 30px;
-   text-align: center;
+.story-new-wrap {
+   max-width: 500px;
+   margin: 0 auto;
+   background-color: #fff;
 }
-.item li {
-   position: relative;
-   display: inline-block;width: 200px;height: 200px;overflow: hidden;border-radius: 50%;margin: 2% 2%;border: 4px #fff solid;overflow: hidden;
-   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=90, Color=#8d8d8d)";
-   -moz-box-shadow: 0px 0px 12px #8d8d8d;
-   -webkit-box-shadow: 0px 0px 12px #8d8d8d;
-   box-shadow: 0px 0px 12px #8d8d8d;
-   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=12, Direction=90, Color=#8d8d8d);
-}
-.item li img {
-  max-width: 100%;
-  overflow: hidden;
-}
-.item li img {
-  -webkit-filter: grayscale(1); 
-  -webkit-filter: grayscale(100%); 
-  -moz-filter: grayscale(100%);
-  filter: gray; 
-  filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
-}
-.item li img:hover {
-    -webkit-filter: grayscale(0%); 
-    -webkit-filter: grayscale(0%); 
-    -moz-filter: grayscale(0%);
-    filter: none; 
-    filter: grayscale(0%);
-}
+.collage-effects {}
+.collage-effects ul {margin: 0;padding: 0}
+.collage-effects ul li:nth-child(odd)  {}
+.collage-effects ul li:nth-child(even) {}
 
+.collage-effects ul li a              {display: block;height: 115px;}
+.collage-effects ul li a span         {margin:0 auto;position: absolute;text-align: center;top: 51%;transform: translateY(-50%);display: block;width: 100%;}
+
+.collage-effects ul li                {float:left;width: 33.33%;position: relative;
+   background-image: url("assets/images/quiz/ans01-01.jpg"); background-size: 100%;
+   -webkit-filter: grayscale(1); 
+   -webkit-filter: grayscale(100%); 
+   -moz-filter: grayscale(100%);
+   filter: gray; 
+   filter: grayscale(100%);
+   filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+   border: 2px #fff solid;
+}
+.collage-effects ul li:hover {
+   -webkit-filter: grayscale(0%); 
+   -webkit-filter: grayscale(0%); 
+   -moz-filter: grayscale(0%);
+   filter: none; 
+   filter: grayscale(0%);
+}
+.collage-effects ul li:nth-child(2)   {float:left;width: 33.33%;background-image: url("assets/images/quiz/ans01-03.jpg"); background-size: 100%}
+.collage-effects ul li:nth-child(3)   {float:left;width: 33.33%;background-image: url("assets/images/quiz/ans01-02.jpg"); background-size: 100%}
+
+.collage-effects ul li:nth-child(4)   {float:left;width: 50%;background-image: url("assets/images/quiz/ans02-02.jpg"); background-size: 100%}
+.collage-effects ul li:nth-child(5)   {float:left;width: 50%;background-image: url("assets/images/quiz/ans03-01.jpg"); background-size: 100%}
+
+.collage-effects ul li:nth-child(6)   {float:left;width: 33.33%;background-image: url("assets/images/quiz/ans03-02.jpg"); background-size: 100%}
+.collage-effects ul li:nth-child(7)   {float:left;width: 33.33%;background-image: url("assets/images/quiz/ans03-03.jpg"); background-size: 100%}
+.collage-effects ul li:nth-child(8)   {float:left;width: 33.33%;background-image: url("assets/images/quiz/ans02-01.jpg"); background-size: 100%}
 </style>
 </head>
 
 <body onload="adjust_iframe_height()">
    <div class="story-new-wrap">
-      <div>
-         <ul class="item">
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-            <li><a href="#"><img src="assets/images/ans-demi.jpg"></a></li>
-         </ul>
+      <div class="collage-effects">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
       </div>
    </div>
 <!-- JS Libraries -->
@@ -97,7 +99,6 @@ function adjust_iframe_height() {
         height: actual_height,
         src: window.location.href
     }), "*");
-    //* allows this to post to any parent iframe regardless of domain
 }
 </script>
 </body>
