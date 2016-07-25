@@ -78,17 +78,66 @@ ul.item {
       </div>
    </div>
 <!-- JS Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
+<!-- JS Libraries -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/icheck.min.js"></script>
 <script>
-function adjust_iframe_height() {
-    var actual_height = document.body.scrollHeight;
-    console.log("height is", actual_height);
-    parent.postMessage(JSON.stringify({
-        'msg-type': "resize-iframe",
-        height: actual_height,
-        src: window.location.href
-    }), "*");
+   var total=0;
+   $('input').on('ifChecked', function(event){
+      //$(".demo-list li label").removeClass("active");
+      //$(this).addClass("active");
+      total=0;
+      $(this).parents('ul').find("input[Type='hidden']").val(this.value);
+      $(".demo-list").each(function(){
+           total+=parseInt($(this).find("input[type='hidden']").val());
+       });
+       $("#lblTotalMarks").text(total);
+   });
+   $("#btn").on("click",function(){
+      if($("#lblTotalMarks").text() <= 159 && $("#lblTotalMarks").text() > 1 ){
+        $(".lessGreater div").hide();
+        $(".lessGreater div.minimum").show();
+      
+      } else if($("#lblTotalMarks").text() > 159 ){
+        $(".lessGreater div").hide();
+        $(".lessGreater div.maximum").show();
+      }else if($("#lblTotalMarks").text() < 1) {
+        $(".lessGreater div").hide();
+      }
+      adjust_iframe_height();
+   });
+</script>
+<script>
+$(document).ready(function(){
+   var callbacks_list = $('.demo-callbacks');
+   $('.demo-list input').on('ifCreated ifClicked ifChanged ifChecked ifUnchecked ifDisabled ifEnabled ifDestroyed', function(event){
+     callbacks_list.prepend('<p><span>#' + this.id + '</span> is ' + event.type.replace('if', '').toLowerCase() + '</p>');
+   }).iCheck({
+     checkboxClass: 'icheckbox_square-blue',
+     radioClass: 'iradio_square-blue',
+     increaseArea: '20%'
+   });
+
+   // Check Active
+   $(".demo-list li label").click(function(){
+      $(this).parents("ul").find("label").removeClass("active");
+      $(this).addClass("active");
+   });
+
+   $(".iCheck-helper").click(function(){
+      $(this).parents("label").click();
+   });
+});
+</script>
+
+<script src="http://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
+<!-- end iFrame -->
+
+<script>
+function adjust_iframe_height(){
+    var actual_height = document.body.scrollHeight; 
+    console.log("height is",actual_height);
+    parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*"); 
     //* allows this to post to any parent iframe regardless of domain
 }
 </script>
