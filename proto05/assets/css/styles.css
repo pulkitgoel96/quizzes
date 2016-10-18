@@ -124,6 +124,7 @@ a:focus, a:hover, a:active 			{outline: none;}
 .white-box .result-content,
 .white-box .result-img							{float: left;width: 50%}
 
+.lessGreater .white-box.answer 					{font-weight: 800;background-color: green;color: #fff}
 
 .white-box .result-img  						{padding-left: 1em;}
 
