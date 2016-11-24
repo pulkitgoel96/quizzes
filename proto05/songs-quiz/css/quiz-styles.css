@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrap {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Merriweather", "Georgia", serif;
+}
+
+.main-wrap .img-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-wrap .content {
+    width: 100%;
+}
+
+.main-wrap .content:after {
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+}
+
+.main-wrap .content .btn-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-wrap .content a.t-button {
+    background-color: #7d00b3;
+    padding: 12px 20px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Merriweather", "Georgia", serif;
+    font-size: 18px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-wrap .content a.t-button:hover {
+    background-color: #ffbf00;
+}
+
+.main-wrap .content .t-content {
+    display: none;
+}
+
+.main-wrap .content .t-content ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.main-wrap .content .t-content.show {
+    display: block;
+}

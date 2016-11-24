@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>radha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/quiz-styles.css">
+</head>
+
+<body onload="adjust_iframe_height()">
+<div class="main-wrap">
+  <div class="content">
+      <div class="btn-container"><a href="javascript:void(0)" class="t-button">View Answer</a></div>
+      <div class="t-content">
+          <ul>
+            <li>O Radha teri Chunri</li>
+            <li>O Radha tera Jhalla</li>
+            <li>O Radha teri natkhat najariya</li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".t-button").click(function() {
+      $(".t-content").slideToggle();
+  });
+});
+</script>
+<script src="http://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
+<script>
+function adjust_iframe_height() {
+  var actual_height = document.body.scrollHeight;
+  console.log("height is", actual_height);
+  parent.postMessage(JSON.stringify({
+      'msg-type': "resize-iframe",
+      height: actual_height,
+      src: window.location.href
+  }), "*");
+}
+</script>
+</body>
+
+</html>
