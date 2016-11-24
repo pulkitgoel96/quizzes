@@ -30,7 +30,7 @@ body {
 .main-wrap .content .btn-container {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 30px;
 }
 
 .main-wrap .content a.t-button {
@@ -54,7 +54,11 @@ body {
 .main-wrap .content .t-content {
     display: none;
 }
-
+.main-wrap .content .t-content ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 .main-wrap .content .t-content ul li {
     list-style: none;
     margin-bottom: 5px;
