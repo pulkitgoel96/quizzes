@@ -15,6 +15,8 @@ body {
 a 									{margin: 0;padding: 0;vertical-align: baseline;text-decoration: none;outline: none;transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
 a:focus, a:hover, a:active 			{outline: none;}
 
+input:focus, button:focus 			{outline: none;}
+
 .advertise-header					{width:100%;background-color: #000;height: 90px;line-height: 0}
 .advertise-header .add-left			{float: left;width: 18.3%;text-align: left;}
 .advertise-header .add-center		{float: left;width: 63.4%;text-align: center;}
