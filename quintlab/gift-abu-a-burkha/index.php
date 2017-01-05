@@ -50,7 +50,16 @@
 
 </head>
 
-<body>
+<body onload="adjust_iframe_height()">
+<!-- Google Tag Manager for TheQuint-->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TBMJR5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TBMJR5');</script>
+  <!-- End Google Tag Manager for TheQuint-->
 
 	
 	
@@ -138,6 +147,13 @@
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/functions.js"></script>
-
+<script src="https://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
+<script>
+function adjust_iframe_height(){
+    var actual_height = document.body.scrollHeight;
+    console.log("height is",actual_height);
+    parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*");
+}
+</script>
 </body>
 </html>
