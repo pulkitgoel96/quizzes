@@ -18,8 +18,17 @@ $(document).ready(function() {
     $('.modalClose').click(function() {
         $('.creditsModal').fadeOut();
     });
-
+	
+	
+//	var window_h = $(window.parent).height();
+//	
+//	alert(window_h);
+	
 });
+
+
+
+
 
 
 

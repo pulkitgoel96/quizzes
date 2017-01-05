@@ -72,8 +72,8 @@ h6 {
 }
 
 .top-wrapper .container{
-	padding:8% 15px 0 15px;
-	height: 100vh;
+	padding:8% 15px 0px 15px;
+	height: 730px;
 }
 
 .top-container h1 {
@@ -225,6 +225,7 @@ h6 {
     float: right;
     cursor: pointer;
 	color: #fff;
+	display: none;
 }
 .creditsModal {
     padding: 20px;
