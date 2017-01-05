@@ -17,7 +17,6 @@
 <link href="assets/css/base.css" rel="stylesheet" media="all">
 <link href="assets/css/theme.css" rel="stylesheet" media="all">
 
-<!-- <link href="css/main.css" rel="stylesheet" media="all"> -->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,10 +29,10 @@
 <!-- OG Tag -->
 <meta property="og:title" content="Gift Abu A Burkha">
 <meta property="og:site_name" content="TheQuint">
-<meta property="og:url" content="https://thequint.com/quintlab/gift-abu-a-burkha/">
+<meta property="og:url" content="https://thequint.herokuapp.com/quintlab/gift-abu-a-burkha/">
 <meta property="og:description" content="Have you wrapped your gift for Abu Azmi?">
 <meta property="og:type" content="article">
-<meta property="og:image" content="https://thequint.com/quintlab/gift-abu-a-burkha/assets/images/og.jpg">
+<meta property="og:image" content="https://thequint.herokuapp.com/quintlab/gift-abu-a-burkha/assets/images/og.jpg">
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="600" />
 
@@ -42,7 +41,7 @@
 <meta name="twitter:site" content="@thequint">
 <meta name="twitter:title" content="Gift Abu A Burkha">
 <meta name="twitter:description" content="Have you wrapped your gift for Abu Azmi?">
-<meta name="twitter:image" content="https://thequint.com/quintlab/gift-abu-a-burkha/assets/images/og.jpg">
+<meta name="twitter:image" content="https://thequint.herokuapp.com/quintlab/gift-abu-a-burkha/assets/images/og.jpg">
 
 <!-- Google Analytics -->
 <script> var gaTrackerCode = 'UA-58739020-1'; if (gaTrackerCode != null) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', gaTrackerCode, 'auto'); ga('send', 'pageview'); } </script> 
@@ -50,7 +49,7 @@
 
 </head>
 
-<body onload="adjust_iframe_height()">
+<body>
 <!-- Google Tag Manager for TheQuint-->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TBMJR5"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -70,8 +69,8 @@
 	<div class="social">
   <div class="social-back"><img src="assets/images/share.png" alt=""></div>
   <div class="social-icons">
-    <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/gift-abu-a-burkha/&amp;t=Gift+Abu+A+Burkha" target="_blank"><img src="assets/images/facebook.png" alt=""></a></div>
-    <div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/gift-abu-a-burkha/&amp;text=Have you wrapped your gift for Abu Azmi? %20https%3A//thequint.com/quintlab/gift-abu-a-burkha" target="_blank"><img src="assets/images/twitter.png" alt=""></a></div>
+    <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.herokuapp.com/quintlab/gift-abu-a-burkha/&amp;t=Gift+Abu+A+Burkha" target="_blank"><img src="assets/images/facebook.png" alt=""></a></div>
+    <div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.herokuapp.com/quintlab/gift-abu-a-burkha/&amp;text=Have you wrapped your gift for Abu Azmi? %20https%3A//thequint.herokuapp.com/quintlab/gift-abu-a-burkha" target="_blank"><img src="assets/images/twitter.png" alt=""></a></div>
   </div>
 </div>
 	
@@ -147,13 +146,5 @@
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/functions.js"></script>
-<script src="https://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
-<script>
-function adjust_iframe_height(){
-    var actual_height = document.body.scrollHeight;
-    console.log("height is",actual_height);
-    parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*");
-}
-</script>
 </body>
 </html>
