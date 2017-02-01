@@ -64,7 +64,13 @@ $(document).ready(function(){
 $("document").ready( function() {
 	setTimeout(function(){
  		$('<thead></thead>').prependTo('#punjab-criminal table').append($('#punjab-criminal table tr:first'));
-		 		$('<thead></thead>').prependTo('#data_1 table').append($('#data_1 table tr:first'));
+		$('<thead></thead>').prependTo('#data_1 table').append($('#data_1 table tr:first'));
+		$('<thead></thead>').prependTo('#up table').append($('#up table tr:first'));
+		$('<thead></thead>').prependTo('#uk table').append($('#uk table tr:first'));
+		$('<thead></thead>').prependTo('#goa table').append($('#goa table tr:first'));
+		$('<thead></thead>').prependTo('#manipur table').append($('#manipur table tr:first'));
+		
+		
 		
 		//$('tr:first td').wrapInner('<div />').find('div').unwrap().wrap('<th/>');
 		//$("table").tablesorter(); 
