@@ -39,6 +39,11 @@
     <h1 class="election-text"><img src="assets/images/mobile-elections-text.png"></h1>
   </div>
 </div>
+<div class="frame-wrapper">
+	<div class="container">
+		<iframe src="https://thequint.herokuapp.com/quintlab/gift-abu-a-burkha/" width="100%" frameborder="0" ></iframe>
+	</div>
+</div>
 <div class="wrapper video-wrapper" style="display:none;">
   <div class="container">
     <div class="embed-content">
@@ -366,13 +371,6 @@
         <!--  GOA   -->
         
         <div id="tab-4" class="tab-content active">
-			<div class="row">
-			<div class="col col-3">
-			<div class="col-content">
-				<iframe src="https://news.netcraft.com"></iframe>
-				</div>
-				</div>
-			</div>
           <div class="row">
             <div class="col col-1">
               <div class="col-content">
@@ -601,9 +599,45 @@
     </div>
   </div>
 </div>
-</div>
 <!-- js files--> 
 <script type="text/javascript" src="assets/js/functions.js"></script> 
 <script type="text/javascript" src="assets/js/data.js"></script>
+<script type="text/javascript" src="assets/js/iframe-resize.js"></script>
+<script type="text/javascript">	
+	/*
+* If you do not understand what the code below does, then please just use the
+* following call in your own code.
+*
+*   iFrameResize({log:true});
+*
+* Once you have it working, set the log option to false.
+*/
+iFrameResize({
+    log: true, // Enable console logging
+    inPageLinks: true,
+    resizedCallback: function(messageData) { // Callback fn when resize is received
+        $('p#callback').html(
+            '<b>Frame ID:</b> ' + messageData.iframe.id +
+            ' <b>Height:</b> ' + messageData.height +
+            ' <b>Width:</b> ' + messageData.width +
+            ' <b>Event type:</b> ' + messageData.type
+        );
+    },
+    messageCallback: function(messageData) { // Callback fn when message is received
+        $('p#callback').html(
+            '<b>Frame ID:</b> ' + messageData.iframe.id +
+            ' <b>Message:</b> ' + messageData.message
+        );
+        alert(messageData.message);
+        document.getElementsByTagName('iframe')[0].iFrameResizer.sendMessage('Hello back from parent page');
+    },
+    closedCallback: function(id) { // Callback fn when iFrame is closed
+        $('p#callback').html(
+            '<b>IFrame (</b>' + id +
+            '<b>) removed from page.</b>'
+        );
+    }
+});
+</script>
 </body>
 </html>
