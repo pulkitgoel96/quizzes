@@ -246,20 +246,7 @@ p.caption {
 .tabcontent {
 	padding: 15px 10px;
 }
-/*Custom Chart*/
 
-.chart-wrapper-even {
-	background: #fff;
-}
-.highcharts-background {
-	fill: transparent;
-}
-.highcharts-button-symbol, .highcharts-button-box {
-	display: none;
-}
-.highcharts-credits {
-	display: none;
-}
 /*Table*/
 table {
 	border-collapse: collapse;

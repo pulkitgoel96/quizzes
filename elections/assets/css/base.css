@@ -389,3 +389,20 @@ transform:translateY(4px) rotate(90deg)
 	display: block;
 }
 }
+
+
+
+/*Custom Chart*/
+
+.chart-wrapper-even {
+	background: #fff;
+}
+.highcharts-background {
+	fill: transparent;
+}
+.highcharts-button-symbol, .highcharts-button-box {
+	display: none;
+}
+.highcharts-credits {
+	display: none;
+}
