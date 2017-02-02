@@ -198,6 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: 500;
 	line-height: 100%;
+	margin-bottom:5px;
 }
 .col-content h3.color-1 {
 	color: #d72331;
@@ -215,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 19px;
 	font-weight: 400;
 	line-height: 104%;
-	margin: 4px 0 9px;
+	margin: 0px 0 10px;
 }
 p.caption {
 	margin: 10px 0;

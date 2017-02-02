@@ -109,6 +109,7 @@ p.caption {
 
 .frame-wrapper{}
 .frame-wrapper .container{
+	padding: 10px;
 }
 
 
