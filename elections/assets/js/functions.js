@@ -68,6 +68,7 @@ $("document").ready( function() {
 		$('<thead></thead>').prependTo('#up table').append($('#up table tr:first'));
 		$('<thead></thead>').prependTo('#uk table').append($('#uk table tr:first'));
 		$('<thead></thead>').prependTo('#goa table').append($('#goa table tr:first'));
+		$('<thead></thead>').prependTo('#goa-criminal table').append($('#goa-criminal table tr:first'));
 		$('<thead></thead>').prependTo('#manipur table').append($('#manipur table tr:first'));
 		
 		
