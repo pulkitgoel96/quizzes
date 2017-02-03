@@ -107,6 +107,12 @@ p.caption {
 
 /*Frame Content CSS*/
 
+.frame-chart{
+	max-width:300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
 .frame-wrapper{}
 .frame-wrapper .container{
 	padding: 10px;
