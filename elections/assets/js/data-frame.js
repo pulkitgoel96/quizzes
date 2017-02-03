@@ -21,10 +21,9 @@ Highcharts.chart('frame-chart-1', {
         pie: {
             dataLabels: {
                 enabled: true,
-                distance: -50,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
                 style: {
-                    fontWeight: 'bold',
-                    color: 'white'
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 }
             },
             startAngle: -90,
@@ -76,10 +75,9 @@ Highcharts.chart('frame-chart-2', {
         pie: {
             dataLabels: {
                 enabled: true,
-                distance: -50,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
                 style: {
-                    fontWeight: 'bold',
-                    color: 'white'
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 }
             },
             startAngle: -90,
