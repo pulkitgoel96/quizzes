@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	//For Table 1
 	
-	$('#table_1 .tr_1_td_1').text('achintya');
+	$('#table_1 .tr_1_td_1').text('tbl-1');
 	$('#table_1 .tr_1_td_2').text('tbl-1');
 	$('#table_1 .tr_1_td_3').text('tbl-1');
 	$('#table_1 .tr_1_td_4').text('tbl-1');
@@ -130,7 +130,7 @@ $(document).ready(function(){
 	
 	$('#table_5 .table_result').text("'Party 5' Result text here");
 	
-})
+});
 
 Highcharts.chart('frame-chart-1', {
 	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
