@@ -1,5 +1,130 @@
 //Frame-chart-1
 
+$(document).ready(function(){
+	
+	//For Table 1
+	
+	$('#table_1 .tr_1_td_1').text('achintya');
+	$('#table_1 .tr_1_td_2').text('tbl-1');
+	$('#table_1 .tr_1_td_3').text('tbl-1');
+	$('#table_1 .tr_1_td_4').text('tbl-1');
+	
+	$('#table_1 .tr_2_td_1').text('tbl-1');
+	$('#table_1 .tr_2_td_2').text('tbl-1');
+	$('#table_1 .tr_2_td_3').text('tbl-1');
+	$('#table_1 .tr_2_td_4').text('tbl-1');
+	
+	$('#table_1 .tr_3_td_1').text('tbl-1');
+	$('#table_1 .tr_3_td_2').text('tbl-1');
+	$('#table_1 .tr_3_td_3').text('tbl-1');
+	$('#table_1 .tr_3_td_4').text('tbl-1');
+	
+	$('#table_1 .tr_4_td_1').text('tbl-1');
+	$('#table_1 .tr_4_td_2').text('tbl-1');
+	$('#table_1 .tr_4_td_3').text('tbl-1');
+	$('#table_1 .tr_4_td_4').text('tbl-1');
+	
+	$('#table_1 .table_result').text("'Party 1' Result text here");
+	
+	//For Table 2
+	
+	$('#table_2 .tr_1_td_1').text('tbl-2');
+	$('#table_2 .tr_1_td_2').text('tbl-2');
+	$('#table_2 .tr_1_td_3').text('tbl-2');
+	$('#table_2 .tr_1_td_4').text('tbl-2');
+	
+	$('#table_2 .tr_2_td_1').text('tbl-2');
+	$('#table_2 .tr_2_td_2').text('tbl-2');
+	$('#table_2 .tr_2_td_3').text('tbl-2');
+	$('#table_2 .tr_2_td_4').text('tbl-2');
+	
+	$('#table_2 .tr_3_td_1').text('tbl-2');
+	$('#table_2 .tr_3_td_2').text('tbl-2');
+	$('#table_2 .tr_3_td_3').text('tbl-2');
+	$('#table_2 .tr_3_td_4').text('tbl-2');
+	
+	$('#table_2 .tr_4_td_1').text('tbl-2');
+	$('#table_2 .tr_4_td_2').text('tbl-2');
+	$('#table_2 .tr_4_td_3').text('tbl-2');
+	$('#table_2 .tr_4_td_4').text('tbl-2');
+	
+	$('#table_2 .table_result').text("'Party 2' Result text here");
+	
+	//For Table 3
+	
+	$('#table_3 .tr_1_td_1').text('tbl-3');
+	$('#table_3 .tr_1_td_2').text('tbl-3');
+	$('#table_3 .tr_1_td_3').text('tbl-3');
+	$('#table_3 .tr_1_td_4').text('tbl-3');
+	
+	$('#table_3 .tr_2_td_1').text('tbl-3');
+	$('#table_3 .tr_2_td_2').text('tbl-3');
+	$('#table_3 .tr_2_td_3').text('tbl-3');
+	$('#table_3 .tr_2_td_4').text('tbl-3');
+	
+	$('#table_3 .tr_3_td_1').text('tbl-3');
+	$('#table_3 .tr_3_td_2').text('tbl-3');
+	$('#table_3 .tr_3_td_3').text('tbl-3');
+	$('#table_3 .tr_3_td_4').text('tbl-3');
+	
+	$('#table_3 .tr_4_td_1').text('tbl-3');
+	$('#table_3 .tr_4_td_2').text('tbl-3');
+	$('#table_3 .tr_4_td_3').text('tbl-3');
+	$('#table_3 .tr_4_td_4').text('tbl-3');
+	
+	$('#table_3 .table_result').text("'Party 3' Result text here");
+	
+	//For Table 4
+	
+	$('#table_4 .tr_1_td_1').text('tbl-4');
+	$('#table_4 .tr_1_td_2').text('tbl-4');
+	$('#table_4 .tr_1_td_3').text('tbl-4');
+	$('#table_4 .tr_1_td_4').text('tbl-4');
+	
+	$('#table_4 .tr_2_td_1').text('tbl-4');
+	$('#table_4 .tr_2_td_2').text('tbl-4');
+	$('#table_4 .tr_2_td_3').text('tbl-4');
+	$('#table_4 .tr_2_td_4').text('tbl-4');
+	
+	$('#table_4 .tr_3_td_1').text('tbl-4');
+	$('#table_4 .tr_3_td_2').text('tbl-4');
+	$('#table_4 .tr_3_td_3').text('tbl-4');
+	$('#table_4 .tr_3_td_4').text('tbl-4');
+	
+	$('#table_4 .tr_4_td_1').text('tbl-4');
+	$('#table_4 .tr_4_td_2').text('tbl-4');
+	$('#table_4 .tr_4_td_3').text('tbl-4');
+	$('#table_4 .tr_4_td_4').text('tbl-4');
+	
+	$('#table_4 .table_result').text("'Party 4' Result text here");
+	
+	
+	//For Table 5
+	
+	$('#table_5 .tr_1_td_1').text('tbl-5');
+	$('#table_5 .tr_1_td_2').text('tbl-5');
+	$('#table_5 .tr_1_td_3').text('tbl-5');
+	$('#table_5 .tr_1_td_4').text('tbl-5');
+	
+	$('#table_5 .tr_2_td_1').text('tbl-5');
+	$('#table_5 .tr_2_td_2').text('tbl-5');
+	$('#table_5 .tr_2_td_3').text('tbl-5');
+	$('#table_5 .tr_2_td_4').text('tbl-5');
+	
+	$('#table_5 .tr_3_td_1').text('tbl-5');
+	$('#table_5 .tr_3_td_2').text('tbl-5');
+	$('#table_5 .tr_3_td_3').text('tbl-5');
+	$('#table_5 .tr_3_td_4').text('tbl-5');
+	
+	$('#table_5 .tr_4_td_1').text('tbl-5');
+	$('#table_5 .tr_4_td_2').text('tbl-5');
+	$('#table_5 .tr_4_td_3').text('tbl-5');
+	$('#table_5 .tr_4_td_4').text('tbl-5');
+	
+	$('#table_5 .table_result').text("'Party 5' Result text here");
+	
+})
+
 Highcharts.chart('frame-chart-1', {
 	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],

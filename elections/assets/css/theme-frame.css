@@ -119,4 +119,43 @@ p.caption {
 }
 
 
+table.count-table {
+	border-collapse: collapse;
+	width: 100%;
+	background: #fff;
+	font-size: 13px;
+}
+table.count-table td, table.count-table th {
+	padding: 7px 10px;
+	text-align: left;
+}
+
+thead th, tfoot td {
+	font-weight: bold;
+	color: #fff;
+	white-space: nowrap;
+}
+
+thead th{
+	background-color: #CB2826;
+}
+
+tfoot td{
+	background-color: #31bc86;
+}
+
+
+
+tbody th {
+	background-color: #461211;
+	color: #fff;
+}
+table tr:nth-child(2n-1) {
+	background-color: #F3F3F3;
+	transition: all .125s ease-in-out;
+}
+
+
+
+
 
