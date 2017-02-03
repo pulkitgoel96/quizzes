@@ -2,6 +2,13 @@
 
 $(document).ready(function(){
 	
+	// Common data
+	$('.count-table .table_title_1').text('Party');
+	$('.count-table .table_title_2').text('Per %');
+	$('.count-table .table_title_3').text('Total');
+	$('.count-table .table_title_4').text('Amount');
+	
+	
 	//For Table 1
 	
 	$('#table_1 .tr_1_td_1').text('achintya');
