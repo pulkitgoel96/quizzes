@@ -11,8 +11,8 @@ $(document).ready(function(){
 	
 	//For Table 1
 	
-	$('#table_1 .tr_1_td_1').text('tbl-1');
-	$('#table_1 .tr_1_td_2').text('tbl-1');
+	$('#table_1 .tr_1_td_1').text('data');
+	$('#table_1 .tr_1_td_2').text('data1');
 	$('#table_1 .tr_1_td_3').text('tbl-1');
 	$('#table_1 .tr_1_td_4').text('tbl-1');
 	
@@ -132,6 +132,8 @@ $(document).ready(function(){
 	
 });
 
+//Frame-chart-1
+
 Highcharts.chart('frame-chart-1', {
 	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
@@ -153,7 +155,7 @@ Highcharts.chart('frame-chart-1', {
         pie: {
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                format: '<b>{point.name}</b>',
                 style: {
                     color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 }
