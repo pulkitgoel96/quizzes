@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	//For Table 1
 	
-	$('#table_1 .tr_1_td_1').text('tbl-1');
+	$('#table_1 .tr_1_td_1').text('Hello');
 	$('#table_1 .tr_1_td_2').text('tbl-1');
 	$('#table_1 .tr_1_td_3').text('tbl-1');
 	$('#table_1 .tr_1_td_4').text('tbl-1');
