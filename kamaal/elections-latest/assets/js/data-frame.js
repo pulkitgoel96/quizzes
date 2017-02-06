@@ -56,9 +56,10 @@ $(document).ready(function(){
         pie: {
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                distance: -50,
                 style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    fontWeight: 'bold',
+                    color: 'white'
                 }
             },
             startAngle: -90,
@@ -71,11 +72,11 @@ $(document).ready(function(){
         name: 'Browser share',
         innerSize: '50%',
         data: [
-            ['Firefox',   20],
-            ['IE',       20],
-            ['Chrome', 20],
-            ['Safari',    20],
-            ['Opera',     20],
+            ['Firefox',   10.38],
+            ['IE',       56.33],
+            ['Chrome', 24.03],
+            ['Safari',    4.77],
+            ['Opera',     0.91],
             {
                 name: 'Proprietary or Undetectable',
                 y: 0.2,
@@ -86,7 +87,6 @@ $(document).ready(function(){
         ]
     }]
 });
-
 $(document).ready(function(){
 	
 	//For Table 2
@@ -118,7 +118,6 @@ $(document).ready(function(){
 Highcharts.chart('frame-chart-2', {
 	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: 0,
@@ -137,9 +136,10 @@ Highcharts.chart('frame-chart-2', {
         pie: {
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                distance: -50,
                 style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    fontWeight: 'bold',
+                    color: 'white'
                 }
             },
             startAngle: -90,
@@ -167,7 +167,6 @@ Highcharts.chart('frame-chart-2', {
         ]
     }]
 });
-	
 	
 	$(document).ready(function(){
 	//For Table 3
