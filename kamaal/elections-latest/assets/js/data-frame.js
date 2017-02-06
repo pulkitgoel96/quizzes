@@ -76,7 +76,7 @@ $(document).ready(function(){
             ['IE',       56.33],
             ['Chrome', 24.03],
             ['Safari',    4.77],
-            ['Opera',     0.91],
+            ['Opera',     7],
             {
                 name: 'Proprietary or Undetectable',
                 y: 0.2,
