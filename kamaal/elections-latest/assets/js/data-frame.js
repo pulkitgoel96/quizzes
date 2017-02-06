@@ -50,7 +50,7 @@ $(document).ready(function(){
         y: 40
     },
     tooltip: {
-        pointFormat: ''
+        pointFormat: '{series.name}: <b>{point.data:.1f}</b>'
     },
     plotOptions: {
         pie: {
