@@ -506,7 +506,7 @@ $(document).ready(function(){
         },
         series: [{
             type: 'pie',
-            name: 'Goan Legislative Assembly <br> Election 2012 Results',
+            name: 'Goa Legislative Assembly <br> Election 2012 Results',
             innerSize: '50%',
             data: [
                 ['BJP',   21],
