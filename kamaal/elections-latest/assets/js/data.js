@@ -513,14 +513,9 @@ $(document).ready(function(){
                 ['GVP',   2],
                 ['IND', 5],
                 ['INC',    9],
-                ['MAG', 3],
-                {
-                    name: 'Proprietary or Undetectable',
-                    y: 0.2,
-                    dataLabels: {
-                        enabled: false
-                    }
-                }
+                ['MAG', 3]
+               
+                
             ]
         }]
 
