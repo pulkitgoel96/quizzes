@@ -17,14 +17,9 @@
 <meta http-equiv="pragma" content="no-cache" />
 -->
 
-
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="pragma" content="no-cache" />
-
-
-
-
 <title>Frame</title>
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
@@ -48,118 +43,168 @@
 <script src="assets/js/highcharts-more.js"></script>
 <script src="assets/js/modules/exporting.js"></script>
 </head>
-<body>
+<body onload="setInterval('window.location.reload()', 600000);">
 <div class="wrapper frame-wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-1">Title here</h3>
-					<div class="frame-chart" id="frame-chart-1"></div>
-                	<div id="table_1" class="box-info"></div>
-				</div>
-			</div>
-			
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-2">Title here</h3>
-					<div class="frame-chart" id="frame-chart-2"></div>
-                	<div id="table_2" class="box-info"></div>
-				</div>
-			</div>
-			
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-3">Title here</h3>
-					<div class="frame-chart" id="frame-chart-3"></div>
-                	<div id="table_3" class="box-info"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row center-row">
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-4">Title here</h3>
-					<div class="frame-chart" id="frame-chart-4"></div>
-                	<div id="table_4" class="box-info"></div>
-				</div>
-			</div>
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-1">Title here</h3>
-					<div class="frame-chart" id="frame-chart-5"></div>
-                	<div id="table_5" class="box-info"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-1">Title here</h3>
-				</div>
-			</div>
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-2">Title here</h3>
-				</div>
-			</div>
-			<div class="col col-1">
-				<div class="col-content">
-					<h3 class="color-3">Title here</h3>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container election-table">
+    <div class="row table-row">
+      <ul>
+        <li>
+          <div class="table-cont" id="electionData_1">
+            <h3></h3>
+            <div class="election-data"></div>
+          </div>
+        </li>
+        <li>
+          <div class="table-cont" id="electionData_2">
+            <h3></h3>
+            <div class="election-data"></div>
+          </div>
+        </li>
+        <li>
+          <div class="table-cont" id="electionData_3">
+            <h3></h3>
+            <div class="election-data"></div>
+          </div>
+        </li>
+        <li>
+          <div class="table-cont" id="electionData_4">
+            <h3></h3>
+            <div class="election-data"></div>
+          </div>
+        </li>
+        <li>
+          <div class="table-cont" id="electionData_5">
+            <h3></h3>
+            <div class="election-data"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-1">Title here</h3>
+          <div class="frame-chart" id="frame-chart-1"></div>
+          <div id="table_1" class="box-info"></div>
+        </div>
+      </div>
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-2">Title here</h3>
+          <div class="frame-chart" id="frame-chart-2"></div>
+          <div id="table_2" class="box-info"></div>
+        </div>
+      </div>
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-3">Title here</h3>
+          <div class="frame-chart" id="frame-chart-3"></div>
+          <div id="table_3" class="box-info"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row center-row">
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-4">Title here</h3>
+          <div class="frame-chart" id="frame-chart-4"></div>
+          <div id="table_4" class="box-info"></div>
+        </div>
+      </div>
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-1">Title here</h3>
+          <div class="frame-chart" id="frame-chart-5"></div>
+          <div id="table_5" class="box-info"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-1">Title here</h3>
+        </div>
+      </div>
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-2">Title here</h3>
+        </div>
+      </div>
+      <div class="col col-1">
+        <div class="col-content">
+          <h3 class="color-3">Title here</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- js files-->
 
 <div class="table-content" style="display: none;">
-	<table class="count-table">
-		<thead>
-			<tr>
-				<th class="table_title_1"></th>
-				<th class="table_title_2"></th>
-				<th class="table_title_3"></th>
-				<th class="table_title_4"></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th class="tr_1_td_1"></td>
-				<td class="tr_1_td_2"></td>
-				<td class="tr_1_td_3"></td>
-				<td class="tr_1_td_4"></td>
-			</tr>
-			<tr>
-				<th class="tr_2_td_1"></td>
-				<td class="tr_2_td_2"></td>
-				<td class="tr_2_td_3"></td>
-				<td class="tr_2_td_4"></td>
-			</tr>
-			<tr>
-				<th class="tr_3_td_1"></td>
-				<td class="tr_3_td_2"></td>
-				<td class="tr_3_td_3"></td>
-				<td class="tr_3_td_4"></td>
-			</tr>
-			<tr>
-				<th class="tr_4_td_1"></td>
-				<td class="tr_4_td_2"></td>
-				<td class="tr_4_td_3"></td>
-				<td class="tr_4_td_4"></td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td class="table_result" colspan="4"></td>
-			</tr>
-		</tfoot>
-	</table>
+  <table class="count-table">
+    <thead>
+      <tr>
+        <th class="table_title_1"></th>
+        <th class="table_title_2"></th>
+        <th class="table_title_3"></th>
+        <th class="table_title_4"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="tr_1_td_1"></td>
+        <td class="tr_1_td_2"></td>
+        <td class="tr_1_td_3"></td>
+        <td class="tr_1_td_4"></td>
+      </tr>
+      <tr>
+        <th class="tr_2_td_1"></td>
+        <td class="tr_2_td_2"></td>
+        <td class="tr_2_td_3"></td>
+        <td class="tr_2_td_4"></td>
+      </tr>
+      <tr>
+        <th class="tr_3_td_1"></td>
+        <td class="tr_3_td_2"></td>
+        <td class="tr_3_td_3"></td>
+        <td class="tr_3_td_4"></td>
+      </tr>
+      <tr>
+        <th class="tr_4_td_1"></td>
+        <td class="tr_4_td_2"></td>
+        <td class="tr_4_td_3"></td>
+        <td class="tr_4_td_4"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="table_result" colspan="4"></td>
+      </tr>
+    </tfoot>
+  </table>
 </div>
-
-<script type="text/javascript" src="assets/js/iframeResizer.contentWindow.min.js"></script>
+<div class="table-content-1" style="display: none;">
+  <table>
+    <tr>
+      <td class="tr_1_td_1"></td>
+      <td class="tr_1_td_2"></td>
+    </tr>
+    <tr>
+      <td class="tr_2_td_1"></td>
+      <td class="tr_2_td_2"></td>
+    </tr>
+    <tr>
+      <td class="tr_3_td_1"></td>
+      <td class="tr_3_td_2"></td>
+    </tr>
+    <tr>
+      <td class="tr_4_td_1"></td>
+      <td class="tr_4_td_2"></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript" src="assets/js/iframeResizer.contentWindow.min.js"></script> 
 <script src="assets/js/functions-frame.js"></script> 
 <script src="assets/js/data-frame.js"></script>
 </body>

@@ -487,7 +487,10 @@ $(document).ready(function(){
             y: -20
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
         },
         plotOptions: {
             pie: {
@@ -514,13 +517,7 @@ $(document).ready(function(){
                 ['IND', 5],
                 ['INC',    9],
                 ['MAG', 3],
-                {
-                    name: 'Proprietary or Undetectable',
-                    y: 0.2,
-                    dataLabels: {
-                        enabled: false
-                    }
-                }
+                
             ]
         }]
 
