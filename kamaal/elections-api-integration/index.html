@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="" />
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<title>Data</title>
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+<!-- Custom styles for this template -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500,700" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="assets/css/animate.css" rel="stylesheet" media="all">
+<link href="assets/css/base.css" rel="stylesheet" media="all">
+<link href="assets/css/theme.css" rel="stylesheet" media="all">
+<link href="assets/css/responsive.css" rel="stylesheet" media="all">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/d3.min.js"></script>
+<script src="assets/js/highcharts.js"></script>
+<script src="assets/js/highcharts-more.js"></script>
+<script src="assets/js/modules/exporting.js"></script>
+<script type="text/javascript" src="assets/js/jquery.tablesorter.js"></script>
+</head>
+
+
+<body>
+
+
+<div class="wrapper top-wrapper">
+  <div class="container">
+    <h1 class="election-text"><img src="assets/images/mobile-elections-text.png"></h1>
+  </div>
+</div>
+<div class="frame-wrapper">
+	<div class="container">
+		<iframe src="frame.html" width="100%" frameborder="0" ></iframe>
+	</div>
+</div>
+<div class="wrapper video-wrapper" style="display:none;">
+  <div class="container">
+    <div class="embed-content">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQ1c34S-H28" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="clearfix election-bg">
+      <div class="clearfix top-content">
+        <div class="content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into</p>
+        </div>
+        <div class="content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into</p>
+        </div>
+      </div>
+      <h2>YOU TOO CAN BECOME A FACEBOOK JOURNO
+        WITH THE QUINT. WHATSAPP YOUR VIDEOS TO US ON +91 9900181818</h2>
+    </div>
+  </div>
+</div>
+<div class="wrapper tab-wrapper">
+  <div class="container">
+    <div id="tabs" class="clearfix">
+      <ul class="tabs-menu clearfix">
+        <li><a class="tab-nav" href="#tab-1">PUNJAB</a></li>
+        <li><a class="tab-nav" href="#tab-2">UTTAR PRADESH</a></li>
+        <li><a class="tab-nav" href="#tab-3">UTTARAKHAND</a></li>
+        <li class="active"><a class="tab-nav" href="#tab-4">GOA</a></li>
+        <li><a class="tab-nav" href="#tab-5">MANIPUR</a></li>
+      </ul>
+      
+      <!--   PUNJAB    -->
+      
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-1">Vote share</h3>
+                <h4>Punjab Legislative Assembly <br>
+                  Election 2012 Results</h4>
+                <div class="chart-content" id="punjabvote"></div>
+                <p class="caption">Source: Elections.in</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-2">Key Candidates</h3>
+                <div class="space"></div>
+                <div class="cand">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content"> <a class="twitter-timeline"  href="https://twitter.com/hashtag/PunjabElections2017" data-height="420" data-chrome="transparent noborders nofooter" data-widget-id="826338195897999360">#PunjabElections2017 Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content fix-cont-1">
+                <h3 class="color-2">Education of Candidates</h3>
+                <!--	<h4>Sample headline</h4>-->
+                <div class="chart-content" id="educationpunjab"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-1">Party Wise Criminal Cases</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="punjabpartycriminal"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-3">Highest Asset Candidates</h3>
+                <div class="space"></div>
+                <div class="cand cand-1">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-3">PArty wise Crorepatis</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="punjabcrorepatis"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+          <!--      <div class="row">
+          	<div class="col col-1">
+          		<div class="col-content">
+				<!--<h3 class="color-4">Vote share</h3>--> 
+          <!-- <div class="inner-tab" id="custom_tab_1">
+         				<ul class="clearfix">
+         					<li><a id="tab_1" class="is-active" href="javascript:void(0)">2016</a></li>
+         					<li><a id="tab_2" href="javascript:void(0)">2015</a></li>
+         				</ul>
+         				<div class="tab-content-container">
+         					<div id="tab_cont_1" class="tabcontent open">tab content 1</div>
+         					<div id="tab_cont_2" class="tabcontent">tab content 2</div>
+         				</div>
+         			</div>
+          		</div>
+          	</div>
+          	
+          	<div class="col col-2">
+          		<div class="col-content">
+          			<h3 class="color-1">Vote share</h3>
+          			<h4>Sample headline</h4>
+          		</div>
+          	</div>
+
+          </div>-->
+          
+          <div class="row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Constituency Winner 2012</h3>
+                <h4>Sample headline</h4>
+                <div class="scroll-content">
+                  <div id="data_1"></div>
+                </div>
+                <p class="caption">Source: Election Commission</p>
+              </div>
+            </div>
+          </div>
+          <div class="row last-row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Candidates with Criminal Cases</h3>
+                <!--<h4>Sample headline</h4>-->
+                <div class="scroll-content">
+                  <div id="punjab-criminal"></div>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--   UTTAR PRADESH   -->
+        
+        <div id="tab-2" class="tab-content">
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-1">Vote share</h3>
+                <h4>Punjab Legislative Assembly <br>
+                  Election 2012 Results</h4>
+                <div class="chart-content" id="upvote"></div>
+                <p class="caption">Source: Elections.in</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-2">Key Candidates</h3>
+                <div class="space"></div>
+                <div class="cand">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content"> <a class="twitter-timeline"  href="https://twitter.com/hashtag/uttarpradeshelections2017" data-height="420" data-chrome="transparent noborders nofooter"  data-widget-id="826684806700335105">#uttarpradeshelections2017 Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              </div>
+            </div>
+          </div>
+          <div class="row last-row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Constituency Winner 2012</h3>
+                <h4>Sample headline</h4>
+                <div class="scroll-content">
+                  <div id="up"></div>
+                </div>
+                <p class="caption">Source: Election Commission</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  UTTARAKHAND    -->
+        
+        <div id="tab-3" class="tab-content">
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-1">Vote share</h3>
+                <h4>Punjab Legislative Assembly <br>
+                  Election 2012 Results</h4>
+                <div class="chart-content" id="ukvote"></div>
+                <p class="caption">Source: Elections.in</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-2">Key Candidates</h3>
+                <div class="space"></div>
+                <div class="cand">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content"> <a class="twitter-timeline"  href="https://twitter.com/hashtag/UttarakhandElections2017" data-height="420" data-chrome="transparent noborders nofooter" data-widget-id="826684584733634562">#UttarakhandElections2017 Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              </div>
+            </div>
+          </div>
+          <div class="row last-row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Constituency Winner 2012</h3>
+                <h4>Sample headline</h4>
+                <div class="scroll-content">
+                  <div id="uk"></div>
+                </div>
+                <p class="caption">Source: Election Commission</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  GOA   -->
+        
+        <div id="tab-4" class="tab-content active">
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-1">Vote share</h3>
+                <h4>Punjab Legislative Assembly <br>
+                  Election 2012 Results</h4>
+                <div class="chart-content" id="goavote"></div>
+                <p class="caption">Source: Elections.in</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-2">Key Candidates</h3>
+                <div class="space"></div>
+                <div class="cand">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content"> <a class="twitter-timeline"  href="https://twitter.com/hashtag/GoaElections2017" data-height="420" data-chrome="transparent noborders nofooter" data-widget-id="826681528310706178">#GoaElections2017 Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content fix-cont-1">
+                <h3 class="color-2">Education of Candidates</h3>
+                <!--	<h4>Sample headline</h4>-->
+                <div class="chart-content" id="educationgoa"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-1">Party Wise Criminal Cases</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="goapartycriminal"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-3">Highest Asset Candidates</h3>
+                <div class="space"></div>
+                <div class="cand cand-1">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Michael Vincent Lobo | BJP</h5>
+                        <p>Total Income: 3,25,27,303</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Rohan Khaunte | IND</h5>
+                        <p>Total Income: 1,70,43,238</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Agnelo Nicholas Fernandes | INC</h5>
+                        <p>Total Income: 1,65,51,000</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-3">PArty wise Crorepatis</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="goacrorepatis"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+          <!--      <div class="row">
+          	<div class="col col-1">
+          		<div class="col-content">
+				<!--<h3 class="color-4">Vote share</h3>--> 
+          <!-- <div class="inner-tab" id="custom_tab_1">
+         				<ul class="clearfix">
+         					<li><a id="tab_1" class="is-active" href="javascript:void(0)">2016</a></li>
+         					<li><a id="tab_2" href="javascript:void(0)">2015</a></li>
+         				</ul>
+         				<div class="tab-content-container">
+         					<div id="tab_cont_1" class="tabcontent open">tab content 1</div>
+         					<div id="tab_cont_2" class="tabcontent">tab content 2</div>
+         				</div>
+         			</div>
+          		</div>
+          	</div>
+          	
+          	<div class="col col-2">
+          		<div class="col-content">
+          			<h3 class="color-1">Vote share</h3>
+          			<h4>Sample headline</h4>
+          		</div>
+          	</div>
+
+          </div>-->
+          
+          <div class="row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Constituency Winner 2012</h3>
+                <h4>Sample headline</h4>
+                <div class="scroll-content">
+                  <div id="goa"></div>
+                </div>
+                <p class="caption">Source: Election Commission</p>
+              </div>
+            </div>
+          </div>
+          <div class="row last-row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Candidates with Criminal Cases</h3>
+                <!--<h4>Sample headline</h4>-->
+                <div class="scroll-content">
+                  <div id="goa-criminal"></div>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--   MANIPUR    -->
+        
+        <div id="tab-5" class="tab-content">
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-1">Vote share</h3>
+                <h4>Punjab Legislative Assembly <br>
+                  Election 2012 Results</h4>
+                <div class="chart-content" id="manipurvote"></div>
+                <p class="caption">Source: Elections.in</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-2">Key Candidates</h3>
+                <div class="space"></div>
+                <div class="cand">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-1">
+              <div class="col-content"> <a class="twitter-timeline"  href="https://twitter.com/hashtag/ManipurElections2017" data-height="420" data-chrome="transparent noborders nofooter" data-widget-id="826684406190526464">#ManipurElections2017 Tweets</a> 
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+              </div>
+            </div>
+          </div>
+          <div class="row last-row">
+            <div class="col col-3">
+              <div class="col-content">
+                <h3 class="color-1">Constituency Winner 2012</h3>
+                <h4>Sample headline</h4>
+                <div class="scroll-content">
+                  <div id="manipur"></div>
+                </div>
+                <p class="caption">Source: Election Commission</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- js files--> 
+
+<script type="text/javascript" src="assets/js/functions.js"></script> 
+<script type="text/javascript" src="assets/js/data.js"></script>
+<script type="text/javascript" src="assets/js/iframe-resize.js"></script>
+<script type="text/javascript">	
+	/*
+* If you do not understand what the code below does, then please just use the
+* following call in your own code.
+*
+*   iFrameResize({log:true});
+*
+* Once you have it working, set the log option to false.
+*/
+iFrameResize({
+    log: true, // Enable console logging
+    inPageLinks: true,
+    resizedCallback: function(messageData) { // Callback fn when resize is received
+        $('p#callback').html(
+            '<b>Frame ID:</b> ' + messageData.iframe.id +
+            ' <b>Height:</b> ' + messageData.height +
+            ' <b>Width:</b> ' + messageData.width +
+            ' <b>Event type:</b> ' + messageData.type
+        );
+    },
+    messageCallback: function(messageData) { // Callback fn when message is received
+        $('p#callback').html(
+            '<b>Frame ID:</b> ' + messageData.iframe.id +
+            ' <b>Message:</b> ' + messageData.message
+        );
+        alert(messageData.message);
+        document.getElementsByTagName('iframe')[0].iFrameResizer.sendMessage('Hello back from parent page');
+    },
+    closedCallback: function(id) { // Callback fn when iFrame is closed
+        $('p#callback').html(
+            '<b>IFrame (</b>' + id +
+            '<b>) removed from page.</b>'
+        );
+    }
+});
+
+
+//	$(document).ready(function(){
+//		var ref = ?random=" + (new Date()).getTime() + Math.floor(Math.random() * 1000000);
+//		alert(ref);
+//	})
+	
+	
+</script>
+</body>
+</html>
