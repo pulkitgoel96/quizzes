@@ -487,10 +487,8 @@ $(document).ready(function(){
             y: -20
         },
         tooltip: {
-            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            formatter: function() {
-      return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
-   },
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
         plotOptions: {
             pie: {
                 dataLabels: {
