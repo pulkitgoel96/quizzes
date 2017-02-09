@@ -17,7 +17,7 @@ blockquote {
 	line-height: 120%;
 	max-width: 700px;
 	margin: 0 0 20px 0;
-	text-align: center;
+	text-align: left;
 	display: inline-block;
 	/*	font-family: 'Noto Serif', serif;*/
 	font-family: Georgia;
@@ -536,6 +536,10 @@ transform:translateY(4px) rotate(90deg)
 	font-size: 13px;
 	color: #333;
 	padding: 10px 20px 0 20px;
+}
+.caption.video-caption{
+	margin-top: -10px;
+	padding: 0px 0px 10px 0px
 }
 a {
 	color: #831A29;
