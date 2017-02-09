@@ -16,11 +16,11 @@ blockquote {
 	font-size: 25px;
 	line-height: 120%;
 	max-width: 700px;
-	margin:0 0 20px 0;
+	margin: 0 0 20px 0;
 	text-align: center;
 	display: inline-block;
-/*	font-family: 'Noto Serif', serif;*/
-	font-family: Georgia ;
+	/*	font-family: 'Noto Serif', serif;*/
+	font-family: Georgia;
 	font-style: italic;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -31,14 +31,12 @@ h1 {
 	font-size: 36px;
 	line-height: 44px;
 }
-
-.feed{
+.feed {
 	padding: 0px 0px 30px 0px;
 	text-align: center;
 }
-
-.imageWrapper{
-	max-width:600px;
+.imageWrapper {
+	max-width: 600px;
 	margin: 0px auto 20px auto;
 }
 /*
@@ -49,66 +47,64 @@ h1 {
 
 
 .imageWrapper.full-wrapper {
-  margin-left: -60px;
-  max-width: 1080px;
-  width: 1080px;
+	margin-left: -60px;
+	max-width: 1080px;
+	width: 1080px;
 }
-
-
-
-.videoWrapper{
+.videoWrapper {
 	margin-bottom: 20px;
 }
-.video-container{
-	max-width:600px;
+.video-container {
+	max-width: 600px;
 	margin: 0 auto;
 }
-
 /*.imageWrapper, .videoWrapper{margin-bottom: 20px;}*/
 
-.imageWrapper img{width:100%;}
-
+.imageWrapper img {
+	width: 100%;
+}
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0px 20px;
 }
-.content{
-	background:#fff;
-	margin-top: 40px;
+.content {
+	background: #fff;
+	margin-bottom: 80px;
 	position: relative;
 }
-
+#section-1.content {
+	margin-top: 40px;
+}
 .date-time {
-  background: #831A29 none repeat scroll 0 0;
-  color: #fff;
-  left: -40px;
-  position: absolute;
-  top: 40px;
-  width: 80px;
-  z-index: 9999;
+	background: #831A29 none repeat scroll 0 0;
+	color: #fff;
+	left: -40px;
+	position: absolute;
+	top: 40px;
+	width: 80px;
+	z-index: 9999;
 	text-align: center;
 	font-family: "Fira Sans Extra Condensed", sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	padding: 10px 0px;
-	
 }
-
-.date-time span{display:block; line-height: 90%;}
-.date-time span.date{font-size: 35px;}
+.date-time span {
+	display: block;
+	line-height: 90%;
+}
+.date-time span.date {
+	font-size: 35px;
+}
 .date-time span.month {
-
-  font-size: 25px;
-  font-weight: 500;
+	font-size: 25px;
+	font-weight: 500;
 }
 .date-time span.year {
-  font-size: 25px;
-  font-weight: 300;
+	font-size: 25px;
+	font-weight: 300;
 }
-
-
-
 .nav {
 	position: fixed;
 	right: 10px;
@@ -161,14 +157,12 @@ h1 {
 	-o-transition: 0.2s all ease-in-out;
 }
 .nav ul li a.active {
-	background:#831A29;
+	background: #831A29;
 }
-
 .footer-wrapper {
 	background: #000;
 	text-align: center;
 	padding: 12px 0px;
-	margin-top: 30px;
 }
 .footer-wrapper a {
 	color: #fff;
@@ -189,8 +183,6 @@ h1 {
 	height: 100vh;
 	background-attachment: fixed;
 }
-
-
 .top-wrapper .container {
 	width: auto;
 	max-width: inherit;
@@ -274,8 +266,6 @@ h1 {
 .is-desktop {
 	display: block;
 }
-
-
 /*screen*/
 .rotate_screen {
 	width: 100%;
@@ -532,23 +522,21 @@ transform:translateY(4px) rotate(90deg)
 	z-index: 100;
 	display: none;
 }
-
-
 /*Custom CSS*/
-.content h3{font-size:35px; margin: 20px 0px 10px 0px}
-.inner-content{
+.content h3 {
+	font-size: 35px;
+	margin: 20px 0px 10px 0px
+}
+.inner-content {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 0px 20px;
 }
-
-.caption{
+.caption {
 	font-size: 13px;
 	color: #333;
 	padding: 10px 20px 0 20px;
 }
-
-p a{
+a {
 	color: #831A29;
-	border-bottom: 1px solid #831A29;
 }
