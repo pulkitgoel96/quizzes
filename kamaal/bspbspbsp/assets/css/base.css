@@ -304,10 +304,10 @@ template {
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-top: 0px;
 	height: 0;
-	margin-top:50px;
-	margin-bottom:0;
+	margin-top:10px;
+	margin-bottom:30px;
 }
 .videoWrapper iframe {
 	position: absolute;
