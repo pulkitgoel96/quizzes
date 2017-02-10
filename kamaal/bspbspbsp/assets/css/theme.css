@@ -10,7 +10,7 @@ p, blockquote {
 	margin-bottom: 20px;
 }
 blockquote {
-	color: #3e86c1;
+	color: #882802;
 	font-size: 120%;
 	font-style: italic;
 	font-weight: 400;
@@ -72,7 +72,7 @@ blockquote2 img {
 	max-width: 600px;
 }
 .fullbggrey {
-	background-color: #3e86c1;
+	background-color: #882802;
 	padding: 20px 0 20px 0;
 	margin: 0 auto;
 }
@@ -236,7 +236,7 @@ ul.credits li {
 	color: #3A3939;
 }
 .more-thumb a:hover {
-	color: #3e86c1;
+	color: #882802;
 }
 ul.counter {
 	font-family: 'Roboto Slab', serif;
@@ -660,7 +660,7 @@ width: 100%;
 .map-wrapper {
 	width: 100%;
 	height: 700px;
-	background: #3e86c1;
+	background: #882802;
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
@@ -1174,7 +1174,7 @@ transform:translateY(4px) rotate(90deg)
 */
 
 p a {
-	color: #3e86c1;
+	color: #882802;
 }
 #tooltip {
 	text-align: left;
@@ -1209,7 +1209,7 @@ p a {
 #tooltip.top:after {
 	border-top-color: transparent;
 	border-bottom: 10px solid #3e86c1;
-	border-bottom-color: #3e86c1;
+	border-bottom-color: #882802;
 	top: -20px;
 	bottom: auto;
 }
@@ -1266,7 +1266,7 @@ p a {
 	stroke-width: 4px;
 }
 .map-road--story {
-	stroke: #ff8106;
+	stroke: #882802;
 	/*  stroke-opacity: .5;*/
 	stroke-width: 4px;
 }
