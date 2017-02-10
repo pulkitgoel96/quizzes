@@ -183,7 +183,7 @@ template {
 .wrapper, .container {
 	position: relative;
 }
-.clearfix:before, .clearfix:after, .answers:before, .answers:after, .wrapper:before, .wrapper:after, .container:before, .container:after, .row:before, .row:after {
+.clearfix:before,  .clearfix:after, .answers:before, .answers:after, .wrapper:before, .wrapper:after, .container:before, .container:after, .row:before, .row:after {
 	display: table;
 	line-height: 0;
 	content: "";

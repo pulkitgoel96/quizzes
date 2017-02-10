@@ -354,3 +354,59 @@ table tr:hover {
 .fix-cont-1{min-height: 523px;}
 .fix-cont-2{min-height: 523px;}
 
+
+
+
+/*Search*/
+.scroll-content table{display:none;}
+.search-area{
+	position:relative;
+	margin: 15px 0;
+}
+input.search-data {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #dadada;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 15px;
+  width: 100%;
+  z-index: 100;
+}
+.btn-search {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  color: #919191;
+  cursor: pointer;
+  height: 100%;
+  outline: medium none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 100;
+  display: none;
+}
+.btn-search:hover {color: #333;}
+
+/*API Stories*/
+.story-list{
+	width: 20%;
+	float: left;
+}
+
+.story-item{padding:10px;}
+.story-item a{display:block; color: #6d6e70; margin: 10px 0 0 0; cursor: pointer;}
+.story-item a:hover{color: #333;}
+.row.story-row .col-content{
+	min-height: 0;
+}
+.api-stories:after, .api-stories:before{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.api-stories:after{
+	clear: both;
+}
+
+

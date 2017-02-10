@@ -202,6 +202,26 @@ width: 100%;
 	text-align: center;
 }
 
+
+/*Story frame*/
+.story-frame{
+	position: relative;
+	min-height: 70px;
+	margin:15px 0px 0px 0px;
+}
+
+.story-frame figure img{position: absolute; top: 0; left: 0; }
+.story-frame a{display:block;}
+.story-frame figcaption{
+	margin-left:130px;
+}
+
+
+
+.story-frame figcaption a{display:block; color: #6d6e70; margin: 0px 0 0 0; cursor: pointer;}
+.story-frame figcaption a:hover{color: #333;}
+
+
 /*PArty Colors*/
 .election-data table tr td.BJP{color:#2eb675;}
 .election-data table tr td.INC{color:#ef3f3b;}

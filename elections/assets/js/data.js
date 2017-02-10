@@ -2,7 +2,7 @@
 
 d3.text("data/punjabconstituency.csv", function (data) {
     var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#data_1")
+    var container = d3.select("#punjab")
         .append("table")
 
         .selectAll("tr")
