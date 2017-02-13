@@ -538,6 +538,7 @@ width: 100%;
 .container.video-container {
 	max-width: 1000px;
 	width: 100%;
+	z-index:9;
 }
 .top-wrapper .container {
 	width: auto;
