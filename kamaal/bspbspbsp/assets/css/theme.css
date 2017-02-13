@@ -84,6 +84,7 @@ blockquote2 img {
 .container .video-container {
 	padding: 0;
 	margin-bottom: 40px;
+	z-index:9;
 }
 /*map  screen*/
 
