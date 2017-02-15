@@ -165,10 +165,19 @@ table tr:nth-child(2n-1) {
 	clear: both;
 }
 
+/*
 .election-table ul li {float: left; width: 20%; border: 1px solid #d4d5d7; border-left: 0;}
 .election-table ul li:first-child{
 	border-left: 1px solid #d4d5d7;
 }
+*/
+
+.election-table ul li { border: 1px solid #d4d5d7; border-left: 0;}
+.election-table ul li:first-child{
+	border-left: 1px solid #d4d5d7;
+}
+
+
 
 .table-cont{
 	min-height:150px;

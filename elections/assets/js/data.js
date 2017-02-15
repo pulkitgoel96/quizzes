@@ -123,7 +123,12 @@ d3.text("data/goacriminals.csv", function (data) {
 
 
 
-// Chart 1
+$(document).ready(function(){
+    $("#tabs ul li a.tab-nav").click(function(){
+		
+		
+		
+
 $(function () {
 $('#punjabvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
@@ -140,7 +145,10 @@ $('#punjabvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC0
             y: -20
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
         },
         plotOptions: {
             pie: {
@@ -180,8 +188,6 @@ $('#punjabvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC0
 });
 });
 
-
-// Chart 2
 $(function () {
 
     var ranges = [
@@ -256,12 +262,6 @@ $(function () {
     });
 });
 
-
-
-
-//
-
-
 $(function () {
     Highcharts.chart('punjabcrorepatis', {colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
@@ -323,9 +323,6 @@ $(function () {
     });
 });
 
-
-//
-
 $(function () {
     Highcharts.chart('punjabpartycriminal', {
         chart: {
@@ -385,14 +382,7 @@ $(function () {
     });
 });
 
-
-//
-
-
-
-
 $(function () {
-
     $(document).ready(function () {
 
         // Build the chart
@@ -408,7 +398,10 @@ $(function () {
                 text: ''
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
             },
             plotOptions: {
                 pie: {
@@ -465,14 +458,15 @@ $(function () {
             }]
         });
     });
-});
-
-$(document).ready(function(){
-    $("#tabs ul li a.tab-nav").click(function(){
+});		
+		
+		
+		
                
 // chart data here without function
  
- $('#goavote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+$('#goavote').highcharts({  
+	 colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
 
 	chart: {
@@ -522,7 +516,8 @@ $(document).ready(function(){
         }]
 
 });
-$('#upvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+$('#upvote').highcharts({
+	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
 
 	chart: {
@@ -537,7 +532,10 @@ $('#upvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', 
             y: -20
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
         },
         plotOptions: {
             pie: {
@@ -576,7 +574,8 @@ $('#upvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', 
         }]
 
 });
-$('#ukvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+$('#ukvote').highcharts({
+	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
 
 	chart: {
@@ -591,7 +590,10 @@ $('#ukvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', 
             y: -20
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
         },
         plotOptions: {
             pie: {
@@ -629,7 +631,8 @@ $('#ukvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', 
         }]
 
 });
-$('#manipurvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+$('#manipurvote').highcharts({
+	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
       '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
 
 	chart: {
@@ -644,7 +647,10 @@ $('#manipurvote').highcharts({  colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC
             y: -20
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
         },
         plotOptions: {
             pie: {
@@ -817,7 +823,10 @@ $(function () {
                 text: ''
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
             },
             plotOptions: {
                 pie: {

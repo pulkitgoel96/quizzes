@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 @media (max-width: 1023px) {
+	
+
+	
+	
+	
+	
+	
 .chart-content {
 	width: 200px;
 	height: 300px;
@@ -26,7 +33,11 @@
 }
 
 @media (max-width: 620px) {
+	.election-table ul li{
+		border: 1px solid #d4d5d7;
+	}
 	
+/*
 	.election-table ul li{
 		float:none;
 		display: block;
@@ -37,6 +48,7 @@
 	.election-table ul li:first-child{
 		border-top: 1px solid #d4d5d7;
 	}
+*/
 	
 	.table-cont h3, .election-data table {
   font-size: 25px;

@@ -10,3 +10,28 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function(){
+setTimeout(function(){
+	
+$('.slider-frame-1').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 2000,
+  dots: true,
+  //variableWidth: true
+	responsive: [
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+});		
+}, 2000);
+});

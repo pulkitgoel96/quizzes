@@ -1,6 +1,45 @@
 @charset "utf-8";
 
 @media (max-width: 1023px) {
+.carousel-wrapper .story-item a figcaption{
+		font-size: 17px;
+		line-height: 20px;
+		min-height: 85px;
+	}
+	
+	.first-story a figcaption{
+		font-size:25px;
+	}
+
+	
+/*Responsive 5 stories*/	
+
+.story-frame figcaption {
+    padding: 7px 10px 0 113px;
+}
+	
+.story-frame figure img {
+    height: 60px;
+}
+	
+.story-frame a {
+    margin: 0px 0 0 0;
+    line-height: 12px;
+    font-size: 12px;
+	min-height: 60px;
+}
+
+.story-frame {
+    margin: 0px 0px 12px 0px;
+}
+
+/*Responsive 5 stories*/	
+	
+	
+	
+	
+	
+	
 .chart-content {
 	width: 200px;
 	height: 300px;

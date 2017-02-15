@@ -1,3 +1,5 @@
+// State election stories
+
 $(document).ready(function() {
   var sections = [
 	  {state: 'slider', id:2728},
@@ -21,12 +23,8 @@ $(document).ready(function() {
   });
 });
 
-//auto=format&rect=0,0,2348,1321&q=35&w=270&fm=pjpg
 
-//https://www.thequint.com/api/v1/stories
-
-
-
+// elections 2017
 
 var sectionId = 2665;
 var template = 'live-blog';
@@ -47,7 +45,7 @@ $(document).ready(function() {
 		var firsr_story = $('#election-stories .story-frame:first').html();
 			$('#first-story').html(firsr_story);
 		}, 2000);
-});
+	});
 
 
 
@@ -71,12 +69,13 @@ $(document).ready(function() {
     var elements = keyEvents.map(function(card) {
       var storyElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'})
       return '<a href="/'+ card.storySlug +'" target="blank"><p>' + storyElement.text + '</p></a>'
-    });
+    })
     elements.forEach(function(element) {
-      $('#key-events').append(element);
-    });
-  }); 
-});
+      $('#key-events').append(element)
+    })
+  })  
+})
+
 
 
 
@@ -100,9 +99,6 @@ $('.slider-2').slick({
   autoplaySpeed: 2000
   //variableWidth: true
 });	
-	
-	
-	
 	
 }, 2000);
 });
