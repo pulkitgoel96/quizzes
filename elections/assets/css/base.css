@@ -247,11 +247,7 @@ template {
 	right: 20px;
 	color: #fff;
 }
-.logo {
-	display: block;
-	width: 30px;
-	z-index: 9999;
-}
+
 .valign-center {
 	position: relative;
 	top: 50%;
