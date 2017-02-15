@@ -207,3 +207,9 @@
     opacity: .75;
     color: black;
 }
+
+
+
+/*Custom CSS*/
+.slick-dots li{border:0px !important;}
+

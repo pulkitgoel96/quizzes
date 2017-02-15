@@ -34,12 +34,6 @@
 }
 
 /*Responsive 5 stories*/	
-	
-	
-	
-	
-	
-	
 .chart-content {
 	width: 200px;
 	height: 300px;
@@ -89,6 +83,42 @@
 }
 
 @media (max-width: 620px) {
+	
+	/*Responsive 5 stories*/	
+
+.story-frame figcaption {
+    padding: 10px 10px 0 152px;
+}
+	
+.story-frame figure img {
+    height: 80px;
+}
+	
+.story-frame a {
+    margin: 0px 0 0 0;
+    line-height: 17px;
+    font-size: 15px;
+	min-height: 80px;
+}
+
+.story-frame {
+    margin: 0px 0px 12px 0px;
+}
+
+/*Responsive 5 stories*/
+
+	.carousel-wrapper h3{
+		font-size:25px;
+	}
+	
+	
+	.gallery-item{
+		height: 200px;
+	}
+	
+	
+	
+	
 .video-wrapper h2 {
 	font-size: 31px;
 	margin: 0px 40px;
