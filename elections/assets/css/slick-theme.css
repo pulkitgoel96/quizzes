@@ -84,11 +84,11 @@
 
 .slick-prev
 {
-    left: 25px;
+    left: -25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 25px;
+    right: -25px;
     left: auto;
 }
 .slick-prev:before
@@ -102,12 +102,12 @@
 
 .slick-next
 {
-    right: 25px;
+    right: -25px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 25px;
+    left: -25px;
 }
 .slick-next:before
 {
@@ -142,13 +142,9 @@
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
     margin: 0 5px;
-    padding: 0;
+    padding: 0 !important;
 
     cursor: pointer;
 }
@@ -212,4 +208,105 @@
 
 /*Custom CSS*/
 .slick-dots li{border:0px !important;}
+.slick-slide{outline: none !important; }
+
+/*live blog*/
+
+
+
+.liveblog .slick-prev:before,
+.liveblog .slick-next:before
+{
+    font-family:'FontAwesome';
+    font-size: 25px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #FFBF00;
+}
+
+
+
+.liveblog .slick-prev
+{
+    left:2px;
+}
+
+.liveblog .slick-prev:before
+{
+    content: '\f104';
+}
+
+
+.liveblog .slick-next
+{
+    right:2px;
+}
+
+.liveblog .slick-next:before
+{
+    content: '\f105';
+}
+
+
+/*election-table*/
+.election-table .slick-dots li button:before{
+content: '';
+	display: none;
+}
+
+.election-table .slick-dots li button{
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #f3f3f3;
+	background: #FFBF00;
+}
+
+.election-table .slick-dots li.slick-active button{
+	background: #f3f3f3;
+}
+
+/*carousel-wrapper*/
+
+.carousel-wrapper .slick-prev:before,
+.carousel-wrapper .slick-next:before
+{
+    font-family:'FontAwesome';
+    font-size: 40px;
+    line-height: 1;
+
+    opacity: 1;
+    color: #4D086A;
+}
+
+
+
+.carousel-wrapper .slick-prev
+{
+    left:-25px;
+}
+
+.carousel-wrapper .slick-prev:before
+{
+    content: '\f0d9';
+}
+
+
+.carousel-wrapper .slick-next
+{
+    right:-25px;
+}
+
+.carousel-wrapper .slick-next:before
+{
+    content: '\f0da';
+}
+
+
+
+
+
+
+
 

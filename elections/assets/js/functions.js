@@ -93,9 +93,11 @@ $('.slider-1').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
 		arrows: false,
+		  //centerMode: true,
+		 variableWidth: true
       }
     }
 
@@ -120,13 +122,20 @@ $('.slider-2').slick({
   ]
 });	
 
+
+	
+}, 2000);
+	
+	
+	
+	
 $('.slider-3').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: false,
-  arrows: false,
+  arrows: true,
   autoplaySpeed: 2000,
-  dots: true,
+  //dots: true,
 	responsive: [
 
     {
@@ -140,7 +149,7 @@ $('.slider-3').slick({
   ]
 });
 	
-}, 2000);
+	
 });
 
 

@@ -6,6 +6,7 @@ $(document).ready(function(){
 	var tableContent_1 = $('.table-content-1').html();
 	$('.box-info').html(tableContent);
 	$('.election-data').html(tableContent_1);
+	
 });
 
 
@@ -33,5 +34,5 @@ $('.slider-frame-1').slick({
 
   ]
 });		
-}, 2000);
+}, 100);
 });

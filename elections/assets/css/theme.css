@@ -64,16 +64,81 @@ h1, h2, h3, h4, h5, h6 {
 .logo img{width:100%;}
 
 .election-text {
-  color: #ffbf00;
+  color: #fff;
   display: inline-block;
   float: left;
   font-family: "Fira Sans Extra Condensed",sans-serif;
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 500;
-  padding: 6px 0 0 10px;
+  padding: 10px 0 0 10px;
   text-transform: uppercase;
   
 }
+
+.election-text a{
+	color: #FFBF00;
+}
+
+.election-banner{
+	position: relative;
+	background-color: #FFBF00;
+	background-image: url(../images/hand.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 25%;
+	margin: 20px 0 0 0 ;
+	overflow: hidden;
+	
+}
+
+
+.election-banner::after {
+  background: #f3f3f3 none repeat scroll 0 0;
+  content: "";
+  height: 73px;
+  padding: 0;
+  position: absolute;
+  right: -155px;
+  top: -27px;
+  transform: skew(0deg, -38deg);
+  width: 240px;
+  z-index: 1;
+}
+
+
+.election-banner h2{
+  color: #fff;
+    font-family: "Fira Sans Extra Condensed",sans-serif;
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    background: #4D086A;
+    display: inline-block;
+    padding-right: 80px;
+}
+
+.election-banner h2 span{color: #FFBF00;}
+
+
+.election-banner h2::after{
+	width: 130px;
+    height: 73px;
+    background: #4D086A;
+    content: '';
+    top: -22px;
+    right: -85px;
+    padding: 0;
+    position: absolute;
+    transform: skew(0deg, -38deg);
+    z-index: 1;	
+}
+
+
 .liveblog h2 {
   color: #fff;
   font-size: 38px;
@@ -84,23 +149,54 @@ h1, h2, h3, h4, h5, h6 {
 	top: 10px;
 	left: 10px;
 }
-
-.liveblog-wrapper{padding:30px 0px; font-family: "Fira Sans Extra Condensed",sans-serif;  text-transform: uppercase;}
+.row.liveblog{margin:0px -10px 30px -10px }
+.liveblog-wrapper{padding:0px 0px; font-family: "Fira Sans Extra Condensed",sans-serif;}
 
 .liveblog-wrapper .container .liveblog{
-	padding: 10px;
-	background-color: #FFBF00;
+	padding: 0px;
 	position:relative;
-/*	min-height: 80px;*/
 }
-
-/*.liveblog-list{min-height: 40px;  margin-left: 75px;}*/
+.liveblog-wrapper h2 {
+  color: #4d086a;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
 .list-item {
   color: #4d086a;
   font-size: 17px;
   font-weight: 500;
-  line-height: 20px;
   padding: 0 10px
+}
+
+.list-item h3 {
+  color: #4d086a;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0 0 4px;
+  padding: 0px;
+}
+.list-item h3 span:first-child{
+	background:#4D086A;
+	color: #fff;
+	display: none;
+}
+
+.list-item h3 span:last-child{background-color: #ffbf00; padding: 0px 4px;} 
+.list-item p{
+	line-height: 110%;
+	margin: 0;
+	color: #fff;
+}
+
+
+.list-content{
+	padding: 10px;
+	background: #4D086A;
 }
 
 .container {
@@ -511,8 +607,8 @@ input.search-data {
     font-weight: 500;
     line-height: 22px;
     padding: 10px;
-	color: #d72331;
 	transition: 0.3s all ease-in-out;
+	min-height: 70px;
 }
 
 .carousel-wrapper .story-item a:hover figcaption{
@@ -539,9 +635,9 @@ input.search-data {
 	
 }
 .carousel-wrapper h3{
-	font-size: 35px;
+	font-size: 40px;
     font-weight: 500;
-    color: #fff;
+    color: #4D086A;
     margin: 15px 0px 10px 0px;
     line-height: 100%;
 }

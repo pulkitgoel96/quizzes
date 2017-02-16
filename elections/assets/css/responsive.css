@@ -1,38 +1,31 @@
 @charset "utf-8";
 
 @media (max-width: 1023px) {
-.carousel-wrapper .story-item a figcaption{
-		font-size: 17px;
-		line-height: 20px;
-		min-height: 85px;
-	}
-	
-	.first-story a figcaption{
-		font-size:25px;
-	}
-
-	
+.carousel-wrapper .story-item a figcaption {
+	font-size: 17px;
+	line-height: 20px;
+	min-height: 85px;
+}
+.first-story a figcaption {
+	font-size: 25px;
+}
 /*Responsive 5 stories*/	
 
 .story-frame figcaption {
-    padding: 7px 10px 0 113px;
+	padding: 7px 10px 0 113px;
 }
-	
 .story-frame figure img {
-    height: 60px;
+	height: 60px;
 }
-	
 .story-frame a {
-    margin: 0px 0 0 0;
-    line-height: 12px;
-    font-size: 12px;
+	margin: 0px 0 0 0;
+	line-height: 12px;
+	font-size: 12px;
 	min-height: 60px;
 }
-
 .story-frame {
-    margin: 0px 0px 12px 0px;
+	margin: 0px 0px 12px 0px;
 }
-
 /*Responsive 5 stories*/	
 .chart-content {
 	width: 200px;
@@ -83,42 +76,80 @@
 }
 
 @media (max-width: 620px) {
+	.election-banner{
+		background-size:32%;
+	}
 	
-	/*Responsive 5 stories*/	
+	.election-banner{
+		margin:15px 0px;
+	}
+	
+	.election-banner h2 {
+  font-size: 24px;
+  padding: 5px 3px 5px 5px;
+		letter-spacing: 0;
+}
+	
+	.election-banner h2::after {
+
+ 
+ 
+  right: -72px;
+  top: -59px;
+  transform: skew(0deg, -38deg);
+  width: 75px;
+  z-index: 1;
+}
+	
+	
+	
+.election-text {
+	font-size: 20px;
+	padding: 12px 0 0 10px;
+}
+	.story-list{width:260px !important;}
+	
+	.carousel-wrapper{margin-bottom:15px;}
+	.liveblog-wrapper{background: #4D086A; margin: 0 0 15px}
+	.liveblog-wrapper h2{display: none;}
+.list-item {
+	padding: 0px 25px;
+}
+	
+	.list-item h3 span:first-child{display:inline-block; margin-right: 3px;}
+	.list-item h3 span:last-child{display:inline-block;}
+	
+	.list-item h3{padding: 0;}
+	
+	
+.row.liveblog {
+	margin: 0px -10px;
+}
+/*Responsive 5 stories*/	
 
 .story-frame figcaption {
-    padding: 10px 10px 0 152px;
+	padding: 10px 10px 0 152px;
 }
-	
 .story-frame figure img {
-    height: 80px;
+	height: 80px;
 }
-	
 .story-frame a {
-    margin: 0px 0 0 0;
-    line-height: 17px;
-    font-size: 15px;
+	margin: 0px 0 0 0;
+	line-height: 17px;
+	font-size: 15px;
 	min-height: 80px;
 }
-
 .story-frame {
-    margin: 0px 0px 12px 0px;
+	margin: 0px 0px 12px 0px;
 }
-
 /*Responsive 5 stories*/
 
-	.carousel-wrapper h3{
-		font-size:25px;
-	}
-	
-	
-	.gallery-item{
-		height: 200px;
-	}
-	
-	
-	
-	
+.carousel-wrapper h3 {
+	font-size: 25px;
+}
+.gallery-item {
+	height: 200px;
+}
 .video-wrapper h2 {
 	font-size: 31px;
 	margin: 0px 40px;
@@ -179,6 +210,4 @@ td, th {
 .tab-wrapper::after {
 	height: 120px;
 }
-	
-	
 }

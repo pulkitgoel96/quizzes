@@ -2,59 +2,69 @@
 
 $(document).ready(function(){
 	
-	$('#electionData_1 h3').text('GOA');
-	$('#electionData_1 .tr_1_td_1').text('BJP');
-	$('#electionData_1 .tr_1_td_2').text('50');
-	$('#electionData_1 .tr_2_td_1').text('INC');
-	$('#electionData_1 .tr_2_td_2').text('70');
-	$('#electionData_1 .tr_3_td_1').text('AAP');
-	$('#electionData_1 .tr_3_td_2').text('4');
-	$('#electionData_1 .tr_4_td_1').text('OTHERS');
-	$('#electionData_1 .tr_4_td_2').text('6');
+	$('#electionData_1 h3').text('UTTAR PRADESH');
+	$('#electionData_1 .tr_1_td_1 span').text('BJP');
+	$('#electionData_1 .tr_1_td_2 span').text('50');
+	$('#electionData_1 .tr_2_td_1 span').text('INC');
+	$('#electionData_1 .tr_2_td_2 span').text('70');
+	$('#electionData_1 .tr_3_td_1 span').text('AAP');
+	$('#electionData_1 .tr_3_td_2 span').text('4');
+	$('#electionData_1 .tr_4_td_1 span').text('SP + INC');
+	$('#electionData_1 .tr_4_td_2 span').text('102');
+	$('#electionData_1 .tr_5_td_1 span').text('OTHERS');
+	$('#electionData_1 .tr_5_td_2 span').text('6');
 	
 	
 	$('#electionData_2 h3').text('PUNJAB');
-	$('#electionData_2 .tr_1_td_1').text('BJP');
-	$('#electionData_2 .tr_1_td_2').text('50');
-	$('#electionData_2 .tr_2_td_1').text('INC');
-	$('#electionData_2 .tr_2_td_2').text('70');
-	$('#electionData_2 .tr_3_td_1').text('AAP');
-	$('#electionData_2 .tr_3_td_2').text('4');
-	$('#electionData_2 .tr_4_td_1').text('OTHERS');
-	$('#electionData_2 .tr_4_td_2').text('6');
+	$('#electionData_2 .tr_1_td_1 span').text('BJP');
+	$('#electionData_2 .tr_1_td_2 span').text('50');
+	$('#electionData_2 .tr_2_td_1 span').text('INC');
+	$('#electionData_2 .tr_2_td_2 span').text('70');
+	$('#electionData_2 .tr_3_td_1 span').text('AAP');
+	$('#electionData_2 .tr_3_td_2 span').text('4');
+	$('#electionData_2 .tr_4_td_1 span').text('SP + INC');
+	$('#electionData_2 .tr_4_td_2 span').text('102');
+	$('#electionData_2 .tr_5_td_1 span').text('OTHERS');
+	$('#electionData_2 .tr_5_td_2 span').text('6');
 	
 	
 	$('#electionData_3 h3').text('UTTARAKHAND');
-	$('#electionData_3 .tr_1_td_1').text('BJP');
-	$('#electionData_3 .tr_1_td_2').text('50');
-	$('#electionData_3 .tr_2_td_1').text('INC');
-	$('#electionData_3 .tr_2_td_2').text('70');
-	$('#electionData_3 .tr_3_td_1').text('AAP');
-	$('#electionData_3 .tr_3_td_2').text('4');
-	$('#electionData_3 .tr_4_td_1').text('OTHERS');
-	$('#electionData_3 .tr_4_td_2').text('6');
+	$('#electionData_3 .tr_1_td_1 span').text('BJP');
+	$('#electionData_3 .tr_1_td_2 span').text('50');
+	$('#electionData_3 .tr_2_td_1 span').text('INC');
+	$('#electionData_3 .tr_2_td_2 span').text('70');
+	$('#electionData_3 .tr_3_td_1 span').text('AAP');
+	$('#electionData_3 .tr_3_td_2 span').text('4');
+	$('#electionData_3 .tr_4_td_1 span').text('SP + INC');
+	$('#electionData_3 .tr_4_td_2 span').text('102');
+	$('#electionData_3 .tr_5_td_1 span').text('OTHERS');
+	$('#electionData_3 .tr_5_td_2 span').text('6');
 	
 	
-	$('#electionData_4 h3').text('MANIPUR');
-	$('#electionData_4 .tr_1_td_1').text('BJP');
-	$('#electionData_4 .tr_1_td_2').text('50');
-	$('#electionData_4 .tr_2_td_1').text('INC');
-	$('#electionData_4 .tr_2_td_2').text('70');
-	$('#electionData_4 .tr_3_td_1').text('AAP');
-	$('#electionData_4 .tr_3_td_2').text('4');
-	$('#electionData_4 .tr_4_td_1').text('OTHERS');
-	$('#electionData_4 .tr_4_td_2').text('6');
+	$('#electionData_4 h3').text('GOA');
+	$('#electionData_4 .tr_1_td_1 span').text('BJP');
+	$('#electionData_4 .tr_1_td_2 span').text('50');
+	$('#electionData_4 .tr_2_td_1 span').text('INC');
+	$('#electionData_4 .tr_2_td_2 span').text('70');
+	$('#electionData_4 .tr_3_td_1 span').text('AAP');
+	$('#electionData_4 .tr_3_td_2 span').text('4');
+	$('#electionData_4 .tr_4_td_1 span').text('SP + INC');
+	$('#electionData_4 .tr_4_td_2 span').text('102');
+	$('#electionData_4 .tr_5_td_1 span').text('OTHERS');
+	$('#electionData_4 .tr_5_td_2 span').text('6');
 	
 	
-	$('#electionData_5 h3').text('UTTAR PRADESH');
-	$('#electionData_5 .tr_1_td_1').text('BJP');
-	$('#electionData_5 .tr_1_td_2').text('50');
-	$('#electionData_5 .tr_2_td_1').text('INC');
-	$('#electionData_5 .tr_2_td_2').text('70');
-	$('#electionData_5 .tr_3_td_1').text('AAP');
-	$('#electionData_5 .tr_3_td_2').text('4');
-	$('#electionData_5 .tr_4_td_1').text('OTHERS');
-	$('#electionData_5 .tr_4_td_2').text('6');
+	$('#electionData_5 h3').text('MANIPUR');
+	$('#electionData_5 .tr_1_td_1 span').text('BJP');
+	$('#electionData_5 .tr_1_td_2 span').text('50');
+	$('#electionData_5 .tr_2_td_1 span').text('INC');
+	$('#electionData_5 .tr_2_td_2 span').text('70');
+	$('#electionData_5 .tr_3_td_1 span').text('AAP');
+	$('#electionData_5 .tr_3_td_2 span').text('4');
+	$('#electionData_5 .tr_4_td_1 span').text('SP + INC');
+	$('#electionData_5 .tr_4_td_2 span').text('102');
+	$('#electionData_5 .tr_5_td_1 span').text('OTHERS');
+	$('#electionData_5 .tr_5_td_2 span').text('6');
 	
 	
 	
