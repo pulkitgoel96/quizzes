@@ -200,7 +200,7 @@ table tr:nth-child(2n-1) {
 
 
 .row.table-row{margin:0px -10px 30px -10px;}
-.election-data{padding:10px; min-height: 200px;}
+.election-data{padding:10px;}
 .election-data table{
 width: 100%;
 	font-size: 25px;

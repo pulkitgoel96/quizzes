@@ -1,630 +1,135 @@
-         var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nBGRxoVGYj5Z-HT5tJrbLMQ9yyfKntTh1MatrAyWddE/pubhtml';
 
-      function init() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showInfo,
-                         simpleSheet: true } );
-      }
-
-      window.addEventListener('DOMContentLoaded', init)
-
-      function showInfo(data) {
-        // data comes through as a simple array since simpleSheet is turned on
-        //alert("Successfully processed " + data.length + " rows!")
-        //document.getElementById("english").innerHTML = "<strong>English:</strong> " + [ data[0].party, data[1].party, data[2].party ];
-		//document.getElementById("hindi").innerHTML = "<strong>Hindi:</strong> " + [ data[0].hindi, data[1].hindi, data[2].hindi ];
-		
-		  document.getElementById("spreadsheet_loc").innerHTML = "The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>";
-		  
-		  
-		  
-		  
-		  
-		  // English Table
-		  
-		document.getElementById("state_1").innerHTML = 
-			"<tr>" 
-			+ "<td>" + [ data[0].party,] + "</td>" 
-			+ "<td>" + [ data[0].seats,] + "</td>"  
-			+ "</tr>"
-			
-			+"<tr>" 
-			+ "<td>" + [ data[1].party,] + "</td>" 
-			+ "<td>" + [ data[1].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[2].party,] + "</td>" 
-			+ "<td>" + [ data[2].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[3].party,] + "</td>" 
-			+ "<td>" + [ data[3].seats,] + "</td>"  
-			+ "</tr>";
-		  
-		  // Hindi Table
-		  
-		  document.getElementById("state_2").innerHTML = 
-			"<tr>" 
-			+ "<td>" + [ data[0].hindi,] + "</td>" 
-			+ "<td>" + [ data[0].seats,] + "</td>"  
-			+ "</tr>"
-			
-			+"<tr>" 
-			+ "<td>" + [ data[1].hindi,] + "</td>" 
-			+ "<td>" + [ data[1].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[2].hindi,] + "</td>" 
-			+ "<td>" + [ data[2].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[3].hindi,] + "</td>" 
-			+ "<td>" + [ data[3].seats,] + "</td>"  
-			+ "</tr>";
-		  
-		  document.getElementById("state_3").innerHTML = 
-			"<tr>" 
-			+ "<td>" + [ data[0].party,] + "</td>" 
-			+ "<td>" + [ data[0].seats,] + "</td>"  
-			+ "</tr>"
-			
-			+"<tr>" 
-			+ "<td>" + [ data[1].party,] + "</td>" 
-			+ "<td>" + [ data[1].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[2].party,] + "</td>" 
-			+ "<td>" + [ data[2].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[3].party,] + "</td>" 
-			+ "<td>" + [ data[3].seats,] + "</td>"  
-			+ "</tr>";
-		  
-		  // Hindi Table
-		  
-		  document.getElementById("state_4").innerHTML = 
-			"<tr>" 
-			+ "<td>" + [ data[0].hindi,] + "</td>" 
-			+ "<td>" + [ data[0].seats,] + "</td>"  
-			+ "</tr>"
-			
-			+"<tr>" 
-			+ "<td>" + [ data[1].hindi,] + "</td>" 
-			+ "<td>" + [ data[1].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[2].hindi,] + "</td>" 
-			+ "<td>" + [ data[2].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[3].hindi,] + "</td>" 
-			+ "<td>" + [ data[3].seats,] + "</td>"  
-			+ "</tr>";
-		  
-		  document.getElementById("state_5").innerHTML = 
-			"<tr>" 
-			+ "<td>" + [ data[0].party,] + "</td>" 
-			+ "<td>" + [ data[0].seats,] + "</td>"  
-			+ "</tr>"
-			
-			+"<tr>" 
-			+ "<td>" + [ data[1].party,] + "</td>" 
-			+ "<td>" + [ data[1].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[2].party,] + "</td>" 
-			+ "<td>" + [ data[2].seats,] + "</td>"  
-			+ "</tr>"
-		
-			+"<tr>" 
-			+ "<td>" + [ data[3].party,] + "</td>" 
-			+ "<td>" + [ data[3].seats,] + "</td>"  
-			+ "</tr>";
-		  
-        console.log(data);
-      }
-
-
-
- 
-
-
-
-
-
-//Frame-chart-1
-/*
-$(document).ready(function(){
-	
-	$('#electionData_1 h3').text('UTTAR PRADESH');
-	$('#electionData_1 .tr_1_td_1 span').text('BJP');
-	$('#electionData_1 .tr_1_td_2 span').text('50');
-	$('#electionData_1 .tr_2_td_1 span').text('INC');
-	$('#electionData_1 .tr_2_td_2 span').text('70');
-	$('#electionData_1 .tr_3_td_1 span').text('AAP');
-	$('#electionData_1 .tr_3_td_2 span').text('4');
-	$('#electionData_1 .tr_4_td_1 span').text('SP + INC');
-	$('#electionData_1 .tr_4_td_2 span').text('102');
-	$('#electionData_1 .tr_5_td_1 span').text('OTHERS');
-	$('#electionData_1 .tr_5_td_2 span').text('6');
-	
-	
-	$('#electionData_2 h3').text('PUNJAB');
-	$('#electionData_2 .tr_1_td_1 span').text('BJP');
-	$('#electionData_2 .tr_1_td_2 span').text('50');
-	$('#electionData_2 .tr_2_td_1 span').text('INC');
-	$('#electionData_2 .tr_2_td_2 span').text('70');
-	$('#electionData_2 .tr_3_td_1 span').text('AAP');
-	$('#electionData_2 .tr_3_td_2 span').text('4');
-	$('#electionData_2 .tr_4_td_1 span').text('SP + INC');
-	$('#electionData_2 .tr_4_td_2 span').text('102');
-	$('#electionData_2 .tr_5_td_1 span').text('OTHERS');
-	$('#electionData_2 .tr_5_td_2 span').text('6');
-	
-	
-	$('#electionData_3 h3').text('UTTARAKHAND');
-	$('#electionData_3 .tr_1_td_1 span').text('BJP');
-	$('#electionData_3 .tr_1_td_2 span').text('50');
-	$('#electionData_3 .tr_2_td_1 span').text('INC');
-	$('#electionData_3 .tr_2_td_2 span').text('70');
-	$('#electionData_3 .tr_3_td_1 span').text('AAP');
-	$('#electionData_3 .tr_3_td_2 span').text('4');
-	$('#electionData_3 .tr_4_td_1 span').text('SP + INC');
-	$('#electionData_3 .tr_4_td_2 span').text('102');
-	$('#electionData_3 .tr_5_td_1 span').text('OTHERS');
-	$('#electionData_3 .tr_5_td_2 span').text('6');
-	
-	
-	$('#electionData_4 h3').text('GOA');
-	$('#electionData_4 .tr_1_td_1 span').text('BJP');
-	$('#electionData_4 .tr_1_td_2 span').text('50');
-	$('#electionData_4 .tr_2_td_1 span').text('INC');
-	$('#electionData_4 .tr_2_td_2 span').text('70');
-	$('#electionData_4 .tr_3_td_1 span').text('AAP');
-	$('#electionData_4 .tr_3_td_2 span').text('4');
-	$('#electionData_4 .tr_4_td_1 span').text('SP + INC');
-	$('#electionData_4 .tr_4_td_2 span').text('102');
-	$('#electionData_4 .tr_5_td_1 span').text('OTHERS');
-	$('#electionData_4 .tr_5_td_2 span').text('6');
-	
-	
-	$('#electionData_5 h3').text('MANIPUR');
-	$('#electionData_5 .tr_1_td_1 span').text('BJP');
-	$('#electionData_5 .tr_1_td_2 span').text('50');
-	$('#electionData_5 .tr_2_td_1 span').text('INC');
-	$('#electionData_5 .tr_2_td_2 span').text('70');
-	$('#electionData_5 .tr_3_td_1 span').text('AAP');
-	$('#electionData_5 .tr_3_td_2 span').text('4');
-	$('#electionData_5 .tr_4_td_1 span').text('SP + INC');
-	$('#electionData_5 .tr_4_td_2 span').text('102');
-	$('#electionData_5 .tr_5_td_1 span').text('OTHERS');
-	$('#electionData_5 .tr_5_td_2 span').text('6');
-	
-	
-	
-//	$('.election-data tr td').each(function(){
-//		var thisClass = $(this).text();
-//		$(this).addClass(thisClass);
-//	});
+var public_spreadsheet_elections = 'https://docs.google.com/spreadsheets/d/1nBGRxoVGYj5Z-HT5tJrbLMQ9yyfKntTh1MatrAyWddE/pubhtml';
 
 	
-	$('.election-data tr').each(function(){
-		var thisClass = $(this).find('td:first').text();
-		$(this).find('td:first').addClass(thisClass);
-	});
-	
-	
-	//$('.election-data tr td').addClass(thisClass);
-	
-	
-	// Common data
-	$('.count-table .table_title_1').text('Party');
-	$('.count-table .table_title_2').text('Per %');
-	$('.count-table .table_title_3').text('Total');
-	$('.count-table .table_title_4').text('Amount');
-	
-	
-	//For Table 1
-	
-	$('#table_1 .tr_1_td_1').text('data');
-	$('#table_1 .tr_1_td_2').text('data1');
-	$('#table_1 .tr_1_td_3').text('tbl-1');
-	$('#table_1 .tr_1_td_4').text('tbl-1');
-	
-	$('#table_1 .tr_2_td_1').text('tbl-1');
-	$('#table_1 .tr_2_td_2').text('tbl-1');
-	$('#table_1 .tr_2_td_3').text('tbl-1');
-	$('#table_1 .tr_2_td_4').text('tbl-1');
-	
-	$('#table_1 .tr_3_td_1').text('tbl-1');
-	$('#table_1 .tr_3_td_2').text('tbl-1');
-	$('#table_1 .tr_3_td_3').text('tbl-1');
-	$('#table_1 .tr_3_td_4').text('tbl-1');
-	
-	$('#table_1 .tr_4_td_1').text('tbl-1');
-	$('#table_1 .tr_4_td_2').text('tbl-1');
-	$('#table_1 .tr_4_td_3').text('tbl-1');
-	$('#table_1 .tr_4_td_4').text('tbl-1');
-	
-	$('#table_1 .table_result').text("'Party 1' Result text here");
-	
-	//For Table 2
-	
-	$('#table_2 .tr_1_td_1').text('tbl-2');
-	$('#table_2 .tr_1_td_2').text('tbl-2');
-	$('#table_2 .tr_1_td_3').text('tbl-2');
-	$('#table_2 .tr_1_td_4').text('tbl-2');
-	
-	$('#table_2 .tr_2_td_1').text('tbl-2');
-	$('#table_2 .tr_2_td_2').text('tbl-2');
-	$('#table_2 .tr_2_td_3').text('tbl-2');
-	$('#table_2 .tr_2_td_4').text('tbl-2');
-	
-	$('#table_2 .tr_3_td_1').text('tbl-2');
-	$('#table_2 .tr_3_td_2').text('tbl-2');
-	$('#table_2 .tr_3_td_3').text('tbl-2');
-	$('#table_2 .tr_3_td_4').text('tbl-2');
-	
-	$('#table_2 .tr_4_td_1').text('tbl-2');
-	$('#table_2 .tr_4_td_2').text('tbl-2');
-	$('#table_2 .tr_4_td_3').text('tbl-2');
-	$('#table_2 .tr_4_td_4').text('tbl-2');
-	
-	$('#table_2 .table_result').text("'Party 2' Result text here");
-	
-	//For Table 3
-	
-	$('#table_3 .tr_1_td_1').text('tbl-3');
-	$('#table_3 .tr_1_td_2').text('tbl-3');
-	$('#table_3 .tr_1_td_3').text('tbl-3');
-	$('#table_3 .tr_1_td_4').text('tbl-3');
-	
-	$('#table_3 .tr_2_td_1').text('tbl-3');
-	$('#table_3 .tr_2_td_2').text('tbl-3');
-	$('#table_3 .tr_2_td_3').text('tbl-3');
-	$('#table_3 .tr_2_td_4').text('tbl-3');
-	
-	$('#table_3 .tr_3_td_1').text('tbl-3');
-	$('#table_3 .tr_3_td_2').text('tbl-3');
-	$('#table_3 .tr_3_td_3').text('tbl-3');
-	$('#table_3 .tr_3_td_4').text('tbl-3');
-	
-	$('#table_3 .tr_4_td_1').text('tbl-3');
-	$('#table_3 .tr_4_td_2').text('tbl-3');
-	$('#table_3 .tr_4_td_3').text('tbl-3');
-	$('#table_3 .tr_4_td_4').text('tbl-3');
-	
-	$('#table_3 .table_result').text("'Party 3' Result text here");
-	
-	//For Table 4
-	
-	$('#table_4 .tr_1_td_1').text('tbl-4');
-	$('#table_4 .tr_1_td_2').text('tbl-4');
-	$('#table_4 .tr_1_td_3').text('tbl-4');
-	$('#table_4 .tr_1_td_4').text('tbl-4');
-	
-	$('#table_4 .tr_2_td_1').text('tbl-4');
-	$('#table_4 .tr_2_td_2').text('tbl-4');
-	$('#table_4 .tr_2_td_3').text('tbl-4');
-	$('#table_4 .tr_2_td_4').text('tbl-4');
-	
-	$('#table_4 .tr_3_td_1').text('tbl-4');
-	$('#table_4 .tr_3_td_2').text('tbl-4');
-	$('#table_4 .tr_3_td_3').text('tbl-4');
-	$('#table_4 .tr_3_td_4').text('tbl-4');
-	
-	$('#table_4 .tr_4_td_1').text('tbl-4');
-	$('#table_4 .tr_4_td_2').text('tbl-4');
-	$('#table_4 .tr_4_td_3').text('tbl-4');
-	$('#table_4 .tr_4_td_4').text('tbl-4');
-	
-	$('#table_4 .table_result').text("'Party 4' Result text here");
-	
-	
-	//For Table 5
-	
-	$('#table_5 .tr_1_td_1').text('tbl-5');
-	$('#table_5 .tr_1_td_2').text('tbl-5');
-	$('#table_5 .tr_1_td_3').text('tbl-5');
-	$('#table_5 .tr_1_td_4').text('tbl-5');
-	
-	$('#table_5 .tr_2_td_1').text('tbl-5');
-	$('#table_5 .tr_2_td_2').text('tbl-5');
-	$('#table_5 .tr_2_td_3').text('tbl-5');
-	$('#table_5 .tr_2_td_4').text('tbl-5');
-	
-	$('#table_5 .tr_3_td_1').text('tbl-5');
-	$('#table_5 .tr_3_td_2').text('tbl-5');
-	$('#table_5 .tr_3_td_3').text('tbl-5');
-	$('#table_5 .tr_3_td_4').text('tbl-5');
-	
-	$('#table_5 .tr_4_td_1').text('tbl-5');
-	$('#table_5 .tr_4_td_2').text('tbl-5');
-	$('#table_5 .tr_4_td_3').text('tbl-5');
-	$('#table_5 .tr_4_td_4').text('tbl-5');
-	
-	$('#table_5 .table_result').text("'Party 5' Result text here");
-	
+function init() {
+Tabletop.init( { 
+	key: public_spreadsheet_elections,
+	callback: showInfo,
+	simpleSheet: true 
 });
-*/
-//Frame-chart-1
-
-Highcharts.chart('frame-chart-1', {
-	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'Browser<br>shares<br>2015',
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 40
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b>',
-                style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%']
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
-        data: [
-            ['Firefox',   20],
-            ['IE',       20],
-            ['Chrome', 20],
-            ['Safari',    20],
-            ['Opera',     20],
-            {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-    }]
-});
-
-//Frame-chart-2
-Highcharts.chart('frame-chart-2', {
-	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'Browser<br>shares<br>2015',
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 40
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            dataLabels: {
-                enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%']
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
-        data: [
-            ['Firefox',   10.38],
-            ['IE',       56.33],
-            ['Chrome', 24.03],
-            ['Safari',    4.77],
-            ['Opera',     0.91],
-            {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-    }]
-});
-
-//Frame-chart-3
-Highcharts.chart('frame-chart-3', {
-	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'Browser<br>shares<br>2015',
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 40
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            dataLabels: {
-                enabled: true,
-                distance: -50,
-                style: {
-                    fontWeight: 'bold',
-                    color: 'white'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%']
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
-        data: [
-            ['Firefox',   10.38],
-            ['IE',       56.33],
-            ['Chrome', 24.03],
-            ['Safari',    4.77],
-            ['Opera',     0.91],
-            {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-    }]
-});
-
-//Frame-chart-4
-Highcharts.chart('frame-chart-4', {
-	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'Browser<br>shares<br>2015',
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 40
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            dataLabels: {
-                enabled: true,
-                distance: -50,
-                style: {
-                    fontWeight: 'bold',
-                    color: 'white'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%']
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
-        data: [
-            ['Firefox',   10.38],
-            ['IE',       56.33],
-            ['Chrome', 24.03],
-            ['Safari',    4.77],
-            ['Opera',     0.91],
-            {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-    }]
-});
+}
 
 
-//Frame-chart-5
-Highcharts.chart('frame-chart-5', {
-	colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
-      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false
-    },
-    title: {
-        text: 'Browser<br>shares<br>2015',
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 40
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            dataLabels: {
-                enabled: true,
-                distance: -50,
-                style: {
-                    fontWeight: 'bold',
-                    color: 'white'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%']
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Browser share',
-        innerSize: '50%',
-        data: [
-            ['Firefox',   25],
-            ['IE',       20],
-            ['Chrome', 30],
-            ['Safari',    10],
-            ['Opera',     15],
-            {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        ]
-    }]
-});
+
+window.addEventListener('DOMContentLoaded', init)
+
+function showInfo(data) {
+	
+document.getElementById("data_up").innerHTML = 
+	"<tr>" 
+	+ "<td>" + [ data[0].upparty,] + "</td>" 
+	+ "<td>" + [ data[0].upseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[1].upparty,] + "</td>" 
+	+ "<td>" + [ data[1].upseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[2].upparty,] + "</td>" 
+	+ "<td>" + [ data[2].upseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[3].upparty,] + "</td>" 
+	+ "<td>" + [ data[3].upseats,] + "</td>"  
+	+ "</tr>";
+	
+	
+	document.getElementById("data_punjab").innerHTML = 
+	"<tr>" 
+	+ "<td>" + [ data[0].punjabparty,] + "</td>" 
+	+ "<td>" + [ data[0].punjabseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[1].punjabparty,] + "</td>" 
+	+ "<td>" + [ data[1].punjabseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[2].punjabparty,] + "</td>" 
+	+ "<td>" + [ data[2].punjabseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[3].punjabparty,] + "</td>" 
+	+ "<td>" + [ data[3].punjabseats,] + "</td>"  
+	+ "</tr>";
+	
+	document.getElementById("data_uk").innerHTML = 
+	"<tr>" 
+	+ "<td>" + [ data[0].ukparty,] + "</td>" 
+	+ "<td>" + [ data[0].ukseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[1].ukparty,] + "</td>" 
+	+ "<td>" + [ data[1].ukseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[2].ukparty,] + "</td>" 
+	+ "<td>" + [ data[2].ukseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[3].ukparty,] + "</td>" 
+	+ "<td>" + [ data[3].ukseats,] + "</td>"  
+	+ "</tr>";
+	
+	document.getElementById("data_goa").innerHTML = 
+	"<tr>" 
+	+ "<td>" + [ data[0].goaparty,] + "</td>" 
+	+ "<td>" + [ data[0].goaseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[1].goaparty,] + "</td>" 
+	+ "<td>" + [ data[1].goaseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[2].goaparty,] + "</td>" 
+	+ "<td>" + [ data[2].goaseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[3].goaparty,] + "</td>" 
+	+ "<td>" + [ data[3].goaseats,] + "</td>"  
+	+ "</tr>";
+	
+	document.getElementById("data_manipur").innerHTML = 
+	"<tr>" 
+	+ "<td>" + [ data[0].manipurparty,] + "</td>" 
+	+ "<td>" + [ data[0].manipurseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[1].manipurparty,] + "</td>" 
+	+ "<td>" + [ data[1].manipurseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[2].manipurparty,] + "</td>" 
+	+ "<td>" + [ data[2].manipurseats,] + "</td>"  
+	+ "</tr>"
+
+	+"<tr>" 
+	+ "<td>" + [ data[3].manipurparty,] + "</td>" 
+	+ "<td>" + [ data[3].manipurseats,] + "</td>"  
+	+ "</tr>";
+	
+	
+	
+  // Hindi Table
+console.log(data);
+}
+
+
+
+
+
 
