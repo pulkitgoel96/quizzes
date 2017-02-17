@@ -17,7 +17,7 @@ setTimeout(function(){
 $('.slider-frame-1').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   arrows: false,
   autoplaySpeed: 2000,
   dots: true,

@@ -132,7 +132,7 @@ $('.slider-2').slick({
 $('.slider-3').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   arrows: true,
   autoplaySpeed: 2000,
   //dots: true,

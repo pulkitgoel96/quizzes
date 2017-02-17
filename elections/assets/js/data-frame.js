@@ -2,8 +2,8 @@
 var public_spreadsheet_elections = 'https://docs.google.com/spreadsheets/d/1nBGRxoVGYj5Z-HT5tJrbLMQ9yyfKntTh1MatrAyWddE/pubhtml';
 
 	
-function init() {
-Tabletop.init( { 
+function init(){
+Tabletop.init({
 	key: public_spreadsheet_elections,
 	callback: showInfo,
 	simpleSheet: true 
@@ -12,10 +12,9 @@ Tabletop.init( {
 
 
 
-window.addEventListener('DOMContentLoaded', init)
+window.addEventListener('DOMContentLoaded', init);
 
-function showInfo(data) {
-	
+function showInfo(data) {	
 document.getElementById("data_up").innerHTML = 
 	"<tr>" 
 	+ "<td>" + [ data[0].upparty,] + "</td>" 
@@ -123,8 +122,8 @@ document.getElementById("data_up").innerHTML =
 	+ "</tr>";
 	
 	
+
 	
-  // Hindi Table
 console.log(data);
 }
 
