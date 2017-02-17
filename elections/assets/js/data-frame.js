@@ -1,5 +1,149 @@
-//Frame-chart-1
+         var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nBGRxoVGYj5Z-HT5tJrbLMQ9yyfKntTh1MatrAyWddE/pubhtml';
 
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } );
+      }
+
+      window.addEventListener('DOMContentLoaded', init)
+
+      function showInfo(data) {
+        // data comes through as a simple array since simpleSheet is turned on
+        //alert("Successfully processed " + data.length + " rows!")
+        //document.getElementById("english").innerHTML = "<strong>English:</strong> " + [ data[0].party, data[1].party, data[2].party ];
+		//document.getElementById("hindi").innerHTML = "<strong>Hindi:</strong> " + [ data[0].hindi, data[1].hindi, data[2].hindi ];
+		
+		  document.getElementById("spreadsheet_loc").innerHTML = "The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>";
+		  
+		  
+		  
+		  
+		  
+		  // English Table
+		  
+		document.getElementById("state_1").innerHTML = 
+			"<tr>" 
+			+ "<td>" + [ data[0].party,] + "</td>" 
+			+ "<td>" + [ data[0].seats,] + "</td>"  
+			+ "</tr>"
+			
+			+"<tr>" 
+			+ "<td>" + [ data[1].party,] + "</td>" 
+			+ "<td>" + [ data[1].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[2].party,] + "</td>" 
+			+ "<td>" + [ data[2].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[3].party,] + "</td>" 
+			+ "<td>" + [ data[3].seats,] + "</td>"  
+			+ "</tr>";
+		  
+		  // Hindi Table
+		  
+		  document.getElementById("state_2").innerHTML = 
+			"<tr>" 
+			+ "<td>" + [ data[0].hindi,] + "</td>" 
+			+ "<td>" + [ data[0].seats,] + "</td>"  
+			+ "</tr>"
+			
+			+"<tr>" 
+			+ "<td>" + [ data[1].hindi,] + "</td>" 
+			+ "<td>" + [ data[1].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[2].hindi,] + "</td>" 
+			+ "<td>" + [ data[2].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[3].hindi,] + "</td>" 
+			+ "<td>" + [ data[3].seats,] + "</td>"  
+			+ "</tr>";
+		  
+		  document.getElementById("state_3").innerHTML = 
+			"<tr>" 
+			+ "<td>" + [ data[0].party,] + "</td>" 
+			+ "<td>" + [ data[0].seats,] + "</td>"  
+			+ "</tr>"
+			
+			+"<tr>" 
+			+ "<td>" + [ data[1].party,] + "</td>" 
+			+ "<td>" + [ data[1].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[2].party,] + "</td>" 
+			+ "<td>" + [ data[2].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[3].party,] + "</td>" 
+			+ "<td>" + [ data[3].seats,] + "</td>"  
+			+ "</tr>";
+		  
+		  // Hindi Table
+		  
+		  document.getElementById("state_4").innerHTML = 
+			"<tr>" 
+			+ "<td>" + [ data[0].hindi,] + "</td>" 
+			+ "<td>" + [ data[0].seats,] + "</td>"  
+			+ "</tr>"
+			
+			+"<tr>" 
+			+ "<td>" + [ data[1].hindi,] + "</td>" 
+			+ "<td>" + [ data[1].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[2].hindi,] + "</td>" 
+			+ "<td>" + [ data[2].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[3].hindi,] + "</td>" 
+			+ "<td>" + [ data[3].seats,] + "</td>"  
+			+ "</tr>";
+		  
+		  document.getElementById("state_5").innerHTML = 
+			"<tr>" 
+			+ "<td>" + [ data[0].party,] + "</td>" 
+			+ "<td>" + [ data[0].seats,] + "</td>"  
+			+ "</tr>"
+			
+			+"<tr>" 
+			+ "<td>" + [ data[1].party,] + "</td>" 
+			+ "<td>" + [ data[1].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[2].party,] + "</td>" 
+			+ "<td>" + [ data[2].seats,] + "</td>"  
+			+ "</tr>"
+		
+			+"<tr>" 
+			+ "<td>" + [ data[3].party,] + "</td>" 
+			+ "<td>" + [ data[3].seats,] + "</td>"  
+			+ "</tr>";
+		  
+        console.log(data);
+      }
+
+
+
+ 
+
+
+
+
+
+//Frame-chart-1
+/*
 $(document).ready(function(){
 	
 	$('#electionData_1 h3').text('UTTAR PRADESH');
@@ -212,7 +356,7 @@ $(document).ready(function(){
 	$('#table_5 .table_result').text("'Party 5' Result text here");
 	
 });
-
+*/
 //Frame-chart-1
 
 Highcharts.chart('frame-chart-1', {

@@ -46,6 +46,11 @@
 <script src="assets/js/highcharts.js"></script>
 <script src="assets/js/highcharts-more.js"></script>
 <script src="assets/js/modules/exporting.js"></script>
+<script src="assets/js/spreadsheet.js"></script>
+
+
+
+
 </head>
 <body onload="setInterval('window.location.reload()', 600000);">
 <div class="wrapper frame-wrapper">
@@ -55,35 +60,47 @@
       <ul class="slider-frame-1">
         <li>
           <div class="table-cont" id="electionData_1">
-            <h3></h3>
-            <div class="election-data"></div>
+            <h3>UTTAR PRADESH</h3>
+            <div class="election-data">
+            	<table id="state_1"></table>
+            </div>
           </div>
         </li>
         <li>
           <div class="table-cont" id="electionData_2">
-            <h3></h3>
-            <div class="election-data"></div>
+            <h3>PUNJAB</h3>
+            <div class="election-data">
+            	<table id="state_2"></table>
+            </div>
           </div>
         </li>
         <li>
           <div class="table-cont" id="electionData_3">
-            <h3></h3>
-            <div class="election-data"></div>
+            <h3>UTTARAKHAND</h3>
+            <div class="election-data">
+            	<table id="state_3"></table>
+            </div>
           </div>
         </li>
         <li>
           <div class="table-cont" id="electionData_4">
-            <h3></h3>
-            <div class="election-data"></div>
+            <h3>GOA</h3>
+            <div class="election-data">
+            	<table id="state_4"></table>
+            </div>
           </div>
         </li>
         <li>
           <div class="table-cont" id="electionData_5">
-            <h3></h3>
-            <div class="election-data"></div>
+            <h3>MANIPUR</h3>
+            <div class="election-data">
+            	<table id="state_5"></table>
+            </div>
           </div>
         </li>
       </ul>
+      
+      <div id="spreadsheet_loc"></div>
     </div>
     <div class="row" style="display: none;">
       <div class="col col-1">
@@ -222,5 +239,6 @@
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 <script src="assets/js/functions-frame.js"></script> 
 <script src="assets/js/data-frame.js"></script>
+
 </body>
 </html>
