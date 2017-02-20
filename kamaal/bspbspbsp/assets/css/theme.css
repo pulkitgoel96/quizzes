@@ -1273,7 +1273,7 @@ p a {
 	stroke-width: 4px;
 }
 .map-key, .map-label {
-	font: 10px sans-serif;
+	font: 13px sans-serif;
 	text-anchor: middle;
 }
 .map-label {
@@ -1455,6 +1455,14 @@ text-align: center;
 
 .viewer1.frame9 {
   background-position: -1800px 50%;
+}
+.video-caption{
+	color: #505050;
+    display: block;
+    font: 14px/120% arial,helvetica,sans-serif;
+    padding: 6px 0;
+	margin-top: -25px;
+	
 }
 
 
