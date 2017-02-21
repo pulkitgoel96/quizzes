@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   margin: 0 0 4px;
   padding: 0px;
+  text-transform: uppercase;
 }
 .list-item h3 span:first-child{
 	background:#4D086A;
@@ -668,6 +669,8 @@ input.search-data {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+
+.load-slider{visibility: hidden; max-height: 30px;}
 
 
 

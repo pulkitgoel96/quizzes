@@ -46,7 +46,8 @@ $(document).ready(function() {
 	setTimeout(function(){
 		var firsr_story = $('#election-stories .story-frame:first').html();
 			$('#first-story').html(firsr_story);
-		}, 2000);
+			$('#election-stories').removeClass('load-slider');
+		}, 4000);
 	});
 
 
@@ -109,6 +110,8 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 setTimeout(function(){
+
+	
 	
 $('.slider-1').slick({
   slidesToShow: 3,
@@ -132,33 +135,11 @@ $('.slider-1').slick({
   ]
 });
 	
-$('.slider-2').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: true,
-  autoplaySpeed: 2000,
-	responsive: [
 
-    {
-      breakpoint: 600,
-      settings: {
-		arrows: false
-      }
-    }
-
-  ]
-});	
-
-
-	
-}, 2000);
-	
-	
-	
 	
 $('.slider-3').slick({
   slidesToShow: 5,
+	lazyLoad: 'ondemand',
   slidesToScroll: 1,
   autoplay: true,
   arrows: true,
@@ -176,6 +157,34 @@ $('.slider-3').slick({
 
   ]
 });
+
+$('.slider-1').removeClass('load-slider');
+//$('.slider-2').removeClass('load-slider');
+$('.slider-3').removeClass('load-slider');
+	
+}, 4000);
+	
+
+$('.slider-2').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  arrows: true,
+  autoplaySpeed: 2000,
+	responsive: [
+
+    {
+      breakpoint: 600,
+      settings: {
+		arrows: false
+      }
+    }
+
+  ]
+});
+	
+	
+
 	
 	
 });
