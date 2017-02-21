@@ -25,7 +25,7 @@ $('.slider-frame-1').slick({
 	responsive: [
 
     {
-      breakpoint: 600,
+      breakpoint: 601,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

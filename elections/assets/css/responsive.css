@@ -1,6 +1,16 @@
 @charset "utf-8";
 
 @media (max-width: 1023px) {
+	
+	.list-item h3{
+	font-size:16px;	
+	}
+	
+	.list-item p{
+		font-size:15px;	
+	}
+	
+	
 .carousel-wrapper .story-item a figcaption {
 	font-size: 17px;
 	line-height: 20px;
@@ -75,7 +85,26 @@
 }
 }
 
-@media (max-width: 620px) {
+
+@media (max-width: 767px) {
+	.list-item h3{
+		font-size:12px;
+		letter-spacing: 0px;
+	}
+}
+
+@media (max-width: 600px) {
+	
+.list-item h3{
+	font-size:18px;	
+	}
+	
+	.list-item p{
+		font-size:16px;	
+		min-height: 0;
+	}
+	
+	
 	.election-banner{
 		background-size:32%;
 	}
