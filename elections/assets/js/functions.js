@@ -3,7 +3,6 @@
 $(document).ready(function() {
   var sections = [
 	  {state: 'slider', id:2728},
-	  {state: 'photo-gallery', id:2728},
 	  {state: 'punjab', id:2666}, 
 	  {state: 'uttar-pradesh', id:2665}, 
 	  {state: 'uttarakhand', id:2667}, 
@@ -30,6 +29,9 @@ var sectionId = 2665;
 var template = 'live-blog';
 var fields = ['headline', 'cards', 'id', 'last-published-at', 'first-published-at', 'slug', ];
 
+
+// For elections 2017
+
 $(document).ready(function() {
   $.getJSON('https://thequint.com/api/v1/stories?section-id=' + sectionId + '&limit=5', function(res) {
     var stories = res.stories,
@@ -51,7 +53,7 @@ $(document).ready(function() {
 
 //Get Key events
 $(document).ready(function() {
-  $.getJSON('https://thequint.com/api/v1/stories?section-id=' + sectionId + '&template=' +template + '&fields=' + fields.join(','), function(res) {
+  $.getJSON('https://sketches-uat.staging.quintype.com/api/v1/stories?section-id=' + sectionId + '&template=' +template + '&fields=' + fields.join(','), function(res) {
     var stories = res.stories.map(function(story) {
       var cardsWithStorySlug = story.cards.map(function(card) {return Object.assign({}, card, {storySlug: story.slug})})
       return Object.assign({}, story, {cards: cardsWithStorySlug})
@@ -68,13 +70,14 @@ $(document).ready(function() {
       });
     var elements = keyEvents.map(function(card) {
       var storyElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'})
-      return '<a href="/'+ card.storySlug +'" target="blank"><p>' + storyElement.text + '</p></a>'
-    })
+      return '<a href="https://sketches-uat.staging.quintype.com/'+ card.storySlug +'" target="blank"><p>' + storyElement.text + '</p></a>'
+    });
     elements.forEach(function(element) {
       $('#key-events').append(element)
-    })
-  })  
-})
+    });
+  }); 
+});
+
 
 
 
@@ -193,28 +196,28 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-	$('#custom_tab_1.inner-tab .tabcontent').hide();
-	$('#custom_tab_1.inner-tab .tabcontent.open').show();
-	
-	
-	$('#tab_1').click(function(){
-		$('#custom_tab_1 ul li a').removeClass('is-active');
-		$(this).addClass('is-active');
-		
-		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').show();
-		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').hide();
-	});
-	
-	$('#tab_2').click(function(){
-		$('#custom_tab_1 ul li a').removeClass('is-active');
-		$(this).addClass('is-active');
-		
-		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').hide();
-		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').show();
-	});
-	
-});
+//$(document).ready(function(){
+//	$('#custom_tab_1.inner-tab .tabcontent').hide();
+//	$('#custom_tab_1.inner-tab .tabcontent.open').show();
+//	
+//	
+//	$('#tab_1').click(function(){
+//		$('#custom_tab_1 ul li a').removeClass('is-active');
+//		$(this).addClass('is-active');
+//		
+//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').show();
+//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').hide();
+//	});
+//	
+//	$('#tab_2').click(function(){
+//		$('#custom_tab_1 ul li a').removeClass('is-active');
+//		$(this).addClass('is-active');
+//		
+//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').hide();
+//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').show();
+//	});
+//	
+//});
 
 
 
@@ -228,13 +231,12 @@ $("document").ready( function() {
 		$('<thead></thead>').prependTo('#goa-criminal table').append($('#goa-criminal table tr:first'));
 		$('<thead></thead>').prependTo('#manipur table').append($('#manipur table tr:first'));
 		
-		
-		
 		//$('tr:first td').wrapInner('<div />').find('div').unwrap().wrap('<th/>');
 		//$("table").tablesorter(); 
 		//$('table').DataTable();
 		//$("table").tablesorter(); 
-		//$("table").trigger("update"); 
+		//$("table").trigger("update");
+		
 	}, 1000);
 	
  });
