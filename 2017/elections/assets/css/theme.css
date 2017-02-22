@@ -406,7 +406,7 @@ table tr:hover {
 	overflow: hidden;
 }
 .cand ul li .des {
-	margin: 0 0 0 70px;
+/*	margin: 0 0 0 70px;*/
 }
 .cand ul li .des h5 {
 	font-size: 17px;
