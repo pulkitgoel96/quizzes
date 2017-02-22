@@ -637,6 +637,7 @@ input.search-data {
 	height:395px;
 	background: #000;
 	text-align: center;
+	position: relative;
 }
 .gallery-item img{
 	display: inline-block;
@@ -652,7 +653,29 @@ input.search-data {
 
 .load-slider{visibility: hidden; max-height: 30px;}
 
+.img-caption{
+	position: absolute;
+	width: 100%;
+	padding: 15px;
+	color: #fff;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	text-align: left;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, left, right);
+	background-image:-webkit-linear-gradient(transparent, #000);
+	background-image:-moz-linear-gradient(transparent, #000);
+	background-image:-ms-linear-gradient(transparent, #000);
+}
 
+.block-title{
+	font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 5px;
+	color: #4D086A;
+}
 
 
 
