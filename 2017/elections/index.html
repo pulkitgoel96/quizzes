@@ -32,7 +32,6 @@
 <![endif]-->
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/d3.min.js"></script>
 <script src="assets/js/highcharts.js"></script>
 </head>
 
@@ -175,7 +174,6 @@
             <div class="col col-1">
               <div class="col-content fix-cont-1">
                 <h3 class="color-2">Education of Candidates</h3>
-                <!--	<h4>Sample headline</h4>-->
                 <div class="chart-content" id="educationpunjab"></div>
                 <p class="caption">Source: ADR India</p>
               </div>
@@ -231,41 +229,11 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Constituency Winner 2012</h3>
-                <h4>Sample headline</h4>
-                <div class="search-area">
-                  <input class="search-data" id="punjab_search" placeholder="Type to search" type="text">
-                  <button class="btn-search" id="punjab_btn_search" style="display: none;"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="punjab"></div>
-                </div>
-                <p class="caption">Source: Election Commission</p>
-              </div>
-            </div>
-          </div>
+
           <div class="row story-row">
             <div class="col col-3">
               <div class="col-content">
                 <div class="api-stories" id="punjab-election-stories"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row last-row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Candidates with Criminal Cases</h3>
-                <div class="search-area">
-                  <input class="search-data" id="punjab-criminal_search" placeholder="Type to search" type="text">
-                  <button class="btn-search" id="punjab-criminal_btn_search" style="display: none;"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="punjab-criminal"></div>
-                </div>
-                <p class="caption">Source: ADR India</p>
               </div>
             </div>
           </div>
@@ -329,22 +297,6 @@
               </div>
             </div>
           </div>
-          <div class="row last-row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Constituency Winner 2012</h3>
-                <h4>Sample headline</h4>
-                <div class="search-area">
-                  <input class="search-data" type="text" id="up_search" placeholder="Type to search">
-                  <button class="btn-search" id="up_btn_search"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="up"></div>
-                </div>
-                <p class="caption">Source: Election Commission</p>
-              </div>
-            </div>
-          </div>
         </div>
         
         <!--  UTTARAKHAND    -->
@@ -398,26 +350,69 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content fix-cont-1">
+                <h3 class="color-2">Education of Candidates</h3>
+                <div class="chart-content" id="educationuk"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-1">Party Wise Criminal Cases</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="ukpartycriminal"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-1">
+              <div class="col-content">
+                <h3 class="color-3">Highest Asset Candidates</h3>
+                <div class="space"></div>
+                <div class="cand cand-1">
+                  <ul>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Navjot Singh Sidhu | INC</h5>
+                        <p>Total Income: 9,90,99,930</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-2.png"></div>
+                      <div class="des">
+                        <h5>Shiv Lal Doda | IND</h5>
+                        <p>Total Income: 5,34,10,482</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="avatar"><img src="assets/images/avatar-1.png"></div>
+                      <div class="des">
+                        <h5>Aman Arora | AAP</h5>
+                        <p>Total Income: 4,23,91,349</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="col-content">
+                <h3 class="color-3">PArty wise Crorepatis</h3>
+                <h4>Sample headline</h4>
+                <div class="chart-content-2" id="ukcrorepatis"></div>
+                <p class="caption">Source: ADR India</p>
+              </div>
+            </div>
+          </div>
           <div class="row story-row">
             <div class="col col-3">
               <div class="col-content">
                 <div class="api-stories" id="uttarakhand-election-stories"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row last-row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Constituency Winner 2012</h3>
-                <h4>Sample headline</h4>
-                <div class="search-area">
-                  <input class="search-data" id="uk_search" placeholder="Type to search" type="text">
-                  <button class="btn-search" id="uk_btn_search"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="uk"></div>
-                </div>
-                <p class="caption">Source: Election Commission</p>
               </div>
             </div>
           </div>
@@ -478,7 +473,6 @@
             <div class="col col-1">
               <div class="col-content fix-cont-1">
                 <h3 class="color-2">Education of Candidates</h3>
-                <!--	<h4>Sample headline</h4>-->
                 <div class="chart-content" id="educationgoa"></div>
                 <p class="caption">Source: ADR India</p>
               </div>
@@ -534,43 +528,10 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Constituency Winner 2012</h3>
-                <h4>Sample headline</h4>
-                <div class="search-area">
-                  <input class="search-data" type="text" id="goa_search" placeholder="Type to search">
-                  <button class="btn-search" id="goa_btn_search"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="goa"></div>
-                </div>
-                <p class="caption">Source: Election Commission</p>
-              </div>
-            </div>
-          </div>
           <div class="row story-row">
             <div class="col col-3">
               <div class="col-content">
                 <div class="api-stories" id="goa-election-stories"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row last-row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Candidates with Criminal Cases</h3>
-                <!--<h4>Sample headline</h4>-->
-                
-                <div class="search-area">
-                  <input class="search-data" type="text" id="goa-criminal_search" placeholder="Type to search">
-                  <button class="btn-search" id="goa-criminal_btn_search"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="goa-criminal"></div>
-                </div>
-                <p class="caption">Source: ADR India</p>
               </div>
             </div>
           </div>
@@ -631,22 +592,6 @@
             <div class="col col-3">
               <div class="col-content">
                 <div class="api-stories" id="manipur-election-stories"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row last-row">
-            <div class="col col-3">
-              <div class="col-content">
-                <h3 class="color-1">Constituency Winner 2012</h3>
-                <h4>Sample headline</h4>
-                <div class="search-area">
-                  <input class="search-data" type="text" id="manipur_search" placeholder="Type to search">
-                  <button class="btn-search" id="manipur_btn_search"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="scroll-content">
-                  <div id="manipur"></div>
-                </div>
-                <p class="caption">Source: Election Commission</p>
               </div>
             </div>
           </div>

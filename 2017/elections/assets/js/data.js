@@ -1,126 +1,6 @@
-//Table Dat 1
 
-d3.text("data/punjabconstituency.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#punjab")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-
-d3.text("data/goa-constituency.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#goa")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-d3.text("data/manipur-constituency.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#manipur")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-d3.text("data/up-constituency.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#up")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-d3.text("data/uttarakhand-constituency.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#uk")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-
-d3.text("data/punjab-criminal.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#punjab-criminal")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
-
-d3.text("data/goacriminals.csv", function (data) {
-    var parsedCSV = d3.csv.parseRows(data);
-    var container = d3.select("#goa-criminal")
-        .append("table")
-
-        .selectAll("tr")
-        .data(parsedCSV)
-        .enter()
-        .append("tr")
-
-        .selectAll("td")
-        .data(function (d) { return d; })
-        .enter()
-        .append("td")
-        .text(function (d) { return d; });
-});
 
 // Charts
-
-
-
-
 
 
 $(document).ready(function(){
@@ -458,7 +338,208 @@ $(function () {
             }]
         });
     });
-});		
+});
+		
+
+$(function () {
+    Highcharts.chart('ukcrorepatis', {colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: 0,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Percentage'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Percentage of Crorepatis in Political Parties'
+        },
+        series: [{
+            name: 'Percentage',
+            data: [
+                ['SAD', 23.7],
+                ['INC', 16.1],
+                ['BJP', 14.2],
+                ['AAP', 14.0],
+                ['Apna<br>Punjab<br>Party', 12.5],
+                ['IND', 12.1],
+                ['SAD(A)', 11.8]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+});
+
+$(function () {
+    Highcharts.chart('ukpartycriminal', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: [
+                'INC',
+                'AAP',
+                'SAD',
+                'BJP',
+                'Apna Punjab Party',
+                'SAD(A)',
+                'Independent'
+            ]
+        },
+        yAxis: [{
+            min: 0,
+            title: {
+                text: '% of Candidates'
+            }
+        }, {
+            title: {
+                text: ''
+            },
+            opposite: true
+        }],
+        legend: {
+            shadow: false
+        },
+        tooltip: {
+            shared: true
+        },
+        plotOptions: {
+            column: {
+                grouping: false,
+                shadow: false,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '% of candidates with criminal cases',
+            color: 'rgba(165,170,217,1)',
+            data: [12, 11, 11, 9, 9, 9, 6],
+            pointPadding: 0.1,
+            pointPlacement: -0
+        }, {
+            name: '% of candidates with serious criminal cases',
+            color: 'rgba(126,86,134,.9)',
+            data: [8, 9, 9, 4, 7, 9, 6],
+            pointPadding: 0.1,
+            pointPlacement: -0
+        }]
+    });
+});
+		
+$(function () {
+    $(document).ready(function () {
+
+        // Build the chart
+        Highcharts.chart('educationuk', { colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                //pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				formatter: function() {
+      			return '<b>'+ this.point.name +'</b>: '+ this.point.y ;
+   			}
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{colors: ['#461211', '#CB2826', '#FAA31B', '#FFCC06', '#D9B89C', '#aaeeee', '#ff0066', '#eeaaee',
+      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+                name: 'Education',
+                colorByPoint: true,
+                data: [{
+                    name: 'Illiterate',
+                    y: 41
+                }, {
+                    name: 'Literate',
+                    y: 14
+                   
+                }, {
+                    name: '5th Pass',
+                    y: 76
+                }, {
+                    name: '8th Pass',
+                    y: 117
+                }, {
+                    name: '10th Pass',
+                    y: 280
+                }, {
+                    name: '12th Pass',
+                    y: 214
+                }, {
+                    name: 'Graduate',
+                    y: 144
+                }, {
+                    name: 'Graduate Professional',
+                    y: 98
+                }, {
+                    name: 'Post Graduate',
+                    y: 117
+                }, {
+                    name: 'Doctorate',
+                    y: 6
+                }, {
+                    name: 'Others',
+                    y: 26
+                }, {
+                    name: 'Not Given',
+                    y: 11
+                }]
+            }]
+        });
+    });
+});
+		
+		
 		
 		
 		
