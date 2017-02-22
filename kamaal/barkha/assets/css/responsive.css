@@ -19,7 +19,7 @@
 	display: block;
 }
 body {
-	padding: 0 0 54px 0;
+	padding: 0 0 40px 0;
 }
 ul.credits li {
 	float: left;
@@ -35,7 +35,7 @@ ul.credits li {
 	right: 0;
 	top: inherit;
 	background: rgba(255,255,255,0.3);
-	display: none;
+	padding-top: 5px;
 }
 .nav ul {
 	top: 0%;
@@ -147,10 +147,6 @@ h2 {
 	position: static;
 	width: 100%;
 	margin: 0px 0px 20px 0;
-}
-.nav ul li a {
-	width: 30px;
-	height: 30px;
 }
 .is-mobile {
 	display: block;
