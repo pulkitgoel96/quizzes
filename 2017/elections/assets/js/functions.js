@@ -227,34 +227,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
-//$(document).ready(function(){
-//	$('#custom_tab_1.inner-tab .tabcontent').hide();
-//	$('#custom_tab_1.inner-tab .tabcontent.open').show();
-//	
-//	
-//	$('#tab_1').click(function(){
-//		$('#custom_tab_1 ul li a').removeClass('is-active');
-//		$(this).addClass('is-active');
-//		
-//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').show();
-//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').hide();
-//	});
-//	
-//	$('#tab_2').click(function(){
-//		$('#custom_tab_1 ul li a').removeClass('is-active');
-//		$(this).addClass('is-active');
-//		
-//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_1').hide();
-//		$('#custom_tab_1.inner-tab .tabcontent#tab_cont_2').show();
-//	});
-//	
-//});
-
-
-
 $("document").ready( function() {
 	setTimeout(function(){
  		$('<thead></thead>').prependTo('#punjab-criminal table').append($('#punjab-criminal table tr:first'));
