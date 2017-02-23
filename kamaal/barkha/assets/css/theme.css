@@ -382,33 +382,7 @@ nav ul li a.active {
 .top-right {
 	float: right;
 }
-.top-logo {
-	width: 30px;
-	height: 30px;
-	background-image: url(../images/quint-icon-p.svg);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	width: 24px;
-	height: 36px;
-	margin: 6px 0 0 20px;
-	position: relative;
-}
-.top-logo span {
-	color: #7D00B3;
-	font-style: italic;
-	font-weight: bold;
-	line-height: 29px;
-	margin: 0 0 0 30px;
-	position: relative;
-	z-index: 10;
-}
-#vbl {
-	background-image: url(../images/zoom.jpeg);
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	background-position: center center;
-}
+
 /*For paralax CSS*/
 
 .full-image-section {
