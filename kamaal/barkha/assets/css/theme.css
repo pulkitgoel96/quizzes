@@ -11,7 +11,7 @@ p, blockquote {
 	margin-bottom: 20px;
 }
 blockquote {
-	color: #3e86c1;
+	color: #A32948;
 	font-size: 120%;
 	font-style: italic;
 	font-weight: 400;
@@ -280,7 +280,7 @@ h4 {
 	overflow: hidden;
 	font-size: 0px;
 	position: relative;
-	border: 2px solid #000;
+	border: 2px solid #A32948;
 	transition: 0.2s all ease-in-out;
 	-moz-transition: 0.2s all ease-in-out;
 	-webkit-transition: 0.2s all ease-in-out;
@@ -289,7 +289,7 @@ h4 {
 }
 
 nav ul li a.active {
-	background: #000;
+	background: #A32948;
 }
 
 .img-container {
