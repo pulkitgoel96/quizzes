@@ -1,13 +1,13 @@
 @charset "utf-8";
 body {
 	font-family: Georgia;
-	font-size: 21px;
+	font-size: 23px;
 	font-weight: normal;
 	/*padding-top: 45px;*/
 	color: #231f20;
 }
 p, blockquote {
-	line-height: 150%;
+	line-height: 200%;
 	margin-bottom: 20px;
 }
 blockquote {
