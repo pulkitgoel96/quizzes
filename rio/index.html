@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+<head>
+
+</head>
+h1 {
+  font-size: 3.0vh;
+}
+p{font-size:60%;}
+
+button :focus {outline:10}
+.label{font-weight:bold}
+.svg text{font-weight:bold}
+.x.axis{font-weight:bold}
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.ui-widget input, .ui-widget button{
+  font-family: sans-serif;
+  font-size: 10px;
+}
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 120px;                  
+  height: 80px;                 
+  padding: 2px;             
+  font: 12px sans-serif;   
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none; 
+  z-index :13;  
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+<div id="container" >
+      <h1 id="headline" class="viz-head">Medals aside, did India fare better in Rio?</h1>
+         </div>  
+    
+
+
+<form name="info" align = "center">
+
+<tr><td>
+<input type ="button" value="Both" id = "button3" >
+<input type ="button" value="Men" id = "button1" >
+<input type ="button" value="Women" id = "button2"  ></td></tr>
+
+
+
+<tr><br><br>
+
+<td><select name="sport" id="sport" onchange = "updategraph();">
+<option value="All Sports" selected>All Sports</option>
+<option value="Archery" >Archery</option>
+<option value="Athletics" >Athletics</option>
+<option value="Badminton">Badminton</option>
+<option value="Boxing">Boxing</option>
+<option value="Golf">Golf</option>
+<option value="Gymnastics">Gymnastics</option>
+<option value="Hockey">Hockey</option>
+<option value="Judo">Judo</option>
+<option value="Rowing">Rowing</option>
+<option value="Shooting">Shooting</option>
+<option value="Swimming">Swimming</option>
+<option value="Table tennis">Table tennis</option>
+<option value="Tennis">Tennis</option>
+<option value="Weightlifting">Weightlifting</option>
+<option value="Wrestling">Wrestling</option>
+
+
+</select></td></tr><br>
+</form>
+
+<script>
+
+var valuez =0;
+
+document.info.button3.focus();
+    d3.select("#button1").on("click",function(){
+document.info.button3.focus(function(){this.blur();});
+document.info.button2.focus(function(){this.blur();});
+document.info.button1.focus();       
+                   
+				$.getJSON("data.json", function(dataj) {
+
+					var key = "Men";
+					valuez = key;
+					var vals = [];
+
+					switch(key) {
+						case 'Men':
+							vals = dataj.Men;
+							break;
+						case 'Women':
+							vals = dataj.Women;
+							break;
+							
+					case 'Both':
+							vals = dataj.Women;
+							break;
+						
+					}
+					var $jsontwo = $("#sport");
+					var oldvalue = $("#sport").val();
+					$jsontwo.empty();
+					$.each(vals, function(index, value) {
+						$jsontwo.append("<option>" + value + "</option>");
+					})
+					 var check = $.inArray (oldvalue,vals)
+					 if (check !=-1){$("#sport").val(oldvalue)}
+					updategraph();
+					document.info.button1.focus();
+					})
+
+});
+  d3.select("#button2").on("click",function(){
+document.info.button3.focus(function(){this.blur();});
+document.info.button1.focus(function(){this.blur();});
+document.info.button2.focus();
+				$.getJSON("data.json", function(dataj) {
+
+					var key = "Women";
+					valuez = key;
+					var vals = [];
+
+					switch(key) {
+						case 'Men':
+							vals = dataj.Men;
+							break;
+						case 'Women':
+							vals = dataj.Women;
+							break;
+							
+					case 'Both':
+							vals = dataj.Women;
+							break;
+						
+					}
+					var $jsontwo = $("#sport");
+					var oldvalue = $("#sport").val();
+					$jsontwo.empty();
+					$.each(vals, function(index, value) {
+						$jsontwo.append("<option>" + value + "</option>");
+					})
+					 var check = $.inArray (oldvalue,vals)
+					 if (check !=-1){$("#sport").val(oldvalue)}
+					updategraph();
+					
+					})
+
+});
+  d3.select("#button3").on("click",function(){
+document.info.button1.focus(function(){this.blur();});
+document.info.button2.focus(function(){this.blur();});
+document.info.button3.focus();
+				$.getJSON("data.json", function(dataj) {
+
+					var key = "Both";
+					valuez = key;
+					var vals = [];
+
+					switch(key) {
+						case 'Men':
+							vals = dataj.Men;
+							break;
+						case 'Women':
+							vals = dataj.Women;
+							break;
+							
+					case 'Both':
+							vals = dataj.Women;
+							break;
+						
+					}
+					var $jsontwo = $("#sport");
+					var oldvalue = $("#sport").val();
+					$jsontwo.empty();
+					$.each(vals, function(index, value) {
+						$jsontwo.append("<option>" + value + "</option>");
+					})
+					 var check = $.inArray (oldvalue,vals)
+					 if (check !=-1){$("#sport").val(oldvalue)}
+					updategraph();
+					
+					})
+
+});
+
+
+
+
+// For Tooltip
+var div = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+		 
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 1100 - margin.left - margin.right,
+    height = 520- 0.2*margin.top -1.5*margin.bottom;
+
+var x = d3.scale.ordinal().domain(["","1996","2000","2004","2008","2012","2016"," "]) 
+    .rangePoints([0, width]);
+
+
+var y = d3.scale.linear()
+    .range([0,height]);
+
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left").tickFormat(d3.format("d"));
+	
+var color = d3.scale.category10();
+    
+
+var svg = d3.select("body").append("div").attr("id","container").classed("svg-container", true)
+     .append("svg")
+           .attr("viewBox","-5 -5 1100 550")
+							.attr("preserveAspectRatio", "xMinYMin meet")
+							.classed("svg-content-responsive", true).append("g")
+      .attr("transform", "translate("+2*margin.right+"," + 0.2*margin.top  + ")")
+	  ;
+							; 
+							  
+ var aspect = width / height,
+    container = $("#container");
+
+	
+$(window).on("resize", function() {
+    var targetWidth = container.width();
+    svg.attr("width", targetWidth);
+    svg.attr("height", Math.round(targetWidth / aspect));
+}).trigger("resize");
+ 
+
+
+
+
+
+
+
+ drawgraph();
+ 
+	
+function drawgraph(){	
+d3.tsv("data.tsv", function(error, data) {
+  if (error) throw error;
+// data = data.filter(function(d){return d.Sport == "Badminton" && d.Gender =="F" });
+ 
+
+ color.domain(data.map(function(d) { return d.Year; }));
+ 
+  data.forEach(function(d) {
+  
+    d.Rank = +d.Rank;
+  });
+ 
+
+  
+  
+  
+  y.domain(d3.extent(data, function(d) { return d.Rank; }));
+  
+  y.domain()[1] = y.domain()[1] +1;
+  
+   
+  
+   svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+  // .append("text")
+  //    .attr("class", "label")
+   //   .attr("x", width)
+   //   .attr("y", -6)
+    //.style("font-weight","bold")
+   //   .text("Weight (kg)");
+	
+	svg.append("text").attr("class", "label").attr("x", x("2016")-10).attr("y", height +36) .text("Rio");
+	svg.append("text").attr("class", "label").attr("x", x("2012")-22).attr("y", height +36) .text("London");
+	svg.append("text").attr("class", "label").attr("x", x("2008")-22).attr("y", height +36) .text("Beijing");
+	svg.append("text").attr("class", "label").attr("x", x("2004")-20).attr("y", height +36) .text("Athens");
+	svg.append("text").attr("class", "label").attr("x", x("2000")-22).attr("y", height +36) .text("Sydney");
+	svg.append("text").attr("class", "label").attr("x", x("1996")-22).attr("y", height +36) .text("Atlanta");
+
+	
+	  
+	  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Rank")
+	  
+
+	  
+	  var node = svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 5)
+      .attr("cx", function(d) { return x(d.Year); })
+      .attr("cy", function(d) { return y(d.Rank); })
+	  .style("fill", function(d) {return color(d.Year); }) 
+.style("stroke",function(d){ if (d.Medal != "") return "black"})
+  .style("stroke-width",function(d){ if (d.Medal != "") return 2})      											
+		.on("mouseover",  function (d) { if (d.Medal == "") {div.transition()        
+                .duration(50)      
+               .style("opacity",0.9 );
+            {div.html(d.Name+"<br/>"+"Sport:" +d.Sport+ "<br/>"+"Event:" +d.Event+ "<br/>" +"Rank:"+d.Rank)  
+                .style("left", (d3.event.pageX-60) + "px")     
+                .style("top", (d3.event.pageY +25) + "px"); }}
+             else {div.transition()        
+                .duration(50)      
+               .style("opacity",0.9 );
+            {div.html(d.Name+"<br/>"+"Sport:" +d.Sport+ "<br/>"+"Event:" +d.Event+ "<br/>"+"Medal:" +d.Medal)  
+                .style("left", (d3.event.pageX-60) + "px")     
+                .style("top", (d3.event.pageY +25) + "px"); }}				
+            })                  
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(100)      
+                .style("opacity", 0);})
+				
+	
+///Force	
+	  var force = d3.layout.force()
+    .nodes(data)
+    .size([width, height])
+    .on("tick", tick)
+    .charge(-1)
+    .gravity(0)
+    .chargeDistance(20);
+	
+	force.start();
+	
+	function tick(e) {
+    node.each(moveTowardDataPosition(e.alpha));
+
+    node.each(collide(e.alpha));
+
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+
+  
+  function moveTowardDataPosition(alpha) {
+    return function(d) {
+      d.x += (x(d.Year) - d.x) * 0.1 * alpha;
+      d.y += (y(d.Rank) - d.y) * 0.1 * alpha;
+    };
+  }
+ // Resolve collisions between nodes.
+ var radius =5,
+     padding =0.1;
+  function collide(alpha) {
+    var quadtree = d3.geom.quadtree(data);
+    return function(d) {
+      var r = 5 + 5+ padding,
+          nx1 = d.x - r,
+          nx2 = d.x + r,
+          ny1 = d.y - r,
+          ny2 = d.y + r;
+      quadtree.visit(function(quad, x1, y1, x2, y2) {
+        if (quad.point && (quad.point !== d)) {
+          var x = d.x - quad.point.x,
+              y = d.y - quad.point.y,
+              l = Math.sqrt(x * x + y * y),
+              r = 5 + 5 + padding;
+          if (l < r) {
+            l = (l - r) / l * alpha;
+            d.x -= x *= l;
+            d.y -= y *= l;
+            quad.point.x += x;
+            quad.point.y += y;
+          }
+        }
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+      });
+    };
+  }
+  
+  
+	   
+
+
+});
+}
+
+function updategraph()
+{
+
+d3.tsv("data.tsv", function(error, data) {
+  if (error) throw error;
+ 
+
+ var genderselected = valuez;
+    
+  var f = document.getElementById("sport");
+  sportselected = f.options[f.selectedIndex].value;
+  
+document.info.sport.focus(function(){this.blur()});
+
+  if (valuez == "Men" ){document.info.button1.focus();}
+  if (valuez == "Women" ){document.info.button2.focus();}
+  if (valuez == "Both" ){document.info.button3.focus();}
+
+  if (genderselected== "Both") {}
+  else if(genderselected== "Men")  {data = data.filter(function(d){return d.Gender =="M"});}
+  else if(genderselected== "Women")  {data = data.filter(function(d){return d.Gender =="F" });}
+  //else if(genderselected== "Women")  {data = data.filter(function(d){return d.Gender =="F" && d.Sport == sportselected});}
+  
+  if (sportselected != "All Sports") {data = data.filter(function(d){return d.Sport == sportselected});}
+
+  data.forEach(function(d) {
+    d.Rank = +d.Rank;
+    
+  });
+
+  
+  
+  y.domain(d3.extent(data, function(d) { return d.Rank; }));
+  
+
+  
+
+  
+   svg.select(".x.axis").transition().duration(250)
+      .call(xAxis);
+    
+	svg.select(".y.axis").transition().duration(250)
+      .call(yAxis);  
+	  
+	  svg.selectAll("circle").remove();
+
+
+	
+ var node = svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 5)
+      .attr("cx", function(d) { return x(d.Year); })
+      .attr("cy", function(d) { return y(d.Rank); })
+	  .style("fill", function(d) {return color(d.Year); }) 
+.style("stroke",function(d){ if (d.Medal != "") return "black"})
+  .style("stroke-width",function(d){ if (d.Medal != "") return 2})      											
+		.on("mouseover",  function (d) { if (d.Medal == "") {div.transition()        
+                .duration(50)      
+               .style("opacity",0.9 );
+            {div.html(d.Name+"<br/>"+"Sport:" +d.Sport+ "<br/>"+"Event:" +d.Event+ "<br/>" +"Rank:"+d.Rank)  
+                .style("left", (d3.event.pageX-60) + "px")     
+                .style("top", (d3.event.pageY +25) + "px"); }}
+             else {div.transition()        
+                .duration(50)      
+               .style("opacity",0.9 );
+            {div.html(d.Name+"<br/>"+"Sport:" +d.Sport+ "<br/>"+"Event:" +d.Event+ "<br/>"+"Medal:" +d.Medal)  
+               .style("left", (d3.event.pageX-60) + "px")     
+                .style("top", (d3.event.pageY +25) + "px"); }}
+            })                  
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(100)      
+                .style("opacity", 0);})
+				
+				
+	  
+ var force = d3.layout.force()
+    .nodes(data)
+    .size([width, height])
+    .on("tick", tick)
+    .charge(-1)
+    .gravity(0)
+    .chargeDistance(20);	
+	///Force	
+	force.start();
+	
+	function tick(e) {
+    node.each(moveTowardDataPosition(e.alpha));
+
+    node.each(collide(e.alpha));
+
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+
+  
+  function moveTowardDataPosition(alpha) {
+    return function(d) {
+      d.x += (x(d.Year) - d.x) * 0.1 * alpha;
+      d.y += (y(d.Rank) - d.y) * 0.1 * alpha;
+    };
+  }
+ // Resolve collisions between nodes.
+ var radius =5,
+     padding =0.1;
+  function collide(alpha) {
+    var quadtree = d3.geom.quadtree(data);
+    return function(d) {
+      var r = 5 + 5+ padding,
+          nx1 = d.x - r,
+          nx2 = d.x + r,
+          ny1 = d.y - r,
+          ny2 = d.y + r;
+      quadtree.visit(function(quad, x1, y1, x2, y2) {
+        if (quad.point && (quad.point !== d)) {
+          var x = d.x - quad.point.x,
+              y = d.y - quad.point.y,
+              l = Math.sqrt(x * x + y * y),
+              r = 5 + 5 + padding;
+          if (l < r) {
+            l = (l - r) / l * alpha;
+            d.x -= x *= l;
+            d.y -= y *= l;
+            quad.point.x += x;
+            quad.point.y += y;
+          }
+        }
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+      });
+    };
+  }
+
+});
+}
+
+</script>
+
+
+<p>
+<b>Notes: </b><br>
+1.Ring around a circle indicates medal.<br>
+2.Collison detection technique from d3 was used to position overlapping circles.<br>
+3.Disqualified Athletes and those with unclear rankings were eliminated from the visualisation.<br>
+4.To enable comparison in the visualisation across a large set, four marathon performances where Indian athletes registered high ranks have not been depicted. From 2012, Ram Singh Yadav (rank: 78). From 2016, Nitendra Singh (84), OP Jaisha (89) and Kavita Tungar (120).<br>
+5.Rank is shown on an inverted scale to facilitate visual reading of performance.<br>
+Data Source:<a href ="http://www.sports-reference.com">www.sports-reference.com</p>
+
+</body>		
+</html>
