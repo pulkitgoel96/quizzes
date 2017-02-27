@@ -33,20 +33,9 @@ var fields = ['headline', 'cards', 'id', 'last-published-at', 'first-published-a
 // For elections 2017
 
 $(document).ready(function() {
-  $.getJSON('https://thequint.com/api/v1/stories?section-id=' + sectionId + '&fields=' +fields.join(",") + '&limit=5', function(res) {
+  $.getJSON('https://thequint.com/api/v1/stories?section-id=' + sectionId + '&limit=5', function(res) {
     var stories = res.stories,
-        elements = stories.map(function(story) {
-			var x=1;
-			var cards = stories.reduce(function(acc, story) { return acc.concat(story.cards) }, []);
-			var firstCard = cards[0];
-			var imageKey = story['hero-image-s3-key'];
-			console.log(firstCard);
-			if(firstCard.metdata){
-				if(firstCard.metadata.attributes['liveblogimage']=="true"){
-				imageKey = imageKey; 	
-				}
-				}
-			 return '<div class="story-frame"><a href="http://thequint.com/' + story.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div>'});
+        elements = stories.map(function(story) { return '<div class="story-frame"><a href="http://thequint.com/' + story.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div>'});
     elements.forEach(function(element) {
           $('#election-stories').append(element);
         });
@@ -173,7 +162,7 @@ $('.slider-1').removeClass('load-slider');
 //$('.slider-2').removeClass('load-slider');
 $('.slider-3').removeClass('load-slider');
 	
-}, 4000);
+}, 6000);
 	
 
 $('.slider-2').slick({
