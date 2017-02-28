@@ -80,9 +80,7 @@
 .last-row .col-3 {
 	margin-bottom: 0px !important;
 }
-.tab {
-/*	margin-bottom: 0px;*/
-}
+
 }
 
 
@@ -238,8 +236,5 @@ td, th {
 }
 .col-content h3 {
 	font-size: 25px;
-}
-.tab-wrapper::after {
-	height: 120px;
 }
 }

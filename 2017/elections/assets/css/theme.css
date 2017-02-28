@@ -433,9 +433,7 @@ table tr:hover {
 	display: block !important;
 }
 .tab {
-/*	padding: 10px;*/
 	background: #f3f3f3;
-	margin-bottom: 30px;
 	position: relative;
 }
 .row.last-row {
