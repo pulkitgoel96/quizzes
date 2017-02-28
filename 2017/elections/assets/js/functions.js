@@ -55,16 +55,20 @@ $(document).ready(function() {
   $.getJSON('https://thequint-web.staging.quintype.io/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1', function(res) {
     var stories = res.stories;
     var lastStory = stories[0] || {};
-    elements = lastStory.cards.map(function(card) {
+	  var cards = lastStory.cards.slice(0,10);
+    elements = cards.map(function(card) {
       var imageKey;
+		var titleElement;
       if(card.metadata){
 	if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true"){
           var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
+		   titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
 	  imageKey= (imageElement || {})["image-s3-key"];
 	}
+		  console.log(titleElement);
       }
       if(imageKey){
-	return '<div class="story-item"><a href="http://thequint.com/' + lastStory.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + imageKey + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /><figcaption>' + lastStory.headline + '</figcaption></figure></a></div>'
+	return '<div class="story-item"><a href="http://thequint.com/' + lastStory.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + imageKey + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></figure></a></div>'
       }
     });
     elements.forEach(function(element) {
