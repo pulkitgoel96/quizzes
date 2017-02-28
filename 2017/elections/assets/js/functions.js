@@ -36,19 +36,18 @@ $(document).ready(function() {
   $.getJSON('https://thequint.com/api/v1/stories?section-id=' + sectionId + '&limit=5', function(res) {
     var stories = res.stories,
         elements = stories.map(function(story) { return '<div class="story-frame"><a href="http://thequint.com/' + story.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div>'});
-    elements.forEach(function(element) {
+    	elements.forEach(function(element) {
           $('#election-stories').append(element);
-        });
-  });
+     });
+});
 	
-	// for first story
-	
-	setTimeout(function(){
-		var firsr_story = $('#election-stories .story-frame:first').html();
-			$('#first-story').html(firsr_story);
-			$('#election-stories').removeClass('load-slider');
-		}, 4000);
-	});
+// for first story
+setTimeout(function(){
+	var firsr_story = $('#election-stories .story-frame:first').html();
+		$('#first-story').html(firsr_story);
+		$('#election-stories').removeClass('load-slider');
+	}, 4000);
+});
 
 
 
