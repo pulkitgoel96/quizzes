@@ -52,7 +52,7 @@ setTimeout(function(){
 // KEY EVENTS
 
 $(document).ready(function() {
-  $.getJSON('https://thequint-web.staging.quintype.io/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1', function(res) {
+  $.getJSON('https://sketches-uat.staging.quintype.com/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1', function(res) {
     var stories = res.stories;
     var lastStory = stories[0] || {};
 	  var cards = lastStory.cards.slice(0,10);
