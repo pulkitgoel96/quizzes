@@ -68,7 +68,7 @@ $(document).ready(function() {
 		  console.log(titleElement);
       }
       if(imageKey){
-	return '<div class="story-list"><div class="story-item"><a href="http://thequint-web.staging.quintype.io/' + lastStory.slug + '" target="blank"><figure><img src="http://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=35&amp;w=270&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></figure></a></div></div>'
+	return '<div class="story-list"><div class="story-item"><a href="http://thequint-web.staging.quintype.io/' + lastStory.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=35&amp;w=270&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></figure></a></div></div>'
       }
     });
     elements.forEach(function(element) {
