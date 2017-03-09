@@ -245,3 +245,25 @@ td, th {
   padding: 14px 0 0 10px;
 }
 }
+
+
+@media (max-width: 768px) {
+	.social-share {
+		width: 30px;
+	}
+	.btn-share{display:block;}
+	.share-icons{display:none;}
+	.share-icons a{
+	margin: 5px 0px 0px 0px;
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	float: none;
+	
+	}
+	.share-icons .btn-wp{display: inline-block;}
+}
+
+
+

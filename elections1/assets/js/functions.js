@@ -278,8 +278,6 @@ $(document).ready(function(){
 //SOCIAL
 
 $(document).ready(function () {
-      $(".btn-share").hide();
-	  $(".share-icons").show();
 	
     $(".btn-share").click(function () {
 		$(".share-icons").slideToggle(400);
