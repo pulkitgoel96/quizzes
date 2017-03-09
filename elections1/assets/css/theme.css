@@ -341,9 +341,8 @@ p.caption {
 table {
 	border-collapse: collapse;
 	width: 100%;
-	background: #fff;
 }
-td, th {
+/*td, th {
 	padding: 10px 15px;
 	text-align: left;
 }
@@ -354,6 +353,7 @@ td.err {
 	text-align: center;
 	line-height: 1;
 }
+
 thead td {
 	background-color: #31bc86;
 	font-weight: bold;
@@ -373,6 +373,7 @@ table tr:nth-child(2n-1) {
 table tr:hover {
 	background-color: rgba(129,208,177,.3);
 }
+*/
 .cand {
 	max-height: 330px;
 	overflow-y: auto;
