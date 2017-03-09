@@ -55,7 +55,7 @@ setTimeout(function(){
 // KEY EVENTS
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories?section-id=' + 2669 + '&fields=' +fields.join(",") + '&limit=1&template=live-blog', function(res) {
+  $.getJSON('https://sketches-uat.staging.quintype.com/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1&template=live-blog', function(res) {
     var stories = res.stories;
     var lastStory = stories[0] || {};
 	  var cards = lastStory.cards;

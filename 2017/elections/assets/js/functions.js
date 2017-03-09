@@ -52,7 +52,7 @@ setTimeout(function(){
 // KEY EVENTS
 
 $(document).ready(function() {
-  $.getJSON('https://thequint-web.staging.quintype.io/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1&template=live-blog', function(res) {
+  $.getJSON('https://sketches-uat.staging.quintype.com/api/v1/stories?section-id=' + 2664 + '&fields=' +fields.join(",") + '&limit=1&template=live-blog', function(res) {
     var stories = res.stories;
     var lastStory = stories[0] || {};
 	  var cards = lastStory.cards.slice(0,10);
@@ -60,7 +60,7 @@ $(document).ready(function() {
       var imageKey;
 		var titleElement;
       if(card.metadata){
-	if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true"){
+	if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
           var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
 		   titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
 	  imageKey= (imageElement || {})["image-s3-key"];
