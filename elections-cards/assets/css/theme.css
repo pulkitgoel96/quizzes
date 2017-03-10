@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 2px;
 }
 .container h2{
-	font-size: 80px;
+	font-size: 100px;
 	padding: 40px 10px;
 	font-weight: 700;
 	line-height: 100%;
@@ -64,11 +64,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .container table tr td{
-	font-size: 45px;
+	font-size: 75px;
 	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0px 20px;
+	padding: 0px 40px;
 	line-height: 100%;
 	vertical-align: text-bottom;
 	text-align: left;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container table tr td.num{
-	font-size: 70px;
+	font-size: 85px;
 }
 
 
