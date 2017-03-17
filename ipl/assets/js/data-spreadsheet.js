@@ -42,6 +42,7 @@ document.getElementById("best_batsman").innerHTML =
 	+ "<img src='https://thequint.herokuapp.com/ipl/data/" + [ data[0].bestbatsman,] + ".jpg'>"
 	+ "<figcaption>" + [ data[0].bestbatsman,] + "</figcaption>"
 	"</figure>"
+	+ "<span></span>"
 	
 console.log(data);
 }

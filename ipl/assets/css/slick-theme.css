@@ -250,21 +250,31 @@
 
 
 /*election-table*/
-.election-table .slick-dots li button:before{
+.tq-mvp .slick-dots{
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	left: 0;
+	text-align: center;
+}
+
+.tq-mvp .slick-dots {margin: 0; text-align: center;}
+.tq-mvp .slick-dots li{width: auto; margin: 0px 3px; padding: 0; display: inline-block; float: none;}
+.tq-mvp .slick-dots li button:before{
 content: '';
 	display: none;
 }
 
-.election-table .slick-dots li button{
+.tq-mvp .slick-dots li button{
 	border-radius: 100%;
 	width: 12px;
 	height: 12px;
-	border: 1px solid #f3f3f3;
-	background: #FFBF00;
+	border: 2px solid #F4C70C;
+	background: rgba(0,0,0,0.0);
 }
 
-.election-table .slick-dots li.slick-active button{
-	background: #f3f3f3;
+.tq-mvp .slick-dots li.slick-active button{
+	background: #F4C70C;
 }
 
 /*carousel-wrapper*/
