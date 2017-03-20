@@ -359,4 +359,53 @@ table{
 	display: inline-block;
 }
 
+.single-news{
+	overflow: hidden;
+}
+
+.single-news .news-pic{width: 100%;}
+
+
+.single-news li a {
+  color: #333;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+}
+
+
+
+.single-news ul li figcaption {
+  font-size: 13px;
+  height: auto;
+  left: -25px;
+  max-width: 100%;
+  top: inherit;
+   position: relative;
+}
+
+
+.single-news ul li figcaption::after {
+  background: #f4c70c none repeat scroll 0 0;
+  box-shadow: 5px 0 #2b2a2a;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: skew(-34deg);
+  width: 100%;
+}
+.single-news ul li figcaption .caption {
+  display: block;
+  padding: 10px 10px 10px 34px;
+  position: relative;
+  z-index: 2;
+}
+.single-news ul li figcaption .caption h5{
+	font-size: 18px;
+	margin: 0 0 3px 0;
+}
+
 
