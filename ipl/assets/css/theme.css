@@ -36,19 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-family: 'coolveticaregular';
 }
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	position: relative;
-}
 /*custom grid*/
 .row {
 	position: relative;
-	margin: 0px -10px 30px -10px;
+	margin: 0px -10px 0px -10px;
 }
 .col {
 	float: left;
 	padding: 0px 10px;
+	margin-bottom: 30px;
 }
 .col-1 {
 	width: 100%;
