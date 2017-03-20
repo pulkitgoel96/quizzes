@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .col-2 {
 	width: 50%;
 }
-
 .headline {
 	color: #333;
 	font-size: 26px;
@@ -104,10 +103,14 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 84%;
 	position: relative;
 	z-index: 2;
-	float: left;color: #fff;
+	float: left;
+	color: #fff;
 }
 .top-bar h1 span {
 	color: #f4c70c;
+	margin-left: -8px;
+	position: relative;
+	z-index: -1;
 }
 .social-share {
 	position: absolute;
@@ -222,53 +225,40 @@ h1, h2, h3, h4, h5, h6 {
 .top-news li:first-child::after {
 	display: none;
 }
-
-
-table{
+table {
 	width: 100%;
 	border-collapse: collapse;
 }
-
-.point-table table tr th span,
-.point-table table tr td span{
+.point-table table tr th span, .point-table table tr td span {
 	text-align: left;
 	border: 0;
 	padding: 10px 6px;
 	display: block;
 	position: relative;
 }
-
-
-
-.point-table table thead tr{background-color: #2B2A2A; text-transform: uppercase; color: #F4C70C;}
-
-.point-table table tr{
+.point-table table thead tr {
+	background-color: #2B2A2A;
+	text-transform: uppercase;
+	color: #F4C70C;
+}
+.point-table table tr {
 	position: relative;
 	overflow: hidden;
 }
-.point-table table tbody tr:nth-child(odd) td:last-child span::after,
-.point-table table tbody tr:nth-child(odd){
+.point-table table tbody tr:nth-child(odd) td:last-child span::after, .point-table table tbody tr:nth-child(odd) {
 	background-color: #494848;
 }
-
-.point-table table tbody tr:nth-child(even) td:last-child span::after,
-.point-table table tbody tr:nth-child(even){
+.point-table table tbody tr:nth-child(even) td:last-child span::after, .point-table table tbody tr:nth-child(even) {
 	background-color: #2b2a2a;
 }
-
-.point-table table thead tr th:last-child span::after,
-.point-table table thead tr{
+.point-table table thead tr th:last-child span::after, .point-table table thead tr {
 	background-color: #2b2a2a;
 }
-
-
-.point-table table tr th:last-child span,
-.point-table table tr td:last-child span{
+.point-table table tr th:last-child span, .point-table table tr td:last-child span {
 	overflow: hidden;
 	background: #333;
 }
-.point-table table tr th:last-child span::after,
-.point-table table tr td:last-child span::after{
+.point-table table tr th:last-child span::after, .point-table table tr td:last-child span::after {
 	transform: skew(-34deg);
 	content: '';
 	position: absolute;
@@ -278,134 +268,135 @@ table{
 	height: 100%;
 	background: #000;
 }
-
-.point-table table tr span em{position: relative; z-index: 2; font-style: normal;}
-
+.point-table table tr span em {
+	position: relative;
+	z-index: 2;
+	font-style: normal;
+}
 /*Best Section*/
-.best-section ul{margin:0px -5px;}
-.best-section ul li{
+.best-section ul {
+	margin: 0px -5px;
+}
+.best-section ul li {
 	float: left;
 	width: 50%;
 	padding: 0px 5px;
 }
-.best-box{
-	background:#2b2a2a;
+.best-box {
+	background: #2b2a2a;
 	margin-bottom: 10px;
 	padding: 10px;
 }
-
-.best-box table tbody tr:nth-child(even) td{
+.best-box table tbody tr:nth-child(even) td {
 	width: 70%;
 }
-
-.best-box table thead tr th:last-child,
-.best-box table tbody tr td:last-child{text-align: center;}
-
-
-.best-box table tr td,
-.best-box table tr th{
+.best-box table thead tr th:last-child, .best-box table tbody tr td:last-child {
+	text-align: center;
+}
+.best-box table tr td, .best-box table tr th {
 	padding: 3px 0;
-	color:#F4C70C;
+	color: #F4C70C;
 	font-size: 18px;
 	line-height: 100%
 }
-.best-box table tr th{
+.best-box table tr th {
 	color: #fff;
 	font-size: 20px;
 }
-.best-box h4{line-height: 100%; margin-bottom: 4px;}
-.best-box h4 span {
-  background: #f4c70c none repeat scroll 0 0;
-  display: inline-block;
-  font-size: 12px;
-  padding: 3px 3px 1px;
+.best-box h4 {
+	line-height: 100%;
+	margin-bottom: 4px;
 }
-.mvp-list figcaption{
+.best-box h4 span {
+	background: #f4c70c none repeat scroll 0 0;
+	display: inline-block;
+	font-size: 12px;
+	padding: 3px 3px 1px;
+}
+.mvp-list figcaption {
 	background: #F4C70C;
 	padding: 10px;
 	margin-top: 10px;
 	color: #333;
 	min-height: 140px;
 }
-
-.mvp-list figcaption h4{
-	line-height: 100%; margin-bottom: 10px;
-	
+.mvp-list figcaption h4 {
+	line-height: 100%;
+	margin-bottom: 10px;
 }
-
-.mvp-list figcaption h4 span{
+.mvp-list figcaption h4 span {
 	background: #333 none repeat scroll 0 0;
-  color: #F4C70C;
-  display: inline-block;
-  font-size: 12px;
-  padding: 3px 3px 1px;
+	color: #F4C70C;
+	display: inline-block;
+	font-size: 12px;
+	padding: 3px 3px 1px;
 }
-.mvp-list figcaption h2{line-height: 100%; font-size: 26px; margin: 0 0 0 0;}
-.mvp-list figcaption p{margin:0; line-height: 120%;}
-
-.wrapper-carousel .container{overflow: hidden;}
-.more-news{margin: 0px -10px;}
-.more-news figure{
+.mvp-list figcaption h2 {
+	line-height: 100%;
+	font-size: 26px;
+	margin: 0 0 0 0;
+}
+.mvp-list figcaption p {
+	margin: 0;
+	line-height: 120%;
+}
+.wrapper-carousel .container {
+	overflow: hidden;
+}
+.more-news {
+	margin: 0px -10px;
+}
+.more-news figure {
 	margin: 0px 10px;
 	background: #F4C70C;
 }
-
-.more-news figcaption{
+.more-news figcaption {
 	padding: 10px;
 	font-size: 18px;
 	color: #333;
 }
-.more-news a{
+.more-news a {
 	display: inline-block;
 }
-
-.single-news{
+.single-news {
 	overflow: hidden;
 }
-
-.single-news .news-pic{width: 100%;}
-
-
+.single-news .news-pic {
+	width: 100%;
+}
 .single-news li a {
-  color: #333;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  z-index: 9;
+	color: #333;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
 }
-
-
-
 .single-news ul li figcaption {
-  font-size: 13px;
-  height: auto;
-  left: -25px;
-  max-width: 100%;
-  top: inherit;
-   position: relative;
+	font-size: 13px;
+	height: auto;
+	left: -25px;
+	max-width: 100%;
+	top: inherit;
+	position: relative;
 }
-
-
 .single-news ul li figcaption::after {
-  background: #f4c70c none repeat scroll 0 0;
-  box-shadow: 5px 0 #2b2a2a;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: skew(-34deg);
-  width: 100%;
+	background: #f4c70c none repeat scroll 0 0;
+	box-shadow: 5px 0 #2b2a2a;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: skew(-34deg);
+	width: 100%;
 }
 .single-news ul li figcaption .caption {
-  display: block;
-  padding: 10px 10px 10px 34px;
-  position: relative;
-  z-index: 2;
+	display: block;
+	padding: 10px 10px 10px 34px;
+	position: relative;
+	z-index: 2;
 }
-.single-news ul li figcaption .caption h5{
+.single-news ul li figcaption .caption h5 {
 	font-size: 18px;
 	margin: 0 0 3px 0;
 }
-
-
