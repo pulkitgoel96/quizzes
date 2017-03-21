@@ -51,7 +51,7 @@
 	margin: -3px 0 0 0;
 }
 .social-share .social-icons li:last-child {
-	display: inline-block;
+	display: block;
 }
 }
 
