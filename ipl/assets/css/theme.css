@@ -119,12 +119,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-share .social-icons {
 	text-transform: uppercase;
-	margin: -3px 0 0 0;
+	margin: 3px 0 0 0;
 }
 .social-share .social-icons li {
 	display: block;
 	line-height: 100%;
 }
+.social-share .social-icons li:last-child{display: none;}
 .social-share .social-icons li a {
 	color: #fff;
 	display: inline-block;
@@ -132,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-share .social-icons li a:hover {
 	color: #F4C70C;
 }
+
 .top-news li {
 	float: left;
 	width: 50%;
@@ -437,3 +439,4 @@ table {
 	height: 0px;
 	overflow: hidden;
 }
+
