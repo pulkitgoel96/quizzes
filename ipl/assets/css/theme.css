@@ -39,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 /*custom grid*/
 .row {
 	position: relative;
-	margin: 0px -10px 0px -10px;
+	margin: 0px -5px 0px -5px;
 }
 .col {
 	float: left;
-	padding: 0px 10px;
+	padding: 0px 5px;
 	margin-bottom: 30px;
 }
 .col-1 {
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social-share .social-icons {
 	text-transform: uppercase;
-	margin: 2px 0 0 0;
+	margin: -3px 0 0 0;
 }
 .social-share .social-icons li {
 	display: block;
@@ -135,8 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 .top-news li {
 	float: left;
 	width: 50%;
-	margin: 0px 0px 10px 0;
-	height: 56px;
+	margin: 10px 0px 0px 0;
+	height: 50px;
 	position: relative;
 	overflow: hidden;
 }
@@ -181,13 +181,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top-news li figcaption span {
 	display: block;
-	padding: 8px 38px 0 100px;
+	padding: 4px 38px 0 100px;
 	position: relative;
 }
 .top-news li:first-child {
 	width: 100%;
 	float: none;
 	height: auto;
+	margin-top: 0;
 }
 .top-news li:first-child .news-pic {
 	width: 100%;
@@ -229,12 +230,16 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 }
+.point-table table tr th span {
+	letter-spacing: 1px;
+}
 .point-table table tr th span, .point-table table tr td span {
 	text-align: left;
 	border: 0;
-	padding: 10px 6px;
+	padding: 13px 6px;
 	display: block;
 	position: relative;
+	font-size: 16px;
 }
 .point-table table thead tr {
 	background-color: #2B2A2A;
@@ -263,7 +268,7 @@ table {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: -12px;
+	left: -15px;
 	width: 100%;
 	height: 100%;
 	background: #000;
@@ -284,8 +289,11 @@ table {
 }
 .best-box {
 	background: #2b2a2a;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	padding: 10px;
+}
+.best-box:first-child {
+	margin-top: 0px;
 }
 .best-box table tbody tr:nth-child(even) td {
 	width: 70%;
@@ -293,8 +301,11 @@ table {
 .best-box table thead tr th:last-child, .best-box table tbody tr td:last-child {
 	text-align: center;
 }
+.best-box table tr th {
+	letter-spacing: 1px;
+}
 .best-box table tr td, .best-box table tr th {
-	padding: 3px 0;
+	padding: 10px 0;
 	color: #F4C70C;
 	font-size: 18px;
 	line-height: 100%
@@ -310,13 +321,12 @@ table {
 .best-box h4 span {
 	background: #f4c70c none repeat scroll 0 0;
 	display: inline-block;
-	font-size: 12px;
-	padding: 3px 3px 1px;
+	font-size: 18px;
+	padding: 6px 5px 3px;
 }
 .mvp-list figcaption {
 	background: #F4C70C;
 	padding: 10px;
-	margin-top: 10px;
 	color: #333;
 	min-height: 140px;
 }
@@ -328,8 +338,8 @@ table {
 	background: #333 none repeat scroll 0 0;
 	color: #F4C70C;
 	display: inline-block;
-	font-size: 12px;
-	padding: 3px 3px 1px;
+	font-size: 18px;
+	padding: 6px 5px 3px;
 }
 .mvp-list figcaption h2 {
 	line-height: 100%;
@@ -341,22 +351,22 @@ table {
 	line-height: 120%;
 }
 .wrapper-carousel .container {
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 .more-news {
-	margin: 0px -10px;
+	margin: 0px -5px;
 }
 .more-news figure {
-	margin: 0px 10px;
+	margin: 0px 5px;
 	background: #F4C70C;
 }
 .more-news figcaption {
 	padding: 10px;
 	font-size: 18px;
-	color: #333;
 }
 .more-news a {
 	display: inline-block;
+	color: #333;
 }
 .single-news {
 	overflow: hidden;
@@ -374,6 +384,7 @@ table {
 .single-news ul li figcaption {
 	font-size: 13px;
 	height: auto;
+	min-height: 60px;
 	left: -25px;
 	max-width: 100%;
 	top: inherit;
@@ -399,4 +410,30 @@ table {
 .single-news ul li figcaption .caption h5 {
 	font-size: 18px;
 	margin: 0 0 3px 0;
+}
+/*All Hover State*/
+.top-news li:hover::after {
+	background: #2B2A2A;
+	box-shadow: 5px 0 #F4C70C;
+}
+.top-news li:hover a {
+	color: #F4C70C;
+}
+.top-news li:first-child:hover figcaption::after {
+	background: #2B2A2A;
+	box-shadow: 5px 0 #F4C70C;
+}
+.more-news figure:hover a {
+	background: #2B2A2A;
+	color: #F4C70C;
+}
+.single-news li:hover a, .single-news li:hover a figcaption h5 {
+	color: #F4C70C;
+}
+.single-news li:hover a figcaption::after {
+	background: #2B2A2A;
+}
+.load-slider {
+	height: 0px;
+	overflow: hidden;
 }
