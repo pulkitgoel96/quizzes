@@ -264,6 +264,7 @@ table {
 .point-table table tr th:last-child span, .point-table table tr td:last-child span {
 	overflow: hidden;
 	background: #333;
+	padding-right: 30px;
 }
 .point-table table tr th:last-child span::after, .point-table table tr td:last-child span::after {
 	transform: skew(-34deg);
