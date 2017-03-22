@@ -111,6 +111,36 @@ $(document).ready(function() {
   });
 });
 
+// Others
+$(document).ready(function() {
+  $.getJSON('https://www.thequint.com/api/v1/stories/2a97e847-be14-4f8f-8c45-8fb10791ee3e', function(res) {
+    var lastStory = res.story;
+    var cards = lastStory.cards;
+    var cardsWithImages = cards.filter(function(card) {
+      return card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'] && card.metadata.attributes['liveblogimage'][0] == "true"
+    }).slice(0,5)
+    elements = cardsWithImages.map(function(card) {
+      var imageKey;
+      var titleElement;
+      if(card.metadata){
+        if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
+          var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
+          titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
+          imageKey= (imageElement || {})["image-s3-key"];
+        }
+      }
+      if(imageKey){
+        return '<div class="more-list"><figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><span>' + titleElement.text + '</span></figcaption></a></figure></div>'
+      }
+    });
+    elements.forEach(function(element) {
+      if(element){
+        $('#key-events-4').append(element);
+      }
+    });
+  });
+});
+
 
 
 $(document).ready(function() {
@@ -143,9 +173,47 @@ $(document).ready(function() {
         }
       ]
     });
+		$('.ad-slider-2').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true
+          }
+        }
+      ]
+    });
+	$('.slider-3').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true
+          }
+        }
+      ]
+    });
 	
 	$('.slider-1').removeClass('load-slider');
 	$('.slider-2').removeClass('load-slider');
+	$('.ad-slider-2').removeClass('load-slider');
+	$('.slider-3').removeClass('load-slider');
 	
 	}, 4000);
 });

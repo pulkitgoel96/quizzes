@@ -55,7 +55,7 @@
 }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
 .best-section ul {
 	margin: 0;
 }
@@ -76,6 +76,8 @@
 .more-list {
 	width: 260px !important;
 }
+.others-ners .more-list figcaption{max-width: 100%; height: 50px;}
+.others-ners .more-list figcaption span{font-size: 15px;}
 .top-news li figcaption, .single-news ul li figcaption {
 	font-size: 15px;
 }
@@ -85,4 +87,8 @@
 .top-news li figcaption span {
 	padding: 4px 43px 0 100px;
 }
+	.car-left{padding-right:0px;}
+	.car-right{position: static; text-align: center; margin: 0 auto 30px auto;}
 }
+
+

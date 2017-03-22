@@ -194,59 +194,7 @@ template {
 .clearfix {
  *zoom: 1;
 }
-.footer-wrapper {
-	height: 35px;
-	background-color: #000;
-	text-align: center;
-	font-size: 12px;
-	line-height: 35px;
-	z-index: 10;
-	padding: 0px 5%;
-	color: #fff;
-}
-.footer-wrapper a {
-	color: #fff;
-}
-.copy {
-	float: left;
-}
-.credits {
-	float: right;
-	cursor: pointer;
-}
-.creditsModal {
-	padding: 20px;
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.9);
-	z-index: 100;
-	top: 0;
-	left: 0;
-	text-align: center;
-	display: none;
-}
-.modal-content {
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	position: relative;
-	font-size: 14px;
-}
-.modal-content span {
-	display: block;
-	padding: 4px 0px
-}
-.modalClose {
-	display: inline-block;
-	;
-	font-size: 30px;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: #fff;
-}
+
 
 .valign-center {
 	position: relative;
