@@ -2,9 +2,9 @@
 // Sections stories
 $(document).ready(function() {
   var sections = [
-  {ipl: 'top', id:2790},
-  {ipl: 'nishant', id:1031},
-  {ipl: 'videos', id:2666}
+  // {ipl: 'videos', id:2666},
+  // {ipl: 'nishant', id:1031},
+  {ipl: 'top', id:2790}
   ];
 
   sections.forEach(function(section) {
@@ -18,6 +18,42 @@ $(document).ready(function() {
     });
   });
 });
+
+//Nishant's Dugout
+$(document).ready(function() {
+  var collectionSlug = 'hot-news'; //temporary slug. Needs to be changed.
+  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,5);
+    var elements = stories.map(function(story) {
+      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+    });
+    elements.forEach(function(element) {
+      $('#nishant-section-stories').append(element);
+    })
+  })
+})
+
+//Videos' section
+$(document).ready(function() {
+  var collectionSlug = 'hot-news'; //Needs to be replaced.
+  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,3);
+    var elements = stories.map(function(story) {
+      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+    });
+    elements.forEach(function(element) {
+      $('#videos-section-stories').append(element);
+    })
+  })
+})
 
 //QUINT's MVP
 $(document).ready(function() {
