@@ -74,7 +74,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><h4><span>QUINT’s MVP</span></h4><h2>Virat Kohli</h2><p>' + titleElement.text + '</p></figcaption></a></figure>'
+        return '<figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><h4><span>QUINT’s MVP</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></a></figure>'
       }
     });
     elements.forEach(function(element) {
