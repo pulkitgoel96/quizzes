@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*Container*/
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+@media (max-width: 1199px) {
+}
+

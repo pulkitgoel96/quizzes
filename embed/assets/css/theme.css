@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*y     =  #F4C70C*/
+
+@font-face {
+	font-family: 'coolveticaregular';
+	src: url('../fonts/coolvetica_rg-webfont.woff2') format('woff2'), url('../fonts/coolvetica_rg-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'coolveticaregular';
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+p {
+	line-height: 160%;
+	margin-bottom: 25px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+button, a {
+	outline: none;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-weight: normal;
+	font-family: 'coolveticaregular';
+}
+.container figure{
+	background: #FFBF00;
+}
+.container figcaption{
+	padding: 20px;
+}
+
+.toggle-action{text-align: center;}
+.sample-text {
+  color: #7D00B3;
+  display: inline-block;
+  font-family: "Roboto Slab",serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 35px;
+  padding: 0 5px;
+  vertical-align: top;
+}
+
+.btn-more-media {
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #7D00B3;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto Slab",serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 38px;
+  line-height: normal;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 66px;
+  position: relative;	
+}
+
+.btn-more-media::after {
+  background: #7D00B3 none repeat scroll 0 0;
+  border-radius: 100%;
+  content: "";
+  height: 30px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 30px;
+	
+  -webkit-transition: left 0.4s, background 0.4s;
+  -moz-transition: left 0.4s, background 0.4s;
+  -o-transition: left 0.4s, background 0.4s;
+  transition: left 0.4s, background 0.4s;	
+	
+}
+.btn-more-media.btn-switch::after{
+	left: 30px;
+}
+
+
+
+
+
+
