@@ -27,7 +27,7 @@ $(document).ready(function() {
       return item.type == 'story'
     }).map(function(item) {
       return item.story
-    }).slice(0,5);
+    }).slice(0,3);
     var elements = stories.map(function(story) {
       return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
     });
