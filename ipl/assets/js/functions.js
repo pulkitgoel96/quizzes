@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 //QUINT's MVP
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/902037b1-6d5b-4a6d-bb64-67cbdc534b41', function(res) {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/902037b1-6d5b-4a6d-bb64-67cbdc534b41', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 //Arun’s Dugout
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
@@ -119,7 +119,7 @@ $(document).ready(function() {
 
 //Sideline Sightings
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/068838a0-30f8-467a-8d95-dba9cc91caeb', function(res) {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/068838a0-30f8-467a-8d95-dba9cc91caeb', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
