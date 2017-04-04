@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 //Nishant's Dugout
 $(document).ready(function() {
-  var collectionSlug = 'hot-news'; //temporary slug. Needs to be changed.
+  var collectionSlug = 'nishants-dugout'; //temporary slug. Needs to be changed.
   $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 //Videos' section
 $(document).ready(function() {
-  var collectionSlug = 'hot-news'; //Needs to be replaced.
+  var collectionSlug = 'ipl-videos'; //Needs to be replaced.
   $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
@@ -51,6 +51,24 @@ $(document).ready(function() {
     });
     elements.forEach(function(element) {
       $('#videos-section-stories').append(element);
+    })
+  })
+})
+
+// Others
+$(document).ready(function() {
+  var collectionSlug = 'other-sports-news'; //temporary slug. Needs to be changed.
+  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,3);
+    var elements = stories.map(function(story) {
+      return '<div class="more-list"><figure><a href="http://www.thequint.com/' + story.slug + '" target="blank"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=70&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></a></figure></div>'
+    });
+    elements.forEach(function(element) {
+      $('#other-section-stories').append(element);
     })
   })
 })
@@ -147,35 +165,11 @@ $(document).ready(function() {
   });
 });
 
-// Others
-$(document).ready(function() {
-  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
-    var lastStory = res.story;
-    var cards = lastStory.cards;
-    var cardsWithImages = cards.filter(function(card) {
-      return card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'] && card.metadata.attributes['liveblogimage'][0] == "true"
-    }).slice(0,5)
-    elements = cardsWithImages.map(function(card) {
-      var imageKey;
-      var titleElement;
-      if(card.metadata){
-        if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
-          var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
-          titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
-          imageKey= (imageElement || {})["image-s3-key"];
-        }
-      }
-      if(imageKey){
-        return '<div class="more-list"><figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><span>' + titleElement.text + '</span></figcaption></a></figure></div>'
-      }
-    });
-    elements.forEach(function(element) {
-      if(element){
-        $('#key-events-4').append(element);
-      }
-    });
-  });
-});
+
+
+
+
+
 
 
 
