@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 .top-bar::before {
-	width: 126px;
+	/*width: 126px;*/
+	width: 157px;
 	height: 34px;
 	content: '';
 	background: #333;
@@ -111,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2;
 	float: left;
 	color: #fff;
+	padding-left: 30px;
 }
 .top-bar h1 span {
 	color: #f4c70c;
@@ -123,6 +125,19 @@ h1, h2, h3, h4, h5, h6 {
 	top: 0;
 	right: 0;
 }
+.top-bar h1 a {
+  background: rgba(0, 0, 0, 0) url("../images/quint-logo.svg") no-repeat scroll 0 0 / 100% auto;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 26px;
+	overflow: hidden;
+	font-size: 1px;
+	text-indent: -1000px;
+}
+
 .social-share .social-icons {
 	text-transform: uppercase;
 	margin: 3px 0 0 0;

@@ -34,6 +34,17 @@
 
 /*Grid */
 
+
+@media (max-width: 1199px) {
+	.top-news li figcaption{
+		font-size:12px;
+	}
+	.top-news li figcaption span{
+		padding: 3px 34px 0 95px;
+	}
+
+}
+
 @media (max-width: 991px) {
 .col::after, .col::before {
 	display: table;
@@ -57,6 +68,11 @@
 .top-news li figcaption, .single-news ul li figcaption {
 	font-size: 15px;
 }
+	
+	.top-news li figcaption span{
+		padding: 4px 38px 0 100px;
+	}
+	
 }
 
 @media (max-width: 767px) {
