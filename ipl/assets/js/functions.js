@@ -149,7 +149,7 @@ $(document).ready(function() {
 
 // Others
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
