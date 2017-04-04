@@ -191,7 +191,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 	padding: 4px 38px 0 100px;
 	position: relative;
-	hyphens: auto;
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .top-news li:first-child {
 	width: 100%;
