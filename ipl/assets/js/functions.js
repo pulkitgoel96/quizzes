@@ -136,7 +136,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<li><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figure><figcaption><div class="caption"><span><h5>Katrina Kaif</h5>' + titleElement.text + '</span></figcaption></div></figure></a></li'
+        return '<li><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figure><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></a></li'
       }
     });
     elements.forEach(function(element) {
@@ -149,7 +149,7 @@ $(document).ready(function() {
 
 // Others
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/2a97e847-be14-4f8f-8c45-8fb10791ee3e', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
