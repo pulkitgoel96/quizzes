@@ -180,7 +180,7 @@ $(document).ready(function() {
 	$('.slider-1').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       arrows: false,
 	  dots: true,
       autoplaySpeed: 2000,

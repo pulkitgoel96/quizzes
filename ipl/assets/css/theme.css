@@ -191,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 	padding: 4px 38px 0 100px;
 	position: relative;
+	hyphens: auto;
 }
 .top-news li:first-child {
 	width: 100%;
@@ -337,11 +338,13 @@ table {
 	background: #F4C70C;
 	padding: 10px;
 	color: #333;
-	min-height: 125px;
+	min-height: 141px;
+	position: relative;
+	margin-top: -16px;
 }
 .mvp-list figcaption h4 {
 	line-height: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 }
 .mvp-list figcaption h4 span {
 	background: #333 none repeat scroll 0 0;
