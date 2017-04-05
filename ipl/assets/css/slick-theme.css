@@ -233,3 +233,14 @@
 	height: 100%;
 	width: 100%;
 }
+
+
+.tq-mvp .slick-prev{
+	left: 10px;
+	top: 35%
+}
+
+.tq-mvp .slick-next{
+	right: 10px;
+	top: 35%
+}

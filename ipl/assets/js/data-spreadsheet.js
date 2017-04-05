@@ -76,11 +76,11 @@ document.getElementById("top-bowler").innerHTML =
 	+ "<td>" + [ data[0].wickets,] + "</td>"
 +"</tr>"
 +"<tr>"
-	+ "<td>" + [ data[1].batsman,] + "</td>"
+	+ "<td>" + [ data[1].bowler,] + "</td>"
 	+ "<td>" + [ data[1].wickets,] + "</td>"
 +"</tr>"
 +"<tr>"
-	+ "<td>" + [ data[2].batsman,] + "</td>"
+	+ "<td>" + [ data[2].bowler,] + "</td>"
 	+ "<td>" + [ data[2].wickets,] + "</td>"
 +"</tr>";
 

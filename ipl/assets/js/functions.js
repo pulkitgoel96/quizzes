@@ -92,7 +92,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><h4><span>QUINT’s MVP</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></a></figure>'
+        return '<figure><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption><h4><span>QUINT’s MVP</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
       }
     });
     elements.forEach(function(element) {
@@ -124,7 +124,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<div class="more-list"><figure><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
+        return '<div class="more-list"><figure><a href="https://www.thequint.com/section/sports" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
       }
     });
     elements.forEach(function(element) {
@@ -154,7 +154,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<li><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figure><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></a></li'
+        return '<li><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figure><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></li'
       }
     });
     elements.forEach(function(element) {
@@ -174,8 +174,8 @@ $(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      arrows: false,
-	  dots: true,
+      arrows: true,
+	  dots: false,
       autoplaySpeed: 2000,
     });
 	$('.slider-2').slick({

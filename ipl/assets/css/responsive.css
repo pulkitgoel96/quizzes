@@ -38,6 +38,7 @@
 @media (max-width: 1199px) {
 	.top-news li figcaption{
 		font-size:12px;
+		line-height: 96%;
 	}
 	.top-news li figcaption span{
 		padding: 3px 34px 0 95px;

@@ -360,7 +360,7 @@ table {
 }
 .mvp-list figcaption h4 {
 	line-height: 100%;
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 }
 .mvp-list figcaption h4 span {
 	background: #333 none repeat scroll 0 0;
@@ -417,6 +417,7 @@ table {
 	max-width: 100%;
 	top: inherit;
 	position: relative;
+	color: #333;
 }
 .single-news ul li figcaption::after {
 	background: #f4c70c none repeat scroll 0 0;
