@@ -1,4 +1,5 @@
-var public_spreadsheet_ipl = 'https://docs.google.com/spreadsheets/d/1TNQCf3OiHuiqPCPGQo8evzm6j21k9xAvYdtqS0m9UDQ/pubhtml';
+//var public_spreadsheet_ipl = 'https://docs.google.com/spreadsheets/d/1TNQCf3OiHuiqPCPGQo8evzm6j21k9xAvYdtqS0m9UDQ/pubhtml';
+var public_spreadsheet_ipl ='https://docs.google.com/spreadsheets/d/1RJYLQ2ZZYi8qQYYkzmoBEGlJyaH5Q9me06VFf9lkFik/pubhtml';
 	
 function init(){
 Tabletop.init({
