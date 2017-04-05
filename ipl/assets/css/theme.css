@@ -540,3 +540,34 @@ table {
 	top: 34px;
 	right: 0px;
 }
+
+/*Scale*/
+
+.img-holder{overflow:hidden; position:relative;}
+
+.single-news ul li img, .tq-mvp figure img {
+	transition:all 0.3s ease;
+}
+.single-news ul li:hover img , .tq-mvp figure:hover img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/*Share Card*/
+.share-card{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 1000;
+}
+.share-card a{color:#F4C70C !important; display:block; width: 20px;
+    text-align: center;
+    height: auto; margin: 0px 0px 5px 0px}
+
+.meta-hide {
+	display:none;
+}
+
+
