@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top-bar::before {
 	/*width: 126px;*/
-	width: 157px;
+	width: 162px;
 	height: 34px;
 	content: '';
 	background: #333;
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2;
 	float: left;
 	color: #fff;
-	padding-left: 30px;
+	padding-left: 34px;
 }
 .top-bar h1 span {
 	color: #f4c70c;
@@ -129,8 +129,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 26px;
+  top: -4px;
+  width: 30px;
 	overflow: hidden;
 	font-size: 1px;
 	text-indent: -1000px;
