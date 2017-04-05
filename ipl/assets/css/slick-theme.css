@@ -9,7 +9,7 @@
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/slick.eot');
-	src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),  url('../fonts/slick.woff') format('woff'),  url('../fonts/slick.ttf') format('truetype'),  url('../fonts/slick.svg#slick') format('svg');
+	src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev, .slick-next {
@@ -233,14 +233,11 @@
 	height: 100%;
 	width: 100%;
 }
-
-
-.tq-mvp .slick-prev{
+.tq-mvp .slick-prev {
 	left: 10px;
 	top: 35%
 }
-
-.tq-mvp .slick-next{
+.tq-mvp .slick-next {
 	right: 10px;
 	top: 35%
 }

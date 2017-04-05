@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 .col-3 {
 	width: 33.333%;
 }
-
 .headline {
 	color: #333;
 	font-size: 26px;
@@ -124,18 +123,17 @@ h1, h2, h3, h4, h5, h6 {
 	right: 0;
 }
 .top-bar h1 a {
-  background: rgba(0, 0, 0, 0) url("../images/quint-logo.svg") no-repeat scroll 0 0 / 100% auto;
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: -4px;
-  width: 30px;
+	background: rgba(0, 0, 0, 0) url("../images/quint-logo.svg") no-repeat scroll 0 0 / 100% auto;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: -4px;
+	width: 30px;
 	overflow: hidden;
 	font-size: 1px;
 	text-indent: -1000px;
 }
-
 .social-share .social-icons {
 	text-transform: uppercase;
 	margin: 3px 0 0 0;
@@ -144,7 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 	line-height: 100%;
 }
-.social-share .social-icons li:last-child{display: none;}
+.social-share .social-icons li:last-child {
+	display: none;
+}
 .social-share .social-icons li a {
 	color: #fff;
 	display: inline-block;
@@ -152,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 .social-share .social-icons li a:hover {
 	color: #F4C70C;
 }
-
 .top-news li {
 	float: left;
 	width: 50%;
@@ -205,9 +204,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 4px 38px 0 100px;
 	position: relative;
 	-webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 .top-news li:first-child {
 	width: 100%;
@@ -466,68 +465,78 @@ table {
 	height: 0px;
 	overflow: hidden;
 }
-.wrapper.footer-wrapper{
+.wrapper.footer-wrapper {
 	background-color: #F4C70C;
 	color: #333;
 	padding: 20px 0;
 	text-align: center;
 }
-.wrapper.footer-wrapper a{display: inline-block; color: #333;}
-
-
-.others-ners .more-list a{
+.wrapper.footer-wrapper a {
+	display: inline-block;
+	color: #333;
+}
+.others-ners .more-list a {
 	position: relative;
 	background: none;
 	overflow: hidden;
 }
-.others-ners .more-list figure{
+.others-ners .more-list figure {
 	background: none;
-	
 }
-.others-ners .more-list figcaption{
+.others-ners .more-list figcaption {
 	top: inherit;
-    bottom: 24px;
-    font-size: 18px;
-    height: 57px;
-    left: -20px;
-    max-width: 67%;
+	bottom: 24px;
+	font-size: 18px;
+	height: 57px;
+	left: -20px;
+	max-width: 67%;
 	position: absolute;
 	padding: 0;
 }
-
-
-.others-ners .more-list figcaption::after{
+.others-ners .more-list figcaption::after {
 	width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    background: #f4c70c;
-    top: 0;
-    left: 0;
-    transform: skew(-34deg);
-    -ms-transform: skew(-34deg);
-    -webkit-transform: skew(-34deg);
-    box-shadow: 5px 0px #2B2A2A;
-    -webkit-box-shadow: 5px 0px #2B2A2A;
-    -ms-box-shadow: 5px 0px #2B2A2A;
-    -moz-box-shadow: 5px 0px #2B2A2A;
+	height: 100%;
+	content: '';
+	position: absolute;
+	background: #f4c70c;
+	top: 0;
+	left: 0;
+	transform: skew(-34deg);
+	-ms-transform: skew(-34deg);
+	-webkit-transform: skew(-34deg);
+	box-shadow: 5px 0px #2B2A2A;
+	-webkit-box-shadow: 5px 0px #2B2A2A;
+	-ms-box-shadow: 5px 0px #2B2A2A;
+	-moz-box-shadow: 5px 0px #2B2A2A;
 }
-.others-ners .more-list figcaption span{
-    position: relative;
-    z-index: 2;
-    padding: 10px 10px 0px 30px;
-    display: block;}
-
-.others-ners .more-list a:hover figcaption::after{
+.others-ners .more-list figcaption span {
+	position: relative;
+	z-index: 2;
+	padding: 10px 10px 0px 30px;
+	display: block;
+}
+.others-ners .more-list a:hover figcaption::after {
 	background: #2B2A2A;
 	box-shadow: 5px 0 #F4C70C;
 }
-.ad-wrapper{padding: 0px 0px 30px 0; text-align: center;}
-
-
+.ad-wrapper {
+	padding: 0px 0px 30px 0;
+	text-align: center;
+}
 /*Add Car*/
-.wrapper-carousel.ad-carousel{position: relative;}
-.wrapper-carousel.ad-carousel .container{min-height:280px;}
-.car-left{padding-right: 350px;}
-.car-right{width: 300px; height: 250px; position: absolute; top: 34px; right: 0px;}
-
+.wrapper-carousel.ad-carousel {
+	position: relative;
+}
+.wrapper-carousel.ad-carousel .container {
+	min-height: 280px;
+}
+.car-left {
+	padding-right: 350px;
+}
+.car-right {
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	top: 34px;
+	right: 0px;
+}
