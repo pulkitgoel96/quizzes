@@ -186,12 +186,13 @@ $(document).ready(function() {
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 575,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            variableWidth: true
+			variableWidth: true
+            
           }
         }
       ]
