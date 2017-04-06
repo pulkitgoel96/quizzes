@@ -182,7 +182,7 @@ $(document).ready(function() {
 	$('.slider-4').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       arrows: true,
 	  dots: false,
       autoplaySpeed: 4000,
