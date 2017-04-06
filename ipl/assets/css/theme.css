@@ -411,12 +411,14 @@ table {
 .single-news ul li figcaption {
 	font-size: 13px;
 	height: auto;
-	min-height: 60px;
-	left: -25px;
+	height: 60px;
+/*	left: -25px;*/
+	left: 0px;
 	max-width: 100%;
 	top: inherit;
 	position: relative;
 	color: #333;
+	background: #f4c70c;
 }
 .single-news ul li figcaption::after {
 	background: #f4c70c none repeat scroll 0 0;
@@ -428,10 +430,12 @@ table {
 	top: 0;
 	transform: skew(-34deg);
 	width: 100%;
+	display: none;
 }
 .single-news ul li figcaption .caption {
 	display: block;
-	padding: 10px 10px 10px 34px;
+/*	padding: 7px 10px 10px 34px;*/
+	padding: 7px 10px 10px 10px;
 	position: relative;
 	z-index: 2;
 }
