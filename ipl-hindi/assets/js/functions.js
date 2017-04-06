@@ -1,35 +1,36 @@
 
-// Sections stories
-$(document).ready(function() {
-  var sections = [
-  // {ipl: 'videos', id:2666},
-  // {ipl: 'nishant', id:1031},
-  {ipl: 'top', id:2790}
-  ];
 
-  sections.forEach(function(section) {
-    $.getJSON('https://www.thequint.com/api/v1/stories?limit=3&section-id=' + section.id, function(res) {
-      var stories = res.stories;
-      var elements = stories.map(function(story) { return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'});
-      elements.forEach(function(element) {
-        var id = '#' + section.ipl + '-section-stories';
-        $(id).append(element);
-      });
-    });
-  });
-});
 
-//Nishant's Dugout
+
+//Top News
 $(document).ready(function() {
-  var collectionSlug = 'nishants-dugout'; //temporary slug. Needs to be changed.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+  var collectionSlug = 'ipl-2017'; //temporary slug. Needs to be changed.
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
     }).map(function(item) {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+      return '<li><a href="http://hindi.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+    });
+    elements.forEach(function(element) {
+      $('#top-section-stories').append(element);
+    })
+  })
+})
+
+//Nishant's Dugout
+$(document).ready(function() {
+  var collectionSlug = 'nishants-dugout'; //temporary slug. Needs to be changed.
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,3);
+    var elements = stories.map(function(story) {
+      return '<li><a href="http://hindi.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
     });
     elements.forEach(function(element) {
       $('#nishant-section-stories').append(element);
@@ -40,14 +41,14 @@ $(document).ready(function() {
 //Videos' section
 $(document).ready(function() {
   var collectionSlug = 'ipl-videos'; //Needs to be replaced.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
     }).map(function(item) {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+      return '<li><a href="http://hindi.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
     });
     elements.forEach(function(element) {
       $('#videos-section-stories').append(element);
@@ -57,8 +58,8 @@ $(document).ready(function() {
 
 // Others
 $(document).ready(function() {
-  var collectionSlug = 'other-sports-news'; //temporary slug. Needs to be changed.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+  var collectionSlug = 'ipl-socialbuzz'; //temporary slug. Needs to be changed.
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
     }).map(function(item) {
@@ -92,7 +93,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>QUINT’s MVP</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
+        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>टॉप खिलाड़ी</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
       }
     });
     elements.forEach(function(element) {
@@ -107,7 +108,7 @@ $(document).ready(function() {
 
 //Arun’s Dugout
 $(document).ready(function() {
-  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/d222875e-2636-4c45-a905-412e42f0c97e', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {

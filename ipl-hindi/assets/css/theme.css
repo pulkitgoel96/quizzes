@@ -5,10 +5,11 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=devanagari');
 body {
-	font-family: 'coolveticaregular' !important;
+	font-family: 'Noto Sans', sans-serif;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 	overflow-x: hidden;
 	background-color: #333333;
@@ -33,8 +34,8 @@ button, a {
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #333;
-	font-weight: normal;
-	font-family: 'coolveticaregular';
+	font-weight: 700;
+	font-family: 'Noto Sans', sans-serif;
 }
 /*custom grid*/
 .row {
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .headline span {
 	background-color: #f4c70c;
 	display: inline-block;
-	padding: 4px 8px 4px 6px;
+	padding: 7px 8px 4px 6px;
 	overflow: hidden;
 	position: relative;
 }
@@ -89,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 34px;
 	margin: 20px 0 30px 0;
 	position: relative;
+	font-family: 'coolveticaregular';
 }
 .top-bar::before {
 	/*width: 126px;*/
@@ -110,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	color: #fff;
 	padding-left: 34px;
+	font-family: 'coolveticaregular';
 }
 .top-bar h1 span {
 	color: #f4c70c;
@@ -193,15 +196,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top-news li figcaption {
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: 700;
 	left: 0;
 	padding: 0;
 	position: absolute;
 	top: 0;
+	line-height:123%;
 }
 .top-news li figcaption span {
 	display: block;
-	padding: 4px 38px 0 100px;
+	padding: 2px 38px 0 100px;
 	position: relative;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -264,6 +268,7 @@ table {
 	display: block;
 	position: relative;
 	font-size: 16px;
+	line-height:100%;
 }
 .point-table table thead tr {
 	background-color: #2B2A2A;
@@ -366,7 +371,7 @@ table {
 	color: #F4C70C;
 	display: inline-block;
 	font-size: 18px;
-	padding: 6px 5px 3px;
+	padding: 4px 5px 3px;
 }
 .mvp-list figcaption h2 {
 	line-height: 100%;
@@ -492,6 +497,7 @@ table {
 	max-width: 67%;
 	position: absolute;
 	padding: 0;
+	line-height:123%;
 }
 .others-ners .more-list figcaption::after {
 	width: 100%;
