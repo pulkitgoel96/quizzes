@@ -93,7 +93,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>टॉप खिलाड़ी</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
+        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>टॉप खिलाड़ी</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
       }
     });
     elements.forEach(function(element) {
@@ -125,7 +125,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<div class="more-list"><figure><a href="https://www.thequint.com/section/sports" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
+        return '<div class="more-list"><figure><a href="https://www.thequint.com/section/sports" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
       }
     });
     elements.forEach(function(element) {
@@ -155,7 +155,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<li><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figure><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></li>'
+        return '<li><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figure><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></li>'
       }
     });
     elements.forEach(function(element) {
