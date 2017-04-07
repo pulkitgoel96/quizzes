@@ -92,7 +92,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>QUINT’s MVP</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
+        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>MATCH IN 5 CARDS</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
       }
     });
     elements.forEach(function(element) {
