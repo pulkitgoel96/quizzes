@@ -10,7 +10,7 @@ $(document).ready(function() {
   sections.forEach(function(section) {
     $.getJSON('https://www.thequint.com/api/v1/stories?limit=3&section-id=' + section.id, function(res) {
       var stories = res.stories;
-      var elements = stories.map(function(story) { return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'});
+      var elements = stories.map(function(story) { return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'});
       elements.forEach(function(element) {
         var id = '#' + section.ipl + '-section-stories';
         $(id).append(element);
@@ -29,7 +29,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
     });
     elements.forEach(function(element) {
       $('#nishant-section-stories').append(element);
@@ -47,7 +47,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
+      return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'
     });
     elements.forEach(function(element) {
       $('#videos-section-stories').append(element);
@@ -65,7 +65,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<div class="more-list"><figure><a href="http://www.thequint.com/' + story.slug + '" target="blank"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=70&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></a></figure></div>'
+      return '<div class="more-list"><figure><a href="http://www.thequint.com/' + story.slug + '" target="blank"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></a></figure></div>'
     });
     elements.forEach(function(element) {
       $('#other-section-stories').append(element);
@@ -92,7 +92,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>MATCH IN 5 CARDS</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
+        return '<figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><h4><span>MATCH IN 5 CARDS</span></h4><h2>'+ titleElement.text +'</h2><p>' + imageElement.title + '</p></figcaption></figure>'
       }
     });
     elements.forEach(function(element) {
@@ -124,7 +124,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<div class="more-list"><figure><a href="https://www.thequint.com/section/sports" target="blank"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
+        return '<div class="more-list"><figure><a href="https://www.thequint.com/section/sports" target="blank"><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></a></figure></div>'
       }
     });
     elements.forEach(function(element) {
@@ -154,7 +154,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<li><figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></li>'
+        return '<li><figure><div class="img-holder"><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption><div class="caption"><span><h5>'+ titleElement.text +'</h5>' + imageElement.title + '</span></figcaption></div></figure></li>'
       }
     });
     elements.forEach(function(element) {
