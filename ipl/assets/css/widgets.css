@@ -69,11 +69,13 @@
 
 .topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-head .tP-tbl-tr .tP-tbl-td, 
 .topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-body .tP-tbl-tr .tP-tbl-td{
-	padding:10px 0px;
-	line-height: 100%;
+	padding:3px 0px;
+	line-height: 106%;
 }
 
-
+.best-box{
+	padding:10px 10px 1px 10px;
+}
 
 @media (max-width: 1199px) {
 	.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
