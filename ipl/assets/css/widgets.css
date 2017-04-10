@@ -43,3 +43,18 @@
 .si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td.st-td-team .si-mi-st-teamName{
 	margin: 0;
 }
+
+@media (max-width: 1199px) {
+	.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
+	padding: 11px 6px;
+	font-size: 15px;
+}
+}
+
+@media (max-width: 991px) {
+	.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
+	padding: 13px 6px;
+	font-size: 16px;
+}
+}
+
