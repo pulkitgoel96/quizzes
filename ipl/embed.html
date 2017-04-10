@@ -41,6 +41,7 @@
 <link href="assets/css/theme.css" rel="stylesheet" media="all">
 <link href="assets/css/responsive.css" rel="stylesheet" media="all">
 
+<!--<script src="https://assets-quint.sportz.io/cricket/js/main-init.js"></script>-->
 
 <!-- BegincomScoreTag -->
 <script>
@@ -94,6 +95,8 @@ el.parentNode.insertBefore(s, el);
 				<div class="col-content">
 					<h2 class="headline"><span>Points Table</span></h2>
 					<div class="point-table">
+					<div id="siStWdgtCnt" class="si-standings-container si-ipl-t20-standings si-mi-st-wrap si-widget" style="width: 100%;"></div>
+<!--
 						<table>
 							<thead>
 								<tr>
@@ -105,6 +108,7 @@ el.parentNode.insertBefore(s, el);
 							<tbody id="points-table">
 							</tbody>
 						</table>
+-->
 					</div>
 				</div>
 			</div>
@@ -234,6 +238,14 @@ el.parentNode.insertBefore(s, el);
 <script type="text/javascript" src="assets/js/spreadsheet.js"></script> 
 <script type="text/javascript" src="assets/js/functions.js"></script>
 <script type="text/javascript" src="assets/js/data-spreadsheet.js"></script>
-<script src="https://assets-quint.sportz.io/cricket/js/main-init.js"></script>
+<script src="https://assets-quint.sportz.io/cricket/widgets/js/ipl-standing_new.js"></script>
+	<script>
+			jQuery('document').ready(function ($){
+				SI_SPORT.loadStandings();		
+			});
+		</script>
+
+
+
 </body>
 </html>
