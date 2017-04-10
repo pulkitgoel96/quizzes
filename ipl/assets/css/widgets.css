@@ -44,6 +44,37 @@
 	margin: 0;
 }
 
+
+
+.topPerformer-bat-wrap{
+	padding:0;
+}
+
+.topPerformer-bat-wrap .topPerformer-title{
+	font-size:18px;
+	padding: 6px;
+}
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-head .td-name, 
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-head .td-runs{
+	font-size:20px;
+}
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-head .tP-tbl-tr .tP-tbl-td.td-name .plyr-name, 
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-body .tP-tbl-tr .tP-tbl-td.td-name .plyr-name{
+	font-size:18px;
+}
+
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-body .tP-tbl-tr .tP-tbl-td{
+	font-size:18px;
+}
+
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-head .tP-tbl-tr .tP-tbl-td, 
+.topPerformer-bat-wrap .topPerformer-body .tP-tbl-body .tP-tbl-body .tP-tbl-tr .tP-tbl-td{
+	padding:10px 0px;
+	line-height: 100%;
+}
+
+
+
 @media (max-width: 1199px) {
 	.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
 	padding: 11px 6px;
