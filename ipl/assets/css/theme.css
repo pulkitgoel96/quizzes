@@ -575,6 +575,6 @@ table {
 }
 
 .twitter-widget{overflow: hidden;}
-.twitter-widget iframe{margin-top: -44px;}
+.twitter-widget iframe{margin-top: -64px !important;}
 
 
