@@ -92,3 +92,18 @@
 	
 }
 
+
+
+@media screen and (max-width: 767px){
+.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td.st-td-team {
+     width: 50%; 
+}
+	
+.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td.st-td-m{
+	width: 25%; 
+		
+	}
+}
+
+
+
