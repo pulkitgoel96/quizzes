@@ -54,6 +54,8 @@ input:focus, button:focus 			{outline: none;}
 
 .buzz-wrap .white-box 						{background-color: #fff;margin-bottom: 1.7em;padding: 1.5em;border: 1px #d8d8d8 solid;}
 .buzz-wrap .white-box p						{margin-bottom: 1em}
+.large-size .white-box p 					{font-size: 22px;font-weight: 800}
+
 
 .result-iron .result-content,
 .result-iron .result-img,
