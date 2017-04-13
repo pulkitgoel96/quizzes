@@ -468,7 +468,7 @@ table {
 	background: #2B2A2A;
 	color: #F4C70C;
 }
-.single-news li:hover a, .single-news li:hover a figcaption h5 {
+.single-news li:hover a, .single-news li:hover a figcaption {
 	color: #F4C70C;
 }
 .single-news li:hover a figcaption::after {
