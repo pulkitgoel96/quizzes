@@ -482,6 +482,7 @@ table {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+.single-news.center-text ul li figcaption .caption h5{margin:0;}
 
 .load-slider {
 	height: 0px;
