@@ -408,6 +408,8 @@ table {
 	position: relative;
 	z-index: 9;
 }
+
+.single-news li a:hover {color: #333;}
 .single-news ul li figcaption {
 	font-size: 13px;
 	height: auto;
