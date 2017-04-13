@@ -468,10 +468,10 @@ table {
 	background: #2B2A2A;
 	color: #F4C70C;
 }
-.single-news li:hover a, .single-news li:hover a figcaption {
+.single-news ul li:hover a, .single-news ul li:hover a figcaption {
 	color: #F4C70C;
 }
-.single-news li:hover a figcaption::after {
+.single-news ul li:hover a figcaption::after {
 	background: #2B2A2A;
 }
 .load-slider {
