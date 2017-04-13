@@ -587,3 +587,9 @@ table {
 .twitter-widget iframe{margin-top: -64px !important;}
 
 
+/*Iframe Score*/
+.iframe-score{margin: 0; padding: 0; border: 0; width: 100%; background: transparent; height: 300px;}
+
+
+
+
