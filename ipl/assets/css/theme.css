@@ -409,7 +409,7 @@ table {
 	z-index: 9;
 }
 
-.single-news li a:hover {color: #333;}
+
 .single-news ul li figcaption {
 	font-size: 13px;
 	height: auto;
@@ -422,6 +422,7 @@ table {
 	color: #333;
 	background: #f4c70c;
 }
+.single-news li a:hover figcaption {background: #333;}
 .single-news ul li figcaption::after {
 	background: #f4c70c none repeat scroll 0 0;
 	box-shadow: 5px 0 #2b2a2a;
