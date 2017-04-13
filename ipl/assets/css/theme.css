@@ -428,7 +428,7 @@ table {
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 }
-.single-news li a:hover figcaption {background: #2B2A2A;}
+.single-news li a:hover figcaption {background: #2B2A2A; color: #333;}
 .single-news ul li figcaption::after {
 	background: #f4c70c none repeat scroll 0 0;
 	box-shadow: 5px 0 #2b2a2a;
