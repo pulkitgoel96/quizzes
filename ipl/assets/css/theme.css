@@ -422,7 +422,7 @@ table {
 	color: #333;
 	background: #f4c70c;
 }
-.single-news li a:hover figcaption {background: #333;}
+.single-news li a:hover figcaption {background: #2B2A2A;}
 .single-news ul li figcaption::after {
 	background: #f4c70c none repeat scroll 0 0;
 	box-shadow: 5px 0 #2b2a2a;
