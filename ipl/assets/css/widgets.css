@@ -109,6 +109,7 @@
 
 /*Bootstrap Custom Score*/
 .simc-container{margin: 0 auto !important;}
+.simc-left-sidebar{border:0px solid #DAD8D8 !important;}
 .col-sm-6{
 	float: left;
 	width: 50%;
