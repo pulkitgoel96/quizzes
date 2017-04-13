@@ -109,3 +109,10 @@
 
 
 
+/*Bootstrap Custom*/
+.col-sm-6{
+	float: left;
+	width: 50%;
+}
+
+
