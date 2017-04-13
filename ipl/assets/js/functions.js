@@ -10,7 +10,7 @@ $(document).ready(function() {
   sections.forEach(function(section) {
     $.getJSON('https://www.thequint.com/api/v1/stories?limit=3&section-id=' + section.id, function(res) {
       var stories = res.stories;
-      var elements = stories.map(function(story) { return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="news-pic"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /></div><figcaption><span>' + story.headline + '</span></figcaption></figure></a></li>'});
+      var elements = stories.map(function(story) { return '<li><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="img-holder"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /></div><figcaption><div class="caption"><span><h5>' + story.headline + '</h5></span></figcaption></div></figure></a></li>'});
       elements.forEach(function(element) {
         var id = '#' + section.ipl + '-section-stories';
         $(id).append(element);
@@ -18,6 +18,7 @@ $(document).ready(function() {
     });
   });
 });
+
 
 //Nishant's Dugout
 $(document).ready(function() {
@@ -180,6 +181,15 @@ $(document).ready(function() {
     });
 		
 	$('.slider-4').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+	  dots: false,
+      autoplaySpeed: 4000,
+    });
+		
+	$('.slider-5').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
