@@ -107,7 +107,8 @@
 	}
 }
 
-/*Bootstrap Custom*/
+/*Bootstrap Custom Score*/
+.simc-container{margin: 0 auto !important;}
 .col-sm-6{
 	float: left;
 	width: 50%;
