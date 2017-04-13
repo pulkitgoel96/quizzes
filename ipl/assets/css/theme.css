@@ -421,6 +421,12 @@ table {
 	position: relative;
 	color: #333;
 	background: #f4c70c;
+	
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
 }
 .single-news li a:hover figcaption {background: #2B2A2A;}
 .single-news ul li figcaption::after {
