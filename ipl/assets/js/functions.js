@@ -242,6 +242,7 @@ $(document).ready(function() {
 	$('.slider-2').removeClass('load-slider');
 	$('.slider-3').removeClass('load-slider');
 	$('.slider-4').removeClass('load-slider');
+	$('.slider-5').removeClass('load-slider');
 	
 	}, 4000);
 });
