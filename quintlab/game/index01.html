@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Title of the document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Exo:400,600,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet"> -->
+<!-- Custom -->
+<link href="assets/css/styles.css" rel="stylesheet">
+<style>
+.progress {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.progress > div {
+    width: 0%;
+    height: 100%;
+    background: #1C90F3;
+    color: #fff;
+    display: none;
+    font-family: tahoma;
+    line-height: 30px;
+    text-align: center;
+}
+
+.main-wrap {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.main-wrap .container li {
+    float: left;
+}
+.main-wrap .container .thumbs {
+    width: 250px;
+    height: 200px;
+    background-color: #ccc;
+}
+</style>
+<!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="main-wrap">
+
+
+    <div id="output">0</div>
+
+    <div class="container">
+        <ul>
+            <li>
+                <div class="thumbs">
+                    <div class="progress" data-percent="100">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <span class="ani-button">Animate</span>
+                    <span class="target ani-click" style="display: none;">Click Me</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- <script src="assets/js/jquery.min.js"></script> -->
+<script>
+$(document).ready(function() {
+    $(".ani-button").click(function() {
+        var width = $(".progress").children("div").width();
+        if (width == 0) {
+            var percent = $(".progress").data("percent");
+            $(".progress").children("div").width("0%").show().animate({
+                "width": percent + "%"
+            }, {
+                duration: 5000,
+                progress: function(a, p) {
+                    var newPer = Math.round(percent * p);
+                    $(".progress").children("div").html(newPer + "%");
+                }, 
+                complete: function(){
+                    $('.ani-click').fadeIn();
+                    $('.ani-click').delay(5000).fadeOut('slow');
+                }
+            });
+        }
+    });
+    $('.target').one("click", function() {
+        $('#output').html(function(i, val) { return val*1+1 });
+    });
+});
+</script>
+    
+</body>
+</html>
