@@ -4,10 +4,13 @@
 .election-banner,
 .election-banner h2::after,
 .list-content,
-.liveblog-wrapper h2,
 .carousel-wrapper.purple::after,
 .carousel-wrapper::after{
 	background-color: #383838;
+}
+
+.liveblog-wrapper h2{
+	color: #383838;
 }
 
 .logo,
