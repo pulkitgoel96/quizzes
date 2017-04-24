@@ -7,7 +7,8 @@
 .list-content,
 .election-banner h2::after,
 .election-banner h2,
-.carousel-wrapper.purple::after{
+.carousel-wrapper.purple::after,
+.list-item h3 span:first-child{
 	background-color: #383838;
 }
 
