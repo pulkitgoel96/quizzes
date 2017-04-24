@@ -9,7 +9,10 @@
 	background-color: #383838;
 }
 
-.liveblog-wrapper h2{
+.liveblog-wrapper h2,
+.block-title2,
+.story-item a,
+.story-frame  a{
 	color: #383838;
 }
 
@@ -19,7 +22,10 @@
 .election-banner h2,
 .table-cont,
 .table-cont h3,
-.share-icons a:hover
+.share-icons a:hover,
+carousel-wrapper .story-item a:hover figcaption,
+.first-story a:hover figcaption, 
+.story-frame a:hover
 {
 	background-color: #7f2654;
 }
@@ -36,7 +42,10 @@
 .carousel-wrapper h3,
 .election-text a,
 .election-banner h2 span,
-.share-icons a:hover{
+.share-icons a:hover,
+carousel-wrapper .story-item a:hover figcaption,
+.first-story a:hover figcaption, 
+.story-frame a:hover{
 	color: #fff;
 }
 
