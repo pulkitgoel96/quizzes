@@ -1,1 +1,59 @@
 @charset "utf-8";
+@charset "utf-8";
+
+.is-live::before{
+	background-image: url("../images/live1.svg");
+}
+.top-wrapper, 
+.list-content,
+.election-banner,
+.carousel-wrapper.purple::after,
+.carousel-wrapper::after{
+	background-color: #383838;
+}
+
+.liveblog-wrapper h2,
+.frame-wrapper h2,
+.block-title2,
+.story-item a,
+.story-frame a,
+.first-story a figcaption{
+	color: #383838;
+}
+
+.list-item h3,
+.election-data table,
+.carousel-wrapper h3,
+.election-text a,
+.election-banner h2 span,
+.share-icons a:hover,
+.carousel-wrapper .story-item a:hover figcaption,
+.first-story a:hover figcaption, 
+.story-frame a:hover{
+	color: #fff;
+}
+
+.logo,
+.list-item h3 span:last-child,
+.election-banner h2::after,
+.election-banner h2,
+.table-cont,
+.table-cont h3,
+.share-icons a:hover,
+.carousel-wrapper .story-item a:hover figcaption,
+.first-story a:hover figcaption, 
+.story-frame a:hover
+{
+	background-color: #2d9905;
+}
+
+.carousel-wrapper .slick-prev:before, 
+.carousel-wrapper .slick-next:before,
+.share-icons a{
+	color: #2d9905;
+}
+
+
+.table-cont h3{
+	text-shadow: 1px 1px 0 #2d9905;
+}
