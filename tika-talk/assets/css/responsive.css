@@ -26,7 +26,8 @@
 	}
 	#startScreen,
 	#howplayScreen,
-	#endScreen {
+	#endScreen,
+	#gameOver {
 		padding-top: 70px;
 	}
 	.info h3 {
@@ -70,7 +71,8 @@
 	}
 	#startScreen,
 	#howplayScreen,
-	#endScreen {
+	#endScreen,
+	#gameOver {
 		padding-top: 30px;
 	}
 	.info h3 {
@@ -134,7 +136,8 @@
 	}
 	#startScreen,
 	#howplayScreen,
-	#endScreen {
+	#endScreen,
+	#gameOver {
 		padding-top: 10px;
 	}
 	.header-right {
