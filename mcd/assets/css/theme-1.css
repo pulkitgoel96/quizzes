@@ -3,6 +3,7 @@
 .top-wrapper, 
 
 .list-content,
+.election-banner,
 .carousel-wrapper.purple::after,
 .carousel-wrapper::after{
 	background-color: #383838;
@@ -14,14 +15,18 @@
 
 .logo,
 .list-item h3 span:last-child,
+.election-banner h2::after,
+.election-banner h2,
 .table-cont,
-.table-cont h3
+.table-cont h3,
+.share-icons a:hover
 {
 	background-color: #7f2654;
 }
 
 .carousel-wrapper .slick-prev:before, 
-.carousel-wrapper .slick-next:before{
+.carousel-wrapper .slick-next:before,
+.share-icons a{
 	color: #7f2654;
 }
 
@@ -30,7 +35,8 @@
 .election-data table,
 .carousel-wrapper h3,
 .election-text a,
-.election-banner h2 span{
+.election-banner h2 span,
+.share-icons a:hover{
 	color: #fff;
 }
 
