@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var sectionId = 2664;
-  $.getJSON('https://www.thequint.com/api/v1/stories?section-id=' + sectionId + '&limit=5', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/stories?section-id=' + sectionId + '&limit=3', function(res) {
     var stories = res.stories,
     elements = stories.map(function(story) { return '<div class="story-frame"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&rect=0,0,2348,1321&q=70&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div>'});
     elements.forEach(function(element) {
