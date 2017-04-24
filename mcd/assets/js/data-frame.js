@@ -1,5 +1,5 @@
 
-var public_spreadsheet_elections = 'https://docs.google.com/spreadsheets/d/1nBGRxoVGYj5Z-HT5tJrbLMQ9yyfKntTh1MatrAyWddE/pubhtml';
+var public_spreadsheet_elections = 'https://docs.google.com/spreadsheets/d/1eJ6FhLAh6eNxx9KUX7n3tcmLHp2eGFelvYdflJW2_eA/pubhtml';
 
 	
 function init(){
@@ -99,28 +99,6 @@ document.getElementById("data_up").innerHTML =
 	+ "<td>" + [ data[3].goaparty,] + "</td>" 
 	+ "<td>" + [ data[3].goaseats,] + "</td>"  
 	+ "</tr>";
-	
-	document.getElementById("data_manipur").innerHTML = 
-	"<tr>" 
-	+ "<td>" + [ data[0].manipurparty,] + "</td>" 
-	+ "<td>" + [ data[0].manipurseats,] + "</td>"  
-	+ "</tr>"
-
-	+"<tr>" 
-	+ "<td>" + [ data[1].manipurparty,] + "</td>" 
-	+ "<td>" + [ data[1].manipurseats,] + "</td>"  
-	+ "</tr>"
-
-	+"<tr>" 
-	+ "<td>" + [ data[2].manipurparty,] + "</td>" 
-	+ "<td>" + [ data[2].manipurseats,] + "</td>"  
-	+ "</tr>"
-
-	+"<tr>" 
-	+ "<td>" + [ data[3].manipurparty,] + "</td>" 
-	+ "<td>" + [ data[3].manipurseats,] + "</td>"  
-	+ "</tr>";
-	
 	
 }
 
