@@ -1,1 +1,32 @@
 @charset "utf-8";
+
+.top-wrapper, 
+.election-banner,
+.election-banner h2::after,
+.list-content,
+.liveblog-wrapper h2,
+.carousel-wrapper.purple::after,
+.carousel-wrapper::after{
+	background-color: #383838;
+}
+
+.logo,
+.election-banner h2,
+.list-item h3 span:last-child,
+.table-cont,
+.table-cont h3,
+.carousel-wrapper .slick-prev:before, 
+.carousel-wrapper .slick-next:before
+{
+	background-color: #7f2654;
+}
+
+.list-item h3,
+.election-data table,
+.carousel-wrapper h3{
+	color: #fff;
+}
+
+.table-cont h3{
+	text-shadow: 1px 1px 0 #7f2654;
+}
