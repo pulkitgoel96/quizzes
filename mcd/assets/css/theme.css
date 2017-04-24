@@ -552,10 +552,10 @@ input.search-data {
 }
 .story-frame:first-child{display:none;}
 
-.story-frame figure img{position: absolute; top: 0; left: 0; height: 87px;}
-.story-frame a{display:block; min-height: 87px; background: #fff;}
+.story-frame figure img{top: 0; left: 0; }
+.story-frame a{display:block;  background: #fff; position: relative;}
 .story-frame figcaption{
-	padding:10px 10px 0 165px;
+	padding:10px;
 	
 }
 
