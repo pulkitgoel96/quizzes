@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="">
+<meta name="Keywords" content="" />
+<title>Tika Talk</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+<!-- Custom styles for this template -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="assets/css/base.css" rel="stylesheet" media="all">
+<link href="assets/css/theme.css" rel="stylesheet" media="all">
+<link href="assets/css/responsive.css" rel="stylesheet" media="all">
+</head>
+<body>
+<!--
+<section class="wrapper header-wrapper" style="display: none;">
+	<div class="container">
+		<div class="point left" id="pointMinus">0</div>
+		<div class="point right" id="pointPlus">0</div>
+	</div>
+</section>
+-->
+
+<div class="work-container">
+  <div class="header-container">
+    <div class="header-left">
+      <ul>
+        <li id="pointPlus" class="point-plus">0</li>
+        <li id="pointMinus" class="point-minus">0</li>
+      </ul>
+    </div>
+    <h1 class="logo"><img src="assets/images/logo.png"></h1>
+  </div>
+  <div class="header-right"> <span id="counter"></span> </div>
+  <ul class="info" id="startScreen">
+    <li>
+      <h3>Let's give immunity a shot <br> <span>talking about vaccinations</span></h3>
+
+      <p>1 in 5 babies born in India dies before age 5.<br>
+ 38% of children between 1-2 years aren’t fully immunised. This is DESPITE the fact that the government’s vaccination program is FREE!</p>
+      <p>How can you help change this?</p>
+    </li>
+    <li class="start-game"> <a id="howPlay" href="javascript:void(0);">Next</a> </li>
+  </ul>
+  <ul class="info" id="howplayScreen">
+    <li>
+      <h3>HOW TO PLAY:</h3>
+      <p>Imagine a conversation with your domestic help/plumber/person you’ve just met who stopped you and struck up a conversation to ask questions.</p>
+      <p>Click on a baby <span class="ico-baby"><img src="assets/images/baby.png"></span> and answer the question to immunise it. But you’ll have to be fast!</p>
+    </li>
+    <li class="start-game"> <a id="start" onclick="onTimer()" href="javascript:void(0);">start</a> </li>
+  </ul>
+  <ul class="info" id="endScreen" style="display: none;">
+    <li>
+      <p>Number of immunised babies: <strong class="resultPlus"></strong></p>
+      <p>Number of babies left at risk: <strong class="resultMinus"></strong></p>
+      <p>YOU LEFT <strong class="resultMinus"></strong> BABIES AT RISK</p>
+    </li>
+    <li>
+    	<h3>IMMUNISE ALL KIDS TO KEEP EVERYONE SAFE</h3>
+    </li>
+    <li class="start-game"> <a id="nextgameOver" href="javascript:void(0);">Next</a> </li>
+  </ul>
+  
+  <ul class="info" id="gameOver" style="display: none;">
+    <li>
+      <p>You’ll ask underprivileged kids, “Do you go to school?”</p>
+      <p>Why not ask their parents, “Have your kids been vaccinated?”</p>
+      <p>A short talk can go a long way.</p>
+    </li>
+    <li>
+    	<h3>START THE CONVERSATION</h3>
+    </li>
+  </ul>
+  <ul id="babyId" class="baby">
+    <li id="baby_1"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“My child eats well and plays fine. She doesn’t need to be immunised.”</h2>
+        <div class="answers"> <span class="false-ans">Yup, it really is expensive.</span> <span class="true-ans">But the Indian government offers vaccines for free!</span> <span class="false-ans">Do you remember that huge mark the old vaccines used to leave on our arms?</span> <span class="false-ans">Don’t worry, your kids will grow up to be plumbers and don’t need to be immunised.</span> </div>
+      </div>
+    </li>
+    <li id="baby_2"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“I can’t take days off to get my kids vaccinated. I’ll lose a day’s worth of money.”</h2>
+        <div class="answers"> <span class="true-ans"> The cost of treatment if they get sick will be MUCH higher than free vaccines.</span> <span class="false-ans"> You’re right. Who will do the work?</span> <span class="false-ans"> It’s not worth it, everyone else is immunised, right?</span> <span class="false-ans">When we were kids, our parents didn’t worry about this stuff. Don’t bother about all this.</span> </div>
+      </div>
+    </li>
+    <li id="baby_3"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2> “In my village, a kid died because of vaccines”</h2>
+        <div class="answers"> <span class="false-ans">OMG. That’s awful.</span> <span class="false-ans"> They inject kids with germs. It’s scary.</span> <span class="true-ans"> Vaccines are tested rigorously and are very safe. You should find out for sure what the cause of death was.</span> <span class="false-ans">I’m so scared of needles, I feel like I’ll get a heart attack.</span> </div>
+      </div>
+    </li>
+    <li id="baby_4"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“What has anyone ever got from getting vaccinated?”</h2>
+        <div class="answers"> <span class="false-ans">A pain in the arm.</span> <span class="false-ans">Money from the government.</span> <span class="true-ans"> Protection against several diseases.</span> <span class="false-ans"> A sense of superiority.</span> </div>
+      </div>
+    </li>
+    <li id="baby_5"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>You ask someone if their kids are vaccinated and they say: “Yes, our children received Polio drops.”</h2>
+        <div class="answers"> <span class="false-ans">The government’s doing so many Polio camps, it’s great. </span> <span class="true-ans">There are other vaccines that a child needs to receive.</span> <span class="false-ans">Amitabh Bachchan has done so much for this country.</span> <span class="false-ans"> I wonder what Polio drops taste like.</span> </div>
+      </div>
+    </li>
+    <li id="baby_6"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“My child eats well and plays fine. She doesn’t need to be immunised.”</h2>
+        <div class="answers"> <span class="true-ans">Just because she’s healthy now, doesn’t mean she doesn’t need disease prevention.</span> <span class="false-ans">God bless her!</span> <span class="false-ans">Oh, that’s great then. You have no need to worry.</span> <span class="false-ans">Yes, yes. These are her days to play after all.</span> </div>
+      </div>
+    </li>
+    <li id="baby_7"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“My child has missed a few doses of a vaccine. What’s the point of continuing now?”</h2>
+        <div class="answers"> <span class="false-ans"> None at all.</span> <span class="true-ans">Partial immunisation leaves your child at risk. Go back and get those shots!</span> <span class="false-ans">The window for immunisation has passed now so it’s best to just move on.</span> <span class="false-ans">Vaccinate your other kids then. They can still be saved.</span> </div>
+      </div>
+    </li>
+    <li id="baby_8"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“All this is rich people talk. I wasn’t vaccinated and grew up just fine.”</h2>
+        <div class="answers"> <span class="false-ans">Our generation was hardier.</span> <span class="false-ans">Kids can’t play outdoors anymore. That’s what causes these problems.</span> <span class="true-ans">There are newer vaccines and medical progress has taken place which will enhance your child’s life.</span> <span class="false-ans"> Diseases happen in villages. We live in cities.</span> </div>
+      </div>
+    </li>
+    <li id="baby_9"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“My religion says kids shouldn’t be vaccinated and they’re actually drugs to control population.”</h2>
+        <div class="answers"> <span class="true-ans">Most religions don’t prohibit vaccines and they’re not birth control.</span> <span class="false-ans">God doesn’t exist, anyway.</span> <span class="false-ans">In that case, you should pray your kids don’t get sick.</span> <span class="false-ans">Vaccines increase your risk of impotency.</span> </div>
+      </div>
+    </li>
+    <li id="baby_10"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2> “Education is more important. Why bother with vaccinations?”</h2>
+        <div class="answers"> <span class="true-ans">Education is important but a healthy child will study better.</span> <span class="false-ans"> You’re right. Plus, if your child infects other kids, less competition in school, no?</span> <span class="false-ans"> How will books help if your child gets sick?</span> <span class="false-ans">But education is expensive and vaccinations are free!</span> </div>
+      </div>
+    </li>
+    <li id="baby_11"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2>“Why does EVERY single child have to be immunised?”</h2>
+        <div class="answers"> <span class="true-ans">If more people are immunised, there are less chances of disease spreading – herd immunity.</span> <span class="false-ans"> Only half the population needs to be immunised and the other half is automatically protected.</span> <span class="false-ans">Because the government says so and we’re good citizens.</span> <span class="false-ans"> Equality means everyone should be vaccinated.</span> </div>
+      </div>
+    </li>
+    <li id="baby_12"><a href="javascript:void(0);"></a>
+      <div class="qa-box">
+        <h2> “But WHERE do I get these vaccines? It’s so difficult to travel somewhere.”</h2>
+        <div class="answers"> <span class="true-ans"> Go to the nearest government health centre.</span> <span class="false-ans">Go to any clinic – private or public for free vaccines.</span> <span class="false-ans">Your neighbourhood doctor will do it for free.</span> <span class="false-ans">You can get them for free at a Chemist shop.</span> </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<audio id="audio_1" src="assets/media/cry.mp3" autostart="false" ></audio>
+<audio id="audio_2" src="assets/media/laugh.mp3" autostart="false" ></audio>
+
+<!-- js files --> 
+<script type="text/javascript" src="assets/js/jquery.min.js"></script> 
+<script type="text/javascript" src="assets/js/functions.js"></script>
+</body>
+</html>

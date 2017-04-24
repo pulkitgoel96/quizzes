@@ -1,0 +1,324 @@
+@font-face {
+	font-family: 'georginaregular';
+	src: url('../fonts/georgina-webfont.woff2') format('woff2'), url('../fonts/georgina-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	overflow-x: hidden;
+	background-color: #333333;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden;
+	cursor: url('../images/cursor.png'), auto;
+}
+* {
+	cursor: url('../images/cursor.png'), auto;
+}
+p {
+	line-height: 160%;
+	margin-bottom: 25px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+button, a {
+	outline: none;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-weight: 400;
+}
+/*custom grid*/
+.row {
+	position: relative;
+	margin: 0px -5px 0px -5px;
+}
+.col {
+	float: left;
+	padding: 0px 5px;
+	margin-bottom: 30px;
+}
+.col-1 {
+	width: 100%;
+}
+.col-2 {
+	width: 50%;
+}
+.col-3 {
+	width: 33.333%;
+}
+.work-container {
+	width: 600px;
+	height: 575px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: 100%;
+	margin-top: -287px;
+	margin-left: -300px;
+	overflow: hidden;
+}
+.header-container {
+	background: #c1272d;
+	padding: 5px;
+	text-align: center;
+}
+.logo {
+	display: inline-block;
+	width: 130px;
+}
+.header-left {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.header-left ul li {
+	float: left;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 5px 0 0;
+	line-height: 60px;
+	width: 97px;
+	text-align: left;
+	letter-spacing: -3px;
+}
+.header-left ul li.point-plus {
+	background: url(../images/icons-02.png) no-repeat 0px 5px;
+	background-size: 45px;
+	padding: 0 0 0 50px;
+}
+.header-left ul li.point-minus {
+	background: url(../images/icons-03.png) no-repeat 0px 10px;
+	background-size: 45px;
+	padding: 0 0 0 50px;
+}
+.header-right {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 60px;
+	text-align: left;
+	letter-spacing: -0.5px;
+	background: url(../images/icons-04.png) no-repeat 0px 11px;
+	background-size: 40px;
+	padding: 0 0 0 43px;
+	width: 110px;
+}
+.baby {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.baby li a {
+	display: inline-block;
+	width: 55px;
+	height: 69px;
+	background: url(../images/baby.png) no-repeat;
+	background-size: 100%;
+}
+.baby li {
+	position: absolute;
+	top: 20px;
+	display: none;
+}
+.baby li#baby_6 {
+	left: 20px;
+	top: 40px;
+}
+.baby li#baby_8 {
+	left: 120px;
+	top: 140px;
+}
+.baby li#baby_3 {
+	left: 220px;
+	top: 40px;
+}
+.baby li#baby_1 {
+	left: 320px;
+	top: 140px;
+}
+.baby li#baby_12 {
+	left: 420px;
+	top: 40px;
+}
+.baby li#baby_5 {
+	left: 520px;
+	top: 140px;
+}
+.baby li#baby_10 {
+	left: 20px;
+	top: 260px;
+}
+.baby li#baby_7 {
+	left: 120px;
+	top: 380px;
+}
+.baby li#baby_11 {
+	left: 220px;
+	top: 260px;
+}
+.baby li#baby_4 {
+	left: 320px;
+	top: 380px;
+}
+.baby li#baby_9 {
+	left: 420px;
+	top: 260px;
+}
+.baby li#baby_2 {
+	left: 520px;
+	top: 380px;
+}
+.answers {
+	text-align: left;
+	color: #000;
+}
+.qa-box {
+	background: #f2f2f2 none repeat scroll 0 0;
+	border-radius: 14px;
+	display: none;
+	padding: 22px 25px;
+	position: absolute;
+	width: 400px;
+	z-index: 3;
+}
+.qa-box h2 {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 115%;
+}
+.qa-box span {
+	color: #575757;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 110%;
+	margin: 10px 0 0;
+}
+.qa-box span:hover {
+	color: #C1272D;
+}
+.baby li#baby_0 .qa-box {
+	display: block !important;
+}
+.info {
+	padding: 20px;
+	color: #000;
+	background: #54D0E1;
+	height: 510px;
+	text-align: center;
+}
+.info h3 {
+  color: #c1272d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90%;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+.info h3 span{font-size: 22px;}
+
+.info p {
+	font-weight: 600;
+	margin: 0 0 15px 0;
+	line-height: 130%;
+}
+.start-game {
+	text-align: center;
+	padding-top: 20px;
+}
+.start-game a {
+	display: inline-block;
+	background: #C1272D;
+	padding: 10px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+#baby_1 .qa-box {
+	top: 80px;
+	left: -155px;
+}
+#baby_2 .qa-box {
+	bottom: 80px;
+	right: -10px;
+}
+#baby_3 .qa-box {
+	top: 80px;
+	left: -155px;
+}
+#baby_4 .qa-box {
+	bottom: 80px;
+	left: -155px;
+}
+#baby_5 .qa-box {
+	top: 80px;
+	right: -10px;
+}
+#baby_6 .qa-box {
+	top: 80px;
+	left: -10px;
+}
+#baby_7 .qa-box {
+	bottom: 80px;
+	left: -10px;
+}
+#baby_8 .qa-box {
+	top: 80px;
+	left: -10px;
+}
+#baby_9 .qa-box {
+	bottom: 80px;
+	right: -10px;
+}
+#baby_10 .qa-box {
+	bottom: 80px;
+	left: -10px;
+}
+#baby_11 .qa-box {
+	bottom: 80px;
+	right: -155px;
+}
+#baby_12 .qa-box {
+	top: 80px;
+	right: -10px;
+}
+
+.ico-baby{
+	width: 30px;
+	display: inline-block;
+}
+
+
+#startScreen{
+	padding-top: 100px;
+}
+
+#howplayScreen{
+	padding-top: 100px;
+}
+
+#endScreen{
+	padding-top: 130px;
+}
+#gameOver{
+	padding-top: 170px;
+}
+
