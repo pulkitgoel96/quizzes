@@ -12,7 +12,8 @@
 .liveblog-wrapper h2,
 .block-title2,
 .story-item a,
-.story-frame  a{
+.story-frame a,
+.first-story a figcaption{
 	color: #383838;
 }
 
