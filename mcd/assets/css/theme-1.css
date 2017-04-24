@@ -5,7 +5,8 @@
 }
 .top-wrapper, 
 .list-content,
-.election-banner,
+.election-banner h2::after,
+.election-banner h2,
 .carousel-wrapper.purple::after,
 .carousel-wrapper::after{
 	background-color: #383838;
@@ -33,9 +34,8 @@
 }
 
 .logo,
+.election-banner,
 .list-item h3 span:last-child,
-.election-banner h2::after,
-.election-banner h2,
 .table-cont,
 .table-cont h3,
 .share-icons a:hover,
