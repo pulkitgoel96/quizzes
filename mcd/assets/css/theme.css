@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: 10px;
 	left: 10px;
 }
-.row.liveblog{margin:0px -10px 30px -10px }
+.row.liveblog{margin:0px 0px 30px 0px }
 .liveblog-wrapper{padding:0px 0px; font-family: "Fira Sans Extra Condensed",sans-serif;}
 
 .liveblog-wrapper .container .liveblog{
