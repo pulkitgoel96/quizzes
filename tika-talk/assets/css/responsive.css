@@ -32,6 +32,7 @@
 	}
 	.info h3 {
 		line-height: 100%;
+		font-size: 24px;
 	}
 	.header-left ul li.point-plus {
 		background: url(../images/icons-02.png) no-repeat 0px 12px;
