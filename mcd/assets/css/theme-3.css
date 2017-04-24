@@ -42,7 +42,8 @@
 .carousel-wrapper .story-item a:hover figcaption,
 .first-story a:hover figcaption, 
 .story-frame a:hover,
-.carousel-wrapper::after
+.carousel-wrapper::after,
+.story-frame a:hover figcaption
 {
 	background-color: #1177bf;
 }
