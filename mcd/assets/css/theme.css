@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
-  margin: 0 0 10px;
+   margin: 0px 10px 0px 0px;
   padding: 0px;
   text-transform: uppercase;
 }
@@ -183,6 +183,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 
 }
+
+.list-item h3  a{display: inline-block;}
 
 
 .list-content{
