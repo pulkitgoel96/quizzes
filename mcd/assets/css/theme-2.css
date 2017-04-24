@@ -1,14 +1,13 @@
 @charset "utf-8";
-@charset "utf-8";
 
 .is-live::before{
 	background-image: url("../images/live-dark.svg");
 }
 .top-wrapper, 
 .list-content,
-.election-banner,
-.carousel-wrapper.purple::after,
-.carousel-wrapper::after{
+.election-banner h2::after,
+.election-banner h2,
+.carousel-wrapper.purple::after{
 	background-color: #383838;
 }
 
@@ -34,15 +33,15 @@
 }
 
 .logo,
+.election-banner,
 .list-item h3 span:last-child,
-.election-banner h2::after,
-.election-banner h2,
 .table-cont,
 .table-cont h3,
 .share-icons a:hover,
 .carousel-wrapper .story-item a:hover figcaption,
 .first-story a:hover figcaption, 
-.story-frame a:hover
+.story-frame a:hover,
+.carousel-wrapper::after
 {
 	background-color: #2d9905;
 }
