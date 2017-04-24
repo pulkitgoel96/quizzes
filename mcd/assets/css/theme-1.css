@@ -58,6 +58,9 @@
 .table-cont h3{
 	text-shadow: 1px 1px 0 #7f2654;
 }
+.election-table .slick-dots li button{
+	background: transparent;
+}
 
 @media (max-width: 600px){
 .liveblog-wrapper {
