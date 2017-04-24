@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 .top-wrapper, 
-.election-banner,
-.election-banner h2::after,
+
 .list-content,
 .carousel-wrapper.purple::after,
 .carousel-wrapper::after{
@@ -14,19 +13,24 @@
 }
 
 .logo,
-.election-banner h2,
 .list-item h3 span:last-child,
 .table-cont,
-.table-cont h3,
-.carousel-wrapper .slick-prev:before, 
-.carousel-wrapper .slick-next:before
+.table-cont h3
 {
 	background-color: #7f2654;
 }
 
+.carousel-wrapper .slick-prev:before, 
+.carousel-wrapper .slick-next:before{
+	color: #7f2654;
+}
+
+
 .list-item h3,
 .election-data table,
-.carousel-wrapper h3{
+.carousel-wrapper h3,
+.election-text a,
+.election-banner h2 span{
 	color: #fff;
 }
 
