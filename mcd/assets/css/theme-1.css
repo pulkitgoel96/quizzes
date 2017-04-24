@@ -7,7 +7,6 @@
 .list-content,
 .election-banner h2::after,
 .election-banner h2,
-.carousel-wrapper.purple::after,
 .carousel-wrapper::after{
 	background-color: #383838;
 }
@@ -41,7 +40,8 @@
 .share-icons a:hover,
 .carousel-wrapper .story-item a:hover figcaption,
 .first-story a:hover figcaption, 
-.story-frame a:hover
+.story-frame a:hover,
+.carousel-wrapper.purple::after
 {
 	background-color: #7f2654;
 }
