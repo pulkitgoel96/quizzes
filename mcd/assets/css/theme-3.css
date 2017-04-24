@@ -48,11 +48,18 @@
 
 .carousel-wrapper .slick-prev:before, 
 .carousel-wrapper .slick-next:before,
-.share-icons a{
+.share-icons a,
+.btn-share{
 	color: #1254b5;
 }
 
 
 .table-cont h3{
 	text-shadow: 1px 1px 0 #1254b5;
+}
+
+@media (max-width: 600px){
+.liveblog-wrapper {
+    background: #383838;
+}
 }
