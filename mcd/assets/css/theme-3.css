@@ -44,19 +44,19 @@
 .story-frame a:hover,
 .carousel-wrapper::after
 {
-	background-color: #1254b5;
+	background-color: #1177bf;
 }
 
 .carousel-wrapper .slick-prev:before, 
 .carousel-wrapper .slick-next:before,
 .share-icons a,
 .btn-share{
-	color: #1254b5;
+	color: #1177bf;
 }
 
 
 .table-cont h3{
-	text-shadow: 1px 1px 0 #1254b5;
+	text-shadow: 1px 1px 0 #1177bf;
 }
 .election-table .slick-dots li button{
 	background: transparent;
@@ -66,5 +66,5 @@
 .liveblog-wrapper {
     background: #383838;
 }
-.row.table-row{background-color: #1254b5;}
+.row.table-row{background-color: #1177bf;}
 }
