@@ -157,21 +157,7 @@ $(document).ready(function(){
   }, 6000);
 
 
-  $('.slider-2').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  });
+ 
   
   $('.stat-slider-3').slick({
     slidesToShow: 5,
@@ -217,38 +203,6 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-  $('#tabs div.tab-content').hide();
-
-  $('#tabs .tab').append('<div class="loading"></div>');
-
-  //$('#tabs div.tab-content:first').show();
-  // $('#tabs ul li:first').addClass('active');
-
-  setTimeout(function(){
-    $("#tabs ul li.active a.tab-nav").click();
-  }, 400);
-
-  $('#tabs ul li a.tab-nav').click(function(){
-    //e.preventDefault();
-
-    //$('.chart-content').highcharts().reflow();
-    $('.tab-content').removeClass('active');
-
-
-    $('.loading').show();
-    setTimeout(function(){
-      $('.loading').hide();
-    }, 400);
-
-    $('#tabs ul li').removeClass('active');
-    $(this).parent().addClass('active');
-    var currentTab = $(this).attr('href');
-    $('#tabs div.tab-content').hide();
-    $(currentTab).show();
-    return false;
-  });
-});
 
 
 //SOCIAL
