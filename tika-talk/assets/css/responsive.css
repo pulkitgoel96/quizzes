@@ -8,4 +8,148 @@
 	height: 100vh
 }
 
+@media only screen and (max-width: 600px) {
+	.logo {
+		display: inline-block;
+		width: 180px;
+		padding-left: 50px;
+	}
+	.work-container {
+		width: 480px;
+		height: 450px;
+	}
+	.content-wrap {
+		height: 380px;
+	}
+	.info {
+		height: 450px;
+	}
+	#startScreen,
+	#howplayScreen,
+	#endScreen {
+		padding-top: 70px;
+	}
+	.info h3 {
+		line-height: 100%;
+	}
+	.header-left ul li.point-plus {
+		background: url(../images/icons-02.png) no-repeat 0px 12px;
+		background-size: 31px;
+		padding: 0 0 0 38px;
+	}
+	.header-left ul li.point-minus {
+		background: url(../images/icons-03.png) no-repeat 0px 15px;
+		background-size: 30px;
+		padding: 0 0 0 38px;
+	}
+	.header-left ul li {
+		width: 72px;
+	}
+	.header-right {
+		background: url(../images/icons-04.png) no-repeat 0px 15px;
+		background-size: 30px;
+		padding: 0 0 0 36px;
+		width: 90px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.logo {
+		top: -50px;
+		padding-left: 0;
+		width: 100px;
+	}
+	.work-container {
+		width: 320px;
+		height: 320px;
+	}
+	.content-wrap {
+		height: 250px;
+	}
+	.info {
+		height: 250px;
+	}
+	#startScreen,
+	#howplayScreen,
+	#endScreen {
+		padding-top: 30px;
+	}
+	.info h3 {
+		font-size: 18px;
+		line-height: 120%;
+		margin-bottom: 5px;
+	}
+	.info h3 span {
+		font-size: 16px;
+	}
+	.info p {
+		font-size: 13px;
+		margin: 0 0 5px 0
+	}
+	.start-game {
+		padding-top: 10px;
+	}
+	.start-game a {
+		padding: 6px 15px;
+	}
+
+	/* Childreen row */
+	.baby li#baby_8,
+	.baby li#baby_1,
+	.baby li#baby_5 {
+		top: 20%;
+	}
+	.baby li#baby_10,
+	.baby li#baby_11,
+	.baby li#baby_9 {
+		top: 39%;
+	}
+
+	.baby li#baby_7,
+	.baby li#baby_4,
+	.baby li#baby_2 {
+		top: 59%;
+	}
+
+	.qa-box {
+		width: 300px;
+	}
+	.qa-box h2 {
+		font-size: 18px;
+	}
+	.qa-box span {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.work-container {
+		width: 300px;
+		height: 300px;
+	}
+	.content-wrap {
+		height: 230px;
+	}
+	.info {
+		height: 300px;
+	}
+	#startScreen,
+	#howplayScreen,
+	#endScreen {
+		padding-top: 10px;
+	}
+	.header-right {
+		width: 95px;
+	}
+	.qa-box {
+		width: 280px;
+		padding: 15px;
+	}
+	.qa-box h2 {
+		font-size: 17px;
+	}
+	.qa-box span {
+		font-size: 13px;
+	}
+}
+
 
