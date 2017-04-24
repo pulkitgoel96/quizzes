@@ -1,7 +1,9 @@
 @charset "utf-8";
 
+.is-live::before{
+	background-image: url("../images/live1.svg");
+}
 .top-wrapper, 
-
 .list-content,
 .election-banner,
 .carousel-wrapper.purple::after,
@@ -10,11 +12,24 @@
 }
 
 .liveblog-wrapper h2,
+.frame-wrapper h2,
 .block-title2,
 .story-item a,
 .story-frame a,
 .first-story a figcaption{
 	color: #383838;
+}
+
+.list-item h3,
+.election-data table,
+.carousel-wrapper h3,
+.election-text a,
+.election-banner h2 span,
+.share-icons a:hover,
+.carousel-wrapper .story-item a:hover figcaption,
+.first-story a:hover figcaption, 
+.story-frame a:hover{
+	color: #fff;
 }
 
 .logo,
@@ -37,18 +52,6 @@
 	color: #7f2654;
 }
 
-
-.list-item h3,
-.election-data table,
-.carousel-wrapper h3,
-.election-text a,
-.election-banner h2 span,
-.share-icons a:hover,
-.carousel-wrapper .story-item a:hover figcaption,
-.first-story a:hover figcaption, 
-.story-frame a:hover{
-	color: #fff;
-}
 
 .table-cont h3{
 	text-shadow: 1px 1px 0 #7f2654;
