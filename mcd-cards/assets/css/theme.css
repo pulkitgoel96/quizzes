@@ -175,14 +175,7 @@ body.is-goa .container h1, body.is-goa .container h2{color:#F00063;}
 body.is-goa{background-color:#F00063;}
 body.is-goa .map svg{fill:#F00063;stroke:#F00063;}
 
-/*MANIPUR*/
-body.is-manipur::before{border-right:100px solid #ffcd05; }
-body.is-manipur::after{background-color:#ffcd05;}
-body.is-manipur .container table tr td.num{color:#ffcd05;}
 
-body.is-manipur .container h1, body.is-manipur .container h2{color:#017528;}
-body.is-manipur{background-color:#017528;}
-body.is-manipur .map svg{fill:#017528;stroke:#017528;}
 
 
 
