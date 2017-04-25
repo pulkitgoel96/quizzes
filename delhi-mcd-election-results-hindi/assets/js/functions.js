@@ -51,7 +51,7 @@ $(document).ready(function() {
 // KEY EVENTS
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/887ca6fb-21fe-4a7e-aa0c-33f8c032e08b', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/stories/2a97e847-be14-4f8f-8c45-8fb10791ee3e', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var sections = [
-    {state: 'delhi', id:"dd7a8420-651a-46a8-aacf-5f29d22707dc"},
+    {state: 'uttar-pradesh', id:"64412617-0ef4-4f80-898a-f25494456dbb"},
     {state: 'punjab', id:"6bed8234-bbad-4986-8976-53d7021e7c80"},
     {state: 'goa', id:"1210b806-9d33-4cd9-a34d-107dfac3c6ee"},
     {state: 'uttarakhand', id:"66de4c8a-9201-4b05-8e3b-51bdc41ea074"},
@@ -201,6 +201,10 @@ $(document).ready(function(){
     ]
   });
 });
+
+
+
+
 
 
 //SOCIAL
