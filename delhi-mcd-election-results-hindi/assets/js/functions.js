@@ -10,7 +10,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<div class="story-frame"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></figure></a></div>'
+      return '<div class="story-frame"><a href="http://hindi.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></figure></a></div>'
     });
     elements.forEach(function(element) {
       $('#election-stories').append(element);
@@ -38,7 +38,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,5);
     var elements = stories.map(function(story) {
-      return '<div class="story-list"><div class="story-item"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption> '+ story.headline + '</figcaption></figure></a></div></div>'
+      return '<div class="story-list"><div class="story-item"><a href="http://hindi.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption> '+ story.headline + '</figcaption></figure></a></div></div>'
     });
     elements.forEach(function(element) {
       $('#slider-election-stories').append(element);
@@ -68,7 +68,7 @@ $(document).ready(function() {
         }
       }
       if(imageKey){
-        return '<div class="story-list"><div class="story-item"><a href="http://www.thequint.com/' + lastStory.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=270&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></figure></a></div></div>'
+        return '<div class="story-list"><div class="story-item"><a href="http://hindi.thequint.com/' + lastStory.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + imageKey + '?auto=format&amp;rect=0,0,2348,1321&amp;q=70&amp;w=270&amp;fm=pjpg" /><figcaption>' + titleElement.text + '</figcaption></figure></a></div></div>'
       }
     });
     elements.forEach(function(element) {
@@ -98,7 +98,7 @@ $(document).ready(function() {
   sections.forEach(function(section, index) {
     $.getJSON('https://hindi.thequint.com/api/v1/stories/' + section.id, function(res) {
       var liveBlog = res.story;
-      var element = '<div class="list-content"><h3><span>LIVE</span><span>'+section.state+'</span></h3><a href="https://www.thequint.com/' + liveBlog.slug+ '" target="_blank"><p>'+ liveBlog.headline +'</p></a></div>';
+      var element = '<div class="list-content"><h3><span>LIVE</span><span>'+section.state+'</span></h3><a href="https://hindi.thequint.com/' + liveBlog.slug+ '" target="_blank"><p>'+ liveBlog.headline +'</p></a></div>';
       var id = '#' + section.state + '-live-blog';
       $(id).append(element)
     });

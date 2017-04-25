@@ -1,4 +1,3 @@
-
 //Top Stories
 
 $(document).ready(function() {
