@@ -164,6 +164,7 @@ tbody th {
 	text-align: center;
 	text-shadow: 1px 1px 0 #1177bf;
 	border-bottom: 1px solid #F3F3F3;
+	text-transform: uppercase;
 }
 .table-cont h3 a {
 	color: #fff;

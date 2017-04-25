@@ -15,92 +15,91 @@ Tabletop.init({
 window.addEventListener('DOMContentLoaded', init);
 
 function showInfo(data) {	
-document.getElementById("data_up").innerHTML = 
+document.getElementById("data_north").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].uphindi,] + "</td>" 
-	+ "<td>" + [ data[0].upseats,] + "</td>"  
+	+ "<td>" + [ data[0].northhindi,] + "</td>" 
+	+ "<td>" + [ data[0].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].uphindi,] + "</td>" 
-	+ "<td>" + [ data[1].upseats,] + "</td>"  
+	+ "<td>" + [ data[1].northhindi,] + "</td>" 
+	+ "<td>" + [ data[1].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].uphindi,] + "</td>" 
-	+ "<td>" + [ data[2].upseats,] + "</td>"  
+	+ "<td>" + [ data[2].northhindi,] + "</td>" 
+	+ "<td>" + [ data[2].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].uphindi,] + "</td>" 
-	+ "<td>" + [ data[3].upseats,] + "</td>"  
+	+ "<td>" + [ data[3].northhindi,] + "</td>" 
+	+ "<td>" + [ data[3].northseats,] + "</td>"  
 	+ "</tr>";
 	
 	
-	document.getElementById("data_punjab").innerHTML = 
+	document.getElementById("data_south").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].punjabhindi,] + "</td>" 
-	+ "<td>" + [ data[0].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[0].southhindi,] + "</td>" 
+	+ "<td>" + [ data[0].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].punjabhindi,] + "</td>" 
-	+ "<td>" + [ data[1].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[1].southhindi,] + "</td>" 
+	+ "<td>" + [ data[1].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].punjabhindi,] + "</td>" 
-	+ "<td>" + [ data[2].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[2].southhindi,] + "</td>" 
+	+ "<td>" + [ data[2].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].punjabhindi,] + "</td>" 
-	+ "<td>" + [ data[3].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[3].southhindi,] + "</td>" 
+	+ "<td>" + [ data[3].southseats,] + "</td>"  
 	+ "</tr>";
 	
-	document.getElementById("data_uk").innerHTML = 
+	document.getElementById("data_east").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].ukhindi,] + "</td>" 
-	+ "<td>" + [ data[0].ukseats,] + "</td>"  
+	+ "<td>" + [ data[0].easthindi,] + "</td>" 
+	+ "<td>" + [ data[0].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].ukhindi,] + "</td>" 
-	+ "<td>" + [ data[1].ukseats,] + "</td>"  
+	+ "<td>" + [ data[1].easthindi,] + "</td>" 
+	+ "<td>" + [ data[1].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].ukhindi,] + "</td>" 
-	+ "<td>" + [ data[2].ukseats,] + "</td>"  
+	+ "<td>" + [ data[2].easthindi,] + "</td>" 
+	+ "<td>" + [ data[2].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].ukhindi,] + "</td>" 
-	+ "<td>" + [ data[3].ukseats,] + "</td>"  
+	+ "<td>" + [ data[3].easthindi,] + "</td>" 
+	+ "<td>" + [ data[3].eastseats,] + "</td>"  
 	+ "</tr>";
 	
-	document.getElementById("data_goa").innerHTML = 
+	document.getElementById("data_overall").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].goahindi,] + "</td>" 
-	+ "<td>" + [ data[0].goaseats,] + "</td>"  
+	+ "<td>" + [ data[0].overallhindi,] + "</td>" 
+	+ "<td>" + [ data[0].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].goahindi,] + "</td>" 
-	+ "<td>" + [ data[1].goaseats,] + "</td>"  
+	+ "<td>" + [ data[1].overallhindi,] + "</td>" 
+	+ "<td>" + [ data[1].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].goahindi,] + "</td>" 
-	+ "<td>" + [ data[2].goaseats,] + "</td>"  
+	+ "<td>" + [ data[2].overallhindi,] + "</td>" 
+	+ "<td>" + [ data[2].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].goahindi,] + "</td>" 
-	+ "<td>" + [ data[3].goaseats,] + "</td>"  
+	+ "<td>" + [ data[3].overallhindi,] + "</td>" 
+	+ "<td>" + [ data[3].overallseats,] + "</td>"  
 	+ "</tr>";
 	
-console.log(data);
 }
 
 

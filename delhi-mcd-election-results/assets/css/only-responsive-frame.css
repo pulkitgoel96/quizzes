@@ -4,6 +4,7 @@
 .table-cont h3 {
 	font-size: 17px;
 	white-space: nowrap;
+	font-weight: 700;
 }
 .election-data table {
 	font-size: 17px;
@@ -45,6 +46,7 @@
 .table-cont h3 {
 	font-size: 25px;
 	letter-spacing: 0px;
+	
 }
 .election-data {
 	margin: 0px 15%;
