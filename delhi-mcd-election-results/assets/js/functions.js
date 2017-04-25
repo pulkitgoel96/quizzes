@@ -1,7 +1,7 @@
 //Top Stories
 
 $(document).ready(function() {
-  var collectionSlug = 'mcd-elections'; //Needs to be replaced.
+  var collectionSlug = 'mcd-polls'; //Needs to be replaced.
   $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
@@ -9,7 +9,7 @@ $(document).ready(function() {
       return item.story
     }).slice(0,3);
     var elements = stories.map(function(story) {
-      return '<div class="story-frame"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></figure></a></div>'
+      return '<div class="story-frame"><a href="https://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=35&w=800&fm=pjpg" /><figcaption><span>' + story.headline + '</span></figcaption></figure></a></div>'
     });
     elements.forEach(function(element) {
       $('#election-stories').append(element);
