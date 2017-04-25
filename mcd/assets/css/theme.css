@@ -638,6 +638,7 @@ input.search-data {
     color: #4D086A;
     margin: 15px 0px 10px 0px;
     line-height: 100%;
+	text-transform: uppercase;
 }
 .carousel-wrapper.purple h3{
 	color: #fff;
