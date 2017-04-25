@@ -1,9 +1,12 @@
 $(document).ready(function() {
+
+	
 	
 	// start and end time
 	
 	$('.baby li').click(function(){
 		$(this).find('.qa-box').show();
+		$(this).attr('data-ischecked','true');
 	});
 	
 	
@@ -30,6 +33,14 @@ $(document).ready(function() {
 		
 	});
 	
+	// your function
+	function errorAdd(el){
+		if($(el).attr('data-ischecked') == 'false') {
+			pointMinus += 1;
+    		$("#pointMinus").text(pointMinus);
+			$(".resultMinus").text(pointMinus);	
+		}
+	}
 	
 	$('#howPlay').click(function(){
 		$('#startScreen').hide();
@@ -42,43 +53,43 @@ $(document).ready(function() {
 		
 	$('#howplayScreen').hide();
 		
-	$('#endScreen').delay(45000).fadeIn();
+	$('#endScreen').delay(52000).fadeIn();
 		
 	$('#baby_1').delay(1000).fadeIn();
-	$('#baby_1').delay(10000).fadeOut();
+	$.when($('#baby_1').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_2').delay(5000).fadeIn();
-	$('#baby_2').delay(10000).fadeOut();
+	$.when($('#baby_2').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_3').delay(10000).fadeIn();
-	$('#baby_3').delay(10000).fadeOut();
+	$.when($('#baby_3').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_4').delay(15000).fadeIn();
-	$('#baby_4').delay(10000).fadeOut();
+	$.when($('#baby_4').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_5').delay(20000).fadeIn();
-	$('#baby_5').delay(10000).fadeOut();
+	$.when($('#baby_5').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_6').delay(23000).fadeIn();
-	$('#baby_6').delay(10000).fadeOut();
+	$.when($('#baby_6').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_7').delay(37000).fadeIn();
-	$('#baby_7').delay(10000).fadeOut();
+	$.when($('#baby_7').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_8').delay(30000).fadeIn();
-	$('#baby_8').delay(10000).fadeOut();
+	$.when($('#baby_8').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_9').delay(33000).fadeIn();
-	$('#baby_9').delay(10000).fadeOut();
+	$.when($('#baby_9').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_10').delay(36000).fadeIn();
-	$('#baby_10').delay(10000).fadeOut();
+	$.when($('#baby_10').delay(10000).fadeOut()).done(errorAdd);
 	
-	$('#baby_11').delay(40000).adeIn();
-	$('#baby_11').delay(10000).fadeOut();
+	$('#baby_11').delay(40000).fadeIn();
+	$.when($('#baby_11').delay(10000).fadeOut()).done(errorAdd);
 	
 	$('#baby_12').delay(43000).fadeIn();
-	$('#baby_12').delay(10000).fadeOut();
+	$.when($('#baby_12').delay(10000).fadeOut()).done(errorAdd);
 		
 		
 	//$('#babyId').delay(10000).fadeOut();
