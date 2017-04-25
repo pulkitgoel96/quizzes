@@ -143,6 +143,9 @@
 .story-frame figcaption {
 /*	padding: 10px 10px 0 152px;*/
 	font-size: 25px;
+	padding: 4px 10px;
+	line-height: 100%;
+	max-width: 80%;
 }
 .story-frame figure img {
 /*	height: 80px;*/
