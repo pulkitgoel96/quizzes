@@ -15,29 +15,29 @@ Tabletop.init({
 window.addEventListener('DOMContentLoaded', init);
 
 function showInfo(data) {	
-document.getElementById("data_up").innerHTML = 
+document.getElementById("data_north").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].upparty,] + "</td>" 
-	+ "<td>" + [ data[0].upseats,] + "</td>"  
+	+ "<td>" + [ data[0].northparty,] + "</td>" 
+	+ "<td>" + [ data[0].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].upparty,] + "</td>" 
-	+ "<td>" + [ data[1].upseats,] + "</td>"  
+	+ "<td>" + [ data[1].northparty,] + "</td>" 
+	+ "<td>" + [ data[1].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].upparty,] + "</td>" 
-	+ "<td>" + [ data[2].upseats,] + "</td>"  
+	+ "<td>" + [ data[2].northparty,] + "</td>" 
+	+ "<td>" + [ data[2].northseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].upparty,] + "</td>" 
-	+ "<td>" + [ data[3].upseats,] + "</td>"  
+	+ "<td>" + [ data[3].northparty,] + "</td>" 
+	+ "<td>" + [ data[3].northseats,] + "</td>"  
 	+ "</tr>";
 	
 	
-	document.getElementById("data_punjab").innerHTML = 
+	document.getElementById("data_south").innerHTML = 
 	"<tr>" 
 	+ "<td>" + [ data[0].punjabparty,] + "</td>" 
 	+ "<td>" + [ data[0].punjabseats,] + "</td>"  
@@ -58,7 +58,7 @@ document.getElementById("data_up").innerHTML =
 	+ "<td>" + [ data[3].punjabseats,] + "</td>"  
 	+ "</tr>";
 	
-	document.getElementById("data_uk").innerHTML = 
+	document.getElementById("data_east").innerHTML = 
 	"<tr>" 
 	+ "<td>" + [ data[0].ukparty,] + "</td>" 
 	+ "<td>" + [ data[0].ukseats,] + "</td>"  
@@ -79,7 +79,7 @@ document.getElementById("data_up").innerHTML =
 	+ "<td>" + [ data[3].ukseats,] + "</td>"  
 	+ "</tr>";
 	
-	document.getElementById("data_goa").innerHTML = 
+	document.getElementById("data_overall").innerHTML = 
 	"<tr>" 
 	+ "<td>" + [ data[0].goaparty,] + "</td>" 
 	+ "<td>" + [ data[0].goaseats,] + "</td>"  
