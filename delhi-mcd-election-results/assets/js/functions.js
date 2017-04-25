@@ -54,7 +54,7 @@ $(document).ready(function() {
       $('#election-stories').append(element);
     })
   })
-})	
+})	 
 	
 
   // for first story
