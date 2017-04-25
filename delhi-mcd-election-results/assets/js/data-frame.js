@@ -39,65 +39,65 @@ document.getElementById("data_north").innerHTML =
 	
 	document.getElementById("data_south").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].punjabparty,] + "</td>" 
-	+ "<td>" + [ data[0].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[0].southparty,] + "</td>" 
+	+ "<td>" + [ data[0].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].punjabparty,] + "</td>" 
-	+ "<td>" + [ data[1].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[1].southparty,] + "</td>" 
+	+ "<td>" + [ data[1].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].punjabparty,] + "</td>" 
-	+ "<td>" + [ data[2].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[2].southparty,] + "</td>" 
+	+ "<td>" + [ data[2].southseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].punjabparty,] + "</td>" 
-	+ "<td>" + [ data[3].punjabseats,] + "</td>"  
+	+ "<td>" + [ data[3].southparty,] + "</td>" 
+	+ "<td>" + [ data[3].southseats,] + "</td>"  
 	+ "</tr>";
 	
 	document.getElementById("data_east").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].ukparty,] + "</td>" 
-	+ "<td>" + [ data[0].ukseats,] + "</td>"  
+	+ "<td>" + [ data[0].eastparty,] + "</td>" 
+	+ "<td>" + [ data[0].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].ukparty,] + "</td>" 
-	+ "<td>" + [ data[1].ukseats,] + "</td>"  
+	+ "<td>" + [ data[1].eastparty,] + "</td>" 
+	+ "<td>" + [ data[1].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].ukparty,] + "</td>" 
-	+ "<td>" + [ data[2].ukseats,] + "</td>"  
+	+ "<td>" + [ data[2].eastparty,] + "</td>" 
+	+ "<td>" + [ data[2].eastseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].ukparty,] + "</td>" 
-	+ "<td>" + [ data[3].ukseats,] + "</td>"  
+	+ "<td>" + [ data[3].eastparty,] + "</td>" 
+	+ "<td>" + [ data[3].eastseats,] + "</td>"  
 	+ "</tr>";
 	
 	document.getElementById("data_overall").innerHTML = 
 	"<tr>" 
-	+ "<td>" + [ data[0].goaparty,] + "</td>" 
-	+ "<td>" + [ data[0].goaseats,] + "</td>"  
+	+ "<td>" + [ data[0].overallparty,] + "</td>" 
+	+ "<td>" + [ data[0].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[1].goaparty,] + "</td>" 
-	+ "<td>" + [ data[1].goaseats,] + "</td>"  
+	+ "<td>" + [ data[1].overallparty,] + "</td>" 
+	+ "<td>" + [ data[1].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[2].goaparty,] + "</td>" 
-	+ "<td>" + [ data[2].goaseats,] + "</td>"  
+	+ "<td>" + [ data[2].overallparty,] + "</td>" 
+	+ "<td>" + [ data[2].overallseats,] + "</td>"  
 	+ "</tr>"
 
 	+"<tr>" 
-	+ "<td>" + [ data[3].goaparty,] + "</td>" 
-	+ "<td>" + [ data[3].goaseats,] + "</td>"  
+	+ "<td>" + [ data[3].overallparty,] + "</td>" 
+	+ "<td>" + [ data[3].overallseats,] + "</td>"  
 	+ "</tr>";
 	
 }
