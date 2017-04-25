@@ -141,10 +141,11 @@
 /*Responsive 5 stories*/	
 
 .story-frame figcaption {
-	padding: 10px 10px 0 152px;
+/*	padding: 10px 10px 0 152px;*/
+	font-size: 25px;
 }
 .story-frame figure img {
-	height: 80px;
+/*	height: 80px;*/
 }
 .story-frame a {
 	margin: 0px 0 0 0;
