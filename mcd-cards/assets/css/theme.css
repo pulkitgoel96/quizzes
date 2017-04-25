@@ -164,9 +164,9 @@ body.is-east::before{border-right:100px solid #ffcd05; }
 body.is-east::after{background-color:#ffcd05;}
 body.is-east .container table tr td.num{color:#ffcd05;}
 
-body.is-east .container h1{color:#AB1F4F;}
-body.is-east, body.is-east .container h2 span{background-color:#AB1F4F;}
-body.is-east .map svg{fill:#AB1F4F;stroke:#AB1F4F;}
+body.is-east .container h1{color:#548e08;}
+body.is-east, body.is-east .container h2 span{background-color:#548e08;}
+body.is-east .map svg{fill:#548e08;stroke:#548e08;}
 
 /*Overall*/
 body.is-overall::before{border-right:100px solid #ffcd05; }
