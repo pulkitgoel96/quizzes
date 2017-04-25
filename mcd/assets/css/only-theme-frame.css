@@ -149,12 +149,12 @@ tbody th {
 /*	min-height: 150px;*/
 	font-family: "Fira Sans Extra Condensed", sans-serif;
 	font-weight: 500;
-	border: 0px solid #FFBF00;
-	background: #FFBF00;
+	border: 0px solid #1177bf;
+	background: #1177bf;
 	height: 200px !important;
 }
 .table-cont h3 {
-	background: #ffbf00 none repeat scroll 0 0;
+	background: #1177bf none repeat scroll 0 0;
 	color: #fff;
 	font-size: 25px;
 	font-weight: 500;
@@ -162,7 +162,7 @@ tbody th {
 	margin: 0;
 	padding: 6px 0;
 	text-align: center;
-	text-shadow: 1px 1px 0 #4d086a;
+	text-shadow: 1px 1px 0 #1177bf;
 	border-bottom: 1px solid #F3F3F3;
 }
 .table-cont h3 a {
@@ -178,7 +178,7 @@ tbody th {
 .election-data table {
 	width: 100%;
 	font-size: 25px;
-	color: #4D086A;
+	color: #fff;
 	line-height: 130%;
 }
 .hi .election-data table tr td:first-child {
@@ -186,7 +186,7 @@ tbody th {
 }
 .election-data table tr td:last-child span {
 	text-align: left;
-	background-color: #FFBF00;
+	background-color: #1177bf;
 	padding: 0px 2px;
 }
 
