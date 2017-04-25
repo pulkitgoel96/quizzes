@@ -2,8 +2,8 @@
 //Top Stories
 
 $(document).ready(function() {
-  var collectionSlug = 'mcd-elections'; //Needs to be replaced.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+  var collectionSlug = 'mcd-elections-hindi'; //Needs to be replaced.
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
     }).map(function(item) {
@@ -30,8 +30,8 @@ $(document).ready(function() {
 
 // Videos
 $(document).ready(function() {
-  var collectionSlug = 'mcd-elections-videos'; //Needs to be replaced.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+  var collectionSlug = 'mcd-elections-videos-hindi'; //Needs to be replaced.
+  $.getJSON('https://hindi.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
     }).map(function(item) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
 // KEY EVENTS
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/stories/2a97e847-be14-4f8f-8c45-8fb10791ee3e', function(res) {
+  $.getJSON('https://hindi.thequint.com/api/v1/stories/c5642e89-77c3-4f89-aad1-f4d0bd7d320c', function(res) {
     var lastStory = res.story;
     var cards = lastStory.cards;
     var cardsWithImages = cards.filter(function(card) {
@@ -89,14 +89,14 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var sections = [
-    {state: 'uttar-pradesh', id:"64412617-0ef4-4f80-898a-f25494456dbb"},
+    {state: 'दिल्ली', id:"27f35859-27cf-40da-9150-50bccbcbd5a6"},
     {state: 'punjab', id:"6bed8234-bbad-4986-8976-53d7021e7c80"},
     {state: 'goa', id:"1210b806-9d33-4cd9-a34d-107dfac3c6ee"},
     {state: 'uttarakhand', id:"66de4c8a-9201-4b05-8e3b-51bdc41ea074"},
     {state: 'manipur', id:"2618b5c9-a03a-44b3-93ea-944d57546e8f"}
   ];
   sections.forEach(function(section, index) {
-    $.getJSON('https://www.thequint.com/api/v1/stories/' + section.id, function(res) {
+    $.getJSON('https://hindi.thequint.com/api/v1/stories/' + section.id, function(res) {
       var liveBlog = res.story;
       var element = '<div class="list-content"><h3><span>LIVE</span><span>'+section.state+'</span></h3><a href="https://www.thequint.com/' + liveBlog.slug+ '" target="_blank"><p>'+ liveBlog.headline +'</p></a></div>';
       var id = '#' + section.state + '-live-blog';
