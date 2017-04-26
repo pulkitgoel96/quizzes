@@ -1,14 +1,10 @@
 $(document).ready(function() {
-
-	
-	
 	// start and end time
-	
+	elmain = [];
 	$('.baby li').click(function(){
 		$(this).find('.qa-box').show();
-		$(this).attr('data-ischecked','true');
+		elmain = $(this);
 	});
-	
 	
 	$('.qa-box span').click(function(){
 		$(this).closest('li').hide();
@@ -18,18 +14,22 @@ $(document).ready(function() {
 	
 	$('.qa-box .true-ans').click(function(){
 		
-		pointPlus += 1;
-    	$("#pointPlus").text(pointPlus);
-		$(".resultPlus").text(pointPlus);
-		
+		if($(elmain).attr('data-ischecked') == 'false'){
+			pointPlus += 1;
+	    	$("#pointPlus").text(pointPlus);
+			$(".resultPlus").text(pointPlus);
+		}
 	});
 	
 	var pointMinus = 0;
 	
 	$('.qa-box .false-ans').click(function(){
-		pointMinus += 1;
-    	$("#pointMinus").text(pointMinus);
-		$(".resultMinus").text(pointMinus);
+		if($(elmain).attr('data-ischecked') == 'false'){
+
+			pointMinus += 1;
+	    	$("#pointMinus").text(pointMinus);
+			$(".resultMinus").text(pointMinus);
+		}
 		
 	});
 	
@@ -39,6 +39,7 @@ $(document).ready(function() {
 			pointMinus += 1;
     		$("#pointMinus").text(pointMinus);
 			$(".resultMinus").text(pointMinus);	
+			$(el).attr('data-ischecked', 'true');
 		}
 	}
 	
@@ -46,8 +47,6 @@ $(document).ready(function() {
 		$('#startScreen').hide();
 		$('#howplayScreen').show();
 	});
-	
-	
 	
 	$('#start').click(function(){
 		
@@ -90,16 +89,10 @@ $(document).ready(function() {
 	
 	$('#baby_12').delay(43000).fadeIn();
 	$.when($('#baby_12').delay(10000).fadeOut()).done(errorAdd);
-		
-		
-	//$('#babyId').delay(10000).fadeOut();
-
-		
-		
+	
+	//$('#babyId').delay(10000).fadeOut();	
 		
 	});	
-	
-	
 	
 	$('#nextgameOver').click(function(){
 		$('#endScreen').hide();
@@ -113,26 +106,25 @@ $(document).ready(function() {
 	
 });
 
-	i = 45;
+i = 52;
 function onTimer() {
-  document.getElementById('counter').innerHTML = i;
-  i--;
-  if (i < 0) {
-  }
-  else {
-    setTimeout(onTimer, 1000);
-  }
+	document.getElementById('counter').innerHTML = i;
+	i--;
+	if (i < 0) {
+	}
+	else {
+	setTimeout(onTimer, 1000);
+	}
 }
-
 
 function PlaySound_2() {
 	var sound = document.getElementById("audio_2");
 	sound.play();
+	elmain.attr('data-ischecked','true');
 }
 
 function PlaySound_1() {
 	var sound = document.getElementById("audio_1");
 	sound.play();
+	elmain.attr('data-ischecked','true');
 }
-
-

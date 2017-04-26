@@ -9,6 +9,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.baby li a {
+		width: 45px;
+		height: 60px;
+	}
 	.logo {
 		display: inline-block;
 		width: 180px;
@@ -55,6 +59,18 @@
 	}
 }
 @media only screen and (max-width: 480px) {
+	.work-container {
+		margin-top: 0;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	.baby li a {
+		width: 32px;
+		height: 40px;
+	}
 	.logo {
 		top: -50px;
 		padding-left: 0;
