@@ -29,16 +29,30 @@
 		height: 450px;
 	}
 	#startScreen,
-	#howplayScreen,
+	#howplayScreen {
+		padding-top: 30px;
+	}
 	#endScreen,
 	#gameOver {
-		padding-top: 70px;
+		padding-top: 50px;
+	}
+	#endScreen li,
+	#gameOver li {
+		margin-bottom: 10px;
 	}
 	.info h3 {
 		line-height: 100%;
-		font-size: 24px;
+		font-size: 34px;
+		margin: 0 0 5px;
 	}
-	.header-left ul li.point-plus {
+	.info p {
+		margin: 0 0 5px 0;
+		line-height: 115%;
+	}
+	.start-game a {
+		padding: 4px 20px 8px;
+	}
+	/*.header-left ul li.point-plus {
 		background: url(../images/icons-02.png) no-repeat 0px 12px;
 		background-size: 31px;
 		padding: 0 0 0 38px;
@@ -47,8 +61,8 @@
 		background: url(../images/icons-03.png) no-repeat 0px 15px;
 		background-size: 30px;
 		padding: 0 0 0 38px;
-	}
-	.header-left ul li {
+	}*/
+	/*.header-left ul li {
 		width: 72px;
 	}
 	.header-right {
@@ -56,7 +70,7 @@
 		background-size: 30px;
 		padding: 0 0 0 36px;
 		width: 90px;
-	}
+	}*/
 }
 @media only screen and (max-width: 480px) {
 	.work-container {
@@ -71,44 +85,78 @@
 		width: 32px;
 		height: 40px;
 	}
+	.header-container {
+		min-height: 50px;
+	}
+	.header-left {
+		top: 0;
+		left: 10px;
+		height: 50px;
+	}
+	.header-left ul li {
+		line-height: 46px;
+	}
+	.header-left ul li.point-plus {
+		background: url(../images/icons-02.png) no-repeat 0px 7px;
+		background-size: 33px;
+		padding: 0 0 0 40px;
+	}
+	.header-left ul li.point-minus {
+		background: url(../images/icons-03.png) no-repeat 0px 8px;
+		background-size: 37px;
+		padding: 0 0 0 42px;
+	}
+	.header-right {
+		top: 0;
+		height: 50px;
+		width: 90px;
+		line-height: 46px;
+		background: url(../images/icons-04.png) no-repeat 0px 10px;
+		background-size: 33px;
+		padding: 0 0 0 40px;
+	}
 	.logo {
-		top: -50px;
+		top: -63px;
 		padding-left: 0;
 		width: 100px;
 	}
 	.work-container {
 		width: 320px;
-		height: 320px;
+		height: 300px;
 	}
 	.content-wrap {
 		height: 250px;
 	}
 	.info {
 		height: 250px;
+		padding: 20px 20px;
 	}
 	#startScreen,
-	#howplayScreen,
+	#howplayScreen {
+		padding-top: 20px;
+	}
 	#endScreen,
 	#gameOver {
 		padding-top: 30px;
 	}
 	.info h3 {
-		font-size: 18px;
-		line-height: 120%;
+		font-size: 23px;
+		/*line-height: 120%;*/
 		margin-bottom: 5px;
 	}
 	.info h3 span {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.info p {
-		font-size: 13px;
-		margin: 0 0 5px 0
+		font-size: 17px;
+		margin: 0;
 	}
 	.start-game {
 		padding-top: 10px;
 	}
 	.start-game a {
-		padding: 6px 15px;
+		padding: 2px 15px 6px;
+		font-size: 18px;
 	}
 
 	/* Childreen row */
@@ -143,7 +191,7 @@
 @media only screen and (max-width: 320px) {
 	.work-container {
 		width: 300px;
-		height: 300px;
+		height: 280px;
 	}
 	.content-wrap {
 		height: 230px;
@@ -152,10 +200,12 @@
 		height: 300px;
 	}
 	#startScreen,
-	#howplayScreen,
+	#howplayScreen {
+		padding-top: 10px;
+	}
 	#endScreen,
 	#gameOver {
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 	.header-right {
 		width: 95px;
@@ -169,6 +219,15 @@
 	}
 	.qa-box span {
 		font-size: 13px;
+	}
+	.info h3 {
+		font-size: 22px;
+	}
+	.info p {
+		font-size: 16px;
+	}
+	.start-game {
+	    padding-top: 5px;
 	}
 }
 

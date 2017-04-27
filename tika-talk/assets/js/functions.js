@@ -103,6 +103,10 @@ $(document).ready(function() {
 	$('.true-ans').attr('onclick', 'PlaySound_2()');
 	
 	$('.false-ans').attr('onclick', 'PlaySound_1()');
+
+	$('#reload').click(function() {
+	    location.reload();
+	});
 	
 });
 
