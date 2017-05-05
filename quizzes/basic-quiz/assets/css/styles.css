@@ -37,7 +37,7 @@ input:focus, button:focus 			{outline: none;}
 /* BuzzWrap */
 
 .buzz-wrap									{max-width: 1150px;margin: 0 auto;padding: 0 1.5em;}
-.buzz-wrap img								{width: 100%}
+.buzz-wrap img								{width: 100%;display: block;}
 
 .buzz-wrap .buzz-left 						{float: left;width: 66.6667%;padding-right: 1.7em;}
 .buzz-wrap .buzz-left h2,
