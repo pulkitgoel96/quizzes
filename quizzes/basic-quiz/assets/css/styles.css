@@ -132,7 +132,7 @@ input:focus, button:focus 			{outline: none;}
 .question-box.box-bg-purple 							{background: url(../images/quiz/quiz-bg-purple.jpg);border: 0 none;padding-bottom: 40px}
 .question-box.box-bg-siyan 								{background: url(../images/quiz/quiz-bg-siyan.jpg);border: 0 none;padding-bottom: 40px}
 
-.question-box .headline									{color: #fff;font-size: 39px;text-align:center;line-height:50px;padding:0 30px 20px 30px;}
+.question-box .headline									{color: #fff;font-size: 35px;text-align:center;line-height:50px;padding:0 20px 20px 20px;}
 .question-box .headline span							{font-size: 30px;display: block;color: yellow;}
 .question-box .audio-wrap 								{width: 100%;padding: 0;margin: 10px 0 30px;position: relative;}
 
@@ -300,6 +300,7 @@ audio 													{width: 100%}
 	.buzz-wrap .question-box ul.one-third li:nth-child(2n+0){margin:  0 2%}
 
 	.question-box .headline						{font-size: 20px;line-height: 30px;padding: 0 0 10px 0}
+	.question-box .headline span				{font-size: 18px}
 
 	.buzz-wrap .question-box ul.one-third li				{width: 32%;float: left;min-height: 170px}
 	.buzz-wrap .question-box ul.one-third li:nth-child(2n+0){margin:  0 2%}
