@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <meta name="Keywords" content="" />
+    <title></title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <!-- Custom styles for this template -->
+
+    <link href="assets/css/base.css" rel="stylesheet" media="all">
+    <link href="assets/css/styles.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+<div class="main-wrap">
+    <div class="img-container"><img src="assets/images/flood-india.jpg"></div>
+    <div class="map-container">
+
+        <div class="point srinagar">
+            <div class="pop-box is-hovered"><img src="assets/images/srinagar.png"></div>
+        </div>
+        <div class="point delhi">
+            <div class="pop-box is-hovered"><img src="assets/images/delhi.png"></div>
+        </div>
+        <div class="point guwahati">
+            <div class="pop-box is-hovered"><img src="assets/images/guwahati.png"></div>
+        </div>
+        <div class="point kolkata">
+            <div class="pop-box is-hovered"><img src="assets/images/kolkata.png"></div>
+        </div>
+        <div class="point jamshedpur">
+            <div class="pop-box is-hovered"><img src="assets/images/jamshedpur.png"></div>
+        </div>
+        <div class="point surat">
+            <div class="pop-box is-hovered"><img src="assets/images/surat.png"></div>
+        </div>
+        <div class="point mumbai">
+            <div class="pop-box is-hovered"><img src="assets/images/mumbai.png"></div>
+        </div>
+        <div class="point bengaluru">
+            <div class="pop-box is-hovered"><img src="assets/images/bengaluru.png"></div>
+        </div>
+        <div class="point hyderabad">
+            <div class="pop-box is-hovered"><img src="assets/images/hyderabad.png"></div>
+        </div>
+        <div class="point chennai">
+            <div class="pop-box is-hovered"><img src="assets/images/chennai.png"></div>
+        </div>
+
+ 
+
+    </div>
+</div>
+
+<!-- js files -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/functions.js"></script> -->
+<script>
+    $(document).ready(function(){
+        /*
+        $(".map-container .point").click(function(){
+            $(this).find(".pop-box").toggleClass("is-show");
+            $(this).toggleClass("checked");
+        });*/
+        $(".map-container .point").click(function(){
+            $(".is-hovered").hide();
+            $(this).children(".is-hovered").show();
+
+            $(".point").removeClass("checked");
+            $(this).addClass("checked");
+        });
+    });
+</script>
+</body>
+
+
+
+
+
+</html>
