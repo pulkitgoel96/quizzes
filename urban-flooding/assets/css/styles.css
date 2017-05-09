@@ -101,9 +101,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: red;
 	border-color: white;
 }
-.map-container .point .pop-box.is-show {
-	display: block;
-}
 
 /* Map Points */
 .map-container .point.srinagar {
