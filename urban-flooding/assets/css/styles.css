@@ -147,6 +147,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 800px) {
+	body {
+		height: 1120px;
+	}
 	.main-wrap {
 		width: 600px;
 		height: 1120px;
@@ -214,6 +217,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 @media only screen and (max-width: 600px) {
+	body {
+		height: 896px;
+	}
 	.main-wrap {
 		width: 480px;
 		height: 896px;
@@ -281,6 +287,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 @media only screen and (max-width: 480px) {
+	body {
+		height: 597px;
+	}
 	.main-wrap {
 		width: 320px;
 		height: 597px;
