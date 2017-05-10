@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 	max-width: 750px;
 	position: relative;
+	height: 1400px;
 }
 .main-wrap .img-container {
 
@@ -147,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 800px) {
 	.main-wrap {
 		width: 600px;
+		height: 1120px;
 	}
 	.main-wrap .map-container {
 		bottom: 36px;
@@ -213,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 600px) {
 	.main-wrap {
 		width: 480px;
+		height: 896px;
 	}
 	.main-wrap .map-container {
 		bottom: 29px;
@@ -279,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 480px) {
 	.main-wrap {
 		width: 320px;
+		height: 597px;
 	}
 	.main-wrap .map-container {
 		bottom: 19px;
