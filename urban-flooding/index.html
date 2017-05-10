@@ -8,11 +8,11 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="">
     <meta name="Keywords" content="" />
-    <title></title>
+    <title>Urban Flooding</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
-    <!-- Custom styles for this template -->
-
+    
+    <!-- Custom styles -->
     <link href="assets/css/base.css" rel="stylesheet" media="all">
     <link href="assets/css/styles.css" rel="stylesheet" media="all">
 
@@ -60,14 +60,8 @@
 
 <!-- js files -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="assets/js/functions.js"></script> -->
 <script>
     $(document).ready(function(){
-        /*
-        $(".map-container .point").click(function(){
-            $(this).find(".pop-box").toggleClass("is-show");
-            $(this).toggleClass("checked");
-        });*/
         $(".map-container .point").click(function(){
             $(".is-show").hide();
             $(this).children(".is-show").show();
@@ -76,11 +70,15 @@
             $(this).addClass("checked");
         });
     });
+
+    $(document).mouseup(function (e){
+        var container = $(".pop-box");
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.hide();
+        }
+    });
 </script>
 </body>
-
-
-
-
-
 </html>
