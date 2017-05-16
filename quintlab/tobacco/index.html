@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<style type="text/css">
+#main-wrap {
+	width: 512px;
+    margin: 0 auto;
+    position: relative;
+}
+#wrapper {
+    /*background-color: black;*/
+    overflow:scroll;
+    height: 550px;
+    width: 512px;
+    margin: 0 auto;
+    /*padding: 10px; */
+}
+#container {
+    position: relative;
+    height: 550px;
+    width: 512px;
+    cursor: pointer;
+}
+.placeddiv {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    animation: blinker 1s linear infinite;
+}
+.placeddiv:before, .placeddiv:after {
+  position: absolute;
+  content: ' ';
+  height: 12px;
+  width: 3px;
+  background-color: black;
+}
+.placeddiv:before {
+  transform: rotate(45deg);
+}
+.placeddiv:after {
+  transform: rotate(-45deg);
+}
+@keyframes blinker {  
+  50% { opacity: 0.15; }
+}
+
+.result-btn {
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #c1272d;
+	color: #fff;
+	width: 100px;
+	text-align: center;
+}
+.points {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    animation: blinker 1s linear infinite;
+}
+.points:before, .points:after {
+  position: absolute;
+  content: ' ';
+  height: 12px;
+  width: 3px;
+  background-color: black;
+}
+.points:before {
+  transform: rotate(45deg);
+}
+.points:after {
+  transform: rotate(-45deg);
+}
+.points.first {
+	top: 65px;
+    left: 8px;
+    right: 0;
+    margin: 0 auto;
+}
+.points.second {
+	top: 108px;
+    left: 54px;
+    right: 0;
+    margin: 0 auto;
+}
+.points.third {
+	top: 140px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+}
+.points.forth {
+	top: 176px;
+    left: 106px;
+    right: 0;
+    margin: 0 auto;
+}
+.points.fifth {
+	top: 218px;
+    left: 0;
+    right: 29px;
+    margin: 0 auto;
+}
+.points.sixth {
+	top: 246px;
+    left: 0px;
+    right: 123px;
+    margin: 0 auto;
+}
+.points.eighth {
+	top: 356px;
+    left: 59px;
+    right: 0;
+    margin: 0 auto;
+}
+</style>
+</head>
+
+<body>
+<div id="main-wrap">
+	<div id="wrapper">
+	    <div id="container"><img src="assets/images/human.png" height="512" width="512"></div>
+	</div>
+
+	<div class="points first" style="display:none"></div>
+	<div class="points second" style="display:none"></div>
+	<div class="points third" style="display:none"></div>
+	<div class="points forth" style="display:none"></div>
+	<div class="points fifth" style="display:none"></div>
+	<div class="points sixth" style="display:none"></div>
+	<div class="points eighth" style="display:none"></div>
+
+	<div class="result-btn">Check</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$("#container").click(function(e){
+   var wrapper = $(this).parent();
+   var parentOffset = wrapper.offset(); 
+   var relX = e.pageX - parentOffset.left + wrapper.scrollLeft();
+   var relY = e.pageY - parentOffset.top + wrapper.scrollTop();
+    
+    $(this).append($('<div/>').addClass('placeddiv').css({
+        left: relX,
+        top: relY
+    }));    
+});
+$(".result-btn").click(function(){
+	$(".points").fadeIn();
+	$(".placeddiv").fadeOut();
+});
+</script>
+</body>
+
+</html>
