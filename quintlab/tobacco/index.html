@@ -218,7 +218,7 @@
         <div class="pop-box is-show">
             <h2>Female Reproduction</h2>
             <ol>
-                <li>Cervical cance</li>
+                <li>Cervical cancer</li>
                 <li>Premature ovarian failure</li>
             </ol>
             <span class="close"><i class="fa fa-times-circle"></i></span>
@@ -291,7 +291,7 @@
 </div>
 
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     /*
@@ -345,6 +345,7 @@ $(document).ready(function(){
     });
     $(document).on('click',".close", function(){
         $(".is-show").hide();
+        $(".points").removeClass("active");
     });
     $(document).mouseup(function (e){
         var container = $(".pop-box");
@@ -353,6 +354,7 @@ $(document).ready(function(){
         {
             container.hide();
         }
+        $(this).parent().removeClass("active");
     });
 });
 </script>
