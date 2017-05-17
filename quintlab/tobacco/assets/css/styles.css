@@ -1,6 +1,6 @@
 body {
     margin: 30px 0;
-    height: 610px;
+    height: 610px !important;
 }
 #main-wrap {
 	height: 553px;
