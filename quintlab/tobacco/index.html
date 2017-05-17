@@ -47,6 +47,7 @@
                 <li>Altered brain chemistry</li>
                 <li>Anxiety about tobacco’s health effects</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -58,6 +59,7 @@
                 <li>Hearing loss</li>
                 <li>Ear infection</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -71,6 +73,7 @@
                 <li>Impaired sense of taste</li>
                 <li>Halitosis (bad breath)</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -82,6 +85,7 @@
                 <li>Cancer of nasal cavities and paranasal sinuses</li>
                 <li>Impaired sense of smell</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -92,6 +96,7 @@
             <ol>
                 <li>Odour and discolouration</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -105,6 +110,7 @@
                 <li>Root-surface caries, plaque</li>
                 <li>Discolouration and staining</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -116,6 +122,7 @@
                 <li>Coronary thrombosis (heart attack)</li>
                 <li>Atherosclerosis; damage and occlusion of coronary vasculature</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -131,6 +138,7 @@
                 <li>Shortness of breath; asthma</li>
                 <li>Chronic cough; excessive sputum production</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -144,6 +152,7 @@
                 <li>Gastric, colon and pancreatic cancer</li>
                 <li>Abdominal aortic aneurysm, peptic ulcer</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -154,6 +163,7 @@
             <ol>
                 <li>Peripheral vascular disease; poor circulation (cold fingers)</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -165,6 +175,7 @@
                 <li>Psoriasis</li>
                 <li>Loss of skin tone; wrinkling; premature ageing</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -175,6 +186,7 @@
             <ol>
                 <li>Liver cancer</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -185,6 +197,7 @@
             <ol>
                 <li>Kidney and bladder cancer</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -196,6 +209,7 @@
                 <li>Infertility; sperm deformity; loss of motility; reduced number of sperms</li>
                 <li>Impotence</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -207,6 +221,7 @@
                 <li>Cervical cance</li>
                 <li>Premature ovarian failure</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -220,6 +235,7 @@
                 <li>Susceptibility to back problems</li>
                 <li>Bone marrow cancer</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -231,6 +247,7 @@
                 <li>Peripheral vascular disease; cold feet; leg pain; gangrene</li>
                 <li>Deep vein thrombosis</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -242,6 +259,7 @@
                 <li>Buerger’s disease (inflammation of arteries, veins, and nerves in the legs)</li>
                 <li>Acute myeloid leukemia (blood cancer)</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -252,6 +270,7 @@
             <ol>
                 <li>Impaired resistance to infection</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -264,6 +283,7 @@
                 <li>Poor postsurgical recovery</li>
                 <li>Burns from cigarettes and from fires caused by cigarettes</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 
@@ -323,10 +343,9 @@ $(document).ready(function(){
         $(".points").removeClass("active");
         $(this).addClass("active")
     });
-    $(".close").click(function(){
+    $(document).on('click',".close", function(){
         $(".is-show").hide();
     });
-
     $(document).mouseup(function (e){
         var container = $(".pop-box");
         if (!container.is(e.target) // if the target of the click isn't the container...

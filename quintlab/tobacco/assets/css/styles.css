@@ -1,3 +1,7 @@
+body {
+    margin: 30px 0;
+    height: 610px;
+}
 #main-wrap {
 	height: 553px;
     width: 222px;
