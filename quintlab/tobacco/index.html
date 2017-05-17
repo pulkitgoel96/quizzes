@@ -33,6 +33,7 @@
                 <li>Cataracts</li>
                 <li>Stinging, excessive tearing and blinking</li>
             </ol>
+            <span class="close"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
     
@@ -321,6 +322,9 @@ $(document).ready(function(){
         $(this).children(".is-show").show();
         $(".points").removeClass("active");
         $(this).addClass("active")
+    });
+    $(".close").click(function(){
+        $(".is-show").hide();
     });
 
     $(document).mouseup(function (e){
