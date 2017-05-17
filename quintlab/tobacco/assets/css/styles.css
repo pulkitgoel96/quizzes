@@ -1,0 +1,184 @@
+#main-wrap {
+	height: 553px;
+    width: 222px;
+    margin: 0 auto;
+    position: relative;
+}
+#wrapper {
+    /*background-color: black;*/
+    /*overflow:scroll;*/
+    margin-bottom: 15px;
+}
+#container {
+    position: relative;
+    height: 553px;
+    width: 222px;
+}
+
+/* */
+.result-btn {
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #c1272d;
+	color: #fff;
+	width: 100px;
+	text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;
+}
+.result-btn:hover {
+    border-radius: 50px;
+}
+.placeddiv {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.placeddiv:after {
+    position: absolute;
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    left: -5px;
+    top: -4px;
+    border-radius: 50%;
+}
+
+.point {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px red solid;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    /*transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;*/
+}
+/* Hover */
+.point:hover {
+    background-color: red;
+    border-color: white;
+}
+.point.checked {
+    background-color: red;
+    border-color: white;
+}
+
+.points {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.points:after {
+    position: absolute;
+    content: ' ';
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border: 3px red solid;
+    left: -5px;
+    top: -4px;
+    border-radius: 50%;
+}
+.points:hover:after {
+    background-color: red;
+    border-color: white;
+}
+/* Pop Box */
+.pop-box {
+    position: absolute;
+    background: #f2f2f2;
+    border: 5px solid #fff;
+    width: 236px;
+    /*height: 100px;*/
+    top: 17px;
+    left: -118px;
+    font-size: 13px;
+    -webkit-box-shadow: 0px 1px 3px 1px #777;
+    -moz-box-shadow:    0px 1px 3px 1px #777;
+    box-shadow:         0px 1px 3px 1px #777;
+    display: none;
+    z-index: 99;
+    padding: 10px;
+}
+.pop-box h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.pop-box ol {
+    list-style-type: ;
+    /*list-style-type: decimal;*/
+    /*margin-left: 11px;*/
+}
+.pop-box ol li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+.pop-box ol li:before {
+    position: absolute;
+    content: " - ";
+    left: 0;
+    font-size: 20px;
+    line-height: 13px;
+}
+.pop-box:after, .pop-box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+}
+.pop-box:after {
+    border-width: 10px;
+    margin-left: -10px;
+}
+.pop-box:before {
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+/*.points             {display: block !important;}*/
+
+.points.first       {top: 39px;left: 119px;}
+.points.second      {top: 18px;left: 110px;}
+.points.third       {top: 48px;left: 81px;}
+.points.forth       {top: 87px;left: 112px;}
+.points.fifth       {top: 50px;left: 110px;}
+
+.points.sixth       {top: 10px;left: 92px;}
+.points.seventh     {top: 61px;left: 110px;}
+.points.eight       {top: 130px;left: 103px;}
+.points.ninth       {top: 128px;left: 141px;}
+.points.tenth       {top: 189px;left: 111px;/*top: 173px;left: 91px;*/}
+
+.points.eleventh    {top: 288px;left: 32px;}
+.points.twelfth     {top: 276px;left: 204px;}
+.points.thirteen    {top: 173px;left: 91px;}
+.points.forteen     {top: 209px;left: 96px;}
+.points.fifteen     {top: 254px;left: 97px;}
+
+.points.sixteen     {top: 259px;left: 120px;}
+.points.seventeen   {top: 353px;left: 132px;}
+.points.eighteen    {top: 436px;left: 85px;}
+.points.nineteen    {top: 456px;left: 140px;}
+.points.twentieth   {top: 363px;left: 84px;}
+
+.points.twentyfirst {top: 423px;left: 155px;}
+
+
+

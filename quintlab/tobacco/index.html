@@ -4,128 +4,7 @@
 <meta charset="UTF-8">
 <title>Title of the document</title>
 <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-<style type="text/css">
-#main-wrap {
-	height: 553px;
-    width: 222px;
-    margin: 0 auto;
-    position: relative;
-}
-#wrapper {
-    /*background-color: black;*/
-    /*overflow:scroll;*/
-}
-#container {
-    position: relative;
-    height: 553px;
-    width: 222px;
-}
-
-/* */
-.result-btn {
-	margin: 0 auto;
-	padding: 10px 0;
-	background-color: #c1272d;
-	color: #fff;
-	width: 100px;
-	text-align: center;
-}
-.placeddiv,
-.points {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border-radius: 100%;
-    cursor: pointer;
-}
-.placeddiv:after,
-.points:after {
-    position: absolute;
-    content: ' ';
-    height: 10px;
-    width: 10px;
-    background-color: white;
-    left: -5px;
-    top: -4px;
-    border-radius: 50%;
-}
-/* Pop Box */
-.pop-box {
-    position: absolute;
-    background: #f2f2f2;
-    border: 5px solid #fff;
-    width: 236px;
-    /*height: 100px;*/
-    top: 17px;
-    left: -118px;
-    font-size: 13px;
-    -webkit-box-shadow: 0px 1px 3px 1px #777;
-    -moz-box-shadow:    0px 1px 3px 1px #777;
-    box-shadow:         0px 1px 3px 1px #777;
-    display: none;
-    z-index: 99;
-    padding: 10px;
-}
-.pop-box ol {
-    list-style-type: decimal;
-    margin-left: 11px;
-}
-.pop-box ol li {
-    margin-bottom: 5px;
-}
-.pop-box:after, .pop-box:before {
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-}
-.pop-box:after {
-    border-width: 10px;
-    margin-left: -10px;
-}
-.pop-box:before {
-    border-width: 11px;
-    margin-left: -11px;
-}
-
-
-.points.first {
-	top: 65px;
-    left: 8px;
-    right: 0;
-    margin: 0 auto;
-}
-.points.second {
-	top: 108px;
-    left: 54px;
-    right: 0;
-    margin: 0 auto;
-}
-.points.third {
-	top: 140px;
-    left: 0px;
-    right: 0;
-    margin: 0 auto;
-}
-.points.forth {
-	top: 176px;
-    left: 106px;
-    right: 0;
-    margin: 0 auto;
-}
-.points.fifth {
-	top: 218px;
-    left: 0;
-    right: 29px;
-    margin: 0 auto;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -137,6 +16,7 @@
     <!-- 01 -->
 	<div class="points first" style="display:none">
         <div class="pop-box is-show">
+            <h2>1. Eyes</h2>
             <ol>
                 <li>Blindness (macular degeneration)</li>
                 <li>Cataracts</li>
@@ -144,53 +24,247 @@
             </ol>
         </div>
     </div>
+    
     <!-- 02 -->
 	<div class="points second" style="display:none">
         <div class="pop-box is-show">
+            <h2>2. Brain & Psyche</h2>
             <ol>
-                <li>Blindness (macular degeneration)</li>
-                <li>Cataracts</li>
-                <li>Stinging, excessive tearing and blinking</li>
+                <li>Stroke (cerebrovascular accident)</li>
+                <li>Addiction/withdrawal</li>
+                <li>Altered brain chemistry</li>
+                <li>Anxiety about tobacco’s health effects</li>
             </ol>
         </div>
     </div>
 
+    <!-- 03 -->
 	<div class="points third" style="display:none">
         <div class="pop-box is-show">
+            <h2>3. Ears</h2>
             <ol>
-                <li>Blindness (macular degeneration)</li>
-                <li>Cataracts</li>
-                <li>Stinging, excessive tearing and blinking</li>
+                <li>Hearing loss</li>
+                <li>Ear infection</li>
             </ol>
         </div>
     </div>
 
+    <!-- 04 -->
 	<div class="points forth" style="display:none">
         <div class="pop-box is-show">
+            <h2>4. Mouth & Throat</h2>
             <ol>
-                <li>Blindness (macular degeneration)</li>
-                <li>Cataracts</li>
-                <li>Stinging, excessive tearing and blinking</li>
+                <li>Cancers of lips, mouth, throat, larynx, and pharynx</li>
+                <li>Sore throat</li>
+                <li>Impaired sense of taste</li>
+                <li>Halitosis (bad breath)</li>
             </ol>
         </div>
     </div>
+
+    <!-- 05 -->
 	<div class="points fifth" style="display:none">
         <div class="pop-box is-show">
+            <h2>5. Nose</h2>
             <ol>
-                <li>Blindness (macular degeneration)</li>
-                <li>Cataracts</li>
-                <li>Stinging, excessive tearing and blinking</li>
+                <li>Cancer of nasal cavities and paranasal sinuses</li>
+                <li>Impaired sense of smell</li>
             </ol>
         </div>
     </div>
+
+    <!-- 06 -->
+    <div class="points sixth" style="display:none">
+        <div class="pop-box is-show">
+            <h2>6. Hair</h2>
+            <ol>
+                <li>Odour and discolouration</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="points seventh" style="display:none">
+        <div class="pop-box is-show">
+            <h2>7. Teeth</h2>
+            <ol>
+                <li>Periodontal (gum) disease; gingivitis; periodontitis</li>
+                <li>Loose teeth, tooth loss</li>
+                <li>Root-surface caries, plaque</li>
+                <li>Discolouration and staining</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="points eight" style="display:none">
+        <div class="pop-box is-show">
+            <h2>8. Heart</h2>
+            <ol>
+                <li>Coronary thrombosis (heart attack)</li>
+                <li>Atherosclerosis; damage and occlusion of coronary vasculature</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 09 -->
+    <div class="points ninth" style="display:none">
+        <div class="pop-box is-show">
+            <h2>9. Lungs</h2>
+            <ol>
+                <li>Lung, bronchus, and tracheal cancer</li>
+                <li>Chronic obstructive pulmonary disease (COPD); emphysema</li>
+                <li>Chronic bronchitis</li>
+                <li>Respiratory infection; influenza; pneumonia; tuberculosis</li>
+                <li>Shortness of breath; asthma</li>
+                <li>Chronic cough; excessive sputum production</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="points tenth" style="display:none">
+        <div class="pop-box is-show">
+            <h2>10. Chest & Abdomen</h2>
+            <ol>
+                <li>Possible increased risk of breast cancer</li>
+                <li>Oesophageal cancer</li>
+                <li>Gastric, colon and pancreatic cancer</li>
+                <li>Abdominal aortic aneurysm, peptic ulcer</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="points eleventh" style="display:none">
+        <div class="pop-box is-show">
+            <h2>11. Hands</h2>
+            <ol>
+                <li>Peripheral vascular disease; poor circulation (cold fingers)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="points twelfth" style="display:none">
+        <div class="pop-box is-show">
+            <h2>12. Skin</h2>
+            <ol>
+                <li>Psoriasis</li>
+                <li>Loss of skin tone; wrinkling; premature ageing</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="points thirteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>13. Liver</h2>
+            <ol>
+                <li>Liver cancer</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="points forteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>14. Kidneys & Bladder</h2>
+            <ol>
+                <li>Kidney and bladder cancer</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="points fifteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>15. Male Reproduction</h2>
+            <ol>
+                <li>Infertility; sperm deformity; loss of motility; reduced number of sperms</li>
+                <li>Impotence</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="points sixteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>16. Female Reproduction</h2>
+            <ol>
+                <li>Cervical cance</li>
+                <li>Premature ovarian failure</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="points seventeen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>17. Skeletal System</h2>
+            <ol>
+                <li>Osteoporosis</li>
+                <li>Hip fracture</li>
+                <li>Susceptibility to back problems</li>
+                <li>Bone marrow cancer</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 18 -->
+    <div class="points eighteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>18. Legs & Feet</h2>
+            <ol>
+                <li>Peripheral vascular disease; cold feet; leg pain; gangrene</li>
+                <li>Deep vein thrombosis</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 19 -->
+    <div class="points nineteen" style="display:none">
+        <div class="pop-box is-show">
+            <h2>19. Circulatory System</h2>
+            <ol>
+                <li>Buerger’s disease (inflammation of arteries, veins, and nerves in the legs)</li>
+                <li>Acute myeloid leukemia (blood cancer)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 20 -->
+    <div class="points twentieth" style="display:none">
+        <div class="pop-box is-show">
+            <h2>20. Immune System</h2>
+            <ol>
+                <li>Impaired resistance to infection</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 21 -->
+    <div class="points twentyfirst" style="display:none">
+        <div class="pop-box is-show">
+            <h2>21. Wounds & Surgery</h2>
+            <ol>
+                <li>Impaired wound healing</li>
+                <li>Poor postsurgical recovery</li>
+                <li>Burns from cigarettes and from fires caused by cigarettes</li>
+            </ol>
+        </div>
+    </div>
+
+
 
 	<div class="result-btn">Check</div>
 </div>
 
-
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script>
 $(document).ready(function(){
+    /*
     $("#container").click(function(e){
         var wrapper = $(this).parent();
         var parentOffset = wrapper.offset(); 
@@ -202,7 +276,44 @@ $(document).ready(function(){
     $(".result-btn").click(function(){
     	$(".points").fadeIn();
     	$(".placeddiv").fadeOut();
+    });*/
+    /*var is_print = true;
+    $("#container").click(function(e){
+        var wrapper = $(this).parent();
+        var parentOffset = wrapper.offset(); 
+        var relX = e.pageX - parentOffset.left + wrapper.scrollLeft();
+        var relY = e.pageY - parentOffset.top + wrapper.scrollTop();
+        if(is_print) {
+            $(this).append($('<div/>').addClass('placeddiv').css({left: relX, top: relY }));
+        }
     });
+    $(".result-btn").click(function(){
+        $(".points").fadeIn();
+        $(".placeddiv").fadeOut();
+        is_print = false;
+    });*/
+    var is_print = true;
+    $("#container img").click(function(e){
+        var wrapper = $(this).parent();
+        var parentOffset = wrapper.offset(); 
+        var relX = e.pageX - parentOffset.left + wrapper.scrollLeft();
+        var relY = e.pageY - parentOffset.top + wrapper.scrollTop();
+        if(is_print) {
+            $(this).after($('<div/>').addClass('placeddiv').css({left: relX, top: relY }));
+            }
+      });
+
+      $(".result-btn").click(function(){
+
+        $(".points").fadeIn();
+
+        $(".placeddiv").fadeOut();
+
+            is_print = false;
+
+      });
+
+
     $(".points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
