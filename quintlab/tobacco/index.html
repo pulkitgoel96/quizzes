@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="assets/css/base.css">
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-</head>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <meta name="Keywords" content="" />
+    <title>Tobacco</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+</head>
 <body>
 <div id="main-wrap">
 	<div id="wrapper">
@@ -256,8 +266,6 @@
         </div>
     </div>
 
-
-
 	<div class="result-btn">Check</div>
 </div>
 
@@ -302,19 +310,12 @@ $(document).ready(function(){
         if(is_print) {
             $(this).after($('<div/>').addClass('placeddiv').css({left: relX, top: relY }));
             }
-      });
-
-      $(".result-btn").click(function(){
-
+    });
+    $(".result-btn").click(function(){
         $(".points").fadeIn();
-
         $(".placeddiv").fadeOut();
-
-            is_print = false;
-
-      });
-
-
+        is_print = false;
+    });
     $(".points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
