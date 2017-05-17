@@ -319,6 +319,8 @@ $(document).ready(function(){
     $(".points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
+        $(".points").removeClass("active");
+        $(this).addClass("active")
     });
 
     $(document).mouseup(function (e){

@@ -47,29 +47,6 @@
     top: -4px;
     border-radius: 50%;
 }
-
-.point {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: white;
-    border-radius: 50%;
-    border: 5px red solid;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    /*transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;*/
-}
-/* Hover */
-.point:hover {
-    background-color: red;
-    border-color: white;
-}
-.point.checked {
-    background-color: red;
-    border-color: white;
-}
-
 .points {
     width: 10px;
     height: 10px;
@@ -88,10 +65,14 @@
     top: -4px;
     border-radius: 50%;
 }
-.points:hover:after {
+.points.active:after {
     background-color: red;
     border-color: white;
 }
+/*.points:hover:after {
+    background-color: red;
+    border-color: white;
+}*/
 /* Pop Box */
 .pop-box {
     position: absolute;
@@ -99,8 +80,8 @@
     border: 5px solid #fff;
     width: 236px;
     /*height: 100px;*/
-    top: 17px;
-    left: -116px;
+    top: 29px;
+    left: -103px;
     font-size: 13px;
     -webkit-box-shadow: 0px 1px 3px 1px #777;
     -moz-box-shadow:    0px 1px 3px 1px #777;
@@ -160,33 +141,91 @@
     margin-left: -11px;
 }
 
-/*.points             {display: block !important;}*/
+/*.points                     {display: block !important;}*/
 
-.points.first       {top: 39px;left: 119px;}
-.points.second      {top: 18px;left: 110px;}
-.points.third       {top: 48px;left: 81px;}
-.points.forth       {top: 87px;left: 112px;}
-.points.fifth       {top: 50px;left: 110px;}
+.points.first               {top: 39px;left: 119px;}
 
-.points.sixth       {top: 10px;left: 92px;}
-.points.seventh     {top: 61px;left: 110px;}
-.points.eight       {top: 130px;left: 103px;}
-.points.ninth       {top: 128px;left: 141px;}
-.points.tenth       {top: 189px;left: 111px;/*top: 173px;left: 91px;*/}
+/*.points.second            {top: 18px;left: 110px;}*/
+.points.second               {top: 4px;left: 95px;width: 30px;height: 30px;}
 
-.points.eleventh    {top: 288px;left: 32px;}
-.points.twelfth     {top: 276px;left: 204px;}
-.points.thirteen    {top: 173px;left: 91px;}
-.points.forteen     {top: 209px;left: 96px;}
-.points.fifteen     {top: 254px;left: 97px;}
+/*.points.third             {top: 48px;left: 81px;}*/
+.points.third               {top: 36px;left: 66px;width: 30px;height: 30px;}
 
-.points.sixteen     {top: 259px;left: 120px;}
-.points.seventeen   {top: 353px;left: 132px;}
-.points.eighteen    {top: 436px;left: 85px;}
-.points.nineteen    {top: 456px;left: 140px;}
-.points.twentieth   {top: 363px;left: 84px;}
+/*.points.forth             {top: 87px;left: 112px;}12 15*/
+.points.forth               {top: 75px;left: 97px;width: 30px;height: 30px;}
 
-.points.twentyfirst {top: 423px;left: 155px;}
+.points.fifth               {top: 50px;left: 110px;}
 
+/*.points.sixth             {top: 10px;left: 92px;}*/
+.points.sixth               {top: -2px;left: 77px;width: 30px;height: 30px;}
 
+.points.seventh             {top: 61px;left: 110px;}
 
+/*.points.eight             {top: 130px;left: 103px;}*/
+.points.eight               {top: 118px;left: 88px;width: 30px;height: 30px;}
+
+/*.points.ninth             {top: 128px;left: 141px;}*/
+.points.ninth               {top: 116px;left: 126px;width: 30px;height: 30px;}
+.points.ninth:after         {left: 8px;top: 8px;}
+
+/*.points.tenth             {top: 189px;left: 111px;}*/
+.points.tenth               {top: 177px;left: 96px;width: 30px;height: 30px;}
+
+/*.points.eleventh          {top: 288px;left: 32px;}*/
+.points.eleventh            {top: 276px;left: 17px;width: 30px;height: 30px;}
+
+/*.points.twelfth           {top: 276px;left: 204px;}*/
+.points.twelfth             {top: 264px;left: 189px;width: 30px;height: 30px;}
+
+/*.points.thirteen          {top: 173px;left: 91px;}*/
+.points.thirteen            {top: 161px;left: 76px;width: 30px;height: 30px;}
+
+/*.points.forteen           {top: 209px;left: 96px;}*/
+.points.forteen             {top: 197px;left: 81px;width: 30px;height: 30px;}
+
+/*.points.fifteen           {top: 254px;left: 97px;}*/
+.points.fifteen             {top: 242px;left: 82px;width: 30px;height: 30px;}
+
+/*.points.sixteen           {top: 259px;left: 120px;}*/
+.points.sixteen             {top: 247px;left: 105px;width: 30px;height: 30px;}
+
+/*.points.seventeen         {top: 353px;left: 132px;}*/
+.points.seventeen           {top: 341px;left: 117px;width: 30px;height: 30px;}
+
+/*.points.eighteen          {top: 436px;left: 85px;}*/
+.points.eighteen            {top: 424px;left: 70px;width: 30px;height: 30px;}
+
+/*.points.nineteen          {top: 456px;left: 140px;}*/
+.points.nineteen            {top: 444px;left: 125px;width: 30px;height: 30px;}
+
+/*.points.twentieth         {top: 363px;left: 84px;}*/
+.points.twentieth           {top: 351px;left: 69px;width: 30px;height: 30px;}
+
+/*.points.twentyfirst       {top: 423px;left: 155px;}*/
+.points.twentyfirst         {top: 411px;left: 140px;width: 30px;height: 30px;}
+
+.points.second:after,
+.points.third:after,
+
+.points.forth:after,
+.points.sixth:after,
+.points.eight:after,
+.points.tenth:after,
+.points.eleventh:after,
+.points.twelfth:after,
+.points.thirteen:after,
+.points.forteen:after,
+.points.fifteen:after,
+.points.sixteen:after,
+.points.seventeen:after,
+.points.eighteen:after,
+.points.nineteen:after,
+.points.twentieth:after,
+.points.twentyfirst:after   {left: 8px;top: 8px;}
+
+.points.first .pop-box,
+.points.fifth .pop-box,
+.points.seventh .pop-box {
+    top: 17px;
+    left: -116px;
+}
