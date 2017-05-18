@@ -293,7 +293,12 @@
         </div>
     </div>
 
-	<div class="check-btn">Check</div>
+	<div>
+        <div class="check-btn">Check</div>
+        <div class="check-content" style="display:none">Source: WHO (The Tobacco Atlas)</div>
+    </div>
+
+    
 </div>
 
 <!-- Scripts -->
@@ -313,9 +318,12 @@ $(document).ready(function(){
     $(".check-btn").click(function(){
         $(".points").fadeIn();
         $(".click-point").fadeOut();
+
         $(".step-first").hide();
         $(".step-second").show();
-        // $(this).hide();
+
+        $(this).hide();
+        $(".check-content").show();
         is_print = false;
     });
     $(".points").click(function(){

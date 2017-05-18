@@ -48,6 +48,10 @@ body {
 .check-btn:hover {
     background-color: #000;
 }
+.check-content {
+    font-size: 16px;
+    font-weight: 700;
+}
 .click-point {
     width: 10px;
     height: 10px;
