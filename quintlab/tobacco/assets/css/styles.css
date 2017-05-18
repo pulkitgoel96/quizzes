@@ -7,11 +7,16 @@ body {
 .header {
     text-align: center;
     font-size: 24px;
-    padding: 10px 10px 0px;
+    padding: 0 10px;
     max-width: 500px;
     margin: 0 auto;
     font-weight: 700;
     line-height: 30px;
+}
+@media only screen and (max-width: 479px) {
+    .header {
+        font-size: 22px;
+    }
 }
 #main-wrap {
 	height: 553px;
