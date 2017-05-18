@@ -17,8 +17,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+
 </head>
 <body>
+<header class="header">
+    <p class="step-first">Click on the body parts you think tobacco has a harmful effect on.</p>
+    <p class="step-second" style="display:none">How many did you get? Did you underestimate tobacco's effect on the body?</p>
+</header>
 <div id="main-wrap">
 	<div id="wrapper">
 	    <div id="container"><img src="assets/images/Human-Anantomy.png" height="553" width="222"></div>
@@ -335,6 +341,9 @@ $(document).ready(function(){
     $(".result-btn").click(function(){
         $(".points").fadeIn();
         $(".placeddiv").fadeOut();
+        $(".step-first").hide();
+        $(".step-second").show();
+        // $(this).hide();
         is_print = false;
     });
     $(".points").click(function(){

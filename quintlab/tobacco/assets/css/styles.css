@@ -1,6 +1,16 @@
 body {
-    margin: 0 0 30px;
-    height: 610px !important;
+    height: 690px;
+    font-family: 'Strait', sans-serif;
+    line-height: 100%;
+}
+.header {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 10px 0px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 30px;
 }
 #main-wrap {
 	height: 553px;
@@ -11,7 +21,7 @@ body {
 #wrapper {
     /*background-color: black;*/
     /*overflow:scroll;*/
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #container {
     position: relative;
@@ -25,10 +35,12 @@ body {
 	padding: 10px 0;
 	background-color: #c1272d;
 	color: #fff;
-	width: 100px;
+	width: 90px;
 	text-align: center;
     cursor: pointer;
     border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
     transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;
 }
 .result-btn:hover {
@@ -99,6 +111,10 @@ body {
     top: -16px;
     right: -13px;
     font-size: 20px;
+    background-color: #fff;
+    height: 17px;
+    width: 17px;
+    display: block;
 }
 .pop-box h2 {
     font-size: 16px;
@@ -108,20 +124,20 @@ body {
 .pop-box ol {
     list-style-type: ;
     /*list-style-type: decimal;*/
-    /*margin-left: 11px;*/
+    margin-left: 10px;
 }
 .pop-box ol li {
     margin-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 13px;
     position: relative;
 }
 .pop-box ol li::before {
     position: absolute;
     left: 0px;
-    top: 1px;
-    content: "\f08b";
+    top: -1px;
+    content: "\f111";
     font-family: FontAwesome;
-    font-size: 13px;
+    font-size: 8px;
 }
 /*.pop-box ol li:before {
     position: absolute;
