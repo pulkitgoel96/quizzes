@@ -123,3 +123,13 @@
 	margin: 0 auto 30px auto;
 }
 }
+
+
+
+
+@media (max-width: 575px) {
+	
+	.top-bar{margin-bottom:45px;}
+	.top-bar h1{float: none;}
+	.go-home{display: block; margin: 5px 0 0px 0px;}
+}

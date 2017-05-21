@@ -577,3 +577,11 @@ table {
 }
 
 
+.go-home{display: inline-block; margin: 7px 0 0 14px; font-weight: 400;}
+.go-home a {
+  color: #fff;
+  display: inline-block;
+  font-size: 23px;
+  
+  text-transform: uppercase;
+}
