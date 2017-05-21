@@ -117,6 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	z-index: -1;
 }
+
+
 .social-share {
 	position: absolute;
 	top: 0;
@@ -599,6 +601,15 @@ table {
 
 /*Iframe Score*/
 .iframe-score{margin: 0; padding: 0; border: 0; width: 100%; background: transparent; height: 350px; overflow: hidden;}
+
+.go-home{display: inline-block; margin: 7px 0 0 14px;}
+.go-home a {
+  color: #fff;
+  display: inline-block;
+  font-size: 23px;
+  
+  text-transform: uppercase;
+}
 
 
 

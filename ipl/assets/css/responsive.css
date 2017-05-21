@@ -139,8 +139,14 @@
 }
 
 @media (max-width: 575px) {
+	.top-bar{margin-bottom:45px;}
+	.top-bar h1{float: none;}
 .others-ners .more-list figcaption span {
   font-size: 14px;
 }
 	.twitter-widget{display:none;}
+	
+	
+	
+	.go-home{display: block; margin: 5px 0 0px 0px;}
 }
