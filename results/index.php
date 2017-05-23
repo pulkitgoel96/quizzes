@@ -41,9 +41,9 @@
 			<div class="social-back"><img src="assets/images/share.png" alt="">
 			</div>
 			<div class="social-icons">
-				<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/gift-abu-a-burkha/&amp;t=Gift+Abu+A+Burkha" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
+				<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;t=Try+this+stress+buster+for+shit+relatives+say+when+results+come+in" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
 				</div>
-				<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/gift-abu-a-burkha/&amp;text=Have you wrapped your gift for Abu Azmi? %20https%3A//thequint.com/quintlab/gift-abu-a-burkha" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
+				<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;text=Try This Stress-Buster for Shit Relatives Say When Results Come In %20https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
 				</div>
 			</div>
 		</div>
