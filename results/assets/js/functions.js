@@ -86,8 +86,9 @@ counts = {};
 $(document).ready(function(){	
 	
 	// Onload random value
-	var random = Math.floor(Math.random() * $('.data ul li').length);
-    $('.data ul li').show().eq(random).addClass('is-show');
+	//var random = Math.floor(Math.random() * $('.data ul li').length);
+    //$('.data ul li').show().eq(random).addClass('is-show');
+	$('.data ul li:first').addClass('is-show');
 	
 	// Onload var of sender and msg
 	var sender_dp = $('.data ul li.is-show').find('.dp').html();
@@ -110,10 +111,18 @@ $(document).ready(function(){
 		}, 800);
 		
 		
-		$('.data ul li').removeClass('is-show');
+		//$('.data ul li').removeClass('is-show');
 		//Function for random value
-		var random = Math.floor(Math.random() * $('.data ul li').length);
-    	$('.data ul li').show().eq(random).addClass('is-show');
+		//var random = Math.floor(Math.random() * $('.data ul li').length);
+    	//$('.data ul li').show().eq(random).addClass('is-show');
+		
+		var $next = $('.data ul li.is-show').removeClass('is-show').next('.data ul li')
+			if ($next.length) {
+			$next.addClass('is-show'); 
+		}
+		else {
+			$(".data ul li:first").addClass('is-show');
+		}
 		
 		//Var of sender and msg
 		var sender_dp = $('.data ul li.is-show').find('.dp').html();
