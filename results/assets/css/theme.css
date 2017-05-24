@@ -493,7 +493,10 @@ background-position: -1072px;
 
 .mid-container {
 	transition: 0.3s bottom ease-in-out;
-	cursor: pointer;
+	cursor: url('../images/cursor.png'), auto;
+}
+.mid-container *{
+	cursor: url('../images/cursor.png'), auto;
 }
 .mid-container.toggle-screen {
 	bottom: -100%;
