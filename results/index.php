@@ -336,6 +336,7 @@
 
 
 
+<!--
 	<footer class="wrapper footer-wrapper" role="contentinfo">
 		<span class="copy"><a href="https://www.thequint.com/terms-and-conditions" target="_blank">2016 &copy; Copyright TheQuint</a></span>
 		<span class="credits">Credits</span>
@@ -352,6 +353,7 @@
 			<span>Development: Achintya De</span>
 		</div>
 	</div>
+-->
 
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/iframeResizer.contentWindow.min.js"></script>
