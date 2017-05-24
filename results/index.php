@@ -51,7 +51,7 @@
 			<div class="side-container">
 				<div class="top-container">
 					<h1>Try This <span>Stress-Buster</span> for Shit Relatives Say When Results Come In</h1>
-					<p>Free admission advice from Duur ke Mama ji? 'Aage Kya Karna Hai?' messages irritating you more than Dhinchak Pooja's 'Selfie song'.<br>Gussa ho? Kuch Todna Hai? Then Look No Further!</p>
+					<p>Free admission advice from Duur ke Mama ji? 'Aage kya karna hai?' messages irritating you more than Dhinchak Pooja's 'Selfie song'.<br>Gussa ho? Kuch todna hai? Then look no further!</p>
 					<p>Here’s The Quint’s virtual stress-buster, just for you!</p>
 					<p class="p-big">Tap on the messages<br> to shatter the screen. </p>
 					<div class="hammer-big"><img src="assets/images/hammer-big.png" alt=""></div>
