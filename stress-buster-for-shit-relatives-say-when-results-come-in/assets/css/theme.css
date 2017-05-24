@@ -28,6 +28,7 @@ body {
 }
 .footer-wrapper a {
 	color: #fff;
+	text-decoration: none;
 }
 .copy {
 	float: left;
