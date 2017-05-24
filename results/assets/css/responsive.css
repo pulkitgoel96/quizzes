@@ -74,6 +74,10 @@
 	.hammer-big img{
 		width:  80px;
 	}
+	
+	.footer-wrapper{
+		position: inherit;
+	}
 
 }
 
