@@ -1,0 +1,112 @@
+body {
+    /*height: 690px;*/
+    font-family: 'Strait', sans-serif;
+    line-height: 100%;
+    color: #3C3C3C;
+}
+#wrap {
+    margin: 50px auto 0;
+    max-width: 300px;
+    position: relative;
+}
+
+.flip-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.flip-box li {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+}
+
+.pages {
+    position: absolute;
+    z-index: 9;
+    top: 5px;
+    right: 7px;
+    /*background-color: red;*/
+    color: #555;
+    border-radius: 100%;
+    width: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.flip-box li {
+    background-color: #19cbcb;
+}
+
+.flip-box li:nth-child(02) {
+    background-color: #f2e394;
+}
+
+.flip-box li:nth-child(03) {
+    background-color: #ffcc5c;
+}
+
+.flip-box li:nth-child(04) {
+    background-color: #ff6f69;
+}
+
+.flip-box li:nth-child(05) {
+    background-color: #588c7e;
+}
+
+.alert-show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup-box {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    padding: 20px;
+    margin: -75px auto 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+}
+
+.popup-box .close {
+    background-color: #555;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.mybtn {
+    margin: 20px auto;
+    width: 86px;
+    background-color: #19cbcb;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.paly-again {
+    margin: 20px auto;
+    width: 86px;
+    background-color: #19cbcb;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

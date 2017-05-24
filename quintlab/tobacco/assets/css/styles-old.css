@@ -4,75 +4,54 @@ body {
     line-height: 100%;
     color: #3C3C3C;
 }
-.main {
-    height: 553px;
-    max-width: 500px;
-    margin: 0 auto;
-    position: relative;
-}
-
-/* Header */
 .header {
+    text-align: center;
     font-size: 24px;
     padding: 0 10px;
+    max-width: 500px;
+    margin: 0 auto;
     font-weight: 700;
     line-height: 30px;
-    text-align: center;
 }
-
-/* Middle */
-.human-body {
+@media only screen and (max-width: 479px) {
+    .header {
+        font-size: 22px;
+    }
+}
+#main-wrap {
+	height: 553px;
+    width: 222px;
+    margin: 0 auto;
+    position: relative;
+}
+#wrapper {
+    margin-bottom: 10px;
+}
+#container {
     position: relative;
     height: 553px;
     width: 222px;
-    margin: 0 auto;
-    background: url(../images/Human-Anantomy.png) no-repeat center;
 }
-.human-body .step-01,
-.human-body .step-02 {
-    height: 553px;
-    width: 222px;
-    /*opacity: 0.5;*/
-}
-.human-body .step-01 {
-    background-color: rgba(0,0,255, 0.5);
-}
-.human-body .step-02 {
-    background-color: rgba(255,0,0, 0.5);
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-}
-.footer .check-btn {
-    margin: 0 auto;
-    padding: 10px 0;
-    background-color: #c1272d;
-    color: #fff;
-    width: 90px;
-    text-align: center;
+.check-btn {
+	margin: 0 auto;
+	padding: 10px 0;
+	background-color: #c1272d;
+	color: #fff;
+	width: 90px;
+	text-align: center;
     cursor: pointer;
     border-radius: 3px;
     font-weight: 700;
     letter-spacing: 1px;
     transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;
 }
-.footer .check-btn:hover {
+.check-btn:hover {
     background-color: #000;
 }
-.footer .check-content {
+.check-content {
     font-size: 16px;
     font-weight: 700;
 }
-
-
-
-
-
-
-/*    ============    */
-
 .click-point {
     width: 10px;
     height: 10px;
@@ -96,7 +75,6 @@ body {
     position: absolute;
     border-radius: 100%;
     cursor: pointer;
-    /*z-index: 99;*/
 }
 .points:after {
     position: absolute;
@@ -118,9 +96,6 @@ body {
         background-color: red;
         border-color: white;
     }
-}
-.step-01 .points:after {
-    /*display: none;*/
 }
 /* Pop Box */
 .pop-box {
@@ -148,7 +123,6 @@ body {
     height: 17px;
     width: 17px;
     display: block;
-    border-radius: 50%;
 }
 .pop-box h2 {
     font-size: 16px;
@@ -201,12 +175,9 @@ body {
     margin-left: -11px;
 }
 
-.points                     {display: block !important;background-color: rgba(255,255,255, 0.5);}
+/*.points                     {display: block !important;}*/
 
-/*.points.first             {top: 39px;left: 119px;}*/
-.points.first               {top: 31px;left: 110px;width: 20px;height: 20px;}
-.points.first:after         {left: 3px;top: 3px;}
-
+.points.first               {top: 39px;left: 119px;}
 
 /*.points.second            {top: 18px;left: 110px;}*/
 .points.second               {top: 4px;left: 95px;width: 30px;height: 30px;}
@@ -217,19 +188,12 @@ body {
 /*.points.forth             {top: 87px;left: 112px;}12 15*/
 .points.forth               {top: 75px;left: 97px;width: 30px;height: 30px;}
 
-/*.points.fifth             {top: 50px;left: 110px;}*/
-.points.fifth               {top: 42px;left: 101px;width: 20px;height: 20px;}
-.points.fifth:after         {left: 3px;top: 3px;}
-
+.points.fifth               {top: 50px;left: 110px;}
 
 /*.points.sixth             {top: 10px;left: 92px;}*/
 .points.sixth               {top: -2px;left: 77px;width: 30px;height: 30px;}
 
-/*.points.seventh           {top: 61px;left: 110px;}*/
-.points.seventh             {top: 55px;left: 101px;width: 20px;height: 20px;}
-.points.seventh:after       {left: 3px;top: 3px;}
-
-
+.points.seventh             {top: 61px;left: 110px;}
 
 /*.points.eight             {top: 130px;left: 103px;}*/
 .points.eight               {top: 118px;left: 88px;width: 30px;height: 30px;}
@@ -296,6 +260,6 @@ body {
 .points.first .pop-box,
 .points.fifth .pop-box,
 .points.seventh .pop-box {
-    top: 24px;
-    left: -108px;
+    top: 17px;
+    left: -116px;
 }

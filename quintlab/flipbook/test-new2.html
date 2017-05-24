@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://css3playground.com/3d-flip-cards/ -->
+<html lang="en-us" dir="ltr" class=" js no-touch cssanimations csstransforms csstransforms3d csstransitions cssfilters preserve3d"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>3D Flip Cards // CSS3 Playground</title>
+<!-- <link rel="stylesheet" href="./css3-flip_files/main.css"> -->
+<!-- <script type="text/javascript" async="" src="./css3-flip_files/ga.js"></script> -->
+<!-- <script src="./css3-flip_files/modernizr.min.js"></script> -->
+<script src="assets/js/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+    <script>
+  // For IE11. May we one day live without your BS.
+  Modernizr.addTest('preserve3d', function(){return Modernizr.testAllProps('transformStyle', 'preserve-3d');});
+</script>
+
+<style type="text/css">
+  body {
+    max-width: 800px;
+    padding-right: 60px;
+  }
+
+  .panel {
+    /*float: left;*/
+    width: 140px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    font-size: .8em;
+    background-color: #ccc;
+
+    -webkit-perspective: 600px;
+            perspective: 600px;
+  }
+  /* -- make sure to declare a default for every property that you want animated -- */
+  /* -- general styles, including Y axis rotation -- */
+  .panel .front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #ccc;
+    background: #6b7077;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+  }
+  .panel.flip .front {
+    z-index: 900;
+    border-color: #eee;
+    background: #333;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+
+    -webkit-transform: rotateY(179deg);
+            transform: rotateY(179deg);
+  }
+
+  .panel .back {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #ccc;
+    background: #333;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+
+    -webkit-transform: rotateY(179deg);
+            transform: rotateY(179deg);
+
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+  }
+
+  .panel.flip .back {
+    z-index: 1000;
+    background: #80868d;
+
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  }
+
+
+  /* -- swing like a gate -- */
+  .swing .front,
+  .swing .back {
+    width: 140px;
+
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+
+    -webkit-transform-origin: 140px 0;
+            transform-origin: 140px 0;
+  }
+  .swing .front {
+    background-color: #222;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    
+  }
+  .swing .back {
+    background-color: #80888f;
+    -webkit-transform: rotateY(0) translateX(140px) translateZ(2px);
+            transform: rotateY(0) translateX(140px) translateZ(2px);
+    
+  }
+
+  .swing.flip .front {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  .swing.flip .back {
+    background-color: #555;
+    -webkit-transform: rotateY(-180deg) translateX(140px) translateZ(2px);
+            transform: rotateY(-180deg) translateX(140px) translateZ(2px);
+  }
+
+
+
+</style>
+<script>
+  $(document).ready(function(){
+
+    // set up click/tap panels
+    $('.clickBTN').toggle(function(){
+      $(".swing").addClass('flip');
+    },function(){
+      $(".swing").removeClass('flip');
+    });
+
+  });
+</script>
+
+
+<div class="click swing panel">
+  <div class="front">
+    <h2>Swing like a gate</h2>
+  </div>
+  <div class="back">
+    <div class="pad">
+    <h2>Any axis is possible</h2>
+    </div>
+  </div>
+</div>
+
+<button class="clickBTN">clickBTN</button>
+
+
+    
+
+</body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<style>
+.container {
+    margin: 0 auto;
+    width: 200px;
+    height: 500px;
+    background-color: #ccc;
+}
+.btn {width: 50px; line-height: 30px;background-color: red; text-align: center;cursor: pointer;}
+.success {color: green}
+.error {color: red}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".container").click(function(){
+        $(".error").show();
+    });
+    $(".btn").click(function(event){
+    	$(".success").show();
+    	event.preventDefault();
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div class="btn">BTN</div>
+
+
+	<div class="success" style="display:none">success</div> 
+	<div class="error" style="display:none">Error</div>
+</div>
+
+</body>
+
+</html>
