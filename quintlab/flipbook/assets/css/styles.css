@@ -57,6 +57,27 @@ body {
     background-color: #588c7e;
 }
 
+.bb-item .content {
+    /* */
+}
+
+.bb-item .media {
+    margin-top: 30px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.bb-item .media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bb-item .media img {
+    width: 100%;
+}
+
 .alert-show {
     position: absolute;
     top: 0;
