@@ -1,0 +1,536 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #fffdfd;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	overflow-x: hidden;
+	background: #e5ddd5 url("../images/whatsapp-bg.png") repeat scroll 0 0 / 366.5px 666px;
+}
+strong {
+	font-weight: 500;
+}
+p {
+	line-height: 160%;
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+*, *:focus {
+	outline: none;
+}
+button, a {
+	outline: none;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+}
+.logo {
+	left: 15px;
+	position: absolute;
+	top: 15px;
+	width: 40px;
+}
+.mid-container {
+	bottom: 80px;
+	position: absolute;
+	right: 0;
+}
+.pow {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.top-wrapper {
+	overflow: hidden;
+}
+.top-wrapper .container {
+	padding: 8% 15px 0px 15px;
+	height: 730px;
+}
+.top-container h1 {
+  font-size: 29px;
+  font-weight: 800;
+  margin: 0 0 15px;
+}
+.top-container h1 span{
+	background:#054D44;
+	color: #fff;
+	padding: 0px 6px;
+	display: inline-block;
+}
+
+.top-container p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.bottom-container {
+	padding-top: 15px;
+}
+.bottom-container h2 {
+	font-size: 18px;
+	margin: 0;
+}
+.bottom-container .counter {
+	font-size: 70px;
+	line-height: 100%;
+}
+.side-container {
+	max-width: 330px;
+}
+.bottom-container {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}
+.container.blockquote-container {
+	padding: 20px 15px;
+	max-width: 600px;
+}
+.blockquote-container blockquote {
+	background: rgba(0, 0, 0, 0) url("../images/seperator.png") no-repeat scroll center bottom;
+	display: block;
+	font-size: 18px;
+	padding: 55px 0 75px;
+	text-align: center;
+}
+.blockquote-container blockquote:last-child {
+	background: none;
+}
+.blockquote-container h3 {
+	
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 60px;
+	padding: 60px 0 0;
+	text-align: center;
+}
+.mid-container {
+	width: 320px;
+}
+/*Footer*/
+.footer-wrapper {
+	/*position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0*/
+	height: 35px;
+	background-color: #000;
+	text-align: center;
+	font-size: 12px;
+	line-height: 35px;
+	z-index: 10;
+	padding: 0px 5%;
+}
+.footer-wrapper a {
+	color: #fff;
+}
+.copy {
+	float: left;
+}
+.credits {
+	float: right;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+.creditsModal {
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+}
+.modal-content {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: relative;
+	font-size: 14px;
+	color: #fff;
+}
+.modal-content span {
+	display: block;
+	padding: 4px 0px
+}
+.modalClose {
+	display: inline-block;
+	;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+}
+/*--ex css --*/
+
+
+/*social*/
+
+.social {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	width: 30px;
+	z-index: 9999;
+	display: block;
+	text-align: center;
+}
+.social-back {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+.social-icons {
+	display: none;
+}
+.social-icons.show {
+	display: block;
+}
+.social-icons .facebook, .social-icons .twitter, .social-icons .copyright {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+.social img {
+	width: 100%;
+}
+/*Animation*/
+
+.cursor_face {
+	position: relative;
+}
+.cursor_face.frame .hammer {
+	background: rgba(0, 0, 0, 0) url("../images/hammer.png") no-repeat scroll 0 0;
+	height: 200px;
+	left: 0px;
+	position: absolute;
+	z-index: 1000;
+	top: 175px;
+	width: 268px;
+	-webkit-animation: play .4s steps(4) infinite;
+	-moz-animation: play .4s steps(4) infinite;
+	-ms-animation: play .4s steps(4) infinite;
+	-o-animation: play .4s steps(4) infinite;
+	animation: play .4s steps(4) infinite;
+}
+ @-webkit-keyframes play {
+ from {
+background-position:    0px;
+}
+ to {
+background-position: -1072px;
+}
+}
+ @-moz-keyframes play {
+ from {
+background-position:    0px;
+}
+ to {
+background-position: -1072px;
+}
+}
+ @-ms-keyframes play {
+ from {
+background-position:    0px;
+}
+ to {
+background-position: -1072px;
+}
+}
+ @-o-keyframes play {
+ from {
+background-position:    0px;
+}
+ to {
+background-position: -1072px;
+}
+}
+ @keyframes play {
+ from {
+background-position:    0px;
+}
+ to {
+background-position: -1072px;
+}
+}
+/*Theme CSS*/
+.wap-screen {
+	font-family: "Roboto", sans-serif;
+	height: 430px;
+	left: 16px;
+	overflow: hidden;
+	position: absolute;
+	top: 90px;
+	width: 290px;
+	background: #e5ddd5 url("../images/whatsapp-bg.png") repeat scroll 0 0 / 366.5px 666px;
+	cursor: pointer;
+}
+.wap-header {
+	background-color: #075e54;
+	box-shadow: 0 -1px 5px #000;
+	color: #fff;
+	position: relative;
+	z-index: 100;
+}
+.top {
+	background: #054d44 none repeat scroll 0 0;
+	color: #fff;
+	padding: 4px 10px;
+	position: relative;
+	text-align: right;
+}
+.top img {
+	width: 100px;
+	float: right;
+}
+.top time {
+	display: inline-block;
+	float: right;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 1px 0 0 5px;
+}
+.sender {
+	padding: 10px 20px 10px 10px;
+	height: 52px;
+	position: relative;
+}
+.ico-back {
+	float: left;
+	width: 15px;
+	margin: 5px 0px 0px 0px;
+}
+.ico-media {
+	position: absolute;
+	right: 17px;
+	top: 15px;
+	width: 70px;
+}
+.profile {
+	float: left;
+	position: relative;
+	margin: 0 0 0 5px;
+}
+.profile-img {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	overflow: hidden;
+	/*background: #C8C8C8 url("../images/avatar.png") no-repeat;
+	background-size: 100%;
+	*/
+	background: #C8C8C8;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.profile-name {
+	margin: 0 0 0 40px;
+}
+.profile-name h2 {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 115%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 128px;
+}
+.profile-name span {
+	display: block;
+	font-size: 12px;
+	line-height: 150%;
+}
+.wap-body {
+	position: relative;
+	z-index: 100;
+	padding-top: 20px;
+	height: 306px;
+	overflow: auto;
+}
+.msg {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+.chat {
+	background-color: #fff;
+	border-radius: 0 8px 8px;
+	box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+	color: #262626;
+	cursor: text;
+	font-size: 16px;
+	line-height: 22px;
+	max-width: 75%;
+	overflow-wrap: break-word;
+	padding: 6px 7px 8px 9px;
+	position: relative;
+}
+.chat::after {
+	background-repeat: no-repeat;
+	content: "";
+	height: 19px;
+	left: -12px;
+	position: absolute;
+	top: 0;
+	width: 12px;
+	background: url("../images/arw.png") no-repeat;
+	background-size: 100%;
+}
+.text-time {
+	bottom: 2px;
+	color: rgba(0, 0, 0, 0.45);
+	font-size: 11px;
+	position: absolute;
+	right: 9px;
+}
+.wap-footer {
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 100;
+	left: 0;
+}
+.inp-text {
+	border-radius: 40px;
+	box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+	color: rgba(0, 0, 0, 0.45);
+	cursor: text;
+	font-size: 13px;
+	margin-top: 20px;
+	overflow-wrap: break-word;
+	height: 40px;
+	position: relative;
+	background: #fff;
+	margin-right: 45px;
+	line-height: 40px;
+	text-indent: 40px;
+}
+.smile {
+	left: 10px;
+	line-height: 100%;
+	position: absolute;
+	text-indent: 0;
+	top: 10px;
+	width: 20px;
+}
+.camera {
+	line-height: 100%;
+	position: absolute;
+	right: 10px;
+	text-indent: 0;
+	top: 9px;
+	width: 57px;
+}
+.audio {
+	width: 40px;
+	height: 40px;
+	background: #00897b;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 100%;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+.audio img {
+	width: 17px;
+}
+.is-show {
+	background: #f00;
+}
+.cursor_face .wap-screen.crack::after {
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.cursor_face .wap-screen.crack.crack1::after {
+	background: rgba(0, 0, 0, 0) url("../images/crack.png") no-repeat scroll center center / 140% auto;
+}
+
+.cursor_face .wap-screen.crack.crack2::after {
+  background: rgba(0, 0, 0, 0) url("../images/crack.png") no-repeat scroll 68% 82px / 150% auto;
+}
+
+.cursor_face .wap-screen.crack.crack3::after {
+  background: rgba(0, 0, 0, 0) url("../images/crack.png") no-repeat scroll 0 0 / 137% auto;
+}
+
+
+
+
+.top-container{
+	position: relative;
+}
+
+.mid-container {
+	transition: 0.3s bottom ease-in-out;
+	cursor: url('../images/cursor.png'), auto;
+}
+.mid-container *{
+	cursor: url('../images/cursor.png'), auto;
+}
+.mid-container.toggle-screen {
+	bottom: -100%;
+}
+.top-container p.p-big {
+  color: #075e54;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.hammer-big {
+  bottom: -130px;
+  position: absolute;
+  right: -120px;
+}
+
+.btn-1 {
+  background: #868686 none repeat scroll 0 0;
+  height: 67px;
+  left: 110px;
+  position: absolute;
+  top: 11px;
+  width: 120px;
+  z-index: -1;
+}
+
+.btn-2 {
+  background: #868686 none repeat scroll 0 0;
+  bottom: 8px;
+  height: 75px;
+  left: 110px;
+  position: absolute;
+  width: 100px;
+  z-index: -1;
+}
+
+
