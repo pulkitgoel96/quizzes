@@ -240,18 +240,44 @@
     </div>
 </div> -->
 
+<!-- Audio -->
+<audio id="myTune" src="assets/media/sachin-chant.mp3" autoplay loop>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
+
+<button type="button" onclick="aud_play_pause()">Play/Pause</button>
+
+<script>
+	function aud_play_pause() {
+		var myAudio = document.getElementById("myTune");
+		if (myAudio.paused) {
+			myAudio.play();
+		} else {
+			myAudio.pause();
+		}
+	}
+</script>
 <script type="text/javascript">
+
 $(document).ready(function() {
 	$('.mybtn').hide();
 	var counter = 0;
+
 	$('.firstBtn').click(function() {
+		$(this).hide();
+
+		setTimeout(function() {
+			$(".firstBtn").show();
+		}, 2000);
+
 	    counter++;
 	    $("#theCount").text(counter);
 
 	    if ($("#theCount").text() == 5) {
-	        $('.firstBtn').hide();
+	        $('.firstBtn').hide().addClass("hide");
 	        $('.mybtn').show();
 	    }
 
@@ -264,41 +290,48 @@ $(document).ready(function() {
 	    setTimeout(function() {
 	        var random = Math.floor(Math.random() * $('.bb-item').length);
 	        $('.bb-item').hide().eq(random).show();
-	    }, 1200);
 	 
-	    var fixedNumbers = ['2', '4', '6'];
-	    numberIndex = Math.floor(Math.random() * fixedNumbers.length);
-	    $('.result').html(fixedNumbers[numberIndex]);
-	 
-	    var aa = parseInt($('.result').text());
-	    var bb = parseInt($('.resultTotal').text());
-	    var cc = parseInt($('.resultTotalPop').text());
-	 
-	    $(".resultTotal").text(aa + bb);
-	    $(".resultTotalPop").text(aa + cc);
-	 
+		    var fixedNumbers = ['2', '4', '6'];
+		    numberIndex = Math.floor(Math.random() * fixedNumbers.length);
+		    $('.result').html(fixedNumbers[numberIndex]);
+		 
+		    var aa = parseInt($('.result').text());
+		    var bb = parseInt($('.resultTotal').text());
+		    var cc = parseInt($('.resultTotalPop').text());
+		 
+		    $(".resultTotal").text(aa + bb);
+		    $(".resultTotalPop").text(aa + cc);
+	 	}, 1200);
 	});
 
     $('.mybtn').on('click', function() {
-        $('.random').html(Math.floor(Math.random() * 10 / 2));
-        $('.result').html(Math.floor(Math.random() * 10 / 2) * 2);  // page number random
+    	$(this).hide();
 
-        var aa = parseInt($('.result').text());
-        var bb = parseInt($('.resultTotal').text());
-        var cc = parseInt($('.resultTotalPop').text());
+    	setTimeout(function() {
+    		$(".mybtn").show();
+    	}, 2000);
+    	
+    	setTimeout(function() {
+	        $('.random').html(Math.floor(Math.random() * 10 / 2));
+	        $('.result').html(Math.floor(Math.random() * 10 / 2) * 2);  // page number random
 
-        $(".resultTotal").text(aa + bb);
-        $(".resultTotalPop").text(aa + cc);
+	        var aa = parseInt($('.result').text());
+	        var bb = parseInt($('.resultTotal').text());
+	        var cc = parseInt($('.resultTotalPop').text());
 
-        if ($(".result").text() == 8) {
-            $(".resultTotal").text(bb += 1);
-            $(".resultTotalPop").text(cc += 1);
-        }
-        if ($(".result").text() == 0) {
-            $(".alert-show").fadeIn();
-        } else {
-            //
-        }
+	        $(".resultTotal").text(aa + bb);
+	        $(".resultTotalPop").text(aa + cc);
+
+	        if ($(".result").text() == 8) {
+	            $(".resultTotal").text(bb += 1);
+	            $(".resultTotalPop").text(cc += 1);
+	        }
+	        if ($(".result").text() == 0) {
+	            $(".alert-show").fadeIn();
+	        } else {
+	            //
+	        }
+	    }, 1200);
 
         // setTimeout random
         setTimeout(function() {

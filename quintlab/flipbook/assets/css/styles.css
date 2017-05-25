@@ -5,13 +5,13 @@ body {
     color: #3C3C3C;
     background-image: url(../images/body-bg.jpg);
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-attachment: fixed;
     background-size: 100%;
 }
-html, body {
+/*html, body {
     height: 100%;
     width: 100%;
-}
+}*/
 @font-face {
     font-family: 'gagalinregular';
     src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
@@ -21,13 +21,13 @@ html, body {
 
 }
 #wrap {
-    margin: 0 auto;
+    margin: 30px auto;
     max-width: 900px;
     position: relative;
     /*background-color: #ccc;*/
 }
 #wrap:before,
-#wrap:after {
+#wrap:after, {
     display: table;
     line-height: 0;
     content: "";
@@ -83,7 +83,24 @@ html, body {
     height: 100%;
     margin: 0 auto;
 }
+.box-left .bb-item .j-iframe {
+    margin: 10px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 350px;
+    overflow: hidden;
+}
 
+.box-left .bb-item .facebook-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 197px;
+    height: 100%;
+    margin: 0 auto;
+}
 
 .box-left .bb-item .media {
     margin: 10px 0;
@@ -193,7 +210,9 @@ html, body {
 }
 
 .flip-box li {
-    background-color: #f08e48;
+    /*background-color: #f08e48;*/
+    background: url(../images/page-bg.jpg) no-repeat center;
+    background-size: cover;
 }
 
 /*.flip-box li:nth-child(02) {
@@ -260,7 +279,7 @@ html, body {
     top: 15px;
     right: 15px;
     width: 50px;
-    z-index: 9999;
+    z-index: 9;
     display: block;
     text-align: center;
 }
@@ -269,7 +288,7 @@ html, body {
     top: 15px;
     left: 15px;
     width: 50px;
-    z-index: 9999;
+    z-index: 9;
     display: block;
 }
 .logo img {
@@ -402,4 +421,8 @@ html, body {
     .footer-wrapper {
         position: inherit;
     }
+}
+
+.hide {
+    display: none !important;
 }
