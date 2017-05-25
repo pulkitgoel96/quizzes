@@ -1,21 +1,15 @@
 .panel {
-    width: 400px;
+    /*width: 400px;*/
+    width: 0;
     height: 600px;
     position: relative;
     font-size: .8em;
     /*background-color: #ccc;*/
     position: absolute;
     z-index: 99;
-    -webkit-perspective: 600px;
-    perspective: 600px;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
 }
-
-
-/* -- make sure to declare a default for every property that you want animated -- */
-
-
-/* -- general styles, including Y axis rotation -- */
-
 .panel .front {
     float: none;
     position: absolute;
@@ -96,8 +90,6 @@
     transform: rotateY(180deg);
 }
 
-
-
 .swing.flip .front {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
@@ -121,56 +113,3 @@
     -webkit-transform: rotateY(0) translateX(0px) translateZ(0);
     transform: rotateY(0) translateX(0px) translateZ(0);
 }
-
-.swing.flip .back {
-    /*background-color: red;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
-    animation-name: example;
-    animation-duration: 4s;*/
-}
-
-@-webkit-keyframes example {
-    /*0%   {-webkit-transform: rotateY(-180deg) translateX(0px) translateZ(0);
-    transform: rotateY(-180deg) translateX(0px) translateZ(0);}
-    25%  {-webkit-transform: rotateY(-180deg) translateX(0px) translateZ(0);
-    transform: rotateY(-180deg) translateX(0px) translateZ(0);}
-    75%  {-webkit-transform: rotateY(-180deg) translateX(0px) translateZ(0);
-    transform: rotateY(-180deg) translateX(0px) translateZ(0);}
-    100% {-webkit-transform: rotateY(-180deg) translateX(0px) translateZ(0);
-    transform: rotateY(-180deg) translateX(0px) translateZ(0);}*/
-}
-
-/*.swing .back {
-    background-color: red;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-@-webkit-keyframes example {
-    0%   {opacity:1.0}
-    25%  {opacity:0.5}
-    75%  {opacity:0.0}
-    100% {opacity:1.0}
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

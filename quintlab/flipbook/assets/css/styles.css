@@ -6,48 +6,45 @@ body {
     background-image: url(../images/body-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
-/*html, body {
-    height: 100%;
-    width: 100%;
-}*/
 @font-face {
     font-family: 'gagalinregular';
-    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
-         url('../fonts/gagalin-regular-webfont.woff') format('woff');
+    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'), url('../fonts/gagalin-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 #wrap {
-    margin: 30px auto;
+    margin: 0 auto;
     max-width: 900px;
     position: relative;
     /*background-color: #ccc;*/
 }
 #wrap:before,
-#wrap:after, {
+#wrap:after {
     display: table;
     line-height: 0;
     content: "";
     clear: both;
 }
-
 #wrap .box-left {
+    margin-top: 30px;
     float: left;
     width: 400px;
     /*background-color: #ccc;*/
     position: relative;
 }
-
+.box-left .bb-item h4 {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 18px;
+}
 .box-left .bb-item .header {
     height: 50px;
     width: 100%;
     background: url(../images/bat.png) no-repeat left;
     background-size: 300px;
 }
-
 
 .box-left .bb-item .iframe {
     margin: 10px 0;
@@ -65,6 +62,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .box-left .bb-item .facebook-iframe {
     margin: 10px 0;
     position: relative;
@@ -83,6 +81,7 @@ body {
     height: 100%;
     margin: 0 auto;
 }
+
 .box-left .bb-item .j-iframe {
     margin: 10px 0;
     position: relative;
@@ -107,22 +106,18 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 .box-left .bb-item .media img {
     width: 100%;
     margin: 0 auto;
     display: block;
 }
 
-
 .box-left .bb-item .content {
     color: #fff;
     font-size: 16px;
     line-height: 18px;
 }
-
-
-
-
 
 #wrap .box-right {
     float: left;
@@ -133,49 +128,49 @@ body {
 }
 
 .box-right .run-board {
-    margin: 30px auto;
+    margin: 0 auto;
     width: 400px;
     height: 425px;
-    background: url(../images/board.png) no-repeat top center;
+    background: url(../images/score-board.png) no-repeat top center;
     background-size: 100%;
 }
+
 .box-right .run-board .run-text {
     text-align: center;
     margin: 0 auto;
-    padding: 60px 0 44px 20px;
+    padding: 130px 0 0 0;
+    line-height: 67px;
     color: #fff;
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'gagalinregular';
 }
-.box-right .run-board .run-text span {
+
+
+/*.box-right .run-board .run-text span {
     font-size: 40px;
-}
-.box-right .run-board .run-content{
-    padding: 20px 45px;
+}*/
+
+.box-right .run-board .run-content {
+    padding: 20px 30px;
     color: #fff;
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.box-right .run-board .run-content span {
+    /*background-color: #ffdb01;*/
+    font-weight: bold;
 }
 
 .box-right .next-ball {
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     cursor: pointer;
 }
 
-/*.mybtn {
-    margin: 20px auto;
-    width: 86px;
-    background-color: #19cbcb;
-    line-height: 34px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-}*/
-
-
 .flip-box {
     /*border: 5px #000 solid;*/
+    position: relative;
 }
 
 .flip-box ul {
@@ -215,6 +210,7 @@ body {
     background-size: cover;
 }
 
+
 /*.flip-box li:nth-child(02) {
     background-color: #f2e394;
 }
@@ -231,45 +227,84 @@ body {
     background-color: #588c7e;
 }*/
 
-
-
 .alert-show {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 999;
 }
 
 .popup-box {
-    width: 300px;
-    height: 150px;
-    background-color: #fff;
-    padding: 20px;
-    margin: -75px auto 0;
+    max-width: 800px;
+    height: 280px;
+    /*background-color: #fff;*/
+    padding: 50px 20px 0;
+    margin: -120px auto 0;
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     bottom: 0;
+    background: url(../images/end-plate.png) no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
 }
 
-.popup-box .close {
+.popup-box .headline {
+    font-size: 55px;
+    color: red;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+
+.popup-box .resultPop {
+    font-size: 55px;
+    color: #fcde03;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+
+.popup-box .content {
+    font-size: 40px;
+    color: #1e82c2;
+    line-height: 62px;
+    background: url(../images/pop-white.png) no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.popup-box .close-btn {
     /*background-color: #555;*/
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: -16px;
-    right: -18px;
+    top: 22px;
+    right: 0;
     color: #fff;
     text-align: center;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 50px;
+    background-color: #555;
+    border-radius: 100%;
 }
 
+.popup-box .close-btn span {
+    height: 40px;
+    display: block;
+}
 
+.popup-box .close-btn i {
+    margin-top: -4px;
+    height: 40px;
+}
 
 
 /*social*/
@@ -283,6 +318,19 @@ body {
     display: block;
     text-align: center;
 }
+
+.volume {
+    position: absolute;
+    left: -30px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    text-align: left;
+    color: #fff;
+}
+
 .logo {
     position: absolute;
     top: 15px;
@@ -291,21 +339,26 @@ body {
     z-index: 9;
     display: block;
 }
+
 .logo img {
     width: 100%;
 }
+
 .social-back {
     width: 50px;
     height: 50px;
     margin-bottom: 8px;
     cursor: pointer;
 }
+
 .social-icons {
     display: none;
 }
+
 .social-icons.show {
     display: block;
 }
+
 .social-icons .facebook,
 .social-icons .twitter,
 .social-icons .copyright {
@@ -425,4 +478,54 @@ body {
 
 .hide {
     display: none !important;
+}
+@media only screen and (max-width: 900px) {
+    #wrap {
+        max-width: 400px;
+    }
+
+    /* Box Left */
+    #wrap .box-left {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .box-left .page-instruction {
+        display: block !important;
+        margin: 10px 0 10px;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: bold;
+    }
+    .box-left .page-instruction h1 {
+        font-size: 30px;
+        line-height: 100%;
+        margin-bottom: 20px;
+        color: #222;
+    }
+
+
+    /* Box Right */
+    #wrap .box-right {
+        width: 100%;
+        height: auto;
+    }
+    .box-right .run-board {
+        height: 70px;
+        background: none;
+    }
+    .box-right .run-board .run-text {
+        padding: 5px;
+        color: #3C3C3C;
+    }
+    .box-right .run-board .run-content {
+        display: none;
+
+    }
+    .box-right .next-ball {
+        margin: 0 auto 20px;
+    }
+
+    .volume {
+        top: 3px;
+    }
 }
