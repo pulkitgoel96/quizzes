@@ -22,7 +22,16 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+
+   	<style type="text/css">
+   	body {
+   		font-family: 'Amaranth', sans-serif;
+   	}
+   	</style>
+
     <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -63,11 +72,11 @@
     <div class="box-left">
 
     	<!--  -->
-	    <!-- <div class="swing newback panel">
+	    <div class="swing newback panel">
 	        <div class="back">
 	            <div class="pad"><img src="assets/images/poster.jpg" height="600" width="400"></div>
 	        </div>
-	    </div> -->
+	    </div>
 
 	    <div class="flip-box">
 	        <ul>
@@ -81,7 +90,7 @@
 	            <li class="bb-item" style="display: none">
 	            	<div class="header"></div>
 	            	<div class="facebook-iframe"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fquintillion%2Fvideos%2F825591630941360%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>
-	            	<div class="content">02 From taking a 60-hour-long train ride to hand-picking litchis, Sudhir Kumar Gautam has done it all for his idol, Sachin Tendulkar. Arguably Sachin’s best-known fan, who religiously attends all his matches, Sudhir is the selfless devotee who brings Tendulkar two boxes of litchis every year without fail.</div>
+	            	<div class="content">From taking a 60-hour-long train ride to hand-picking litchis, Sudhir Kumar Gautam has done it all for his idol, Sachin Tendulkar. Arguably Sachin’s best-known fan, who religiously attends all his matches, Sudhir is the selfless devotee who brings Tendulkar two boxes of litchis every year without fail.</div>
 	            </li>
 	            <!-- 03 -->
 	            <li class="bb-item" style="display: none">
@@ -237,37 +246,29 @@
 $(document).ready(function() {
 	$('.mybtn').hide();
 	var counter = 0;
-	 
 	$('.firstBtn').click(function() {
-	 
 	    counter++;
-	 
 	    $("#theCount").text(counter);
-	 
+
 	    if ($("#theCount").text() == 5) {
 	        $('.firstBtn').hide();
 	        $('.mybtn').show();
 	    }
-	 
-	 
+
 	    $(".swing").removeClass("newback");
 	    $(".swing").addClass("flip").delay(1000).queue(function() {
 	        $(this).removeClass("flip").dequeue();
 	    });
 	 
+	 	// setTimeout random
 	    setTimeout(function() {
-	        //Onclick add animation
 	        var random = Math.floor(Math.random() * $('.bb-item').length);
 	        $('.bb-item').hide().eq(random).show();
 	    }, 1200);
 	 
-	 
-	 
 	    var fixedNumbers = ['2', '4', '6'];
 	    numberIndex = Math.floor(Math.random() * fixedNumbers.length);
 	    $('.result').html(fixedNumbers[numberIndex]);
-	 
-	 
 	 
 	    var aa = parseInt($('.result').text());
 	    var bb = parseInt($('.resultTotal').text());
@@ -276,13 +277,11 @@ $(document).ready(function() {
 	    $(".resultTotal").text(aa + bb);
 	    $(".resultTotalPop").text(aa + cc);
 	 
-	 
 	});
-
 
     $('.mybtn').on('click', function() {
         $('.random').html(Math.floor(Math.random() * 10 / 2));
-        $('.result').html(Math.floor(Math.random() * 10 / 2) * 2);
+        $('.result').html(Math.floor(Math.random() * 10 / 2) * 2);  // page number random
 
         var aa = parseInt($('.result').text());
         var bb = parseInt($('.resultTotal').text());
@@ -294,32 +293,19 @@ $(document).ready(function() {
         if ($(".result").text() == 8) {
             $(".resultTotal").text(bb += 1);
             $(".resultTotalPop").text(cc += 1);
-            //$(".alert-show").fadeIn();
         }
         if ($(".result").text() == 0) {
             $(".alert-show").fadeIn();
         } else {
             //
         }
-    });
 
-    $('.close').on('click', function() {
-        $(".alert-show").fadeOut();
-    });
-
-    $('.mybtn').on('click', function() {
-        //var random = Math.floor(Math.random() * $('.bb-item').length);
-        //$('.bb-item').hide().eq(random).show();
+        // setTimeout random
         setTimeout(function() {
             //Onclick add animation
             var random = Math.floor(Math.random() * $('.bb-item').length);
             $('.bb-item').hide().eq(random).show();
         }, 1200);
-    });
-
-    // Close BTN
-    $('.close').click(function() {
-        location.reload();
     });
 
     // set up click/tap panels
@@ -334,6 +320,12 @@ $(document).ready(function() {
         $(".swing").addClass("flip").delay(1000).queue(function() {
             $(this).removeClass("flip").dequeue();
         });
+    });
+
+    // Popup Close
+    $('.close').on('click', function() {
+        $(".alert-show").fadeOut();
+        location.reload();
     });
 
     // Social 

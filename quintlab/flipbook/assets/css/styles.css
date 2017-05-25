@@ -99,8 +99,8 @@ html, body {
 
 .box-left .bb-item .content {
     color: #fff;
-    font-size: 20px;
-    line-height: 100%;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 
@@ -136,8 +136,8 @@ html, body {
 .box-right .run-board .run-content{
     padding: 20px 45px;
     color: #fff;
-    font-size: 20px;
-    line-height: 100%;
+    font-size: 17px;
+    line-height: 21px;
 }
 
 .box-right .next-ball {
@@ -251,16 +251,6 @@ html, body {
 }
 
 
-
-.paly-again {
-    margin: 20px auto;
-    width: 86px;
-    background-color: #19cbcb;
-    line-height: 34px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-}
 
 
 /*social*/
