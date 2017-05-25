@@ -113,3 +113,15 @@
     -webkit-transform: rotateY(0) translateX(0px) translateZ(0);
     transform: rotateY(0) translateX(0px) translateZ(0);
 }
+@media only screen and (max-width: 400px) {
+    .swing .front,
+    .swing .back {
+        width: 320px;
+    }
+    .swing .back .pad img {
+        height: 520px;
+    }
+    .panel {
+        height: 520px;
+    }
+}
