@@ -1,6 +1,6 @@
 .panel {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 600px;
     position: relative;
     font-size: .8em;
     /*background-color: #ccc;*/
@@ -83,7 +83,7 @@
 
 .swing .front,
 .swing .back {
-    width: 300px;
+    width: 400px;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
     -webkit-transform-origin: 0px 0;
