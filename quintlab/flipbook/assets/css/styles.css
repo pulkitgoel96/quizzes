@@ -40,7 +40,7 @@ body {
 }
 
 #wrap .box-left {
-    margin-top: 30px;
+    padding-top: 30px;
     float: left;
     width: 400px;
     /*background-color: #ccc;*/
@@ -510,7 +510,7 @@ body {
     /* Box Left */
     #wrap .box-left {
         width: 100%;
-        margin-top: 50px;
+        padding-top: 50px;
     }
     .box-left .page-instruction {
         display: block !important;
