@@ -36,26 +36,41 @@ body {
     /*opacity: 0.5;*/
 }
 .human-body .step-01 {
-    background-color: rgba(0,0,255, 0.5);
+    /*background-color: rgba(0,0,255, 0.5);*/
 }
-.human-body .step-01 .overlay {
+.human-body .overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0, 0.5);
+    left: -60px;
+    /*background-color: rgba(0,0,0, 0.5);*/
     z-index: 9999;
+    display: block;
+    width: 350px;
 }
 .human-body .step-02 {
-    background-color: rgba(255,0,0, 0.5);
+    /*background-color: rgba(255,0,0, 0.5);*/
 }
 
 /* Footer */
 .footer {
     text-align: center;
 }
-.footer .check-content {
+
+
+.footer .msg-content {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.footer .msg-content .msg-right {
+    color: green;
+}
+.footer .msg-content .msg-wrong {
+    color: red;
+}
+
+.footer .source-content {
     margin: 10px 0;
     font-size: 13px;
 }
@@ -87,15 +102,6 @@ body {
 .footer .try-btn {
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /*    ============    */
@@ -154,10 +160,10 @@ body {
     position: absolute;
     background: #f2f2f2;
     border: 5px solid #fff;
-    width: 236px;
+    width: 300px;
     min-height: 100px;
     top: 29px;
-    left: -103px;
+    left: -135px;
     font-size: 14px;
     -webkit-box-shadow: 0px 1px 3px 1px #777;
     -moz-box-shadow:    0px 1px 3px 1px #777;
@@ -187,23 +193,35 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
 }
-.pop-box ol {
+.pop-box ul {
     list-style-type: ;
     /*list-style-type: decimal;*/
     margin-left: 10px;
 }
-.pop-box ol li {
+.pop-box ul li {
     margin-bottom: 5px;
-    padding-left: 13px;
+    /*padding-left: 13px;*/
     position: relative;
 }
-.pop-box ol li::before {
+/*.pop-box ul li::before {
     position: absolute;
     left: 0px;
     top: 0;
     content: "\f111";
     font-family: FontAwesome;
     font-size: 8px;
+}*/
+.pop-box ul li.bullet {
+    padding-left: 13px;
+}
+.pop-box ul li.bullet::before {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    content: "\f111";
+    font-family: FontAwesome;
+    font-size: 8px;
+    
 }
 /*.pop-box ol li:before {
     position: absolute;
@@ -326,25 +344,12 @@ body {
     font-size: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.points                     {display: block !important;background-color: rgba(255,255,255, 0.5);}
+.points                     {display: block !important;/*background-color: rgba(255,255,255, 0.5);*/}
 .step-01 .points            {background-color: rgba(255,255,255, 0.1);cursor: auto;}
-
-
 
 /*.points.first             {top: 39px;left: 119px;}*/
 .points.first               {top: 31px;left: 110px;width: 20px;height: 20px;}
 .points.first:after         {left: 3px;top: 3px;}
-
 
 /*.points.second            {top: 18px;left: 110px;}*/
 .points.second               {top: 4px;left: 95px;width: 30px;height: 30px;}
@@ -359,15 +364,12 @@ body {
 .points.fifth               {top: 42px;left: 101px;width: 20px;height: 20px;}
 .points.fifth:after         {left: 3px;top: 3px;}
 
-
 /*.points.sixth             {top: 10px;left: 92px;}*/
 .points.sixth               {top: -2px;left: 77px;width: 30px;height: 30px;}
 
 /*.points.seventh           {top: 61px;left: 110px;}*/
 .points.seventh             {top: 55px;left: 101px;width: 20px;height: 20px;}
 .points.seventh:after       {left: 3px;top: 3px;}
-
-
 
 /*.points.eight             {top: 130px;left: 103px;}*/
 .points.eight               {top: 118px;left: 88px;width: 30px;height: 30px;}
@@ -435,5 +437,5 @@ body {
 .points.fifth .pop-box,
 .points.seventh .pop-box {
     top: 24px;
-    left: -108px;
+    left: -140px;
 }
