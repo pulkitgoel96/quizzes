@@ -1,4 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function() {	
+	$('.videobtn').click(function(){
+		
+		$('.frame_1').find('iframe').attr('src', 'https://www.youtube.com/embed/EGqwSd1tlfw');
+		$('.frame_2').find('iframe').attr('src', 'https://www.youtube.com/embed/PFA7rMuj0jk');
+		$('.frame_3').find('iframe').attr('src', 'https://www.youtube.com/embed/JUDGpcX4NO0');
+		$('.frame_4').find('iframe').attr('src', 'https://www.youtube.com/embed/S2JjJtr2hKg');
+		
+	});
+	
 
 	$('.mybtn').hide();
 	var counter = 0;
@@ -115,4 +124,12 @@ $(document).ready(function() {
     $('.modalClose').click(function() {
         $('.creditsModal').fadeOut();
     });
+	
+	
+	
+	//video play pause
+	
+	
+
+	
 });

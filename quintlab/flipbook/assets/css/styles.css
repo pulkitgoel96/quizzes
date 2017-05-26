@@ -439,12 +439,18 @@ body {
     text-align: center;
     font-size: 12px;
     line-height: 35px;
-    z-index: 10;
+    z-index: 1000;
     padding: 0px 5%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 }
+
+
 
 .footer-wrapper a {
     color: #fff;
+	text-decoration: none;
 }
 
 .copy {
@@ -506,6 +512,12 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+	
+	
+	.footer-wrapper{
+		position:static;
+	}
+	
     #wrap {
         max-width: 400px;
     }
@@ -650,4 +662,8 @@ body {
     .page-instruction {
         padding: 0 10px;
     }
+}
+
+.frame-src{
+	display: none;
 }
