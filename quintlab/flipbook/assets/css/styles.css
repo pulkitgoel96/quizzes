@@ -3,21 +3,12 @@ body {
     font-family: 'Strait', sans-serif;
     line-height: 100%;
     color: #222;
-/*
-    background-image: url(../images/body-bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-*/
-	
 	background:url("../images/body-bg.jpg") no-repeat;
 	background-size: cover;
 	-wevkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
 	-o-background-size: cover;
-	
-	
 }
 
 @font-face {
