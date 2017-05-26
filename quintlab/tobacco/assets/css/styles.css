@@ -10,7 +10,6 @@ body {
     margin: 0 auto;
     position: relative;
 }
-
 /* Header */
 .header {
     font-size: 24px;
@@ -19,7 +18,6 @@ body {
     line-height: 30px;
     text-align: center;
 }
-
 /* Middle */
 .human-body {
     position: relative;
@@ -220,8 +218,7 @@ body {
     top: 0;
     content: "\f111";
     font-family: FontAwesome;
-    font-size: 8px;
-    
+    font-size: 8px;   
 }
 /*.pop-box ol li:before {
     position: absolute;
@@ -251,13 +248,7 @@ body {
     margin-left: -11px;
 }
 
-
-
-
-
-
 /*   */
-
 .pop-overlay {
     margin: 0 auto;
     left: 0;

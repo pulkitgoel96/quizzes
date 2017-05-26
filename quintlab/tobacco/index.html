@@ -34,7 +34,7 @@
     </header>
 
     <div class="human-body">
-        <!-- <div class="overlay" style="display:none"></div> -->
+        <div class="overlay" style="display:none"></div>
         <!-- Step 01 -->
         <div class="step-01">
             
@@ -643,19 +643,12 @@
 </div>
 
 
-
-
-<!-- <div class="is-error" style="display: none">sdfsdf</div> -->
-
 <div class="error-box is-error" style="display: none">
     <h2>Sorry Sorry</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <!-- <div class="pop-play"><span class="play-again">Try Again</span></div> -->
     <!-- <div class="error-close"><span class="play-again"><i class="fa fa-times-circle"></i></span></div> -->
 </div>
-
-
-
 
 <!-- <div class="pop-overlay is-error" style="display: none">
     <div class="error-box">
@@ -665,8 +658,6 @@
         <div class="error-close"><span class="play-again"><i class="fa fa-times-circle"></i></span></div>
     </div>
 </div> -->
-
-
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -705,10 +696,8 @@ $(document).ready(function(){
         $(".overlay").show();
 
         e.preventDefault();
-        
     });
    
-
     $(document).on('click',".play-again", function(){
         $(".is-error").fadeOut();
     });
@@ -716,11 +705,6 @@ $(document).ready(function(){
     $(".try-btn").click(function(){
         location.reload();
     });
-
-
-
-
-
 
     // Step 02
     $(document).on('click',".step-02 .points", function(){
@@ -761,9 +745,6 @@ $(document).ready(function(){
     // $(document).on('click',".close", function(){
     //     $(".is-show").hide();
     // });
-
-    
-
 
     /*
     var is_print = true;
