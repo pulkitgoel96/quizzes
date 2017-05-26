@@ -10,8 +10,8 @@ $(document).ready(function() {
 		// share Twitter
 	
         var tweettext = $('.resultTotal').text();
-        $("a.twitter-share-button").attr("href", 'https://twitter.com/intent/tweet?text=' + 'You Scored ' + tweettext + ' Runs');
-		
+        $("a.twitter-share-button").attr("href", 'https://twitter.com/intent/tweet?text=' + 'I scored ' + tweettext + ' runs in the Sachin Book Cricket Game. Can you beat my score? #sachingame https://www.thequint.com/quintlab/the-sachin-tendulkar-book-cricket-game/');
+		  
 	});
 	
 
