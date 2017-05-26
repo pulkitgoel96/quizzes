@@ -301,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="error" style="display: none">Error</div>
+            <div class="is-error" style="display: none">Error</div>
         </div>
 
 <!-- =================================== -->
@@ -572,7 +572,7 @@
                 </div>
             </div>
 
-            <div class="error" style="display: none">Error</div>
+            <div class="is-error" style="display: none">Error</div>
         </div>
 
     </div>
@@ -600,12 +600,16 @@ $(document).ready(function(){
         $(".step-02").show();
     });
 
-
     $(".points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
         $(".points").removeClass("active");
         $(this).addClass("active");
+    });
+
+    $(document).on('click',".step-01", function(event){
+        $(".is-error").show();
+        event.preventDefault();
     });
 
     $(document).on('click',".close", function(){
@@ -614,9 +618,7 @@ $(document).ready(function(){
     });
 
 
-    $(".step-01").click(function(){
-        $(".error").show();
-    });
+
 
     $(document).mouseup(function (e){
         var container = $(".pop-box");
@@ -628,8 +630,8 @@ $(document).ready(function(){
         $(".points").removeClass("active");
     });
 
-    
-    // $(document).on('click',".step-01", function(){
+
+    // $(document).on('click',".step-01", function(event){
     //     $(".is-error").show();
     //     event.preventDefault();
     // });
