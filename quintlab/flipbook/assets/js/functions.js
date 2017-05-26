@@ -6,6 +6,12 @@ $(document).ready(function() {
 		$('.frame_3').find('iframe').attr('src', 'https://www.youtube.com/embed/JUDGpcX4NO0');
 		$('.frame_4').find('iframe').attr('src', 'https://www.youtube.com/embed/S2JjJtr2hKg');
 		
+		
+		// share Twitter
+	
+        var tweettext = $('.resultTotal').text();
+        $("a.twitter-share-button").attr("href", 'https://twitter.com/intent/tweet?text=' + 'You Scored ' + tweettext + ' Runs');
+		
 	});
 	
 
