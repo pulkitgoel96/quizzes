@@ -32,10 +32,20 @@ body {
 .human-body .step-02 {
     height: 553px;
     width: 222px;
+    position: relative;
     /*opacity: 0.5;*/
 }
 .human-body .step-01 {
     background-color: rgba(0,0,255, 0.5);
+}
+.human-body .step-01 .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 9999;
 }
 .human-body .step-02 {
     background-color: rgba(255,0,0, 0.5);
@@ -45,26 +55,43 @@ body {
 .footer {
     text-align: center;
 }
-.footer .check-btn {
-    margin: 0 auto;
+.footer .check-content {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+
+.footer-btn {
+    margin: 10px 0;
+}
+.footer .buttons {
+    margin: 0 5px;
     padding: 10px 0;
     background-color: #c1272d;
     color: #fff;
-    width: 90px;
+    width: 96px;
     text-align: center;
     cursor: pointer;
     border-radius: 3px;
     font-weight: 700;
     letter-spacing: 1px;
+    display: inline-block;
     transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;
 }
-.footer .check-btn:hover {
+.footer .buttons:hover {
     background-color: #000;
 }
-.footer .check-content {
-    font-size: 16px;
-    font-weight: 700;
+.footer .check-btn {
+
 }
+.footer .try-btn {
+
+}
+
+
+
+
+
 
 
 
@@ -120,7 +147,7 @@ body {
     }
 }
 .step-01 .points:after {
-    /*display: none;*/
+    display: none;
 }
 /* Pop Box */
 .pop-box {
@@ -150,6 +177,11 @@ body {
     display: block;
     border-radius: 50%;
 }
+
+.step-01 .close { 
+    display: none;
+}
+
 .pop-box h2 {
     font-size: 16px;
     margin-bottom: 5px;
@@ -219,7 +251,7 @@ body {
     background-color: rgba(0,0,0, 0.5);
 }
 .error-box {
-    margin: -65px auto 0;
+    margin: -80px auto 0;
     top: 50%;
     right: 0;
     left: 0;
@@ -234,7 +266,7 @@ body {
     box-shadow:         0px 1px 3px 1px #777;
     z-index: 99;
     padding: 10px;
-    cursor: pointer;
+    text-align: center;
 }
 .error-close {
     position: absolute;
@@ -246,7 +278,30 @@ body {
     width: 17px;
     display: block;
     border-radius: 50%;
+    cursor: pointer;
+    display: none;
 }
+.play-again {
+    cursor: pointer;
+}
+
+.pop-play {
+    margin: 10px auto 0;
+    padding: 8px 0;
+    background-color: #c1272d;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;
+}
+.pop-play:hover {
+    background-color: #000;
+}
+
 .error-box h2 {
     font-size: 16px;
     margin-bottom: 5px;
@@ -282,6 +337,9 @@ body {
 
 
 .points                     {display: block !important;background-color: rgba(255,255,255, 0.5);}
+.step-01 .points            {background-color: rgba(255,255,255, 0.1);cursor: auto;}
+
+
 
 /*.points.first             {top: 39px;left: 119px;}*/
 .points.first               {top: 31px;left: 110px;width: 20px;height: 20px;}
