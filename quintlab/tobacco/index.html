@@ -301,7 +301,11 @@
                 </div>
             </div>
 
-            <div class="is-error" style="display: none">Error</div>
+            <!-- <div class="is-error" style="display: none">Error01 </div> -->
+
+            
+
+
         </div>
 
 <!-- =================================== -->
@@ -572,7 +576,7 @@
                 </div>
             </div>
 
-            <div class="is-error" style="display: none">Error</div>
+            
         </div>
 
     </div>
@@ -588,6 +592,19 @@
 
 
 
+
+
+<div class="pop-overlay is-error" style="display: none">
+    <div class="error-box">
+        <h2>Sorry Sorry</h2>
+        <ol>
+            <li>Impaired wound healing</li>
+            <li>Poor postsurgical recovery</li>
+            <li>Burns from cigarettes and from fires caused by cigarettes</li>
+        </ol>
+        <span class="error-close"><i class="fa fa-times-circle"></i></span>
+    </div>
+</div>
 
 
 
@@ -608,9 +625,14 @@ $(document).ready(function(){
     });
 
     $(document).on('click',".step-01", function(event){
-        $(".is-error").show();
+        $(".is-error").fadeIn();
         event.preventDefault();
     });
+
+    $(document).on('click',".error-close", function(){
+        $(".is-error").fadeOut();
+    });
+    
 
     $(document).on('click',".close", function(){
         $(".is-show").hide();
