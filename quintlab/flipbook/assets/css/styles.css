@@ -264,7 +264,7 @@ body {
 
 .popup-box {
     max-width: 800px;
-    height: 280px;
+    height: 295px;
     /*background-color: #fff;*/
     padding: 50px 20px 0;
     margin: -140px auto 0;
@@ -329,6 +329,32 @@ body {
     margin-top: -4px;
     height: 40px;
 }
+
+
+.social-share{
+	display: block;
+	text-align: center;
+	padding-top: 6px;
+	
+}
+.social-share a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #333;
+  display: inline-block;
+  height: 26px;
+  margin: 0 1px;
+  width: 26px;
+	text-decoration: none;
+}
+.social-share a i{
+	display: block;
+	line-height: 26px;
+}
+
+
+
+.social-share a:hover{color: #1E82C2}
 
 
 /*social*/
@@ -564,7 +590,7 @@ body {
     /* Pop */
     .popup-box {
         max-width: 600px;
-        height: 200px;
+        height: 244px;
         margin: -100px auto 0;
         padding: 50px 20px 0;
     }
@@ -593,8 +619,8 @@ body {
     /* Pop */
     .popup-box {
         max-width: 400px;
-        height: 140px;
-        margin: -70px auto 0;
+        height: 160px;
+        margin: -80px auto 0;
     }
     .popup-box .headline {
         font-size: 24px;
@@ -638,8 +664,8 @@ body {
     /* Pop */
     .popup-box {
         max-width: 320px;
-        height: 110px;
-        margin: -60px auto 0;
+        height: 140px;
+        margin: -70px auto 0;
     }
     .popup-box .headline {
         font-size: 16px;
@@ -655,6 +681,22 @@ body {
     .popup-box {
         padding: 26px 20px 0;
     }
+	
+	.social-share{
+		padding-top:2px;
+	}
+	
+	.social-share a {
+  height: 22px;
+  margin: 0 1px;
+  width: 22px;
+}
+	
+	.social-share a i {
+  line-height: 22px;
+		font-size: 14px;
+}
+	
 }
 
 @media only screen and (max-width: 320px) {
@@ -664,27 +706,3 @@ body {
 }
 
 
-.social-share{
-	display: block;
-	text-align: center;
-	padding-top: 6px;
-	
-}
-.social-share a {
-  background: #fff none repeat scroll 0 0;
-  border-radius: 100%;
-  color: #333;
-  display: inline-block;
-  height: 26px;
-  margin: 0 1px;
-  width: 26px;
-	text-decoration: none;
-}
-.social-share a i{
-	display: block;
-	line-height: 26px;
-}
-
-
-
-.social-share a:hover{color: #1E82C2}
