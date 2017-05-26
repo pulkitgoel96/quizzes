@@ -2,7 +2,7 @@ body {
     /*height: 690px;*/
     font-family: 'Strait', sans-serif;
     line-height: 100%;
-    color: #3C3C3C;
+    color: #222;
     background-image: url(../images/body-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,9 +15,17 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'digital-7regular';
+    src: url('../fonts/digital-7-webfont.woff2') format('woff2'),
+         url('../fonts/digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #wrap {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     max-width: 900px;
     position: relative;
     /*background-color: #ccc;*/
@@ -147,8 +155,10 @@ body {
     padding: 130px 0 0 0;
     line-height: 67px;
     color: #fff;
-    font-size: 40px;
-    font-family: 'gagalinregular';
+    font-size: 54px;
+    /*font-family: 'gagalinregular';*/
+    font-family: 'digital-7regular';
+    font-weight: bold;
 }
 
 
@@ -497,7 +507,7 @@ body {
     }
     .box-left .page-instruction {
         display: block !important;
-        margin: 10px 0 10px;
+        margin: 10px 0 15px;
         font-size: 18px;
         line-height: 23px;
         font-weight: bold;
@@ -505,7 +515,7 @@ body {
     .box-left .page-instruction h1 {
         font-size: 30px;
         line-height: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #222;
     }
     /* Box Right */
@@ -519,7 +529,7 @@ body {
     }
     .box-right .run-board .run-text {
         padding: 5px;
-        color: #3C3C3C;
+        color: #000;
     }
     .box-right .run-board .run-content {
         display: none;
