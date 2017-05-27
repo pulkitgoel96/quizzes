@@ -671,8 +671,11 @@ $(document).ready(function(){
     $(".check-btn").click(function(){
         $(".step-first").hide();
         $(".step-second").show();
+
         $(".is-error").hide();
         $(".overlay").hide();
+        $(".msg-wrong").hide();
+        $(".msg-right").hide();
     });
 
     $(document).one('click',".step-01", function(event){
@@ -699,6 +702,10 @@ $(document).ready(function(){
 
         e.preventDefault();
     });
+
+
+
+
 
     $(".try-btn").click(function(){
         location.reload();

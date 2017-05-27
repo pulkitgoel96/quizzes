@@ -336,7 +336,7 @@ body {
 }
 
 .points                     {display: block !important;/*background-color: rgba(255,255,255, 0.5);*/}
-.step-01 .points            {background-color: rgba(255,255,255, 0.1);cursor: auto;}
+.step-01 .points            {cursor: auto;/*background-color: rgba(255,255,255, 0.1);*/}
 
 /*.points.first             {top: 39px;left: 119px;}*/
 .points.first               {top: 31px;left: 110px;width: 20px;height: 20px;}
