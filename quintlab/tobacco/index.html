@@ -1002,9 +1002,25 @@
         <div class="error-close"><span class="play-again"><i class="fa fa-times-circle"></i></span></div>
     </div>
 </div> -->
+<!-- Audio -->
+<audio id="mysoundclip" src="assets/media/cigarette-sound.mp3">
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var audio = $("#mysoundclip")[0];
+            console.log(audio);
+        $(".points").click(function() {
+            audio.play();
+        });
+        $("button.pause").click(function() {
+            audio.pause();
+        });
+    });
+</script>
 <script>
 $(document).ready(function(){
     $(".check-btn").click(function(){
