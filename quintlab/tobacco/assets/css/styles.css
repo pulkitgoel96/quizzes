@@ -58,6 +58,534 @@ a {
     width: 350px;
 }
 
+/* Points Dott */
+.points {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+.points:after {
+    position: absolute;
+    content: ' ';
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border: 3px black solid;
+    left: -5px;
+    top: -4px;
+    border-radius: 50%;
+}
+.points.active:after {
+    background-color: red;
+    border-color: white;
+}
+@media only screen and (min-width: 1025px) {
+    .points:hover:after {
+        background-color: red;
+        border-color: white;
+    }
+}
+.step-01 .points:after {
+    display: none;
+}
+
+/* Pop Box */
+.pop-box {
+    width: 300px;
+    min-height: 100px;
+    top: 29px;
+    left: -135px;
+    font-size: 15px;
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+.pop-box .pop-top {
+    width: 100%;
+    height: 130px;
+}
+
+.pop-box .pop-bottom {
+    background-color: #fff;
+    padding: 15px;
+    -webkit-box-shadow: 0px 1px 3px 1px #ccc;
+    -moz-box-shadow: 0px 1px 3px 1px #ccc;
+    box-shadow: 0px 1px 3px 1px #ccc;
+}
+
+.pop-box .pop-bottom .close {
+    position: absolute;
+    top: -11px;
+    right: -1px;
+    font-size: 24px;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    display: block;
+    border-radius: 50%;
+}
+
+.pop-box .pop-bottom .close i {
+    margin-top: -3px;
+}
+
+.step-01 .close {
+    /*display: none;*/
+}
+
+.pop-box .pop-bottom h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.pop-box .pop-bottom ul {
+    list-style-type: ;
+}
+.pop-box .pop-bottom ul li {
+    margin-bottom: 7px;
+    padding-left: 13px;
+    position: relative;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    color: #444;
+}
+.pop-box .pop-bottom ul li.bullet {
+    padding-left: 13px;
+}
+
+.pop-box .pop-bottom ul li.bullet::before {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    content: "\f111";
+    font-family: FontAwesome;
+    font-size: 8px;
+}
+.pop-box:after {
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.pop-box:before {
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+
+.points {
+    display: block !important;
+}
+.points.first {
+    top: 52px;
+    left: 106px;
+    width: 20px;
+    height: 20px;
+}
+.points.first:after {
+    left: 3px;
+    top: 3px;
+}
+.points.first2 {
+    top: 52px;
+    left: 78px;
+    width: 20px;
+    height: 20px;
+}
+.points.first2:after {
+    left: 3px;
+    top: 3px;
+}
+.points.first2 .pop-box {
+    top: 21px;
+    left: -139px;
+}
+.points.second {
+    top: 15px;
+    left: 88px;
+    width: 30px;
+    height: 30px;
+}
+.points.third {
+    top: 60px;
+    left: 54px;
+    width: 30px;
+    height: 30px;
+}
+.points.third2 {
+    top: 60px;
+    left: 124px;
+    width: 30px;
+    height: 30px;
+}
+.points.forth {
+    top: 106px;
+    left: 88px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.forth {
+    top: 102px;
+    left: 75px;
+    width: 54px;
+    height: 34px;
+}
+.human-body .step-01 .points.forth:after {
+    left: 21px;
+    top: 12px;
+}
+.human-body .step-01 .points.forth .pop-box {
+    top: 32px;
+    left: -122px;
+}
+.points.fifth {
+    top: 65px;
+    left: 95px;
+    width: 20px;
+    height: 20px;
+}
+.points.fifth:after {
+    left: 3px;
+    top: 3px;
+}
+.points.sixth {
+    top: 0;
+    left: 64px;
+    width: 30px;
+    height: 30px;
+}
+.points.sixth2 {
+    top: 0;
+    left: 120px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.sixth2:after {
+    left: 8px;
+    top: 10px;
+}
+.points.seventh {
+    top: 81px;
+    left: 94px;
+    width: 20px;
+    height: 20px;
+}
+.points.seventh:after {
+    left: 3px;
+    top: 3px;
+}
+.points.eight {
+    top: 138px;
+    left: 88px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.eight {
+    top: 135px;
+    left: 86px;
+    width: 42px;
+    height: 40px;
+}
+.human-body .step-01 .points.eight:after {
+    left: 10px;
+    top: 11px;
+}
+.points.ninth {
+    top: 138px;
+    left: 126px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.ninth {
+    top: 135px;
+    left: 126px;
+    width: 42px;
+    height: 40px;
+}
+.human-body .step-01 .points.ninth:after {
+    left: 8px;
+    top: 11px;
+}
+.points.ninth2 {
+    top: 138px;
+    left: 51px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.ninth2 {
+    top: 135px;
+    left: 43px;
+    width: 42px;
+    height: 40px;
+}
+.human-body .step-01 .points.ninth2:after {
+    left: 16px;
+    top: 11px;
+}
+.human-body .step-01 .points.ninth2 .pop-box {
+    top: 31px;
+    left: -127px;
+}
+.points.tenth {
+    top: 177px;
+    left: 91px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.tenth {
+    top: 175px;
+    left: 91px;
+    width: 77px;
+    height: 37px;
+}
+.human-body .step-01 .points.tenth:after {
+    left: 8px;
+    top: 10px;
+}
+.points.eleventh {
+    top: 276px;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.eleventh {
+    top: 271px;
+    left: 14px;
+    width: 30px;
+    height: 38px;
+}
+.human-body .step-01 .points.eleventh:after {
+    left: 3px;
+    top: 13px;
+}
+.points.eleventh2 {
+    top: 258px;
+    left: 188px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.eleventh2 {
+    top: 258px;
+    left: 183px;
+    width: 30px;
+    height: 49px;
+}
+.human-body .step-01 .points.eleventh2:after {
+    left: 13px;
+    top: 8px;
+}
+.human-body .step-01 .points.eleventh2 .pop-box {
+    top: 29px;
+    left: -130px;
+}
+.points.twelfth {
+    top: 218px;
+    left: 189px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.twelfth {
+    top: 136px;
+    left: 168px;
+    width: 35px;
+    height: 122px;
+}
+.human-body .step-01 .points.twelfth:after {
+    left: 29px;
+    top: 90px;
+}
+.human-body .step-01 .points.twelfth .pop-box {
+    top: 111px;
+    left: -115px;
+}
+.human-body .step-01 .points.twelfth2 {
+    top: 136px;
+    left: 16px;
+    width: 27px;
+    height: 135px;
+}
+.human-body .step-01 .points.twelfth2:after {
+    left: -6px;
+    top: 75px;
+}
+.human-body .step-01 .points.twelfth2 .pop-box {
+    top: 97px;
+    left: -149px;
+}
+.points.thirteen {
+    top: 175px;
+    left: 63px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.thirteen {
+    top: 175px;
+    left: 43px;
+    width: 48px;
+    height: 37px;
+}
+.human-body .step-01 .points.thirteen:after {
+    left: 28px;
+    top: 8px;
+}
+.human-body .step-01 .points.thirteen .pop-box {
+    top: 29px;
+    left: -115px;
+}
+.points.forteen {
+    top: 206px;
+    left: 72px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.forteen {
+    top: 212px;
+    left: 46px;
+    width: 121px;
+    height: 35px;
+}
+.human-body .step-01 .points.forteen:after {
+    left: 34px;
+    top: 3px;
+}
+.human-body .step-01 .points.forteen .pop-box {
+    top: 26px;
+    left: -107px;
+}
+.points.fifteen {
+    top: 272px;
+    left: 82px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.fifteen:after {
+    left: 41px;
+    top: 13px;
+}
+.human-body .step-01 .points.fifteen .pop-box {
+    top: 35px;
+    left: -104px;
+}
+.human-body .step-01 .points.fifteen {
+    border-radius: 0;
+    top: 267px;
+    left: 49px;
+    width: 58px;
+    height: 41px;
+}
+.points.sixteen {
+    top: 274px;
+    left: 105px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.sixteen {
+    border-radius: 0;
+    top: 267px;
+    left: 107px;
+    width: 54px;
+    height: 41px;
+}
+.human-body .step-01 .points.sixteen:after {
+    left: 6px;
+    top: 15px;
+}
+.human-body .step-01 .points.sixteen .pop-box {
+    top: 35px;
+    left: -137px;
+}
+.points.seventeen {
+    top: 351px;
+    left: 114px;
+    width: 30px;
+    height: 30px;
+}
+.points.eighteen {
+    top: 429px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.eighteen:after {
+    left: 44px;
+    top: 69px;
+}
+.human-body .step-01 .points.eighteen .pop-box {
+    top: -63px;
+    left: -99px;
+}
+.points.eighteen2 {
+    top: 516px;
+    left: 66px;
+    width: 30px;
+    height: 30px;
+}
+.points.eighteen3 {
+    top: 504px;
+    left: 108px;
+    width: 30px;
+    height: 30px;
+}
+.human-body .step-01 .points.eighteen {
+    border-radius: 0;
+    top: 308px;
+    left: 49px;
+    width: 112px;
+    height: 242px;
+}
+.points.nineteen {
+    top: 437px;
+    left: 121px;
+    width: 30px;
+    height: 30px;
+}
+.points.twentieth {
+    top: 202px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+}
+.points.twentyfirst {
+    top: 390px;
+    left: 140px;
+    width: 30px;
+    height: 30px;
+}
+
+.points.second:after,
+.points.third:after,
+.points.third2:after,
+.points.forth:after,
+.points.sixth:after,
+.points.eight:after,
+.points.ninth:after,
+.points.ninth2:after,
+.points.tenth:after,
+.points.eleventh:after,
+.points.eleventh2:after,
+.points.twelfth:after,
+.points.thirteen:after,
+.points.forteen:after,
+.points.fifteen:after,
+.points.sixteen:after,
+.points.seventeen:after,
+.points.eighteen:after,
+.points.eighteen2:after,
+.points.eighteen3:after,
+.points.nineteen:after,
+.points.twentieth:after,
+.points.twentyfirst:after {
+    left: 8px;
+    top: 8px;
+}
+
+.points.first .pop-box,
+.points.fifth .pop-box,
+.points.seventh .pop-box {
+    top: 24px;
+    left: -140px;
+}
+
 /* Footer */
 .footer {
     text-align: center;
@@ -103,848 +631,6 @@ a {
 .footer .check-btn {}
 
 .footer .try-btn {}
-
-
-/*    ============    */
-
-.click-point {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.click-point:after {
-    position: absolute;
-    content: ' ';
-    height: 10px;
-    width: 10px;
-    background-color: #f7f7f7;
-    left: -5px;
-    top: -4px;
-    border-radius: 50%;
-}
-
-.points {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    /*border-radius: 100%;*/
-    /*cursor: pointer;*/
-    /*z-index: 99;*/
-}
-
-.points:after {
-    position: absolute;
-    content: ' ';
-    height: 14px;
-    width: 14px;
-    background-color: white;
-    border: 3px black solid;
-    left: -5px;
-    top: -4px;
-    border-radius: 50%;
-}
-
-.points.active:after {
-    background-color: red;
-    border-color: white;
-}
-
-@media only screen and (min-width: 1025px) {
-    .points:hover:after {
-        background-color: red;
-        border-color: white;
-    }
-}
-
-.step-01 .points:after {
-    display: none;
-}
-
-
-/* Pop Box */
-
-.pop-box {
-    width: 300px;
-    min-height: 100px;
-    top: 29px;
-    left: -135px;
-    font-size: 15px;
-    position: absolute;
-    display: none;
-    z-index: 9999;
-    /*background: #f2f2f2;
-    border: 5px solid #fff;
-    -webkit-box-shadow: 0px 1px 3px 1px #777;
-    -moz-box-shadow:    0px 1px 3px 1px #777;
-    box-shadow:         0px 1px 3px 1px #777;
-    padding: 10px;*/
-}
-
-.pop-box .pop-top {
-    width: 100%;
-    height: 130px;
-}
-
-.pop-box .pop-bottom {
-    background-color: #fff;
-    padding: 15px;
-    -webkit-box-shadow: 0px 1px 3px 1px #ccc;
-    -moz-box-shadow: 0px 1px 3px 1px #ccc;
-    box-shadow: 0px 1px 3px 1px #ccc;
-}
-
-.close {
-    position: absolute;
-    top: -11px;
-    right: -1px;
-    font-size: 24px;
-    background-color: #fff;
-    height: 18px;
-    width: 18px;
-    display: block;
-    border-radius: 50%;
-}
-
-.close i {
-    margin-top: -3px;
-}
-
-.step-01 .close {
-    /*display: none;*/
-}
-
-.pop-box h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.pop-box ul {
-    list-style-type: ;
-    /*list-style-type: decimal;*/
-    /*margin-left: 10px;*/
-}
-
-.pop-box ul li {
-    margin-bottom: 7px;
-    padding-left: 13px;
-    position: relative;
-    font-family: 'News Cycle', sans-serif;
-    font-weight: 700;
-    color: #444;
-}
-
-
-/*.pop-box ul li::before {
-    position: absolute;
-    left: 0px;
-    top: 0;
-    content: "\f111";
-    font-family: FontAwesome;
-    font-size: 8px;
-}*/
-
-.pop-box ul li.bullet {
-    padding-left: 13px;
-}
-
-.pop-box ul li.bullet::before {
-    position: absolute;
-    left: 0px;
-    top: 2px;
-    content: "\f111";
-    font-family: FontAwesome;
-    font-size: 8px;
-}
-
-
-/*.pop-box ol li:before {
-    position: absolute;
-    content: " - ";
-    left: 0;
-    font-size: 20px;
-    line-height: 13px;
-}*/
-
-
-/*.pop-box:after, .pop-box:before {
-    bottom: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-}*/
-
-.pop-box:after {
-    border-width: 10px;
-    margin-left: -10px;
-}
-
-.pop-box:before {
-    border-width: 11px;
-    margin-left: -11px;
-}
-
-
-/*   */
-
-.pop-overlay {
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.error-box {
-    margin: -80px auto 0;
-    top: 50%;
-    right: 0;
-    left: 0;
-    position: absolute;
-    background: #f2f2f2;
-    border: 5px solid #fff;
-    width: 270px;
-    min-height: 150px;
-    font-size: 14px;
-    -webkit-box-shadow: 0px 1px 3px 1px #777;
-    -moz-box-shadow: 0px 1px 3px 1px #777;
-    box-shadow: 0px 1px 3px 1px #777;
-    z-index: 99;
-    padding: 10px;
-    text-align: center;
-}
-
-.error-close {
-    position: absolute;
-    top: -16px;
-    right: -13px;
-    font-size: 20px;
-    background-color: #fff;
-    height: 17px;
-    width: 17px;
-    display: block;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-}
-
-.play-again {
-    cursor: pointer;
-}
-
-.pop-play {
-    margin: 10px auto 0;
-    padding: 8px 0;
-    background-color: #c1272d;
-    color: #fff;
-    width: 90px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-}
-
-.pop-play:hover {
-    background-color: #000;
-}
-
-.error-box h2 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.error-box ol {
-    list-style-type: ;
-    /*list-style-type: decimal;*/
-    margin-left: 10px;
-}
-
-.error-box ol li {
-    margin-bottom: 5px;
-    padding-left: 13px;
-    position: relative;
-}
-
-.error-box ol li::before {
-    position: absolute;
-    left: 0px;
-    top: 0;
-    content: "\f111";
-    font-family: FontAwesome;
-    font-size: 8px;
-}
-
-.points {
-    display: block !important;
-    /*background-color: rgba(255,255,255, 0.5);*/
-}
-
-.step-01 .points {
-    /*background-color: rgba(0,0,0, 0.5);*/
-}
-
-
-/*.points.first             {top: 39px;left: 119px;}*/
-
-.points.first {
-    top: 52px;
-    left: 106px;
-    width: 20px;
-    height: 20px;
-}
-
-.points.first:after {
-    left: 3px;
-    top: 3px;
-}
-
-.points.first2 {
-    top: 52px;
-    left: 78px;
-    width: 20px;
-    height: 20px;
-}
-
-.points.first2:after {
-    left: 3px;
-    top: 3px;
-}
-
-.points.first2 .pop-box {
-    top: 21px;
-    left: -139px;
-}
-
-
-/*.points.second            {top: 18px;left: 110px;}*/
-
-.points.second {
-    top: 15px;
-    left: 88px;
-    width: 30px;
-    height: 30px;
-}
-
-
-/*.points.third             {top: 48px;left: 83px;}*/
-
-.points.third {
-    top: 60px;
-    left: 54px;
-    width: 30px;
-    height: 30px;
-}
-
-.points.third2 {
-    top: 60px;
-    left: 124px;
-    width: 30px;
-    height: 30px;
-}
-
-
-/*.points.forth             {top: 87px;left: 112px;}12 15*/
-
-.points.forth {
-    top: 106px;
-    left: 88px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.forth {
-    top: 102px;
-    left: 75px;
-    width: 54px;
-    height: 34px;
-}
-
-.human-body .step-01 .points.forth:after {
-    left: 21px;
-    top: 12px;
-}
-
-.human-body .step-01 .points.forth .pop-box {
-    top: 32px;
-    left: -122px;
-}
-
-
-/*.points.fifth             {top: 50px;left: 110px;}*/
-
-.points.fifth {
-    top: 65px;
-    left: 95px;
-    width: 20px;
-    height: 20px;
-}
-
-.points.fifth:after {
-    left: 3px;
-    top: 3px;
-}
-
-
-/*.points.sixth             {top: 10px;left: 92px;}*/
-
-.points.sixth {
-    top: 0;
-    left: 64px;
-    width: 30px;
-    height: 30px;
-}
-
-.points.sixth2 {
-    top: 0;
-    left: 120px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.sixth2:after {
-    left: 8px;
-    top: 10px;
-}
-
-
-/*.points.seventh           {top: 61px;left: 110px;}*/
-
-.points.seventh {
-    top: 81px;
-    left: 94px;
-    width: 20px;
-    height: 20px;
-}
-
-.points.seventh:after {
-    left: 3px;
-    top: 3px;
-}
-
-
-/*.points.eight             {top: 130px;left: 103px;}*/
-
-.points.eight {
-    top: 138px;
-    left: 88px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.eight {
-    top: 135px;
-    left: 86px;
-    width: 42px;
-    height: 40px;
-}
-
-.human-body .step-01 .points.eight:after {
-    left: 10px;
-    top: 11px;
-}
-
-.human-body .step-01 .points.eight .pop-box {}
-
-
-/*.points.ninth             {top: 128px;left: 141px;}*/
-
-.points.ninth {
-    top: 138px;
-    left: 126px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.ninth {
-    top: 135px;
-    left: 126px;
-    width: 42px;
-    height: 40px;
-}
-
-.human-body .step-01 .points.ninth:after {
-    left: 8px;
-    top: 11px;
-}
-
-.points.ninth2 {
-    top: 138px;
-    left: 51px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.ninth2 {
-    top: 135px;
-    left: 43px;
-    width: 42px;
-    height: 40px;
-}
-
-.human-body .step-01 .points.ninth2:after {
-    left: 16px;
-    top: 11px;
-}
-
-.human-body .step-01 .points.ninth2 .pop-box {
-    top: 31px;
-    left: -127px;
-}
-
-
-/*.points.tenth             {top: 189px;left: 111px;}*/
-
-.points.tenth {
-    top: 177px;
-    left: 91px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.tenth {
-    top: 175px;
-    left: 91px;
-    width: 77px;
-    height: 37px;
-}
-
-.human-body .step-01 .points.tenth:after {
-    left: 8px;
-    top: 10px;
-}
-
-
-/*.points.eleventh          {top: 288px;left: 32px;}*/
-
-.points.eleventh {
-    top: 276px;
-    left: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.eleventh {
-    top: 271px;
-    left: 14px;
-    width: 30px;
-    height: 38px;
-}
-
-.human-body .step-01 .points.eleventh:after {
-    left: 3px;
-    top: 13px;
-}
-
-.points.eleventh2 {
-    top: 258px;
-    left: 188px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.eleventh2 {
-    top: 258px;
-    left: 183px;
-    width: 30px;
-    height: 49px;
-}
-
-.human-body .step-01 .points.eleventh2:after {
-    left: 13px;
-    top: 8px;
-}
-
-.human-body .step-01 .points.eleventh2 .pop-box {
-    top: 29px;
-    left: -130px;
-}
-
-
-/*.points.twelfth           {top: 276px;left: 204px;}*/
-
-.points.twelfth {
-    top: 218px;
-    left: 189px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.twelfth {
-    top: 136px;
-    left: 168px;
-    width: 35px;
-    height: 122px;
-}
-
-.human-body .step-01 .points.twelfth:after {
-    left: 29px;
-    top: 90px;
-}
-
-.human-body .step-01 .points.twelfth .pop-box {
-    top: 111px;
-    left: -115px;
-}
-
-.human-body .step-01 .points.twelfth2 {
-    top: 136px;
-    left: 16px;
-    width: 27px;
-    height: 135px;
-}
-
-.human-body .step-01 .points.twelfth2:after {
-    left: -6px;
-    top: 75px;
-}
-
-.human-body .step-01 .points.twelfth2 .pop-box {
-    top: 97px;
-    left: -149px;
-}
-
-
-/*.points.thirteen          {top: 173px;left: 91px;}*/
-
-.points.thirteen {
-    top: 175px;
-    left: 63px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.thirteen {
-    top: 175px;
-    left: 43px;
-    width: 48px;
-    height: 37px;
-}
-
-.human-body .step-01 .points.thirteen:after {
-    left: 28px;
-    top: 8px;
-}
-
-.human-body .step-01 .points.thirteen .pop-box {
-    top: 29px;
-    left: -115px;
-}
-
-
-/*.points.forteen           {top: 209px;left: 96px;}*/
-
-.points.forteen {
-    top: 206px;
-    left: 72px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.forteen {
-    top: 212px;
-    left: 46px;
-    width: 121px;
-    height: 35px;
-}
-
-.human-body .step-01 .points.forteen:after {
-    left: 34px;
-    top: 3px;
-}
-
-.human-body .step-01 .points.forteen .pop-box {
-    top: 26px;
-    left: -107px;
-}
-
-
-/*.points.fifteen           {top: 254px;left: 97px;}*/
-
-.points.fifteen {
-    top: 272px;
-    left: 82px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.fifteen:after {
-    left: 41px;
-    top: 13px;
-}
-
-.human-body .step-01 .points.fifteen .pop-box {
-    top: 35px;
-    left: -104px;
-}
-
-.human-body .step-01 .points.fifteen {
-    border-radius: 0;
-    top: 267px;
-    left: 49px;
-    width: 58px;
-    height: 41px;
-}
-
-
-/*.points.sixteen           {top: 259px;left: 120px;}*/
-
-.points.sixteen {
-    top: 274px;
-    left: 105px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.sixteen {
-    border-radius: 0;
-    top: 267px;
-    left: 107px;
-    width: 54px;
-    height: 41px;
-}
-
-.human-body .step-01 .points.sixteen:after {
-    left: 6px;
-    top: 15px;
-}
-
-.human-body .step-01 .points.sixteen .pop-box {
-    top: 35px;
-    left: -137px;
-}
-
-
-/*.points.seventeen         {top: 353px;left: 132px;}*/
-
-.points.seventeen {
-    top: 351px;
-    left: 114px;
-    width: 30px;
-    height: 30px;
-}
-
-
-/*.points.eighteen          {top: 436px;left: 85px;}*/
-
-.points.eighteen {
-    top: 429px;
-    left: 70px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.eighteen:after {
-    left: 44px;
-    top: 69px;
-}
-
-.human-body .step-01 .points.eighteen .pop-box {
-    top: -63px;
-    left: -99px;
-}
-
-.points.eighteen2 {
-    top: 516px;
-    left: 66px;
-    width: 30px;
-    height: 30px;
-}
-
-.points.eighteen3 {
-    top: 504px;
-    left: 108px;
-    width: 30px;
-    height: 30px;
-}
-
-.human-body .step-01 .points.eighteen {
-    border-radius: 0;
-    top: 308px;
-    left: 49px;
-    width: 112px;
-    height: 242px;
-}
-
-
-/*.points.nineteen          {top: 456px;left: 140px;}*/
-
-.points.nineteen {
-    top: 437px;
-    left: 121px;
-    width: 30px;
-    height: 30px;
-}
-
-
-/*.points.twentieth         {top: 363px;left: 84px;}*/
-
-.points.twentieth {
-    top: 202px;
-    left: 125px;
-    width: 30px;
-    height: 30px;
-}
-
-
-/*.points.twentyfirst       {top: 423px;left: 155px;}*/
-
-.points.twentyfirst {
-    top: 390px;
-    left: 140px;
-    width: 30px;
-    height: 30px;
-}
-
-.points.second:after,
-.points.third:after,
-.points.third2:after,
-.points.forth:after,
-.points.sixth:after,
-.points.eight:after,
-.points.ninth:after,
-.points.ninth2:after,
-.points.tenth:after,
-.points.eleventh:after,
-.points.eleventh2:after,
-.points.twelfth:after,
-.points.thirteen:after,
-.points.forteen:after,
-.points.fifteen:after,
-.points.sixteen:after,
-.points.seventeen:after,
-.points.eighteen:after,
-.points.eighteen2:after,
-.points.eighteen3:after,
-.points.nineteen:after,
-.points.twentieth:after,
-.points.twentyfirst:after {
-    left: 8px;
-    top: 8px;
-}
-
-.points.first .pop-box,
-.points.fifth .pop-box,
-.points.seventh .pop-box {
-    top: 24px;
-    left: -140px;
-}
 
 
 /* Pop Box */
