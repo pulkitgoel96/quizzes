@@ -54,6 +54,16 @@
 .slick-prev {
 	left: -25px;
 }
+
+.more-news .slick-prev {
+	left: 25px;
+}
+
+.more-news .slick-next {
+	right: 25px;
+}
+
+
 [dir='rtl'] .slick-prev {
 	right: -25px;
 	left: auto;
@@ -244,11 +254,11 @@
 
 .single-news .slick-prev {
 	left: 10px;
-	top: 40%
+	top: 50%
 }
 .single-news .slick-next {
 	right: 10px;
-	top: 40%
+	top: 50%
 }
 
 

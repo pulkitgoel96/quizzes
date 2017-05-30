@@ -392,6 +392,7 @@ table {
 .more-news figcaption {
 	padding: 10px;
 	font-size: 18px;
+	height: 60px;
 }
 .more-news a {
 	display: inline-block;

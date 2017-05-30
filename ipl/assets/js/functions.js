@@ -221,7 +221,7 @@ $(document).ready(function() {
     });
 
 	$('.slider-3').slick({
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,

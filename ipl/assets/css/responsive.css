@@ -149,4 +149,13 @@
 	
 	
 	.go-home{display: block; margin: 5px 0 0px 0px;}
+	
+	
+	
+	.single-news .slick-prev {
+	top: 40%
+}
+.single-news .slick-next {
+	top: 40%
+}
 }
