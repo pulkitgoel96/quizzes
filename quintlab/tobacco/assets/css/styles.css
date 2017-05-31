@@ -1,5 +1,5 @@
 body {
-    height: 690px;
+    height: 712px;
     font-family: 'Strait', sans-serif;
     line-height: 100%;
     color: #3C3C3C;
@@ -13,7 +13,7 @@ a {
     cursor: url('../images/cigarette-cursor-icon.png') 10 10, auto;
 }
 .main {
-    height: 660px;
+    height: 712px;
     max-width: 500px;
     margin: 0 auto;
     position: relative;
@@ -112,7 +112,6 @@ a {
     -moz-box-shadow: 0px 1px 3px 1px #ccc;
     box-shadow: 0px 1px 3px 1px #ccc;
 }
-
 .pop-box .pop-bottom .close {
     position: absolute;
     top: -11px;
@@ -124,21 +123,17 @@ a {
     display: block;
     border-radius: 50%;
 }
-
 .pop-box .pop-bottom .close i {
     margin-top: -3px;
 }
-
 .step-01 .close {
     /*display: none;*/
 }
-
 .pop-box .pop-bottom h2 {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 700;
 }
-
 .pop-box .pop-bottom ul {
     list-style-type: ;
 }
@@ -153,7 +148,6 @@ a {
 .pop-box .pop-bottom ul li.bullet {
     padding-left: 13px;
 }
-
 .pop-box .pop-bottom ul li.bullet::before {
     position: absolute;
     left: 0px;
@@ -166,13 +160,10 @@ a {
     border-width: 10px;
     margin-left: -10px;
 }
-
 .pop-box:before {
     border-width: 11px;
     margin-left: -11px;
 }
-
-
 .points {
     display: block !important;
 }
