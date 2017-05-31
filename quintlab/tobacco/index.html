@@ -28,7 +28,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body onload="adjust_iframe_height()">
 <div class="main">
     <header class="header">
         <p class="step-first"><em>Arey oh Sambha!</em><br>Click on the body parts tobacco has harmful effects on.</p>
@@ -1026,19 +1026,6 @@ $(document).ready(function(){
         $(".msg-right").hide();
     });
 
-    /*
-    $(document).one('click',".step-01", function(event){
-        $(".is-error").fadeIn();
-        $(".step-first").fadeIn();
-        $(".msg-wrong").fadeIn();
-        $(".overlay").show();
-
-        event.preventDefault();
-        if($(".is-show").is(":hidden") == false){
-            $(".is-error").hide();
-        }
-    });*/
-
     // Step 01
     $(document).one('click',".step-01 .points", function(){
         $(".is-show").hide();
@@ -1063,6 +1050,8 @@ $(document).ready(function(){
         $(".points").removeClass("active");
         $(this).addClass("active");
         e.preventDefault();
+
+        adjust_iframe_height();
     });
 
     
@@ -1082,77 +1071,6 @@ $(document).ready(function(){
         }
         $(".points").removeClass("active");
     });
-
-    /*$(document).mouseup(function (e){
-        var container = $(".pop-box");
-        if (!container.is(e.target)
-            && container.has(e.target).length === 0)
-        {
-            container.hide();
-        }
-        $(".points").removeClass("active");
-    });*/
-
-
-    // $(document).on('click',".step-01", function(event){
-    //     $(".is-error").show();
-    //     event.preventDefault();
-    // });
-    // $(document).on('click',".points", function(){
-    //     $(".is-show").show();
-    // });
-
-    // $(document).on('click',".close", function(){
-    //     $(".is-show").hide();
-    // });
-
-    /*
-    var is_print = true;
-    $("#container img").click(function(e){
-        var wrapper = $(this).parent();
-        var parentOffset = wrapper.offset(); 
-        var relX = e.pageX - parentOffset.left + wrapper.scrollLeft();
-        var relY = e.pageY - parentOffset.top + wrapper.scrollTop();
-        if(is_print) {
-            $(this).after($('<div/>').addClass('click-point').css({left: relX, top: relY }));
-            }
-    });
-    $(".check-btn").click(function(){
-        $(".points").fadeIn();
-        $(".click-point").fadeOut();
-
-        $(".step-first").hide();
-        $(".step-second").show();
-
-        $(this).hide();
-        $(".check-content").show();
-        is_print = false;
-    });
-    $(".points").click(function(){
-        $(".is-show").hide();
-        $(this).children(".is-show").show();
-        $(".points").removeClass("active");
-        $(this).addClass("active")
-    });
-    $(document).on('click',".close", function(){
-        $(".is-show").hide();
-        $(".points").removeClass("active");
-    });
-    $(document).on("click",".close", function(){
-
-    })
-    $(document).click(function(){
-
-    })
-    $(document).mouseup(function (e){
-        var container = $(".pop-box");
-        if (!container.is(e.target) // if the target of the click isn't the container...
-            && container.has(e.target).length === 0) // ... nor a descendant of the container
-        {
-            container.hide();
-        }
-        $(".points").removeClass("active");
-    });*/
 });
 </script>
 
