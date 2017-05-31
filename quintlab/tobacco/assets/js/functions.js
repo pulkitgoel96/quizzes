@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     // Step 01
-    $(document).one('click',".step-01 .points", function(){
+    $(".step-01 .points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
         $(".points").removeClass("active");
@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
 
     // Step 02
-    $(document).on('click',".step-02 .points", function(){
+    $(".step-02 .points").click(function(){
         $(".is-show").hide();
         $(this).children(".is-show").show();
         $(".points").removeClass("active");
