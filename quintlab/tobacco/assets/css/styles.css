@@ -164,6 +164,26 @@ a {
     border-width: 11px;
     margin-left: -11px;
 }
+
+.step-02 .points.twentyfirst .pop-box {
+    top: 20px;
+}
+.step-02 .points.eighteen .pop-box {
+    top: -82px;
+}
+.step-02 .points.eighteen3 .pop-box {
+    top: -157px;
+}
+.step-02 .points.nineteen .pop-box {
+    top: -21px;
+}
+
+
+
+
+
+
+
 .points {
     display: block !important;
 }
