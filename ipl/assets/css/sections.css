@@ -40,7 +40,7 @@ body, .sections .si-mi-st-wrap {
 	padding: 9px 10px;
 }
 
-.sections .si-standings-container .si-ipl-t20-standings .si-mi-st-wrap .si-widget{
+.sections .si-standings-container.si-ipl-t20-standings.si-mi-st-wrap.si-widget{
 	padding-top:10px;
 }
 
