@@ -31,13 +31,17 @@ body, .sections .si-mi-st-wrap {
 	line-height: 100%;
 	padding: 3px 6px;
 	text-transform: uppercase;
-	margin: 10px;
+	margin: 0 10px 10px 10px;
 }
 .sections .si-mi-st-wrap .si-mi-st-header .si-st-heading span::after {
 	display: none;
 }
 .sections .si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
 	padding: 9px 10px;
+}
+
+.sections .si-standings-container .si-ipl-t20-standings .si-mi-st-wrap .si-widget{
+	padding-top:10px;
 }
 
 @media (max-width: 767px) {
