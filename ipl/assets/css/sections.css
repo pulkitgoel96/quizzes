@@ -19,7 +19,7 @@ body, .sections .si-mi-st-wrap {
 .sections .si-mi-st-wrap .si-mi-st-header {
 	padding: 0;
 	border: 0px;
-	margin: 10px 10px 0px 10px;
+	margin: 0px;
 }
 
 .sections .si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td.st-td-pts:before {
