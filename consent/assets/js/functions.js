@@ -1,6 +1,3 @@
-//view-source:https://css-tricks.com/examples/TabsNextPrev/
-
-
 
 $(document).ready(function(){
 	$('#startScreen').click(function(){
@@ -27,14 +24,8 @@ $(document).ready(function(){
 	$('.last-item li').click(function(){
 		$('#questionContainer').hide();
 		$('#answerContainer').show();
-		
-		
-//		if($('.points').text() <=20{
-//		   $('.ans-1').addClass('is-result');
-//		 });
-	
-	
-	
+
+
 	if($(".points").text() <= 20 ){
 		
        	$('.ans-1').addClass('is-result');
@@ -57,36 +48,6 @@ $(document).ready(function(){
       }	
 	});
 	
-	
-	
 });
 
-
-/*
-$("#btn").on("click",function(){
-      if($("#lblTotalMarks").text() <= 3 ){  //0-3
-        $(".lessGreater div").hide();
-        $(".lessGreater div.short").show();
-
-      } else if($("#lblTotalMarks").text() > 3 && $("#lblTotalMarks").text() <= 6){  //4-6
-        $(".lessGreater div").hide();
-        $(".lessGreater div.minimum").show();
-
-      } else if($("#lblTotalMarks").text() > 6 && $("#lblTotalMarks").text() <= 9){  //7-9
-        $(".lessGreater div").hide();
-        $(".lessGreater div.middle").show();
-
-      } else if($("#lblTotalMarks").text() > 9 ){  //10-12
-        $(".lessGreater div").hide();
-        $(".lessGreater div.maximum").show();
-
-      }else if($("#lblTotalMarks").text() < 1) {
-        $(".lessGreater div").hide();
-      }
-
-      $(".demo-list li label").addClass("answer");
-
-      adjust_iframe_height();
-   });
-*/
 
