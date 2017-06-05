@@ -21,6 +21,12 @@ body {
 	font-weight: 400;
 	color: #686868;
 	overflow-x: hidden;
+	
+	
+	background-image:url(../images/background.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
 }
 strong {
 	font-weight: 500;
@@ -49,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #333;
 	font-weight: 400;
 	font-size: 100%;
-/*	font-family: "Anton",sans-serif;*/
-	font-family: 'trashhandregular';
+	font-family: "Anton",sans-serif;
+/*	font-family: 'trashhandregular';*/
 }
 /*Start Web site CSS*/
 .app-wrapper{
@@ -77,15 +83,14 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-/*
 .quiz-item h2 {
   color: #561d47;
   font-size: 30px;
   line-height: 130%;
   margin: 0px 0 0;
 }
-*/
 
+/*
 .quiz-item h2 {
   color: #561d47;
   font-size: 42px;
@@ -93,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
   margin: 0;
 }
+*/
 
 .quiz-item .quiz-img {
 	max-width: 500px;
@@ -153,14 +159,13 @@ background: #8B26C2;
   text-align: center;
 }
 
-/*
 .container.ans-container h3 {
   color: #fff;
   font-size: 30px;
   margin-bottom: 10px;
 }
-*/
 
+/*
 .container.ans-container h3 {
   color: #fff;
   font-size: 42px;
@@ -168,6 +173,7 @@ background: #8B26C2;
   line-height: 100%;
   margin-bottom: 10px;
 }
+*/
 
 
 .ans-container ul li {
