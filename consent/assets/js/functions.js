@@ -17,7 +17,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$('.quiz-ans ol li').click(function(){
+	$('.quiz-ans ul li').click(function(){
 		var point_val = $('.points').text();
 		var this_val = $(this).find('span').text();
 		var total_val = parseInt(point_val) + parseInt(this_val);
