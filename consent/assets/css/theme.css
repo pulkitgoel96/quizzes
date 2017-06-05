@@ -1,6 +1,17 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Anton');
+
+@font-face {
+    font-family: 'trashhandregular';
+    src: url('../fonts/trashhand-webfont.woff2') format('woff2'),
+         url('../fonts/trashhand-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 html, body {
 	height: 100%;
 }
@@ -38,7 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #333;
 	font-weight: 400;
 	font-size: 100%;
-	font-family: "Anton",sans-serif;
+/*	font-family: "Anton",sans-serif;*/
+	font-family: 'trashhandregular';
 }
 /*Start Web site CSS*/
 .app-wrapper{
@@ -65,11 +77,21 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+/*
 .quiz-item h2 {
   color: #561d47;
   font-size: 30px;
   line-height: 130%;
   margin: 0px 0 0;
+}
+*/
+
+.quiz-item h2 {
+  color: #561d47;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0;
 }
 
 .quiz-item .quiz-img {
@@ -121,6 +143,7 @@ background: #8B26C2;
 	font-size: 30px;
 	text-align: center;
 	font-weight: 600;
+	display: none;
 }
 
 .container.ans-container {
@@ -130,9 +153,19 @@ background: #8B26C2;
   text-align: center;
 }
 
+/*
 .container.ans-container h3 {
   color: #fff;
   font-size: 30px;
+  margin-bottom: 10px;
+}
+*/
+
+.container.ans-container h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 100%;
   margin-bottom: 10px;
 }
 
