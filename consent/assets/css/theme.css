@@ -59,6 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 /*	font-family: 'trashhandregular';*/
 }
 /*Start Web site CSS*/
+
+.logo {
+  display: block;
+  left: 15px;
+  position: absolute;
+  top: 15px;
+  width: 50px;
+  z-index: 9999;
+}
+
 .app-wrapper{
 	padding: 30px 0px 0px 0px;
 }
@@ -101,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .quiz-item .quiz-img {
-	max-width: 500px;
+	max-width: 460px;
 	display: inline-block;
 	margin-top: 10px;
 }
