@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	$('#startScreen').click(function(){
-		$(this).fadeOut();
+		$('.start-screen').hide();
 		$('#questionContainer').show();
 	});
 	
