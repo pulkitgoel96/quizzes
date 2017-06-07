@@ -1,30 +1,23 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Anton');
-
 @font-face {
-    font-family: 'trashhandregular';
-    src: url('../fonts/trashhand-webfont.woff2') format('woff2'),
-         url('../fonts/trashhand-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'coolveticaregular';
-	src: url('../fonts/coolvetica_rg-webfont.woff2') format('woff2'), 
-		url('../fonts/coolvetica_rg-webfont.woff') format('woff');
+	font-family: 'trashhandregular';
+	src: url('../fonts/trashhand-webfont.woff2') format('woff2'),  url('../fonts/trashhand-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
-
-
+@font-face {
+	font-family: 'coolveticaregular';
+	src: url('../fonts/coolvetica_rg-webfont.woff2') format('woff2'),  url('../fonts/coolvetica_rg-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 html, body {
 	height: 100%;
 }
 body {
-/*	font-family: "Roboto", sans-serif;*/
+	/*	font-family: "Roboto", sans-serif;*/
 	font-family: 'coolveticaregular';
 	font-size: 16px;
 	font-weight: 400;
@@ -60,25 +53,22 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	font-size: 100%;
 	font-family: 'coolveticaregular';
-
 }
 /*Start Web site CSS*/
 
 .logo {
-  display: block;
-  left: 15px;
-  position: absolute;
-  top: 15px;
-  width: 50px;
-  z-index: 9999;
+	display: block;
+	left: 15px;
+	position: absolute;
+	top: 15px;
+	width: 50px;
+	z-index: 9999;
 }
-
-.app-wrapper{
+.app-wrapper {
 	padding: 0px 0px 0px 0px;
 }
 .start-screen {
 	width: 800px;
-	height: 601px;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -86,17 +76,24 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: -400px;
 	margin-top: -300px;
 }
-
-.quiz-headline-text{
-	width:45%;
+.quiz-headline-text {
+	width: 45%;
 	float: right;
 	padding-top: 150px;
 }
-
-.quiz-items{
+.quiz-items {
 	width: 50%;
 	float: left;
 }
+
+.flt-right .quiz-items{
+	float: right;
+}
+
+.flt-right .quiz-headline-text{
+	float: left;
+}
+
 
 .quiz-item {
 	display: none;
@@ -104,54 +101,43 @@ h1, h2, h3, h4, h5, h6 {
 .quiz-item.is-show {
 	display: block;
 }
-
 .quiz-item h2 {
-  color: #561d47;
-  font-size: 25px;
-  line-height: 100%;
-  margin: 15px 0 0;
+	color: #561d47;
+	font-size: 25px;
+	line-height: 100%;
+	margin: 15px 0 0;
 }
-
-
-
 .quiz-item .quiz-img {
 	display: block;
 	margin-top: 10px;
 }
-
-.quiz-ans{
-	margin-top:10px;
+.quiz-ans {
+	margin-top: 10px;
 }
-
-
-
 .quiz-ans li {
-  background: #e5ac0a none repeat scroll 0 0;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  float: left;
-  font-size: 100%;
-  height: 75px;
-  line-height: 115%;
-  margin: 0 1% 10px;
-  padding: 10px;
-  text-align: left;
-  transition: all 0.2s ease-in-out;
+	background: #e5ac0a none repeat scroll 0 0;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 100%;
+	height: 75px;
+	line-height: 115%;
+	margin: 0 1% 10px;
+	padding: 10px;
+	text-align: left;
+	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
-  width: 48%;
+	width: 48%;
 }
-
-
-
-.quiz-ans li  span{
+.quiz-ans li span {
 	display: none;
 }
 .quiz-ans li:hover {
-background: #8B26C2;
+	background: #8B26C2;
 	color: #FECC00;
 }
 .points {
@@ -170,47 +156,37 @@ background: #8B26C2;
 	font-weight: 600;
 	display: none;
 }
-
 .container.ans-container {
-  
 }
-
-.container.ans-container ul{
-	
+.container.ans-container ul {
 	background: #561d47 none repeat scroll 0 0;
-  color: #fff;
-  padding: 30px;
-  text-align: center;
+	color: #fff;
+	margin: 60px auto 0;
+	max-width: 800px;
+	padding: 30px;
+	text-align: center;
 }
-
-
 .container.ans-container h3 {
-  color: #fff;
-  font-size: 30px;
-  margin-bottom: 10px;
-	line-height: 130%;
+	color: #fff;
+	font-size: 30px;
+	margin-bottom: 10px;
+	line-height: 100%;
 }
-
-
-
-
 .ans-container ul li {
 	display: none;
 }
 .ans-1.is-result, .ans-2.is-result, .ans-3.is-result, .ans-4.is-result, .ans-5.is-result {
 	display: block;
 }
-
-
-.btn-start{
-	position: absolute; 
+.btn-start {
+	position: absolute;
 	background: #fff;
 	display: inline-block;
 	color: #561D47;
 	bottom: 20%;
 	left: 50%;
 	z-index: 999;
-	padding: 13px 0 11px 0px;
+	padding: 17px 0 11px;
 	font-size: 30px;
 	width: 160px;
 	line-height: 100%;
@@ -218,9 +194,7 @@ background: #8B26C2;
 	text-align: center;
 	text-transform: uppercase;
 }
-.btn-start:hover{
+.btn-start:hover {
 	background: #8B17C5;
 	color: #fff;
 }
-
-

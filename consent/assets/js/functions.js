@@ -3,14 +3,22 @@ $(document).ready(function(){
 	$('#startScreen').click(function(){
 		$('.start-screen').hide();
 		$('#questionContainer').show();
+		
+		$('.quiz-item').addClass('animated');
 	});
 	
 	
 	$('.next-item li').click(function(){
-		var $next = $('#questionContainer .quiz-item.is-show').removeClass('is-show').next('#questionContainer .quiz-item')
+		var $next = $('#questionContainer .quiz-item.is-show').removeClass('is-show fadeIn').next('#questionContainer .quiz-item')
 			if ($next.length) {
-			$next.addClass('is-show'); 
+			$next.addClass('is-show fadeIn'); 
 		}
+		
+		$('#questionContainer').toggleClass('flt-right')
+		
+		$('.quiz-headline-text').toggleClass('slideInLeft slideInRight');
+		//$('.quiz-items').toggleClass('slideInLeft slideInRight');
+		
 		
 	});
 	
