@@ -98,6 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 .quiz-item {
 	display: none;
 }
+
+
 .quiz-item.is-show {
 	display: block;
 }
@@ -198,3 +200,12 @@ h1, h2, h3, h4, h5, h6 {
 	background: #8B17C5;
 	color: #fff;
 }
+
+.animated-custom {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+

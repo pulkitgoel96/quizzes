@@ -4,23 +4,34 @@ $(document).ready(function(){
 		$('.start-screen').hide();
 		$('#questionContainer').show();
 		
-		$('.quiz-item').addClass('animated');
+		$('.quiz-item').addClass('animated-custom');
+		$('.first-item').addClass('fadeIn');
 	});
+	
+	
+	//$('.quiz-item').fadeOut();
 	
 	
 	$('.next-item li').click(function(){
 		var $next = $('#questionContainer .quiz-item.is-show').removeClass('is-show fadeIn').next('#questionContainer .quiz-item')
 			if ($next.length) {
-			$next.addClass('is-show fadeIn'); 
+			$next.addClass('is-show fadeIn'); 		
+		
 		}
 		
-		$('#questionContainer').toggleClass('flt-right')
+		//$(this).fadeOut();
+		
+		$('#questionContainer').toggleClass('flt-right');
 		
 		$('.quiz-headline-text').toggleClass('slideInLeft slideInRight');
 		//$('.quiz-items').toggleClass('slideInLeft slideInRight');
 		
 		
 	});
+	
+	
+	
+	
 	
 	$('.quiz-ans ul li').click(function(){
 		var point_val = $('.points').text();
