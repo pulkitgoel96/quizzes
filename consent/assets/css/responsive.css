@@ -66,6 +66,16 @@
 }
 
 @media (max-width: 575px) {
+	
+	
+	.quiz-headline-text.animated {
+		 -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+	}
+	
+	
 .logo {
 	width: 35px;
 }
