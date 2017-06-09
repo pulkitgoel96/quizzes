@@ -36,6 +36,10 @@ body, .sections .si-mi-st-wrap {
 .sections .si-mi-st-wrap .si-mi-st-header .si-st-heading span::after {
 	display: none;
 }
+
+.si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td:last-child::before{
+	display:none !important;
+}
 .sections .si-mi-st-wrap .si-mi-st-body .si-mi-st-tbl .si-mi-st-tr .si-mi-st-td {
 	padding: 9px 10px;
 }
