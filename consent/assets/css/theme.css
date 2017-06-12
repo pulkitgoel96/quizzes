@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quiz-ans li {
 	background: #e5ac0a none repeat scroll 0 0;
-	color: #fff;
+	color: #561D47;
 	cursor: pointer;
 	display: block;
 	float: left;
@@ -163,11 +163,9 @@ h1, h2, h3, h4, h5, h6 {
 .container.ans-container {
 }
 .container.ans-container ul {
-	background: #561d47 none repeat scroll 0 0;
 	color: #fff;
 	margin: 60px auto 0;
 	max-width: 800px;
-	padding: 30px;
 	text-align: center;
 }
 .container.ans-container h3 {
@@ -179,6 +177,13 @@ h1, h2, h3, h4, h5, h6 {
 .ans-container ul li {
 	display: none;
 }
+
+.ans-container ul li p{
+	text-align: justify;
+	color: #561D47;
+	padding: 25px;
+}
+
 .ans-1.is-result, .ans-2.is-result, .ans-3.is-result, .ans-4.is-result, .ans-5.is-result {
 	display: block;
 }
