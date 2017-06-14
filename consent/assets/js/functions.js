@@ -26,6 +26,7 @@ $(document).ready(function(){
 		$('.quiz-headline-text').toggleClass('slideInLeft slideInRight');
 		//$('.quiz-items').toggleClass('slideInLeft slideInRight');
 		
+		//Play audio
 		
 	});
 	
@@ -38,6 +39,7 @@ $(document).ready(function(){
 		var this_val = $(this).find('span').text();
 		var total_val = parseInt(point_val) + parseInt(this_val);
 		$('.points').text(total_val);
+		sound.play();
 	});
 	
 	$('.last-item li').click(function(){

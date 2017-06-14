@@ -178,10 +178,12 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
-.ans-container ul li p{
-	text-align: justify;
-	color: #561D47;
-	padding: 25px;
+.ans-container ul li p {
+  color: #561d47;
+  font-size: 130%;
+  line-height: 130%;
+  padding: 25px 100px;
+  text-align: justify;
 }
 
 .ans-1.is-result, .ans-2.is-result, .ans-3.is-result, .ans-4.is-result, .ans-5.is-result {
