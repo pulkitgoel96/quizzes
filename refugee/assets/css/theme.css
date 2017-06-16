@@ -393,10 +393,10 @@ nav a.active {
 	width: 100%;
 }
 .content .img-container {
-	width: 150px;
+	width: 240px;
 }
 .content .img-container figure {
-	min-width: 535px;
+	min-width: 600px;
 }
 .container .img-container figcaption, .caption {
 	color: #505050;
