@@ -403,7 +403,7 @@ nav a.active {
 	display: block;
 	font-size: 13px;
 	line-height: 16px;
-	padding: 6px 0;
+	padding: 6px 0 15px 0;
 	font: 13px/120% arial, helvetica, sans-serif;
 }
 .content.content-left {
