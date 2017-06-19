@@ -1190,10 +1190,13 @@ p a {
 
 .map-area{
 	padding-bottom: 30px;
+	display: none;
 }
+.video-container{display: none;}
 
 .video-content{
 	margin-top: 20px;
+	
 }
 
 
