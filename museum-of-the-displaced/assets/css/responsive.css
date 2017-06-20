@@ -9,6 +9,9 @@
 }
 
 @media (max-width:1023px) {
+	
+	.mob-hide{display: none;}
+	
 .video-container.soundcloud {
 	margin-bottom: 0;
 }
