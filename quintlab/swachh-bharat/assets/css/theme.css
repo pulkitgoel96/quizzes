@@ -44,7 +44,7 @@ button, a {
 	-ms-transition: all 0.2s ease-in-out;
 }
 h1, h2, h3, h4, h5, h6 {
-	color: #fff !important;
+	/*color: #fff !important;*/
 	font-weight: 700 !important;
 	/*font-family: 'coolveticaregular';*/
 	font-family: 'helveticabold';
@@ -76,7 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper-top {
 	margin: 60px 0 30px;
 }
-
+.wrapper-top .single-news .caption h5 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+}
 .swachh-headline {
 	color: #fff;
 	font-size: 88px;
@@ -99,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-size: 22px;
 	margin-bottom: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 .swachh-produced .produced-logo li {
 	float: left;
@@ -116,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	margin-top: 22px;
 	line-height: 110%;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .wrapper-other {
@@ -763,6 +768,7 @@ table {
 	padding: 10px;
 	font-size: 30px;
 	color: #071c3d;
+	border-radius: 0;
 }
 .report-form .form-group input {
 	width: 100%;
@@ -787,7 +793,6 @@ textarea,
 input,
 button 	{
 	outline: none;
-	border-radius: 0;
 }
 
 
