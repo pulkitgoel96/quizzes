@@ -14,9 +14,55 @@
 }
 
 @media (max-width: 991px) {
-.container {
-	width: 720px;
-}
+	.container {
+		width: 720px;
+	}
+	.col-3 {
+		width: 50%;
+	}
+	.col-33 {
+		width: 50%;
+	}
+	.wrapper-top {
+		margin: 40px 0 0;
+	}
+	.wrapper-top .single-news ul li figcaption .caption h5 {
+		font-size: 28px;
+		line-height: 38px
+	}
+	.single-news ul li figcaption {
+
+	}
+
+	.swachh-headline {
+		font-size: 60px;
+		line-height: 50px;
+		letter-spacing: -1px;
+		margin-bottom: 10px !important;
+	}
+	.swachh-produced .produced-logo {
+		margin-top: 5px;
+	}
+	.swachh-produced .produced-logo li {
+		width: 30%;
+		margin-bottom: 10px;
+	}
+	.swachh-produced .produced-logo li:first-child {
+		padding-right: 5px;
+	}
+	.swachh-produced .produced-logo li:last-child {
+		padding-left: 5px;
+	}
+	.swachh-produced .swachh-content {
+		font-size: 26px;
+	}
+	.wrapper-other {
+		margin: 0;
+	}
+	.wrapper-other .more-news figcaption {
+		font-size: 28px;
+		line-height: 38px
+	}
 }
 
 @media (max-width: 767px) {
@@ -49,7 +95,7 @@
 }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 .col::after, .col::before {
 	display: table;
 	line-height: 0;
@@ -61,6 +107,12 @@
 .col.col-2 {
 	width: 100%;
 	float: none;
+}
+.col-3 {
+	width: 100%;
+}
+.col-33 {
+	width: 100%;
 }
 .social-share .social-icons {
 	margin: -3px 0 0 0;
@@ -115,9 +167,9 @@
 .top-news li:first-child figcaption {
 	max-width: 98%;
 }
-.more-list {
+/*.more-list {
 	width: 260px !important;
-}
+}*/
 .others-ners .more-list figcaption {
 	max-width: 100%;
 	height: 50px;
