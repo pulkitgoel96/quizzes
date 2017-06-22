@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="">
+<meta name="Keywords" content="" />
+<title>Tika Talk</title>
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+<!-- Custom styles for this template -->
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Neuton:300,400,700" rel="stylesheet">
+
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="assets/css/base.css" rel="stylesheet" media="all">
+<!-- <link href="assets/css/theme.css" rel="stylesheet" media="all">
+<link href="assets/css/responsive.css" rel="stylesheet" media="all"> -->
+<style>
+body {
+    background-color: #fff;
+}
+.circle-round {
+	width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 100%;
+    float: left;
+    position: relative;
+}
+.circle-round .qa-box  		{position: absolute;top: 50px; left: 0;width: 200px;}
+.circle-round .qa-box span  {display: block;margin-bottom: 5px;}
+.circle02 					{margin-left: 200px;}
+.circle a {background-color: #000;display: block;}
+</style>
+
+</head>
+
+<body>
+<div class="header-left">
+    <ul>
+        <li id="pointPlus" class="point-plus">0</li>
+        <li id="pointMinus" class="point-minus">0</li>
+    </ul>
+</div>
+
+
+<ul id="babyId" class="baby">
+    <li id="baby_1" class="circle-round circle" style="display: none">
+        <a href="javascript:void(0);">sd</a>
+        <div class="qa-box" style="display:none">
+            <h2>“My child eats well and plays fine. She doesn’t need to be immunised.”</h2>
+            <div class="answers"> 
+                <span class="false-ans">Yup, it really is expensive.</span>
+                <span class="true-ans">But the Indian government offers vaccines for free!</span>
+            </div>
+        </div>
+    </li>
+    <li id="baby_2" class="circle-round circle02" style="display: none">
+        <a href="javascript:void(0);"></a>
+        <div class="qa-box" style="display:none">
+            <h2>“I can’t take days off to get my kids vaccinated. I’ll lose a day’s worth of money.”</h2>
+            <div class="answers"> <span class="true-ans"> The cost of treatment if they get sick will be MUCH higher than free vaccines.</span> <span class="false-ans"> You’re right. Who will do the work?</span> <span class="false-ans"> It’s not worth it, everyone else is immunised, right?</span> <span class="false-ans">When we were kids, our parents didn’t worry about this stuff. Don’t bother about all this.</span> </div>
+        </div>
+    </li>
+</ul>
+
+<!-- <div class="qa-box">
+	<div class="circle" style="display: none">
+		<span class="true-ans">true-ans</span>
+		<span class="false-ans">false-ans</span>
+	</div>
+	<div class="circle02" style="display: none">
+		ads
+	</div>
+</div> -->
+
+<audio id="audio_1" src="assets/media/cry.mp3" autostart="false"></audio>
+<audio id="audio_2" src="assets/media/laugh.mp3" autostart="false"></audio>
+<!-- js files -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/functions.js"></script> -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// var pointPlus = 0;
+		// var pointMinus = 0;
+		
+		$(".circle").click(function(event){
+			$(this).parent().addClass("active");
+			$(this).parent().find(".qa-box").show();
+
+			event.preventDefault();
+		});
+		// setTimeout
+		setTimeout(function() {
+			$(".circle").show();
+		}, 2000);
+
+		setTimeout(function() {
+			$(".circle").hide();
+			if ($( ".circle" ).hasClass( "active" )){
+				$(".circle").show();
+			}else {
+				$(".circle").hide();
+
+	         	pointMinus += 1;
+		    	$("#pointMinus").text(pointMinus);
+				$(".resultMinus").text(pointMinus);
+			}
+		}, 3000);
+
+
+		// 02
+		$(".circle02").click(function(){
+			$(this).addClass("active");
+		});
+		// setTimeout
+		setTimeout(function() {
+			$(".circle02").show();
+		}, 2000);
+
+		setTimeout(function() {
+			 if ($(".circle02").hasClass( "active" )){
+				$(".circle02").show();
+			}else {
+				$(".circle02").hide();
+				
+	         	pointMinus += 1;
+		    	$("#pointMinus").text(pointMinus);
+				$(".resultMinus").text(pointMinus);
+			}
+		}, 4000);
+
+		// // //
+		var pointPlus = 0;
+		$('.qa-box .true-ans').click(function(){
+			pointPlus += 1;
+	    	$("#pointPlus").text(pointPlus);
+			$(".resultPlus").text(pointPlus);
+			
+		});
+		
+		var pointMinus = 0;
+		$('.qa-box .false-ans').click(function(){
+			pointMinus += 1;
+	    	$("#pointMinus").text(pointMinus);
+			$(".resultMinus").text(pointMinus);
+		});
+
+		//
+		// $(".true-ans, .false-ans").click(function(){
+		// 	$(this).parent();
+		// });
+
+		$(".qa-box span").click(function(){
+			$(this).closest("li").hide();
+			// $(this).closest("li").removeClass("active");
+		});
+
+
+		/*
+		setTimeout(function() {
+			if($(".circle02").css("display")=="none"){
+	         	var pointMinus = 0;
+	         	pointMinus += 1;
+		    	$("#pointMinus").text(pointMinus);
+				$(".resultMinus").text(pointMinus);
+	        }
+		}, 4000);
+		*/
+
+
+
+		// start and end time
+		/*
+		$('.baby li').click(function(){
+			$(this).find('.qa-box').show();
+		});
+		
+		$('.qa-box span').click(function(){
+			$(this).closest('li').hide();
+		});
+		
+		var pointPlus = 0;
+		$('.qa-box .true-ans').click(function(){
+			pointPlus += 1;
+	    	$("#pointPlus").text(pointPlus);
+			$(".resultPlus").text(pointPlus);
+			
+		});
+		
+		var pointMinus = 0;
+		
+		$('.qa-box .false-ans').click(function(){
+			pointMinus += 1;
+	    	$("#pointMinus").text(pointMinus);
+			$(".resultMinus").text(pointMinus);
+			
+		});*/
+
+
+		// Document Click
+	    /*$(document).mouseup(function (e){
+	        var container = $(".circle");
+	        if (!container.is(e.target)
+	            && container.has(e.target).length === 0)
+	        {
+	            container.hide();
+	        }
+	        $(".points").removeClass("active");
+	    });*/
+		
+	});
+</script>
+</body>
+
+</html>
+
+
