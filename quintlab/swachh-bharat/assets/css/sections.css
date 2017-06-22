@@ -1,8 +1,8 @@
-body * {
+/*body * {
 	font-family: "coolveticaregular" !important;
-}
+}*/
 body, .sections .si-mi-st-wrap {
-	background-color: #2B292A;
+	/*background-color: #2B292A;*/
 }
 .section-headline {
 	margin: 15px 0 0 10px;
