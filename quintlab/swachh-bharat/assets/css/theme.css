@@ -69,7 +69,10 @@ h1, h2, h3, h4, h5, h6 {
 .col-33 {
 	width: 66.666%;
 }
-
+.col.col-3,
+.col.col-33 {
+	float: right;
+}
 
 .wrapper-top {
 	margin: 60px 0 30px;
@@ -91,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .swachh-headline span {
 	color: #f4c70c;
+	display: block;
 }
 
 .swachh-produced {

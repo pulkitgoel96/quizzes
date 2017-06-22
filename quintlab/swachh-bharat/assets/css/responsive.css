@@ -8,13 +8,10 @@
 }
 
 @media (max-width: 1199px) {
-.container {
-	width: 980px;
+	.container {
+		width: 980px;
+	}
 }
-}
-
-
-
 
 @media (max-width: 991px) {
 	.container {
@@ -92,9 +89,33 @@
 	}
 }
 
+
 @media (max-width: 767px) {
 	.container {
 		width: 540px;
+	}
+
+	.swachh-headline {
+		font-size: 66px;
+		line-height: 58px;
+	    letter-spacing: -5px;
+	    margin-bottom: 20px !important;
+	}
+	.swachh-produced .produced-logo {
+		margin-top: 5px;
+	}
+	.swachh-produced .produced-logo li {
+		width: 40%;
+		margin-bottom: 10px;
+	}
+	.swachh-produced .produced-logo li:first-child {
+		padding-right: 5px;
+	}
+	.swachh-produced .produced-logo li:last-child {
+		padding-left: 5px;
+	}
+	.swachh-produced .swachh-content {
+		font-size: 22px;
 	}
 
 	.form-headline {
@@ -135,6 +156,9 @@
 		max-width: 730px;
 		height: 150px;
 	}
+	.wrapper-carousel .more-list.slick-slide figure {
+		padding: 0;
+	}
 }
 
 @media (max-width: 420px) {
@@ -147,9 +171,7 @@
 }
 
 
-
 /*Grid */
-
 
 @media (max-width: 1199px) {
 .top-news li figcaption {
@@ -263,9 +285,9 @@
 @media (max-width: 575px) {
 	.top-bar{margin-bottom:45px;}
 	.top-bar h1{float: none;}
-.others-ners .more-list figcaption span {
-  font-size: 14px;
-}
+	.others-ners .more-list figcaption span {
+	  font-size: 14px;
+	}
 	.twitter-widget{display:none;}
 	
 	
