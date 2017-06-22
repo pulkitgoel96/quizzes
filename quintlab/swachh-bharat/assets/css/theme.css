@@ -15,7 +15,7 @@
 }
 body {
 	/*font-family: 'coolveticaregular' !important;*/
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif !important;
 	font-size: 14px;
 	font-weight: 700;
 	color: #fff;
@@ -44,10 +44,7 @@ button, a {
 	-ms-transition: all 0.2s ease-in-out;
 }
 h1, h2, h3, h4, h5, h6 {
-	/*color: #fff !important;*/
 	font-weight: 700 !important;
-	/*font-family: 'coolveticaregular';*/
-	font-family: 'helveticabold';
 }
 /*custom grid*/
 .row {
@@ -102,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-size: 22px;
 	margin-bottom: 10px;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 .swachh-produced .produced-logo li {
 	float: left;
@@ -120,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	margin-top: 22px;
 	line-height: 110%;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .wrapper-other {
