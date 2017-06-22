@@ -177,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-headline {
 	color: #071c3d;
 	font-size: 88px;
-	line-height: 100%;
 	height: 67px;
 	font-family: 'helveticabold';
 	line-height: 53px;
@@ -504,11 +503,11 @@ table {
 	padding: 60px 0 10px;
 }
 .wrapper-gallery .single-news ul li figcaption .caption {
-	padding-top: 20px;
-	line-height: 28px;
+	line-height: 18px;
 }
 .wrapper-gallery .single-news ul li figcaption .caption h5 {
 	font-size: 26px;
+	line-height: 30px;
 }
 .more-news {
 	margin: 0px -5px;
@@ -531,8 +530,7 @@ table {
 
 .wrapper-carousel .more-news figcaption {
 	font-size: 24px;
-	/*height: 100px;*/
-	line-height: 34px;
+	line-height: 22px;
 }
 .wrapper-carousel .more-news a figcaption {
 	color: #071c3d;
