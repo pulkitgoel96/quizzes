@@ -86,8 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 85px;
     letter-spacing: -5px;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: -5px;
+    margin-bottom: 30px !important;
+    margin-top: -5px !important;
 }
 .swachh-headline span {
 	color: #f4c70c;
@@ -99,11 +99,12 @@ h1, h2, h3, h4, h5, h6 {
 .swachh-produced .co-produced {
 	color: #fff;
 	font-size: 22px;
-	margin-bottom: 10px;
 }
 .swachh-produced .produced-logo li {
 	float: left;
 	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 22px;
 }
 .swachh-produced .produced-logo li:first-child {
 	padding-right: 2px;
@@ -115,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f4c70c;
 	font-size: 29px;
 	float: left;
-	margin-top: 22px;
 	line-height: 110%;
 }
 
@@ -579,8 +579,10 @@ table {
 	padding: 7px 10px 10px 0;
 	position: relative;
 	z-index: 2;
+	color: #fff;
 }
 .single-news ul li figcaption .caption h5 {
+	color: #fff;
 	font-size: 40px;
 	margin: 0 0 3px 0;
 }
