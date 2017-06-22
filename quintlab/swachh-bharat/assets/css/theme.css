@@ -15,7 +15,7 @@
 }
 body {
 	/*font-family: 'coolveticaregular' !important;*/
-	font-family: 'Open Sans Condensed', sans-serif !important;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	color: #fff;
@@ -765,7 +765,8 @@ table {
 	color: #071c3d;
 }
 .report-form .form-group input {
-	min-width: 422px;
+	width: 100%;
+	max-width: 422px;
 	height: 58px;
 }
 .report-form .form-group textarea {
@@ -786,6 +787,7 @@ textarea,
 input,
 button 	{
 	outline: none;
+	border-radius: 0;
 }
 
 
