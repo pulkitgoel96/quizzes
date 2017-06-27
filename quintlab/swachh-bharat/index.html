@@ -70,10 +70,9 @@ el.parentNode.insertBefore(s, el);
 </head>
 
 <body>
-<!--   -->
-<script data-main="assets/js/scratch.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.min.js"></script>
 
-<div id="test">
+
+<div id="test" style="display:none">
 	<div class="top-section-bar"></div>
 
 	<!-- Top Story -->
@@ -222,8 +221,11 @@ el.parentNode.insertBefore(s, el);
 <script type="text/javascript" src="assets/js/functions.js"></script>
 <!--<script type="text/javascript" src="assets/js/data-spreadsheet.js"></script>-->
 
+<!-- Scratch -->
+<script data-main="assets/js/scratch.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.17/require.min.js"></script>
+
 <!--for widgets-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
 <script src="https://assets-quint.sportz.io/cricket/widgets/js/ipl-standing_new.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.min.js"></script>
 <script src="https://assets-quint.sportz.io/cricket/widgets/js/topperformer-init.js?v=1"></script>
@@ -235,7 +237,14 @@ el.parentNode.insertBefore(s, el);
 	});
 </script>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function() {
+	        $("#test").show();
+	 	}, 1000);	
 
+	});
+</script>
 
 </body>
 </html>

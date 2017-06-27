@@ -19,12 +19,14 @@ body {
     font-size: 14px;
     font-weight: 700;
     color: #fff;
+    background: #afc928 !important;
     overflow-x: hidden;
-    background: #071c3d !important;
     margin: 0 !important;
     padding: 0 !important;
 }
-
+#test {
+	background: #071c3d !important;
+}
 p {
     line-height: 160%;
     margin-bottom: 25px;
