@@ -40,7 +40,7 @@ require(['scratchcard', 'domReady!'], function init(Scratchcard) {
 	// Listen for progress events
 	scratchcard.on('progress', function onProgress(progress) {
 		// console.log('Progress:', progress);
-		if ((progress > 0.04) && (progress < 1)) {
+		if ((progress > 0.01) && (progress < 1)) {
 			scratchcard.complete();
 		}
 	});
