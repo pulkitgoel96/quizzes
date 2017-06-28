@@ -315,7 +315,7 @@ textarea.form-control {height: 70px;}
 	bottom: 0;
 	right: -320px;
 	width: 290px;
-	height: 300px;
+	height: 290px;
 	z-index: 999;
 	background-color: #ff6f6a;
 	padding: 30px 20px 0;
@@ -332,7 +332,7 @@ textarea.form-control {height: 70px;}
 
 .sub-icon {
 	margin: 0 auto;
-	width: 220px;
+	width: 200px;
 	position: relative;
 	margin-bottom: 15px
 }
@@ -341,9 +341,9 @@ textarea.form-control {height: 70px;}
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 21px;
+    bottom: 18px;
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     text-align: center;
     text-shadow: 1px 1px 2px #777;
