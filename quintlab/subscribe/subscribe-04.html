@@ -15,9 +15,17 @@
     <link href="assets/css/thequint-live.css" rel="stylesheet">
     <!-- Custom -->
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+
     <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,7 +100,23 @@
             <div class="card-block-qsection-india">
                 <div class="card">
                     <div id="gallery-content" class="story-element story-element-text">
-                        <div class="body-text"><img src="assets/images/HDFCLife-add.gif" alt="" class="body-add">
+                        <div class="body-text">
+                            <!-- <img src="assets/images/HDFCLife-add.gif" alt="" class="body-add"> -->
+
+                            <div class="article-subscribe">
+                                <form>
+                                    <div class="sub-content">
+                                        <h3 class="sub-headline"><span>Feed your inbox</span>
+                                            <span class="stailish">with</span>
+                                            <span>The Quint</span>
+                                        </h3>
+                                        <p>Subscribe to our Daily Newsletter</p>
+                                    </div>
+                                    <div class="sub-input"><input type="text"></div>
+                                    <div class="sub-btn"><input class="subscribe" type="submit" value="Subscribe"></div>
+                                </form>
+                            </div>
+
                             <p>Dear 18 year old Ananya,
                                 <br> I know you think life isn't as great. You were just about getting the hang of college life when your first boyfriend dumped you. You were in a serious relationship, or so you thought, and you were completely smitten by him.</p>
                             <p>I know, girl, you are lying face down in your pillow, second-guessing your decision to put down the 5th unsolicited dating proposal you received this year. So many of your friends are dating, and while you love your single life, you find yourself often feeling alone or left out during group hangouts.</p>
@@ -130,6 +154,33 @@
         <a class="copyright" target="_blank" href="http://www.quintype.com">Powered by Quintype</a>
         <div class="copyright">2016 © Copyright TheQuint</div>
     </footer>
+    <!--
+    <div class="footer-subscribe">
+        <div class="container">
+            <form>
+                <div class="sub-content"><span>Feed your inbox:</span> Subscribe to our Daily Newsletter</div>
+                <div class="sub-input"><input type="text"></div>
+                <div class="sub-btn"><button>Subscribe</button></div>
+            </form>
+        </div>
+    </div>-->
+
+   <!--  <div class="sidebar-subscribe">
+        <form>
+            <div class="sub-content">
+                <h3 class="sub-headline"><span>Feed your inbox</span>
+                    <span class="stailish">with</span>
+                    <span>The Quint</span>
+                </h3>
+                <p>Subscribe to our Daily Newsletter</p>
+            </div>
+            <div class="sub-input"><input type="text"></div>
+            <div class="sub-btn"><input class="subscribe" type="submit" value="Subscribe"></div>
+        </form>
+    </div> -->
+
+
+
     <!-- JS Libraries -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/custom.js"></script>
@@ -143,6 +194,19 @@
     <script type='text/javascript'> var _d_site = _d_site || 'F04DF0C885CD477614AEAD93'; </script>
     <script src='//widget.privy.com/assets/widget.js'></script>
     <!-- END PRIVY WIDGET CODE -->
+
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 100) {
+                // $(".footer-subscribe").animate({"bottom": "0"});
+                $(".footer-subscribe").fadeIn();
+            }
+            else {
+                // $(".footer-subscribe").animate({"bottom": "-60px"});
+                $(".footer-subscribe").fadeOut();
+            }
+        });
+    </script>
 </body>
 
 </html>

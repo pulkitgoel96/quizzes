@@ -155,6 +155,335 @@ textarea.form-control {height: 70px;}
 
 
 
+
+
+/* Footer Subscribe */
+.footer-subscribe {
+	position: fixed;
+	bottom: -60px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	z-index: 999;
+	background-color: #f3b72a;
+	transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+.footer-subscribe.btm-position {
+	bottom: 0;
+}
+.sub-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+	height: 20px;
+    width: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    display: block;
+}
+.footer-subscribe .sub-content {
+	width: 650px;
+	float: left;
+	font-size: 22px;
+	color: #333;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-subscribe .sub-content span {
+	text-transform: uppercase;
+	color: #6a357f;
+	font-weight: 700;
+	font-size: 22px;
+}
+.footer-subscribe .sub-input {
+	width: 300px;
+	float: left;
+	padding-top: 1px;
+	/*background-color: #eee;*/
+}
+.footer-subscribe .sub-input input {
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px;
+	outline: none;
+	border: 0 none;
+}
+.footer-subscribe .sub-btn {
+	width: 130px;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	/*background-color: #ddd;*/
+}
+.footer-subscribe .sub-btn button {
+	padding: 5px 14px 4px !important;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+/* Sidebar Subscribe */
+.sidebar-subscribe {
+	position: fixed;
+	bottom: 0;
+	right: -320px;
+	width: 290px;
+	height: 270px;
+	z-index: 999;
+	background-color: #f3b72a;
+	padding: 35px 20px 0;
+	border-bottom: 5px #6a357f solid;
+	transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+.sidebar-subscribe.right-position {
+	right: 20px;
+}
+.sidebar-subscribe .sub-content {
+	width: 100%;
+	float: left;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.sidebar-subscribe .sub-content .sub-headline {
+	text-transform: uppercase;
+	color: #6a357f;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 22px;
+	margin-bottom: 15px;
+	display: block;
+	letter-spacing: 1px;
+	padding: 0;
+	/*font-family: "Merriweather Sans", sans-serif;*/
+}
+.sidebar-subscribe .sub-content p {
+	font-size: 18px;
+	line-height: 22px;
+	color: #333;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+.sidebar-subscribe .sub-content .sub-headline span {
+	display: block;
+}
+
+.sidebar-subscribe .sub-content .stailish {
+	font-family: 'Shadows Into Light', cursive;
+	text-transform: lowercase;
+	font-size: 26px;
+	margin-bottom: 2px;
+}
+.sidebar-subscribe .sub-input {
+	width: 100%;
+	float: left;
+	padding-top: 1px;
+	margin-bottom: 10px;
+}
+.sidebar-subscribe .sub-input input {
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px;
+	outline: none;
+	border: 0 none;
+}
+.sidebar-subscribe .sub-btn {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	/*background-color: #ddd;*/
+}
+.sidebar-subscribe .sub-btn .subscribe {
+	padding: 5px 14px 4px !important;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+
+
+/* Sidebar Subscribe */
+.side-subscribe {
+	position: fixed;
+	bottom: 0;
+	right: -320px;
+	width: 290px;
+	height: 300px;
+	z-index: 999;
+	background-color: #ff6f6a;
+	padding: 30px 20px 0;
+	border-bottom: 5px #6a357f solid;
+	transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+.side-subscribe.right-position {
+	right: 20px;
+}
+
+.sub-icon {
+	margin: 0 auto;
+	width: 220px;
+	position: relative;
+	margin-bottom: 15px
+}
+.sub-icon .icon-txt {
+	position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 21px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px #777;
+}
+
+.side-subscribe .sub-content {
+	width: 100%;
+	float: left;
+    margin-bottom: 15px;
+}
+.side-subscribe .sub-content .sub-headline {
+	font-size: 23px;
+	line-height: 22px;
+	color: #333;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 5px;
+}
+.side-subscribe .sub-content p {
+	font-size: 12px;
+	line-height: 16px;
+	color: #333;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+.side-subscribe .sub-content .sub-headline span {
+	display: block;
+}
+
+.side-subscribe .sub-content .stailish {
+	font-family: 'Shadows Into Light', cursive;
+	text-transform: lowercase;
+	font-size: 26px;
+	margin-bottom: 2px;
+}
+.side-subscribe .sub-input {
+	width: 210px;
+	float: left;
+	margin-bottom: 10px;
+}
+.side-subscribe .sub-input input {
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px;
+	outline: none;
+	border: 0 none;
+}
+.side-subscribe .sub-btn {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #fff;
+	text-align: center;
+	background-color: #6a357f;
+	cursor: pointer;
+}
+.side-subscribe .sub-btn .subscribe {
+	padding: 5px 14px 4px !important;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+
+
+/* Sidebar Subscribe */
+.article-subscribe {
+	/*position: fixed;
+	bottom: 0;*/
+	float: right;margin: 15px 0 20px 60px;
+	right: 30px;
+	width: 300px;
+	height: 280px;
+	z-index: 999;
+	background-color: #f3b72a;
+	padding: 25px 20px 0;
+	border: 1px #fff solid;
+}
+.article-subscribe .sub-content {
+	width: 100%;
+	float: left;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.article-subscribe .sub-content .sub-headline {
+	text-transform: uppercase;
+	color: #6a357f;
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 28px;
+	display: block;
+	margin-bottom: 17px;
+	font-family: 'Oswald', sans-serif;
+	padding: 0;
+}
+.article-subscribe .sub-content p {
+	font-size: 17px;
+	line-height: 22px;
+	color: #333;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 0 !important;
+    font-family: 'Oswald', sans-serif;
+}
+.article-subscribe .sub-content .sub-headline span {
+	display: block;
+}
+.article-subscribe .sub-content .stailish {
+	font-family: 'Shadows Into Light', cursive;
+	text-transform: lowercase;
+	font-size: 26px;
+}
+.article-subscribe .sub-input {
+	width: 100%;
+	float: left;
+	padding-top: 1px;
+	margin-bottom: 10px;
+}
+.article-subscribe .sub-input input {
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px;
+	outline: none;
+	border: 0 none;
+}
+.article-subscribe .sub-btn {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	/*background-color: #ddd;*/
+}
+.article-subscribe .sub-btn .subscribe {
+	padding: 5px 14px 4px !important;
+	font-size: 17px;
+	font-weight: 300;
+	font-family: 'Oswald', sans-serif !important;
+}
+
+
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Media Queries
