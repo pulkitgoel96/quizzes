@@ -8,6 +8,10 @@ Tabletop.init({
 });
 }
 
+
+
+
+
 window.addEventListener('DOMContentLoaded', init);
 function showInfo(data) {
 	
@@ -23,6 +27,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[0].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[0].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[0].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[0].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -37,6 +42,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[1].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[1].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[1].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[1].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -51,6 +57,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[2].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[2].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[2].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[2].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -65,6 +72,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[3].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[3].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[3].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[3].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -79,6 +87,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[4].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[4].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[4].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[4].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -93,6 +102,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[5].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[5].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[5].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[5].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -107,6 +117,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[6].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[6].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[6].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[6].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -121,6 +132,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[7].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[7].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[7].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[7].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -135,6 +147,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[8].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[8].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[8].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[8].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -149,6 +162,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[9].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[9].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[9].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[9].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"
@@ -163,6 +177,7 @@ document.getElementById("allContact").innerHTML =
 				+ "<h3 class='label-3'>" +[data[10].Location,] +"</h3>"
 				+ "<h3 class='label-4'>" +[data[10].Date,] +"</h3>"
 				+ "<h3 class='label-5'>" +[data[10].Reason,] +"</h3>"
+				+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[10].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
 			+ "</figcaption>"
 		+ "</figure>"
 	+"</div>"

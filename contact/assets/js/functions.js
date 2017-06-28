@@ -6,7 +6,7 @@ $(document).ready(function() {
 			$('.modal__content').addClass('modal__content--active');
 			
 			var label_img = $(this).find('.contact-img').html();
-			
+			var label_video = $(this).find('.contact-video').html();
 			var label_1 = $(this).find('.label-1').text();
 			var label_2 = $(this).find('.label-2').text();
 			var label_3 = $(this).find('.label-3').text();
@@ -14,22 +14,19 @@ $(document).ready(function() {
 			var label_5 = $(this).find('.label-5').text();
 			
 			$('#contactModal').find('.modal-label-img').html(label_img);
+			$('#contactModal').find('.modal-label-video').html(label_video);
 			$('#contactModal').find('.modal-label-1').text(label_1);
 			$('#contactModal').find('.modal-label-2').text(label_2);
 			$('#contactModal').find('.modal-label-3').text(label_3);
 			$('#contactModal').find('.modal-label-4').text(label_4);
 			$('#contactModal').find('.modal-label-5').text(label_5);
 			
-			
-			//alert('ok');
-		//alert('ok');
-			
-			
 	});
 	
 	$('.modal__close').click(function(){
 		$('#contactModal').removeClass('modal--active');
 		$('.modal__content').removeClass('modal__content--active');
+		$('#contactModal').find('iframe').attr('src', '');
 	});
 	
 	

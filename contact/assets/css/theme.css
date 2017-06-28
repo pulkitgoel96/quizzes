@@ -618,11 +618,14 @@ ul.contacts{margin:0px -10px;}
 ul.contacts li{float: left; width: 20%; transition: all 0.3s ease-in-out;}
 ul.contacts li.name{display:none !important;}
 ul.contacts li .contact-list{margin:10px; position: relative; background: #292627; cursor: pointer; transition: all 0.3s ease-in-out;}
-ul.contacts li .contact-list figcaption{padding:10px; color: #fff;}
+ul.contacts li .contact-list figcaption{padding:10px; color: #fff; display: none;}
 ul.contacts li .contact-list figcaption h3{color: #fff;}
 
 ul.contacts li .contact-list:hover{background: #F4C70C; color: #333333;}
 ul.contacts li .contact-list:hover figcaption h3{color: #333333;}
+
+
+.modal-label-img{max-width:120px;}
 
 /*Modal*/
 
@@ -666,6 +669,7 @@ ul.contacts li .contact-list:hover figcaption h3{color: #333333;}
 }
 .modal__dialog {
   max-width: 600px;
+	width: 600px;
   padding: 1.2rem;
 }
 .modal__content {
