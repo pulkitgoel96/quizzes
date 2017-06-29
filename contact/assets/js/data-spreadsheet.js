@@ -8,10 +8,6 @@ Tabletop.init({
 });
 }
 
-
-
-
-
 window.addEventListener('DOMContentLoaded', init);
 function showInfo(data) {
 	
@@ -183,4 +179,3 @@ document.getElementById("allContact").innerHTML =
 	+"</div>"
 +"</li>";
 }
-
