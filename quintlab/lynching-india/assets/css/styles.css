@@ -128,10 +128,9 @@ a {
     /*background-color: rgba(135,215,176,0.9);*/
     /*background-color: rgba(255,111,106,0.93);*/
     /*background-color: #ff6f6a;*/
-    /*background-image: url(../images/nav-bg.jpg);*/
+    background-image: url(../images/nav-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ccc
 }
 #slide1 .nav-bar ul li {
     margin: 40px 0 0 0;
