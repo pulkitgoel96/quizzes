@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project:	Matresume
+++++ Imports ++++
+++++ Reset ++++
+++++ Main ++++
+	1)Header
+	2)about
+	3)Hero BG
+	4)Skills Sec
+	5)Profile Sec
+	6)Portfolio Sec
+	7)Interest Sec
+	8)Timeline
+	9)Blog Sec
+	10)Reference Sec
+	11)Client Sec
+	12)Pricing Sec
+	13)contact Sec
+	14)Footer Sec
+	15)Navigation Sec
+	16)Blog & Project Deatail Pages
+++++ Mediaqueries ++++
+-------------------------------------------------------------------*/
+/****************************/
+/** Imports **/
+/****************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+/****************************/
+/** Reset **/
+/****************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html, body {
+  height: inherit;
+  width: inherit;
+  min-height: inherit; }
+
+strong {
+  font-weight: bold; }
+
+body {
+  color: #848484;
+  background: #e2e2e2;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/* Mozilla based browsers */
+::-moz-selection {
+  background: #338fff;
+  color: #fff;
+  text-shadow: none; }
+
+/* Works in Safari */
+::selection {
+  background: #338fff;
+  color: #fff;
+  text-shadow: none; }
+
+a:hover, a:active {
+  outline: 0; }
+
+button:focus {
+  border: none;
+  outline: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #848484;
+  text-decoration: none; }
+
+a:hover {
+  color: #848484;
+  text-decoration: none; }
+
+a:focus {
+  color: #848484;
+  text-decoration: none;
+  outline: none; }
+
+i:focus {
+  outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444; }
+
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: capitalize; }
+
+h2 {
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: capitalize; }
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize; }
+
+h4 {
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: capitalize; }
+
+h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+p {
+  font-size: 15px;
+  line-height: 25px; }
+  p.lead {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400; }
+
+.force-UTF-8 {
+  content: "¡"; }
