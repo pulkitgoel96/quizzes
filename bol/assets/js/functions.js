@@ -40,13 +40,20 @@ $(document).ready(function() {
     });
 	
 	$('.photo-gallery').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: true,
-      autoplaySpeed: 4000,
+	autoplay: true,
+    draggable: true,
+    arrows: true,
+    dots: false,
+    fade: true,
+    speed: 900,
+    infinite: true,
+    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+    touchThreshold: 100
     });
 });
+
+
+
 
 
 //WhatsApp
