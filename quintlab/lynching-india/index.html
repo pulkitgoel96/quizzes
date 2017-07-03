@@ -88,6 +88,11 @@
     		<li><div class="slider--caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
     		</li>
     	</ul>
+        <div class="slick-arrow">
+            <spam class="arrow--prev"></spam>
+            <spam class="arrow--next"></spam>
+        </div>
+
     </div>
 </section>
 
@@ -140,8 +145,16 @@
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows: true,
+			arrows: false,
 		});
+
+        $('.arrow--prev').click(function(){
+          $('.horizontal--slider').slick('slickPrev');
+        })
+
+        $('.arrow--next').click(function(){
+          $('.horizontal--slider').slick('slickNext');
+        })
 
         // Maps
 		$('.map-container').click(function(){

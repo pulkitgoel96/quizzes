@@ -312,6 +312,52 @@ a {
 
 
 
+.slick-arrow {
+    position: absolute;
+    top: 42%;
+    width: 100%;
+}
+.slick-arrow .arrow--prev,
+.slick-arrow .arrow--next {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #0bffe7;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+.slick-arrow .arrow--prev:hover,
+.slick-arrow .arrow--next:hover {
+    opacity: 1;
+}
+.slick-arrow .arrow--prev {
+    left: 0;
+}
+.slick-arrow .arrow--next {
+    right: 0;
+}
+.slick-arrow .arrow--next:before,
+.slick-arrow .arrow--prev:before {
+    font-family:'FontAwesome';
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+}
+.slick-arrow .arrow--next:before {
+    content:"\f054"
+}
+
+.slick-arrow .arrow--prev:before {
+    content:"\f053"
+}
+
+
 @media only screen and (max-width: 999px) {
 	#slide1 .banner--headline {
 	    font-size: 60px;
