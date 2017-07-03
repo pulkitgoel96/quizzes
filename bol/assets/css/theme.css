@@ -304,11 +304,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Scale*/
 
-.slider-img {
+.slider-img, .story-img, .gallery-img {
 	overflow: hidden;
 	position: relative;
 }
-.slider-img img {
+.slider-img img, .story-img img, .gallery-img img {
 	transition: all 0.3s ease;
 }
 .slider-img:hover img {
@@ -316,3 +316,12 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: scale(1.5);
 	transform: scale(1.5);
 }
+
+.story-img:hover img, .gallery-img:hover img{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+
