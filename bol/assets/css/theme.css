@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 33.333%;
 }
 /*Col customization*/
-.wrapper-1 .col-story {
+.wrapper-1 .col-story, .wrapper-bottom .col-story {
 	width: 70%;
 }
 .wrapper-2 .col-border {

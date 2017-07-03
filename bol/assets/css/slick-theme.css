@@ -46,12 +46,12 @@
 	font-size: 20px;
 	line-height: 1;
 	opacity: .75;
-	color: #F4C70C;
+	color: #FE700C;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-	left: -25px;
+	left: 25px;
 }
 
 .more-news .slick-prev {
@@ -64,7 +64,7 @@
 
 
 [dir='rtl'] .slick-prev {
-	right: -25px;
+	right: 25px;
 	left: auto;
 }
 .slick-prev:before {
@@ -74,11 +74,11 @@
 	content: '→';
 }
 .slick-next {
-	right: -25px;
+	right: 25px;
 }
 [dir='rtl'] .slick-next {
 	right: auto;
-	left: -25px;
+	left: 25px;
 }
 .slick-next:before {
 	content: '→';

@@ -23,7 +23,7 @@ $(document).ready(function() {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      arrows: false,
+      arrows: true,
       autoplaySpeed: 4000,
       responsive: [
         {
@@ -43,7 +43,7 @@ $(document).ready(function() {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      arrows: false,
+      arrows: true,
       autoplaySpeed: 4000,
     });
 });
