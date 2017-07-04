@@ -204,16 +204,18 @@ a {
     left: 0;
     z-index: 2;
     width: 100%;
+    background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #slide3 .section--headline span {
     background-color: #0bffe7;
     padding: 0 8px;
-    height: 40px;
-    line-height: 42px;
+    height: 50px;
+    line-height: 50px;
     display: inline-block;
 }
 #slide3 .map-container {
-    padding-top: 40px;
     width: 100%;
     height: 100%;
     /*background-color: #ddd;*/
@@ -247,8 +249,8 @@ a {
 #slide4 .section--headline span {
     background-color: #0bffe7;
     padding: 0 8px;
-    height: 40px;
-    line-height: 42px;
+    height: 50px;
+    line-height: 50px;
     display: inline-block;
 }
 #slide4 .gallery {
@@ -302,8 +304,8 @@ a {
 #slide5 .section--headline span {
     background-color: #0bffe7;
     padding: 0 10px;
-    height: 40px;
-    line-height: 46px;
+    height: 50px;
+    line-height: 50px;
     display: inline-block;
 }
 #slide5 .section--who {
@@ -324,16 +326,6 @@ a {
     cursor: pointer;
     position: absolute;
     background-color: #0bffe7;
-    opacity: 0.3;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-}
-.slick-arrow .arrow--prev:hover,
-.slick-arrow .arrow--next:hover {
-    opacity: 1;
 }
 .slick-arrow .arrow--prev {
     left: 0;
@@ -347,7 +339,7 @@ a {
     position: absolute;
     top: 13px;
     left: 13px;
-    color: #fff;
+    color: #4d4d4d;
 }
 .slick-arrow .arrow--next:before {
     content:"\f054"
