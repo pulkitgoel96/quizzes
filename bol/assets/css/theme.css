@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	padding: 0px 5px;
 	margin-bottom: 10px;
+	visibility: hidden;
 }
 .col-1 {
 	width: 100%;
@@ -322,6 +323,4 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
-
-
 

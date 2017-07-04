@@ -1,3 +1,7 @@
+window.sr = ScrollReveal();
+//sr.reveal('.col');
+sr.reveal('.col,.header-container', { duration: 1000 });
+
 
 $(document).ready(function() {
 	$('.slider-1').slick({
