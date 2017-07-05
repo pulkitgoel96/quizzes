@@ -24,7 +24,7 @@ document.getElementById("allContact").innerHTML =
 			+ "<figcaption>"
 				+ "<div class='gallery--caption'>"
 					+ "<h1 class='label-1'>" +[data[0].Name,] +"</h1>"
-					+ "<h2 class='label-2'>" +[data[0].Age,] +"</h2>"
+					//+ "<h2 class='label-2'>" +[data[0].Age,] +"</h2>"
 					+ "<h3 class='label-3'>" +[data[0].Location,] +"</h3>"
 					+ "<h3 class='label-4'>" +[data[0].Date,] +"</h3>"
 					+ "<h3 class='label-5'>" +[data[0].Reason,] +"</h3>"
