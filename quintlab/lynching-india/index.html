@@ -64,8 +64,31 @@
 <!-- Section #02 -->
 <section id="slide2">
     <div class="container section--txt">
-        <span class="name-txt wow fadeInRight" data-wow-delay="0.3s">He went out for Eid. <strong>He never came back</strong></span>
-        <span class="name-caption wow fadeInLeft" data-wow-delay="0.5s">Shyam Malik</span>
+        <div class="quote--first">
+            <span class="name-txt wow fadeInRight" data-wow-delay="0.3s">"For some time, I couldn’t realise what was happening. When I tried to get up, he caught hold of my hair and started hitting me again."</span>
+            <span class="name-caption wow fadeInLeft" data-wow-delay="0.5s">Chennai 'Beef Fest' Assault - R Sooraj</span>
+        </div>
+        <div class="quote--second">
+            <span class="name-txt">"Since he died, we are scared of stepping outside the house."</span>
+            <span class="name-caption">'Cow Smugglers' Attacked in Alwar - Irshad, Pehlu Khan's son</span>
+        </div>
+        <div class="quote--third">
+            <span class="name-txt">"They are cruel, they should be punished appropriately. They hate Muslims."</span>
+            <span class="name-caption">Ballabgarh Train Killing - Saira, Junaid's mother</span>
+        </div>
+        <div class="quote--forth">
+            <span class="name-txt">"When Zafar bhai fought for us, he was beaten to death."</strong></span>
+            <span class="name-caption">Local on Zafar Khan's killing in Pratapgarh</span>
+        </div>
+
+        <!-- <span class="quote--first">t1</span>
+        <span class="quote--second">t2</span>
+        <span class="quote--third">t3</span>
+        <span class="quote--forth">t4</span> -->
+        <!-- <div class="tt1" style="display:none;position:absolute;top:0;">tt1</div>
+        <div class="tt2" style="display:none;position:absolute;top:0;">tt2</div> -->
+        <!-- <span class="name-txt wow fadeInRight tt1" data-wow-delay="0.3s">He went out for Eid. <strong>He never came back</strong></span>
+        <span class="name-caption wow fadeInLeft tt2" data-wow-delay="0.5s">Shyam Malik</span> -->
     </div>
 </section>
 
@@ -117,14 +140,14 @@
 
             <div class="modal__dialog--content">
                 <h1 class="modal-label-1"></h1>
-                <!-- <h2 class="modal-label-2"></h2> -->
+                <h2 class="modal-label-2"></h2>
                 <h3 class="modal-label-3"></h3>
                 <h3 class="modal-label-4"></h3>
+                <!-- <h3 class="modal-label-5"></h3> -->
+            </div>
+            <div class="modal__dialog--description">
                 <h3 class="modal-label-5"></h3>
             </div>
-            <!-- <div class="modal__dialog--description">
-                <h3 class="modal-label-5"></h3>
-            </div> -->
 
             <div class="modal__dialog--iframe modal-label-video"></div>
 
@@ -179,6 +202,94 @@
         .mouseleave(function(){
             $(this).find('iframe').removeClass('clicked');
         });
+
+        // Quotes
+        runslide();
+        function runslide() {
+            $('.quote--first').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                $('.quote--second').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                    $('.quote--third').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                        $('.quote--forth').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                        runslide();
+                        });
+                    });
+                });
+            });
+        }
+        
+        // 
+        $(window).scroll(function () {
+            //if (isScrolledIntoView('.section--txt')) {
+                //$('.section--txt').removeClass('invisible').addClass('visible');
+
+                // runslide();
+
+                // function runslide() {
+                //     $('.quote--first').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                //         $('.quote--second').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                //             $('.quote--third').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                //                 $('.quote--forth').fadeIn(1500).delay(3500).fadeOut(1500, function() {
+                //                 runslide();
+                //                 });
+                //             });
+                //         });
+                //     });
+                // }
+
+                // setInterval(function () {
+                //     $('.ttt').fadeIn(1000).delay(2000).fadeOut(1500).delay(2000).fadeIn(1500);
+                // }, 5000);
+
+
+                // $('.visible .tt1').delay(1000).fadeIn();
+                
+
+                // setTimeout(function() {
+                //     $('.visible .tt1').fadeOut();
+                // }, 4000);
+
+                // setTimeout(function() {
+                //     $('.visible .tt2').fadeIn();
+                // }, 5000);
+
+
+                // $('.visible .tt1').delay(1000).fadeIn();
+                // $('.visible .tt1').delay(2000).fadeOut();
+
+                // $('.visible .tt2').delay(2000).fadeIn();
+                // $('.visible .tt2').delay(3000).fadeOut();
+            // } else {
+            //     $('.section--txt').removeClass('visible').addClass('invisible');
+
+            // }
+        });
+
+        function isScrolledIntoView(elem)
+        {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        // $('.visible .tt1').delay(1000).fadeIn();
+        $('.visible .tt1').delay(2000).fadeOut();
+
+        $('.visible .tt2').delay(2000).fadeIn();
+        $('.visible .tt2').delay(3000).fadeOut();
+
+        // setTimeout random
+        setTimeout(function() {
+            $(".visible .tt1").hide();
+        }, 1000);
+
+
+
+
+
 	});
 </script>
 

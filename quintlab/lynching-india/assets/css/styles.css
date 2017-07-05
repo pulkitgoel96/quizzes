@@ -161,27 +161,34 @@ a {
     background-size: cover;
 }
 #slide2 .section--txt {
-    text-align: right;
+    text-align: center;
     font-size: 28px;
-    max-width: 500px;
+    max-width: 800px;
     position: absolute;
-    top: 51%;
+    top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
 }
+.section--txt div {
+    display: none;
+}
+
 #slide2 .section--txt .name-txt {
     display: block;
+    margin-bottom: 10px;
 }
 #slide2 .section--txt .name-caption {
-    padding: 0px 5px;
-    /*background-color: #ffff00;*/
+    padding: 5px 10px;
+    background-color: #ffff00;
     font-family: 'oswaldbold';
     /*margin-top: 7px;*/
     display: inline-block;
     position: relative;
+    line-height: 28px;
+    font-size: 22px;
 }
-#slide2 .section--txt .name-caption:before {
+/*#slide2 .section--txt .name-caption:before {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -190,7 +197,8 @@ a {
 	content: " ";
 	z-index: -1;
 	background-color: #ffff00;
-}
+}*/
+
 
 /* Section #03 */
 #slide3 {
@@ -747,7 +755,7 @@ ul.contacts li .contact-list:hover figcaption h3 {
 }
 .label-2:before,
 .modal-label-2:before {
-    content: 'Age: ';
+    content: 'Date: ';
     font-weight: 700;
 }
 .label-3:before,
@@ -757,12 +765,12 @@ ul.contacts li .contact-list:hover figcaption h3 {
 }
 .label-4:before,
 .modal-label-4:before {
-    content: 'Date: ';
+    content: 'Case Status: ';
     font-weight: 700;
 }
 .label-5:before,
 .modal-label-5:before {
-    content: 'Description: ';
+    content: 'What Happened: ';
     font-weight: 700;
 }
 .modal__dialog--description {
