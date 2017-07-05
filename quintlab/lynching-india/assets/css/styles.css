@@ -172,6 +172,7 @@ a {
 }
 .section--txt div {
     display: none;
+    position: relative;
 }
 
 #slide2 .section--txt .name-txt {
@@ -187,6 +188,14 @@ a {
     position: relative;
     line-height: 28px;
     font-size: 22px;
+}
+.section--txt .name-txt {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.section--txt .name-caption {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 /*#slide2 .section--txt .name-caption:before {
 	position: absolute;
@@ -544,7 +553,7 @@ ul.contacts li .contact-list:hover figcaption h3 {
 
 .gallery--effect {
     padding: 20px 0 50px;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
     list-style: none;
     text-align: center;
@@ -727,13 +736,13 @@ ul.contacts li .contact-list:hover figcaption h3 {
 
 .modal-label-img {
     float: left;
-    max-width: 190px;
+    max-width: 170px;
     
 }
 .modal__dialog--content {
     float: left;
     padding: 0 0 10px 20px;
-    max-width: 370px;
+    max-width: 390px;
     line-height: 24px;
 }
 .modal-label-5 {
