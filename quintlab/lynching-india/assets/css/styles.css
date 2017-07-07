@@ -69,7 +69,7 @@ a {
 
 /* Section #1 */
 #slide1 {
-    background: url('../images/banner-01.jpg') 50% 0 no-repeat fixed;
+    background: url('../images/lynching-india.jpg') 50% 0 no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -355,7 +355,7 @@ a {
 
 /* ================ */
 .gallery--effect {
-    padding: 60px 10px 10px;
+    padding: 60px 10px 40px;
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
@@ -369,30 +369,6 @@ a {
     padding: 15px;
     text-align: left;
     position: relative;
-}
-@media only screen and (max-width: 1400px) {
-    .gallery--effect li {
-        width: 20%;
-    }
-}
-@media only screen and (max-width: 1280px) {
-    .gallery--effect li {
-        width: 25%;
-    }
-}
-@media only screen and (max-width: 999px) {
-    .gallery--effect li {
-        width: 33.33%;
-    }
-}
-@media only screen and (max-width: 639px) {
-    .gallery--effect {
-        padding: 55px 5px 10px;
-    }
-    .gallery--effect li {
-        width: 50%;
-        padding: 10px;
-    }
 }
 .gallery--effect figure {
     margin: 0;
@@ -447,9 +423,7 @@ a {
     bottom: 0;
 }
 
-
-/*   =====================    */
-
+/* modal Popup */
 .modal__bg {
     background:rgba(0,0,0,0.8);
 }
@@ -543,7 +517,6 @@ a {
     width: 100%;
     height: 100%;
 }
-
 .modal__dialog--video .embed-content.None {
     display: none!important;
 }
@@ -553,8 +526,6 @@ a {
 .modal__dialog--video .embed-content.none {
     display: none!important;
 }
-
-
 .modal--pop {
     will-change: visibility, opacity;
     display: -webkit-box;
@@ -581,23 +552,10 @@ a {
     -webkit-transition-delay: $modal-delay;
     transition-delay: $modal-delay;
 }
-
 .modal--active {
     visibility: visible;
     opacity: 1;
-    /*position: relative;*/
 }
-/*.modal--active .modal__dialog {
-    position: relative;
-}
-.modal--active .modal__dialog .modal__content--active {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-}*/
-
 
 .modal--align-top {
     -webkit-box-align: start;
@@ -608,12 +566,10 @@ a {
 .modal__content--active {
     opacity: 1;
 }
-
 .modal__close {
     z-index: 1100;
     cursor: pointer;
 }
-
 .modal__trigger {
     position: relative;
     display: inline-block;
@@ -678,8 +634,76 @@ a {
     background: rgba(0, 0, 0, 0.6);
 }
 
+/* Footer */
+#footer {
+    width: 100%;
+    height: 35px;
+    padding: 0 20px;
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    background: url(../images/nav-bg.jpg) 100% no-repeat;
+}
+#footer a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+#footer .copyright {
+    float: left;
+}
+#footer .credits {
+    float: right;
+    cursor: pointer;
+}
+.creditsModal {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+.modal-content {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+}
+.modal-content span {
+    display: block;
+    padding: 4px 0px
+}
+.modalClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 6px;
+    background: #0bffe7;
+    -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modalClose svg {
+    width: 24px;
+    fill: #4d4d4d;
+    pointer-events: none;
+    vertical-align: top;
+}
+
 
 @media only screen and (max-width: 1280px) {
+    .gallery--effect li {
+        width: 25%;
+    }
+
     .modal__dialog {
         max-width: 600px;
         width: 600px;
@@ -694,7 +718,20 @@ a {
         overflow: auto;
     }
 }
+@media only screen and (max-width: 999px) {
+    .gallery--effect li {
+        width: 33.33%;
+    }
+}
 @media only screen and (max-width: 639px) {
+    .gallery--effect {
+        padding: 55px 5px 10px;
+    }
+    .gallery--effect li {
+        width: 50%;
+        padding: 10px;
+    }
+
     .modal__content {
         box-shadow: none;
     }
@@ -732,3 +769,4 @@ a {
         max-width: 100px;
     }
 }
+
