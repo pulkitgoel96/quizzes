@@ -4,11 +4,13 @@ body {
 	color: #4d4d4d;
 	font-size: 18px;
 	font-family: 'Zilla Slab', serif;
-	background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/sec-bg.jpg) top left;
+    background-size: 100%;
+    background-repeat: repeat-y;
+	/*background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
-
 @font-face {
     font-family: 'oswaldbold';
     src: url('../fonts/oswald-bolditalic-webfont.woff2') format('woff2'),
@@ -21,24 +23,15 @@ h1, h2, h3, h4, h5 {
     font-style: normal;
 	font-family: 'oswaldbold';
 }
-
 .wrap {
 	margin: 0;
 	padding: 0;
 }
 section .container {
     max-width: 1200px;
-    max-width: 100%;
     margin: 0 auto;
     position: relative;
 }
-
-@media (max-width: 1199px) {
-    section .container {
-        max-width: 980px;
-    }
-}
-
 a {
 	color: #4d4d4d;
     outline: none;
@@ -63,8 +56,7 @@ a {
 
 #slide1,
 #slide2,
-#slide3,
-#slide4 {
+#slide3 {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -83,7 +75,8 @@ a {
 }
 
 #slide1 .banner--txt {
-    padding-left: 80px;
+    width: 480px;
+    margin-left: 70px;
     padding-bottom: 140px;
     position: absolute;
     top: 50%;
@@ -92,49 +85,46 @@ a {
     transform: translateY(-50%);
 }
 #slide1 .banner--headline {
-    width: 200px;
-    font-size: 70px;
+    font-size: 60px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
 }
 #slide1 .banner--headline span.top {
-    width: 300px;
-    height: 80px;
-    line-height: 85px;
+    width: 238px;
+    height: 70px;
+    line-height: 75px;
     background-color: #0bffe7;
     display: block;
     padding: 0 10px;
 }
 #slide1 .banner--headline span.bottom {
-    width: 178px;
-    height: 80px;
-    line-height: 85px;
+    height: 70px;
+    line-height: 75px;
     display: block;
     padding: 0 10px;
     background-color: #0bffe7;
 }
 #slide1 .section--content {
     margin-top: 12px;
-    width: 300px;
-    padding: 10px 15px;
+    padding: 10px 15px 12px;
     position: relative;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
+    text-align: justify;
     background-color: #0bffe7;
 }
-#slide1 .nav-bar {
+#slide1 .nav--bar {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 140px;
-    /*background-color: rgba(135,215,176,0.9);*/
-    /*background-color: rgba(255,111,106,0.93);*/
-    /*background-color: #ff6f6a;*/
     background-image: url(../images/nav-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#slide1 .nav-bar ul li {
+#slide1 .nav--bar ul li {
     margin: 40px 0 0 0;
-    padding: 0 0 0 70px;
+    /*padding: 0 0 0 70px;*/
     float: left;
     width: 25%;
     font-size: 34px;
@@ -146,13 +136,20 @@ a {
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
     animation-delay: 0.1s;
+    text-align: center;
 }
-#slide1 .nav-bar ul li span {
+#slide1 .nav--bar ul li em {
     display: block;
 }
-#slide1 .nav-bar ul li a {
+#slide1 .nav--bar ul li span {
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+#slide1 .nav--bar ul li a {
     color: #4d4d4d;
 }
+
 
 /* Section #02 */
 #slide2 {
@@ -161,9 +158,10 @@ a {
     background-size: cover;
 }
 #slide2 .section--txt {
-    text-align: center;
-    font-size: 28px;
     max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 0;
@@ -174,40 +172,28 @@ a {
     display: none;
     position: relative;
 }
-
-#slide2 .section--txt .name-txt {
-    display: block;
+#slide2 .section--txt .quote-txt {
+    font-size: 28px;
+    display: inline-block;
     margin-bottom: 10px;
 }
-#slide2 .section--txt .name-caption {
+#slide2 .section--txt .quote-title {
     padding: 5px 10px;
-    background-color: #ffff00;
-    font-family: 'oswaldbold';
-    /*margin-top: 7px;*/
     display: inline-block;
     position: relative;
-    line-height: 28px;
+    font-family: 'oswaldbold';
     font-size: 22px;
+    line-height: 28px;
+    background-color: #ffff00;
 }
-.section--txt .name-txt {
+.section--txt .quote-txt {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-.section--txt .name-caption {
+.section--txt .quote-title {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
-/*#slide2 .section--txt .name-caption:before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 154px;
-    height: 40px;
-	content: " ";
-	z-index: -1;
-	background-color: #ffff00;
-}*/
-
 
 /* Section #03 */
 #slide3 {
@@ -261,7 +247,11 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
+    background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #slide4 .section--headline span {
     background-color: #0bffe7;
@@ -276,34 +266,34 @@ a {
     padding-top: 40px;
 }
 #slide4 .horizontal--slider {
-    background-color: #ddd;
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
     position: relative;
 }
 #slide4 .horizontal--slider li img {
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 #slide4 .horizontal--slider li {
-    background-image: url(../images/banner-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
     position: relative;
 }
-
 #slide4 .horizontal--slider .slider--caption {
-    position: absolute;
-    bottom: 40px;
     width: 100%;
-    background-color: #0bffe7;
-    padding: 10px;
-    font-size: 26px;
+    padding: 10px 12px;
+    font-size: 22px;
     line-height: 24px;
     z-index: 99;
+    cursor: text;
+    background-color: #0bffe7;
 }
-
+#slide4 .horizontal--slider .slider--caption .quote--txt {
+    display: block;
+    margin-bottom: 5px;
+}
+#slide4 .horizontal--slider .slider--caption .quote--title {
+    display: block;
+    margin-bottom: 2px;
+}
 
 /* Section #05 */
 #slide5 {
@@ -326,14 +316,14 @@ a {
     display: inline-block;
 }
 #slide5 .section--who {
-    padding: 50px 20px 10px;
+    padding: 40px 10px 10px;
 }
 
 
 
 .slick-arrow {
     position: absolute;
-    top: 42%;
+    top: 46%;
     width: 100%;
 }
 .slick-arrow .arrow--prev,
@@ -342,6 +332,8 @@ a {
     height: 40px;
     cursor: pointer;
     position: absolute;
+    cursor: pointer;
+    display: block;
     background-color: #0bffe7;
 }
 .slick-arrow .arrow--prev {
@@ -366,189 +358,6 @@ a {
     content:"\f053"
 }
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 999px) {
-	#slide1 .banner--headline {
-	    font-size: 60px;
-	}
-	#slide1 .banner--headline span.top {
-	    width: 263px;
-	    height: 70px;
-	    line-height: 75px;
-	}
-	#slide1 .banner--headline span.bottom {
-	    width: 160px;
-	    height: 70px;
-	    line-height: 75px;
-	}
-
-	#slide1 .nav-bar {
-		height: 120px;
-	}
-	#slide1 .banner--txt {
-	    padding-bottom: 120px;
-	}
-	#slide1 .nav-bar ul li {
-		margin: 33px 0 0 0;
-		padding: 0 0 0 50px;
-		font-size: 30px;
-		line-height: 28px;
-	}
-}
-@media only screen and (max-width: 800px) {
-	#slide1 .banner--headline {
-	    font-size: 50px;
-	}
-	#slide1 .banner--headline span.top {
-	    width: 223px;
-	    height: 60px;
-	    line-height: 65px;
-	}
-	#slide1 .banner--headline span.bottom {
-	    width: 133px;
-	    height: 60px;
-	    line-height: 65px;
-	}
-
-	#slide1 .nav-bar {
-		height: 100px;
-	}
-	#slide1 .banner--txt {
-	    padding-bottom: 100px;
-	}
-	#slide1 .nav-bar ul li {
-		margin: 25px 0 0 0;
-		padding: 0 0 0 30px;
-		font-size: 26px;
-		line-height: 26px;
-	}
-}
-@media only screen and (max-width: 639px) {
-	#slide1 .banner--txt {
-	    padding-left: 20px;
-	}
-	#slide1 .banner--headline {
-	    font-size: 45px;
-	}
-	#slide1 .banner--headline span.top {
-	    width: 200px;
-	    height: 55px;
-	    line-height: 63px;
-	}
-	#slide1 .banner--headline span.bottom {
-	    width: 120px;
-	    height: 55px;
-	    line-height: 63px;
-	}
-	#slide1 .section--content {
-	    width: 280px;
-	    font-size: 17px;
-	}
-	#slide1 .nav-bar {
-		display: none;
-	}
-	#slide1 .banner--txt {
-	    padding-bottom: 0;
-	}
-
-	#slide2 .section--txt {
-		max-width: 480px;
-		font-size: 27px;
-	}
-	#slide2 .section--txt .name-caption {
-	    line-height: 35px;
-	}
-	#slide2 .section--txt .name-caption:before {
-		width: 150px;
-	    height: 38px;
-	}
-	
-}
-@media only screen and (max-width: 480px) {
-	#slide2 .section--txt {
-		max-width: 310px;
-		font-size: 17px;
-		padding-right: 5px;
-	}
-	#slide2 .section--txt .name-caption {
-	    line-height: 30px;
-	}
-	#slide2 .section--txt .name-caption:before {
-		width: 98px;
-		height: 28px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Modal */
-/*ul.contacts {
-    margin: 0px -10px;
-}
-
-ul.contacts li {
-    float: left;
-    width: 20%;
-    transition: all 0.3s ease-in-out;
-}
-
-ul.contacts li.name {
-    display: none !important;
-}
-
-ul.contacts li .contact-list {
-    margin: 10px;
-    position: relative;
-    background: #292627;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-ul.contacts li .contact-list figcaption {
-    padding: 10px;
-    color: #fff;
-    display: none;
-}
-ul.contacts li .contact-list figcaption h3,
-ul.contacts li .contact-list figcaption .contact-video { 
-    display: none;
-}
-ul.contacts li .contact-list .gallery--caption {
-    position: absolute;
-    bottom: 0;
-}
-ul.contacts li .contact-list figcaption h3 {
-    color: #fff;
-}
-
-ul.contacts li .contact-list:hover {
-    background: #F4C70C;
-    color: #333333;
-}
-
-ul.contacts li .contact-list:hover figcaption h3 {
-    color: #333333;
-}*/
 /* ================ */
 
 .gallery--effect {
@@ -562,7 +371,7 @@ ul.contacts li .contact-list:hover figcaption h3 {
     display: inline-block;
     width: 25%;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     text-align: left;
     position: relative;
 }
