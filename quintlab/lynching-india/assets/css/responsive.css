@@ -84,6 +84,26 @@
 	#slide4 .horizontal--slider .slider--caption .quote--title {
 	    margin-bottom: 0;
 	}
+
+	/*.modal__dialog {
+	    max-width: 400px;
+	    width: 550px;
+	    font-family: 'Zilla Slab', serif !important;
+	}
+	.modal-label-img {
+	    max-width: 130px;
+	}
+	.modal__dialog h1,
+	.modal__dialog h2,
+	.modal__dialog h3,
+	.modal__dialog h4 {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.modal__dialog--content {
+	    padding: 0 0 10px 10px;
+	    max-width: 215px;
+	}*/
 	
 }
 @media only screen and (max-width: 480px) {

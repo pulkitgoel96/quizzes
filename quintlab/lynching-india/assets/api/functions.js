@@ -13,8 +13,8 @@ $(document).ready(function() {
 			var label_4 = $(this).find('.label-4').text();
 			var label_5 = $(this).find('.label-5').text();
 			
-			$('#contactModal').find('.modal-label-img').html(label_img);
-			$('#contactModal').find('.modal-label-video').html(label_video);
+			$('#contactModal').find('.modal__dialog--img').html(label_img);
+			$('#contactModal').find('.modal__dialog--video').html(label_video);
 			$('#contactModal').find('.modal-label-1').text(label_1);
 			$('#contactModal').find('.modal-label-2').text(label_2);
 			$('#contactModal').find('.modal-label-3').text(label_3);

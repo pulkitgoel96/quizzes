@@ -156,7 +156,7 @@
 <section  id="slide5">
     <h2 class="section--headline"><span>WHO ARE THEY?</span></h2>
     <div class="section--who">
-        <ul id="allContact" class="contacts gallery--effect cs-style-7 clearfix">
+        <ul id="allContact" class="contacts gallery--effect clearfix">
     
         </ul>
     </div>
@@ -165,23 +165,21 @@
 
 
 <!-- Popup Modals -->
-<div id="contactModal" class="modal modal__bg" role="dialog" aria-hidden="true">
+<div id="contactModal" class="modal--pop modal__bg" role="dialog" aria-hidden="true">
     <div class="modal__dialog">
         <div class="modal__content">
-            <div class="modal-label-img"></div>
-
+            <div class="modal__dialog--img"></div>
             <div class="modal__dialog--content">
                 <h1 class="modal-label-1"></h1>
                 <h2 class="modal-label-2"></h2>
                 <h3 class="modal-label-3"></h3>
-                <h3 class="modal-label-4"></h3>
-                <!-- <h3 class="modal-label-5"></h3> -->
             </div>
             <div class="modal__dialog--description">
+                <h3 class="modal-label-4"></h3>
                 <h3 class="modal-label-5"></h3>
             </div>
 
-            <div class="modal__dialog--iframe modal-label-video"></div>
+            <div class="modal__dialog--iframe modal__dialog--video"></div>
 
             <!-- modal close button -->
             <a href="javascript:void(0);" class="modal__close demo-close">
@@ -247,26 +245,6 @@
                 });
             });
         }
-        
-        /*
-        $(window).scroll(function () {
-            if (isScrolledIntoView('.section--txt')) {
-                $('.section--txt').removeClass('invisible').addClass('visible');
-            } else {
-                $('.section--txt').removeClass('visible').addClass('invisible');
-            }
-        });
-
-        function isScrolledIntoView(elem) {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
-
-            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        }*/
-
 	});
 </script>
 
