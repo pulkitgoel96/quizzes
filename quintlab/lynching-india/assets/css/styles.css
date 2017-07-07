@@ -315,11 +315,6 @@ a {
     line-height: 50px;
     display: inline-block;
 }
-#slide5 .section--who {
-    padding: 40px 10px 10px;
-}
-
-
 
 .slick-arrow {
     position: absolute;
@@ -360,24 +355,50 @@ a {
 
 /* ================ */
 .gallery--effect {
-    padding: 20px 0 50px;
-    max-width: 1280px;
+    padding: 60px 10px 10px;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     list-style: none;
     text-align: center;
 }
 .gallery--effect li {
     display: inline-block;
-    width: 25%;
+    width: 16.66%;
     margin: 0;
     padding: 15px;
     text-align: left;
     position: relative;
 }
+@media only screen and (max-width: 1400px) {
+    .gallery--effect li {
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .gallery--effect li {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .gallery--effect li {
+        width: 33.33%;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .gallery--effect {
+        padding: 55px 5px 10px;
+    }
+    .gallery--effect li {
+        width: 50%;
+        padding: 10px;
+    }
+}
 .gallery--effect figure {
     margin: 0;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .gallery--effect figure img {
     max-width: 100%;
@@ -399,14 +420,19 @@ a {
 }
 .gallery--effect figcaption {
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
     width: 100%;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
 }
 .gallery--effect .gallery--caption {
     padding: 5px 7px 7px;
     background-color: #ccc;
-    background-color: rgba(11,255,231,0.8);
+    background-color: rgba(11,255,231,0.85);
 }
 .gallery--effect .gallery--caption .more-btn {
     margin: 0 auto;
@@ -415,6 +441,10 @@ a {
     color: #fff;
     display: inline-block;
     background-color: #ff6f6a;
+}
+
+.gallery--effect figure:hover figcaption {
+    bottom: 0;
 }
 /*.gallery--effect {
     padding: 20px 0 50px;
@@ -539,7 +569,7 @@ a {
     float: left;
     width: 100%;
 }
-.modal__dialog--iframe {
+.embed-content {
     margin-top: 10px;
     float: left;
     width: 100%;
@@ -548,14 +578,22 @@ a {
     overflow: hidden;
     padding-bottom: 56.25%;
 }
-.modal__dialog--iframe iframe {
+.embed-content iframe {
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
-    
 }
+
+.modal__dialog--video .embed-content.None {
+    display: none!important;
+}
+.modal__dialog--video .embed-content.none {
+    display: none!important;
+}
+
+
 .modal--pop {
     will-change: visibility, opacity;
     display: -webkit-box;
@@ -586,17 +624,25 @@ a {
 .modal--active {
     visibility: visible;
     opacity: 1;
+    /*position: relative;*/
 }
+/*.modal--active .modal__dialog {
+    position: relative;
+}
+.modal--active .modal__dialog .modal__content--active {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}*/
+
 
 .modal--align-top {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
 }
-
-
-
-
 
 .modal__content--active {
     opacity: 1;

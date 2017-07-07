@@ -28,13 +28,15 @@ _html_list +=  "<li>"
 									+ "<h3 class='label-4'>" +data[index].WhatHappened +"</h3>"
 									+ "<h3 class='label-5'>" +data[index].CaseStatus +"</h3>"
 									+ "<span class='more-btn'>Read More</span>"
-									+ "<div class='contact-video'><div class='embed-content'><iframe src='https://www.youtube.com/embed/"+[data[index].Video,]+"?ecver=1' frameborder='0' allowfullscreen></iframe></div></div>"
+									+ "<div class='contact-video'><div class='embed-content "+data[index].Video+"'><iframe src='" +data[index].Video +"' frameborder='0' allowfullscreen></iframe></div></div>"
 								+ "</div>"
 							+ "</figcaption>"
 						+ "</figure>"
 					+"</div>"
 				+"</li>";
 }
+
+// "<li class='"+[data[0].Name,]+"'>"
 
 document.getElementById("allContact").innerHTML = _html_list;
 }
