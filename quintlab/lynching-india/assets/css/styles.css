@@ -415,8 +415,8 @@ a {
 .gallery--effect .gallery--caption h2,
 .gallery--effect .gallery--caption h3 {
     font-family: 'Zilla Slab', serif !important;
-    font-size: 14px;
-    line-height: 14px
+    font-size: 16px;
+    line-height: 16px
 }
 .gallery--effect figcaption {
     position: absolute;
@@ -430,7 +430,7 @@ a {
     -ms-transition: all 0.2s ease-in-out;
 }
 .gallery--effect .gallery--caption {
-    padding: 5px 7px 7px;
+    padding: 8px;
     background-color: #ccc;
     background-color: rgba(11,255,231,0.85);
 }
@@ -446,51 +446,9 @@ a {
 .gallery--effect figure:hover figcaption {
     bottom: 0;
 }
-/*.gallery--effect {
-    padding: 20px 0 50px;
-    max-width: 1280px;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-}
-.gallery--effect li {
-    display: inline-block;
-    width: 25%;
-    margin: 0;
-    padding: 15px;
-    text-align: left;
-    position: relative;
-}
-.gallery--effect figure {
-    margin: 0;
-    position: relative;
-    cursor: pointer;
-}
-.gallery--effect figure img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-}
-.gallery--effect figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #0bffe7;
-}
-.gallery--effect figcaption h3 {
-    margin: 0;
-    padding: 0;
-}
-.gallery--effect figcaption a {
-    text-align: center;
-    padding: 5px 20px;
-    border-radius: 2px;
-    display: inline-block;
-    background: #0bffe7;
-}*/
+
 
 /*   =====================    */
-
 
 .modal__bg {
     background:rgba(0,0,0,0.8);
@@ -588,6 +546,9 @@ a {
 
 .modal__dialog--video .embed-content.None {
     display: none!important;
+}
+.modal__dialog--video .embed-content.None iframe {
+    display: none;
 }
 .modal__dialog--video .embed-content.none {
     display: none!important;
