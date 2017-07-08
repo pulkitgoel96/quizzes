@@ -719,7 +719,7 @@ a {
     font-size: 16px;
     line-height: 35px;
     text-align: center;
-    background: url(../images/nav-bg.jpg) 100% no-repeat;
+    background-color: #0bffe7;
 }
 #footer a {
     color: #4d4d4d;
