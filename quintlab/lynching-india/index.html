@@ -17,8 +17,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-<!-- Font Awesome & Animate -->
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!-- Animate -->
 <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
 <!-- Slick -->
@@ -34,15 +33,18 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-</head>
-    
 </head>
 
 <body>
+<section class="full-image-section background-fixed">
+    <div class="full-image">
+        <img src="assets/images/lynching-india.jpg" class="is-desktop">
+        <img src="assets/images/lynching-india-mobile.jpg" class="is-mobile">
+    </div>
+</section>
+
 <!-- Section 01 -->
 <section id="slide1">
-
     <div class="banner--txt">
         <h1 class="banner--headline wow fadeInRight" data-wow-delay="0.2s"><span class="top">Hunted -</span> <span class="bottom">India's Lynch Files</span></h1>
         <p class="section--content wow fadeInRight" data-wow-delay="0.5s">Pehlu Khan, Zafar Khan, Hafiz Junaid, Mohammad Akhlaq and Ayub Pandith - different names, different families and different histories - yet one fatal destiny. Since 2014, India has seen numerous cases of mob lynching; moments when a large and faceless mob have ended lives in a lethal mix of rage, hatred and intolerance. Mob lynching has become the new ‘normal’ in India, its blood-fueled hatred spilling over into our political discourse and Twitter timelines. But what does it mean for a democracy when the rule of a mob overrules the humanity of tolerance?</p>
@@ -57,6 +59,13 @@
         </ul>
     </nav>
 
+</section>
+
+<!-- Section for Mobile -->
+<section id="slide-mobile" style="display:none">
+    <div class="banner--txt">
+        <p class="section--content wow fadeInRight" data-wow-delay="0.1s">Pehlu Khan, Zafar Khan, Hafiz Junaid, Mohammad Akhlaq and Ayub Pandith - different names, different families and different histories - yet one fatal destiny. Since 2014, India has seen numerous cases of mob lynching; moments when a large and faceless mob have ended lives in a lethal mix of rage, hatred and intolerance. Mob lynching has become the new ‘normal’ in India, its blood-fueled hatred spilling over into our political discourse and Twitter timelines. But what does it mean for a democracy when the rule of a mob overrules the humanity of tolerance?</p>
+    </div>
 </section>
 
 <!-- Section #02 -->
@@ -85,7 +94,6 @@
 <section id="slide3">
     <h2 class="section--headline"><span>WHERE IS THIS?</span></h2>
     <div class="map-container">
-        <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1P6fO8wQSKKpwsx6ISxb3447dXEk" width="640" height="480"></iframe> -->
         <iframe src="https://www.google.com/maps/d/embed?mid=1tYMm___3NDR_fN9p6XOQjkupGO8" width="640" height="480"></iframe>
     </div>
 </section>
@@ -94,7 +102,6 @@
 <section id="slide4">
 	<h2 class="section--headline"><span>WHAT DO THEY SAY?</span></h2>
     <div class="gallery">
-    	
     	<ul class="horizontal--slider">
     		<li class="slider--first">
                 <figure>
@@ -147,7 +154,6 @@
             <spam class="arrow--prev"></spam>
             <spam class="arrow--next"></spam>
         </div>
-
     </div>
 </section>
 
@@ -160,7 +166,6 @@
         </ul>
     </div>
 </section>
-<!-- <footer id="slide5"></footer> -->
 
 <!-- Footer -->
 <footer id="footer" role="contentinfo">
@@ -168,11 +173,9 @@
     <span class="credits">Credits</span>
 </footer>
 
-
 <!-- Footer Pop -->
 <div class="creditsModal animated">
     <a class="modalClose" href="javascript:void(0)"><svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg></a>
-
     <div class="modal-content">
         <span>Concept: Jaivardhan Singh Channey</span>
         <span>Development: Shahadat Hussain</span>
@@ -194,9 +197,7 @@
                 <h3 class="modal-label-4"></h3>
                 <h3 class="modal-label-5"></h3>
             </div>
-
             <div class="modal__dialog--iframe modal__dialog--video"></div>
-
             <!-- modal close button -->
             <a href="javascript:void(0);" class="modal__close demo-close">
                 <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
@@ -207,119 +208,14 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
-
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
-
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="assets/js/customs.js"></script>
 
 <!-- Spreadsheet API -->
 <script type="text/javascript" src="assets/api/spreadsheet.js"></script>
 <script type="text/javascript" src="assets/api/data-spreadsheet-loops.js"></script>
 <script type="text/javascript" src="assets/api/functions.js"></script>
 
-<script type="text/javascript">
-	$(document).on('ready', function() {
-		$(".horizontal--slider").slick({
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            adaptiveHeight: true,
-		});
-
-        // Cuctom Arrows
-        $('.arrow--prev').click(function(){
-          $('.horizontal--slider').slick('slickPrev');
-        })
-
-        $('.arrow--next').click(function(){
-          $('.horizontal--slider').slick('slickNext');
-        })
-
-        // Maps
-		$('.map-container').click(function(){
-            $(this).find('iframe').addClass('clicked');
-        })
-        .mouseleave(function(){
-            $(this).find('iframe').removeClass('clicked');
-        });
-
-        setTimeout(function(){
-            $(".embed-content.None").empty();
-            $(".embed-content.none").empty();
-        }, 3000);
-
-        // Footer
-        $('.credits').click(function() {
-            $('.creditsModal').show().addClass('zoomIn');
-        });
-
-        $('.modalClose').click(function() {
-            $('.creditsModal').fadeOut();
-        });
-
-        // Quotes Animation
-        runslide();
-        function runslide() {
-            $('.quote--first').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                $('.quote--second').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                    $('.quote--third').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                        $('.quote--forth').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                        runslide();
-                        });
-                    });
-                });
-            });
-        }
-	});
-</script>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-
-		var wow = new WOW(
-          {
-            boxClass:     'wow',      // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset:       0,          // distance to the element when triggering the animation (default is 0)
-            mobile:       true,       // trigger animations on mobile devices (default is true)
-            live:         true,       // act on asynchronously loaded content (default is true)
-            callback:     function(box) {
-              // the callback is fired every time an animation is started
-              // the argument that is passed in is the DOM node being animated
-            },
-            scrollContainer: null // optional scroll container selector, otherwise use window
-          }
-        );
-        wow.init();
-	});
-</script>
-<script>
-$(document).ready(function() { 
-    $('a[href*=#]').each(function() {  
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')   && location.hostname == this.hostname   && this.hash.replace(/#/, '')) {   
-            var $targetId = $(this.hash),
-                $targetAnchor = $('[name=' + this.hash.slice(1) + ']');   
-            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;    
-            if ($target) {     
-                var targetOffset = $target.offset().top;     
-                $(this).click(function() {
-                    $("#nav li a").removeClass("active");
-                    $(this).addClass('active');      
-                    $('html, body').animate({
-                        scrollTop: targetOffset
-                    }, 1000);      
-                    return false;     
-                });   
-            }  
-        } 
-    });
-});
-</script>
 </body>
-
 </html>

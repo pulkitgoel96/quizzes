@@ -4,12 +4,9 @@ body {
 	color: #4d4d4d;
 	font-size: 18px;
 	font-family: 'Zilla Slab', serif;
-    background: url(../images/sec-bg.jpg) top left;
+    /*background: url(../images/sec-bg.jpg) top left;
     background-size: 100%;
-    background-repeat: repeat-y;
-	/*background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    background-repeat: repeat-y;*/
 }
 @font-face {
     font-family: 'oswaldbold';
@@ -54,6 +51,52 @@ a {
  	*zoom: 1;
 }
 
+/*For paralax CSS*/
+.full-image-section {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:-9;
+    width:100%;
+    height:100vh;
+}
+.full-image {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.full-image img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.background-fixed .full-image {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    clip: rect(0,auto,auto,0);
+    width: 100%;
+}
+.background-fixed .full-image img {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.is-mobile {display: none;}
+.is-desktop {display: block;}
+
 #slide1,
 #slide2,
 #slide3 {
@@ -69,11 +112,10 @@ a {
 
 /* Section #1 */
 #slide1 {
-    background: url('../images/lynching-india.jpg') 50% 0 no-repeat fixed;
+    /*background: url('../images/lynching-india.jpg') 50% 0 no-repeat fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
-
 #slide1 .banner--txt {
     width: 480px;
     margin-left: 70px;
@@ -93,7 +135,8 @@ a {
     width: 238px;
     height: 70px;
     line-height: 75px;
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(11,255,231,0.9);
     display: block;
     padding: 0 10px;
 }
@@ -102,7 +145,7 @@ a {
     line-height: 75px;
     display: block;
     padding: 0 10px;
-    background-color: #0bffe7;
+    background-color: rgba(11,255,231,0.9);
 }
 #slide1 .section--content {
     margin-top: 12px;
@@ -111,7 +154,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     text-align: justify;
-    background-color: #0bffe7;
+    background-color: rgba(11,255,231,0.9);
 }
 #slide1 .nav--bar {
     position: absolute;
@@ -124,7 +167,6 @@ a {
 }
 #slide1 .nav--bar ul li {
     margin: 40px 0 0 0;
-    /*padding: 0 0 0 70px;*/
     float: left;
     width: 25%;
     font-size: 34px;
@@ -150,6 +192,49 @@ a {
     color: #4d4d4d;
 }
 
+#slide-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 639px) {
+    .is-mobile {display: block;}
+    .is-desktop {display: none;}
+
+    #slide1 .banner--txt {
+        top: 80%;
+    }
+    #slide1 .section--content {
+        display: none;
+    }
+    #slide-mobile {
+        display: block !important;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    #slide-mobile {
+        background: transparent;
+    }
+    #slide-mobile .banner--txt {
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #slide-mobile .section--content {
+        margin: 0 20px;
+        padding: 10px 15px 12px;
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        background-color: rgba(11,255,231,0.9);
+    }
+}
 
 /* Section #02 */
 #slide2 {
@@ -197,9 +282,6 @@ a {
 
 /* Section #03 */
 #slide3 {
-    /*background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
-    background-repeat: no-repeat;
-    background-size: cover;*/
 }
 #slide3 .section--headline {
     position: absolute;
@@ -221,7 +303,6 @@ a {
 #slide3 .map-container {
     width: 100%;
     height: 100%;
-    /*background-color: #ddd;*/
 }
 #slide3 .map-container iframe {
     width: 100%;
@@ -229,7 +310,6 @@ a {
     display: block;
     pointer-events: none;
     position: relative;
-    /* IE needs a position other than static */
 }
 #slide3 .map-container iframe.clicked {
     pointer-events: auto;
@@ -237,10 +317,6 @@ a {
 
 /* Section #04 */
 #slide4 {
-    /*background-color: #ccc;*/
-    /*background-image: url(../images/banner-02.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
     position: relative;
 }
 #slide4 .section--headline {
@@ -396,7 +472,7 @@ a {
 }
 .gallery--effect figcaption {
     position: absolute;
-    bottom: -100px;
+    bottom: -150px;
     left: 0;
     width: 100%;
     transition: all 0.2s ease-in-out;
