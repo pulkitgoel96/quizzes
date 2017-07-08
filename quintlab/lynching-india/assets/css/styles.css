@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 body {
-	color: #4d4d4d;
+	/*color: #4d4d4d;*/
+    color: #333;
 	font-size: 18px;
 	font-family: 'Zilla Slab', serif;
     /*background: url(../images/sec-bg.jpg) top left;
@@ -30,7 +31,7 @@ section .container {
     position: relative;
 }
 a {
-	color: #4d4d4d;
+	color: #333;
     outline: none;
     text-decoration: none;
     /*transition: all 0.2s ease-in-out;
@@ -50,6 +51,13 @@ a {
 .clearfix {
  	*zoom: 1;
 }
+/*
+background-color: #0bffe7;
+background-color: rgba(11,255,231,0.9);
+
+background-color: #09ffa5;
+background-color: rgba(9,255,165,0.9);
+*/
 
 /*For paralax CSS*/
 .full-image-section {
@@ -136,7 +144,8 @@ a {
     height: 70px;
     line-height: 75px;
     /*background-color: #0bffe7;*/
-    background-color: rgba(11,255,231,0.9);
+    /*background-color: rgba(11,255,231,0.9);*/
+    background-color: rgba(9,255,165,0.9);
     display: block;
     padding: 0 10px;
 }
@@ -145,7 +154,8 @@ a {
     line-height: 75px;
     display: block;
     padding: 0 10px;
-    background-color: rgba(11,255,231,0.9);
+    /*background-color: rgba(11,255,231,0.9);*/
+    background-color: rgba(9,255,165,0.9);
 }
 #slide1 .section--content {
     margin-top: 12px;
@@ -154,16 +164,18 @@ a {
     font-weight: 400;
     font-size: 18px;
     text-align: justify;
-    background-color: rgba(11,255,231,0.9);
+    /*background-color: rgba(11,255,231,0.9);*/
+    background-color: rgba(9,255,165,0.9);
 }
 #slide1 .nav--bar {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 140px;
-    background-image: url(../images/nav-bg.jpg);
+    /*background-image: url(../images/nav-bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: rgba(9,255,165,0.9);
 }
 #slide1 .nav--bar ul li {
     margin: 40px 0 0 0;
@@ -189,56 +201,20 @@ a {
     display: inline-block;
 }
 #slide1 .nav--bar ul li a {
-    color: #4d4d4d;
+    color: #333;
 }
 
 #slide-mobile {
     display: none;
 }
 
-@media only screen and (max-width: 639px) {
-    .is-mobile {display: block;}
-    .is-desktop {display: none;}
-
-    #slide1 .banner--txt {
-        top: 80%;
-    }
-    #slide1 .section--content {
-        display: none;
-    }
-    #slide-mobile {
-        display: block !important;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-    }
-    #slide-mobile {
-        background: transparent;
-    }
-    #slide-mobile .banner--txt {
-        margin: 0 auto;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        transform: translateY(-50%);
-    }
-    #slide-mobile .section--content {
-        margin: 0 20px;
-        padding: 10px 15px 12px;
-        position: relative;
-        font-weight: 400;
-        font-size: 18px;
-        text-align: justify;
-        background-color: rgba(11,255,231,0.9);
-    }
-}
-
 /* Section #02 */
 #slide2 {
-    background-image: url(../images/green-bg.jpg);
+    /*background-image: url(../images/green-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*background-color: rgba(9,255,165,1.0);*/
+    background: url(../images/dot-bg.png) #09ffa5 no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -289,12 +265,13 @@ a {
     left: 0;
     z-index: 2;
     width: 100%;
-    background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/dot-bg.png) #fff no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #slide3 .section--headline span {
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
     padding: 0 8px;
     height: 50px;
     line-height: 50px;
@@ -325,12 +302,13 @@ a {
     left: 0;
     z-index: 2;
     width: 100%;
-    background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/dot-bg.png) #fff no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #slide4 .section--headline span {
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
     padding: 0 8px;
     height: 50px;
     line-height: 50px;
@@ -360,7 +338,8 @@ a {
     line-height: 24px;
     z-index: 99;
     cursor: text;
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
 }
 #slide4 .horizontal--slider .slider--caption .quote--txt {
     display: block;
@@ -373,7 +352,10 @@ a {
 
 /* Section #05 */
 #slide5 {
-    background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/sec-bg.jpg) 50% 0 no-repeat fixed;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background: url(../images/dot-bg.png) #fff no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -385,7 +367,8 @@ a {
     z-index: 2;
 }
 #slide5 .section--headline span {
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
     padding: 0 10px;
     height: 50px;
     line-height: 50px;
@@ -405,7 +388,8 @@ a {
     position: absolute;
     cursor: pointer;
     display: block;
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
 }
 .slick-arrow .arrow--prev {
     left: 0;
@@ -419,7 +403,7 @@ a {
     position: absolute;
     top: 13px;
     left: 13px;
-    color: #4d4d4d;
+    color: #333;
 }
 .slick-arrow .arrow--next:before {
     content:"\f054"
@@ -483,8 +467,8 @@ a {
 }
 .gallery--effect .gallery--caption {
     padding: 8px;
-    background-color: #ccc;
-    background-color: rgba(11,255,231,0.85);
+    /*background-color: rgba(11,255,231,0.85);*/
+    background-color: rgba(9,255,165,0.9);
 }
 .gallery--effect .gallery--caption .more-btn {
     margin: 0 auto;
@@ -512,7 +496,8 @@ a {
     padding: 20px;
     will-change: transform, opacity;
     position: relative;
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
     color: #333;
     background-clip: padding-box;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
@@ -715,14 +700,15 @@ a {
     width: 100%;
     height: 35px;
     padding: 0 20px;
-    color: #4d4d4d;
+    color: #333;
     font-size: 16px;
     line-height: 35px;
     text-align: center;
-    background-color: #0bffe7;
+    /*background-color: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
 }
 #footer a {
-    color: #4d4d4d;
+    color: #333;
     text-decoration: none;
 }
 #footer .copyright {
@@ -763,23 +749,26 @@ a {
     right: 0;
     margin: 0;
     padding: 6px;
-    background: #0bffe7;
+    /*background: #0bffe7;*/
+    background-color: rgba(9,255,165,1.0);
     -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .modalClose svg {
     width: 24px;
-    fill: #4d4d4d;
+    fill: #333;
     pointer-events: none;
     vertical-align: top;
 }
-
-
+@media only screen and (max-width: 1400px) {
+    .gallery--effect li {
+        width: 20%;
+    }
+}
 @media only screen and (max-width: 1280px) {
     .gallery--effect li {
         width: 25%;
     }
-
     .modal__dialog {
         max-width: 600px;
         width: 600px;
@@ -800,6 +789,45 @@ a {
     }
 }
 @media only screen and (max-width: 639px) {
+    .is-mobile {display: block;}
+    .is-desktop {display: none;}
+
+    #slide1 .banner--txt {
+        top: 80%;
+    }
+    #slide1 .section--content {
+        display: none;
+    }
+    #slide-mobile {
+        display: block !important;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    #slide-mobile {
+        background: transparent;
+    }
+    #slide-mobile .banner--txt {
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #slide-mobile .section--content {
+        margin: 0 20px;
+        padding: 10px 15px 12px;
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        /*background-color: rgba(11,255,231,0.9);*/
+        background-color: rgba(9,255,165,0.9);
+    }
+
     .gallery--effect {
         padding: 55px 5px 10px;
     }
@@ -815,7 +843,8 @@ a {
         max-width: 100%;
         width: 100%;
         height: 100vh;
-        background-color: #0bffe7;
+        /*background-color: #0bffe7;*/
+        background-color: rgba(9,255,165,1.0);
     }
     .modal__dialog--img {
         max-width: 120px;
