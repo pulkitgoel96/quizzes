@@ -43,6 +43,26 @@ $(document).ready(function() {
       ]
     });
 	
+	$('.slider-3').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+			variableWidth: true
+            
+          }
+        }
+      ]
+    });
+	
 	$('.photo-gallery').slick({
 	autoplay: true,
     draggable: true,
