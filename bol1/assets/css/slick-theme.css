@@ -173,11 +173,11 @@
 
 /*Scale*/
 
-.slider-img, .story-img, .gallery-img {
+.slider-img, .story-image, .gallery-img {
 	overflow: hidden;
 	position: relative;
 }
-.slider-img img, .story-img img, .gallery-img img {
+.slider-img img, .story-image img, .gallery-img img {
 	transition: all 0.3s ease;
 }
 .slider-img:hover img {
@@ -186,7 +186,7 @@
 	transform: scale(1.5);
 }
 
-.story-img:hover img, .gallery-img:hover img{
+.story-image:hover img, .gallery-img:hover img{
 	-webkit-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);

@@ -385,7 +385,7 @@ padding-bottom: 20px;
 .bol-chr2 {
   position: absolute;
   right: -80px;
-  top: 35px;
+  top: 140px;
   width: 400px;
   z-index: 110;
 }
@@ -597,6 +597,12 @@ padding-bottom: 20px;
   top: -96px;
   width: 138px;
   z-index: 100;
+}
+.wrapper-4-top .inner-bg{
+	padding-top: 60px;
+}
+.wrapper.wrapper-4-mid{
+	z-index: 120;
 }
 
 
