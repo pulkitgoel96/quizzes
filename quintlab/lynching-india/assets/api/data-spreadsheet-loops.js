@@ -11,13 +11,6 @@ function init(){
 window.addEventListener('DOMContentLoaded', init);
 
 function showInfo(data) {
-	document.getElementById("showCounter").innerHTML = 
-		"<span class='"+data[0].Counter+"'>"
-			
-		+"</span>"
-}
-
-function showInfo(data) {
 
 var _html_list = "";
 //for(var index = data.length; index >= 0; index--) {
