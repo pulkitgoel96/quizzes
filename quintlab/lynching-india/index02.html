@@ -76,8 +76,24 @@
 .demo-close {
     background: rgba(255, 255, 255, 0.2);
 }
-.demo-close {
-    top: 94px;
+.popup--header {
+    display: none;
+}
+@media only screen and (max-width: 639px) {
+    .demo-close {
+        top: 94px;
+    }
+    .popup--header {
+        display: block !important;
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+    .popup--header .popup--logo {
+        margin: 0 auto;
+        width: 175px;
+        display: inline-block; 
+    }
 }
 </style>
 
@@ -251,7 +267,7 @@
 <div id="contactModal" class="modal--pop modal__bg" role="dialog" aria-hidden="true">
     <div class="modal__dialog">
         <div class="modal__content">
-            <div class="popup--header">
+            <div class="popup--header" style="display:none">
                 <div class="popup--logo"><img src="assets/images/header3.png"></div>
             </div>
             <div class="modal__dialog--img"></div>
