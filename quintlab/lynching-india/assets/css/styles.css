@@ -234,13 +234,13 @@ background-color: rgba(9,255,165,0.9);
 }
 #slide1 .banner--main .txt--left {
     float: left;
-    width: 64%;
+    width: 50%;
     padding: 5px 30px 5px 100px;
     font-family: 'Libre Franklin', sans-serif;
 }
 #slide1 .banner--main .txt--right {
     float: left;
-    width: 36%;
+    width: 50%;
     font-family: 'Libre Franklin', sans-serif;
     border-left: 1px #8f8787 solid;
     padding-left: 35px;
@@ -284,8 +284,7 @@ background-color: rgba(9,255,165,0.9);
     }
     #slide1 .banner--main .txt--right {
         width: 40%;
-        padding-left: 0;
-        border-left: 0 none;
+        padding-left: 20px;
     }
     #slide1 .banner--main .txt--right .counter {
         width: 80px;
@@ -309,6 +308,8 @@ background-color: rgba(9,255,165,0.9);
     }
     #slide1 .banner--main .txt--right {
         width: 100%;
+        padding-left: 0;
+        border-left: 0 none;
     }
     #slide1 .banner--main .txt--right .counter {
         width: 80px;
@@ -652,12 +653,12 @@ background-color: rgba(9,255,165,0.9);
     line-height: 24px;
     font-family: 'Zilla Slab', serif !important;
 }
-.label-1:before,
+
 .modal-label-1:before {
     content: 'Name: ';
     font-weight: 700;
 }
-.label-2:before,
+
 .modal-label-2:before {
     content: 'Date: ';
     font-weight: 700;
