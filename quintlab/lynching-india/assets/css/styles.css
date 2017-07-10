@@ -560,6 +560,7 @@ background-color: rgba(9,255,165,0.9);
     display: block;
     position: relative;
 }
+.gallery--effect figcaption .label-2,
 .gallery--effect figcaption .label-3,
 .gallery--effect figcaption .label-4,
 .gallery--effect figcaption .label-5,
