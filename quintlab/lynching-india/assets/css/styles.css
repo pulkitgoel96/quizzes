@@ -313,8 +313,9 @@ background-color: rgba(9,255,165,0.9);
     #slide1 .banner--main .txt--right .counter {
         width: 80px;
         height: 70px;
-        line-height: 70px;
+        line-height: 60px;
         font-size: 60px;
+        padding-top: 10px;
     }
     #slide1 .banner--main .txt--right .people-txt {
         padding-top: 10px;
