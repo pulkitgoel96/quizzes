@@ -60,6 +60,15 @@ $(document).on('ready', function() {
         $('.creditsModal').fadeOut();
     });
 
+    // Social 
+    $(".social-back").click(function(e) {
+        $(".social-icons").slideToggle(400);
+        return false;
+    });
+    $("body").click(function() {
+        $(".social-icons").slideUp();
+    });
+
     // Body Background Fixed
     var screen_height = $(window).height();
     var screen_width = $(window).width();
