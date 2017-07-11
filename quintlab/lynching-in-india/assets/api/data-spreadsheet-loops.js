@@ -37,5 +37,8 @@ _html_list +=  "<li>"
 }
 
 document.getElementById("allContact").innerHTML = _html_list;
-}
 
+var _video_html = "<span class='label-5'>" +data[0].Counter +"</span>";
+
+document.getElementById("showCounter").innerHTML = _video_html;
+}
