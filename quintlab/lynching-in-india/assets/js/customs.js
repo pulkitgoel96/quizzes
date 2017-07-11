@@ -49,7 +49,7 @@ $(document).on('ready', function() {
     setTimeout(function(){
         $(".embed-content.None").empty();
         $(".embed-content.none").empty();
-    }, 3000);
+    }, 1000);
 
     // Footer
     $('.credits').click(function() {
@@ -64,54 +64,18 @@ $(document).on('ready', function() {
     var screen_height = $(window).height();
     var screen_width = $(window).width();
     
-    $(".full-image-section").height(screen_height + 70);
+    $("#section--intro").height(screen_height + 70);
     $(".full-image").height(screen_height + 70);
     $(".full-image img").height(screen_height + 70);
     
     if ($(window).width() < 960) {
-        $(".full-image-section").height(screen_height + 70);
+        $("#section--intro").height(screen_height + 70);
         $(".full-image").height(screen_height + 70);
         $(".full-image img").height(screen_height + 70);
         
     }else{
-        $(".full-image-section").height('');
+        $("#section--intro").height('');
         $(".full-image").height('');
         $(".full-image img").height('');
     }
-
-    // Quotes Animation
-    runslide();
-    function runslide() {
-        $('.quote--first').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-            $('.quote--second').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                $('.quote--third').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                    $('.quote--forth').fadeIn(1500).delay(3500).fadeOut(1500, function() {
-                    runslide();
-                    });
-                });
-            });
-        });
-    }
-});
-
-// Nav Page Scroll 
-$(document).ready(function() { 
-    $('a[href*=#]').each(function() {  
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')   && location.hostname == this.hostname   && this.hash.replace(/#/, '')) {   
-            var $targetId = $(this.hash),
-                $targetAnchor = $('[name=' + this.hash.slice(1) + ']');   
-            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;    
-            if ($target) {     
-                var targetOffset = $target.offset().top;     
-                $(this).click(function() {
-                    $("#nav li a").removeClass("active");
-                    $(this).addClass('active');      
-                    $('html, body').animate({
-                        scrollTop: targetOffset
-                    }, 1000);      
-                    return false;     
-                });   
-            }  
-        } 
-    });
 });

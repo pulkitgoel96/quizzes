@@ -18,7 +18,7 @@ for(var index = data.length-1; index >= 0; index--) {
 _html_list +=  "<li>"
 					+ "<div class='contact-list'>"
 						+ "<figure>"
-							+ "<div class='contact-img'><img src="+'data/contact/'+data[index].Image +'.jpg'+"></div>"
+							+ "<div class='contact-img'><img src="+'data/lynched/'+data[index].Image +'.jpg'+"></div>"
 							+ "<figcaption>"
 								+ "<div class='gallery--caption'>"
 									+ "<h1 class='label-1'>" +data[index].Name +"</h1>"
@@ -35,8 +35,6 @@ _html_list +=  "<li>"
 					+"</div>"
 				+"</li>";
 }
-
-// "<li class='"+[data[0].Name,]+"'>"
 
 document.getElementById("allContact").innerHTML = _html_list;
 }
