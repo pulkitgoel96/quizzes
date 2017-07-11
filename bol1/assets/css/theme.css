@@ -284,6 +284,20 @@ padding-bottom: 20px;
 	position: relative;
 	margin: 0px 0px 0px 0px;
 }
+
+.video-slider {
+  height: 200px;
+  left: 110px;
+  position: absolute;
+  top: 25px;
+  width: 400px;
+}
+
+.video-frame{
+	position: relative;
+	z-index: 99;
+}
+
 .video-caption {
   color: #fff;
   left: 100%;
@@ -291,6 +305,7 @@ padding-bottom: 20px;
   position: absolute;
   top: 200px;
   width: 180px;
+	display: none;
 }
 .video-caption h3 {
 	color: #fff;
@@ -461,6 +476,30 @@ padding-bottom: 20px;
 	width: 45%;
 	position: relative;
 	float: left;
+}
+
+.bol-frame-slider .photo-gallery {
+  background: url(../images/sec-bg-two-mid.png) repeat;
+  height: 430px;
+  left: 35px;
+  position: absolute;
+  top: 32px;
+  width: 335px;
+}
+
+.photo-gallery figcaption{
+	color: #fff;
+	position: absolute;
+	bottom: 0px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, left, right);
+	background-image: -webkit-linear-gradient(transparent, #000);
+	background-image: -moz-linear-gradient(transparent, #000);
+	background-image: -ms-linear-gradient(transparent, #000);
+	background-image: -o-linear-gradient(transparent, #000);
+	padding: 10px;
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
 }
 
 .container.frame-slier-container .section-headline{

@@ -66,8 +66,8 @@ $(document).ready(function() {
 	$('.photo-gallery').slick({
 	autoplay: true,
     draggable: true,
-    arrows: true,
-    dots: false,
+    arrows: false,
+    dots: true,
     fade: true,
     speed: 900,
     infinite: true,
@@ -75,6 +75,13 @@ $(document).ready(function() {
     touchThreshold: 100
     });
 });
+
+$('.photo-gallery').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  //console.log($(slick.$slides.get(currentSlide)).find('figcaption').text());
+	//$('.logo span').html($(slick.$slides.get(currentSlide)).find('figcaption').text());
+});
+
+
 
 //WhatsApp
 $(document).ready(function() {

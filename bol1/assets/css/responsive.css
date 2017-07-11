@@ -5,12 +5,11 @@
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
-	
 }
 
 @media (max-width: 1199px) {
 .container {
-	width: 980px;
+	width: 900px;
 }
 }
 
@@ -34,8 +33,6 @@
 }
 
 /*Grid */
-@media (max-width: 1199px) {
-}
 
 @media (max-width: 991px) {
 .col::after, .col::before {
@@ -46,12 +43,159 @@
 .col::after {
 	clear: both;
 }
+/*
 .col.col-2 {
 	width: 100%;
 	float: none;
 }
+*/
 	
 }
 
+@media (max-width: 1199px) {
+.green-bg {
+	top: 430px;
+}
+.wrapper-1 .story-card figcaption {
+	font-size: 17px;
+	left: -155px;
+	top: 160px;
+}
+.bol-chr1 {
+	top: 80px;
+}
+.wrapper-3 {
+	padding-top: 180px;
+}
+	
+	.container.video-container {
+  margin-top: -60px;
+}
+	
+	.video-section-gfx {
+  position: absolute;
+  right: 140px;
+  top: 10px;
+  width: 188px;
+}
+}
 
+@media (max-width: 991px) {
+	.green-bg {
+  top: 408px;
+}
+	
+	.wrapper-1 .story-card figcaption {
+  font-size: 15px;
+  left: -172px;
+  top: 140px;
+  width: 170px;
+}
+	
+	.bol-chr1 {
+  top: 120px;
+}
+	.wrapper-3 {
+  padding-top: 144px;
+}
+	
+	.bol-chr2 {
+  position: absolute;
+  right: 0;
+  top: 130px;
+  width: 293px;
+  z-index: 110;
+}
+	
+	.slider.slider-2 {
+  margin-top: -60px;
+}
+	
+	.bol-frame-slider{
+		width: 50%;
+	}
+.bol-frame-slider .photo-gallery {
+  height: 375px;
+  top: 35px;
+  width: 295px;
+}
+	.mal10, .mal5{
+		margin: 0;
+	}
+	
+.bol-gfx-1 {
+  margin-right: 14px;
+  margin-top: -30px;
+  width: 200px;
+}
+	
+	.wrapper.wrapper-4-mid {
+  padding-bottom: 70px;
+  z-index: 120;
+}
+	
+	.container.slider-container {
+  margin-top: -140px;
+  z-index: 200;
+}
+	.factoid{
+		margin-right: 50px;
+	}
+	
+	.bol-chr3 {
+  bottom: -30px;
+  left: 0;
+  position: absolute;
+  width: 260px;
+  z-index: 110;
+}
+	
+	.plant-left{
+		width: 100px;
+	}
+	.plant-right{
+		width: 90px;
+	}
+	
+	.plant-blue-left {
+  width: 100px;
+}
+	
+		.plant-blue-right {
+  bottom: 4px;
+  width: 95px;
+}
+	
+	.bol-gfx-text {
+  position: absolute;
+  right: 83px;
+  top: 10px;
+  width: 108px;
+}
+
+.bol-gfx-2 {
+  margin-right: 22px;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  top: 134px;
+  width: 190px;
+}
+	
+	.video-slider {
+  height: 200px;
+  left: 87px;
+  position: absolute;
+  top: 18px;
+  width: 321px;
+}
+	.video-section-gfx{
+		right:55px;
+	}
+	
+	.container.video-container {
+  margin-top: -25px;
+}
+	
+}
 
