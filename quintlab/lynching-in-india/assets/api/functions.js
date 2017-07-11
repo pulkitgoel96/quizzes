@@ -1,27 +1,21 @@
-
 $(document).ready(function() {
 		$(document).on("click", '#allContact li', function() {
 			
 			$('#contactModal').addClass('modal--active');
 			$('.modal__content').addClass('modal__content--active');
 			
+			var _this = $(this);
 			var label_img = $(this).find('.contact-img').html();
 			var label_video = $(this).find('.contact-video').html();
-			var label_1 = $(this).find('.label-1').text();
-			var label_2 = $(this).find('.label-2').text();
-			var label_3 = $(this).find('.label-3').text();
-			var label_4 = $(this).find('.label-4').text();
-			var label_5 = $(this).find('.label-5').text();
 			
 			$('#contactModal').find('.modal__dialog--img').html(label_img);
 			$('#contactModal').find('.modal__dialog--video').html(label_video);
-			$('#contactModal').find('.modal-label-1').text(label_1);
-			$('#contactModal').find('.modal-label-2').text(label_2);
-			$('#contactModal').find('.modal-label-3').text(label_3);
-			$('#contactModal').find('.modal-label-4').text(label_4);
-			$('#contactModal').find('.modal-label-5').text(label_5);
+
+			for(var i = 1; i <= 5; i++) {
+				$('#contactModal').find('.modal-label-' + i).text(_this.find('.label-'+i).text());
+			}
 			
-	});
+		});
 	
 	$('.modal__close').click(function(){
 		$('#contactModal').removeClass('modal--active');
@@ -29,6 +23,11 @@ $(document).ready(function() {
 		$('#contactModal').find('iframe').attr('src', '');
 	});
 	
+	$("#contactModal").click(function(){
+		$('#contactModal').removeClass('modal--active');
+		$('.modal__content').removeClass('modal__content--active');
+		$('#contactModal').find('iframe').attr('src', '');
+	});
 	
 	
 	
@@ -58,4 +57,3 @@ $(document).ready(function() {
     }
   });
 });
-
