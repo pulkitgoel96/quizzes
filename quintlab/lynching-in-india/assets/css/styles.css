@@ -419,17 +419,21 @@ a {
 
 /* Modal Popup */
 .modal__bg {
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
 }
 .modal__dialog {
+    position: relative;
+    max-width: 700px;
+    width: 700px;
+    max-height: 600px;
+    font-family: 'Zilla Slab', serif !important;
+}
+.modal__content {
     max-width: 700px;
     width: 700px;
     max-height: 600px;
     overflow: auto;
-    font-family: 'Zilla Slab', serif !important;
-}
-.modal__content {
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     will-change: transform, opacity;
     position: relative;
     color: rgba(255,255,255,0.8);
@@ -614,7 +618,7 @@ a {
     right: 0;
     margin: 0;
     padding: 6px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
