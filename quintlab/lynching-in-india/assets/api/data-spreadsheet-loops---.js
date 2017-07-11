@@ -26,17 +26,14 @@ _html_list +=  "<li>"
 									+ "<h3 class='label-2'>" +data[index].Date +"</h3>"
 									+ "<h3 class='label-3'>" +data[index].Location +"</h3>"
 									+ "<h3 class='label-4'>" +data[index].WhatHappened +"</h3>"
-									+ "<h3 class='label-5'>" +data[index].CaseStatus +"</h3>";
+									+ "<h3 class='label-5'>" +data[index].CaseStatus +"</h3>"
 									//+ "<span class='more-btn'>Read More</span>"
-if(data[index].Video != 'None') {
-	_html_list += "<div class='contact-video'><div class='embed-content "+data[index].Video+"'><iframe src='" +data[index].Video +"' frameborder='0' allowfullscreen></iframe></div></div>"; 
-}
-								
-_html_list += "</div>"
-			  +"</figcaption>"
-			  +"</figure>"
-			  +"</div>"
-			  +"</li>";
+									+ "<div class='contact-video'><div class='embed-content "+data[index].Video+"'><iframe src='" +data[index].Video +"' frameborder='0' allowfullscreen></iframe></div></div>"
+								+ "</div>"
+							+ "</figcaption>"
+						+ "</figure>"
+					+"</div>"
+				+"</li>";
 }
 
 document.getElementById("allContact").innerHTML = _html_list;
