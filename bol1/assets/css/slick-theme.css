@@ -159,9 +159,31 @@
 	border: 1px solid #fff;
 }
 
+.video-slider .slick-dots li button::before,
 .photo-gallery .slick-dots li button::before{
 	content: '';
 }
+
+
+
+.video-slider .slick-dots{bottom:-38px;}
+.video-slider .slick-dots li{margin: 0px 6px;}
+.video-slider .slick-dots li button {
+	background: #b5b5b4;
+	color: #b5b5b4;
+	font-size: 0;
+	outline: none;
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	
+}
+
+.video-slider .slick-dots li.slick-active button{
+	background: #fd9114;
+}
+
+
 
 
 
