@@ -1,6 +1,6 @@
 window.sr = ScrollReveal();
 //sr.reveal('.col');
-sr.reveal('.col,.header-container', { duration: 1000 });
+sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-section-gfx, .bol-chr1, .border-box, .bol-chr2, .bol-frame-slider, .bol-gfx, .tel-bg, .factoid, .bol-chr3, .bol-gfx-2, .green-bg', { duration: 1000 });
 
 
 $(document).ready(function() {
