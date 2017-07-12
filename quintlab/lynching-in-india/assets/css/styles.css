@@ -87,7 +87,14 @@ a {
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
 }
-
+.thequint--logo {
+    position: fixed;
+    top: 15px;
+    left: 12px;
+    width: 50px;
+    z-index: 99;
+    display: block;
+}
 /* Section #1 */
 #section--first {
     width: 100%;
