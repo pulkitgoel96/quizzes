@@ -644,5 +644,19 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: 55%;
 }
 
+.border-action a:hover{
+	background-color: #006837;
+}
+
+.border-action.mobile-border-action {
+	display: block !important;
+	position: fixed;
+	right: 8px;
+	top: 200px;
+	width: 35px;
+	z-index: 9999;
+	display: none;
+}
+
 	
 
