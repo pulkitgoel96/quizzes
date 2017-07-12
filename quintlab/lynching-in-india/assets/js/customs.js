@@ -55,7 +55,6 @@ $(document).on('ready', function() {
     $('.credits').click(function() {
         $('.creditsModal').show().addClass('zoomIn');
     });
-
     $('.modalClose').click(function() {
         $('.creditsModal').fadeOut();
     });
@@ -81,7 +80,6 @@ $(document).on('ready', function() {
         $("#section--intro").height(screen_height + 70);
         $(".full-image").height(screen_height + 70);
         $(".full-image img").height(screen_height + 70);
-        
     }else{
         $("#section--intro").height('');
         $(".full-image").height('');

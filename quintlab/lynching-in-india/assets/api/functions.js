@@ -14,7 +14,6 @@ $(document).ready(function() {
 			for(var i = 1; i <= 5; i++) {
 				$('#contactModal').find('.modal-label-' + i).text(_this.find('.label-'+i).text());
 			}
-			
 		});
 	
 	$('.modal__close').click(function(){
@@ -29,19 +28,11 @@ $(document).ready(function() {
 		$('#contactModal').find('iframe').attr('src', '');
 	});
 	
-	
-	
-	//var hideclass = $('#allContact li').find('h3').text();
-	//$('#allContact li').addClass(hideclass);
-	
 	$('#allContact li').each(function(){
 		var thisname = $(this).find('h3:firsr').text();
 		$(this).addClass('thisname');
 	});
-	
-	
 });
-
 
 //WhatsApp
 $(document).ready(function() {
