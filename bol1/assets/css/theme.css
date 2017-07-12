@@ -129,8 +129,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .img-full {
 	width: 100%;
+	
+}
+
+.inner-bg img{
 	vertical-align: bottom;
 }
+
+
 .wrapper-1::after {
 	content: '';
 	width: 100%;
