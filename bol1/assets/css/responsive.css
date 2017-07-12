@@ -425,8 +425,12 @@
   width: 100%;
 }
 .tel-bg{
-	display: none;
+	width: 100%;
+	position: static;
+	text-align: right;
+	margin-top: 20px;
 }
+	.tel-bg img{width: 60%;}
 	
 	.wrapper-5 .story-card {
   margin: 0 auto;
