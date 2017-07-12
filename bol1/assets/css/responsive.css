@@ -516,6 +516,14 @@ display: none;
 		width: 8px !important;
 		height: 8px !important;
 	}
+	
+.border-action {
+  position: fixed;
+  right: -9px;
+  top: -100px;
+  width: 35px;
+  z-index: 9999;
+}
 
 }
 

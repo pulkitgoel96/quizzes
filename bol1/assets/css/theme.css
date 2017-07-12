@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
 	height: 7px;
 	background: #f906d7;
 }
+.border-box p{
+	margin: 0;
+}
+
 .wrapper-1 .story-card {
 	margin-top: 20px;
 	position: relative;
@@ -612,3 +616,33 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper.wrapper-4-mid {
 	z-index: 120;
 }
+.border-action{
+	position: absolute; 
+	top: 0;
+	right: 50px;
+}
+.border-action a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	background-color: #f906d7;
+	border-radius: 100%;
+	font-size: 1px;
+	overflow: hidden;
+	text-indent: -100px;
+	margin-top: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.border-action a.is-text{
+	background-image: url(../images/ico-text.png);
+	background-size: 55%;
+}
+
+.border-action a.is-image{
+	background-image: url(../images/ico-image.png);
+	background-size: 55%;
+}
+
+	
+
