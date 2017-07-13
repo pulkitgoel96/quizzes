@@ -29,13 +29,17 @@
 <link href="assets/css/responsive.css" rel="stylesheet" media="all">
 <link href="assets/css/slick.css" rel="stylesheet" media="all">
 <link href="assets/css/slick-theme.css" rel="stylesheet" media="all">
+<link href="assets/css/modal.css" rel="stylesheet" media="all">
+
+<!-- Apis -->
+<script type="text/javascript" src="https://d1y1r594kapmgi.cloudfront.net/quintype/metype/assets/application.js"></script>
 </head>
 
 <body>
 
 <div class="border-action mobile-border-action">
-	<a class="is-text" href="javascript:void(0)">text</a>
-	<a class="is-image" href="javascript:void(0)">image</a>
+	<a class="is-text trgtModal" href="javascript:void(0)">text</a>
+	<a class="is-image trgtModal" href="javascript:void(0)">image</a>
 </div>
 				
 				
@@ -49,10 +53,10 @@
 		<div class="section-content">
 			<div class="content">
 				<div class="border-box">
-				<p><strong>Feeling Patriotic? </strong>Need to give your gyaan to the world? Here, take this opportunity and scream out things in whatever language you want to!</p>
+				<p><strong>Why do you love your language?</strong> Tell the world! Share an article or video or even just a message in your language here. Just click and Bol! </p>
 				<div class="border-action">
-					<a class="is-text" href="javascript:void(0)">text</a>
-					<a class="is-image" href="javascript:void(0)">image</a>
+					<a class="is-text trgtModal" href="javascript:void(0)">text</a>
+					<a class="is-image trgtModal" href="javascript:void(0)">image</a>
 				</div>
 				
 				</div>
@@ -111,7 +115,7 @@
 			</div>
 		</div>
 		<div class="video-caption">
-			<h3>Videos</h3>
+			<h3>Bolke Dekho</h3>
 			<p>Why America cares more about race than sexual assault</p>
 		</div>
 		
@@ -128,8 +132,12 @@
 						<div class="col-content-inner">
 							<h3 class="section-headline">BOL POLL</h3>
 							<div class="section-p">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit </p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit </p>
+								<p>Which language other than Hindi would you like to see SRK act in? </p>
+								<p>- Tamil <br>
+								- Bengali<br>
+								-Odia<br>
+								- Gujarati<br>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -231,7 +239,7 @@
 	<div class="mal10">
 		<h3 class="section-headline">BOL CHEESE</h3>
 		<div class="bol-frame-slider">
-			<img src="assets/images/bol-slider-frame.png" alt="">
+			<img class="ops" src="assets/images/bol-slider-frame.png" alt="">
 			<div class="photo-gallery">
 				<div class="gallery-img">
 					<figure>
@@ -337,7 +345,7 @@
 		<img src="assets/images/bol-phone-bg.png" alt="">
 	</div>
 </section>
-<section class="wrapper wrapper-5">
+<section class="wrapper wrapper-5 bg3">
 	<div class="wrapper wrapper-5-top"><img class="img-full" src="assets/images/sec-bg-five-top.png"></div>
 	<div class="wrapper wrapper-5-mid">
 		<div class="container">
@@ -347,7 +355,7 @@
 					<a href="#">
 						<div class="story-image"><img src="data/img-1.jpg" alt=""></div>
 						<figcaption>
-							<img src="assets/images/caption-bg.png" alt="">
+							<img class="ops" src="assets/images/caption-bg.png" alt="">
 							<div class="caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>	
 						</figcaption>
 					</a>
@@ -357,7 +365,7 @@
 		<div class="container">
 			<div class="factoid">
 				<div class="col-content">
-					<img src="assets/images/bol-fact-bg.png">
+					<img class="ops" src="assets/images/bol-fact-bg.png">
 					<div class="col-content-inner">
 						<h3 class="section-headline">Factoid</h3>
 						<div class="section-p">
@@ -393,6 +401,38 @@
 		</div>
 	</div>
 </section>
+
+<div id="embedModal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3>Modal</h3>
+				
+				<div class="form">
+	<script>
+window.talktype = window.talktype || function(f) {
+	  if(talktype.loaded)
+		f();
+	  else
+		(talktype.q=talktype.q||[]).push(arguments);
+	};
+</script>
+<div  id="metype-container" data-talktype-account-id="44" data-metype-host="https://metype-api.staging.quintype.com/"></div>
+
+<script type="text/javascript">
+  talktype(function() {
+    talktype.contributionWidgetIframe(document.getElementById("metype-container"));
+  });
+</script>
+				</div>
+				
+				<!-- modal close button -->
+				<a href="javascript:void(0);" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
 
 
 <!-- js files --> 

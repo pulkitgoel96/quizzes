@@ -282,9 +282,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	margin-left: 20px;
 	position: absolute;
-	right: 160px;
-	top: 200px;
-	width: 180px;
+	left: 532px;
+	top: 230px;
+	width: 240px;
 }
 .video-caption h3 {
 	color: #fff;
@@ -653,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
 	right: 8px;
 	top: 200px;
 	width: 35px;
-	z-index: 9999;
+	z-index: 1000;
 	display: none;
 }
 
@@ -675,9 +675,9 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2;
 }
 
-.wrapper.bg2::after{
+.wrapper.bg2 .wrapper.wrapper-4-mid::after{
 	position: absolute;
-	z-index: 120;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	display: block;
@@ -689,10 +689,31 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../images/gfx-two-bg.png);
 }
 
-.wrapper.bg2 .container{
-	
+.wrapper.bg2 .wrapper.wrapper-4-mid .container{
+	z-index: 2;
 }
 
+.wrapper.bg3::after{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-image: url(../images/gfx-blue-bg.png);
+}
+
+
+.wrapper.bg3 .container{
+	z-index: 2;
+}
+.ops{
+	opacity: 0.9;
+}
 
 	
 

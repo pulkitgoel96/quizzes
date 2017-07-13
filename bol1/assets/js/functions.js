@@ -89,3 +89,19 @@ $(document).ready(function() {
   });
 });
 
+
+
+
+$(document).ready(function() {
+		$(document).on("click", '.trgtModal', function() {
+			$('#embedModal').addClass('modal--active');
+			$('.modal__content').addClass('modal__content--active');
+			
+	});
+	
+	$('.modal__close').click(function(){
+		$('#embedModal').removeClass('modal--active');
+		$('.modal__content').removeClass('modal__content--active');
+	});
+	
+	});
