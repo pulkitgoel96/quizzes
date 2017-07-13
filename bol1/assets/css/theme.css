@@ -649,7 +649,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-action.mobile-border-action {
-	display: block !important;
 	position: fixed;
 	right: 8px;
 	top: 200px;
@@ -657,6 +656,43 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 9999;
 	display: none;
 }
+
+.wrapper.bg1::after{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-image: url(../images/gfx-one-bg.png);
+}
+
+.wrapper.bg1 .container{
+	z-index: 2;
+}
+
+.wrapper.bg2::after{
+	position: absolute;
+	z-index: 120;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-image: url(../images/gfx-two-bg.png);
+}
+
+.wrapper.bg2 .container{
+	
+}
+
 
 	
 
