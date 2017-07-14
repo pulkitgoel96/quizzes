@@ -194,27 +194,30 @@
 }
 .video-slider .slick-dots li {
 	margin: 0 4px !important;
-}
-	
-	
+}	
 	
 	.bol-pol .section-p{
 	height: 190px;
-    
+		
 }
+
 	
 }
 
 @media (max-width: 767px) {
 	
+	.embedpols{
+	margin-top: -160px;
+}
+	
 	
 	.bol-pol .col-content > img{
-		height: 738px;
+		height: 445px;
 	}
 	
 		.bol-pol .section-p{
-	height: auto;
-    overflow: visible;
+	height: 355px;
+    overflow: hidden;
 }
 	
 .wrapper-1 {
