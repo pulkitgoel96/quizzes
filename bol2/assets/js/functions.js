@@ -101,8 +101,6 @@ $(document).ready(function() {
 });
 
 
-
-
 $(document).ready(function() {
 		$(document).on("click", '.trgtModal', function() {
 			$('#embedModal').addClass('modal--active');
@@ -115,4 +113,31 @@ $(document).ready(function() {
 		$('.modal__content').removeClass('modal__content--active');
 	});
 	
-	});
+});
+
+
+// Sections Story
+
+$(document).ready(function() {
+  var sections = [
+    {state: 'slider', id:2728},
+    {state: 'punjab', id:2666},
+    {state: 'uttar-pradesh', id:2665},
+    {state: 'uttarakhand', id:2667},
+    {state: 'goa', id:2668},
+    {state: 'manipur', id:2669}
+  ];
+
+  sections.forEach(function(section) {
+    $.getJSON('https://www.thequint.com/api/v1/stories?limit=5&section-id=' + section.id, function(res) {
+      var stories = res.stories;
+      var elements = stories.map(function(story) { return '<div class="story-list"><div class="story-item"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&amp;rect=0,0,2348,1321&amp;q=35&amp;w=270&amp;fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div></div>'});
+      elements.forEach(function(element) {
+        var id = '#' + section.state + '-election-stories';
+        $(id).append(element);
+      });
+    });
+  });
+});
+
+
