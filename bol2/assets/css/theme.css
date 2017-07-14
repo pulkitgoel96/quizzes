@@ -116,11 +116,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-family: "Fjalla One", sans-serif;
 	font-size: 18px;
-	left: -160px;
+	left: -190px;
 	line-height: 130%;
 	position: absolute;
 	top: 142px;
-	width: 160px;
+	width: 185px;
 }
 .wrapper-1 .story-card figure {
 	background: rgba(0, 0, 0, 0) url("../images/story-bg-o.png") no-repeat scroll 0 0 / 100% auto;
@@ -373,6 +373,11 @@ h1, h2, h3, h4, h5, h6 {
 	background: rgba(0, 0, 0, 0) url("../images/story-bg-o.png") no-repeat scroll 0 0 / 100% auto;
 	padding: 20px 20px 32px;
 }
+.wrapper-3 .story-card figure a{
+	display: block;
+	position: relative;
+}
+
 .wrapper-3 .story-card .story-image {
 	position: relative;
 }
@@ -542,12 +547,12 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper-5 .story-card figcaption .caption-text {
 	color: #fff;
 	font-family: "Fjalla One", sans-serif;
-	font-size: 20px;
+	font-size: 19px;
 	position: absolute;
-	right: 15px;
+	right: 7px;
 	text-align: right;
-	top: 60px;
-	width: 200px;
+	top: 62px;
+	width: 220px;
 }
 .factoid {
 	color: #fff;
@@ -656,7 +661,6 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1000;
 	display: none;
 }
-
 .wrapper.bg1::after{
 	position: absolute;
 	z-index: 1;

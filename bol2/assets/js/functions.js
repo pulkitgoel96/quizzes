@@ -116,24 +116,149 @@ $(document).ready(function() {
 });
 
 
+
+
+
+//Story Seetings
+
+$(document).ready(function() {
+	setTimeout(function(){
+		$("#sectionId-bol-stories li").each(function(i) {
+    $(this).addClass("item" + (i+1))
+   });
+}, 1000);
+	
+});
+
+
+	// Set story
+$(document).ready(function() {
+	setTimeout(function(){
+		
+		
+		//Story 1
+		
+		var story_image_1 = $('.item1').find('.item-image').html();
+		var story_caption_1 = $('.item1').find('.item-caption').html();
+		var story_link_1 = $('.item1').find('.item-link').attr('href');
+		
+		$('#story_1').find('.story-image').html(story_image_1);
+		$('#story_1').find('.story-caption').html(story_caption_1);
+		$('#story_1').find('.story-link').attr('href', story_link_1);
+		
+		//Story 2
+		
+		var story_image_2 = $('.item2').find('.item-image').html();
+		var story_caption_2 = $('.item2').find('.item-caption').html();
+		var story_link_2 = $('.item2').find('.item-link').attr('href');
+		
+		$('#story_2').find('.story-image').html(story_image_2);
+		$('#story_2').find('.story-caption').html(story_caption_2);
+		$('#story_2').find('.story-link').attr('href', story_link_2);
+		
+		//Story 3
+		
+		var story_image_3 = $('.item3').find('.item-image').html();
+		var story_caption_3 = $('.item3').find('.item-caption').html();
+		var story_link_3 = $('.item3').find('.item-link').attr('href');
+		
+		$('#story_3').find('.story-image').html(story_image_3);
+		$('#story_3').find('.story-caption').html(story_caption_3);
+		$('#story_3').find('.story-link').attr('href', story_link_3);
+		
+		//Story 4
+		
+		var story_image_4 = $('.item4').find('.item-image').html();
+		var story_caption_4 = $('.item4').find('.item-caption').html();
+		var story_link_4 = $('.item4').find('.item-link').attr('href');
+		
+		$('#story_4').find('.story-image').html(story_image_4);
+		$('#story_4').find('.story-caption').html(story_caption_4);
+		$('#story_4').find('.story-link').attr('href', story_link_4);
+		
+		//Story 5
+		
+		var story_image_5 = $('.item5').find('.item-image').html();
+		var story_caption_5 = $('.item5').find('.item-caption').html();
+		var story_link_5 = $('.item5').find('.item-link').attr('href');
+		
+		$('#story_5').find('.story-image').html(story_image_5);
+		$('#story_5').find('.story-caption').html(story_caption_5);
+		$('#story_5').find('.story-link').attr('href', story_link_5);
+		
+		//Story 6
+		
+		var story_image_6 = $('.item6').find('.item-image').html();
+		var story_caption_6 = $('.item6').find('.item-caption').html();
+		var story_link_6 = $('.item6').find('.item-link').attr('href');
+		
+		$('#story_6').find('.story-image').html(story_image_6);
+		$('#story_6').find('.story-caption').html(story_caption_6);
+		$('#story_6').find('.story-link').attr('href', story_link_6);
+		
+		//Story 7
+		
+		var story_image_7 = $('.item7').find('.item-image').html();
+		var story_caption_7 = $('.item7').find('.item-caption').html();
+		var story_link_7 = $('.item7').find('.item-link').attr('href');
+		
+		$('#story_7').find('.story-image').html(story_image_7);
+		$('#story_7').find('.story-caption').html(story_caption_7);
+		$('#story_7').find('.story-link').attr('href', story_link_7);
+		
+		//Story 8
+		
+		var story_image_8 = $('.item8').find('.item-image').html();
+		var story_caption_8 = $('.item8').find('.item-caption').html();
+		var story_link_8 = $('.item8').find('.item-link').attr('href');
+		
+		$('#story_8').find('.story-image').html(story_image_8);
+		$('#story_8').find('.story-caption').html(story_caption_8);
+		$('#story_8').find('.story-link').attr('href', story_link_8);
+		
+		//Story 9
+		
+		var story_image_9 = $('.item9').find('.item-image').html();
+		var story_caption_9 = $('.item9').find('.item-caption').html();
+		var story_link_9 = $('.item9').find('.item-link').attr('href');
+		
+		$('#story_9').find('.story-image').html(story_image_9);
+		$('#story_9').find('.story-caption').html(story_caption_9);
+		$('#story_9').find('.story-link').attr('href', story_link_9);
+		
+		//Story 10
+		
+		var story_image_10 = $('.item10').find('.item-image').html();
+		var story_caption_10 = $('.item10').find('.item-caption').html();
+		var story_link_10 = $('.item10').find('.item-link').attr('href');
+		
+		$('#story_10').find('.story-image').html(story_image_10);
+		$('#story_10').find('.story-caption').html(story_caption_10);
+		$('#story_10').find('.story-link').attr('href', story_link_10);
+		
+		
+	}, 1500);
+});
+
+
 // Sections Story
 
 $(document).ready(function() {
   var sections = [
-    {state: 'slider', id:2728},
-    {state: 'punjab', id:2666},
-    {state: 'uttar-pradesh', id:2665},
-    {state: 'uttarakhand', id:2667},
-    {state: 'goa', id:2668},
-    {state: 'manipur', id:2669}
+    //{state: 'slider', id:2728},
+    {state: 'sectionId', id:2666}
+    //{state: 'uttar-pradesh', id:2665},
+    //{state: 'uttarakhand', id:2667},
+    //{state: 'goa', id:2668},
+    //{state: 'manipur', id:2669}
   ];
 
   sections.forEach(function(section) {
-    $.getJSON('https://www.thequint.com/api/v1/stories?limit=5&section-id=' + section.id, function(res) {
+    $.getJSON('https://www.thequint.com/api/v1/stories?limit=10&section-id=' + section.id, function(res) {
       var stories = res.stories;
-      var elements = stories.map(function(story) { return '<div class="story-list"><div class="story-item"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&amp;rect=0,0,2348,1321&amp;q=35&amp;w=270&amp;fm=pjpg" /><figcaption>' + story.headline + '</figcaption></figure></a></div></div>'});
+      var elements = stories.map(function(story) { return '<li><a class="item-link" href="http://www.thequint.com/' + story.slug + '" target="blank"><figure><div class="item-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&amp;rect=0,0,2348,1321&amp;q=80&amp;w=672&amp;fm=pjpg" /></div><figcaption class="item-caption">' + story.headline + '</figcaption></figure></a></li>'});
       elements.forEach(function(element) {
-        var id = '#' + section.state + '-election-stories';
+        var id = '#' + section.state + '-bol-stories';
         $(id).append(element);
       });
     });
