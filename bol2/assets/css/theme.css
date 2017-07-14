@@ -719,5 +719,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
+.bol-pol .section-p{
+	height: 260px;
+    overflow: auto;
+}
+
 	
 
