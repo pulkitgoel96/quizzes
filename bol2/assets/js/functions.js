@@ -4,6 +4,13 @@ sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-sect
 
 
 $(document).ready(function() {
+	
+	
+	// For First Caption show
+	
+	$('.videoCaption').html($('.video-slide .frame-item:first').find('figcaption').text());
+	
+	
 	$('.video-slide').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -65,11 +72,15 @@ $(document).ready(function() {
     cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
     touchThreshold: 100
     });
+	
+	
 });
 
-$('.photo-gallery').on('afterChange', function(event, slick, currentSlide, nextSlide){
+// External Caption
+
+$('.video-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
   //console.log($(slick.$slides.get(currentSlide)).find('figcaption').text());
-	//$('.logo span').html($(slick.$slides.get(currentSlide)).find('figcaption').text());
+	$('.videoCaption').html($(slick.$slides.get(currentSlide)).find('figcaption').text());
 });
 
 
