@@ -16,11 +16,11 @@ function showInfo(data) {
 	
 	document.getElementById("data-2").innerHTML = "<div>" +[data[0].section2,] +"</div>";
 
-	document.getElementById("data-3").innerHTML = "<div>" +[data[0].section3,] +"</div>";
+	//document.getElementById("data-3").innerHTML = "<div>" +[data[0].section3,] +"</div>";
 	
-	document.getElementById("data-4").innerHTML = "<div>" +[data[0].section4,] +"</div>";
+	//document.getElementById("data-4").innerHTML = "<div>" +[data[0].section4,] +"</div>";
 	
-	document.getElementById("data-5").innerHTML = "<div>" +[data[0].section5,] +"</div>";
+	//document.getElementById("data-5").innerHTML = "<div>" +[data[0].section5,] +"</div>";
 
 
 }
