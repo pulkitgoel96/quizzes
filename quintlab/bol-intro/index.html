@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Bol Intro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="https://fea.assettype.com/thequint/assets/thequint-22da29e979b428e693c556d9288140f9393a8df6c0ebf02940b9cc1b6be1a3b9.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.bol-intro {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 1.5em;
+    background: #f7f7f7;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    position: relative;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.bol-intro:before {
+    position: absolute;
+    top: -80px;
+    left: 40px;
+    height: 105px;
+    width: 150px;
+    content: ' ';
+    z-index: 9;
+    background-image: url(images/bol-top-dot.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bol-intro:after {
+    position: absolute;
+    bottom: -80px;
+    right: 40px;
+    height: 105px;
+    width: 150px;
+    content: ' ';
+    z-index: 9;
+    background-image: url(images/bol-top-dot.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bol-intro img {
+    width: 100%;
+    display: inline-block;
+}
+.bol-intro p {
+    font-weight: 300;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.story-element-text p {
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+/* #01 */
+.bol-intro .first--block {
+    margin-top: 110px;
+    /*background-image: url(images/bol-top-bg.png);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #f06822;
+}
+.bol-intro .first--block:before {
+    position: absolute;
+    top: -47px;
+    left: 0;
+    height: 62px;
+    width: 100%;
+    content: ' ';
+    background-image: url(images/Orange-top.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.first--block__logo {
+    position: absolute;
+    margin: 0 auto;
+    top: -105px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    text-align: center;
+}
+.first--block__logo .slogan {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: inline-block;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.first--block__content {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 630px;
+    padding-top: 100px;
+}
+.first--block__content p {
+    font-size: 20px;
+}
+.first--block__img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 30px 0;
+    max-width: 530px;
+    position: relative;
+}
+.first--block__img:before {
+    position: absolute;
+    top: -75px;
+    right: -106px;
+    height: 110px;
+    width: 110px;
+    content: ' ';
+    background-image: url(images/bol-loud-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* #02 */
+.bol-intro .second--block {
+    /*background-image: url(images/bol-mid-bg.png);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*margin-top: -40px;*/
+    position: relative;
+    z-index: 1;
+    padding: 30px 0;
+    background-color: #27326d;
+}
+.second--block:before {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    content: ' ';
+    background-image: url(images/Blue-top.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.second--block:after {
+    position: absolute;
+    bottom: -47px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    content: ' ';
+    background-image: url(images/Blue-bottom.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.second--block__content {
+    margin: 0 auto;
+    max-width: 510px;
+    padding-left: 15px;
+    border-left: 5px #ed24cc solid;
+}
+.second--block__content p {
+    font-size: 22px;
+}
+.second--block__content--title {
+    padding: 10px 0 2px;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.second--block__content--title .highlight {
+    color: #17c51f;
+}
+.second--block__lady-icon {
+    position: absolute;
+    left: 3px;
+    bottom: 0;
+    width: 127px;
+    height: 100px;
+}
+
+/* #03 */
+.bol-intro .third--block {
+    background-color: #f7f7f7;
+}
+.third--block__content {
+    margin: 0 auto;
+    max-width: 670px;
+    padding: 100px 30px;
+    color: #f06822;
+}
+.third--block__content p {
+    font-size: 20px;
+}
+
+/* #04 */
+.bol-intro .forth--block {
+    /*background-image: url(images/bol-btm-bg.png);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #34c634;
+}
+.forth--block:before {
+    position: absolute;
+    top: -47px;
+    left: 0;
+    height: 62px;
+    width: 100%;
+    content: ' ';
+    background-image: url(images/Green-top.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.forth--block:after {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    height: 62px;
+    width: 100%;
+    content: ' ';
+    background-image: url(images/Green-bottom.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.forth--block-section {
+    padding-bottom: 10px;
+}
+.forth--block-section:before, .forth--block-section:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.forth--block-section:after {
+    clear: both;
+}
+.forth--block-section {
+    *zoom: 1;
+}
+
+.forth--block__content {
+    margin: 0 auto;
+    max-width: 610px;
+    padding: 8px 30px 30px;
+    font-weight: 700;
+    font-family: "Georgia", serif;
+}
+.forth--block__content h3 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    line-height: 34px;
+} 
+.forth--block__content h3 .bg-color {
+    background-color: #27326d;
+    padding: 5px 10px;
+    font-size: 22px;
+    margin-right: 5px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Merriweather Sans", sans-serif; 
+}
+.forth--block__content p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.forth--block__left {
+    float: right;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.forth--block__left img {
+    margin: 0 auto;
+    max-width: 270px;
+    display: block;
+    padding: 0 20px;
+}
+.forth--block__left .fade--box {
+    background-color: rgba(0,0,0,0.15);
+    min-height: 138px;
+    width: 90%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.forth--block__right {
+    float: right;
+    width: 50%;
+    padding-top: 40px;
+}
+.forth--block__right--headline {
+    padding: 30px 90px 10px 0;
+    font-size: 20px;
+    font-style: normal;
+    position: relative;
+    letter-spacing: 1px;
+    font-family: "Merriweather Sans", sans-serif; 
+}
+.forth--block__right--headline:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    width: 100px;
+    height: 8px;
+    background-color: #ed24cc;
+}
+
+.forth--block__right strong {
+    color: #27326d;
+    font-style: normal;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.forth--block__right p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 799px) {
+    .bol-intro {
+        padding: 0 1em;
+    }
+    .first--block__img:before {
+        display: none;
+    }
+    .bol-intro:before {
+        top: -70px;
+        left: 30px;
+        height: 77px;
+        width: 110px;
+    }
+    .bol-intro:after {
+        bottom: -70px;
+        right: 30px;
+        height: 77px;
+        width: 110px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bol-intro .first--block:before {
+        top: -37px;
+    }
+    .bol-intro .second--block:before {
+        top: -37px;
+    }
+    .bol-intro .forth--block:before {
+        top: -37px;
+    }
+    .first--block__logo {
+        top: -95px;
+        width: 200px;
+    }
+    .bol-intro .first--block {
+        margin-top: 100px;
+    }
+    .bol-intro:before,
+    .bol-intro:after {
+        display: none;
+    }
+
+    .second--block__content {
+        max-width: 630px;
+        padding: 0 30px;
+        border-left: 0 none;
+    }
+    .second--block__content p {
+        font-size: 18px;
+    }
+    .second--block__content--title {
+        font-size: 24px;
+    }
+    .second--block__lady-icon {
+        display: none;
+    }
+
+    .third--block__content {
+        padding: 70px 30px;
+    }
+
+    .forth--block__content {
+
+    }
+    .forth--block__content h3 {
+        font-size: 22px;
+        margin: 0 0 3px;
+        line-height: 30px;
+    } 
+    .forth--block__content h3 .bg-color {
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-right: 2px; 
+    }
+    .forth--block__content p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .forth--block__right {
+        padding-top: 40px;
+    }
+    .forth--block__right--headline {
+        padding: 15px 20px 5px 0;
+        font-size: 16px;
+    }
+    .forth--block__right p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .forth--block__right--headline:before {
+        width: 100px;
+        height: 5px;
+    }
+    .forth--block__left .fade--box {
+        min-height: 100px;
+    }
+    .forth--block:after {
+        bottom: -48px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .bol-intro .first--block:before {
+        top: -24px;
+    }
+    .bol-intro .second--block:before {
+        top: -24px;
+    }
+    .bol-intro .forth--block:before {
+        top: -24px;
+    }
+    .first--block__logo {
+        top: -67px;
+        width: 150px;
+    }
+    .first--block__logo .slogan {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .first--block__content p {
+        font-size: 18px;
+    }
+    .bol-intro .first--block {
+        margin-top: 70px;
+    }
+    .second--block__content--title {
+        font-size: 18px;
+    }
+
+    .third--block__content {
+        padding: 50px 30px;
+    }
+    .third--block__content p {
+        font-size: 18px;
+    }
+
+    .forth--block__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 12px
+    }
+    .forth--block__content h3 {
+        font-size: 18px;
+        line-height: 24px;
+    } 
+    .forth--block__content h3 .bg-color {
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+    .forth--block__left {
+        float: none;
+        width: 100%;
+    }
+    .forth--block__left img {
+        max-width: 300px;
+    }
+    .forth--block__right {
+        float: none;
+        width: 100%;
+        padding: 0 20px 20px;
+    }
+    .forth--block__left .fade--box {
+        width: 100%;
+    }
+    .forth--block:after {
+        bottom: -38px;
+        height: 40px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+<div class="bol-intro">
+    <div class="first--block">
+        <div class="first--block__logo"><img src="images/bol-logo.png"><span class="slogan">Love Your Bhasha</span></div>
+        <div class="first--block__content">
+            <p>India has a billion speakers, talking to each other in <strong>over five hundred mother tongues</strong>. Some languages share the same words, others have none in common. Some mother tongues have Sanskrit as their root, others have Persian. Some mother tongues are spoken only in the cold mountains of Ladakh, some can only be heard in the wilderness of the Andamans.</p><br>
+            <p>And yet, every one of these languages finds a home in India.</p>
+        </div>
+        <div class="first--block__img"><img src="images/bol-girl-graphic.png"></div>
+    </div>
+
+    <div class="second--block">
+        <div class="second--block__content">
+            <p>On Independence Day, The Quint is celebrating India’s different tongues with you, our audience.</p>
+            <h3 class="second--block__content--title">The Initiative is called <span class="highlight">BOL</span></h3>
+        </div>
+        <span class="second--block__lady-icon"><img src="images/bol-lady-icon.png"></span>
+    </div>
+
+    <div class="third--block">
+        <div class="third--block__content">
+            <p><strong>Bol.</strong> Because, now more than ever, we need to speak to each other.</p>
+            <p><strong>Bol.</strong> Because, we need to build bridges with the bricks of our words.</p>
+            <p><strong>Bol.</strong> Because, if there’s no dialogue now, there will be nothing left to speak about later.</p>
+            <br>
+            <p><strong>The Quint</strong> is giving you a chance to express yourself in your mother tongue. Tell us why you love your mother tongue.</p>
+        </div>
+    </div>
+    <div class="forth--block">
+        <div class="forth--block-section">
+            <div class="forth--block__content">
+                <h3>Sing. Write. Perform. Send us articles, poetry, WhatsApp videos, text messages.</h3>
+                <h3><span class="bg-color">RANT. RAVE. CRITICIZE. PRAISE.</span> Anything.</h3>
+                <p>Just don’t be silent.</p>
+
+            </div>
+            <div class="forth--block__right">
+                <h4 class="forth--block__right--headline">SHOW US HOW MUCH YOU LOVE YOUR BHASHA.</h4>
+                <p>Send us your <strong>BOL</strong><br>
+                at <a href="mailto:bol@thequint.com">bol@thequint.com</a><br>
+                or WhatsApp it<br>
+                to 9910181818</p>
+            </div>
+            <div class="forth--block__left"><img src="images/girl-illustration.png">
+                <span class="fade--box"></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <div class="story-element-text"><p>Testing</p></div> -->
+</div>
+</body>
+</html>
