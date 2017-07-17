@@ -200,11 +200,19 @@
 	height: 190px;
 		
 }
+	
+	.pol-embed .qp_a{
+		margin-bottom: 6px;
+	}
 
 	
 }
 
 @media (max-width: 767px) {
+	
+	.pol-embed .qp_a{
+		margin-bottom: 20px;
+	}
 	
 	.embedpols{
 	margin-top: -160px;
@@ -212,7 +220,8 @@
 	
 	
 	.bol-pol .col-content > img{
-		height: 445px;
+/*		height: 445px;*/
+		height: 400px;
 	}
 	
 		.bol-pol .section-p{

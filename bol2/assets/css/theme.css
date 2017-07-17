@@ -793,6 +793,54 @@ h1, h2, h3, h4, h5, h6 {
 	height: 260px;
     overflow: auto;
 }
+.pol-embed .embed-heading{
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 10px 0;
+	font-weight: 600;
+}
+
+.pol-embed .qp_a{
+	position: relative;
+	font-size: 15px;
+	margin:0px 0px 20px 30px;
+	font-style: italic;
+	line-height: 130%;
+}
+.pol-embed .qp_a span{
+	display: block;
+	padding-left: 25px;
+}
+
+.pol-embed .qp_a input[type='radio']{
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+
+.embed-btn{
+	margin-left: 30px;
+}
+.embed-btn .qp_btna{
+	display: inline-block;
+}
+
+.embed-btn input{
+	display: inline-block;
+	background: #fff;
+	padding: 10px 15px;
+	border:0;
+	border-radius: 2px;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+.embed-btn input:hover{
+	background: #006837;
+	color: #fff;
+}
+
+
 
 
 	
