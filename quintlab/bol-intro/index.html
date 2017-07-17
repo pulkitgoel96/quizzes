@@ -12,16 +12,18 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
 .bol-intro {
-    margin: 0 auto;
+    margin: 0 auto 70px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 0 1.5em;
     background: #f7f7f7;
     color: #fff;
     font-weight: 300;
     font-style: italic;
     position: relative;
-    font-family: "Merriweather", "Georgia", serif;
+    text-align: left;
+    /*font-family: "Merriweather", "Georgia", serif;*/
+    font-family: "Georgia", serif;
 }
 .bol-intro:before {
     position: absolute;
@@ -53,7 +55,7 @@
 }
 .bol-intro p {
     font-weight: 300;
-    font-family: "Merriweather", "Georgia", serif;
+    font-family: "Georgia", serif;
 }
 .story-element-text p {
     font-weight: 300;
@@ -101,24 +103,23 @@
 }
 .first--block__content {
     margin: 0 auto;
-    padding: 0 30px;
-    max-width: 630px;
-    padding-top: 100px;
+    padding: 100px 30px 0;
+    max-width: 720px;
 }
 .first--block__content p {
-    font-size: 20px;
+    font-size: 22px;
 }
 .first--block__img {
     display: block;
     margin: 0 auto;
     padding: 20px 30px 0;
-    max-width: 530px;
+    max-width: 600px;
     position: relative;
 }
 .first--block__img:before {
     position: absolute;
-    top: -75px;
-    right: -106px;
+    top: -80px;
+    right: -74px;
     height: 110px;
     width: 110px;
     content: ' ';
@@ -191,12 +192,12 @@
 }
 .third--block__content {
     margin: 0 auto;
-    max-width: 670px;
-    padding: 100px 30px;
+    max-width: 700px;
+    padding: 100px 10px;
     color: #f06822;
 }
 .third--block__content p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* #04 */
@@ -245,8 +246,8 @@
 
 .forth--block__content {
     margin: 0 auto;
-    max-width: 610px;
-    padding: 8px 30px 30px;
+    max-width: 640px;
+    padding: 13px 30px 30px;
     font-weight: 700;
     font-family: "Georgia", serif;
 }
@@ -266,7 +267,7 @@
 }
 .forth--block__content p {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .forth--block__left {
@@ -277,7 +278,7 @@
 }
 .forth--block__left img {
     margin: 0 auto;
-    max-width: 270px;
+    max-width: 295px;
     display: block;
     padding: 0 20px;
 }
@@ -315,16 +316,20 @@
 
 .forth--block__right strong {
     color: #27326d;
+    font-size: 28px;
     font-style: normal;
     font-family: "Merriweather Sans", sans-serif;
 }
 .forth--block__right p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 799px) {
     .bol-intro {
         padding: 0 1em;
+    }
+    .bol-intro .first--block:before {
+        top: -36px;
     }
     .first--block__img:before {
         display: none;
@@ -341,23 +346,35 @@
         height: 77px;
         width: 110px;
     }
-}
-@media only screen and (max-width: 600px) {
-    .bol-intro .first--block:before {
-        top: -37px;
-    }
     .bol-intro .second--block:before {
-        top: -37px;
+        top: -36px;
     }
     .bol-intro .forth--block:before {
-        top: -37px;
+        top: -36px;
     }
     .first--block__logo {
         top: -95px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bol-intro {
+        margin: 0 auto 45px;
+    }
+    .bol-intro .first--block:before {
+        top: -28px;
+    }
+    .bol-intro .second--block:before {
+        top: -28px;
+    }
+    .bol-intro .forth--block:before {
+        top: -28px;
+    }
+    .first--block__logo {
+        top: -88px;
         width: 200px;
     }
     .bol-intro .first--block {
-        margin-top: 100px;
+        margin-top: 90px;
     }
     .bol-intro:before,
     .bol-intro:after {
@@ -411,6 +428,9 @@
         font-size: 18px;
         line-height: 22px;
     }
+    .forth--block__right strong {
+        font-size: 22px;
+    }
     .forth--block__right--headline:before {
         width: 100px;
         height: 5px;
@@ -425,37 +445,51 @@
 }
 @media only screen and (max-width: 480px) {
     .bol-intro .first--block:before {
-        top: -24px;
+        top: -18px;
     }
     .bol-intro .second--block:before {
-        top: -24px;
+        top: -18px;
     }
     .bol-intro .forth--block:before {
-        top: -24px;
+        top: -18px;
     }
     .first--block__logo {
-        top: -67px;
+        top: -63px;
         width: 150px;
     }
     .first--block__logo .slogan {
         font-size: 12px;
         letter-spacing: 1px;
     }
+    .first--block__content {
+        padding: 90px 20px 0;
+    }
     .first--block__content p {
-        font-size: 18px;
+        font-size: 20px;
     }
     .bol-intro .first--block {
         margin-top: 70px;
     }
+    .second--block__content {
+        padding: 0 20px;
+    }
+    .second--block__content p {
+        font-size: 20px;
+    }
     .second--block__content--title {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .second--block:after {
+        bottom: -38px;
+        height: 40px;
     }
 
+
     .third--block__content {
-        padding: 50px 30px;
+        padding: 30px 20px;
     }
     .third--block__content p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .forth--block__content {
@@ -492,7 +526,6 @@
         height: 40px;
     }
 }
-
 </style>
 </head>
 
