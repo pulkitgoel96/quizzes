@@ -3,6 +3,16 @@ window.sr = ScrollReveal();
 sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-section-gfx, .bol-chr1, .border-box, .bol-chr2, .bol-frame-slider, .bol-gfx, .tel-bg, .factoid, .bol-chr3, .bol-gfx-2, .green-bg', { duration: 1000 });
 
 
+// Social 
+    $(".social-back").click(function(e) {
+        $(".social-icons").slideToggle(400);
+        return false;
+    });
+    $("body").click(function() {
+        $(".social-icons").slideUp();
+    });
+
+
 $(document).ready(function() {
 	// For First Caption show
 	$('.slider-2').slick({
@@ -47,17 +57,7 @@ $(document).ready(function() {
       ]
     });
 	
-	$('.photo-gallery').slick({
-	autoplay: true,
-    draggable: true,
-    arrows: true,
-    dots: false,
-    fade: true,
-    speed: 900,
-    infinite: true,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-    touchThreshold: 100
-    });
+	
 	
 	
 });
@@ -283,6 +283,20 @@ $(document).ready(function() {
       arrows: false,
       autoplaySpeed: 2000
     });
+	  
+	  
+	$('.photo-gallery').slick({
+		autoplay: true,
+		draggable: true,
+		arrows: true,
+		dots: false,
+		fade: true,
+		speed: 900,
+		infinite: true,
+		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+		touchThreshold: 100
+    });
+	    
 	}, 4000);
 })
 
@@ -314,6 +328,38 @@ $(document).ready(function() {
     elements.forEach(function(element) {
       if(element){
         $('#single-story').append(element);
+      }
+    });
+  });
+});
+
+
+
+//Photo Gallery
+$(document).ready(function() {
+  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/068838a0-30f8-467a-8d95-dba9cc91caeb', function(res) {
+    var lastStory = res.story;
+    var cards = lastStory.cards;
+    var cardsWithImages = cards.filter(function(card) {
+      return card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'] && card.metadata.attributes['liveblogimage'][0] == "true"
+    }).slice(0,5)
+    elements = cardsWithImages.map(function(card) {
+      var imageKey;
+      var titleElement;
+      if(card.metadata){
+        if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
+          var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
+          titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
+          imageKey= (imageElement || {})["image-s3-key"];
+        }
+      }
+      if(imageKey){
+        return '<div class="gallery-img"><figure><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /><figcaption>'+ titleElement.text + '</figcaption></figure></div>'
+      }
+    });
+    elements.forEach(function(element) {
+      if(element){
+        $('#photo-gallery').append(element);
       }
     });
   });

@@ -34,6 +34,57 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 }
 /*custom grid*/
+
+.thequint-logo{
+	display: block;
+    left: 12px;
+    position: fixed;
+    top: 15px;
+    width: 50px;
+    z-index: 1000;
+}
+.thequint-logo a{
+	display: block;
+}
+
+/*social*/
+.social--section {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    display: block;
+    text-align: center;
+	z-index: 1000;
+}
+.social--section .social-back {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.social--section .social-icons {
+    display: none;
+}
+.social--section .social-icons.show {
+    display: block;
+}
+.social-icons .facebook,
+.social-icons .twitter,
+.social-icons .copyright {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.social img {
+    width: 100%;
+}
+
+
+
+
 .row {
 	position: relative;
 	margin: 0px -5px 0px -5px;
@@ -512,6 +563,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0px;
 	position: relative;
 }
+
+.wrapper-4 .story-card figure {
+	background: rgba(0, 0, 0, 0) url("../images/story-bg-o.png") no-repeat scroll 0 0 / 100% auto;
+	padding: 20px 20px 32px;
+}
+
+.wrapper-4 .story-card figure a{position: relative; display: block;}
+
 .wrapper-4 .story-card figcaption {
 	position: absolute;
 	bottom: 0;
