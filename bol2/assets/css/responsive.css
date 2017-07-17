@@ -210,8 +210,12 @@
 
 @media (max-width: 767px) {
 	
+	.pol-embed .embed-heading{
+		font-size: 17px;
+	}
+	
 	.pol-embed .qp_a{
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 	
 	.embedpols{
@@ -221,7 +225,7 @@
 	
 	.bol-pol .col-content > img{
 /*		height: 445px;*/
-		height: 400px;
+		height: 350px;
 	}
 	
 		.bol-pol .section-p{
