@@ -839,8 +839,8 @@ h1, h2, h3, h4, h5, h6 {
 	background: #006837;
 	color: #fff;
 }
-#qp_cl_1118920{
-	display: none;
+.pol-embed #qp_cl_1118920{
+	display: none !important;
 }
 
 
@@ -859,7 +859,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qp_rp_0_1118920{
 	position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0;
 }
 
@@ -879,7 +879,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qp_rp_1_1118920{
 	position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0;
 }
 
@@ -898,7 +898,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qp_rp_2_1118920{
 	position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0;
 }
 
@@ -917,7 +917,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qp_rp_3_1118920{
 	position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0;
 }
 
