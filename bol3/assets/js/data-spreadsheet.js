@@ -19,7 +19,11 @@ function showInfo(data) {
 	    "<p>" +[data[1].Factoid,] +"</p>" +
 	    "<p>" +[data[2].Factoid,] +"</p>";
 
-	document.getElementById("data-3").innerHTML = "<p>" +[data[0].Khulkebol,] +"</p>";
+	document.getElementById("data-3").innerHTML =
+		"<p>" +[data[0].Khulkebol,] +"</p>" +
+		"<p>" +[data[1].Khulkebol,] +"</p>" +
+		"<p>" +[data[2].Khulkebol,] +"</p>" +
+		"<p>" +[data[3].Khulkebol,] +"</p>";
 	
 	//document.getElementById("data-4").innerHTML = "<div>" +[data[0].section4,] +"</div>";
 	

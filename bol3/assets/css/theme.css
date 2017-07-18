@@ -380,6 +380,10 @@ h1, h2, h3, h4, h5, h6 {
 	max-height: 240px;
 	overflow: auto;
 }
+#data-3{
+	max-height: 230px;
+	overflow: auto;
+}
 
 .col-content {
 	position: relative;
