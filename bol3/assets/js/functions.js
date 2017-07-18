@@ -57,6 +57,19 @@ $(document).ready(function(){
         }
       ]
     });
+	
+	
+		$('.photo-gallery').slick({
+		autoplay: true,
+		draggable: true,
+		arrows: true,
+		dots: false,
+		fade: true,
+		speed: 900,
+		infinite: true,
+		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+		touchThreshold: 100
+    });
 })
 
 
@@ -125,8 +138,8 @@ $(document).ready(function() {
   
   
   setTimeout(function(){
-	$('.videoCaption').html($('.video-slide .frame-item:first').find('figcaption').text());
 	
+	$('.videoCaption').html($('.video-slide .frame-item:first').find('figcaption').text());
 	
 	$('.video-slide').slick({
       slidesToShow: 1,
@@ -135,22 +148,7 @@ $(document).ready(function() {
 	  dots: true,
       arrows: false,
       autoplaySpeed: 2000
-    });
-	  
-	  
-	$('.photo-gallery').slick({
-		autoplay: true,
-		draggable: true,
-		arrows: true,
-		dots: false,
-		fade: true,
-		speed: 900,
-		infinite: true,
-		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-		touchThreshold: 100
-    });
-	  
-	  	
+    });	  	
 	    
 	}, 4000);
 })

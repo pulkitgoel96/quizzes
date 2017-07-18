@@ -12,11 +12,14 @@ Tabletop.init({
 window.addEventListener('DOMContentLoaded', init);
 function showInfo(data) {
 	
-	document.getElementById("data-1").innerHTML = "<div>" +[data[0].section1,] +"</div>";
+	document.getElementById("data-1").innerHTML = "<p>" +[data[0].Boletho,] +"</p>";
 	
-	document.getElementById("data-2").innerHTML = "<div>" +[data[0].section2,] +"</div>";
+	document.getElementById("data-2").innerHTML = 
+		"<p>" +[data[0].Factoid,] +"</p>" +
+	    "<p>" +[data[1].Factoid,] +"</p>" +
+	    "<p>" +[data[2].Factoid,] +"</p>";
 
-	//document.getElementById("data-3").innerHTML = "<div>" +[data[0].section3,] +"</div>";
+	document.getElementById("data-3").innerHTML = "<p>" +[data[0].Khulkebol,] +"</p>";
 	
 	//document.getElementById("data-4").innerHTML = "<div>" +[data[0].section4,] +"</div>";
 	

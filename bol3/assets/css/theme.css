@@ -368,6 +368,19 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper-2 .bol-khulke {
 	width: 38%;
 }
+
+.khulke-bg{
+	height: 320px;
+}
+.fact-bg{
+	min-height: 300px;
+}
+
+#data-2{
+	max-height: 240px;
+	overflow: auto;
+}
+
 .col-content {
 	position: relative;
 }
@@ -396,6 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 .bol-text-area {
 	position: relative;
 	margin-left: 5px;
+	display: none;
 }
 .bol-text-area .write-textarea {
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -529,6 +543,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 	font-size: 16px;
 	text-align: center;
+	width: 100%;
 }
 .container.frame-slier-container .section-headline {
 	color: #fff;
