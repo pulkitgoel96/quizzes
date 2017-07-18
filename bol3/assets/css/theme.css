@@ -826,7 +826,7 @@ h1, h2, h3, h4, h5, h6 {
 .pol-embed .qp_a{
 	position: relative;
 	font-size: 14px;
-	margin:0px 0px 14px 30px;
+	margin:14px 0px 0px 30px;
 	line-height: 130%;
 }
 .pol-embed .qp_a span{
@@ -842,6 +842,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .embed-btn{
 	margin-left: 30px;
+	margin-top: 15px;
 }
 .embed-btn .qp_btna{
 	display: inline-block;
