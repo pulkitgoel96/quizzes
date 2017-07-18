@@ -549,5 +549,8 @@
 .wrapper .story-card figure {
 	padding: 13px 12px 20px !important
 }
+	.pol-embed .qp_a, .embed-btn{
+		margin-left: 0;
+	}
 
 }
