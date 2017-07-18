@@ -208,6 +208,9 @@
 }
 
 @media (max-width: 767px) {
+	.video-caption{
+		height: 85px;
+	}
 	
 	.pol-embed .embed-heading{
 		font-size: 17px;
