@@ -32,44 +32,44 @@ var Story_0_Markup = function(story) {
 }
 
 var Story_1_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg" /></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 
 // Slider 1
 
 var Story_2_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_3_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_4_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 // Slider 2
 
 var Story_5_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_6_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_7_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_8_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption><img class="ops" src="assets/images/caption-bg.png" alt=""><div class="caption-text">${story.headline}</div></figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption><img class="ops" src="assets/images/caption-bg.png" alt=""><div class="caption-text">'+ story.headline +'</div></figcaption></a></figure>'
 }
 
 var Story_9_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 // Image Seetings
 
