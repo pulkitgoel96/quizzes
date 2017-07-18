@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
 var Story_0_Markup = function(story) {
-  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg" /></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
 var Story_1_Markup = function(story) {
