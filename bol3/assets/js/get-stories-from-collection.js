@@ -1,13 +1,13 @@
-var sketches_host = 'https://thequint.com'; //change to 'https://www.thequint.com' on production
+var sketches_host = 'https://www.thequint.com'; //change to 'https://www.thequint.com' on production
 var collection_slug = 'mcd-polls'; //change to the actual collection slug
 var noOfFirstCarouselStories = 4;
 var noOfsecondCarouselStories = 4;
 var noOfThirdCarouselStories = 4;
-var imageHost = "http://qt-staging-01.imgix.net"; //For Staging
-// var imageHost = "http://quintype-01.imgix.net"; //For production
+//var imageHost = "http://qt-staging-01.imgix.net"; //For Staging
+var imageHost = "http://quintype-01.imgix.net"; //For production
 
 $(document).ready(function() {
-  $.getJSON('https://thequint.com/api/v1/collections/mcd-polls', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/collections/mcd-polls', function(res) {
     var stories = res.items.filter(function(item) { return item.type == 'story'}).map(function(item) { return item.story });
 	  
     $('#story_0').append(Story_0_Markup(stories[0]));
