@@ -115,12 +115,9 @@ $(document).ready(function() {
 
 
 
-// Sections Story
-
-
 //Videos' section
 $(document).ready(function() {
-  var collectionSlug = 'ipl-videos'; //Needs to be replaced.
+  var collectionSlug = 'bol-video'; //Needs to be replaced.
   $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
     var stories = res.items.filter(function(item) {
       return item.type == 'story'
@@ -153,67 +150,3 @@ $(document).ready(function() {
 	}, 4000);
 })
 
-
-
-
-//Single Story
-$(document).ready(function() {
-  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/9e3c5172-b3f1-4fcf-ac3d-08140013dda9', function(res) {
-    var lastStory = res.story;
-    var cards = lastStory.cards;
-    var cardsWithImages = cards.filter(function(card) {
-      return card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'] && card.metadata.attributes['liveblogimage'][0] == "true"
-    }).slice(0,1)
-    elements = cardsWithImages.map(function(card) {
-      var imageKey;
-      var titleElement;
-      if(card.metadata){
-        if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
-          var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
-          titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
-          imageKey= (imageElement || {})["image-s3-key"];
-        }
-      }
-      if(imageKey){
-        return '<figure class="more-list"><a href="https://www.thequint.com/section/sports" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /></div><figcaption>' + titleElement.text + '</figcaption></a></figure>'
-      }
-    });
-    elements.forEach(function(element) {
-      if(element){
-        $('#single-story').append(element);
-      }
-    });
-  });
-});
-
-
-
-//Photo Gallery
-$(document).ready(function() {
-  $.getJSON('https://thequint-labs.quintype.io/api/v1/stories/068838a0-30f8-467a-8d95-dba9cc91caeb', function(res) {
-    var lastStory = res.story;
-    var cards = lastStory.cards;
-    var cardsWithImages = cards.filter(function(card) {
-      return card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'] && card.metadata.attributes['liveblogimage'][0] == "true"
-    }).slice(0,5)
-    elements = cardsWithImages.map(function(card) {
-      var imageKey;
-      var titleElement;
-      if(card.metadata){
-        if(card && card.metadata && card.metadata.attributes && card.metadata.attributes['liveblogimage'][0]=="true" ){
-          var imageElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'image'});
-          titleElement = card['story-elements'].find(function(storyElement) { return storyElement.type == 'title'}) || {};  
-          imageKey= (imageElement || {})["image-s3-key"];
-        }
-      }
-      if(imageKey){
-        return '<div class="gallery-img"><figure><img src="https://images.assettype.com/' + imageKey + '?q=70&amp;w=800&amp;fm=pjpg" /><figcaption>'+ titleElement.text + '</figcaption></figure></div>'
-      }
-    });
-    elements.forEach(function(element) {
-      if(element){
-        $('#photo-gallery').append(element);
-      }
-    });
-  });
-});

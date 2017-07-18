@@ -1,13 +1,10 @@
 var sketches_host = 'https://www.thequint.com'; //change to 'https://www.thequint.com' on production
-var collection_slug = 'mcd-polls'; //change to the actual collection slug
-var noOfFirstCarouselStories = 4;
-var noOfsecondCarouselStories = 4;
-var noOfThirdCarouselStories = 4;
+var collection_slug = 'bol-text'; //change to the actual collection slug
 //var imageHost = "http://qt-staging-01.imgix.net"; //For Staging
 var imageHost = "http://quintype-01.imgix.net"; //For production
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/collections/mcd-polls', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/collections/bol-text', function(res) {
     var stories = res.items.filter(function(item) { return item.type == 'story'}).map(function(item) { return item.story });
 	  
     $('#story_0').append(Story_0_Markup(stories[0]));
@@ -31,48 +28,48 @@ $(document).ready(function() {
 
 
 var Story_0_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="story-image"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_1_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="story-image"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 
 // Slider 1
 
 var Story_2_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_3_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_4_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 // Slider 2
 
 var Story_5_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_6_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_7_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="slider-img"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="slider-img"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 
 var Story_8_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="story-image"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption><img class="ops" src="assets/images/caption-bg.png" alt=""><div class="caption-text">${story.headline}</div></figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption><img class="ops" src="assets/images/caption-bg.png" alt=""><div class="caption-text">${story.headline}</div></figcaption></a></figure>`
 }
 
 var Story_9_Markup = function(story) {
-  return `<figure><a href=${story.slug}><div class="story-image"><img src=${imageSource(story['hero-image-s3-key'])}></div><figcaption>${story.headline}</figcaption></a></figure>`
+  return `<figure><a href="https://www.thequint.com/${story.slug}"><div class="story-image"><img src="${imageSource(story['hero-image-s3-key'])}"></div><figcaption>${story.headline}</figcaption></a></figure>`
 }
 // Image Seetings
 
