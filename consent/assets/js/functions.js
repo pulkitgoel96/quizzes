@@ -54,5 +54,14 @@ $(document).ready(function () {
 
 		}
 	});
+	
+	// Social 
+    $(".social-back").click(function(e) {
+        $(".social-icons").slideToggle(400);
+        return false;
+    });
+    $("body").click(function() {
+        $(".social-icons").slideUp();
+    });
 
 });

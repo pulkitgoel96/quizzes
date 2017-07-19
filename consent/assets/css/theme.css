@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 	display: block;
 	float: left;
-	font-size: 100%;
+	font-size: 16px;
 	height: 75px;
 	line-height: 115%;
 	margin: 0 1% 10px;
@@ -179,11 +179,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ans-container ul li p {
-  color: #561d47;
-  font-size: 130%;
-  line-height: 130%;
-  padding: 25px 100px;
-  text-align: justify;
+	margin-bottom: 0;
+	color: #561d47;
+	font-size: 20px;
+	line-height: 130%;
+	/*padding: 25px 100px;*/
+	padding: 25px 5px 10px 10px;
+	text-align: justify;
 }
 
 .ans-1.is-result, .ans-2.is-result, .ans-3.is-result, .ans-4.is-result, .ans-5.is-result {
@@ -217,4 +219,99 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
+/* New */
+.one-third {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	text-align: left;
+}
+.one-third a {
+	display: block;
+}
+.one-third img {
+	border: 3px dotted rgba(86,29,71,0.9);
+}
+.one-third .story-img {
+	width: 100%;
+	display: block;
+}
+.one-third .story-headline {
+	width: 100%;
+    display: block;
+    padding: 12px 5px;
+    font-size: 18px;
+    color: #561d47;
+}
+@media (max-width: 575px) {
+	/*#answerContainer .one-third {
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+	}
+	#answerContainer .one-third:last-child {
+		width: 100%;
+		padding: 0 10px;
+	}*/
+	#answerContainer .one-third .story-headline {
+		padding: 8px 0;
+	}
+}
+/*social*/
+.social--section {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    z-index: 9;
+    display: block;
+    text-align: center;
+}
+.social--section .social-back {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.social--section .social-icons {
+    display: none;
+}
+.social--section .social-icons.show {
+    display: block;
+}
+.social-icons .facebook,
+.social-icons .twitter,
+.social-icons .copyright {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.social img {
+    width: 100%;
+}
+@media(max-width: 960px) {
+    .social {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        z-index: 9999;
+        display: block;
+    }
+    .social-back {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+    .social-icons .facebook,
+    .social-icons .twitter,
+    .social-icons .copyright {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 8px;
+    }
+}
 
