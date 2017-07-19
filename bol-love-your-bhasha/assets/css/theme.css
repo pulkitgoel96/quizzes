@@ -616,7 +616,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .tel-bg {
 	position: absolute;
-	bottom: 25px;
+	bottom: -25px;
 	right: 0;
 	width: 40%;
 }
