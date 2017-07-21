@@ -15,50 +15,7 @@ sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-sect
 
 
 
-$(document).ready(function(){
-	$('.slider-2').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: true,
-      autoplaySpeed: 4000,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-			variableWidth: true
-            
-          }
-			
-        }
-		  
-      ]
-    });
-	  
-	  	$('.slider-3').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: true,
-      autoplaySpeed: 4000,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-			variableWidth: true
-            
-          }
-        }
-      ]
-    });
-	
-	
+$(document).ready(function(){	
 		$('.photo-gallery').slick({
 		autoplay: true,
 		draggable: true,
@@ -145,8 +102,52 @@ $(document).ready(function() {
 	  dots: true,
       arrows: false,
       autoplaySpeed: 2000
-    });	  	
+    });	  
+	  
+	  	$('.slider-2').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+			variableWidth: true
+            
+          }
+			
+        }
+		  
+      ]
+    });
+	  
+	  
+	  $('.slider-3').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+			variableWidth: true
+            
+          }
+        }
+      ]
+    });
+	  
 	    
-	}, 4000);
+	}, 3000);
 })
 
