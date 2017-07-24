@@ -643,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 	right: 7px;
 	text-align: right;
 	top: 62px;
-	width: 220px;
+	width: 218px;
 }
 .factoid {
 	color: #fff;
@@ -872,6 +872,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pol-embed #qp_cl_1123589{
 	display: none !important;
+}
+
+.story-card figcaption{
+	font-size: 17px;
 }
 
 

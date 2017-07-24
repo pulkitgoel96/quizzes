@@ -86,7 +86,7 @@
 	top: 408px;
 }
 .wrapper-1 .story-card figcaption {
-	font-size: 15px;
+	
 	left: -172px;
 	top: 140px;
 	width: 170px;
@@ -495,7 +495,7 @@
 	display: none;
 }
 .wrapper-5 .story-card figcaption .caption-text {
-	font-size: 15px;
+	font-size: 17px;
 	margin-top: 25px;
 	position: static;
 	right: inherit;
@@ -520,7 +520,7 @@
 	width: 200px;
 }
 .wrapper-6 .story-card figcaption {
-	font-size: 15px;
+	font-size: 17px;
 	margin-top: 25px;
 	padding-left: 0;
 	text-align: center;
