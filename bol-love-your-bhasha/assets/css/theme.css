@@ -963,6 +963,76 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	overflow: hidden;
 }
+.footer-sticky{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: none;
+	z-index: 200;
+	text-align: center;
+	padding: 10px 0px;
+	display: none;
+}
 
-	
+.footer-sticky-container{
+	position: relative;
+	display: inline-block;
+	width: 340px;
+}
+
+.footer-sticky-container img{
+	height: 50px;
+}
+
+.stick-cotent{
+	position: absolute;
+	top: 11px;
+	left: 0;
+	width: 100%;
+}
+.stick-cotent span{
+	font-style: italic;
+	float: left;
+	line-height: 100%;
+	margin: 7px 0 0 0px;
+}
+
+.stick-icon{
+	float: left;
+}
+
+
+
+.stick-icon a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #f906d7;
+	border-radius: 100%;
+	font-size: 1px;
+	overflow: hidden;
+	text-indent: -100px;
+	margin: 0px 7px 0 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.stick-icon a.is-text{
+	background-image: url(../images/ico-text.png);
+	background-size: 55%;
+}
+
+.stick-icon a.is-image{
+	background-image: url(../images/ico-image.png);
+	background-size: 55%;
+}
+
+.stick-icon a:hover{
+	background-color: #006837;
+}
+.align-content{
+	display: inline-block;
+}
+
 

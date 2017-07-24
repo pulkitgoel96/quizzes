@@ -82,6 +82,10 @@
 }
 
 @media (max-width: 991px) {
+	
+	.footer-sticky{
+		display: block;
+	}
 .green-bg {
 	top: 408px;
 }
@@ -566,3 +570,16 @@
 	}
 
 }
+
+@media (max-width: 340px) {
+	
+	.footer-sticky-container{
+	width: 315px;
+}
+	.stick-icon a{
+		margin: 0 3px 0 0;
+	}
+	
+}
+
+
