@@ -1037,3 +1037,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.post-btn{
+	padding: 30px 0px 0 0;
+	text-align: center;
+}
+.post-footer-btn{
+	padding-bottom: 30px;
+}
+
+.back-bol{
+  background: #F97408 none repeat scroll 0 0;
+  border: 0 none;
+	color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 15px 15px;
+  transition: all 0.3s ease-in-out 0s;
+	font-weight: bold;
+}
+
+.back-bol:hover{
+	background: #116142;
+}
+
+
+
