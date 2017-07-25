@@ -1041,10 +1041,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*Post page CSS*/
+.cursor-d{
+	cursor: default;
+}
 body.bol-post{
 	background: #303D6D;
 }
 body.bol-post .logo{padding: 20px 0px;}
+body.bol-post .logo span{cursor: pointer;}
 .post-footer-btn{
 	padding-bottom: 30px;
 }
@@ -1100,8 +1104,16 @@ body.bol-post .logo{padding: 20px 0px;}
 	padding: 10px 20px 50px;
 	
 }
-	.top-go-back{
+	.top-go-back .go-back span{
 		display: none;
+		
+	}
+	
+	.top-go-back .go-back{
+		padding: 0;
+		width: 30px;
+		height: 30px;
+		background: rgba(0, 0, 0, 0) url("../images/back-bg.png") no-repeat scroll left center / 30px auto;
 	}
 	
 	.go-back {
