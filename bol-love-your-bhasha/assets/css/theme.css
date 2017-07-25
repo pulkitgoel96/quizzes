@@ -9,6 +9,17 @@ body {
 	margin: 0 !important;
 	padding: 0 !important;
 }
+
+.hi,.hi-logo, .hi-headline{
+	font-family: 'Noto Sans', sans-serif;
+	line-height: 100%;
+}
+.hi-logo{
+	font-size: 25px;
+	line-height: 100%;
+}
+
+
 p {
 	line-height: 130%;
 	margin-bottom: 25px;
