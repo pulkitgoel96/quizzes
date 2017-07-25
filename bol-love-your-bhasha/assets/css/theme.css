@@ -1037,29 +1037,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.post-btn{
-	padding: 30px 0px 0 0;
-	text-align: center;
+
+
+
+/*Post page CSS*/
+body.bol-post{
+	background: #303D6D;
 }
+body.bol-post .logo{padding: 20px 0px;}
 .post-footer-btn{
 	padding-bottom: 30px;
 }
 
-.back-bol{
-  background: #F97408 none repeat scroll 0 0;
-  border: 0 none;
-	color: #fff;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 15px;
-  padding: 15px 15px;
-  transition: all 0.3s ease-in-out 0s;
-	font-weight: bold;
+.embed-form-single{
+	position: relative;
+	margin: 0 auto;
+}
+.embed-bg{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.embed-form{
+	position: relative;
+	z-index: 100;
+	padding: 30px 50px 50px 50px;
+	
 }
 
-.back-bol:hover{
-	background: #116142;
+
+.top-go-back{
+	position: absolute;
+	z-index: 300;
+	top: 20px;
+	left: 15px;
+}
+.btn-back{
+	text-align: center;
+	padding: 10px 0px 30px 0;
+}
+
+.go-back {
+  background: rgba(0, 0, 0, 0) url("../images/back-bg.png") no-repeat scroll left center / 49px auto;
+  color: #fff;
+  display: inline-block;
+  font-family: "Roboto",sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 50px;
+  opacity: 0.8;
+  padding: 0 10px 0 59px;
+  text-transform: uppercase;
+}
+
+.go-back:hover{
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	.embed-form{
+	padding: 10px 20px 50px;
+	
+}
+	.top-go-back{
+		display: none;
+	}
+	
+	.go-back {
+  background: rgba(0, 0, 0, 0) url("../images/back-bg.png") no-repeat scroll left center / 30px auto;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 0 10px 0 40px;
+}
+	body.bol-post .logo {
+  padding: 15px 0;
+}
 }
 
 
