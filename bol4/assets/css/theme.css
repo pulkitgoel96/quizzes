@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper-2 .story-card h3 {
 	color: #f906d7;
-	font-size: 35px;
+	font-size: 32px;
 	margin: 10px 0 5px 0px;
 	text-transform: uppercase;
 }
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .video-caption h3 {
 	color: #fff;
-	font-size: 35px;
+	font-size: 32px;
 	text-transform: uppercase;
 	margin-bottom: 0px;
 }
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 130%;
 }
 .slider-headline{
-	font-size: 33px;
+	font-size: 32px;
 	text-transform: uppercase;
 	margin: 0px 0 10px 5px;
 	line-height: 130%;
@@ -435,6 +435,15 @@ h1, h2, h3, h4, h5, h6 {
 .slider-headline.headline-pink{color: #f906d7;}
 .slider-headline.headline-green{color: #006837;}
 
+.amaze-headlines{
+	margin: 30px 0px 0px 30px;
+}
+
+.sub-p{
+	margin: -5px 0 20px 0;
+	color: #fff;
+}
+.headline-p{margin-left: 5px;}
 
 .bol-pol {
 	color: #fff;
@@ -473,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper-3 .story-card {
 	width: 59%;
-	margin-top: 30px;
+	margin-top: 15px;
 	position: relative;
 }
 .wrapper-3 .story-card figure {
@@ -505,7 +514,7 @@ h1, h2, h3, h4, h5, h6 {
 .bol-chr2 {
 	position: absolute;
 	right: -80px;
-	top: 140px;
+	top: 210px;
 	width: 400px;
 	z-index: 110;
 }
@@ -544,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: -ms-linear-gradient(transparent, #000);
 	background-image: -o-linear-gradient(transparent, #000);
 }
-.slider.slider-2 {
+.slider-2 {
 	margin-top: -100px;
 }
 .mal5 {
@@ -586,7 +595,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container.frame-slier-container .section-headline {
 	color: #fff;
-	font-size: 33px;
+	font-size: 32px;
 }
 .wrapper-4 .bol-gfx {
 	float: right;
@@ -648,12 +657,14 @@ h1, h2, h3, h4, h5, h6 {
 	width: 40%;
 }
 .tel-bg h5 {
-  color: #f97408;
+  color: #303d6d;
   font-family: "Fjalla One",sans-serif;
-  left: 70px;
-  max-width: 240px;
+  font-size: 20px;
+  left: 73px;
+  line-height: 140%;
+  max-width: 230px;
   position: absolute;
-  top: 5px;
+  top: 0;
   z-index: 2;
 }
 .wrapper-5 .story-card {
@@ -1162,6 +1173,8 @@ body.bol-post .logo span{cursor: pointer;}
   padding: 15px 0;
 }
 }
+
+
 
 
 
