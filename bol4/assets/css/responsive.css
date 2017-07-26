@@ -212,6 +212,12 @@
 }
 
 @media (max-width: 767px) {
+	
+	.slider-headline{
+		margin-left: 0;
+		text-align: center;
+		font-size: 30px;
+	}
 	.video-caption{
 		height: 85px;
 	}

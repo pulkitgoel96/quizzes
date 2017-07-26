@@ -11,21 +11,22 @@ $(document).ready(function() {
     $('#story_1').append(Story_1_Markup(stories[1]));
 	  
 	// Slider 1  
-	$('#story_2').append(Story_2_Markup(stories[2]));
-	$('#story_3').append(Story_3_Markup(stories[3]));
-    $('#story_4').append(Story_4_Markup(stories[4]));
-	$('#story_5').append(Story_5_Markup(stories[5]));
-	$('#story_6').append(Story_6_Markup(stories[6]));
+//	$('#story_2').append(Story_2_Markup(stories[2]));
+//	$('#story_3').append(Story_3_Markup(stories[3]));
+//    $('#story_4').append(Story_4_Markup(stories[4]));
+//	$('#story_5').append(Story_5_Markup(stories[5]));
+//	$('#story_6').append(Story_6_Markup(stories[6]));
 	
 	// Slider 2
-	$('#story_7').append(Story_7_Markup(stories[7]));
-	$('#story_8').append(Story_8_Markup(stories[8]));
-	$('#story_9').append(Story_9_Markup(stories[9]));
-	$('#story_10').append(Story_10_Markup(stories[10]));
-	$('#story_11').append(Story_11_Markup(stories[11]));
+//	$('#story_7').append(Story_7_Markup(stories[7]));
+//	$('#story_8').append(Story_8_Markup(stories[8]));
+//	$('#story_9').append(Story_9_Markup(stories[9]));
+//	$('#story_10').append(Story_10_Markup(stories[10]));
+//	$('#story_11').append(Story_11_Markup(stories[11]));
 	  
-    $('#story_12').append(Story_12_Markup(stories[12]));
-    $('#story_13').append(Story_13_Markup(stories[13]));
+    $('#story_2').append(Story_2_Markup(stories[12]));
+	  
+    //$('#story_13').append(Story_13_Markup(stories[13]));
   })
 })
 
@@ -42,7 +43,7 @@ var Story_1_Markup = function(story) {
 
 // Slider 1
 
-var Story_2_Markup = function(story) {
+/*var Story_2_Markup = function(story) {
   return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
@@ -60,11 +61,11 @@ var Story_5_Markup = function(story) {
 
 var Story_6_Markup = function(story) {
   return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
-}
+}*/
 
 // Slider 2
 
-var Story_7_Markup = function(story) {
+/*var Story_7_Markup = function(story) {
   return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 
@@ -82,17 +83,13 @@ var Story_10_Markup = function(story) {
 
 var Story_11_Markup = function(story) {
   return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
-}
+}*/
 
 // End Slider 2
 
 
 
-var Story_12_Markup = function(story) {
-  return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption><img class="ops" src="assets/images/caption-bg.png" alt=""><div class="caption-text">'+ story.headline +'</div></figcaption></a></figure>'
-}
-
-var Story_13_Markup = function(story) {
+var Story_2_Markup = function(story) {
   return '<figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="story-image"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure>'
 }
 // Image Seetings
@@ -103,3 +100,11 @@ var imageSource = function(s3key, width, height) {
 }
 
 // img src="http://images.assettype.com/' + story['hero-image-s3-key'] + '?auto=format&amp;rect=0,0,2348,1321&amp;q=35&amp;w=270&amp;fm=pjpg"
+
+
+
+
+
+
+
+

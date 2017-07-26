@@ -254,6 +254,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: #303d6d;
 	padding: 30px 0px 0 0;
 }
+
+.wrapper-5-mid .inner-slider{
+	margin: 30px 0px 20px 0;
+}
 .wrapper.single-wrapper {
 	padding-bottom: 20px;
 }
@@ -420,6 +424,18 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 5px;
 	line-height: 130%;
 }
+.slider-headline{
+	font-size: 33px;
+	text-transform: uppercase;
+	margin: 0px 0 10px 5px;
+	line-height: 130%;
+}
+.slider-headline.headline-white{color: #fff;}
+.slider-headline.headline-orange{color: #f97408;}
+.slider-headline.headline-pink{color: #f906d7;}
+.slider-headline.headline-green{color: #006837;}
+
+
 .bol-pol {
 	color: #fff;
 }
@@ -630,6 +646,15 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: -25px;
 	right: 0;
 	width: 40%;
+}
+.tel-bg h5 {
+  color: #f97408;
+  font-family: "Fjalla One",sans-serif;
+  left: 70px;
+  max-width: 240px;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
 }
 .wrapper-5 .story-card {
 	margin-left: 220px;
