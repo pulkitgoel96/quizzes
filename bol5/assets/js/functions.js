@@ -1,6 +1,33 @@
 window.sr = ScrollReveal();
 //sr.reveal('.col');
-sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-section-gfx, .bol-chr1, .border-box, .bol-chr2, .bol-frame-slider, .bol-gfx, .tel-bg, .factoid, .bol-chr3, .bol-gfx-2, .green-bg', { duration: 1000 });
+sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-section-gfx, .bol-chr11, .border-box, .bol-chr2, .bol-frame-slider, .bol-gfx, .tel-bg, .factoid, .bol-chr3, .bol-gfx-2, .green-bg', { duration: 1000 });
+
+
+
+
+$(window).load(function(){
+	
+	$(".placeholder").each(function(){
+	var n = $(this),
+    i = $(this).find(".img-small"),
+    o = i.attr("title"),
+    r = new Image;
+		
+	
+r.src = i.attr("src"), r.onload = function() {
+   
+};
+var s = new Image;
+		
+		console.log(i.attr("data-large"));	
+s.src = i.attr("data-large"), s.onload = function() {
+	
+	
+    s.classList.add("loaded"), s.classList.add("img-large"), s.setAttribute("alt", o), s.setAttribute("title", o)
+}, n.append(s)
+});
+})
+
 
 
 // Social 
@@ -11,8 +38,6 @@ sr.reveal('.logo, .col,.header-container, .story-card, .video-story, .video-sect
     $("body").click(function() {
         $(".social-icons").slideUp();
     });
-
-
 
 
 $(document).ready(function(){	
@@ -75,14 +100,26 @@ $(document).ready(function() {
 
 
 
+
+//Videos' section
 $(document).ready(function() {
-  setTimeout(function(){
-	 $('.slider').show();
-	 $('.video-slider').show();
-	  
+var collectionSlug = 'bol-video'; //Needs to be replaced.
+  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,5);
+    var elements = stories.map(function(story) {
+      return '<div class="frame-item"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=80&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></a></div>'
+    });
+    elements.forEach(function(element) {
+      $('#videos-section-stories').append(element);
+    })
+	
 	$('.videoCaption').html($('.video-slide .frame-item:first').find('figcaption').text());
 	
-	$('.video-slide').slick({
+	$('#videos-section-stories').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
@@ -90,8 +127,27 @@ $(document).ready(function() {
       arrows: false,
       autoplaySpeed: 2000
     });	  
+  });
+});
+
+
+//SlugType_1
+$(document).ready(function() {
+  var collectionSlug = 'bol-ugc'; //Needs to be replaced.
+  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
+    var stories = res.items.filter(function(item) {
+      return item.type == 'story'
+    }).map(function(item) {
+      return item.story
+    }).slice(0,5);
+    var elements = stories.map(function(story) {
+      return '<li><figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure></li>'
+    });
+    elements.forEach(function(element) {
+      $('#SlugType_1').append(element);
+    });
 	  
-	  	$('.carouselSlider').slick({
+	 $('#SlugType_1').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
@@ -112,43 +168,7 @@ $(document).ready(function() {
 		  
       ]
     });
-	    
-	}, 3000);
-})
-//Videos' section
-$(document).ready(function() {
-var collectionSlug = 'bol-video'; //Needs to be replaced.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
-    var stories = res.items.filter(function(item) {
-      return item.type == 'story'
-    }).map(function(item) {
-      return item.story
-    }).slice(0,5);
-    var elements = stories.map(function(story) {
-      return '<div class="frame-item"><a href="http://www.thequint.com/' + story.slug + '" target="blank"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=80&w=800&fm=pjpg" /><figcaption>' + story.headline + '</figcaption></a></div>'
-    });
-    elements.forEach(function(element) {
-      $('#videos-section-stories').append(element);
-    })
-  });
-});
-
-
-//SlugType_1
-$(document).ready(function() {
-  var collectionSlug = 'bol-ugc'; //Needs to be replaced.
-  $.getJSON('https://www.thequint.com/api/v1/collections/' + collectionSlug, function(res) {
-    var stories = res.items.filter(function(item) {
-      return item.type == 'story'
-    }).map(function(item) {
-      return item.story
-    }).slice(0,5);
-    var elements = stories.map(function(story) {
-      return '<li><figure><a href="https://www.thequint.com/' + story.slug + '" target="blank"><div class="slider-img"><img src="https://images.assettype.com/' + story['hero-image-s3-key'] + '?q=70&w=672&fm=pjpg"></div><figcaption>'+ story.headline +'</figcaption></a></figure></li>'
-    });
-    elements.forEach(function(element) {
-      $('#SlugType_1').append(element);
-    });
+	  
   });
 });
 
@@ -166,6 +186,27 @@ $(document).ready(function() {
     });
     elements.forEach(function(element) {
       $('#SlugType_2').append(element);
+    });
+	   $('#SlugType_2').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+			variableWidth: true
+            
+          }
+			
+        }
+		  
+      ]
     });
   });
 });
