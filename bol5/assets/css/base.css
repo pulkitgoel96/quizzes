@@ -205,6 +205,19 @@ template {
 	transform: translateY(-50%);
 }
 
+.placeholder{
+	position: relative;
+}
+.img-large{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.img-small{
+	width: 100%;
+	visibility: hidden;
+}
+
 @media (max-width:640px) {
 .valign-center {
 	position: relative;
