@@ -9,8 +9,8 @@ $(document).ready(function() {
 	  
     $('#story_0').append(Story_0_Markup(stories[0]));
     $('#story_1').append(Story_1_Markup(stories[1]));
-    $('#story_2').append(Story_2_Markup(stories[12]));
-	$('#story_3').append(Story_3_Markup(stories[13]));
+    $('#story_2').append(Story_2_Markup(stories[2]));
+	$('#story_3').append(Story_3_Markup(stories[3]));
   })
 })
 
