@@ -77,6 +77,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   setTimeout(function(){
+	 $('.slider').show();
+	 $('.video-slider').show();
+	  
 	$('.videoCaption').html($('.video-slide .frame-item:first').find('figcaption').text());
 	
 	$('.video-slide').slick({
