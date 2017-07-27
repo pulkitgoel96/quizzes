@@ -72,11 +72,10 @@
 
 @media (max-width: 991px) {
 .tel-bg h5 {
-	font-size: 17px;
-	left: 46px;
-	line-height: 140%;
-	max-width: 193px;
-	top: -40px;
+  left: 46px;
+  line-height: 140%;
+  max-width: 215px;
+  top: -40px;
 }
 .footer-sticky {
 	display: block;
@@ -205,12 +204,12 @@
 	margin-left: 0;
 }
 .tel-bg h5 {
-	font-size: 18px;
-	line-height: 140%;
-	margin-bottom: 14px;
-	max-width: 100%;
-	position: static;
-	text-align: center;
+  line-height: 140%;
+  margin-bottom: 14px;
+  max-width: 100%;
+  padding: 0 10px;
+  position: static;
+  text-align: center;
 }
 .slider-headline {
 	margin-left: 0;

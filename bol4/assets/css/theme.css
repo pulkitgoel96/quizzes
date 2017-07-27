@@ -639,17 +639,44 @@ h1, h2, h3, h4, h5, h6 {
 	right: 0;
 	width: 40%;
 }
+/*
 .tel-bg h5 {
 	color: #303d6d;
 	font-family: "Fjalla One", sans-serif;
 	font-size: 20px;
-	left: 73px;
+	left: 105px;
 	line-height: 140%;
 	max-width: 230px;
 	position: absolute;
 	top: 0;
 	z-index: 2;
 }
+*/
+
+.tel-bg h5 {
+  bottom: 110px;
+  color: #303d6d;
+  font-family: georgia;
+  font-size: 16px;
+  font-style: italic;
+  left: -60px;
+  line-height: 137%;
+  max-width: 230px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (max-width: 1500px) {
+	
+	.tel-bg h5 {
+  bottom: inherit;
+  left: 80px;
+  top: 0;
+}
+	
+}
+
+
 .wrapper-5 .story-card {
 	margin-left: 220px;
 	position: relative;
