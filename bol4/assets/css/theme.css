@@ -1052,70 +1052,85 @@ body.bol-post .logo {
 	font-size: 110%;
 	font-weight: 700;
 }
-.pol-embed #qp_cl_1128404 {
+
+.pol-embed #qp_cl_1123589{
 	display: none !important;
 }
-#qp_rv_0_1128404 {
-	background: #303d6d;
-	color: #fff;
-	text-align: right;
-	font-size: 12px;
-	font-style: normal;
-	border-radius: 20px;
-	height: 14px;
-	line-height: 11px;
-	padding: 0px 5px;
+
+#qp_rv_0_1123589{
+    background: #303d6d;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 20px;
+    height: 14px;
+    line-height: 11px;
+    padding: 0px 5px;
+
+
 }
-#qp_rp_0_1128404 {
+#qp_rp_0_1123589{
 	position: absolute;
-	top: 5px;
-	right: 0;
+    top: 5px;
+    right: 0;
 }
-#qp_rv_1_1128404 {
-	background: #303d6d;
-	color: #fff;
-	text-align: right;
-	font-size: 12px;
-	font-style: normal;
-	border-radius: 20px;
-	height: 14px;
-	line-height: 11px;
-	padding: 0px 5px;
+
+
+#qp_rv_1_1123589{
+    background: #303d6d;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 20px;
+    height: 14px;
+    line-height: 11px;
+    padding: 0px 5px;
+
+
 }
-#qp_rp_1_1128404 {
+#qp_rp_1_1123589{
 	position: absolute;
-	top: 5px;
-	right: 0;
+    top: 5px;
+    right: 0;
 }
-#qp_rv_2_1128404 {
-	background: #303d6d;
-	color: #fff;
-	text-align: right;
-	font-size: 12px;
-	font-style: normal;
-	border-radius: 20px;
-	height: 14px;
-	line-height: 11px;
-	padding: 0px 5px;
+
+
+#qp_rv_2_1123589{
+   background: #303d6d;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 20px;
+    height: 14px;
+    line-height: 11px;
+    padding: 0px 5px;
+
 }
-#qp_rp_2_1128404 {
+#qp_rp_2_1123589{
 	position: absolute;
-	top: 5px;
-	right: 0;
+    top: 5px;
+    right: 0;
 }
-#qp_rv_3_1128404 {
-	background: #303d6d;
-	color: #fff;
-	text-align: right;
-	font-size: 12px;
-	font-style: normal;
-	border-radius: 20px;
-	height: 14px;
-	line-height: 11px;
-	padding: 0px 5px;
+
+#qp_rv_3_1123589{
+   background: #303d6d;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 20px;
+    height: 14px;
+    line-height: 11px;
+    padding: 0px 5px;
+
+
 }
-#qp_rp_3_1128404 {
+#qp_rp_3_1123589{
 	position: absolute;
-	top: 5px;
-	right: 0;
+    top: 5px;
+    right: 0;
 }
+
