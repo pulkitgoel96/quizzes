@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+
+	$("#cur_ques").html($(".quiz-item.is-show").index()+1);
+	$("#total_ques").html($(".quiz-item").length);
+
 	$('#startScreen').click(function () {
 		$('.start-screen').hide();
 		$('#questionContainer').show();
@@ -11,6 +16,9 @@ $(document).ready(function () {
 		var $next = $('#questionContainer .quiz-item.is-show').removeClass('is-show fadeIn').next('#questionContainer .quiz-item')
 		if ($next.length) {
 			$next.addClass('is-show fadeIn');
+
+			$("#cur_ques").html($(".quiz-item.is-show").index()+1);
+			$("#total_ques").html($(".quiz-item").length);
 		}
 
 
