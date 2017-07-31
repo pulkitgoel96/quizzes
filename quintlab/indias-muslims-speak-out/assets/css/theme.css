@@ -5,6 +5,7 @@ body {
 	font-weight: normal;
 	/*padding-top: 45px;*/
 	color: #231f20;
+	background-color: #000;
 }
 p, blockquote {
 	line-height: 150%;
@@ -21,6 +22,11 @@ blockquote {
 	margin: 0px 0 35px 0;
 	text-align: center;
 	display: inline-block;
+}
+.txt-quote {
+	color: #3e86c1;
+	font-size: 22px;
+	font-style: italic;
 }
 .blue {
 	background-color: #3e86c1;
@@ -75,7 +81,7 @@ blockquote2 img {
 	padding: 20px 0 20px 0;
 	margin: 0 auto;
 }
-.credits-wrapper {
+.content-wrapper.credits-wrapper {
 	background-color: #eaeaea;
 	margin: 0px;
 }
@@ -426,13 +432,10 @@ nav a.active {
 	max-width: 60%;
 }
 
-
-
-
 .content-wrapper {
 	padding-top: 10px;
+	background-color: #fff;
 }
-
 
 .footer-wrapper {
 	background: #000;
@@ -470,6 +473,12 @@ nav a.active {
 .container.video-container {
 	max-width: 600px;
 	width: 100%;
+}
+.container.video-wrap {
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 20px;
 }
 .top-wrapper .container {
 	width: auto;
