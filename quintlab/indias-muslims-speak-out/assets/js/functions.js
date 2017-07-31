@@ -1,4 +1,23 @@
 
+$(window).load(function(){
+	$(".placeholder").each(function(){
+		var n = $(this),
+		    i = $(this).find(".img-small"),
+		    o = i.attr("title"),
+		    r = new Image;
+		r.src = i.attr("src"), r.onload = function() {
+		   
+		};
+		var s = new Image;
+		console.log(i.attr("data-large"));
+		s.src = i.attr("data-large"), s.onload = function() {
+		    s.classList.add("loaded"), s.classList.add("img-large"), s.setAttribute("alt", o), s.setAttribute("title", o)
+		}, n.append(s)
+	});
+});
+
+
+
 $( function() { $( 'audio' ).audioPlayer(); } );
 
 $(document).scroll(function() {
@@ -9,10 +28,6 @@ $(document).scroll(function() {
     $('#topNav').hide();
   }
 });
-
-
-
-
 
 
 wow = new WOW(

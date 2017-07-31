@@ -1209,5 +1209,16 @@ p a {
 	margin-top: 20px;
 	
 }
-
+.placeholder{
+	position: relative;
+}
+.img-large{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.img-small{
+	width: 100%;
+	visibility: hidden;
+}
 
