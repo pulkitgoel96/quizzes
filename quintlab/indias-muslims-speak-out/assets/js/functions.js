@@ -14,6 +14,14 @@ $(window).load(function(){
 		    s.classList.add("loaded"), s.classList.add("img-large"), s.setAttribute("alt", o), s.setAttribute("alt", o)
 		}, n.append(s)
 	});
+
+	 // Maps
+	$('.map-container').click(function(){
+        $(this).find('iframe').addClass('clicked');
+    })
+    .mouseleave(function(){
+        $(this).find('iframe').removeClass('clicked');
+    });
 });
 
 
