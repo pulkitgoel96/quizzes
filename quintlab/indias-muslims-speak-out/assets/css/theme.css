@@ -577,8 +577,12 @@ nav a.active {
 
 .container .map-container {
     width: 100%;
-	height: 500px;
+	height: 100%;
 	position: relative;
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
 }
 .container .map-container iframe {
     position: absolute;
@@ -595,17 +599,14 @@ nav a.active {
 .container .map-container iframe.clicked {
     pointer-events: auto;
 }
-
 .states ul li.state_1 {
     top: 200px;
     left: 210px;
 }
-
 .states ul li.state_2 {
     top: 198px;
     left: 84px;
 }
-
 .states ul li.state_3 {
     top: 207px;
     left: 300px;
