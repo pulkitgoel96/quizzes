@@ -1,12 +1,37 @@
 @charset "utf-8";
 body {
-    font-family: Georgia;
-    font-size: 21px;
-    font-weight: normal;
-    /*padding-top: 45px;*/
-    color: #231f20;
+    font-size: 20px;
+    font-weight: 300;
+    color: #3C3C3C;
     background-color: #000;
+    /*font-family: "Times New Roman", Georgia, Serif;*/
+    font-family: 'Noto Sans', sans-serif;
 }
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v6/PIbvSEyHEdL91QLOQRnZ14nF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(https://fonts.gstatic.com/s/notosans/v6/ByLA_FLEa-16SpQuTcQn4J0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(https://fonts.gstatic.com/s/notosans/v6/9Z3uUWMRR7crzm1TjRicDp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+}
+
 h1,
 h2,
 h3,
@@ -14,11 +39,11 @@ h4,
 h5,
 h6 {
     color: #231f20;
-    /*font-family: 'Roboto Slab', serif;*/
     text-align: left;
     margin: 0;
     padding: 0;
     font-size: 100%;
+    font-weight: 800;
 }
 p a {
     color: #fe1c1d;
@@ -31,7 +56,7 @@ blockquote {
 
 blockquote {
     color: #fe1c1d;
-    font-size: 120%;
+    font-size: 26px;
     font-style: italic;
     font-weight: 400;
     line-height: 120%;
@@ -198,7 +223,7 @@ ul.credits {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     text-align: left;
-    font-size: 16px;
+    font-size: 19px;
     margin: 10px 0 0 0;
     line-height: normal;
     display: block;
@@ -220,17 +245,19 @@ ul.credits li {
 .credits strong {
     margin-bottom: 2px;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     color: #303030;
 }
 
-.credits .list-first p:first-child {
-    margin-bottom: 80px;
+.credits .list-first p:first-child,
+.credits .list-first p:nth-child(2) {
+    margin-bottom: 25px;
 }
+
 .credits .list-second p:first-child,
 .credits .list-second p:nth-child(2),
 .credits .list-second p:nth-child(3) {
-    margin-bottom: 29px;
+    margin-bottom: 63px;
 }
 .more-thumb a {
     color: #3A3939;
@@ -1114,7 +1141,7 @@ nav a.active {
 .headline-section h2 {
     color: #fff;
     text-align: left;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     line-height: 70px;
     margin: 30px 0;
@@ -1204,6 +1231,7 @@ nav a.active {
     font-size: 35px;
     margin-bottom: 15px;
     line-height: 130%;
+    font-weight: 800;
 }
 .map-area {
     padding-bottom: 30px;
