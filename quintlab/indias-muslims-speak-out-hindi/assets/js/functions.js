@@ -9,7 +9,7 @@ $(window).load(function(){
 		   
 		};
 		var s = new Image;
-		console.log(i.attr("data-large"));
+		//console.log(i.attr("data-large"));
 		s.src = i.attr("data-large"), s.onload = function() {
 		    s.classList.add("loaded"), s.classList.add("img-large"), s.setAttribute("alt", o), s.setAttribute("alt", o)
 		}, n.append(s)
@@ -26,7 +26,7 @@ $(window).load(function(){
 
 
 
-$( function() { $( 'audio' ).audioPlayer(); } );
+//$( function() { $( 'audio' ).audioPlayer(); } );
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
