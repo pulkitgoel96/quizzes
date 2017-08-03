@@ -3,7 +3,6 @@ body {
     font-size: 20px;
     font-weight: 300;
     color: #3C3C3C;
-    line-height: 1.75em;
     background-color: #000;
     /*font-family: "Times New Roman", Georgia, Serif;*/
     font-family: 'Noto Sans', sans-serif;
@@ -51,7 +50,7 @@ p a {
 }
 p,
 blockquote {
-    line-height: 150%;
+    line-height: 1.75em;
     margin-bottom: 20px;
 }
 
@@ -240,7 +239,6 @@ ul.credits img {
 ul.credits li {
     float: left;
     width: 33.33%;
-    margin-bottom: 20px;
     margin-top: 20px;
 }
 .credits strong {
@@ -252,13 +250,13 @@ ul.credits li {
 
 .credits .list-first p:first-child,
 .credits .list-first p:nth-child(2) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .credits .list-second p:first-child,
 .credits .list-second p:nth-child(2),
 .credits .list-second p:nth-child(3) {
-    margin-bottom: 63px;
+    margin-bottom: 75px;
 }
 .more-thumb a {
     color: #3A3939;
@@ -558,19 +556,18 @@ nav a.active {
 .is-desktop {
     display: block;
 }
-
-.more-thumb figure img {
-    width: 100%;
-    /*padding-bottom: 5px;*/
-}
-
 .more-thumb {
     margin-top: 0px;
-
-    font-size: 16px;
+    font-size: 19px;
+    line-height: 22px;
+}
+.more-thumb figure img {
+    width: 100%;
+}
+.more-thumb figcaption {
+    padding-top: 5px;
 }
 /*-- Map wrapper-- */
-
 .states {
     position: absolute;
     top: 0;
