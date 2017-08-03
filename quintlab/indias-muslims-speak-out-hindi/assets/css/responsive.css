@@ -157,15 +157,15 @@
         display: none;
     }
     body {
-        font-size: 17px;
+        font-size: 18px;
     }
     p,
     blockquote {
-        line-height: 140%;
+        line-height: 1.75em;
         margin-bottom: 20px;
     }
     blockquote {
-        font-size: 140%;
+        font-size: 22px;
         line-height: 120%;
         padding: 10px 0px 0 0;
         width: auto;
