@@ -27,7 +27,11 @@
 <div class="intro-wrap" id="first-screen">
   <div class="content-middle">
     <div class="intro-logo hvr-bob"><img src="assets/img/thequint-intro-logo.png" alt="The Quint"></div>
-    <a class="btn-6" href="#" id="start-btn"><span class="btn-name">START</span><span class="overlay-color"></span></a> </div>
+    <div class="loading-app">LOADING...</div>
+    
+    <a style="display: none;" class="btn-6" href="javascript:void(0);" id="start-btn"><span class="btn-name">START</span><span class="overlay-color"></span></a> 
+    
+    </div>
 </div>
 
 <!-- Tank you -->
@@ -884,7 +888,11 @@ function play_sound() {
         image_pos();
     })
 	
-	
+
+$(window).load(function(){
+	$('.loading-app').hide();
+	$('#start-btn').show();
+})	
 
 </script>
 </body>
