@@ -739,6 +739,11 @@ var ques_array =[
 	  
 ];
 	
+function is_touch_device() {
+ return 'ontouchstart' in window // works on most browsers
+     || 'onmsgesturechange' in window; // works on ie10
+};	
+	
 var cur_ques =0;	
 
 var formWrap = document.getElementById('fs-form-wrap');
@@ -823,6 +828,14 @@ function play_sound() {
 	
 	 // For BTN Amination
     $(function() {  
+		
+		if (is_touch_device()) {
+    // add code here
+    }
+		else
+			{
+		
+
 	  $('.btn-6')
 	    .on('mouseenter', function(e) {
 				var parentOffset = $(this).offset(),
@@ -836,6 +849,7 @@ function play_sound() {
 	      		relY = e.pageY - parentOffset.top;
 	    	$(this).find('span.overlay-color').css({top:relY, left:relX})
 	    });
+			}
 	  $('[href=#]').click(function(){return false});
 	});
 	
@@ -864,8 +878,14 @@ function play_sound() {
 	})
 	
 	// sound
+	if (is_touch_device()) {
+    // add code here
+    }
+	else
+		{
 	$(".quiz-option").mouseenter(function(){
         
+		
         
   var swipe_audioElement_click;
   swipe_audioElement_click = document.createElement('audio');
@@ -874,6 +894,8 @@ function play_sound() {
         
         
     });
+			
+			}
 	
 	function image_pos()
     {
