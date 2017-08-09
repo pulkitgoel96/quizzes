@@ -24,7 +24,7 @@
 }
 .fs-controls{
 	position: relative;
-	z-index: 130;
+	z-index: 108;
 }
 .fs-title::after{
 	width: 100%;
