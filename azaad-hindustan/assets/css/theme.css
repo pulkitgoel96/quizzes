@@ -674,4 +674,8 @@ opacity: 1;
 	text-align: center;
 	font-size: 26px;;
 }
+.fs-form-wrap{
+	overflow: hidden;
+}
+
 
