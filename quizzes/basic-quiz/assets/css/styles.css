@@ -36,7 +36,7 @@ input:focus, button:focus 			{outline: none;}
 
 /* BuzzWrap */
 
-.buzz-wrap									{max-width: 1150px;margin: 0 auto;padding: 0 1.5em;}
+.buzz-wrap									{max-width: 1150px;margin: 0 auto;padding: 0 1.5em 1em;}
 .buzz-wrap img								{width: 100%;display: block;}
 
 .buzz-wrap .buzz-left 						{float: left;width: 66.6667%;padding-right: 1.7em;}
@@ -127,6 +127,8 @@ input:focus, button:focus 			{outline: none;}
 /* Bol */
 .buzz-wrap .buzz-center.bol-wrap 						{max-width: 746px; margin: 20px auto 0;}
 .buzz-wrap .bol-wrap .question-box 						{padding: 1.5em 2em 2em;}
+
+.buzz-wrap .bol-wrap .question-box 						{background: none;}
 
 .bol-wrap .question-box .que-box-content 				{padding: 0 0 10px}
 .bol-wrap .question-box .audio-box 						{padding: 0 50px 0 0}
