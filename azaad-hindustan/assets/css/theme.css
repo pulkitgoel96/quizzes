@@ -9,7 +9,9 @@
 	outline: none !important;
 }
 body {
-	background: url(../img/pattern-bg.png) #f12858 repeat top left;
+	/*background: url(../img/pattern-bg.png) #3EC3D3 repeat top left;*/
+	 background: -webkit-repeating-linear-gradient(45deg, #3EC3D3, #3EC3D3 10px, #32b8c8 10px, #32b8c8 20px);
+  background: repeating-linear-gradient(45deg, #3EC3D3, ##3EC3D3 10px, #32b8c8 10px, #32b8c8 20px);
 }
 .clearfix:before, .clearfix:after {
 	display: table;
@@ -59,7 +61,6 @@ body {
 }
 .quiz-option-line-bg {
 	width: 0px;
-	height: 100%;
 	background: #852C6E;
 	position: absolute;
 	top: 0px;
@@ -89,6 +90,11 @@ body {
 	position: relative;
 	padding: 25px 10px 10px 126px;
 	z-index: 10;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+}
+.quiz-option:hover figcaption{
+	color: #fff;
 }
 .options-panel {
 	position: fixed;
@@ -248,7 +254,7 @@ body {
 	visibility: visible;
 }
 .drager.is-active {
-	background: #FD2B5C;
+	background: #32b8c8;
 	transform: rotate(45deg) scale3d(1, 1, 1);
 	color: white;
 }
@@ -334,7 +340,7 @@ body {
 }
 .drager-text {
 	border: 1px solid transparent;
-	color: #FD2B5C;
+	color: #852c6e;
 	height: 50px;
 	line-height: 113%;
 	margin: 24px 0 0;
@@ -343,6 +349,7 @@ body {
 	top: 0;
 	transform: rotate(-45deg);
 	width: 100px;
+	font-weight: 800;
 }
 .overlay {
 	position: absolute;

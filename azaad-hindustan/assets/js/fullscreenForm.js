@@ -228,7 +228,7 @@
 				stop: function () {
 					$(".drager").removeClass("is-active");
 					$(".drager-text").removeClass("is-active");
-					$(".drager-text").html("drag the circle here to answer");
+					$(".drager-text").html("Drag the correct option here");
 
 
 				},
@@ -293,7 +293,7 @@
 				$(".drager").removeClass("is-correct")
 				$(".drag-panel").removeClass("show");
 				$(".options-panel").removeClass("hide");
-				$(".drager-text").html("drag the circle here to answer");
+				$(".drager-text").html("Drag the correct option here");
 				$(".next-btn").removeClass('show');
 				$(".drag-outer-box").addClass('hvr-bob');
 				$(".drag-details ul li").removeClass("show");
@@ -355,13 +355,13 @@
 
 			// keyboard navigation events - jump to next field when pressing enter
 			document.addEventListener('keydown', function (ev) {
-				if (!self.isLastStep && ev.target.tagName.toLowerCase() !== 'textarea') {
+				/*if (!self.isLastStep && ev.target.tagName.toLowerCase() !== 'textarea') {
 					var keyCode = ev.keyCode || ev.which;
 					if (keyCode === 13) {
 						ev.preventDefault();
 						self._nextField();
 					}
-				}
+				}*/
 			});
 		};
 

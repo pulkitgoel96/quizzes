@@ -37,6 +37,9 @@
 }
 
 @media (max-width: 767px) {
+	.quiz-option figcaption {
+		font-weight: 400;
+	}
 .drager-inner-container {
 	padding-top: 100px;
 }
