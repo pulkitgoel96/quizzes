@@ -54,7 +54,7 @@ input:focus, button:focus 			{outline: none;}
 
 .buzz-wrap .white-box 						{background-color: #fff;margin-bottom: 1.7em;padding: 1.5em;border: 1px #d8d8d8 solid;}
 .buzz-wrap .white-box p						{margin-bottom: 1em}
-.large-size .white-box p 					{font-size: 22px;font-weight: 800}
+.large-size .white-box p 					{font-size: 24px;font-weight: 500;}
 
 
 .result-iron .result-content,
@@ -85,8 +85,9 @@ input:focus, button:focus 			{outline: none;}
 .buzz-wrap .social-share .share-facebook .fb_iframe_widget {top: -5px;}
 .buzz-wrap .social-share .share-gplus		{width: 57px;}
 
-.buzz-wrap .result-btn 						{float:left;width:50%;padding-top: 7px}
+.buzz-wrap .result-btn 						{float:left;width:200px;padding-top: 7px}
 .buzz-wrap .result-submit 					{background: #763194;border: medium none;border-radius: 0;color: white;font-family: "Merriweather","Georgia",serif;font-size: 16px;font-weight: bold;line-height: 1em;padding: 0.75em 1em;text-transform: uppercase;display: block;margin: 0;cursor: pointer;float: none;border-radius: 3px;transition: all 0.3s ease-in-out 0s;}
+.buzz-wrap .bol-wrap .result-submit 		{font-family: 'Bree Serif', serif;text-transform: capitalize;font-size: 23px;padding: 0.5em .8em 0.7em;}
 .buzz-wrap .result-submit:hover 			{background-color: #f3b72a}
 .buzz-wrap .result-submit i 				{font-size: 26px;}
 
@@ -129,7 +130,7 @@ input:focus, button:focus 			{outline: none;}
 
 .bol-wrap .question-box .que-box-content 				{padding: 0 0 10px}
 .bol-wrap .question-box .audio-box 						{padding: 0 50px 0 0}
-.bol-wrap .question-box ul.answer-type li 				{border: none;margin-bottom: 10px;}
+.bol-wrap .question-box ul.answer-type li 				{border: none;margin-bottom: 10px;font-size: 18px;}
 
 
 .question-box .bol-headline								{color: #fff;font-size: 42px;text-align:center;line-height:35px;padding:20px;}
@@ -191,6 +192,10 @@ input:focus, button:focus 			{outline: none;}
 	z-index: 1;
 	display: block;
 }
+.white-box .bol-result-content .highlight {
+    font-size: 26px;
+    color: yellow;
+}
 .white-box .bol-result-content p {
 	margin: 0;
 	padding: 0;
@@ -227,7 +232,7 @@ input:focus, button:focus 			{outline: none;}
 .question-box .audio-wrap 								{width: 100%;padding: 0;margin: 10px 0 30px;position: relative;}
 
 
-.question-box .audio-box 								{margin: 20px auto 25px;width:100%;position: relative;
+.question-box .audio-box 								{margin: 20px auto 15px;width:100%;position: relative;
 	padding: 0 50px 0 10px;position: relative;}
 
 .question-box.box-bg-blue .audio-box:before 			{position: absolute;background-image: url(../images/quiz/icon.png);background-repeat: no-repeat; background-size: 40px; width: 100px;height: 100px;content: " ";top: -56px;left: -10px;}

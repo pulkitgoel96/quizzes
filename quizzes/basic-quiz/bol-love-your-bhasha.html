@@ -42,7 +42,7 @@ body {font-family: 'Bree Serif', serif;}
       <!-- QUESTION 01 -->
       <div class="question-box">
          <div class="bol-box-content">
-            <div class="bol-headline">BOL KAUN SI BHAASHA <span>Listen to the Phrases, and Guess The Meaning. How Many Can You Identify?</span></div>
+            <div class="bol-headline">BOL KAUN SI BHASHA <span>Listen to the Phrases, and Guess The Meaning. How Many Can You Identify?</span></div>
             <div class="audio-box">
                <audio preload="auto" tabindex="0" controls="" controlsList="nodownload" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
                  <source type="audio/mp3" src="assets/audio/bol/marathi.mp3">
@@ -315,7 +315,7 @@ body {font-family: 'Bree Serif', serif;}
 
       <!-- Button -->
       <div class="box-blank">
-         <div class="result-btn"><button type="button" id="btn" class="result-submit">Check Score <i class="fa fa-angle-right fa-lg"></i></button></div> 
+         <div class="result-btn"><button type="button" id="btn" class="result-submit">Check Score <i class="fa fa-angle-right fa-lg"></i></button></div>
       </div>
 
       <!-- Total Score -->
@@ -325,6 +325,7 @@ body {font-family: 'Bree Serif', serif;}
       <div class="lessGreater large-size">
          <div class="white-box minimum" style="display:none">
             <span class="bol-result-content">
+               <p>You guessed <span class="total-score highlight"></span> out of <span class="highlight">10</span> answers correctly.</p>
                <p>Yo! You Love Your Bhasha, But There's Scope for More Tamasha. Replay The Game!</p>
             </span>
             <span class="bol-result-svg">
@@ -334,6 +335,7 @@ body {font-family: 'Bree Serif', serif;}
          
          <div class="white-box middle" style="display:none">
             <span class="bol-result-content">
+               <p>You guessed <span class="total-score highlight"></span> out of <span class="highlight">10</span> answers correctly.</p>
                <p>BOL Baby BOL! You're On a Roll! Play it Again, and Share With Your Friends Too!</p>
             </span>
             <span class="bol-result-svg">
@@ -343,9 +345,11 @@ body {font-family: 'Bree Serif', serif;}
 
          <div class="white-box maximum" style="display:none">
             <span class="bol-result-content">
+               <p>You guessed <span class="total-score"></span> out of 10 answers correctly.</p>
                <p>Bingo! You Know The Lingo! Now Challenge Your Friends.</p>
             </span>
             <span class="bol-result-svg">
+               <p>You guessed <span class="total-score highlight"></span> out of <span class="highlight">10</span> answers correctly.</p>
                <svg id="section-svg003" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-7" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
             </span>
          </div>
@@ -366,7 +370,11 @@ body {font-family: 'Bree Serif', serif;}
        });
        $("#lblTotalMarks").text(total);
    });
+
    $("#btn").on("click",function(){
+      var total_score = $('#lblTotalMarks').html();
+      $(".total-score").html(total_score);
+
       if($("#lblTotalMarks").text() <= 3 ){
         $(".lessGreater div").hide();
         $(".lessGreater div.minimum").show();
