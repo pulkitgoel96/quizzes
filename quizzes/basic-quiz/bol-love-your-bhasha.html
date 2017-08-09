@@ -12,19 +12,12 @@
 <!-- Fav and Touch Icons -->
 <link rel="icon" href="assets/images/favicon/favicon.ico">
 
-<!-- Font Awesome for Icon -->
-<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
 <!-- Custom -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
+<link href="assets/css/reset.css" rel="stylesheet">
 <link href="assets/css/check-radio.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
 
 <!-- Google Fonts -->
-<!-- <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'> -->
-
-<!-- <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
 
 <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -47,173 +40,280 @@ body {font-family: 'Bree Serif', serif;}
    <div class="buzz-center bol-wrap">
 
       <!-- QUESTION 01 -->
-      <div class="question-box bol-box-bg-01">
-         <div class="headline">LOL Salaam: Can you guess the Bollywood celeb from their laughter?
-          <span>Haso Hasao. ROFL LMAO.</span></div>
-
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" controlsList="nodownload" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/amrish-puri.mp3">
-              Sorry, your browser does not support HTML5 audio.
-           </audio>
-           <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
-        </div>
-
-        <div class="que-box-content">
-            <h2>MARATHI</h2>
-            <h3>WOULD YOU LIKE A CUP OF TEA?</h3>
-            <p>Ek Cup Chahaa Ghyaal? <em>(Ek-Cup Chuh-Haa Ghyaa-aal)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-1" class="wrong"><input type="radio" name="ques01" value="0"> Om Puri</label></li>
-            <li><label for="input-2" class="right"><input type="radio" name="ques01" value="1"> Amrish Puri</label></li>
-            <li><label for="input-3" class="wrong"><input type="radio" name="ques01" value="0"> Prakash Raj</label></li>
-            <input type="hidden" id="ques01" value="0">
-         </ul>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="bol-headline">BOL KAUN SI BHAASHA <span>Listen to the Phrases, and Guess The Meaning. How Many Can You Identify?</span></div>
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" controlsList="nodownload" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/marathi.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+              </audio>
+              <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+           </div>
+           <div class="que-box-content">
+               <h3>MARATHI</h3>
+               <p>Ek Cup Chahaa Ghyaal? <em>(Ek-Cup Chuh-Haa Ghyaa-aal)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-1" class="wrong"><input type="radio" name="ques01" value="0"> Can you give me a cup of tea?</label></li>
+               <li><label for="input-2" class="right"><input type="radio" name="ques01" value="1"> Would you like a cup of tea?</label></li>
+               <li><label for="input-3" class="wrong"><input type="radio" name="ques01" value="0"> I want a cup of Ghee!</label></li>
+               <input type="hidden" id="ques01" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Blue -->
+            <svg id="section-svg01" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 495.94" preserveAspectRatio="none"><path class="cls-1" d="M3,137.37h0q0-.62,0-1.25C3,129.78,3,136.73,3,137.37Z"/><path class="cls-1" d="M747.36,13.95a6.35,6.35,0,0,0-2-2c-2.24-1.39-4.8-1.49-7.28-1.56C709.5,9.53,681.49-.07,652.9-1.13c-27.83-1-55.56,6-83.55,5.14q-29.15-.85-58.3-1.55Q452.76,1.06,394.45.25,277.84-1.36,161.22-.59c-3.07,0-6.28.41-9.33.07C127-3.32,102-3.77,77-4c-13.64-.13-27.42-.25-40.9,3.13C26.08,1.65,4.41,7.79,1.53,24.68c-2.15,12.6.42,26.42.59,39.14C3,132.21,12.7,178.24,3.43,269c-2,19.9-1.84,40.73-2.37,60.78C.16,363.65-.42,397.6.27,431.47c.33,16.39-1.4,35.29,3.53,50.64,6.79,21.11,32.57,8.1,44.92,6.74,15.92-1.75,31.84-4,47.84-3.64l201.3,4.37,283,6.14c24.25.53,47.88,0,72-1.77,16.37-1.23,34.25,1.42,50.3-1.85,10.58-2.15,37.12-6.83,43.22-20,2.41-5.2,2.5-11.67,2.52-17.78.07-28.53-1.62-151.56-2.19-180.06-.32-16.18-.26-113.72.32-129.89C747.38,134.67,753.32,23.28,747.36,13.95Z"/></svg>
+         </div>
       </div>
 
       <!-- QUESTION 02 -->
-      <div class="question-box bol-box-bg-02">
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/bengali.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+              </audio>
+              <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+           </div>
 
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/aamir-khan.mp3">
-              Sorry, your browser does not support HTML5 audio.
-           </audio>
-           <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
-        </div>
+           <div class="que-box-content">
+               <h3>BENGALI</h3>
+               <p>Tomar Shopno Ki? <em>(Tum-aar Shop-no Kee)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-4" class="right"><input type="radio" name="ques02" value="1"> What's your dream?</label></li>
+               <li><label for="input-5" class="wrong"><input type="radio" name="ques02" value="0"> What's your shop's number?</label></li>
+               <li><label for="input-6" class="wrong"><input type="radio" name="ques02" value="0"> Where's the tomato shop?</label></li>
+               <input type="hidden" id="ques02" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Orange -->
+            <svg id="section-svg02" data-name="TheQuint.comw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-2" d="M746.95,251h0c0,.29,0,.58,0,.87C746.93,256.26,746.94,251.4,746.95,251Z"/><path class="cls-2" d="M2.63,337.29a5.75,5.75,0,0,0,2,1.42,19.19,19.19,0,0,0,7.28,1.09c28.61.58,56.62,7.29,85.21,8,27.83.72,55.56-4.17,83.55-3.6q29.15.6,58.3,1.09,58.3,1,116.61,1.55,116.61,1.13,233.23.59c3.07,0,6.28-.29,9.33,0,24.88,2,49.89,2.27,74.85,2.44,13.64.09,27.42.17,40.9-2.19,10.06-1.76,31.73-6.06,34.61-17.88,2.15-8.82-.42-18.48-.59-27.38-.9-47.84-10.59-80-1.31-143.54,2-13.92,1.84-28.49,2.37-42.52.9-23.69,1.48-47.43.79-71.13-.33-11.46,1.4-24.69-3.53-35.43C739.39-5,713.61,4.11,701.26,5.06c-15.92,1.23-31.84,2.79-47.84,2.54L452.11,4.55l-283-4.3c-24.25-.37-47.88,0-72,1.24-16.37.86-34.25-1-50.3,1.29C36.23,4.29,9.69,7.56,3.59,16.75c-2.41,3.64-2.5,8.16-2.52,12.44-.07,20,1.62,106,2.19,126,.32,11.32.26,79.55-.32,90.86C2.6,252.84-3.34,330.76,2.63,337.29Z"/></svg>
+         </div>
 
-        <div class="que-box-content">
-            <h2>BENGALI</h2>
-            <h3>WHAT'S YOUR DREAM?</h3>
-            <p>Tomar Shopno Ki? <em>(Tum-aar Shop-no Kee)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-4" class="right"><input type="radio" name="ques02" value="1"> Aamir Khan</label></li>
-            <li><label for="input-5" class="wrong"><input type="radio" name="ques02" value="0"> Kapil Sharma</label></li>
-            <li><label for="input-6" class="wrong"><input type="radio" name="ques02" value="0"> Emraan Hashmi</label></li>
-            <input type="hidden" id="ques02" value="0">
-         </ul>
       </div>
 
       <!-- QUESTION 03 -->
-      <div class="question-box bol-box-bg-03">
-         
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/anushka-sharma.mp3">
-              Sorry, your browser does not support HTML5 audio.
-           </audio>
-           <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
-        </div>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/gujarati.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+              </audio>
+              <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+           </div>
 
-        <div class="que-box-content">
-            <h2>GUJARATI</h2>
-            <h3>I LOVE MY COUNTRY</h3>
-            <p>Hu maari matrubhumi ne prem karoo chhoo <em>(Hoo maa-rie matroo-bhoomi ney prehm karroo-chhoo)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-7" class="wrong"><input type="radio" name="ques03" value="0"> Sonakshi Sinha</label></li>
-            <li><label for="input-8" class="wrong"><input type="radio" name="ques03" value="0"> Parineeti Chopra</label></li>
-            <li><label for="input-9" class="right"><input type="radio" name="ques03" value="1"> Anushka Sharma</label></li>
-            <input type="hidden" id="ques03" value="0">
-         </ul>
+           <div class="que-box-content">
+               <h3>GUJARATI</h3>
+               <p>Hu maari matrubhumi ne prem karoo chhoo <em>(Hoo maa-rie matroo-bhoomi ney prehm karroo-chhoo)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-7" class="wrong"><input type="radio" name="ques03" value="0"> What's the matter with love?</label></li>
+               <li><label for="input-8" class="right"><input type="radio" name="ques03" value="1"> I love my country</label></li>
+               <li><label for="input-9" class="wrong"><input type="radio" name="ques03" value="0"> Loving your country is compulsory</label></li>
+               <input type="hidden" id="ques03" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Green -->
+            <svg id="section-svg03" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-3" d="M3,99.16h0c0-.29,0-.58,0-.87C3,93.85,3,98.71,3,99.16Z"/><path class="cls-3" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
+         </div>
       </div>
 
       <!-- QUESTION 04 -->
-      <div class="question-box bol-box-bg-04">
-         
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/kangana-ranaut.mp3">
-              Sorry, your browser does not support HTML5 audio.
-            </audio>
-            <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/malayalam.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>MALAYALAM</h3>
+               <p>Enikku Vishakkunnu <em>(A-nikk Ve-sha-kkun-nu)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-10" class="wrong"><input type="radio" name="ques04" value="0"> Vishakhpatnam is a unique place</label></li>
+               <li><label for="input-11" class="right"><input type="radio" name="ques04" value="1"> I am feeling hungry</label></li>
+               <li><label for="input-12" class="wrong"><input type="radio" name="ques04" value="0"> I love eating fish</label></li>
+               <input type="hidden" id="ques04" value="0">
+            </ul>
          </div>
-         <div class="que-box-content">
-            <h2>MALAYALAM</h2>
-            <h3>I AM FEELING HUNGRY</h3>
-            <p>Enikku Vishakkunnu <em>(A-nikk Ve-sha-kkun-nu)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-10" class="wrong"><input type="radio" name="ques04" value="0"> Dia Mirza</label></li>
-            <li><label for="input-11" class="right"><input type="radio" name="ques04" value="1"> Kangana Ranaut</label></li>
-            <li><label for="input-12" class="wrong"><input type="radio" name="ques04" value="0"> Kalki Koechlin</label></li>
-            <input type="hidden" id="ques04" value="0">
-         </ul>
+         <div class="bol-box-svg">
+            <!-- Purple -->
+            <svg id="section-svg04" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-4" d="M5.43,335.43c8.66,8.6,26,6.3,39.37,8a518.33,518.33,0,0,0,52.6,4.28c27.66.72,55.23-4.17,83-3.6q29,.6,57.95,1.09,57.95,1,115.9,1.55,115.91,1.13,231.83.59c3,0,6.24-.29,9.27,0,24.73,2,49.58,2.27,74.4,2.44,19.25.13,55.43,2.89,69.85-13.54,17.27-19.68,10.43-54.7,7.05-78-4.81-33.21-8.61-65.83-3.73-99.43,2-13.92,1.83-28.49,2.35-42.52.89-23.69,1.47-47.43.78-71.13-.33-11.46,1.39-24.69-3.51-35.43C735.83-5.09,710.2,4,697.92,5c-15.83,1.23-31.65,2.79-47.55,2.54L450.28,4.44,169,.15c-24.11-.37-47.59,0-71.61,1.24-16.27.86-34-1-50,1.29-10.52,1.51-36.89,4.77-43,14C2.07,20.28,2,24.8,2,29.08c-.07,20,1.61,106,2.18,126C5.69,210-.1,264.81,0,319.54,0,327.08,2.05,332.08,5.43,335.43Z"/></svg>
+         </div>
       </div>
 
       <!-- QUESTION 05 -->
-      <div class="question-box bol-box-bg-05">
-         
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/nana.mp3">
-              Sorry, your browser does not support HTML5 audio.
-            </audio>
-            <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/marwari.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>MARWARI</h3>
+               <p>Choko Lagyo <em>(Cho-ko Laag-yo)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-13" class="wrong"><input type="radio" name="ques05" value="0"> I need a choco latte!</label></li>
+               <li><label for="input-14" class="wrong"><input type="radio" name="ques05" value="0"> I am feeling choked</label></li>
+               <li><label for="input-15" class="right"><input type="radio" name="ques05" value="1"> You are looking good.</label></li>
+               <input type="hidden" id="ques05" value="0">
+            </ul>
          </div>
-         <div class="que-box-content">
-            <h2>MARWARI</h2>
-            <h3>YOU'RE LOOKING GOOD</h3>
-            <p>Choko Lagyo <em>(Cho-ko Laag-yo)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-13" class="wrong"><input type="radio" name="ques05" value="0"> Govinda</label></li>
-            <li><label for="input-14" class="wrong"><input type="radio" name="ques05" value="0"> Prabhas</label></li>
-            <li><label for="input-15" class="right"><input type="radio" name="ques05" value="1"> Nana</label></li>
-            <input type="hidden" id="ques05" value="0">
-         </ul>
+         <div class="bol-box-svg">
+            <!-- Blue -->
+            <svg id="section-svg05" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-5" d="M747.36,12.82a5.75,5.75,0,0,0-2-1.42,19.19,19.19,0,0,0-7.28-1.09c-28.61-.58-56.62-7.29-85.21-8-27.83-.72-55.56,4.17-83.55,3.6q-29.15-.6-58.3-1.09-58.3-1-116.61-1.55Q277.84,2.11,161.22,2.65c-3.07,0-6.28.29-9.33,0C127,.74,102,.42,77,.26,63.39.16,49.62.08,36.13,2.45,26.08,4.21,4.41,8.51,1.53,20.33c-2.15,8.82.42,18.48.59,27.38.9,47.84,10.59,80,1.31,143.54-2,13.92-1.84,28.49-2.37,42.52C.16,257.46-.42,281.2.27,304.9c.33,11.46-1.4,24.69,3.53,35.43C10.59,355.1,36.37,346,48.72,345c15.92-1.23,31.84-2.79,47.84-2.54l201.3,3.06,283,4.3c24.25.37,47.88,0,72-1.24,16.37-.86,34.25,1,50.3-1.29,10.58-1.51,37.12-4.77,43.22-14,2.41-3.64,2.5-8.16,2.52-12.44.07-20-1.62-106-2.19-126-.32-11.32-.26-79.55.32-90.86C747.38,97.27,753.32,19.35,747.36,12.82Z"/></svg>
+         </div>
       </div>
 
       <!-- QUESTION 06 -->
-      <div class="question-box bol-box-bg-06">
-         
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-              <source type="audio/mp3" src="assets/audio/salman-khan.mp3">
-              Sorry, your browser does not support HTML5 audio.
-            </audio>
-            <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                 <source type="audio/mp3" src="assets/audio/bol/punjabi.mp3">
+                 Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>PUNJABI</h3>
+               <p>Kiddaan? <em>(kidd-aa)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-16" class="wrong"><input type="radio" name="ques06" value="0"> Where are you?</label></li>
+               <li><label for="input-17" class="wrong"><input type="radio" name="ques06" value="0"> Do you have kids?</label></li>
+               <li><label for="input-18" class="right"><input type="radio" name="ques06" value="1"> How are you?</label></li>
+               <input type="hidden" id="ques06" value="0">
+            </ul>
          </div>
-         <div class="que-box-content">
-            <h2>PUNJABI</h2>
-            <h3>HOW ARE YOU?</h3>
-            <p>Kiddaan? <em>(kidd-aa)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-16" class="wrong"><input type="radio" name="ques06" value="0"> Ritesh Deshmukh</label></li>
-            <li><label for="input-17" class="right"><input type="radio" name="ques06" value="1"> Salman Khan</label></li>
-            <li><label for="input-18" class="wrong"><input type="radio" name="ques06" value="0"> Ranveer Singh</label></li>
-            <input type="hidden" id="ques06" value="0">
-         </ul>
+         <div class="bol-box-svg">
+            <!-- Orange -->
+            <svg id="section-svg06" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-6" d="M2.63,337.29a5.75,5.75,0,0,0,2,1.42,19.19,19.19,0,0,0,7.28,1.09c28.61.58,56.62,7.29,85.21,8,27.83.72,55.56-4.17,83.55-3.6q29.15.6,58.3,1.09,58.3,1,116.61,1.55,116.61,1.13,233.23.59c3.07,0,6.28-.29,9.33,0,24.88,2,49.89,2.27,74.85,2.44,13.64.09,27.42.17,40.9-2.19,10.06-1.76,31.73-6.06,34.61-17.88,2.15-8.82-.42-18.48-.59-27.38-.9-47.84-10.59-80-1.31-143.54,2-13.92,1.84-28.49,2.37-42.52.9-23.69,1.48-47.43.79-71.13-.33-11.46,1.4-24.69-3.53-35.43C739.39-5,713.61,4.11,701.26,5.06c-15.92,1.23-31.84,2.79-47.84,2.54L452.11,4.55l-283-4.3c-24.25-.37-47.88,0-72,1.24-16.37.86-34.25-1-50.3,1.29C36.23,4.29,9.69,7.56,3.59,16.75c-2.41,3.64-2.5,8.16-2.52,12.44-.07,20,1.62,106,2.19,126,.32,11.32.26,79.55-.32,90.86C2.6,252.84-3.34,330.76,2.63,337.29Z"/></svg>
+         </div>
       </div>
 
       <!-- QUESTION 07 -->
-      <div class="question-box bol-box-bg-07">
-         
-         <div class="audio-box">
-            <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
-               <source type="audio/mp3" src="assets/audio/vidya-balan.mp3">
-               Sorry, your browser does not support HTML5 audio.
-            </audio>
-            <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                  <source type="audio/mp3" src="assets/audio/bol/odia.mp3">
+                  Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>ODIA</h3>
+               <p>Ehi jaga ta bahut sundar. <em>(Eh-e ja-ga taa ba-hutt sun-dar)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-19" class="right"><input type="radio" name="ques07" value="1"> This place is beautiful</label></li>
+               <li><label for="input-20" class="wrong"><input type="radio" name="ques07" value="0"> I love visiting beautiful places</label></li>
+               <li><label for="input-21" class="wrong"><input type="radio" name="ques07" value="0"> It's a beautiful day</label></li>
+               <input type="hidden" id="ques07" value="0">
+            </ul>
          </div>
-         <div class="que-box-content">
-            <h2>ODIA</h2>
-            <h3>THIS PLACE IS BEAUTIFUL</h3>
-            <p>Ehi jaga ta bahut sundar. <em>(Eh-e ja-ga taa ba-hutt sun-dar)</em></p>
-        </div>
-         <ul class="answer-type demo-list one-third">
-            <li><label for="input-19" class="right"><input type="radio" name="ques07" value="1"> Vidya Balan</label></li>
-            <li><label for="input-20" class="wrong"><input type="radio" name="ques07" value="0"> Diana Penty</label></li>
-            <li><label for="input-21" class="wrong"><input type="radio" name="ques07" value="0"> Deepika Padukone</label></li>
-            <input type="hidden" id="ques07" value="0">
-         </ul>
+         <div class="bol-box-svg">
+            <!-- Green -->
+            <svg id="section-svg07" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-7" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
+         </div>
+      </div>
+
+      <!-- QUESTION 08 -->
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                  <source type="audio/mp3" src="assets/audio/bol/telugu.mp3">
+                  Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>TELUGU</h3>
+               <p>Hello! Nee peru enti? <em>((Nee-peru-enti)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-22" class="wrong"><input type="radio" name="ques08" value="0"> Hello! How are you aunty?</label></li>
+               <li><label for="input-23" class="wrong"><input type="radio" name="ques08" value="0"> Hello! Are you really anti?</label></li>
+               <li><label for="input-24" class="right"><input type="radio" name="ques08" value="1"> Hello! What's your name?</label></li>
+               <input type="hidden" id="ques08" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Purple -->
+            <svg id="section-svg08" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-8" d="M5.43,335.43c8.66,8.6,26,6.3,39.37,8a518.33,518.33,0,0,0,52.6,4.28c27.66.72,55.23-4.17,83-3.6q29,.6,57.95,1.09,57.95,1,115.9,1.55,115.91,1.13,231.83.59c3,0,6.24-.29,9.27,0,24.73,2,49.58,2.27,74.4,2.44,19.25.13,55.43,2.89,69.85-13.54,17.27-19.68,10.43-54.7,7.05-78-4.81-33.21-8.61-65.83-3.73-99.43,2-13.92,1.83-28.49,2.35-42.52.89-23.69,1.47-47.43.78-71.13-.33-11.46,1.39-24.69-3.51-35.43C735.83-5.09,710.2,4,697.92,5c-15.83,1.23-31.65,2.79-47.55,2.54L450.28,4.44,169,.15c-24.11-.37-47.59,0-71.61,1.24-16.27.86-34-1-50,1.29-10.52,1.51-36.89,4.77-43,14C2.07,20.28,2,24.8,2,29.08c-.07,20,1.61,106,2.18,126C5.69,210-.1,264.81,0,319.54,0,327.08,2.05,332.08,5.43,335.43Z"/></svg>
+         </div>
+      </div>
+
+      <!-- QUESTION 09 -->
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                  <source type="audio/mp3" src="assets/audio/bol/tamil.mp3">
+                  Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>TAMIL</h3>
+               <p>Yeneke Pustagam Padike Pidikim <em>(Ye-ne-ke Pus-ta-gam  Pa-di-ke Pi-di-kim)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-25" class="right"><input type="radio" name="ques09" value="1"> I love reading books</label></li>
+               <li><label for="input-26" class="wrong"><input type="radio" name="ques09" value="0"> I have a lot of books</label></li>
+               <li><label for="input-27" class="wrong"><input type="radio" name="ques09" value="0"> I hope you read books</label></li>
+               <input type="hidden" id="ques09" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Blue -->
+            <svg id="section-svg09" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-9" d="M747.36,12.82a5.75,5.75,0,0,0-2-1.42,19.19,19.19,0,0,0-7.28-1.09c-28.61-.58-56.62-7.29-85.21-8-27.83-.72-55.56,4.17-83.55,3.6q-29.15-.6-58.3-1.09-58.3-1-116.61-1.55Q277.84,2.11,161.22,2.65c-3.07,0-6.28.29-9.33,0C127,.74,102,.42,77,.26,63.39.16,49.62.08,36.13,2.45,26.08,4.21,4.41,8.51,1.53,20.33c-2.15,8.82.42,18.48.59,27.38.9,47.84,10.59,80,1.31,143.54-2,13.92-1.84,28.49-2.37,42.52C.16,257.46-.42,281.2.27,304.9c.33,11.46-1.4,24.69,3.53,35.43C10.59,355.1,36.37,346,48.72,345c15.92-1.23,31.84-2.79,47.84-2.54l201.3,3.06,283,4.3c24.25.37,47.88,0,72-1.24,16.37-.86,34.25,1,50.3-1.29,10.58-1.51,37.12-4.77,43.22-14,2.41-3.64,2.5-8.16,2.52-12.44.07-20-1.62-106-2.19-126-.32-11.32-.26-79.55.32-90.86C747.38,97.27,753.32,19.35,747.36,12.82Z"/></svg>
+         </div>
+      </div>
+
+      <!-- QUESTION 10 -->
+      <div class="question-box">
+         <div class="bol-box-content">
+            <div class="audio-box">
+               <audio preload="auto" tabindex="0" controls="" type="audio/mpeg" class="audio" onclick="toggleSound(this)">
+                  <source type="audio/mp3" src="assets/audio/bol/kashmiri.mp3">
+                  Sorry, your browser does not support HTML5 audio.
+               </audio>
+               <span class="ani-icon"><img src="assets/images/quiz/ani-icon.svg"></span>
+            </div>
+            <div class="que-box-content">
+               <h3>Kashmiri</h3>
+               <p>Walle photo tulow <em>(Wal-ley photo tu-low)</em></p>
+           </div>
+            <ul class="answer-type demo-list bol-list">
+               <li><label for="input-28" class="wrong"><input type="radio" name="ques10" value="0"> Hey, take a photo at least</label></li>
+               <li><label for="input-29" class="right"><input type="radio" name="ques10" value="1"> Let's take a photo</label></li>
+               <li><label for="input-30" class="wrong"><input type="radio" name="ques10" value="0"> Is the photo too low?</label></li>
+               <input type="hidden" id="ques10" value="0">
+            </ul>
+         </div>
+         <div class="bol-box-svg">
+            <!-- Orange -->
+            <svg id="section-svg10" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-10" d="M2.63,337.29a5.75,5.75,0,0,0,2,1.42,19.19,19.19,0,0,0,7.28,1.09c28.61.58,56.62,7.29,85.21,8,27.83.72,55.56-4.17,83.55-3.6q29.15.6,58.3,1.09,58.3,1,116.61,1.55,116.61,1.13,233.23.59c3.07,0,6.28-.29,9.33,0,24.88,2,49.89,2.27,74.85,2.44,13.64.09,27.42.17,40.9-2.19,10.06-1.76,31.73-6.06,34.61-17.88,2.15-8.82-.42-18.48-.59-27.38-.9-47.84-10.59-80-1.31-143.54,2-13.92,1.84-28.49,2.37-42.52.9-23.69,1.48-47.43.79-71.13-.33-11.46,1.4-24.69-3.53-35.43C739.39-5,713.61,4.11,701.26,5.06c-15.92,1.23-31.84,2.79-47.84,2.54L452.11,4.55l-283-4.3c-24.25-.37-47.88,0-72,1.24-16.37.86-34.25-1-50.3,1.29C36.23,4.29,9.69,7.56,3.59,16.75c-2.41,3.64-2.5,8.16-2.52,12.44-.07,20,1.62,106,2.19,126,.32,11.32.26,79.55-.32,90.86C2.6,252.84-3.34,330.76,2.63,337.29Z"/></svg>
+         </div>
       </div>
 
       
-
       <!-- Button -->
       <div class="box-blank">
          <div class="result-btn"><button type="button" id="btn" class="result-submit">Check Score <i class="fa fa-angle-right fa-lg"></i></button></div> 
@@ -225,24 +325,30 @@ body {font-family: 'Bree Serif', serif;}
       <!-- ANSWER -->
       <div class="lessGreater large-size">
          <div class="white-box minimum" style="display:none">
-            <span class="result-content">
-               <p>ROFL-ail! Let's laugh this score off, and take another shot at the quiz.</p>
+            <span class="bol-result-content">
+               <p>1-3 Yo! You Love Your Bhasha, But There's Scope for More Tamasha. Replay The Game!</p>
             </span>
-            <span class="result-img"><img alt="" src="assets/images/quiz/laughter-day01.jpg"></span>
+            <span class="bol-result-svg">
+               <svg id="section-svg001" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-7" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
+            </span>
          </div>
          
          <div class="white-box middle" style="display:none">
-            <span class="result-content">
-               <p>LOL-Salaam! Sahi pakde hain, almost.</p>
+            <span class="bol-result-content">
+               <p>4-6 BOL Baby BOL! You're On a Roll! Play it Again, and Share With Your Friends Too!</p>
             </span>
-            <span class="result-img"><img alt="" src="assets/images/quiz/laughter-day02.jpg"></span>
+            <span class="bol-result-svg">
+               <svg id="section-svg002" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-7" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
+            </span>
          </div>
 
          <div class="white-box maximum" style="display:none">
-            <span class="result-content">
-               <p>LMAO-standing! Your celeb-laughter quotient is on point. Add it to your CV!</p>
+            <span class="bol-result-content">
+               <p>7-10 Bingo! You Know The Lingo! Now Challenge Your Friends.</p>
             </span>
-            <span class="result-img"><img alt="" src="assets/images/quiz/laughter-day03.jpg"></span>
+            <span class="bol-result-svg">
+               <svg id="section-svg003" data-name="TheQuint.com" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350" preserveAspectRatio="none"><path class="cls-7" d="M745.45,14.58c-8.66-8.6-26-6.3-39.37-8a518.33,518.33,0,0,0-52.6-4.28c-27.66-.72-55.23,4.17-83,3.6q-29-.6-57.95-1.09-57.95-1-115.9-1.55Q280.69,2.11,164.77,2.65c-3,0-6.24.29-9.27,0C130.76.74,105.91.42,81.1.26,61.85.13,25.67-2.63,11.25,13.8-6,33.47.82,68.49,4.2,91.82,9,125,12.81,157.65,7.93,191.25c-2,13.92-1.83,28.49-2.35,42.52-.89,23.69-1.47,47.43-.78,71.13.33,11.46-1.39,24.69,3.51,35.43C15.05,355.1,40.68,346,53,345c15.83-1.23,31.65-2.79,47.55-2.54l200.09,3.06,281.25,4.3c24.11.37,47.59,0,71.61-1.24,16.27-.86,34,1,50-1.29,10.52-1.51,36.89-4.77,43-14,2.4-3.64,2.49-8.16,2.5-12.44.07-20-1.61-106-2.18-126C745.19,140,751,85.2,750.9,30.46,750.89,22.93,748.83,17.93,745.45,14.58Z"/></svg>
+            </span>
          </div>
       </div>
 
@@ -276,15 +382,15 @@ body {font-family: 'Bree Serif', serif;}
        $("#lblTotalMarks").text(total);
    });
    $("#btn").on("click",function(){
-      if($("#lblTotalMarks").text() <= 2 ){
+      if($("#lblTotalMarks").text() <= 3 ){
         $(".lessGreater div").hide();
         $(".lessGreater div.minimum").show();
 
-      } else if($("#lblTotalMarks").text() > 2 && $("#lblTotalMarks").text() <= 5){
+      } else if($("#lblTotalMarks").text() > 3 && $("#lblTotalMarks").text() <= 6){
         $(".lessGreater div").hide();
         $(".lessGreater div.middle").show();
 
-      } else if($("#lblTotalMarks").text() > 5 ){
+      } else if($("#lblTotalMarks").text() > 6 ){
         $(".lessGreater div").hide();
         $(".lessGreater div.maximum").show();
 
@@ -331,9 +437,6 @@ $(document).ready(function(){
    $(".iCheck-helper").click(function(){
       $(this).parents("label").click();
    });
-
-   
-
 });
 </script>
 
