@@ -16,7 +16,7 @@ body {
     max-width:750px;
     overflow: hidden;
     position: relative;
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
 }
 .main-wrap .container {
     margin:0 auto;
