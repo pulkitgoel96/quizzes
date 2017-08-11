@@ -55,15 +55,31 @@
 <body>
 <a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
 <div class="social">
-			<div class="social-back"><img src="assets/images/share.png" alt="">
-			</div>
-			<div class="social-icons" style="display: none;">
-				<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;t=Try+this+stress+buster+for+shit+relatives+say+when+results+come+in" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
-				</div>
-				<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;text=Try This Stress-Buster for Shit Relatives Say When Results Come In %20https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
-				</div>
-			</div>
+	<div class="social-back"><img src="assets/images/share.png" alt="">
+	</div>
+	<div class="social-icons" style="display: none;">
+		<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;t=Try+this+stress+buster+for+shit+relatives+say+when+results+come+in" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
 		</div>
+		<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;text=Try This Stress-Buster for Shit Relatives Say When Results Come In %20https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
+		</div>
+	</div>
+</div>
+
+
+<section class="overlay-screen">
+<div class="start-container">
+	<div class="start-text-cont">
+      <div class="start-text">Flush all thE shit people say about toilets</div>
+    </div>
+    <p class="start-p">
+    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    <a class="btn-start" href="javascript:void(0);">Start</a>
+    
+</div>
+</section>
+
+
 
 <section class="wrpper app-wrapper">
   <div class="container">
@@ -88,9 +104,7 @@
       <div class="ak ak-show"><img src="assets/images/ak1.png"></div>
       <div class="ak ak-hide"><img src="assets/images/ak2.png"></div>
     </div>
-    <div class="start-text-cont">
-      <div class="start-text">Flush all thE shit people say about toilets</div>
-    </div>
+    
     <div class="counter-cont">
       <div class="taoal"> <img src="assets/images/taoal.svg"> </div>
       <div class="action-flush desktop-show cursor_face">

@@ -7,6 +7,10 @@ $(document).ready(function(){
    $("body").click(function(){
       $(".social-icons").slideUp();
    });
+	$('.btn-start').click(function(){
+		$('.overlay-screen').fadeOut();
+	})
+	
 });
 
 counts = {};
