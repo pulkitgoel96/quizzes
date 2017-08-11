@@ -108,7 +108,7 @@ body {
 }
 	
 	.total-flush h4 {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 80%;
 }
 	
@@ -121,8 +121,8 @@ body {
 
 @media (max-width: 575px) {
 	.footer-bg {
-  height: 240px;
-  margin-top: -240px;
+  height: 224px;
+  margin-top: -224px;
 }
 }
 
