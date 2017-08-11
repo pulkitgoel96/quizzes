@@ -47,9 +47,6 @@
 <link href="assets/css/base.css" rel="stylesheet" media="all">
 <link href="assets/css/theme.css" rel="stylesheet" media="all">
 <link href="assets/css/responsive.css" rel="stylesheet" media="all">
-
-<!-- Google Analytics -->
-<script> var gaTrackerCode = 'UA-58739020-1'; if (gaTrackerCode != null) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', gaTrackerCode, 'auto'); ga('send', 'pageview'); } </script>
 </head>
 
 <body>
@@ -87,10 +84,10 @@
   <div class="container">
     <div class="text-cont"> <img src="assets/images/text-cont.svg">
       <div class="change-text">
-     	 <span class="is-show">Jiss ghar mein Tulsi ka paudha ho, wahan toilet nahi ban sakta!</span>
-     	 <span>Lorem Ipsum is simply dummy text of the printing</span>
-     	 <span>Using Lorem Ipsum is that it has a more-or-less normal distribution </span>
-     	 <span>It was popularised in the 1960s with the release</span>
+     	 <span class="is-show">"Many people regard open defecation as part of a wholesome, healthy, virtuous life"</span>
+     	 <span>"Faeces don’t belong under the same roof as where we eat and sleep."</span>
+     	 <span>"Only the lower castes should be exposed to excrement in a closed space"</span>
+     	 <span>"Locking us inside these booths with our own filth? How's that is clean?"</span>
       </div>
     </div>
     <div class="animate-area clearfix">
