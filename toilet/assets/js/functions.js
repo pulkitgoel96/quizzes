@@ -49,14 +49,16 @@ $(document).ready(function () {
 	$(".cursor_face").click(function () {
 
 		setTimeout(function () {
-			jQuery('.pow').show();
+			jQuery('.ak-show').hide();
+			jQuery('.ak-hide').show();
 		}, 200);
 
 		var jqxhr = $.getJSON("ajax.php?count=" + count, function (data) {
 			count = parseInt(count) + 1;
 			$('#number1').html(data.count);
 			setTimeout(function () {
-				jQuery('.pow').fadeOut();
+				jQuery('.ak-show').show();
+			    jQuery('.ak-hide').hide();
 			}, 500);
 		});
 		face_audio.play();

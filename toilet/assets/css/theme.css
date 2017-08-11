@@ -233,3 +233,10 @@ h1, h2, h3, h4, h5, h6 {
 .social img {
 	width: 100%;
 }
+
+.ak-hide{
+	display: none;
+}
+.ak-show{
+	display: block;
+}
