@@ -24,6 +24,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+html {
+	width: 100%;
+}
 article, aside, footer, header, nav, section {
 	display: block;
 }
