@@ -18,6 +18,7 @@
 <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
 
 <!-- Custom styles for this template -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 
 <!-- Replace with bundle.min.css -->
@@ -43,7 +44,7 @@
 
     <p class="start-p">
     
-    	A lot of people in India are forced to defecate in the open, leading to health, environment and economic loss to the country.<br><br>
+    	A lot of people in India are forced to defecate in the open, leading to health, environment and economic losses to the country.<br><br>
 Time to flush it out. Play the game, and record your flushes. 1 Flush = 1 Salute to Clean India!
     </p>
     <div class="clearfix">
@@ -64,10 +65,10 @@ Time to flush it out. Play the game, and record your flushes. 1 Flush = 1 Salute
      	 <span>WHO says India has the second highest death rate of children under 5 years due to poor sanitation.</span>
      	<span>23% Indian girls dropped out of school on reaching puberty because of the lack of menstrual management facilities.</span>
      	<span>Almost half of rural households in India do potty khullam khulla.</span>
-     	<span>Only 42.5% rural have access to water for use in toilet. Bin Pani Sab Poop!</span>
+     	<span>Only 42.5% rural areas have access to water for use in toilet. Bin Pani Sab Poop!</span>
      	<span>34,20,00,000 people defecate in the open. That's equal to India's population at Independence, in 1947!</span>
      	<span>Indore has the cleanest outdoors! Yes, it's ranked the cleanest city in India.</span>
-     	<span>1/10 village in India uses community toilets. Farty Party!!</span>
+     	<span>1/10 villages in India use community toilets. Farty Party!!</span>
       </div>
     </div>
     <div class="animate-area clearfix">
