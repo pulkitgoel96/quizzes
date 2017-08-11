@@ -23,6 +23,14 @@
 
 <!-- Replace with bundle.min.css -->
 <link href="assets/css/style.min.css" rel="stylesheet" media="all">
+<style>
+  
+  html
+  {
+    width:100vw;
+  }
+  
+</style>
 </head>
 <body>
 <a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
