@@ -27,7 +27,6 @@
 <link href="assets/css/theme.css" rel="stylesheet" media="all">
 <link href="assets/css/responsive.css" rel="stylesheet" media="all">
 </head>
-
 <body>
 <a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
 <div class="social">
@@ -40,8 +39,6 @@
 		</div>
 	</div>
 </div>
-
-
 <section class="overlay-screen">
 <div class="start-container">
 	<div class="start-text-cont">
