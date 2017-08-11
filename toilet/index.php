@@ -35,14 +35,14 @@
 <body>
 <a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
 <div class="social">
-	<div class="social-back"><img src="assets/images/share.png" alt="">
-	</div>
-	<div class="social-icons" style="display: none;">
-		<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;t=Try+this+stress+buster+for+shit+relatives+say+when+results+come+in" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
-		</div>
-		<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;text=Try This Stress-Buster for Shit Relatives Say When Results Come In %20https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
-		</div>
-	</div>
+<div class="social-back"><img src="assets/images/share.png" alt="">
+</div>
+<div class="social-icons" style="display: none;">
+<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/toilet-ek-prem-katha-game/&amp;t=Toilet+-+Ek+Interactive+Game:+Be+Akshay+Kumar+And+Flush+For+Facts" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
+</div>
+<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/toilet-ek-prem-katha-game/&amp;text=Play this interactive game and contribute to PM Modi’s Swachh Bharat Abhiyan. No shitting, just click to flush. %20https%3A//thequint.com/quintlab/toilet-ek-prem-katha-game" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
+</div>
+</div>
 </div>
 <section class="overlay-screen">
 <div class="start-container">
