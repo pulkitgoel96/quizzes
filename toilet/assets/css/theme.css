@@ -92,6 +92,14 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+.change-text span{
+	display: none;
+}
+
+.change-text span.is-show{
+	display: block;
+}
+
 
 .start-text-cont {
   background: #f4840b none repeat scroll 0 0;

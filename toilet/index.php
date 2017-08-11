@@ -43,6 +43,7 @@
 
 <!-- Replace with bundle.min.css -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="assets/css/animate.css" rel="stylesheet" media="all">
 <link href="assets/css/base.css" rel="stylesheet" media="all">
 <link href="assets/css/theme.css" rel="stylesheet" media="all">
 <link href="assets/css/responsive.css" rel="stylesheet" media="all">
@@ -55,7 +56,12 @@
 <section class="wrpper app-wrapper">
   <div class="container">
     <div class="text-cont"> <img src="assets/images/text-cont.svg">
-      <div class="change-text">Jiss ghar mein Tulsi ka paudha ho, wahan toilet nahi ban sakta!</div>
+      <div class="change-text">
+     	 <span>Jiss ghar mein Tulsi ka paudha ho, wahan toilet nahi ban sakta!</span>
+     	 <span>Lorem Ipsum is simply dummy text of the printing</span>
+     	 <span>Using Lorem Ipsum is that it has a more-or-less normal distribution </span>
+     	 <span>It was popularised in the 1960s with the release</span>
+      </div>
     </div>
     <div class="animate-area clearfix">
       <div class="flush">
@@ -79,7 +85,7 @@
         <h2>FLUSH</h2>
       </div>
       <div class="total-flush">
-        <h4 id="number1"></h4>
+        <h4 id="number1" class="animated"></h4>
         <h5>Flushes So Far</h5>
       </div>
     </div>
