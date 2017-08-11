@@ -4,17 +4,23 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="format-detection" content="telephone=no" />
-<meta name="description" content="Have you wrapped your gift for Abu Azmi?">
-<meta name="keywords" content="abu azmi, burkha, burka, burqa, feminism, gift, bengaluru, rape, molestation, molest, assualt, men, female, girls, harassment, interview, ayesha takia, abu">
-<meta name="author" content="The Quint Lab">
-<meta name="copyright" content="" />
-<title>Gift Abu A Burqa</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#54747F" />
+<title>Bol - Love Your Bhasha | The Quint</title>
+<meta name="description" content="This Independence Day, express yourself in your mother tongue with The Quint’s new initiative Bol. ">
+<meta name="keywords" content="Independence day, india, languages, bhasha, bol, campaign, hindi, english, national language, punjabi, bengali, gujarati">
+<meta name="copyright" content="The Quint">
+<meta name="publisher" content="The Quint">
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
 <!-- Custom styles for this template -->
 <link href="assets/css/base.css" rel="stylesheet" media="all">
-
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,47 +54,18 @@
 
 <body>
 
+<style>
+	
+	html, body,iframe
+	{
+		width:100%;
+		height: 100%;
+	}
+	
+</style>
+
+
 <iframe src="https://thequint.herokuapp.com/toilet/" width="100%" frameborder="0" ></iframe>
-
-
-<script type="text/javascript" src="assets/js/iframe-resize.js"></script>
-
-<script type="text/javascript">	
-	/*
-* If you do not understand what the code below does, then please just use the
-* following call in your own code.
-*
-*   iFrameResize({log:true});
-*
-* Once you have it working, set the log option to false.
-*/
-iFrameResize({
-    log: true, // Enable console logging
-    inPageLinks: true,
-    resizedCallback: function(messageData) { // Callback fn when resize is received
-        $('p#callback').html(
-            '<b>Frame ID:</b> ' + messageData.iframe.id +
-            ' <b>Height:</b> ' + messageData.height +
-            ' <b>Width:</b> ' + messageData.width +
-            ' <b>Event type:</b> ' + messageData.type
-        );
-    },
-    messageCallback: function(messageData) { // Callback fn when message is received
-        $('p#callback').html(
-            '<b>Frame ID:</b> ' + messageData.iframe.id +
-            ' <b>Message:</b> ' + messageData.message
-        );
-        alert(messageData.message);
-        document.getElementsByTagName('iframe')[0].iFrameResizer.sendMessage('Hello back from parent page');
-    },
-    closedCallback: function(id) { // Callback fn when iFrame is closed
-        $('p#callback').html(
-            '<b>IFrame (</b>' + id +
-            '<b>) removed from page.</b>'
-        );
-    }
-});
-</script>
 
 </body>
 </html>

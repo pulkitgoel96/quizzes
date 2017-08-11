@@ -12,28 +12,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#54747F" />
-<title>Bol - Love Your Bhasha | The Quint</title>
-<meta name="description" content="This Independence Day, express yourself in your mother tongue with The Quint’s new initiative Bol. ">
-<meta name="keywords" content="Independence day, india, languages, bhasha, bol, campaign, hindi, english, national language, punjabi, bengali, gujarati">
-<meta name="copyright" content="The Quint">
-<meta name="publisher" content="The Quint">
-
-<!-- OG -->
-<meta property="og:title" content="Bol - Love Your Bhasha">
-<meta property="og:site_name" content="TheQuint">
-<meta property="og:url" content="https://thequint.com/quintlab/bol-love-your-bhasha/">
-<meta property="og:description" content="Express yourself in your mother tongue with The Quint’s new initiative Bol. ">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://thequint.com/quintlab/bol-love-your-bhasha/assets/images/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="600">
-
-<!-- Twitter card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@thequint">
-<meta name="twitter:title" content="Bol - Love Your Bhasha">
-<meta name="twitter:description" content="Express yourself in your mother tongue with The Quint’s new initiative Bol. ">
-<meta name="twitter:image" content="https://thequint.com/quintlab/bol-love-your-bhasha/assets/images/og.jpg">
+<title></title>
 
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
