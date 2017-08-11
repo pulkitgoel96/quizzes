@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   text-align: center;
   color: #bee5df;
-text-transform: uppercase;
+  text-transform: uppercase;
 	position: absolute;
 	top: 140px;
 	width: 100%;
@@ -142,6 +142,7 @@ text-transform: uppercase;
 	z-index: 1000;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	overflow: hidden;
 }
 
 .action-flush:hover{
