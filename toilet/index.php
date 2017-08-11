@@ -57,7 +57,7 @@
   <div class="container">
     <div class="text-cont"> <img src="assets/images/text-cont.svg">
       <div class="change-text">
-     	 <span>Jiss ghar mein Tulsi ka paudha ho, wahan toilet nahi ban sakta!</span>
+     	 <span class="is-show">Jiss ghar mein Tulsi ka paudha ho, wahan toilet nahi ban sakta!</span>
      	 <span>Lorem Ipsum is simply dummy text of the printing</span>
      	 <span>Using Lorem Ipsum is that it has a more-or-less normal distribution </span>
      	 <span>It was popularised in the 1960s with the release</span>
