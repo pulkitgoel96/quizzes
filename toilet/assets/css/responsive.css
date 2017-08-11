@@ -124,6 +124,10 @@ body {
   height: 224px;
   margin-top: -224px;
 }
+	
+	.logo{
+		width: 35px;
+	}
 }
 
 

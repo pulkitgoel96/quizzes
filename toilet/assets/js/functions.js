@@ -1,3 +1,14 @@
+
+$(document).ready(function(){
+    $(".social-back").click(function(e){
+      $(".social-icons").slideToggle(400);
+      return false;
+   });
+   $("body").click(function(){
+      $(".social-icons").slideUp();
+   });
+});
+
 counts = {};
 function format_number(text) {
 	return text.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");

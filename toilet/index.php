@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#202b54" />
+<meta name="theme-color" content="#54747F" />
 <title>Bol - Love Your Bhasha | The Quint</title>
 <meta name="description" content="This Independence Day, express yourself in your mother tongue with The Quint’s new initiative Bol. ">
 <meta name="keywords" content="Independence day, india, languages, bhasha, bol, campaign, hindi, english, national language, punjabi, bengali, gujarati">
@@ -53,6 +53,18 @@
 </head>
 
 <body>
+<a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
+<div class="social">
+			<div class="social-back"><img src="assets/images/share.png" alt="">
+			</div>
+			<div class="social-icons" style="display: none;">
+				<div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;t=Try+this+stress+buster+for+shit+relatives+say+when+results+come+in" target="_blank"><img src="assets/images/facebook.png" alt=""></a>
+				</div>
+				<div class="twitter"><a href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in/&amp;text=Try This Stress-Buster for Shit Relatives Say When Results Come In %20https%3A//thequint.com/quintlab/stress-buster-for-shit-relatives-say-when-results-come-in" target="_blank"><img src="assets/images/twitter.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+
 <section class="wrpper app-wrapper">
   <div class="container">
     <div class="text-cont"> <img src="assets/images/text-cont.svg">
@@ -96,14 +108,12 @@
 <audio id="face_audio">
 		<source src="assets/media/punch.mp3" type="audio/mp3"></source>
 </audio>
-
-	<?php 
-		$myfile = fopen("counter.txt", "r+") or die("Unable to open file!");
-		$counter =  fread($myfile,filesize("counter.txt"));
-		fclose($myfile);
-	?>
-	<span id="previous_counter" style="display:none;"><?php echo $counter;?></span>
-
+<?php 
+	$myfile = fopen("counter.txt", "r+") or die("Unable to open file!");
+	$counter =  fread($myfile,filesize("counter.txt"));
+	fclose($myfile);
+?>
+<span id="previous_counter" style="display:none;"><?php echo $counter;?></span>
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/iframeResizer.contentWindow.min.js"></script> 
 <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script> 

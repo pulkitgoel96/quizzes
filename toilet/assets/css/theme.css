@@ -190,3 +190,46 @@ h1, h2, h3, h4, h5, h6 {
 .mob-show{
 	display: none;
 }
+
+.logo {
+  left: 15px;
+  position: absolute;
+  top: 15px;
+  width: 40px;
+	z-index: 1000;
+}
+
+
+
+/*social*/
+
+.social {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	width: 30px;
+	z-index: 9999;
+	display: block;
+	text-align: center;
+}
+.social-back {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+.social-icons {
+	display: none;
+}
+.social-icons.show {
+	display: block;
+}
+.social-icons .facebook, .social-icons .twitter, .social-icons .copyright {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+.social img {
+	width: 100%;
+}
