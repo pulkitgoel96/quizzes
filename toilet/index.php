@@ -47,7 +47,7 @@
 
     <p class="start-p">
     
-    	A lot of people in India are forced to defecate in the open, leading to health, environment and economic loss to the country.
+    	A lot of people in India are forced to defecate in the open, leading to health, environment and economic loss to the country.<br><br>
 Time to flush it out. Play the game, and record your flushes. 1 Flush = 1 Salute to Clean India!
     </p>
     <div class="clearfix">
