@@ -65,12 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: 0;
 	z-index: 110;
 }
-.ak{
-	position: absolute;
-	left: 222px;
-	width: 235px;
-	bottom: 10px;
-	z-index: 105;
+.ak {
+  bottom: 10px;
+  left: 194px;
+  position: absolute;
+  width: 260px;
+  z-index: 120;
 }
 .text-cont {
   bottom: 390px;

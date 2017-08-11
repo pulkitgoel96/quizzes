@@ -65,9 +65,11 @@ body {
 	text-align: center;
 }
 .ak {
-	float: right;
-	position: static;
-	width: 52%;
+  float: right;
+  left: inherit;
+  margin-right: 9%;
+  position: relative;
+  width: 52%;
 }
 .action-flush.mob-show {
   bottom: inherit;
@@ -120,6 +122,17 @@ body {
 }
 
 @media (max-width: 575px) {
+	
+	.ak {
+  margin-right: 6%;
+		bottom: 15px;
+
+}
+	
+	.text-cont {
+  margin: 20px auto;
+}
+	
 	.footer-bg {
   height: 224px;
   margin-top: -224px;
