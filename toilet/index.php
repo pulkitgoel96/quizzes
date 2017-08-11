@@ -59,11 +59,14 @@
     </div>
     <div class="animate-area clearfix">
       <div class="flush">
-        <div class="action-flush mob-show">
+        <div class="action-flush mob-show cursor_face">
           <h3>Click Here to</h3>
           <h2>FLUSH</h2>
         </div>
-        <img src="assets/images/flash.png" alt=""> </div>
+        <img src="assets/images/flash.png" alt=""> 
+        <div class="pow" style="display: none;"><img src="assets/images/aburkha.png" alt=""></div>
+        
+        </div>
       <div class="ak"><img src="assets/images/ak.png"></div>
     </div>
     <div class="start-text-cont">
@@ -71,12 +74,12 @@
     </div>
     <div class="counter-cont">
       <div class="taoal"> <img src="assets/images/taoal.svg"> </div>
-      <div class="action-flush desktop-show">
+      <div class="action-flush desktop-show cursor_face">
         <h3>Click Here to</h3>
         <h2>FLUSH</h2>
       </div>
       <div class="total-flush">
-        <h4>23678</h4>
+        <h4 id="number1"></h4>
         <h5>Flushes So Far</h5>
       </div>
     </div>
