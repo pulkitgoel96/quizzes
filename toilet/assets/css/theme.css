@@ -6,7 +6,6 @@ body {
 	overflow-x: hidden;
 	background: url(../images/bg.png) repeat #bee5df;
 }
-
 p {
 	line-height: 130%;
 	margin-bottom: 25px;
@@ -30,18 +29,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Luckiest Guy', cursive;
 	font-size: 100%;
 }
-
 /*-- Website CSS --*/
-.footer-bg{
+.footer-bg {
 	position: fixed;
 	width: 100%;
 	height: 190px;
 	background: #829ca8;
 	bottom: 0;
-	
 }
-
-.footer-bg::after{
+.footer-bg::after {
 	height: 60px;
 	width: 100%;
 	background: #54747f;
@@ -51,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 	content: '';
 	display: block;
 }
-.app-wrapper{
+.app-wrapper {
 	position: fixed;
 	width: 100%;
 	background: rgba(0,0,0,0);
@@ -59,26 +55,27 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	z-index: 100;
 }
-.flush{
+.flush {
 	max-width: 240px;
 	position: absolute;
 	bottom: 0;
 	z-index: 110;
 }
 .ak {
-  bottom: 10px;
-  left: 194px;
-  position: absolute;
-  width: 260px;
-  z-index: 120;
+	bottom: 10px;
+	left: 194px;
+	position: absolute;
+	width: 260px;
+	z-index: 120;
 }
 .text-cont {
-  bottom: 390px;
-  left: 20px;
-  position: absolute;
-  width: 220px;
+	/*  bottom: 390px;*/
+	bottom: 390px;
+	left: 20px;
+	position: absolute;
+	width: 220px;
 }
-
+/*
 .change-text{
 	position: absolute;
 	color: #54747f;
@@ -92,29 +89,45 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.change-text span{
-	display: none;
-}
+*/
 
-.change-text span.is-show{
+
+.change-text {
+	background: #f6fbff none repeat scroll 0 0;
+	border: 10px solid #84a1a7;
+	border-radius: 13px;
+	color: #54747f;
+	font-size: 16px;
+	height: 180px;
+	left: 0;
+	line-height: 130%;
+	padding: 10px;
+	text-align: center;
+}
+.change-text span {
+	display: none;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: relative;
+}
+.change-text span.is-show {
 	display: block;
 }
-
-
 .start-text-cont {
-  background: #f4840b none repeat scroll 0 0;
-  border: 5px solid #fbb03b;
-  border-radius: 100%;
-  height: 140px;
-  position: relative;
-  width: 240px;
+	background: #f4840b none repeat scroll 0 0;
+	border: 5px solid #fbb03b;
+	border-radius: 100%;
+	height: 140px;
+	position: relative;
+	width: 240px;
 	margin: 0 auto;
 }
-
-.start-text{
+.start-text {
 	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 130%;
 	padding: 10px 15px 0px 15px;
 	position: relative;
@@ -123,24 +136,21 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-
-
-.counter-cont{
+.counter-cont {
 	position: absolute;
 	bottom: 286px;
 	right: 0;
 	width: 185px;
 }
-.taoal{
+.taoal {
 	z-index: 100;
 }
-
 .action-flush {
-  background: #f50003 none repeat scroll 0 0;
-  border-radius: 5px;
-  text-align: center;
-  color: #bee5df;
-  text-transform: uppercase;
+	background: #f50003 none repeat scroll 0 0;
+	border-radius: 5px;
+	text-align: center;
+	color: #bee5df;
+	text-transform: uppercase;
 	position: absolute;
 	top: 140px;
 	width: 100%;
@@ -150,55 +160,43 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.3s ease-in-out;
 	overflow: hidden;
 }
-
-.action-flush:hover{
+.action-flush:hover {
 	color: #fff;
 }
 .action-flush h3 {
- 
-  font-size: 23px;
-  line-height: 100%;
-  margin-bottom: 4px;
+	font-size: 23px;
+	line-height: 100%;
+	margin-bottom: 4px;
 }
 .action-flush h2 {
- 
-  font-size: 58px;
-  line-height: 85%;
+	font-size: 58px;
+	line-height: 85%;
 }
-
-.total-flush{
+.total-flush {
 	position: absolute;
 	top: 250px;
 	text-align: center;
 	color: #f50003;
 	width: 100%;
 }
-
-.total-flush h4{
+.total-flush h4 {
 	font-size: 44px;
 	line-height: 80%;
 }
-
-.total-flush h5{
+.total-flush h5 {
 	font-size: 23px;
 	line-height: 100%;
 }
-
-
-.mob-show{
+.mob-show {
 	display: none;
 }
-
 .logo {
-  left: 15px;
-  position: absolute;
-  top: 15px;
-  width: 40px;
+	left: 15px;
+	position: absolute;
+	top: 15px;
+	width: 40px;
 	z-index: 1000;
 }
-
-
-
 /*social*/
 
 .social {
@@ -231,15 +229,13 @@ h1, h2, h3, h4, h5, h6 {
 .social img {
 	width: 100%;
 }
-
-.ak-hide{
+.ak-hide {
 	display: none;
 }
-.ak-show{
+.ak-show {
 	display: block;
 }
-
-.overlay-screen{
+.overlay-screen {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -248,36 +244,60 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 9999;
 	text-align: center;
 }
-
-.start-container{
+.start-container {
 	position: relative;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-
 .start-p {
-  color: #fff;
-  display: inline-block;
-  font-size: 17px;
-  margin: 20px 0;
-  max-width: 500px;
-  padding: 0 15px;
+	color: #fff;
+	display: inline-block;
+	font-size: 17px;
+	margin: 20px 0 20px 0;
+	max-width: 500px;
+	padding: 0 15px;
 }
-
 .btn-start {
-  background: #f50003 none repeat scroll 0 0;
-  border-radius: 5px;
-  color: #BEE5DF;
-  display: inline-block;
-  font-size: 30px;
-  line-height: 100%;
-  padding: 15px 20px 5px;
+	background: #f50003 none repeat scroll 0 0;
+	border-radius: 5px;
+	color: #BEE5DF;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 100%;
+	padding: 15px 20px 5px;
 }
-
-.btn-start:hover{
+.btn-start:hover {
 	color: #fff;
 }
-
-
+ @-webkit-keyframes hvr-pulse-grow {
+ to {
+ -webkit-transform: scale3d(1.1, 1.1, 1);
+ transform: scale3d(1.1, 1.1, 1);
+}
+}
+@keyframes hvr-pulse-grow {
+ to {
+ -webkit-transform: scale3d(1.1, 1.1, 1);
+ transform: scale3d(1.1, 1.1, 1);
+}
+}
+.hvr-pulse-grow {
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-grow {
+	-webkit-animation-name: hvr-pulse-grow;
+	animation-name: hvr-pulse-grow;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}

@@ -139,7 +139,9 @@ body {
 }
 	
 	.logo{
-		width: 35px;
+		width: 28px;
+		top: 10px;
+		left: 10px;
 	}
 }
 

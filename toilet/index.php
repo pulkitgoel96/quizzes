@@ -42,10 +42,13 @@
 <section class="overlay-screen">
 <div class="start-container">
 	<div class="start-text-cont">
-      <div class="start-text">Flush all thE shit people say about toilets</div>
+      <div class="start-text">Flush for Facts</div>
     </div>
+
     <p class="start-p">
-    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    
+    	A lot of people in India are forced to defecate in the open, leading to health, environment and economic loss to the country.
+Time to flush it out. Play the game, and record your flushes. 1 Flush = 1 Salute to Clean India!
     </p>
     <div class="clearfix">
     <a class="btn-start" href="javascript:void(0);">Start</a>
@@ -58,17 +61,22 @@
 
 <section class="wrpper app-wrapper">
   <div class="container">
-    <div class="text-cont"> <img src="assets/images/text-cont.svg">
+    <div class="text-cont"> 
+<!--     <img src="assets/images/text-cont.svg">-->
       <div class="change-text">
-     	 <span class="is-show">"Many people regard open defecation as part of a wholesome, healthy, virtuous life"</span>
-     	 <span>"Faeces don’t belong under the same roof as where we eat and sleep."</span>
-     	 <span>"Only the lower castes should be exposed to excrement in a closed space"</span>
-     	 <span>"Locking us inside these booths with our own filth? How's that is clean?"</span>
+     	 <span class="is-show">Poor sanitation wiped off Rs. 68,52,32,73,50,000 (68 Lakh Crore) from India's GDP in 2015. Toilet Banao, Paise Flush Hone Se Bachao!</span>
+     	 <span>WHO says India has the second highest death rate of children under 5 years due to poor sanitation.</span>
+     	<span>23% Indian girls dropped out of school on reaching puberty because of the lack of menstrual management facilities.</span>
+     	<span>Almost half of rural households in India do potty khullam khulla.</span>
+     	<span>Only 42.5% rural have access to water for use in toilet. Bin Pani Sab Poop!</span>
+     	<span>34,20,00,000 people defecate in the open. That's equal to India's population at Independence, in 1947!</span>
+     	<span>Indore has the cleanest outdoors! Yes, it's ranked the cleanest city in India.</span>
+     	<span>1/10 village in India uses community toilets. Farty Party!!</span>
       </div>
     </div>
     <div class="animate-area clearfix">
       <div class="flush">
-        <div class="action-flush mob-show cursor_face">
+        <div class="action-flush mob-show cursor_face hvr-pulse-grow">
           <h3>Click Here to</h3>
           <h2>FLUSH</h2>
         </div>
@@ -82,7 +90,7 @@
     
     <div class="counter-cont">
       <div class="taoal"> <img src="assets/images/taoal.svg"> </div>
-      <div class="action-flush desktop-show cursor_face">
+      <div class="action-flush desktop-show cursor_face hvr-pulse-grow">
         <h3>Click Here to</h3>
         <h2>FLUSH</h2>
       </div>
