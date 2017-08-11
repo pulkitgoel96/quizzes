@@ -21,11 +21,7 @@
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 
 <!-- Replace with bundle.min.css -->
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
-<link href="assets/css/animate.css" rel="stylesheet" media="all">
-<link href="assets/css/base.css" rel="stylesheet" media="all">
-<link href="assets/css/theme.css" rel="stylesheet" media="all">
-<link href="assets/css/responsive.css" rel="stylesheet" media="all">
+<link href="assets/css/style.min.css" rel="stylesheet" media="all">
 </head>
 <body>
 <a class="logo" href="https://www.thequint.com" target="_blank"> <img src="assets/images/tq-logo.svg"> </a>
@@ -112,9 +108,6 @@ Time to flush it out. Play the game, and record your flushes. 1 Flush = 1 Salute
 	fclose($myfile);
 ?>
 <span id="previous_counter" style="display:none;"><?php echo $counter;?></span>
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/iframeResizer.contentWindow.min.js"></script> 
-<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script> 
-<script type="text/javascript" src="assets/js/functions.js"></script>
+<script type="text/javascript" src="assets/js/site.min.js"></script>
 </body>
 </html>
