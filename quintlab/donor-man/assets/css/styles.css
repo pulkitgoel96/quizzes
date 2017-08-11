@@ -6,6 +6,8 @@ body {
     line-height: 1.5;
     text-rendering: auto;
     color: #3c3c3c;
+    overflow: hidden;
+    background-color: #f7f7f7;
     font-family: 'Bree Serif', serif;
 }
 *, *::before, *::after {
@@ -16,7 +18,6 @@ body {
     max-width:750px;
     overflow: hidden;
     position: relative;
-    /*background-color: #f4f4f4;*/
 }
 .main-wrap .container {
     margin:0 auto;
@@ -28,7 +29,6 @@ body {
 }
 path {
     transform-origin: 50% 50%;
-    /*transition: all 100ms ease-in;*/
 }
 
 /* Heart */
@@ -173,6 +173,103 @@ path {
 .info-popup h2 {
     font-size: 18px;
 }
+
+
+.super-man-icon {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform:translate3d(0vw,0vh,0);
+    transition: 1.5s all ease-in-out;
+}
+.super-man-icon svg {
+    width: 100%;
+}
+
+/* First */
+.super-man-icon.first {
+    left: 0;
+    bottom: 0;
+    transform:translate3d(-40vw,40vh,0);
+}
+.super-man-icon.first.move {
+    transform:translate3d(140vw,-135vh,0);
+}
+
+/* Second */
+.super-man-icon.second {
+    left: 180px;
+    bottom: 120px;
+transform:translate3d(-40vw,40vh,0);
+
+    -webkit-transition-delay: 0.05s; /* Safari */
+    transition-delay: 0.05s;
+}
+.super-man-icon.second.move {
+    transform:translate3d(140vw,-135vh,0);
+}
+
+/* Third */
+.super-man-icon.third {
+    left: 200px;
+    bottom: 0;
+    transform:translate3d(-40vw,40vh,0);
+}
+.super-man-icon.third.move {
+    transform:translate3d(140vw,-135vh,0);
+
+}
+
+/* Forth */
+.super-man-icon.forth {
+    right:120px;
+    bottom: 0;
+    transform:translate3d(40vw,40vh,0);
+
+}
+.super-man-icon.forth.move {
+    transform:translate3d(-140vw,-140vh,0);
+}
+
+/* Fifth */
+.super-man-icon.fifth {
+    right: 0;
+    bottom: 0;
+    transform:translate3d(40vw,40vh,0);
+}
+.super-man-icon.fifth.move {
+    transform:translate3d(-140vw,-140vh,0);
+}
+
+.super-man-icon.move_reset {
+    transition: 0s all ease-in-out;
+}
+.super-man-icon.move_back {
+    transform:translate3d(0vw,0vh,0);
+}
+
+
+
+/*.ani {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    right:0px; bottom:0px;
+    transform:translate3d(40vw,40vh,0); 
+    transition: 0.8s all ease-in-out;
+}
+.ani.move {
+    transform:translate3d(-140vw,-140vh,0);
+}
+.ani.move_reset {
+    transition: 0s all ease-in-out;
+}
+.ani.move_back {
+    transform:translate3d(0vw,0vh,0);
+}*/
+
 @media only screen and (max-width: 767px) {
     .info-popup {
         margin: 0 auto;
