@@ -4,8 +4,6 @@ body {
     text-rendering: auto;
     color: #3c3c3c;
     background-color: #f7f7f7;
-    /*font-family: 'Bree Serif', serif;*/
-    /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Oswald', sans-serif;
 }
 *, *::before, *::after {
@@ -25,7 +23,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 0;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -307,8 +305,6 @@ body {
     transform: scale3d(1.1,1.1,1);
 }
 
-
-
 /* Circle Animation */
 .circle {
     -webkit-animation: rotation 11s infinite linear;
@@ -333,7 +329,6 @@ body {
         -webkit-transform: rotate(359deg);
     }
 }
-
 .intro-wrap .content-middle {
     margin: 0 auto;
     max-width: 200px;
