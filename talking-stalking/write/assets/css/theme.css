@@ -198,7 +198,7 @@ template {
 
 
 body {
-  background: rgba(0, 0, 0, 0) url("../images/bg.png") no-repeat fixed center top / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/bg.jpg") no-repeat fixed center top / cover ;
   color: #4b4b4b;
   font-family: "Roboto",sans-serif;
   font-size: 15px;
