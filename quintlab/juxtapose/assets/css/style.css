@@ -14,7 +14,8 @@ Primary style
 
 body {
     font-size: 100%;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Bree Serif', serif;
     background-color: #f7f7f7;
 }
 
@@ -272,6 +273,17 @@ header h1 {
     outline: none;
 }
 .form-wrap .btn-submit {
+    float: left;
+    border: none;
+    background-color: #6a357f;
+    padding: 8px 15px 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form-wrap .copy-val {
+    float: right;
     border: none;
     background-color: #6a357f;
     padding: 8px 15px 10px;
