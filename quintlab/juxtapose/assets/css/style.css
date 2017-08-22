@@ -15,7 +15,6 @@ Primary style
 body {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: none;
     background-color: #f7f7f7;
 }
 
@@ -236,7 +235,7 @@ header h1 {
     top: 50%;
     left: 0;
     right: 0;
-    background-color: #f4f4f4;
+    background-color: #e9e8e8;
     -ms-transform: translateY (-50%);
     -webkit-transform: translateY (-50%);
      -moz-transform: translateY (-50%);
@@ -275,10 +274,11 @@ header h1 {
 .form-wrap .btn-submit {
     border: none;
     background-color: #6a357f;
-    padding: 10px 15px;
-    font-size: 22px;
+    padding: 8px 15px 10px;
+    font-size: 20px;
     color: #fff;
     font-weight: 400;
+    cursor: pointer;
 }
 
 
