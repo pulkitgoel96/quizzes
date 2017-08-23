@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper.body-wrapper .container{
 	height: 100%;
-	max-width: 75%;
+	max-width: 80%;
 }
 .map{
 	width: 50%;
@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 15px;
   padding: 0 0 0 30px;
   position: relative;
+  text-align: left;
 }
 .map-index ul li::before{
 	width: 20px;
@@ -256,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 	transform: translateY(-50%);
 	float: right;
 	text-align: right;
+	
 }
 
 .info-container{
