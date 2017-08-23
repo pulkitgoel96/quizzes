@@ -42,10 +42,9 @@
 .wrapper.body-wrapper {
 	padding-top: 45px;
 }
-	
-	.wrapper.body-wrapper .container{
-		max-width: 90%;
-	}
+.wrapper.body-wrapper .container {
+	max-width: 90%;
+}
 .logo {
 	margin: 10px auto 0 auto;
 	width: 60px;
@@ -90,14 +89,10 @@
 	float: none;
 	display: block;
 	width: auto;
-	height: calc(100% - 200px); 
+	height: calc(100% - 200px);
 }
-
 .map, .map-img, .map-img > img {
-	
 }
-	
-	
 .volume {
 	bottom: 3px;
 	right: -10px;
@@ -187,10 +182,10 @@
 	-webkit-transform: translate3d(0, 8px, 0);
 	transform: translate3d(0, 8px, 0);
 }
-.info{
+.info {
 	width: 100%;
 	position: absolute;
-	top:inherit;
+	top: inherit;
 	bottom: 20px;
 	left: 0;
 	-webkit-transform: translateY(0%);
@@ -199,33 +194,48 @@
 	float: none;
 	text-align: center;
 	display: block;
-	
-	
-
 }
-	.info-container{
-		max-width: inherit;
-		
-	}
-	
-	.pm{
-		text-align: left;
-	}
-	
-	.pm-img{
-		float: left;
-		margin: 0;
-	}
-	
-	.pm figcaption {
-  float: left;
-  margin: 24px 0 0 28px;
+.info-container {
+	max-width: inherit;
 }
-
-	.event{
-		display: none;
+.pm {
+	text-align: left;
+}
+.pm-img {
+	float: left;
+	margin: 0;
+}
+.pm figcaption {
+	float: left;
+	margin: 24px 0 0 28px;
+}
+.event {
+	background: #f2c300 none repeat scroll 0 0;
+	bottom: -10px;
+	margin: 0;
+	position: absolute;
+	right: -5%;
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px 0px 0px 10px;
+	border: 0;
+	height: 135px;
+	transform: translate3d(100%, 0, 0);
+	transition: 0.3s all ease-in-out;
+}
+	.event.is-show{
+		transform: translate3d(0%, 0, 0);
 	}	
 	
+.event .headline, .event figcaption p {
+	color: #222;
+}
+.event-img {
+	top: 25px;
+}
+	.event-toggle{
+		display: block;
+	}
 }
 
 @media (max-width: 575px) {
@@ -238,8 +248,8 @@
 	width: 100px;
 }
 .map-index {
-  bottom: 0;
-  left: 55%;
+	bottom: 0;
+	left: 55%;
 }
 .map-index ul li::before {
 	height: 15px;
@@ -251,40 +261,55 @@
 	margin: 0 0 10px;
 	padding: 0 0 0 22px;
 }
-	
-	.map {
-
-  height: calc(100% - 100px);
+.map {
+	height: calc(100% - 100px);
 }
-	
-	.headline {
-  font-size: 20px;
-
+.headline {
+	font-size: 20px;
 }
-	
-	.pm-img {
-
-  height: 60px;
-  left: 0;
-  margin-bottom:0px;
-  overflow: hidden;
-  position: absolute;
-  top: 23px;
-  width: 60px;
+.pm-img {
+	height: 60px;
+	left: 0;
+	margin-bottom: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 23px;
+	width: 60px;
 }
-	
-	.pm figure{position: relative;}
-	
-	.pm figcaption {
-  float: left;
-  margin: 24px 0 0 68px;
+.pm figure {
+	position: relative;
 }
-	.pm h4{
-		font-size: 13px;
+.pm figcaption {
+	float: left;
+	margin: 24px 0 0 68px;
+}
+.pm h4 {
+	font-size: 13px;
+}
+.pm h5 {
+	font-size: 14px;
+}
+	.event{
+		padding: 10px;
+		width: 105%;
+		height: 125px;
+	}
+	.event figcaption{
+		padding: 0;
 	}
 	
-	.pm h5{
-		font-size: 14px;
+	.event figcaption p {
+  font-size: 12px;
+
+}
+	.event-toggle{
+		height: 125px;
+	}
+	.event-close{
+		top: -63px;
+	}
+	.event-toggle span{
+		top: 53px;
 	}
 	
 }

@@ -8,6 +8,19 @@ $(document).ready(function(){
       $(".social-ico").slideUp();
    });
 	
+	// Event Toggle
+	
+	$('.event-toggle').click(function(){
+		$('.event').toggleClass('is-show');
+		$(this).addClass('is-hide');
+		$('.event-close').addClass('is-show')
+	});
+	$('.event-close').click(function(){
+		$('.event').removeClass('is-show');
+		$(this).removeClass('is-show');
+		$('.event-toggle').removeClass('is-hide');
+	})
+	
 });
 
 

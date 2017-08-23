@@ -211,6 +211,9 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	max-width: 80%;
 }
+.timeline-container{
+	width: 80%;
+}
 .map{
 	width: 50%;
 	height: 100%;
@@ -547,5 +550,56 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------- End Sidebar CSS ---------------*/
 
 
+.event-close{
+	width: 30px;
+	height: 30px;
+	background: #f2c300;
+	color: #222;
+	display: inline-block;
+	text-align: center;
+	line-height: 100%;
+	border-radius: 10px 10px 0px 0px;
+	position: absolute;
+	top: -30px;
+	right: -100%;
+	transition: 1s all ease-in-out;	
+}
+.event-close.is-show{
+	right: 0%;
+}
+
+.event-close i{line-height: 28px; font-size: 20px;}
+.event-toggle{
+	width: 35px;
+	height: 135px;
+	background: #f2c300;
+	position: absolute;
+	bottom: -10px;
+	right: -5%;
+	border-radius: 10px 0px 0px 10px;
+	margin-right: -10px;
+	overflow: hidden;
+	color: #222;
+	display: none;
+	transition: all 0.3 s ease-in-out;
+}
+.event-toggle.is-hide{
+	right: -100%;
+}
+
+
+
+.event-toggle span {
+  display: block;
+  white-space: nowrap;
+  font-size: 14px;
+  left: -33px;
+  position: absolute;
+  top: 56px;
+	-webkit-transform: rotate(-90deg);  
+      -ms-transform: rotate(-90deg); 
+  		  transform: rotate(-90deg);
+ 
+}
 
 
