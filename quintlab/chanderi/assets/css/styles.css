@@ -59,7 +59,7 @@ body {
     animation: rotation 11s infinite linear;
     transform-origin:50% 50%;
 }
-@-webkit-keyframes rotation {
+/*@-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
     }
@@ -73,6 +73,26 @@ body {
     }
     to {
         -webkit-transform: rotate(359deg);
+    }
+}*/
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate3d(0,0,1,0deg);
+        transform: rotate3d(0,0,1,0deg);
+    }
+    to {
+        -webkit-transform: rotate3d(0,0,1,359deg);
+        transform: rotate3d(0,0,1,359deg);
+    }
+}
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate3d(0,0,1,0deg);
+        transform: rotate3d(0,0,1,0deg);
+    }
+    to {
+        -webkit-transform: rotate3d(0,0,1,359deg);
+        transform: rotate3d(0,0,1,359deg);
     }
 }
 
