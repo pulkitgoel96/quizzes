@@ -141,14 +141,15 @@ $(document).ready(function() {
     // Document Click
     $('body').click(function(evt){
 
-        if(evt.target.id == "jama_masjid_text" || evt.target.id == "jama_masjid"){} 
+        if(evt.target.id == "jama_masjid_text" || evt.target.id == "jama_masjid"){console.log("t1");} 
             
-        else if($(evt.target).closest('#jama_masjid_text').length || $(evt.target).closest('#jama_masjid').length){}
+        else if($(evt.target).closest('#jama_masjid_text').length || $(evt.target).closest('#jama_masjid').length){console.log("t2");}
                        
         else {
             if ($(window).width() < 1024) {    
                 $("#jama_masjid_text").fadeOut();
                 $("#jama_masjid_close").fadeOut();
+                console.log("t3");
             }
             else {
                 $("#jama_masjid_text").removeClass("circleEffect");
