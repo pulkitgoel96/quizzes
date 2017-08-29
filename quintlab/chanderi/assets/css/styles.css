@@ -259,54 +259,55 @@ body {
 #a_city_of_close {
     cursor: pointer;
 }
+@media only screen and (min-width: 1025px) {
+    #jama_masjid_text,
+    #jama_masjid_close,
 
-#jama_masjid_text,
-#jama_masjid_close,
+    #chanderi_sari_text,
+    #chanderi_sari_close,
 
-#chanderi_sari_text,
-#chanderi_sari_close,
-#a_centre_of_text,
-#a_centre_of_close,
+    #a_centre_of_text,
+    #a_centre_of_close,
 
-#chanderi_fort_text,
-#chanderi_fort_close,
+    #chanderi_fort_text,
+    #chanderi_fort_close,
 
-#a_city_of_text,
-#a_city_of_close {
-    transform: scale3d(0,0,1);
-}
-
-#jama_masjid_text.circleEffect,
-#jama_masjid_close.circleEffect,
-
-#chanderi_sari_text.circleEffect,
-#chanderi_sari_close.circleEffect,
-
-#a_centre_of_text.circleEffect,
-#a_centre_of_close.circleEffect,
-
-#chanderi_fort_text.circleEffect,
-#chanderi_fort_close.circleEffect,
-
-#a_city_of_text.circleEffect,
-#a_city_of_close.circleEffect {
-    transform-origin: 50% 50%;
-    animation: circleEffect 0.15s;
-    animation-fill-mode: forwards;
-}
-@keyframes circleEffect {
-    0% {
-        transform: scale3d(0.9,0.9,1);
+    #a_city_of_text,
+    #a_city_of_close {
+        transform: scale3d(0,0,1);
     }
-    90% {
-        transform: scale3d(1.05,1.05,1);
+
+    #jama_masjid_text.circleEffect,
+    #jama_masjid_close.circleEffect,
+
+    #chanderi_sari_text.circleEffect,
+    #chanderi_sari_close.circleEffect,
+
+    #a_centre_of_text.circleEffect,
+    #a_centre_of_close.circleEffect,
+
+    #chanderi_fort_text.circleEffect,
+    #chanderi_fort_close.circleEffect,
+
+    #a_city_of_text.circleEffect,
+    #a_city_of_close.circleEffect {
+        transform-origin: 50% 50%;
+        animation: circleEffect 0.15s;
+        animation-fill-mode: forwards;
     }
-    100% {
-        transform: scale3d(1,1,1);
+    @keyframes circleEffect {
+        0% {
+            transform: scale3d(0.9,0.9,1);
+        }
+        90% {
+            transform: scale3d(1.05,1.05,1);
+        }
+        100% {
+            transform: scale3d(1,1,1);
+        }
     }
+
 }
-
-
 
 #jama_masjid .cls-17,
 #jama_masjid .cls-45,
@@ -413,7 +414,22 @@ body {
 }
 
 
-@media only screen and (max-width: 550px) {
-    
+@media only screen and (max-width: 1024px) {
+    #jama_masjid_text,
+    #jama_masjid_close,
+
+    #chanderi_sari_text,
+    #chanderi_sari_close,
+
+    #a_centre_of_text,
+    #a_centre_of_close,
+
+    #chanderi_fort_text,
+    #chanderi_fort_close,
+
+    #a_city_of_text,
+    #a_city_of_close {
+        display: none;
+    }
 
 }
