@@ -415,6 +415,9 @@ body {
 
 
 @media only screen and (max-width: 1024px) {
+    body {
+        cursor: pointer;
+    }
     #jama_masjid_text,
     #jama_masjid_close,
 
