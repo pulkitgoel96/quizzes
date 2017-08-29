@@ -315,56 +315,43 @@ body {
 
 #jama_masjid .cls-17,
 #jama_masjid .cls-45,
-#jama_masjid .cls-43,
 
 #Chanderi_sari .cls-17,
 #Chanderi_sari .cls-45,
-#Chanderi_sari .cls-43,
 
 #a_centre_of_jainism .cls-17,
 #a_centre_of_jainism .cls-45,
-#a_centre_of_jainism .cls-43,
 
 #chanderi_fort .cls-17,
 #chanderi_fort .cls-45,
-#chanderi_fort .cls-43,
 
 #a_city_of .cls-17,
-#a_city_of .cls-45,
-#a_city_of .cls-43 {
+#a_city_of .cls-45 {
     transition: 0.3s all ease-in-out;
 }
 
 
 
 #jama_masjid:hover .cls-17,
-#jama_masjid:hover .cls-45,
-#jama_masjid:hover .cls-43 {
+#jama_masjid:hover .cls-45 {
     fill: #009e68;
 }
 #Chanderi_sari:hover .cls-17,
-#Chanderi_sari:hover .cls-45,
-#Chanderi_sari:hover .cls-43 {
+#Chanderi_sari:hover .cls-45 {
     fill: #f06c44;
 }
 #a_centre_of_jainism:hover .cls-17,
-#a_centre_of_jainism:hover .cls-45,
-#a_centre_of_jainism:hover .cls-43 {
+#a_centre_of_jainism:hover .cls-45 {
     fill: #face78;
 }
 #chanderi_fort:hover .cls-17,
-#chanderi_fort:hover .cls-45,
-#chanderi_fort:hover .cls-43 {
+#chanderi_fort:hover .cls-45 {
     fill: #e3484b;
 }
 #a_city_of:hover .cls-17,
-#a_city_of:hover .cls-45,
-#a_city_of:hover .cls-43 {
+#a_city_of:hover .cls-45 {
     fill: #2dc1de;
 }
-
-
-
 
 @-webkit-keyframes hover-horiz-child {
   0% {
