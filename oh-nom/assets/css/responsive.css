@@ -23,8 +23,14 @@
 .back-top.is-desktop {
 	display: none;
 }
+	.back-top-section{
+		text-align: center;
+		padding-top: 20px;
+	}
 .back-top.is-mobile {
-	display: block;
+  display: inline-block;
+  position: relative;
+	text-align: left;
 }
 .option-wrapper-left {
 	bottom: 14px;
@@ -75,7 +81,7 @@
 	float: none;
 	position: relative;
 	width: auto;
-	margin-top: 50px;
+	margin-top: 60px;
 }
 .pepper {
 	display: none;
@@ -89,9 +95,32 @@
 .dtl-headline {
 	margin-bottom: 30px;
 }
+	
+		
+	
+	.masala {
+
+  right: -7%;
+  top: -5%;
+  width: 34%;
+}
+	
+	.masala1 {
+  bottom: -24%;
+  position: absolute;
+  right: 6%;
+  width: 22%;
+  z-index: 1000;
+}
+	
 }
 
 @media (max-width:767px) {
+
+	
+
+	
+	
 .detail-wrapper .container {
 	width: 90%;
 }
@@ -176,7 +205,7 @@
 .option-holder .lotus {
   background: rgba(0, 0, 0, 0) url("../images/lotus-m.png") no-repeat scroll 0 0 / 100% auto;
   height: 30px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0;
   width: 75%;
 }
@@ -199,16 +228,25 @@
 	width: 290px;
 }
 .dtl-headline {
-	font-size: 14px;
+	font-size: 16px;
 	margin: 26px -10px 15px -10px;
 }
 .detail-container {
 	margin-top: 34px;
 }
 .detail-content {
-	padding: 15px 15px 70px 15px;
+	padding: 15px 15px 20px 15px;
 	font-size: 14px;
 }
+	
+	.detail-container {
+  margin-top: 50px;
+}
+	.detail-content h3.rcp-name{
+		left: 15px;
+		font-size: 17px;
+		top: -27px;
+	}
 .method {
 	padding-right: 0;
 }
