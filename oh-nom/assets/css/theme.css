@@ -12,9 +12,9 @@
 	font-style: normal;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Asap', sans-serif;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 500;
 	color: #fcfe5e;
 	overflow-x: hidden;
 	background-color: #fd794f;
@@ -53,7 +53,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 20px;
 }
 .app-header p {
-	color: #353534;
+  color: #353534;
+  font-size: 18px;
+  line-height: 115%;
+  margin: 0;
 }
 .app-header h2 {
 	color: #fcfe5e;
@@ -62,10 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 3px;
 }
 .app-title {
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 }
 .app-title img {
-	max-width: 400px;
+	max-width: 450px;
 	width: 100%;
 }
 .app-title p {
@@ -104,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 100%;
 }
 .select-catg h3 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .recipe {
 	display: block;
@@ -193,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	margin: 20px 0 0 0;
+	margin: 12px 0 0 0;
 }
 .option-holder .option-label, .option-holder .lotus {
 	display: inline-block;
@@ -204,11 +207,10 @@ h1, h2, h3, h4, h5, h6 {
 .option-holder .option-label {
 	background: rgba(0, 0, 0, 0) url("../images/label1.png") no-repeat scroll 0 0 / 100% auto;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 20px;
 	height: 46px;
 	line-height: 38px;
 	width: 270px;
-	font-family: 'libre_baskervillebold';
 	font-weight: 700;
 	cursor: pointer;
 }
@@ -265,6 +267,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-family: 'libre_baskervillebold';
 }
+
+.detail-content h3.rcp-name {
+  color: #fcfe5e;
+  font-size: 22px;
+  left: 30px;
+  position: absolute;
+  top: -36px;
+}
+
 .detail-content p {
 	margin: 0 0 25px 0;
 	max-width: 70%;
@@ -312,12 +323,12 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1000;
 }
 .dtl-headline {
-	color: #fcfe5e;
-	font-family: "libre_baskervilleitalic";
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 40px;
-	text-align: center;
+  color: #fcfe5e;
+  font-family: "libre_baskervilleitalic";
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 52px;
+  text-align: center;
 }
 .dtl-headline span {
 	background: rgba(0, 0, 0, 0) url("../images/headline-bg-top.png") no-repeat scroll center center / 100% auto;
@@ -331,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 .rangoli-2 {
-	width: 73%;
+	width: 100%;
 	margin-top: 5px;
 }
 .rangoli-2 img {
@@ -343,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .masala1 {
 	bottom: -30%;
 	position: absolute;
-	right: -3%;
+	right: 6%;
 	width: 27%;
 	z-index: 1000;
 }
@@ -357,15 +368,16 @@ h1, h2, h3, h4, h5, h6 {
 	max-height: 500px;
 }
 .back-top {
-	background: rgba(0, 0, 0, 0) url("../images/back-top-bg.png") no-repeat scroll 0 0 / 78px auto;
-	bottom: 1%;
-	color: #fcfe5e;
-	font-family: "libre_baskervillebold";
-	font-size: 97%;
-	padding: 12px 4px 15px 73px;
-	position: absolute;
-	right: 0;
-	z-index: 1000;
+  background: rgba(0, 0, 0, 0) url("../images/back-top-bg.png") no-repeat scroll 0 0 / 55px auto;
+  bottom: 1%;
+  color: #fcfe5e;
+  font-size: 13px;
+  padding: 5px 4px 15px 60px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  z-index: 1000;
+	font-family: 'Asap', sans-serif;
 }
 .detail-wrapper {
 	bottom: -100%;
@@ -386,3 +398,4 @@ h1, h2, h3, h4, h5, h6 {
 .blank-recipe h3 {
 	visibility: hidden;
 }
+
