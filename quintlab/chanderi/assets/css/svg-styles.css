@@ -2,17 +2,23 @@
 .cls-1 {
     fill: none;
 }
+.cls-55 {
+    fill: #000;
+}
+svg{
+	fill: #FBCE54;
+}
 
 .cls-2 {
     isolation: isolate;
 }
 
 .cls-3 {
-    fill: #fbcf73;
+    fill: #d03d3b;
 }
 
 .cls-4 {
-    fill: #634d45;
+    fill: #003551;
 }
 
 .cls-5 {
@@ -79,7 +85,7 @@
 }
 
 .cls-20 {
-    fill: #765643;
+    fill: #193f57;
 }
 
 .cls-21 {
@@ -91,7 +97,7 @@
 }
 
 .cls-23 {
-    fill: #f5d68d;
+    fill: #d14d41;
 }
 
 .cls-24 {
@@ -99,7 +105,7 @@
 }
 
 .cls-25 {
-    fill: #965d37;
+    fill: #fff;
 }
 
 .cls-26 {
@@ -151,7 +157,7 @@
 }
 
 .cls-38 {
-    fill: #645b56;
+    fill: #193F57;
 }
 
 .cls-39 {
@@ -159,7 +165,7 @@
 }
 
 .cls-40 {
-    fill: #80554d;
+    fill: #193F57;
 }
 
 .cls-41 {
@@ -191,15 +197,19 @@
 }
 
 .cls-49 {
-    fill: #634d44;
+    fill: #003551;
 }
 
 .cls-50 {
-    fill: #7b3c26;
+    fill: #FBCE54;
+}
+
+.cls-51 {
+    fill: #d14d41;
 }
 
 .st24 {
-	fill:#965D37;
+	fill:#fff;
 }
 .bg-color {
 	fill: #634d45;
@@ -207,4 +217,5 @@
 .cls-16.border-color {
 	fill: #feeecc;
 }
+
 
