@@ -142,7 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	text-align: center;
 	height: 35px;
+	text-align-last:center;
 }
+
 .select-area {
 	background: rgba(0, 0, 0, 0) url("../images/select-bg.png") no-repeat scroll 0 0 / 100% auto;
 	display: inline-block;
