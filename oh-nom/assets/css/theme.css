@@ -100,7 +100,11 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	text-align: center;
+	opacity:0;
 }
+.app-container.is-show{
+	opacity:1;
+	}
 .sub-headline {
 	color: #fcfe5e;
 	font-size: 20px;
@@ -402,3 +406,16 @@ h1, h2, h3, h4, h5, h6 {
 	visibility: hidden;
 }
 
+
+
+.load-app{
+	color:#fff; font-size:20px;
+	text-align:center;
+	position: absolute;
+	width:100%;
+	top: 50%;
+	left:0;
+	
+	
+	
+	}

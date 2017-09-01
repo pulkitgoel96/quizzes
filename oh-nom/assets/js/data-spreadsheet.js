@@ -13,6 +13,8 @@ Tabletop.init({
 window.addEventListener('DOMContentLoaded', init);
 function showInfo(data) {
 	
+	$('.load-app').hide();
+	$('.app-container').addClass('is-show');
 	
 	recipe_data = data;
 	

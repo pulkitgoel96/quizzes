@@ -10,6 +10,22 @@
 	display: none;
 }
 
+@media screen and (min-width:1440px) {
+.container.app-container {
+transform: scale(1.3, 1.3);
+transform-origin: 50% 200%;
+}
+.detail-wrapper .container{
+max-width:80%;
+}
+.detail-bg{
+	max-height:700px;
+	}
+.method{
+	padding-right:20%;
+	}	
+}
+
 @media (max-width:991px) {
 .app-title {
 	margin: 0 0 20px;
