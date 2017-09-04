@@ -868,20 +868,6 @@ stroke-width:3;
 		pointer-events: all;
 	}
 	
-@media (max-width: 991px) {
-	.map-img
-	{
-		width: 200%;
-		margin-left:-50%;
-	}
-	.morph-shape
-	{
-		display: block;
-	}
-	.pie_cont
-	{
-		display: none;
-	}
-	}
+
 /*TAPAN'S CSS END*/
 
