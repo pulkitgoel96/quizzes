@@ -35,7 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-- Website CSS --*/
-.header-wrapper{z-index: 100;}
+.header-wrapper{z-index: 100;
+	position: fixed;
+	transform:translateZ(0);
+}
 .logo{
 	margin: -100px auto 0 auto;
 	text-align: center;
