@@ -136,13 +136,18 @@
 	bottom: 0px;
 	top: 0px;
 	width: 405px;
+	pointer-events: none;
 }
 .menu__handle {
 	height: 24px;
 	right: 88px;
 	top: 10px;
 	width: 24px;
+	pointer-events: all;
 }
+	.menu--open{
+		pointer-events: all;
+	}
 .morph-shape {
 	display: block;
 }
