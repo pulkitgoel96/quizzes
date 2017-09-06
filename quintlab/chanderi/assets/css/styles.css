@@ -256,7 +256,14 @@ body {
 #chanderi_fort_close,
 
 #a_city_of,
-#a_city_of_close {
+#a_city_of_close,
+
+#koshak,
+#koshak_close,
+
+#chanderi_museum,
+#chanderi_museum_close
+{
     cursor: pointer;
 }
 /*@media only screen and (min-width: 1025px) {
@@ -326,7 +333,10 @@ body {
 #chanderi_fort .cls-45,
 
 #a_city_of .cls-17,
-#a_city_of .cls-45 {
+#a_city_of .cls-45,
+#koshak .cls-17,
+#koshak .cls-52,
+{
     transition: 0.3s all ease-in-out;
 }
 
@@ -351,6 +361,16 @@ body {
 #a_city_of:hover .cls-17,
 #a_city_of:hover .cls-45 {
     fill: #2dc1de;
+}
+
+#koshak:hover .cls-17,
+#koshak:hover .cls-52 {
+    fill: #884BE0;
+}
+
+#chanderi_museum:hover .cls-17,
+#chanderi_museum:hover .cls-53{
+	fill:#49E266;
 }
 
 @-webkit-keyframes hover-horiz-child {
@@ -426,7 +446,14 @@ body {
     #chanderi_fort_close,
 
     #a_city_of_text,
-    #a_city_of_close {
+    #a_city_of_close,
+
+	#koshak_text,
+	#koshak_close,
+
+	#chanderi_museum_text,
+	#chanderi_museum_close
+{
         display: none;
     }
 
@@ -435,3 +462,65 @@ body {
         cursor: pointer;
     }
 }
+
+
+
+/*Style For Fixing*/
+.bg-color{
+	display:none;
+}
+#chanderi_fort, #chanderi_fort_text, #chanderi_fort_close{
+	transform: translate(-45px,-170px);
+}
+
+.chanderi_fort_icon{
+	transform: translate(56px,170px);
+}
+.chanderi_fort_dot{
+	transform:translate(56px,170px);
+}
+
+.chanderi_fort_line{
+	transform:translate(59px,174px);
+}
+
+
+
+#chanderi_museum{
+	transform: translate(-45px,90px);
+}
+.chanderi_museum_icon{
+	transform: translate(40px,-106px);
+}
+.chanderi_museum_line{
+	transform: translate(46px,-121px);
+}
+
+
+#a_city_of, #a_city_of_text, #a_city_of_close{
+	transform: translate(-81px,-460px);
+}
+.a_city_of_icon{
+	transform: translate(78px,460px)
+}
+
+.a_city_of_line{
+	transform: translate(78px,460px)
+}
+
+
+#a_centre_of_jainism, #a_centre_of_jainism_text, #a_centre_of_jainism_close{
+	transform: translate(140px,-1px);
+}
+
+.a_centre_of_jainism_icon_p1, .a_centre_of_jainism_icon_p2, .a_centre_of_jainism_icon_p3, .a_centre_of_jainism_icon_p4, .a_centre_of_jainism_icon_p5{
+	transform: translate(-140px,52px);
+}
+
+
+
+.a_centre_of_jainism_line{
+transform: translate(-137px,77px);
+}
+
+

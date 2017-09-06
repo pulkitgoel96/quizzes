@@ -74,7 +74,37 @@ $(document).ready(function() {
         $("#a_city_of_text").hide();
         $(this).hide();
     });
+	
+	
+	// koshak
+    $("#koshak").click(function() {
+        $("#koshak_text").show();
+        $("#koshak_close").show();        
 
+        $('html, body').animate({
+            scrollTop:$('#koshak_text').position().top - 80
+        }, 'slow');
+    });
+    // Close
+    $("#koshak_close").click(function() {
+        $("#koshak_text").hide();
+        $(this).hide();
+    });
+
+// chanderi_museum
+    $("#chanderi_museum").click(function() {
+        $("#chanderi_museum_text").show();
+        $("#chanderi_museum_close").show();        
+
+        $('html, body').animate({
+            scrollTop:$('#chanderi_museum_text').position().top - 80
+        }, 'slow');
+    });
+    // Close
+    $("#chanderi_museum_close").click(function() {
+        $("#chanderi_museum_text").hide();
+        $(this).hide();
+    });
 
 
     // Document Click
@@ -124,7 +154,29 @@ $(document).ready(function() {
             $("#a_city_of_text").hide();
             $("#a_city_of_close").hide();
         }
+		
+		if(evt.target.id == "koshak_text" || evt.target.id == "koshak"){}
+            //console.log("yes")
+        else if($(evt.target).closest('#koshak_text').length || $(evt.target).closest('#koshak').length){}
+            //console.log("yes")  
+        else {
+            $("#koshak_text").hide();
+            $("#koshak_close").hide();
+        }
 
+		if(evt.target.id == "chanderi_museum_text" || evt.target.id == "chanderi_museum"){}
+            //console.log("yes")
+        else if($(evt.target).closest('#chanderi_museum_text').length || $(evt.target).closest('#chanderi_museum').length){}
+            //console.log("yes")  
+        else {
+            $("#chanderi_museum_text").hide();
+            $("#chanderi_museum_close").hide();
+        }
+
+		
+		
+		
+		
       //Do processing of click event here for every element except with id menu_content
 
     });
