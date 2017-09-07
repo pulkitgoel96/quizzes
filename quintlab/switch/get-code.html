@@ -27,6 +27,7 @@
 </head>
 <body>
 <div class="form-wrap">
+
 	<form>
 		<div class="form-group">
 			<label for="text">Before Image URL #01</label>
@@ -72,7 +73,6 @@
 			var img_02_cap = $("#inputCap2").val();
 			
 			$(".text-area").val("<iframe class='quiz-iframe' src='"+url+"?x="+img_01+"&y="+img_02+"&cap1="+img_01_cap+"&cap2="+img_02_cap+"' width='100%' frameborder='0'></iframe>");
-			
 		});
 
 		$(".copy-val").click(function(){
