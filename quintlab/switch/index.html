@@ -60,11 +60,14 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-var imgAfter = getParameterByName('x'); // "lorem"
-var imgBefore = getParameterByName('y'); // "" (present with empty value)
+var imgAfter = getParameterByName('x'); 
+var imgBefore = getParameterByName('y'); 
 
 $("#img_before").attr("src",imgBefore);
 $("#img_after").attr("src",imgAfter);
+	
+var imgBeforeCap = getParameterByName('cap1'); 
+var imgBeforeCap = getParameterByName('cap2');	
 	
 $("#AfterCap").text(imgAfterCap);	
 $("#BeforeCap").text(imgBeforeCap);
