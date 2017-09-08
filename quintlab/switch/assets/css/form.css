@@ -26,6 +26,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.clearfix:before,  .clearfix:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix {
+ *zoom: 1;
+}
+
+
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -69,20 +83,14 @@ header h1 {
 }
 }
 .form-wrap {
-	margin: 0 auto;
+	margin: 30px auto;
 	padding: 40px;
-	max-width: 600px;
+	max-width: 752px;
 	min-height: 400px;
-	position: absolute;
-	top: 50%;
 	left: 0;
 	right: 0;
 	background-color: #e9e8e8;
-	-ms-transform: translateY (-50%);
-	-webkit-transform: translateY (-50%);
-	-moz-transform: translateY (-50%);
-	-o-transform: translateY (-50%);
-	transform: translateY(-50%);
+	
 }
 .form-wrap .form-group {
 	width: 100%;
