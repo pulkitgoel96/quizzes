@@ -176,36 +176,36 @@ article, aside, footer, header, nav, section, figure, figcaption {
 
 @media (max-width: 767px) {
 .main-wrap .box-wrap {
-	height: 495px;
+	
 }
 }
 
 @media (max-width: 700px) {
 .main-wrap .box-wrap {
-	height: 460px;
+	
 }
 }
 
 @media (max-width: 600px) {
 .main-wrap .box-wrap {
-	height: 400px;
+	
 }
 }
 
 @media (max-width: 500px) {
 .main-wrap .box-wrap {
-	height: 345px;
+	
 }
 }
 
 @media (max-width: 400px) {
 .main-wrap .box-wrap {
-	height: 290px;
+	
 }
 }
 
 @media (max-width: 375px) {
 .main-wrap .box-wrap {
-	height: 275px;
+	
 }
 }
