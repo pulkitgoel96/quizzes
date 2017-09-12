@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=devanagari');
+@import url('https://fonts.googleapis.com/css?family=Kadwa:400,700&subset=devanagari');
+
+body.Kadwa *, body.Kadwa .oswald{
+	font-family: 'Kadwa', serif !important;
+}
+
+body.noto *, body.noto .oswald{
+	font-family: 'Noto Sans', sans-serif !important;
+}
+
+
+
+body.Kadwa i, body.noto i{
+	font-family: FontAwesome !important;
+}
+
+.story-card-small .card-elements__content--headline, 
+.story-card-counterview .card-elements__content--headline, .story-card-medium .card-elements__content--headline,
+.story-sep-medium .card-elements__content--headline{
+	line-height: 140%;
+}
+
+.bigstory-section__bigstory .card-elements__content--text {
+  line-height: 22px;
+}
+
+.bigstory-section__bigstory .card-elements__image-container--caption--category a, .section-divide .section-left__lede-headline, .section-divide .section-right__lede-headline, .video-carousel__title, .libel-suit {
+	font-weight: 700 !important;
+}
+
+.story-article__content__element--text p{
+	letter-spacing: 0.6px;
+}
+
+
+
