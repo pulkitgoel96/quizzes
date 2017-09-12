@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=devanagari');
+@import url('https://fonts.googleapis.com/css?family=Kadwa:400,700&subset=devanagari');
+
 body.Kadwa *, body.Kadwa .oswald{
 	font-family: 'Kadwa', serif !important;
 }
