@@ -95,6 +95,7 @@ function adjust_iframe_height(){
 }
 	
 $(window).load(function(){
+	$("html").css({"height",$("body").height()})
 	adjust_iframe_height();
 	
 	setTimeout(function(){ 
