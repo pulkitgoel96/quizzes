@@ -46,12 +46,16 @@
    <source src="assets/audio/Light-Switch-Flick-sound-effect.mp3" type="audio/mpeg">
    Your browser does not support the audio element.
 </audio>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- jQuery -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/custom.js"></script>
 <script>
-function getParameterByName(name, url) {
+	
+		
+	
+	
+	
+	
+	function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -73,37 +77,19 @@ $("#BeforeCap").text(imgBeforeCap);
 $("#AfterCap").text(imgAfterCap);
 
 console.log(imgAfter +"|"+imgBefore);
-</script>
 
-<script>
-   var btnAudio = document.getElementById("myAudio"); 
-   function playAudio() { 
-      btnAudio.play(); 
-   } 
-   function pauseAudio() { 
-      btnAudio.pause(); 
-   } 
-</script>
-
-<script src="https://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script> 
-
-<script>
-function adjust_iframe_height(){
-    var actual_height = document.body.scrollHeight; 
-    console.log("height is",actual_height);
-    parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*"); 
-}
 	
-$(window).load(function(){
-	$("html").css({"height",$("body").height()})
-	adjust_iframe_height();
+	
+$(window).on('load', function(){ 
+		$("html").css("height",$("body").height());
+});
+	
+	/*adjust_iframe_height();
 	
 	setTimeout(function(){ 
 		adjust_iframe_height();
 	}, 3000);
-	
-})	
-</script>
-
+	*/
+	</script>
 </body>
 </html>
