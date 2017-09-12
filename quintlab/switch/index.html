@@ -52,7 +52,11 @@
 	
 		
 	
-	
+	function adjust_iframe_height(){
+    var actual_height = document.body.scrollHeight; 
+    console.log("height is",actual_height);
+    parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*"); 
+}
 	
 	
 	function getParameterByName(name, url) {
@@ -82,6 +86,7 @@ console.log(imgAfter +"|"+imgBefore);
 	
 $(window).on('load', function(){ 
 		$("html").css("height",$("body").height()); 
+	adjust_iframe_height();
 });
 	
 	/*adjust_iframe_height();
