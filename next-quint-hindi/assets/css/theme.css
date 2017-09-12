@@ -20719,10 +20719,10 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endC
 }
 }
 .citizenq-write {
-	background: url("citizen-q/citizen_q_2.svg") no-repeat center
+	background: url("../images/citizen_q_2.svg") no-repeat center
 }
 .citizenq-img {
-	background: url("citizen-q/citizen_q_1.svg") no-repeat center
+	background: url("../images/citizen_q_1.svg") no-repeat center
 }
 .citizenq-icons {
 	width: 50px;
