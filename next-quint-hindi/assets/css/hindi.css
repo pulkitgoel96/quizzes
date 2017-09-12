@@ -25,7 +25,7 @@ body.kadwa i, body.noto i{
   line-height: 22px;
 }
 
-.bigstory-section__bigstory .card-elements__image-container--caption--category a, .section-divide .section-left__lede-headline, .section-divide .section-right__lede-headline, .video-carousel__title, .libel-suit {
+.bigstory-section__bigstory .card-elements__image-container--caption--category a, .section-divide .section-left__lede-headline, .section-divide .section-right__lede-headline, .video-carousel__title, .libel-suit, .homepage-citizenq__msg {
 	font-weight: 700 !important;
 }
 
