@@ -37,4 +37,11 @@ body.kadwa i, body.noto i{
 	letter-spacing: 0;
 }
 
+.story-article__content__element h2{
+	line-height: 130%;
+}
+
+.video-carousel__title{
+	margin-bottom: 10px;
+}
 
