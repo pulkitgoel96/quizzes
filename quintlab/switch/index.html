@@ -23,7 +23,7 @@
 <![endif]-->
 </head>
 
-<body onload="adjust_iframe_height()">
+<body>
 <div class="main-wrap">
    <div class="box-wrap">
       <div class="box-first btn-01" onclick="playAudio()">
@@ -93,6 +93,15 @@ function adjust_iframe_height(){
     console.log("height is",actual_height);
     parent.postMessage(JSON.stringify({'msg-type':"resize-iframe", height:actual_height,src:window.location.href}),"*"); 
 }
+	
+$(window).load(function(){
+	adjust_iframe_height();
+	
+	setTimeout(function(){ 
+		adjust_iframe_height();
+	}, 3000);
+	
+})	
 </script>
 
 </body>
