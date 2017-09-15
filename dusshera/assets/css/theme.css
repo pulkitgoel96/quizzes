@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #fff;
 	overflow: hidden;
@@ -31,12 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-weight: 400;
 	font-size: 100%;
-	
 }
 /*Start CSS*/
 
 
-.footer-wrapper{
+.footer-wrapper {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -44,136 +43,121 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	height: 38%;
 	z-index: 1;
+	transform: translateZ(0px);
 }
-.footer-wrapper ul{
+.footer-wrapper ul {
 	display: block;
 }
-.footer-wrapper ul li{
+.footer-wrapper ul li {
 	width: 9%;
 	display: inline-block;
 	cursor: pointer;
 	margin-left: -0.8%;
 	position: relative;
 }
-.footer-wrapper ul li:first-child{
+.footer-wrapper ul li:first-child {
 	margin: 0;
 }
-
-.footer-wrapper ul li:nth-child(5){
+.footer-wrapper ul li:nth-child(5) {
 	width: 11%;
 }
 .footer-wrapper ul li span {
-  bottom: -48px;
-  display: block;
-  left: 0;
-  padding: 8px 0 12px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.wrapper.body-wrapper{
+	bottom: -48px;
+	display: block;
+	left: 0;
+	padding: 8px 0 12px;
 	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-family: 'Merienda', cursive;
+	line-height: 110%;
+	color: rgb(255,255,255,0.6);
+}
+.wrapper.body-wrapper {
+	position: fixed;
 	width: 100%;
 	height: 62.5%;
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background:#C40506 url("../images/bg.svg") no-repeat scroll left bottom / contain ; 
+	background: #C40506 url("../images/bg.svg") no-repeat scroll left bottom / contain;
+	transform: translateZ(0px);
 }
-
-.cloud{
+.cloud {
 	position: relative;
 	width: 100%;
+	opacity: 0.4;
 }
-
-
-
+.cloud img{
+	min-width: 960px;
+}
 #news-list {
 	list-style: none;
 	position: absolute;
 }
 .news-items li {
-  border: 0.5px solid #fff;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  position: absolute;
-  width: 250px;
+	border: 0.5px solid #fff;
+	border-radius: 12px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	position: absolute;
+	width: 250px;
 }
-
-.news-items li figure{
+.news-items li figure {
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 2px;
 	position: relative;
 }
-
-.news-items li::after, .news-items li::before, .news-items li figure::after, .news-items li figure::before{
-	
+.news-items li::after, .news-items li::before, .news-items li figure::after, .news-items li figure::before {
 	background: rgba(0, 0, 0, 0) url("../images/pin.svg") no-repeat scroll 0 0 / 100% auto;
-    content: "";
-    height: 40px;
-    position: absolute;
-    width: 40px;
-    z-index: 99;
+	content: "";
+	height: 40px;
+	position: absolute;
+	width: 40px;
+	z-index: 99;
 }
-
-.news-items li::before{
+.news-items li::before {
 	top: -4px;
-	left:-8px 
+	left: -8px
 }
 .news-items li::after {
-  right: -8px;
-  top: -4px;
+	right: -8px;
+	top: -4px;
 }
-
 .news-items li figure::before {
-  bottom: -13px;
-  left: -9px;
+	bottom: -13px;
+	left: -9px;
 }
-
-.news-items li figure::after{
+.news-items li figure::after {
 	right: -9px;
-	bottom:-13px 
+	bottom: -13px
 }
-
-
-
-
-
-
 .news-items li img {
 	width: 100%;
 }
-
 .news-items li figcaption {
-  background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
-  bottom: 0;
-  color: #fff;
-  font-size: 90%;
-  left: 0;
-  padding: 5px 20px;
-  position: absolute;
-  text-align: left;
-  width: 100%;
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+	bottom: 0;
+	color: #fff;
+	font-size: 90%;
+	left: 0;
+	padding: 5px 20px;
+	position: absolute;
+	text-align: left;
+	width: 100%;
 	border-radius: 10px;
 }
-
-.lives{
+.lives {
 	position: fixed;
 	top: 100px;
 	right: 0px;
 	z-index: 99;
-	
 }
-
-.lives li{
+.lives li {
 	float: left;
 	width: 70px;
 }
-
-
 #score, #lives {
 	position: absolute;
 	top: 0px;
