@@ -138,21 +138,23 @@
 
          <div class="white-box minimum" style="display:none">
             <span class="result-content">
-               <p>Fit nahi hai boss! Give your brain a workout.</p>
+               <!-- <p>You guessed <span class="total-score">0</span> out of 10 answers correctly.<br> -->
+               <p>You've scored <span class="total-score highlight"></span> out of <span class="highlight">7</span>.<br>
+               Fit nahi hai boss! Give your brain a workout.</p>
             </span>
             <span class="result-img"><img alt="" src="assets/images/quiz/fitness-test-1.gif"></span>
          </div>
 
          <div class="white-box middle" style="display:none">
             <span class="result-content">
-               <p>Almost there. Be a champ with just a bit more!</p>
+               <p>You've scored <span class="total-score highlight"></span> out of <span class="highlight">7</span>.<br>Almost there. Be a champ with just a bit more!</p>
             </span>
             <span class="result-img"><img alt="" src="assets/images/quiz/fitness-test-2.gif"></span>
          </div>
          
          <div class="white-box maximum" style="display:none">
             <span class="result-content">
-               <p>Congratulations! You are the health guru!</p>
+               <p>You've scored <span class="total-score highlight"></span> out of <span class="highlight">7</span>.<br>Congratulations! You are the health guru!</p>
             </span>
             <span class="result-img"><img alt="" src="assets/images/quiz/fitness-test-3.gif"></span>
          </div>
@@ -181,6 +183,10 @@
        $("#lblTotalMarks").text(total);
    });
    $("#btn").on("click",function(){
+
+      var total_score = $('#lblTotalMarks').html();
+      $(".total-score").html(total_score);
+
       if($("#lblTotalMarks").text() <= 2 ){  //0-3
         $(".lessGreater div").hide();
         $(".lessGreater div.minimum").show();
