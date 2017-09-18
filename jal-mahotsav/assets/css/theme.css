@@ -364,9 +364,9 @@ h1, h2, h3, h4, h5, h6 {
 	-o-transition: 0.2s all ease-in-out;
 }
 .nav ul li a img {
-	position: absolute;
-	top: 0;
-	left: 0;
+	
+	
+	height: 100%;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
