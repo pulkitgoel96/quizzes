@@ -203,11 +203,11 @@ blockquote {
 	
 	.logo-wrapper .logo-mp {
   margin: 10px;
-  max-width: 67px;
+  max-width: 58px;
 }
 	
 	.logo-wrapper .logo-jal {
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   max-width: 104px;
 }
 	
