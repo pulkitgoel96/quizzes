@@ -159,15 +159,17 @@ $(document).ready(function() {
 })
 
 
-
 $(document).ready(function(){
-    $(".social-back").click(function(e){
-      $(".social-icons").slideToggle(400);
+    $(".share-ico").click(function(e){
+      $(".social-ico").slideToggle(400);
       return false;
    });
    $("body").click(function(){
-      $(".social-icons").slideUp();
+      $(".social-ico").slideUp();
    });
+	
+	// nnnnn
+	
 });
  
 /*

@@ -928,3 +928,67 @@ template {
 	order: 1;
 }
 }
+
+
+
+.share {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+.share-ico {
+	background: #393185 url("../images/ico-share.svg") no-repeat scroll center center / 50% auto;
+	border-radius: 100%;
+	display: block;
+	font-size: 0;
+	height: 40px;
+	overflow: hidden;
+	text-indent: -200px;
+	width: 40px;
+}
+.social-ico {
+	display: none;
+}
+.social-ico li {
+	display: block;
+	margin-top: 10px;
+}
+.social-ico li a {
+	background: #393185;
+	border-radius: 100%;
+	display: block;
+	font-size: 20px;
+	height: 40px;
+	overflow: hidden;
+	width: 40px;
+	color: #fff;
+	text-align: center;
+}
+.social-ico li a i {
+	line-height: 40px;
+}
+.social-ico li a:hover {
+	color: #0782C6;
+}
+
+@media (max-width:767px) {
+
+.app-title img {
+	max-width: 260px;
+}
+.share {
+	right: 10px;
+	bottom: 80px;
+}
+.social-ico li {
+	margin-top: 7px;
+}
+.share-ico, .social-ico li a {
+	width: 35px;
+	height: 35px;
+}
+.social-ico li a i {
+	line-height: 35px;
+}
+}
