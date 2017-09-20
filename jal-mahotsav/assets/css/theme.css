@@ -11,7 +11,7 @@ p, blockquote {
 	margin-bottom: 20px;
 }
 blockquote {
-	color: #3e86c1;
+	color: #393185;
 	font-size: 120%;
 	font-style: italic;
 	font-weight: 400;
@@ -23,7 +23,7 @@ blockquote {
 	display: inline-block;
 }
 .blue {
-	background-color: #3e86c1;
+	background-color: #393185;
 	height: 100vh;
 	width: 100%;
 }
@@ -71,7 +71,7 @@ blockquote2 img {
 	max-width: 600px;
 }
 .fullbggrey {
-	background-color: #3e86c1;
+	background-color: #393185;
 	padding: 20px 0 20px 0;
 	margin: 0 auto;
 }
@@ -234,7 +234,7 @@ ul.credits li {
 	color: #3A3939;
 }
 .more-thumb a:hover {
-	color: #3e86c1;
+	color: #393185;
 }
 ul.counter {
 	font-family: 'Roboto Slab', serif;
@@ -575,7 +575,7 @@ nav a.active {
 .map-wrapper {
 	width: 100%;
 	height: 700px;
-	background: #3e86c1;
+	background: #393185;
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
@@ -1013,14 +1013,14 @@ transform:translateY(4px) rotate(90deg)
 */
 
 p a {
-	color: #3e86c1;
+	color: #393185;
 }
 #tooltip {
 	text-align: left;
 	/*	text-shadow: 0 1px rgba( 0, 0, 0, .5 );*/
 	line-height: 1.5;
 	color: #fff;
-	background: #3e86c1;
+	background: #393185;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -1037,8 +1037,8 @@ p a {
 	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 10px solid #3e86c1;
-	border-top-color: #3e86c1;
+	border-top: 10px solid #393185;
+	border-top-color: #393185;
 	content: '';
 	position: absolute;
 	left: 50%;
@@ -1047,8 +1047,8 @@ p a {
 }
 #tooltip.top:after {
 	border-top-color: transparent;
-	border-bottom: 10px solid #3e86c1;
-	border-bottom-color: #3e86c1;
+	border-bottom: 10px solid #393185;
+	border-bottom-color: #393185;
 	top: -20px;
 	bottom: auto;
 }
@@ -1093,7 +1093,7 @@ p a {
 }
 
 .sub-heading{
-	font-size: 35px;
+	font-size: 44px;
 	margin-bottom: 15px;
 	line-height: 130%;
 }
