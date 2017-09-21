@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=devanagari');
+@import url('https://fonts.googleapis.com/css?family=Kadwa:400,700&subset=devanagari');
+
+body.kadwa *, body.kadwa .oswald{
+	font-family: 'Kadwa', serif !important;
+}
+
+body.noto *, body.noto .oswald{
+	font-family: 'Noto Sans', sans-serif !important;
+}
+
+
+
+body.kadwa i, body.noto i{
+	font-family: FontAwesome !important;
+}
+
+.story-card-small .card-elements__content--headline, 
+.story-card-counterview .card-elements__content--headline, .story-card-medium .card-elements__content--headline,
+.story-sep-medium .card-elements__content--headline{
+	line-height: 140%;
+}
+
+.bigstory-section__bigstory .card-elements__content--text {
+  line-height: 22px;
+}
+
+.bigstory-section__bigstory .card-elements__image-container--caption--category a, .section-divide .section-left__lede-headline, .section-divide .section-right__lede-headline, .video-carousel__title, .libel-suit, .homepage-citizenq__msg {
+	font-weight: 700 !important;
+}
+
+.story-article__content__element--text p{
+	letter-spacing: 0.6px;
+}
+
+.header-section__top__left-menu ul li:first-child a{
+	letter-spacing: 0;
+}
+
+.story-article__content__element h2{
+	line-height: 130%;
+}
+
+.video-carousel__title{
+	margin-bottom: 10px;
+}
+
+.container.deqoded-lead-title.libel-suit
+{
+	margin: 0 0 0 20px;
+	font-size: 55px;
+	
+}
+
+
+.ctg-default .card-elements__main-container--circle.deqoded-story-bg {
+  background: rgba(0, 0, 0, 0) radial-gradient(circle farthest-side at 50% 50% , #77157a 50%, #36154f 100%) repeat scroll 0 0;
+}
+
+div.deqoded-article-wrap .story-article .story-header .story-header__left-lead, .story-header__left-lead--byline {
+  color: #f4b82e;
+}

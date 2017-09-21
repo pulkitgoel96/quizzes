@@ -1,0 +1,48 @@
+.neon:hover { background-color: #C70090;}
+	.entertainment:hover { background-color: #590688;}
+	.sports:hover { background-color: #0BCD45;}
+	.tech-and-auto:hover { background-color: #B10F7B;}
+	.fit:hover { background-color: #00BBCB;}
+	.news-videos:hover { background-color: #1E00DC;}
+	.videos:hover { background-color: #FD7700;}
+	.photos:hover { background-color: #FF6464;}
+	.education:hover { background-color: #610B0B;}
+	.opinion:hover { background-color: #ffa01e;}
+	.india:hover { background-color: #AA1E50;}
+	.world:hover { background-color: #ff5a5a;}
+	.politics:hover { background-color: #ffd500;}
+	.environment:hover { background-color: #0B6121;}
+	.women:hover { background-color: #f12b5b;}
+	.readers-blogs:hover { background-color: #87CEEB;}
+	.explainers:hover { background-color: #95c200;}
+	.infographic:hover { background-color: #0080FF;}
+	.write-for-us:hover { background-color: #7401DF;}
+	.switch-to-hindi:hover { background-color: #444444;}
+	.subscribe-to-newsletter:hover { background-color: #444444;}
+	.download-apps:hover { background-color: #444444;}
+	.advertise-with-us:hover { background-color: #444444;}
+.header-section{
+	height: auto;
+}
+
+
+
+
+.footer-wrapper{
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	background: #000;
+}
+
+.header-section *{
+	
+
+    font-family: 'Oswald', sans-serif !important;
+	font-weight: 400;
+
+
+}
+.top-common-ad{
+	padding-top: 60px;
+}
