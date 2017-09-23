@@ -409,7 +409,6 @@ transform:translateY(4px) rotate(90deg)
 @media (max-width:767px) {
 .logo {
 	left: 10px;
-	position: absolute;
 	top: 10px;
 	width: 30px;
 	z-index: 1000;
