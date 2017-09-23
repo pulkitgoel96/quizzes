@@ -66,10 +66,10 @@
 
 @media (max-width:700px) {
 .wrapper.body-wrapper {
-	height: 55%;
+	height: 45%;
 }
 .footer-wrapper {
-	height: 45%;
+	height: 55%;
 }
 .footer-wrapper ul li {
 	float: left;
@@ -97,7 +97,7 @@
 	margin-left: -30px;
 }
 .footer-wrapper ul li:nth-child(6) {
-	margin: 180px 15px 0 15px;
+	margin: 220px 15px 0 15px;
 }
 .footer-wrapper ul li:nth-child(7) {
 	margin: 180px 0 0 0;

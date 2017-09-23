@@ -358,10 +358,11 @@ transform:translateY(4px) rotate(90deg)
 /*logo and Share*/
 .logo {
 	left: 15px;
-	position: absolute;
+	position: fixed;
 	top: 15px;
 	width: 35px;
 	z-index: 1000;
+	transform: translateZ(0px);
 }
 .share {
 	position: absolute;
