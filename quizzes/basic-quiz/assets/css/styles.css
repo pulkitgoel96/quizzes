@@ -315,6 +315,7 @@ audio 													{width: 100%}
 
 
 
+/*    Dussehra Quiz    */
 
 .buzz-wrap--form {
     margin: 0 auto;
@@ -412,7 +413,21 @@ audio 													{width: 100%}
     background-color: #6a357f;
 }
 
-
+@media only screen and (max-width: 599px) {
+	.form-group--left {
+		width: 55%;
+	}
+	.form-group--right {
+		width: 45%;
+	}
+	.buzz-wrap--form .form-group {
+	    padding: 10px 10px;
+	}
+	.buzz-wrap--form .form-group label {
+	    font-size: 21px;
+	    top: 8px;
+	}
+}
 
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
