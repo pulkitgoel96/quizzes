@@ -376,8 +376,11 @@ audio 													{width: 100%}
 	color: green;
 }
 .buzz-wrap--form .form-group .submit-btn {
-	width: 90%;
+	width: 150px;
 	cursor: pointer;
+	font-size: 18px;
+	color: #fff;
+	background-color: #6a357f;
 }
 .buzz-wrap--form .form-group .total-results {
 	background-color: transparent;
@@ -386,12 +389,16 @@ audio 													{width: 100%}
 .form-group--fluid {
 	width: 100%;
 	float: left;
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-bottom: 15px;
 }
-.form-group--fluid .show-all {
+.form-group--fluid input.show-all {
 	margin: 0 auto;
-	max-width: 170px;
+	max-width: 180px;
 	cursor: pointer;
+	font-size: 18px;
+	color: #fff;
+	background-color: #F3B72A;
 }
 
 .buzz-wrap--form .form-group textarea {
@@ -399,19 +406,9 @@ audio 													{width: 100%}
 }
 .buzz-wrap--form .form-group input:focus,
 .buzz-wrap--form .form-group textarea:focus {
-    /*border: 1px #e8e8e8 solid;*/
     outline: none;
 }
-.buzz-wrap--form .btn-submit {
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 7px 12px 8px;
-    background-color: #6a357f;
-}
+
 
 @media only screen and (max-width: 599px) {
 	.form-group--left {
@@ -427,6 +424,19 @@ audio 													{width: 100%}
 	    font-size: 21px;
 	    top: 8px;
 	}
+}
+
+.buzz-wrap--form .form-group input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #dfdfdf;
+}
+.buzz-wrap--form .form-group input::-moz-placeholder { /* Firefox 19+ */
+  color: #dfdfdf;
+}
+.buzz-wrap--form .form-group input:-ms-input-placeholder { /* IE 10+ */
+  color: #dfdfdf;
+}
+.buzz-wrap--form .form-group input:-moz-placeholder { /* Firefox 18- */
+  color: #dfdfdf;
 }
 
 /* ------------------------------------------------------------ *\
