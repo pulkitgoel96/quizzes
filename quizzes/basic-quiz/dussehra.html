@@ -184,15 +184,16 @@ $(document).ready(function(){
     var valStore9 = $("#kaikeyi-hidden").val();
 
     $(".show-all").click(function(){
-        $("#sita").val(valStore1);
-        $("#tulsidas").val(valStore2);
-        $("#hiran").val(valStore3);
-        $("#dasharatha").val(valStore4);
-        $("#lakshman").val(valStore5);
-        $("#ram").val(valStore6);
-        $("#ravan").val(valStore7);
-        $("#hanuman").val(valStore8);
-        $("#kaikeyi").val(valStore9);
+        $("#sita").val(valStore1).removeClass("wrong").addClass("right");
+        $("#tulsidas").val(valStore2).removeClass("wrong").addClass("right");
+        $("#hiran").val(valStore3).removeClass("wrong").addClass("right");
+        $("#dasharatha").val(valStore4).removeClass("wrong").addClass("right");
+        $("#lakshman").val(valStore5).removeClass("wrong").addClass("right");
+        $("#ram").val(valStore6).removeClass("wrong").addClass("right");
+        $("#ravan").val(valStore7).removeClass("wrong").addClass("right");
+        $("#hanuman").val(valStore8).removeClass("wrong").addClass("right");
+        $("#kaikeyi").val(valStore9).removeClass("wrong").addClass("right");
+        //$("#kaikeyi").find("wrong").addClass("wrong1");
     });
 
     
