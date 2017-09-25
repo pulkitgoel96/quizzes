@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dussehra Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Fav and Touch Icons -->
+<link rel="icon" href="assets/images/favicon/favicon.ico">
+<!-- Font Awesome for Icon -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- Custom -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
+<link href="assets/css/check-radio.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+
+<style>
+input.ipxx,
+{
+    background: yellow;
+    color: red;
+}
+
+input.ipxa,
+{
+    background: white;
+    color: blue;
+}
+</style>
+<!-- JS Libraries -->
+<script src="assets/js/jquery.min.js"></script>
+
+<script LANGUAGE="JavaScript">
+function scoreme() {
+    <!--
+
+    //  Script Made by Scott Campbell (ksc@utep.edu)  ( You are free to use/modify this
+    //  this code to your own making, but, please recognize my efforts by including
+    //  this three-line comment in your code.... Thank You and God Bless.
+
+    var total = 9 // Total number of blanks in quiz
+    var correct = total; // Set number of correct to Total number in Quiz
+
+    //  Get answer and response and convert to Upper case
+    sa01 = document.FXY1.NA01.value.toUpperCase();
+    sb01 = document.FXY1.NB01.value.toUpperCase();
+
+    //  If Response is not correct then mark it (INCORRECT) and reduce correct reponse by 1
+    if (sa01 != sb01) { 
+        //document.FXY1.NB01.value = "INCORRECT!";
+        correct = correct - 1;
+        //element.classList.add("className")
+        document.getElementById("sita").classList.add("wrong");
+    }else {
+        document.getElementById("sita").classList.add("right");
+    }
+
+    // Repeat for each blank in quiz (notice the 01, 02, 03...10
+    sa02 = document.FXY1.NA02.value.toUpperCase();
+    sb02 = document.FXY1.NB02.value.toUpperCase();
+    if (sa02 != sb02) { 
+        //document.FXY1.NB02.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("tulsidas").classList.add("wrong");
+    }else {
+        document.getElementById("tulsidas").classList.add("right");
+    }
+    
+
+    sa03 = document.FXY1.NA03.value.toUpperCase();
+    sb03 = document.FXY1.NB03.value.toUpperCase();
+    if (sa03 != sb03) {
+        //document.FXY1.NB03.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("hiran").classList.add("wrong");
+    }else {
+        document.getElementById("hiran").classList.add("right");
+    }
+
+    sa04 = document.FXY1.NA04.value.toUpperCase();
+    sb04 = document.FXY1.NB04.value.toUpperCase();
+    if (sa04 != sb04) {
+        //document.FXY1.NB04.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("dasharatha").classList.add("wrong");
+    }else {
+        document.getElementById("dasharatha").classList.add("right");
+    }
+
+    sa05 = document.FXY1.NA05.value.toUpperCase();
+    sb05 = document.FXY1.NB05.value.toUpperCase();
+    if (sa05 != sb05) {
+        //document.FXY1.NB05.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("lakshman").classList.add("wrong");
+    }else {
+        document.getElementById("lakshman").classList.add("right");
+    }
+
+    sa06 = document.FXY1.NA06.value.toUpperCase();
+    sb06 = document.FXY1.NB06.value.toUpperCase();
+    if (sa06 != sb06) {
+        //document.FXY1.NB06.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("ram").classList.add("wrong");
+    }else {
+        document.getElementById("ram").classList.add("right");
+    }
+
+    sa07 = document.FXY1.NA07.value.toUpperCase();
+    sb07 = document.FXY1.NB07.value.toUpperCase();
+    if (sa07 != sb07) {
+        //document.FXY1.NB07.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("ravan").classList.add("wrong");
+    }else {
+        document.getElementById("ravan").classList.add("right");
+    }
+
+    sa08 = document.FXY1.NA08.value.toUpperCase();
+    sb08 = document.FXY1.NB08.value.toUpperCase();
+    if (sa08 != sb08) {
+        //document.FXY1.NB08.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("hanuman").classList.add("wrong");
+    }else {
+        document.getElementById("hanuman").classList.add("right");
+    }
+
+    sa09 = document.FXY1.NA09.value.toUpperCase();
+    sb09 = document.FXY1.NB09.value.toUpperCase();
+    if (sa09 != sb09) {
+        //document.FXY1.NB09.value = "INCORRECT!";
+        correct = correct - 1;
+        document.getElementById("kaikeyi").classList.add("wrong");
+    }else {
+        document.getElementById("kaikeyi").classList.add("right");
+    }
+
+    // sa10 = document.FXY1.NA10.value.toUpperCase();
+    // sb10 = document.FXY1.NB10.value.toUpperCase();
+    // if (sa10 != sb10) {
+    //     document.FXY1.NB10.value = "INCORRECT!";
+    //     correct = correct - 1;
+    //     document.getElementById("sita").classList.add("wrong");
+    // }else {
+    //     document.getElementById("sita").classList.add("right");
+    // }
+
+    // Obtain number of correct and give number of correct out of total
+    document.FXY1.ovrXX.value = "You got " + correct + " out of " + total + " correct.";
+
+    document.getElementById("showAll").style.display = "block";
+
+    // var x = document.getElementById('myDIV');
+    // if (x.style.display === 'none') {
+    //     x.style.display = 'block';
+    // } else {
+    //     x.style.display = 'none';
+    // }
+
+    -->
+}
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    var valStore1 = $("#sita-hidden").val();
+    var valStore2 = $("#tulsidas-hidden").val();
+    var valStore3 = $("#hiran-hidden").val();
+    var valStore4 = $("#dasharatha-hidden").val();
+    var valStore5 = $("#lakshman-hidden").val();
+    var valStore6 = $("#ram-hidden").val();
+    var valStore7 = $("#ravan-hidden").val();
+    var valStore8 = $("#hanuman-hidden").val();
+    var valStore9 = $("#kaikeyi-hidden").val();
+
+    $(".show-all").click(function(){
+        $("#sita").val(valStore1);
+        $("#tulsidas").val(valStore2);
+        $("#hiran").val(valStore3);
+        $("#dasharatha").val(valStore4);
+        $("#lakshman").val(valStore5);
+        $("#ram").val(valStore6);
+        $("#ravan").val(valStore7);
+        $("#hanuman").val(valStore8);
+        $("#kaikeyi").val(valStore9);
+    });
+
+    
+});
+</script>
+
+<!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body onload="adjust_iframe_height()">
+<!-- Quiz Start Here -->
+<div class="buzz-wrap">
+    <div class="buzz-center">
+        
+        
+        
+
+
+        <div class="buzz-wrap--form">
+            <form name="FXY1">
+                <!--  -->
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">👀 + 🙋 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="sita-hidden" value="Sita" name="NA01" type="hidden">
+                        <input id="sita" class="ipxa" value="" name="NB01" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🍃 + 🕚 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="tulsidas-hidden" value="Tulsidas" name="NA02" type="hidden">
+                        <input id="tulsidas" class="ipxa" value="" name="NB02" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">👱 + 🏃 = </label>
+                    </div>
+
+                    <div class="form-group--right">
+                        <input id="hiran-hidden" value="Hiran" name="NA03" type="hidden">
+                        <input id="hiran" class="ipxa" value="" name="NB03" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🔟 + 🌃 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="dasharatha-hidden" value="Dasharatha" name="NA04" type="hidden">
+                        <input id="dasharatha" class="ipxa" value="" name="NB04" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🎯 + 👳 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="lakshman-hidden" value="Lakshman" name="NA05" type="hidden">
+                        <input id="lakshman" class="ipxa" value="" name="NB05" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🇷 + 🍋 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="ram-hidden" value="Ram" name="NA06" type="hidden">
+                        <input id="ram" class="ipxa" value="" name="NB06" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🇷 + 1️⃣ = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="ravan-hidden" value="Ravan" name="NA07" type="hidden">
+                        <input id="ravan" class="ipxa" value="" name="NB07" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">✅ + ❎ + 👱 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="hanuman-hidden" value="Hanuman" name="NA08" type="hidden">
+                        <input id="hanuman" class="ipxa" value="" name="NB08" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">🎂 + 🔑 = </label>
+                    </div>
+                    <div class="form-group--right">
+                        <input id="kaikeyi-hidden" value="Kaikeyi" name="NA09" type="hidden">
+                        <input id="kaikeyi" class="ipxa" value="" name="NB09" type="text" placeholder="Answer">
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
+                    <div class="form-group--left">
+                        <label for="Name">Name:</label>
+                    </div>
+                    <div class="form-group--right">
+                        <input value="environment" name="NA10" type="hidden">
+                        <input class="ipxa" value="" name="NB10" type="text" placeholder="Answer">
+                    </div>
+                </div> -->
+
+                <div class="form-group">
+                    <div class="form-group--left">
+                        <input class="submit-btn" value="Submit" name="check" type="button" onclick="scoreme()">
+                    </div>
+                    <div class="form-group--right">
+                        <input class="ipxx total-results" value="" name="ovrXX" type="text" size="28">
+                    </div>
+                    <div id="showAll" class="form-group--fluid" style="display:none"><input class="show-all" value="Show All Answers" type="button"></div>
+                </div>
+            </form>
+        </div>
+        
+    
+
+    </div>
+</div>
+
+
+
+
+
+<script src="https://fea.quintype.com/thequint/assets/iframeResizer.contentWindow.min_0bb6a81590ea182e4a7b799f4b6b4821.js"></script>
+<script>
+function adjust_iframe_height() {
+    var actual_height = document.body.scrollHeight;
+    console.log("height is", actual_height);
+    parent.postMessage(JSON.stringify({ 'msg-type': "resize-iframe", height: actual_height, src: window.location.href }), "*");
+    //* allows this to post to any parent iframe regardless of domain
+}
+</script>
+</body>
+
+</html>

@@ -313,6 +313,107 @@ audio 													{width: 100%}
 .right-box .quint-app .android-app				{margin-left: 1.5%;float: right;width: 48.5%;}
 
 
+
+
+
+.buzz-wrap--form {
+    margin: 0 auto;
+    max-width: 550px;
+}
+.buzz-wrap--form .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #f3f3f3;
+    padding: 15px 20px;
+}
+
+.buzz-wrap--form .form-group:after {
+	content: " ";visibility: hidden;display: block;height: 0;clear: both;
+}
+
+.form-group--left,
+.form-group--right {
+	float: left;
+	min-height: 30px;
+	position: relative;
+}
+.form-group--left {
+	width: 40%;
+}
+.form-group--right {
+	width: 60%;
+}
+
+.buzz-wrap--form .form-group label {
+    /*width: 100%;*/
+    left: 0;
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+}
+.buzz-wrap--form .form-group input,
+.buzz-wrap--form .form-group textarea {
+    width: 100%;
+    display: block;
+    padding: 5px 8px;
+    height: 40px;
+    border: 0 none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    /*border: 1px #e4e4e4 solid;*/
+    /*border-radius: 3px;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.buzz-wrap--form .form-group input.wrong {
+	color: red;
+}
+.buzz-wrap--form .form-group input.right {
+	color: green;
+}
+.buzz-wrap--form .form-group .submit-btn {
+	width: 90%;
+	cursor: pointer;
+}
+.buzz-wrap--form .form-group .total-results {
+	background-color: transparent;
+}
+
+.form-group--fluid {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.form-group--fluid .show-all {
+	margin: 0 auto;
+	max-width: 170px;
+	cursor: pointer;
+}
+
+.buzz-wrap--form .form-group textarea {
+    min-height: 100px;
+}
+.buzz-wrap--form .form-group input:focus,
+.buzz-wrap--form .form-group textarea:focus {
+    /*border: 1px #e8e8e8 solid;*/
+    outline: none;
+}
+.buzz-wrap--form .btn-submit {
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 7px 12px 8px;
+    background-color: #6a357f;
+}
+
+
+
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Media Queries
