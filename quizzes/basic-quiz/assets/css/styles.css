@@ -328,11 +328,9 @@ audio 													{width: 100%}
     background-color: #f3f3f3;
     padding: 15px 20px;
 }
-
 .buzz-wrap--form .form-group:after {
 	content: " ";visibility: hidden;display: block;height: 0;clear: both;
 }
-
 .form-group--left,
 .form-group--right {
 	float: left;
@@ -345,9 +343,7 @@ audio 													{width: 100%}
 .form-group--right {
 	width: 60%;
 }
-
 .buzz-wrap--form .form-group label {
-    /*width: 100%;*/
     left: 0;
     display: block;
     font-weight: 400;
@@ -368,7 +364,6 @@ audio 													{width: 100%}
     /*border-radius: 3px;*/
     font-family: 'Roboto', sans-serif;
 }
-
 .buzz-wrap--form .form-group input.wrong {
 	color: red;
 }

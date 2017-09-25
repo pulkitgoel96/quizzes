@@ -73,8 +73,11 @@ function scoreme() {
     }
 
     sa04 = document.FXY1.NA04.value.toUpperCase();
+    sc04 = document.FXY1.NC04.value.toUpperCase(); /* add new row */
+    sd04 = document.FXY1.ND04.value.toUpperCase();
+
     sb04 = document.FXY1.NB04.value.toUpperCase();
-    if (sa04 != sb04) {
+    if (sa04 != sb04 && sc04 != sb04 && sd04 != sb04) {
         //document.FXY1.NB04.value = "INCORRECT!";
         correct = correct - 1;
         document.getElementById("dasharatha").classList.add("wrong");
@@ -83,12 +86,17 @@ function scoreme() {
     }
 
     sa05 = document.FXY1.NA05.value.toUpperCase();
+    sc05 = document.FXY1.NC05.value.toUpperCase(); /* add new row */
+    sd05 = document.FXY1.ND05.value.toUpperCase();
     sb05 = document.FXY1.NB05.value.toUpperCase();
-    if (sa05 != sb05) {
+    //console.log(sa05 +"|"+sb05 +"|"+ sc05);
+    if (sa05 != sb05 && sc05 != sb05 && sd05 != sb05) { /* add && with new variable */
         //document.FXY1.NB05.value = "INCORRECT!";
         correct = correct - 1;
         document.getElementById("lakshman").classList.add("wrong");
-    }else {
+    }
+
+    else {
         document.getElementById("lakshman").classList.add("right");
     }
 
@@ -147,13 +155,6 @@ function scoreme() {
 
     document.getElementById("showAll").style.display = "block";
 
-    // var x = document.getElementById('myDIV');
-    // if (x.style.display === 'none') {
-    //     x.style.display = 'block';
-    // } else {
-    //     x.style.display = 'none';
-    // }
-
     -->
 }
 </script>
@@ -181,7 +182,15 @@ $(document).ready(function(){
         $("#ravan").val(valStore7).removeClass("wrong").addClass("right");
         $("#hanuman").val(valStore8).removeClass("wrong").addClass("right");
         $("#kaikeyi").val(valStore9).removeClass("wrong").addClass("right");
-        //$("#kaikeyi").find("wrong").addClass("wrong1");
+        
+    });
+    // $('input').on('focus', function(){
+    //    $(this).next('div').removeClass('input-desc-hover').addClass('input-desc');
+    // }).on('focus', function(){
+    //   $(this).next('div').removeClass('input-desc').addClass('input-desc-hover');
+    // });
+    $('.form-group--right input').focus(function () {
+        $(this).removeClass('wrong');
     });
 });
 </script>
@@ -218,7 +227,7 @@ $(document).ready(function(){
 
                 <div class="form-group">
                     <div class="form-group--left">
-                        <label for="Name">🍃 + 🕚 = </label>
+                        <label for="Name">🍃 + 🕙 = </label>
                     </div>
                     <div class="form-group--right">
                         <input id="tulsidas-hidden" value="Tulsidas" name="NA02" type="hidden">
@@ -243,6 +252,9 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="dasharatha-hidden" value="Dasharatha" name="NA04" type="hidden">
+                        <input id="dasharatha-hidden2" value="Dasrath" name="NC04" type="hidden">
+                        <input id="dasharatha-hidden3" value="Dusrath" name="ND04" type="hidden">
+
                         <input id="dasharatha" class="ipxa" value="" name="NB04" type="text" placeholder="Answer">
                     </div>
                 </div>
@@ -253,6 +265,9 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="lakshman-hidden" value="Lakshman" name="NA05" type="hidden">
+                        <input id="lakshman-hidden2" value="Laxman" name="NC05" type="hidden">
+                        <input id="lakshman-hidden3" value="Lakshmana" name="ND05" type="hidden">
+
                         <input id="lakshman" class="ipxa" value="" name="NB05" type="text" placeholder="Answer">
                     </div>
                 </div>
