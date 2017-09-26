@@ -101,8 +101,11 @@ function scoreme() {
     }
 
     sa06 = document.FXY1.NA06.value.toUpperCase();
+    sc06 = document.FXY1.NC06.value.toUpperCase();
+    sd06 = document.FXY1.ND06.value.toUpperCase();
+
     sb06 = document.FXY1.NB06.value.toUpperCase();
-    if (sa06 != sb06) {
+    if (sa06 != sb06 && sc06 != sb06 && sd06 != sb06) {
         //document.FXY1.NB06.value = "INCORRECT!";
         correct = correct - 1;
         document.getElementById("ram").classList.add("wrong");
@@ -111,8 +114,11 @@ function scoreme() {
     }
 
     sa07 = document.FXY1.NA07.value.toUpperCase();
+    sc07 = document.FXY1.NC07.value.toUpperCase();
+    sd07 = document.FXY1.ND07.value.toUpperCase();
+
     sb07 = document.FXY1.NB07.value.toUpperCase();
-    if (sa07 != sb07) {
+    if (sa07 != sb07 && sc07 != sb07 && sd07 != sb07) {
         //document.FXY1.NB07.value = "INCORRECT!";
         correct = correct - 1;
         document.getElementById("ravan").classList.add("wrong");
@@ -131,8 +137,11 @@ function scoreme() {
     }
 
     sa09 = document.FXY1.NA09.value.toUpperCase();
+    sc09 = document.FXY1.NC09.value.toUpperCase();
+    sd09 = document.FXY1.ND09.value.toUpperCase();
+
     sb09 = document.FXY1.NB09.value.toUpperCase();
-    if (sa09 != sb09) {
+    if (sa09 != sb09 && sc09 != sb09 && sd09 != sb09) {
         //document.FXY1.NB09.value = "INCORRECT!";
         correct = correct - 1;
         document.getElementById("kaikeyi").classList.add("wrong");
@@ -252,8 +261,8 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="dasharatha-hidden" value="Dasharatha" name="NA04" type="hidden">
-                        <input id="dasharatha-hidden2" value="Dasrath" name="NC04" type="hidden">
-                        <input id="dasharatha-hidden3" value="Dusrath" name="ND04" type="hidden">
+                        <input id="dasharatha-hidden2" value="Dashrath" name="NC04" type="hidden">
+                        <input id="dasharatha-hidden3" value="Dasrath" name="ND04" type="hidden">
 
                         <input id="dasharatha" class="ipxa" value="" name="NB04" type="text" placeholder="Answer">
                     </div>
@@ -278,6 +287,9 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="ram-hidden" value="Ram" name="NA06" type="hidden">
+                        <input id="ram-hidden" value="Raam" name="NC06" type="hidden">
+                        <input id="ram-hidden" value="Rama" name="ND06" type="hidden">
+
                         <input id="ram" class="ipxa" value="" name="NB06" type="text" placeholder="Answer">
                     </div>
                 </div>
@@ -288,6 +300,9 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="ravan-hidden" value="Ravan" name="NA07" type="hidden">
+                        <input id="ravan-hidden" value="Raavan" name="NC07" type="hidden">
+                        <input id="ravan-hidden" value="Ravana" name="ND07" type="hidden">
+
                         <input id="ravan" class="ipxa" value="" name="NB07" type="text" placeholder="Answer">
                     </div>
                 </div>
@@ -308,6 +323,9 @@ $(document).ready(function(){
                     </div>
                     <div class="form-group--right">
                         <input id="kaikeyi-hidden" value="Kaikeyi" name="NA09" type="hidden">
+                        <input id="kaikeyi-hidden" value="Kaykayi" name="NC09" type="hidden">
+                        <input id="kaikeyi-hidden" value="Kaykei" name="ND09" type="hidden">
+
                         <input id="kaikeyi" class="ipxa" value="" name="NB09" type="text" placeholder="Answer">
                     </div>
                 </div>
