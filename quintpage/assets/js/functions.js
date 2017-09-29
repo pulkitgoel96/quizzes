@@ -1,9 +1,9 @@
 var sketches_host = 'https://www.thequint.com'; //change to 'https://www.thequint.com' on production
-var collection_slug = 'bol-text'; //change to the actual collection slug
+var collection_slug = 'trending'; //change to the actual collection slug
 
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/collections/bol-text', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/collections/trending', function(res) {
     var stories = res.items.filter(function(item) { return item.type == 'story'}).map(function(item) { return item.story });
 	  
     $('#story_0').append(Story_0_Markup(stories[0]));
@@ -37,14 +37,14 @@ var Story_3_Markup = function(story) {
 
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/collections/bol-video', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/collections/trending', function(res) {
     var stories = res.items.filter(function(item) { return item.type == 'story'}).map(function(item) { return item.story });
 	  
  
-	$('#story_4').append(Story_4_Markup(stories[0]));
-	$('#story_5').append(Story_5_Markup(stories[1]));
-	$('#story_6').append(Story_6_Markup(stories[2]));
-	$('#story_7').append(Story_7_Markup(stories[3]));
+	$('#story_4').append(Story_4_Markup(stories[4]));
+	$('#story_5').append(Story_5_Markup(stories[5]));
+	$('#story_6').append(Story_6_Markup(stories[6]));
+	$('#story_7').append(Story_7_Markup(stories[7]));
   })
 })
 
@@ -72,7 +72,7 @@ var Story_7_Markup = function(story) {
 
 
 $(document).ready(function() {
-  $.getJSON('https://www.thequint.com/api/v1/collections/bol-video', function(res) {
+  $.getJSON('https://www.thequint.com/api/v1/collections/hot-news', function(res) {
     var stories = res.items.filter(function(item) { return item.type == 'story'}).map(function(item) { return item.story });
 	  
  
