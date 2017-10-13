@@ -15,6 +15,9 @@ $(document).ready(function(){
 });
 
 
+			pataka_sound = document.createElement('audio');
+            pataka_sound.setAttribute('src', 'assets/sound/pataka.mp3');
+
 var Fireworks = function(){
 	/*=============================================================================*/	
 	/* Utility
@@ -349,8 +352,6 @@ var Fireworks = function(){
 			
 			
 			
-			pataka_sound = document.createElement('audio');
-            pataka_sound.setAttribute('src', 'assets/sound/pataka.mp3');
 			pataka_sound.play();
 			
 		/*	var randLaunch = rand(0, 5);
