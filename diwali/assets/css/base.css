@@ -259,13 +259,14 @@ template {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	background: #8c58a5;
+	background: #0E062A;
 	top: 0px;
 	left: 0px;
 	bottom: 0;
 	right: 0;
 	z-index: 10000;
 	display: none;
+	transform: translateZ(0px);
 }
 .rotate_screen h1 {
 	text-align: center;
@@ -365,7 +366,7 @@ transform:translateY(4px) rotate(90deg)
 	transform: translateZ(0px);
 }
 .share {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	right: 20px;
 	z-index: 1000;
