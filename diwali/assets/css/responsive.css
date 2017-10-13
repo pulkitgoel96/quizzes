@@ -1,14 +1,124 @@
 @charset "utf-8";
-.container {
-	max-width: 100%;
-	margin: 0 auto;
-	position: relative;
-	padding: 0px 15px;
-}
-.back-top.is-mobile {
-	display: none;
+
+
+
+@media (max-width:1024px) {
+	
+	.main-text{
+		left: 3%;
+	}
+	
+	.total-count{
+		right: 3%;
+	}
 }
 
-@media screen and (min-width:1440px) {
+@media (max-width:1023px) {
+	
+	.wrapper.body-wrapper {
+		background-position: center -100px;
+	}
+	
+	.v-text{
+	position: inherit;
+	top: 0%;
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+	
+	.main-text{
+		position: relative;
+		width: 100%;
+		left: inherit;
+	}
+	.total-count{
+		position: relative;
+		width: 100%;
+		right: inherit;
+	
+	}
+	.site-text{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 23%;
+		padding: 0px 5%;
+		
+	}
+	.btn-submit{
+		width: 220px;
+		margin-left: -110px;
+	}
+	.site-text p{
+		width: 500px;
+		max-width: 100%;
+		margin: 0 auto 20px auto;
+		
+	}
+	.light{
+		width: 15%;
+	}
+	
+	.light.light-left{
+	left: 10%;
 }
 
+.light.light-right{
+	right: 10%;
+}
+	
+}
+@media (max-width:640px) {
+	
+	.wrapper.body-wrapper {
+		background-position: center -50px;
+	}
+	
+	.btn-submit{
+		width: 150px;
+		margin-left: -75px;
+	}
+	
+	.light{
+		width: 18%;
+	}
+	
+	.light.light-left{
+	left: 5%;
+}
+
+.light.light-right{
+	right: 5%;
+}
+	
+	.site-text p{
+		
+		margin: 0 auto 10px auto;
+		width: 280px;
+		
+	}
+	
+	.main-text h2{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	body{
+		font-size: 14px;
+	}
+	.total-count h3{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	#totalCount{
+		font-size: 30px;
+	}
+	
+	.site-text{
+		
+		bottom: 140px;
+		
+		
+	}
+	
+}
