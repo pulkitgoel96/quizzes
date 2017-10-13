@@ -370,6 +370,7 @@ transform:translateY(4px) rotate(90deg)
 	top: 20px;
 	right: 20px;
 	z-index: 1000;
+	transform: translateZ(0px);
 	
 }
 .share-ico {
