@@ -55,10 +55,100 @@
     <li><a target="_blank" href="https://twitter.com/intent/tweet?source=https%3A//thequint.com/quintlab/onam-festival-celebrations-recipes-songs/&text=How are you feeling this Onam? Share your mood with us, and we have songs and yummy food recipes tailored for you. %20https%3A//thequint.com/quintlab/onam-festival-celebrations-recipes-songs"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
   </ul>
 </div>
-<section class="wrapper body-wrapper">
+<!--<section class="wrapper body-wrapper"></section>-->
+<div class="landscape-1 landscape"><img src="assets/images/city.png"></div>
+<div class="landscape-2 landscape"><img src="assets/images/city.png"></div>
  
  
- <ul class="lightrope">
+ <ul class="lightrope color-theme-1" id="lightone">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+  <ul class="lightrope color-theme-2" id="lighttwo">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+  <ul class="lightrope color-theme-3 visible" id="lightthree">
   <li></li>
   <li></li>
   <li></li>
@@ -120,30 +210,39 @@
     	<div class="main-text">
     		<div class="v-text">
     			<h2>Lights, Crackers, Action</h2>
-    			<p>Supreme Court says #PatakhaHayeHaye. Let's pledge for a clean &amp; green Diwali. Celebrate with TheQuint's e-crackers!</p>
-    		</div>
+    			<p>Supreme Court bole #PatakhaHayeHaye. Now pledge karo pollution bye bye. Here's pollution ka solution. Have a Happy Diwali with TheQuint's e-crackers!</p>
+    			
+    							
+				
+			</div>
     	</div>
     	<div class="total-count">
     	<div class="v-text">
-    		<h3>Pledges taken / Patakhas lit</h3>
+    		<h3>Pledges taken</h3>
     		<h4 id="totalCount"></h4>
     		</div>
     	</div>
     </div>
     
+    <div class="diwali-message hvr-pulse-grow" id="arc-wrapper">
+		<h3>Tap & Pollution se Bachao</h3>	
+	</div>
+    
     
     
   </div>
   <div class="light light-left">
-    	<img src="assets/images/light.jpg">
+    	<img src="assets/images/light.png">
+    	<div class="candle"></div>
     </div>
     <div class="light light-right">
-    	<img src="assets/images/light.jpg">
+    	<img src="assets/images/light.png">
+    	<div class="candle"></div>
     </div>
   
   
   
-</section>
+
 
 <div class="rotate_screen">
 <div class="rotate_container">
@@ -168,10 +267,15 @@
 </div>
 </div>
 </div>
-<script type="text/javascript" src="assets/js/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
 <script type="text/javascript" src="assets/js/functions.js"></script> 
+
 <script type="text/javascript" src="assets/js/spreadsheet.js"></script> 
 <script type="text/javascript" src="assets/js/data-spreadsheet.js"></script> 
+
+<script type="text/javascript" src="assets/js/jquery.arctext.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script data-cfasync="false" type="text/javascript">
 var request;
 	var flag=0;
@@ -188,10 +292,41 @@ var request;
 			}
 		
 		event.preventDefault();
-		adjust_iframe_height();
+	//	adjust_iframe_height();
 		
 	});
 });
 </script>
+
+<script type="text/javascript">
+			
+		
+			var $word1 = $('#arc-wrapper').find('h3').hide();
+	
+			
+		
+			
+			google.load('webfont','1');
+			
+			google.setOnLoadCallback(function() {
+				WebFont.load({
+					google		: {
+						families	: ['Paprika','cursive']
+					},
+					fontactive	: function(fontFamily, fontDescription) {
+						cta_init();
+					},
+					fontinactive	: function(fontFamily, fontDescription) {
+						cta_init();
+					}
+				});
+			});
+			
+			function cta_init() {
+				console.log($word1.html());
+				$word1.show().arctext({radius: 220});
+
+			};
+		</script>
 </body>
 </html>

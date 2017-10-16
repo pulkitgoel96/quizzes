@@ -1,5 +1,9 @@
 
+var cta = [
+	"Tap & Pollution se Bachao","Tap & Fresh Hawa Khao","Tap for Barks & Meow","Tap aur jalne se bacho", "Tap and safe Diwali Manao","Tap and apne paise bachao","Tap to see blue sky now","Tap for Barks & Meow"
+]
 
+var cta_var =0;
 
 $(document).ready(function(){
     $(".share-ico").click(function(e){
@@ -14,9 +18,64 @@ $(document).ready(function(){
 	
 });
 
+var cur_light =1;
+
+ setInterval(function(){ 
+ 
+	 //console.log(cur_light);
+	$(".lightrope").removeClass("visible");
+	 if(cur_light==1)
+		 $("#lightone").addClass("visible");
+	 else if(cur_light==2)
+	 		 $("#lighttwo").addClass("visible");
+	 else
+			 $("#lightthree").addClass("visible");
+	 
+	 if(cur_light==3)
+		 {
+			 cur_light=1;
+		 }
+	 else
+		 {
+	 cur_light=cur_light+1;
+		 }
+ 
+ }, 500);
+
+
+function adjust_landscape()
+{
+ $(".landscape-2").css({"left":$(".landscape").width()});
+}
+
+adjust_landscape();
+
+function animate_landscape()
+{
+	
+}
+
 
 			pataka_sound = document.createElement('audio');
             pataka_sound.setAttribute('src', 'assets/sound/pataka.mp3');
+
+var translate_var = 0;
+
+
+function repeatOften() {
+	translate_var = translate_var-1
+  // Do whatever
+	$(".landscape").css({"transform":"translate3d("+translate_var+"px,0,0)"});
+	//console.log(translate_var+"|"+$(".landscape-1").width())
+	
+	if(-translate_var>=$(".landscape-1").width())
+		{
+			
+			translate_var=0;
+		}
+  requestAnimationFrame(repeatOften);
+}
+requestAnimationFrame(repeatOften);
 
 var Fireworks = function(){
 	/*=============================================================================*/	

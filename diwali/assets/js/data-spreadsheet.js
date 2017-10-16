@@ -73,6 +73,19 @@ function updateInfo(data) {
 			console.log("Hooray, it worked!");
 			flag=0;	
 			$("#totalCount").html(counter);
+			if(cta_var<cta.length-1)
+				{
+			cta_var=cta_var+1;
+				}
+			else
+				{
+				cta_var=0
+				}
+			$(".diwali-message").html("<h3>"+cta[cta_var]+"</h3>")
+			$word1 = $('#arc-wrapper').find('h3');
+			//console.log($word1);
+			cta_init();
+			
 		});
 	
 		// callback handler that will be called on failure
