@@ -23,8 +23,8 @@ $(document).ready(function(){
   autoplaySpeed: 4000,
 		pauseOnHover: true,
                 pauseOnFocus: true,
-                pauseOnDotsHover: true,
-		responsive: [
+                pauseOnDotsHover: true
+		/*responsive: [
     {
       breakpoint: 620,
       settings: {
@@ -32,7 +32,7 @@ $(document).ready(function(){
         
       }
     }
-  ]
+  ]*/
 });
 	
 });
