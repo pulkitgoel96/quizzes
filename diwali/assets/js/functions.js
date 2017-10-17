@@ -20,7 +20,7 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
 });
 	
 });
@@ -63,8 +63,24 @@ function animate_landscape()
 }
 
 
-			pataka_sound = document.createElement('audio');
-            pataka_sound.setAttribute('src', 'assets/sound/pataka.mp3');
+			pataka_ladi = document.createElement('audio');
+            pataka_ladi.setAttribute('src', 'assets/sound/ladi.mp3');
+
+
+			pataka_bullet = document.createElement('audio');
+            pataka_bullet.setAttribute('src', 'assets/sound/bullet.mp3');
+
+
+			pataka_fuljhadi = document.createElement('audio');
+            pataka_fuljhadi.setAttribute('src', 'assets/sound/fuljhadi.mp3');
+
+
+			pataka_jwanika = document.createElement('audio');
+            pataka_jwanika.setAttribute('src', 'assets/sound/jwanika.mp3');
+
+
+			pataka_rocket = document.createElement('audio');
+            pataka_rocket.setAttribute('src', 'assets/sound/rocket.mp3');
 
 var translate_var = 0;
 
@@ -417,8 +433,44 @@ var Fireworks = function(){
 			}
 			
 			
+			var sound_name = $(this).attr("data-sound");
 			
-			pataka_sound.play();
+			if(sound_name=="ladi")
+				{
+			pataka_ladi.play();
+					}
+			
+			if(sound_name=="bullet")
+				{
+			pataka_bullet.play();
+					}
+			
+			if(sound_name=="fuljhadi")
+				{
+			pataka_fuljhadi.play();
+					}
+			
+			if(sound_name=="jwanika")
+				{
+			pataka_jwanika.play();
+					}
+			
+			if(sound_name=="rocket")
+				{
+			pataka_rocket.play();
+					}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
 			
 		/*	var randLaunch = rand(0, 5);
 			self.mx = e.pageX - self.canvasContainer.offset().left;
