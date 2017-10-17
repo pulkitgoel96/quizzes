@@ -147,17 +147,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .btn-submit{
-	width: 200px;
-	position: absolute;
-	left: 50%;
-	bottom: -40px;
-	margin-left: -100px;
+	
 	padding: 0;
 	background: transparent;
 	border: 0;
 	cursor: pointer;
+}
+
+.crackers-items{
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -100px;
 	z-index: 9999;
-	padding-top: 100px;
 }
 
 
