@@ -92,7 +92,7 @@ function animate_landscape()
 
 
 			pataka_jwanika = document.createElement('audio');
-            pataka_jwanika.setAttribute('src', 'assets/sound/jwanika.mp3');
+            pataka_jwanika.setAttribute('src', 'assets/sound/fuljhadi.mp3');
 
 
 			pataka_rocket = document.createElement('audio');
