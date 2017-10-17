@@ -74,8 +74,14 @@
 .diwali-message h3 {
 	font-size: 15px;
 }
+/*
 .site-text {
 	bottom: 195px;
+}
+*/
+	.site-text {
+	top: 70px;
+	bottom: inherit;
 }
 .light {
 	width: 18%;
@@ -105,4 +111,6 @@ body {
 	font-size: 20px;
 	margin-bottom: 20px;
 }
+	
+	
 }
