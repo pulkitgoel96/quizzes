@@ -117,10 +117,10 @@ body {
 	right: -30px;
 }
 .slick-next {
-	right: -30px;
+	right: -10px;
 }
 [dir='rtl'] .slick-next {
-	left: -30px;
+	left: -10px;
 }
 	
 	.slick-prev:before,
