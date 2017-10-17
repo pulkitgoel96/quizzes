@@ -23,13 +23,23 @@ $(document).ready(function(){
   autoplaySpeed: 4000,
 		pauseOnHover: true,
                 pauseOnFocus: true,
-                pauseOnDotsHover: true
+                pauseOnDotsHover: true,
+		responsive: [
+    {
+      breakpoint: 620,
+      settings: {
+        arrows: false
+        
+      }
+    }
+  ]
 });
 	
 });
 
 $(window).load(function(){
 	$('.crackers-items').addClass('crackers-visible');
+	adjust_landscape();
 })
 
 var cur_light =1;
@@ -62,7 +72,6 @@ function adjust_landscape()
  $(".landscape-2").css({"left":$(".landscape").width()});
 }
 
-adjust_landscape();
 
 function animate_landscape()
 {
