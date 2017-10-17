@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: 0px;
 	margin-left: -100px;
 	z-index: 9999;
+	visibility: hidden;
+}
+.crackers-items.crackers-visible{
+	visibility: visible;
 }
 /*LIGHTS*/
 .lightrope {

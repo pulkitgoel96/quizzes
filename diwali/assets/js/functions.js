@@ -21,9 +21,16 @@ $(document).ready(function(){
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
+		pauseOnHover: true,
+                pauseOnFocus: true,
+                pauseOnDotsHover: true
 });
 	
 });
+
+$(window).load(function(){
+	$('.crackers-items').addClass('crackers-visible');
+})
 
 var cur_light =1;
 
@@ -460,17 +467,6 @@ var Fireworks = function(){
 			pataka_rocket.play();
 					}
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
 			
 		/*	var randLaunch = rand(0, 5);
 			self.mx = e.pageX - self.canvasContainer.offset().left;
