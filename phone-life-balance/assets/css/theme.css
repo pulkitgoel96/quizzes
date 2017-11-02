@@ -1167,8 +1167,6 @@ p a {
 .quiz-btn a:hover {
 	background-color: #000;
 }
-
-
 .content-img-left {
 	width:50%;
 	float:left;
@@ -1187,5 +1185,8 @@ p a {
 	.content-img-right {
 		width:100%;
 		padding-left: 0;
+	}
+	.quiz-btn {
+		margin: 40px 0;
 	}
 }
