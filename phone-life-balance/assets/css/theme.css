@@ -1001,7 +1001,7 @@ transform:translateY(4px) rotate(90deg)
 .headline-section h2 {
 	color: #fff;
 	text-align: left;
-	font-size: 70px;
+	font-size: 68px;
 	font-weight: 700;
 	line-height: 70px;
 	margin: 30px 0;
@@ -1133,13 +1133,6 @@ p a {
 	max-width: 85px;
 	margin: 15px;
 }
-
-.logo-wrapper .logo-jal{
-	float: left;
-	max-width: 160px;
-	margin: 15px 15px 15px 0px;
-}
-
 .credits-wrapper{
 	text-align: center;
 }
@@ -1151,19 +1144,22 @@ p a {
 	max-width: 122px;
 	margin-right: 50px;
 }
-
-.credits-wrapper .logo-jal{
-	max-width: 220px;
+.content-left.quiz {
+	text-align: center;
+	padding-top: 40px;
+	font-size: 32px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 }
 
 .quiz-btn {
-	margin: 80px 0 150px 0;
+	margin: 80px 0 100px 0;
 }
 .quiz-btn a {
 	color: #fff;
 	background-color: #f15a24;
-	padding: 10px 30px;
-	border-radius: 30px;
+	padding: 10px 30px 12px;
+	border-radius: 40px;
 	transition: 0.2s all ease-in-out;
 	-moz-transition: 0.2s all ease-in-out;
 	-webkit-transition: 0.2s all ease-in-out;
@@ -1183,6 +1179,49 @@ p a {
 	float:left;
 	padding-left: 10px;
 }
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+/*.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}*/
 @media (max-width:640px) {
 	.content-img-left {
 		width:100%;
@@ -1194,5 +1233,22 @@ p a {
 	}
 	.quiz-btn {
 		margin: 40px 0;
+	}
+	.content-left.quiz {
+		padding-top: 20px;
+		font-size: 24px;
+	}
+}
+@media (max-width:480px) {
+	.content-left.quiz {
+		padding-top: 0;
+		font-size: 20px;
+	}
+	.quiz-btn {
+		margin: 15px 0;
+	}
+	.quiz-btn a {
+		font-size: 18px;
+	    padding: 7px 20px 9px;
 	}
 }
