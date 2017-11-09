@@ -434,6 +434,21 @@ audio 													{width: 100%}
   color: #dfdfdf;
 }
 
+
+.question-img {
+	position: relative;
+	width: 100%;
+	background-color: #ccc;
+	margin-bottom: 20px;
+}
+.question-img .question-img--absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Media Queries
