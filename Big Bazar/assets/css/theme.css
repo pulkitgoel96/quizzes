@@ -1261,3 +1261,8 @@ p a {
 	color: #fff;
 
 }
+/*Added Partner Logo by Pulkit Goel*/
+.partner-logo *{
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
